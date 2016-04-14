@@ -7,6 +7,7 @@
           @Grab(group='net.sourceforge.owlapi', module='owlapi-impl', version='4.1.0'),
           @Grab(group='net.sourceforge.owlapi', module='owlapi-parsers', version='4.1.0'),
           @Grab(group='org.codehaus.gpars', module='gpars', version='1.1.0'),
+          @Grab(group='org.codehaus.groovy.modules.http-builder', module='http-builder', version='0.7' ),
 	  @GrabConfig(systemClassLoader=true)
 	])
  
@@ -14,7 +15,7 @@ import org.semanticweb.owlapi.io.*
 import org.semanticweb.owlapi.model.*
 import org.semanticweb.owlapi.apibinding.OWLManager
 import org.semanticweb.owlapi.model.AddImport
-
+import groovyx.net.http.HTTPBuilder
 import org.semanticweb.elk.owlapi.ElkReasonerFactory;
 import org.semanticweb.elk.owlapi.ElkReasonerConfiguration
 import org.semanticweb.elk.reasoner.config.*
@@ -40,13 +41,13 @@ OWLOntology ontology
 OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
 OWLOntologyLoaderConfiguration config = new OWLOntologyLoaderConfiguration();
 
-try {
-  config.setFollowRedirects(false);
+//try {
+  config.setFollowRedirects(true);
   config.setMissingImportHandlingStrategy(MissingImportHandlingStrategy.SILENT);
   ontology = manager.loadOntologyFromOntologyDocument(new IRIDocumentSource(IRI.create(ontologyIRI)), config);
-} catch(e) {
-  println "Unable to load ontology: " + e.getMessage()
-}
+//} catch(e) {
+//kk  println "Unable to load ontology: " + e.getMessage()
+//}
 
 println "[UNMIREOT] Finding missing ontology imports"
 
@@ -71,43 +72,52 @@ println "[UNMIREOT] The following ontologies are referenced: " + mireotOntologie
 
 println "[UNMIREOT] Creating new ontology with imports"
 
-mireotOntologies.each {
-  OWLImportsDeclaration importDeclaration = manager.getOWLDataFactory().getOWLImportsDeclaration(IRI.create("http://aber-owl.net/onts/"+it+"_1.ont"));
-  manager.applyChange(new AddImport(ontology, importDeclaration));
-}
+new HTTPBuilder('http://aber-owl.net/').get(path: 'service/api/getStatuses.groovy') { resp, ontologies ->
 
-File fileFormated = new File("unmireot_test.ontology");
-manager.saveOntology(ontology, IRI.create(fileFormated.toURI()));
+  mireotOntologies = mireotOntologies.findAll {
+    return ontologies[it].status == 'classified';
+  }
 
-// Load and reason the new ontology
+  println "[UNMIREOT] The following ontologies are referenced after removing dead ontologies: " + mireotOntologies
 
-println "[UNMIREOT] Loading new ontology"
+  mireotOntologies.each {
+    OWLImportsDeclaration importDeclaration = manager.getOWLDataFactory().getOWLImportsDeclaration(IRI.create("http://aber-owl.net/ontology/"+it+"/download"));
+    manager.applyChange(new AddImport(ontology, importDeclaration));
+  }
 
-def newOntology
-def newManager
-try {
-  newManager = OWLManager.createOWLOntologyManager();
-  newOntology = newManager.loadOntologyFromOntologyDocument(new IRIDocumentSource(IRI.create("file:///home/reality/Projects/efotest/unmireot_test.ontology")), config);
-} catch(e) {
-  println "[UNMIREOT] Unable to load ontology: " + e.getMessage()
-}
+  File fileFormated = new File("unmireot_test.ontology");
+  manager.saveOntology(ontology, IRI.create(fileFormated.toURI()));
 
-println "[UNMIREOT] Reasoning new ontology"
+  // Load and reason the new ontology
 
-ReasonerConfiguration eConf = ReasonerConfiguration.getConfiguration()
-eConf.setParameter(ReasonerConfiguration.NUM_OF_WORKING_THREADS, "8")
-eConf.setParameter(ReasonerConfiguration.INCREMENTAL_MODE_ALLOWED, "true")
-eConf.setParameter(ReasonerConfiguration.INCREMENTAL_TAXONOMY, "true")
+  println "[UNMIREOT] Loading new ontology"
 
-OWLReasonerFactory reasonerFactory = new ElkReasonerFactory();
+  def newOntology
+  def newManager
+  try {
+    newManager = OWLManager.createOWLOntologyManager();
+    newOntology = newManager.loadOntologyFromOntologyDocument(new IRIDocumentSource(IRI.create("file:///home/reality/Projects/efotest/unmireot_test.ontology")), config);
+  } catch(e) {
+    println "[UNMIREOT] Unable to load ontology: " + e.getMessage()
+  }
 
-OWLReasonerConfiguration rConf = new ElkReasonerConfiguration(ElkReasonerConfiguration.getDefaultOwlReasonerConfiguration(new NullReasonerProgressMonitor()), eConf);
-OWLReasoner oReasoner = reasonerFactory.createReasoner(newOntology, rConf);
-oReasoner.precomputeInferences(InferenceType.CLASS_HIERARCHY);
+  println "[UNMIREOT] Reasoning new ontology"
 
-println "[UNMIREOT] Unsatisfiable classes: " + oReasoner.getEquivalentClasses(manager.getOWLDataFactory().getOWLNothing()).getEntitiesMinusBottom().size()
-for (OWLClass cl : newOntology.getClassesInSignature()) {
-  if(!oReasoner.isSatisfiable(cl)) {
-    System.out.println("Unsatisfiable: " + cl.getIRI())
+  ReasonerConfiguration eConf = ReasonerConfiguration.getConfiguration()
+  eConf.setParameter(ReasonerConfiguration.NUM_OF_WORKING_THREADS, "8")
+  eConf.setParameter(ReasonerConfiguration.INCREMENTAL_MODE_ALLOWED, "true")
+  eConf.setParameter(ReasonerConfiguration.INCREMENTAL_TAXONOMY, "true")
+
+  OWLReasonerFactory reasonerFactory = new ElkReasonerFactory();
+
+  OWLReasonerConfiguration rConf = new ElkReasonerConfiguration(ElkReasonerConfiguration.getDefaultOwlReasonerConfiguration(new NullReasonerProgressMonitor()), eConf);
+  OWLReasoner oReasoner = reasonerFactory.createReasoner(newOntology, rConf);
+  oReasoner.precomputeInferences(InferenceType.CLASS_HIERARCHY);
+
+  println "[UNMIREOT] Unsatisfiable classes: " + oReasoner.getEquivalentClasses(manager.getOWLDataFactory().getOWLNothing()).getEntitiesMinusBottom().size()
+  for (OWLClass cl : newOntology.getClassesInSignature()) {
+    if(!oReasoner.isSatisfiable(cl)) {
+      System.out.println("Unsatisfiable: " + cl.getIRI())
+    }
   }
 }
