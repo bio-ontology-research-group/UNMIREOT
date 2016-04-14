@@ -42,14 +42,19 @@ config.setMissingImportHandlingStrategy(MissingImportHandlingStrategy.SILENT);
 OWLOntology ontology = manager.loadOntologyFromOntologyDocument(new IRIDocumentSource(IRI.create("file:///home/reality/Projects/efotest/EFO.ont")), config);
 
 // Add GO
-
+/*
 OWLImportsDeclaration importDeclaration=manager.getOWLDataFactory().getOWLImportsDeclaration(IRI.create("http://aber-owl.net/onts/GO_36.ont"));
 manager.applyChange(new AddImport(ontology, importDeclaration));
 
 OWLImportsDeclaration importDeclaration2=manager.getOWLDataFactory().getOWLImportsDeclaration(IRI.create("http://aber-owl.net/onts/BFO_55.ont"));
 manager.applyChange(new AddImport(ontology, importDeclaration2));
+*/
+//OWLImportsDeclaration importDeclaration3=manager.getOWLDataFactory().getOWLImportsDeclaration(IRI.create("http://aber-owl.net/onts/CL_54.ont"));
+//manager.applyChange(new AddImport(ontology, importDeclaration3));
+// 
+//you can list all the URI's (getClassesInSignature(true)) and cut off the last part, then sort them, to see what ontologies they use
 
-OWLImportsDeclaration importDeclaration3=manager.getOWLDataFactory().getOWLImportsDeclaration(IRI.create("http://aber-owl.net/onts/CL_54.ont"));
+OWLImportsDeclaration importDeclaration3=manager.getOWLDataFactory().getOWLImportsDeclaration(IRI.create("http://aber-owl.net/onts/UBERON_33.ont"));
 manager.applyChange(new AddImport(ontology, importDeclaration3));
 
 File fileformated = new File("efowithimports.owl");

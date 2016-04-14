@@ -1,0 +1,94 @@
+@Grapes([
+          @Grab(group='com.google.code.gson', module='gson', version='2.3.1'),
+          @Grab(group='org.slf4j', module='slf4j-log4j12', version='1.7.10'),
+          @Grab(group='org.semanticweb.elk', module='elk-owlapi', version='0.4.2'),
+          @Grab(group='net.sourceforge.owlapi', module='owlapi-api', version='4.1.0'),
+          @Grab(group='net.sourceforge.owlapi', module='owlapi-apibinding', version='4.1.0'),
+          @Grab(group='net.sourceforge.owlapi', module='owlapi-impl', version='4.1.0'),
+          @Grab(group='net.sourceforge.owlapi', module='owlapi-parsers', version='4.1.0'),
+          @Grab(group='org.codehaus.gpars', module='gpars', version='1.1.0'),
+	  @GrabConfig(systemClassLoader=true)
+	])
+ 
+import org.semanticweb.owlapi.io.* 
+import org.semanticweb.owlapi.model.*
+import org.semanticweb.owlapi.apibinding.OWLManager
+import org.semanticweb.owlapi.model.AddImport
+
+import org.semanticweb.elk.owlapi.ElkReasonerFactory;
+import org.semanticweb.elk.owlapi.ElkReasonerConfiguration
+import org.semanticweb.elk.reasoner.config.*
+import org.semanticweb.owlapi.apibinding.OWLManager;
+import org.semanticweb.owlapi.reasoner.*
+import org.semanticweb.owlapi.reasoner.structural.StructuralReasoner
+import org.semanticweb.owlapi.vocab.OWLRDFVocabulary;
+import org.semanticweb.owlapi.model.*;
+import org.semanticweb.owlapi.io.*;
+import org.semanticweb.owlapi.owllink.*;
+import org.semanticweb.owlapi.util.*;
+import org.semanticweb.owlapi.search.*;
+import org.semanticweb.owlapi.manchestersyntax.renderer.*;
+import org.semanticweb.owlapi.reasoner.structural.*
+
+def ontologyIRI = args[0]
+
+// Load input ontology
+
+println "[UNMIREOT] Loading ontology from " + ontologyIRI
+
+OWLOntology ontology
+OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
+OWLOntologyLoaderConfiguration config = new OWLOntologyLoaderConfiguration();
+
+try {
+  config.setFollowRedirects(true);
+  config.setMissingImportHandlingStrategy(MissingImportHandlingStrategy.SILENT);
+  ontology = manager.loadOntologyFromOntologyDocument(new IRIDocumentSource(IRI.create(ontologyIRI)), config);
+} catch(e) {
+  println "Unable to load ontology: " + e.getMessage()
+}
+
+println "[UNMIREOT] Finding missing ontology imports"
+
+def mireotOntologies = []
+
+// get the things from the uris
+ontology.getClassesInSignature().each {
+println it }
+
+println "[UNMIREOT] Adding ontology imports"
+
+mireotOntologies.each {
+  OWLImportsDeclaration importDeclaration3=manager.getOWLDataFactory().getOWLImportsDeclaration(IRI.create("http://aber-owl.net/ontologies/"+it+"/download"));
+  manager.applyChange(new AddImport(ontology, importDeclaration3));
+}
+
+File fileFormated = new File("unmirod.ontology");
+manager.saveOntology(ontology, IRI.create(fileFormated.toURI()));
+
+// Load and reason the new ontology
+
+println "[UNMIREOT] Loading new ontology with imports"
+
+OWLOntologyManager newManager = OWLManager.createOWLOntologyManager();
+OWLOntology newOntology = manager.loadOntologyFromOntologyDocument(new IRIDocumentSource(IRI.create("file:///home/reality/Projects/efotest/unmirod.ontology")), config);
+
+println "[UNMIREOT] Reasoning new ontology"
+
+ReasonerConfiguration eConf = ReasonerConfiguration.getConfiguration()
+eConf.setParameter(ReasonerConfiguration.NUM_OF_WORKING_THREADS, "8")
+eConf.setParameter(ReasonerConfiguration.INCREMENTAL_MODE_ALLOWED, "true")
+eConf.setParameter(ReasonerConfiguration.INCREMENTAL_TAXONOMY, "true")
+
+OWLReasonerFactory reasonerFactory = new ElkReasonerFactory();
+
+OWLReasonerConfiguration rConf = new ElkReasonerConfiguration(ElkReasonerConfiguration.getDefaultOwlReasonerConfiguration(new NullReasonerProgressMonitor()), eConf);
+OWLReasoner oReasoner = reasonerFactory.createReasoner(newOntology, rConf);
+oReasoner.precomputeInferences(InferenceType.CLASS_HIERARCHY);
+
+println "[UNMIREOT] Unsatisfiable classes: " + oReasoner.getEquivalentClasses(manager.getOWLDataFactory().getOWLNothing()).getEntitiesMinusBottom().size()
+for (OWLClass cl : newOntology.getClassesInSignature()) {
+  if(!oReasoner.isSatisfiable(cl)) {
+    System.out.println("Unsatisfiable: " + cl.getIRI())
+  }
+}
