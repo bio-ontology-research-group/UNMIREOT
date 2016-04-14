@@ -42,7 +42,7 @@ OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
 OWLOntologyLoaderConfiguration config = new OWLOntologyLoaderConfiguration();
 
 //try {
-  config.setFollowRedirects(true);
+  config.setFollowRedirects(false);
   config.setMissingImportHandlingStrategy(MissingImportHandlingStrategy.SILENT);
   ontology = manager.loadOntologyFromOntologyDocument(new IRIDocumentSource(IRI.create(ontologyIRI)), config);
 //} catch(e) {
