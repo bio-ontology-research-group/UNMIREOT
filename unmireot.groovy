@@ -50,13 +50,27 @@ try {
 
 println "[UNMIREOT] Finding missing ontology imports"
 
+def onts = []
+new File('oo.txt').eachLine { line ->
+  onts << line
+}
+
 def mireotOntologies = []
 
 // get the things from the uris
 ontology.getClassesInSignature().each {
-println it }
+  onts.each { oName ->
+    def m = it =~ oName
+    if(m && !(m[0] in mireotOntologies)) {
+      //println m[0]
+      mireotOntologies << m[0]
+    }
+  }
+}
 
-println "[UNMIREOT] Adding ontology imports"
+println "[UNMIREOT] The following ontologies are referenced: " + mireotOntologies
+
+println "[UNMIREOT] Creating new ontology with imports"
 
 mireotOntologies.each {
   OWLImportsDeclaration importDeclaration3=manager.getOWLDataFactory().getOWLImportsDeclaration(IRI.create("http://aber-owl.net/ontologies/"+it+"/download"));
@@ -68,7 +82,7 @@ manager.saveOntology(ontology, IRI.create(fileFormated.toURI()));
 
 // Load and reason the new ontology
 
-println "[UNMIREOT] Loading new ontology with imports"
+println "[UNMIREOT] Loading new ontology"
 
 OWLOntologyManager newManager = OWLManager.createOWLOntologyManager();
 OWLOntology newOntology = manager.loadOntologyFromOntologyDocument(new IRIDocumentSource(IRI.create("file:///home/reality/Projects/efotest/unmirod.ontology")), config);
@@ -92,3 +106,4 @@ for (OWLClass cl : newOntology.getClassesInSignature()) {
     System.out.println("Unsatisfiable: " + cl.getIRI())
   }
 }
+*/
