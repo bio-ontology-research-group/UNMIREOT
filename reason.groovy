@@ -39,7 +39,7 @@ OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
 OWLOntologyLoaderConfiguration config = new OWLOntologyLoaderConfiguration();
 config.setFollowRedirects(true);
 config.setMissingImportHandlingStrategy(MissingImportHandlingStrategy.SILENT);
-OWLOntology ontology = manager.loadOntologyFromOntologyDocument(new IRIDocumentSource(IRI.create("file:///home/reality/Projects/efotest/efowithgo.owl")), config);
+OWLOntology ontology = manager.loadOntologyFromOntologyDocument(new IRIDocumentSource(IRI.create("file:///home/reality/Projects/efotest/efowithimports.owl")), config);
 
 // Reason
 
