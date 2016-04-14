@@ -54,4 +54,13 @@ OWLReasonerConfiguration rConf = new ElkReasonerConfiguration(ElkReasonerConfigu
 OWLReasoner oReasoner = reasonerFactory.createReasoner(ontology, rConf);
 oReasoner.precomputeInferences(InferenceType.CLASS_HIERARCHY);
 
+// print unsatisfiable classes
+
 println oReasoner.getEquivalentClasses(manager.getOWLDataFactory().getOWLNothing()).getEntitiesMinusBottom().size()
+for (OWLClass cl : ontology.getClassesInSignature()) {
+  if (!oReasoner.isSatisfiable(cl)) {
+    System.out.println("BAD: "
+              + cl.getIRI())
+}
+}
+
