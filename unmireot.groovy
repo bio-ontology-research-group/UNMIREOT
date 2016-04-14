@@ -41,7 +41,7 @@ OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
 OWLOntologyLoaderConfiguration config = new OWLOntologyLoaderConfiguration();
 
 try {
-  config.setFollowRedirects(true);
+  config.setFollowRedirects(false);
   config.setMissingImportHandlingStrategy(MissingImportHandlingStrategy.SILENT);
   ontology = manager.loadOntologyFromOntologyDocument(new IRIDocumentSource(IRI.create(ontologyIRI)), config);
 } catch(e) {
@@ -62,7 +62,6 @@ ontology.getClassesInSignature().each {
   onts.each { oName ->
     def m = it =~ oName
     if(m && !(m[0] in mireotOntologies)) {
-      //println m[0]
       mireotOntologies << m[0]
     }
   }
@@ -73,7 +72,7 @@ println "[UNMIREOT] The following ontologies are referenced: " + mireotOntologie
 println "[UNMIREOT] Creating new ontology with imports"
 
 mireotOntologies.each {
-  OWLImportsDeclaration importDeclaration = manager.getOWLDataFactory().getOWLImportsDeclaration(IRI.create("http://aber-owl.net/ontologies/"+it+"/download"));
+  OWLImportsDeclaration importDeclaration = manager.getOWLDataFactory().getOWLImportsDeclaration(IRI.create("http://aber-owl.net/onts/"+it+"_1.ont"));
   manager.applyChange(new AddImport(ontology, importDeclaration));
 }
 
@@ -84,8 +83,14 @@ manager.saveOntology(ontology, IRI.create(fileFormated.toURI()));
 
 println "[UNMIREOT] Loading new ontology"
 
-OWLOntologyManager newManager = OWLManager.createOWLOntologyManager();
-OWLOntology newOntology = manager.loadOntologyFromOntologyDocument(new IRIDocumentSource(IRI.create("file:///home/reality/Projects/efotest/unmireot_test.ontology")), config);
+def newOntology
+def newManager
+try {
+  newManager = OWLManager.createOWLOntologyManager();
+  newOntology = newManager.loadOntologyFromOntologyDocument(new IRIDocumentSource(IRI.create("file:///home/reality/Projects/efotest/unmireot_test.ontology")), config);
+} catch(e) {
+  println "[UNMIREOT] Unable to load ontology: " + e.getMessage()
+}
 
 println "[UNMIREOT] Reasoning new ontology"
 
@@ -106,4 +111,3 @@ for (OWLClass cl : newOntology.getClassesInSignature()) {
     System.out.println("Unsatisfiable: " + cl.getIRI())
   }
 }
-*/
