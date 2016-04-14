@@ -34,13 +34,21 @@ import org.semanticweb.owlapi.search.*;
 import org.semanticweb.owlapi.manchestersyntax.renderer.*;
 import org.semanticweb.owlapi.reasoner.structural.*
 
+OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
+OWLOntologyLoaderConfiguration config = new OWLOntologyLoaderConfiguration();
+config.setFollowRedirects(true);
+config.setMissingImportHandlingStrategy(MissingImportHandlingStrategy.SILENT);
+OWLOntology ontology = manager.loadOntologyFromOntologyDocument(new IRIDocumentSource(IRI.create("file:///home/reality/Projects/efotest/EFO.ont")), config);
 
-OWLOntologyManager man = OWLManager.createOWLOntologyManager();
-OWLDataFactory fac = man.getOWLDataFactory()
-OWLOntology ont = man.createOntology(IRI.create("EFO.ont"))
+// Add GO
 
-OWLImportsDeclaration importDeclaration=man.getOWLDataFactory().getOWLImportsDeclaration(IRI.create("http://aber-owl.net/onts/GO_36.ont"));
-man.applyChange(new AddImport(ont, importDeclaration));
+/*OWLImportsDeclaration importDeclaration=manager.getOWLDataFactory().getOWLImportsDeclaration(IRI.create("http://aber-owl.net/onts/GO_36.ont"));
+manager.applyChange(new AddImport(ontology, importDeclaration));*/
+
+manager.getIRIMappers().add(new SimpleIRIMapper(IRI.create("http://purl.obolibrary.org/obo/go.owl"),
+       IRI.create("http://aber-owl.net/onts/GO_36.ont")));
+
+// Reason
 
 ReasonerConfiguration eConf = ReasonerConfiguration.getConfiguration()
 eConf.setParameter(ReasonerConfiguration.NUM_OF_WORKING_THREADS, "8")
@@ -49,8 +57,8 @@ eConf.setParameter(ReasonerConfiguration.INCREMENTAL_TAXONOMY, "true")
 
 OWLReasonerFactory reasonerFactory = new ElkReasonerFactory();
 
-OWLReasonerConfiguration rConf = new ElkReasonerConfiguration(ElkReasonerConfiguration.getDefaultOwlReasonerConfiguration(new NullReasonerProgressMonitor()), eConf)
-OWLReasoner oReasoner = reasonerFactory.createReasoner(ont, rConf);
+OWLReasonerConfiguration rConf = new ElkReasonerConfiguration(ElkReasonerConfiguration.getDefaultOwlReasonerConfiguration(new NullReasonerProgressMonitor()), eConf);
+OWLReasoner oReasoner = reasonerFactory.createReasoner(ontology, rConf);
 oReasoner.precomputeInferences(InferenceType.CLASS_HIERARCHY);
 
-println oReasoner.getEquivalentClasses(fac.getOWLNothing()).getEntitiesMinusBottom().size()
+println oReasoner.getEquivalentClasses(manager.getOWLDataFactory().getOWLNothing()).getEntitiesMinusBottom().size()
