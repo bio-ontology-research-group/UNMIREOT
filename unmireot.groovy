@@ -73,11 +73,11 @@ println "[UNMIREOT] The following ontologies are referenced: " + mireotOntologie
 println "[UNMIREOT] Creating new ontology with imports"
 
 mireotOntologies.each {
-  OWLImportsDeclaration importDeclaration3=manager.getOWLDataFactory().getOWLImportsDeclaration(IRI.create("http://aber-owl.net/ontologies/"+it+"/download"));
-  manager.applyChange(new AddImport(ontology, importDeclaration3));
+  OWLImportsDeclaration importDeclaration = manager.getOWLDataFactory().getOWLImportsDeclaration(IRI.create("http://aber-owl.net/ontologies/"+it+"/download"));
+  manager.applyChange(new AddImport(ontology, importDeclaration));
 }
 
-File fileFormated = new File("unmirod.ontology");
+File fileFormated = new File("unmireot_test.ontology");
 manager.saveOntology(ontology, IRI.create(fileFormated.toURI()));
 
 // Load and reason the new ontology
@@ -85,7 +85,7 @@ manager.saveOntology(ontology, IRI.create(fileFormated.toURI()));
 println "[UNMIREOT] Loading new ontology"
 
 OWLOntologyManager newManager = OWLManager.createOWLOntologyManager();
-OWLOntology newOntology = manager.loadOntologyFromOntologyDocument(new IRIDocumentSource(IRI.create("file:///home/reality/Projects/efotest/unmirod.ontology")), config);
+OWLOntology newOntology = manager.loadOntologyFromOntologyDocument(new IRIDocumentSource(IRI.create("file:///home/reality/Projects/efotest/unmireot_test.ontology")), config);
 
 println "[UNMIREOT] Reasoning new ontology"
 
