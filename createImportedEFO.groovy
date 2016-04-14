@@ -49,12 +49,8 @@ manager.applyChange(new AddImport(ontology, importDeclaration));
 OWLImportsDeclaration importDeclaration2=manager.getOWLDataFactory().getOWLImportsDeclaration(IRI.create("http://aber-owl.net/onts/BFO_55.ont"));
 manager.applyChange(new AddImport(ontology, importDeclaration2));
 
-OWLImportsDeclaration importDeclaration3=manager.getOWLDataFactory().getOWLImportsDeclaration(IRI.create("http://aber-owl.net/onts/CHEBI_21.ont"));
+OWLImportsDeclaration importDeclaration3=manager.getOWLDataFactory().getOWLImportsDeclaration(IRI.create("http://aber-owl.net/onts/CL_54.ont"));
 manager.applyChange(new AddImport(ontology, importDeclaration3));
-
-//manager.getIRIMappers().add(new SimpleIRIMapper(IRI.create("http://purl.obolibrary.org/obo/go.owl"),
- //      IRI.create("http://aber-owl.net/onts/GO_36.ont")));
-
 
 File fileformated = new File("efowithimports.owl");
 manager.saveOntology(ontology, IRI.create(fileformated.toURI()));
