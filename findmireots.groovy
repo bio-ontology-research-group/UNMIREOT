@@ -50,7 +50,7 @@ new HTTPBuilder('http://aber-owl.net/').get(path: 'service/api/getStatuses.groov
         try {
           ontology = manager.loadOntologyFromOntologyDocument(new IRIDocumentSource(IRI.create("http://localhost/rtestserv/ontology/"+name+"/download")), config);
         } catch(e) {
-          println "Unable to obtain " + name + ": " + e.getMessage()
+          println "Unable to load " + name
         }
 
         if(ontology && ontology.getImports().size() == 0) {
