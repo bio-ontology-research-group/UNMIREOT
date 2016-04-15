@@ -71,7 +71,4 @@ new HTTPBuilder('http://aber-owl.net/').get(path: 'service/api/getStatuses.groov
         } 
       }
     }
-
-    	// get the things from the uris
-	/**/
 }
