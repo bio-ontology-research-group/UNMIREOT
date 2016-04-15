@@ -50,7 +50,7 @@ new HTTPBuilder('http://aber-owl.net/').get(path: 'service/api/getStatuses.groov
         try {
           ontology = manager.loadOntologyFromOntologyDocument(new IRIDocumentSource(IRI.create("http://localhost/rtestserv/ontology/"+name+"/download")), config);
         } catch(e) {
-          println "Unable to obtain " + name
+          println "Unable to obtain " + name + ": " + e.getMessage()
         }
 
         if(ontology && ontology.getImports().size() == 0) {
@@ -66,7 +66,7 @@ new HTTPBuilder('http://aber-owl.net/').get(path: 'service/api/getStatuses.groov
           }
 
           if(refCount > 0) {
-            println name + " uses class references from " + refCount + " ontologies, but has no imports"
+            println name + " references classes from external ontologies " + refCount + " times, but has no imports"
           }
         } 
       }
