@@ -41,13 +41,9 @@ OWLOntology ontology
 OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
 OWLOntologyLoaderConfiguration config = new OWLOntologyLoaderConfiguration();
 
-//try {
-  config.setFollowRedirects(true);
-  config.setMissingImportHandlingStrategy(MissingImportHandlingStrategy.SILENT);
-  ontology = manager.loadOntologyFromOntologyDocument(new IRIDocumentSource(IRI.create(ontologyIRI)), config);
-//} catch(e) {
-//kk  println "Unable to load ontology: " + e.getMessage()
-//}
+config.setFollowRedirects(true);
+config.setMissingImportHandlingStrategy(MissingImportHandlingStrategy.SILENT);
+ontology = manager.loadOntologyFromOntologyDocument(new IRIDocumentSource(IRI.create(ontologyIRI)), config);
 
 println "[UNMIREOT] Finding missing ontology imports"
 
@@ -81,29 +77,42 @@ new HTTPBuilder('http://aber-owl.net/').get(path: 'service/api/getStatuses.groov
 
   println "[UNMIREOT] Creating new ontology with imports"
 
+  def added = []
+
   mireotOntologies.each {
+    println "[UNMIREOT] Adding " + it + " to ontology"
+
     OWLImportsDeclaration importDeclaration = manager.getOWLDataFactory().getOWLImportsDeclaration(IRI.create("http://aber-owl.net/ontology/"+it+"/download"));
     manager.applyChange(new AddImport(ontology, importDeclaration));
+
+    File fileFormated = new File("unmireot_test.ontology");
+    manager.saveOntology(ontology, IRI.create(fileFormated.toURI()));
+
+    // Load and reason the new ontology
+
+    added << it
+    println "[UNMIREOT] Loading new ontology with " + it
+
+    def newOntology
+    def newManager
+    try {
+      newManager = OWLManager.createOWLOntologyManager();
+      newOntology = newManager.loadOntologyFromOntologyDocument(new IRIDocumentSource(IRI.create("file:///home/reality/Projects/efotest/unmireot_test.ontology")), config);
+    } catch(e) {
+      println "[UNMIREOT] Unable to load ontology: " + e.getMessage()
+      println "[UNMIREOT] Removing "  + it + " from imports"
+
+      OWLImportsDeclaration removeImportDeclaration = manager.getOWLDataFactory().getOWLImportsDeclaration(IRI.create("http://aber-owl.net/ontology/"+it+"/download"));
+      manager.applyChange(new RemoveImport(ontology, removeImportDeclaration));
+
+      added.remove(it)
+      manager.saveOntology(ontology, IRI.create(fileFormated.toURI()));
+    }
   }
 
-  File fileFormated = new File("unmireot_test.ontology");
-  manager.saveOntology(ontology, IRI.create(fileFormated.toURI()));
-
-  // Load and reason the new ontology
-
-  println "[UNMIREOT] Loading new ontology"
-
-  def newOntology
-  def newManager
-  try {
-    newManager = OWLManager.createOWLOntologyManager();
-    newOntology = newManager.loadOntologyFromOntologyDocument(new IRIDocumentSource(IRI.create("file:///home/reality/Projects/efotest/unmireot_test.ontology")), config);
-  } catch(e) {
-    println "[UNMIREOT] Unable to load ontology: " + e.getMessage()
-  }
+  println "[UNMIREOT] Successfully loaded imports: " + added
 
   println "[UNMIREOT] Reasoning new ontology"
-
   ReasonerConfiguration eConf = ReasonerConfiguration.getConfiguration()
   eConf.setParameter(ReasonerConfiguration.NUM_OF_WORKING_THREADS, "8")
   eConf.setParameter(ReasonerConfiguration.INCREMENTAL_MODE_ALLOWED, "true")
