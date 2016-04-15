@@ -36,39 +36,73 @@ new File('oo.txt').eachLine { line ->
   onts << line
 }
 
+def oClasses = [:]
+def noImportOntologies = []
+def c = 0;
+
 new HTTPBuilder('http://aber-owl.net/').get(path: 'service/api/getStatuses.groovy') { resp, ontologies ->
 	def possibleMireotOntologies = []
 
     ontologies.each { name, status ->
+    c++
+    if(c > 20) {
+      return;
+    }
       if(status.status == 'classified') {
         def manager = OWLManager.createOWLOntologyManager();
         def config = new OWLOntologyLoaderConfiguration();
         config.setFollowRedirects(true);
         config.setMissingImportHandlingStrategy(MissingImportHandlingStrategy.SILENT);
 
+        println "[MIREOTFIND] Loading " + name
         def ontology
         try {
           ontology = manager.loadOntologyFromOntologyDocument(new IRIDocumentSource(IRI.create("http://localhost/rtestserv/ontology/"+name+"/download")), config);
         } catch(e) {
-          println "Unable to load " + name
+          println "[MIREOTFIND] Unable to load " + name
+          e.printStackTrace()
         }
 
-        if(ontology && ontology.getImports().size() == 0) {
+        if(ontology) {
+          if(ontology.getImports().size() == 0) {
+            noImportOntologies << name
+            println "[MIREOTFIND] " + name + " has no imports"
+          }
+          oClasses[name] = []
+          ontology.getClassesInSignature(true).each {
+            oClasses[name] << it.getIRI()
+          }
 
-          def refCount = 0
-          ontology.getClassesInSignature().each {
-            onts.each { oName ->
-              def m = it =~ oName
-              if(m && !(m[0] in ontologies) && (m[0] != name)) {
-                refCount++;
+          println "[MIREOTFIND] Found " + oClasses[name].size() + " classes in " + name
+        } 
+      }
+    }
+
+    println "[MIREOTFIND] Comparing classes"
+
+    ontologies.each { name, status ->
+      def uses = []
+      def refCount = 0
+
+      if(status.status == 'classified' && noImportOntologies.contains(name)) {
+        if(oClasses[name]) {
+          oClasses.each { oName, iris ->
+            if(oName != name) {
+              iris.each {
+                if(oClasses[name].contains(it)) {
+                  refCount++
+                  if(!uses.contains(oName)) {
+                    uses << oName
+                  }
+                }
               }
             }
           }
+        }
 
-          if(refCount > 0) {
-            println name + " references classes from external ontologies " + refCount + " times, but has no imports"
-          }
-        } 
+        if(refCount > 0) {
+          println "[MIREOTFIND] " + name + " has no imports and references classes " + refCount + " times from the following ontologies: " + uses
+        }
       }
     }
 }
