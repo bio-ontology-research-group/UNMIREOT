@@ -113,7 +113,7 @@ new HTTPBuilder('http://aber-owl.net/').get(path: 'service/api/getStatuses.groov
     OWLImportsDeclaration importDeclaration = manager.getOWLDataFactory().getOWLImportsDeclaration(IRI.create("http://aber-owl.net/ontology/"+it+"/download"));
     manager.applyChange(new AddImport(ontology, importDeclaration));
   }
-  manager.saveOntology(modOntology, IRI.create(fileFormated.toURI()));
+  manager.saveOntology(ontology, IRI.create(fileFormated.toURI()));
 
   def newManager = OWLManager.createOWLOntologyManager();
   def newOntology = newManager.loadOntologyFromOntologyDocument(new IRIDocumentSource(IRI.create("file:///home/reality/Projects/efotest/unmireot_test.ontology")), config);
