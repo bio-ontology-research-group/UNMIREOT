@@ -44,14 +44,10 @@ new HTTPBuilder('http://aber-owl.net/').get(path: 'service/api/getStatuses.groov
 	def possibleMireotOntologies = []
 
     ontologies.each { name, status ->
-    c++
-    if(c > 20) {
-      return;
-    }
       if(status.status == 'classified') {
         def manager = OWLManager.createOWLOntologyManager();
         def config = new OWLOntologyLoaderConfiguration();
-        config.setFollowRedirects(true);
+        config.setFollowRedirects(false);
         config.setMissingImportHandlingStrategy(MissingImportHandlingStrategy.SILENT);
 
         println "[MIREOTFIND] Loading " + name
@@ -69,7 +65,7 @@ new HTTPBuilder('http://aber-owl.net/').get(path: 'service/api/getStatuses.groov
             println "[MIREOTFIND] " + name + " has no imports"
           }
           oClasses[name] = []
-          ontology.getClassesInSignature(true).each {
+          ontology.getClassesInSignature(false).each {
             oClasses[name] << it.getIRI()
           }
 
@@ -78,6 +74,7 @@ new HTTPBuilder('http://aber-owl.net/').get(path: 'service/api/getStatuses.groov
       }
     }
 
+    println "[MIREOTFIND] Ontologies with no imports: " + noImportOntologies.size()
     println "[MIREOTFIND] Comparing classes"
 
     ontologies.each { name, status ->
@@ -85,6 +82,7 @@ new HTTPBuilder('http://aber-owl.net/').get(path: 'service/api/getStatuses.groov
       def refCount = 0
 
       if(status.status == 'classified' && noImportOntologies.contains(name)) {
+        println "[MIREOTFIND] Comparing classes for " + name
         if(oClasses[name]) {
           oClasses.each { oName, iris ->
             if(oName != name) {
