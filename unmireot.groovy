@@ -42,7 +42,7 @@ OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
 OWLOntologyLoaderConfiguration config = new OWLOntologyLoaderConfiguration();
 
 //try {
-  config.setFollowRedirects(false);
+  config.setFollowRedirects(true);
   config.setMissingImportHandlingStrategy(MissingImportHandlingStrategy.SILENT);
   ontology = manager.loadOntologyFromOntologyDocument(new IRIDocumentSource(IRI.create(ontologyIRI)), config);
 //} catch(e) {
@@ -70,7 +70,6 @@ ontology.getClassesInSignature().each {
 
 println "[UNMIREOT] The following ontologies are referenced: " + mireotOntologies
 
-println "[UNMIREOT] Creating new ontology with imports"
 
 new HTTPBuilder('http://aber-owl.net/').get(path: 'service/api/getStatuses.groovy') { resp, ontologies ->
 
@@ -79,6 +78,8 @@ new HTTPBuilder('http://aber-owl.net/').get(path: 'service/api/getStatuses.groov
   }
 
   println "[UNMIREOT] The following ontologies are referenced after removing dead ontologies: " + mireotOntologies
+
+  println "[UNMIREOT] Creating new ontology with imports"
 
   mireotOntologies.each {
     OWLImportsDeclaration importDeclaration = manager.getOWLDataFactory().getOWLImportsDeclaration(IRI.create("http://aber-owl.net/ontology/"+it+"/download"));
