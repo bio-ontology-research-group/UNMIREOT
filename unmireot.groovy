@@ -85,7 +85,7 @@ new HTTPBuilder('http://aber-owl.net/').get(path: 'service/api/getStatuses.groov
     OWLOntologyManager modManager = OWLManager.createOWLOntologyManager();
     modOntology = modManager.loadOntologyFromOntologyDocument(new IRIDocumentSource(IRI.create(ontologyIRI)), config);
 
-    OWLImportsDeclaration importDeclaration = modManager.getOWLDataFactory().getOWLImportsDeclaration(IRI.create("http://aber-owl.net/ontology/"+it+"/download"));
+    OWLImportsDeclaration importDeclaration = modManager.getOWLDataFactory().getOWLImportsDeclaration(IRI.create("http://localhost/rtestserv/ontology/"+it+"/download"));
     manager.applyChange(new AddImport(modOntology, importDeclaration));
 
     File fileFormated = new File("unmireot_test.ontology");
@@ -100,7 +100,7 @@ new HTTPBuilder('http://aber-owl.net/').get(path: 'service/api/getStatuses.groov
     def newManager
     try {
       newManager = OWLManager.createOWLOntologyManager();
-      newOntology = newManager.loadOntologyFromOntologyDocument(new IRIDocumentSource(IRI.create("file:///home/reality/Projects/efotest/unmireot_test.ontology")), config);
+      newOntology = newManager.loadOntologyFromOntologyDocument(new IRIDocumentSource(IRI.create("file:///home/aberowl/efotest/unmireot_test.ontology")), config);
 
       ReasonerConfiguration eConf = ReasonerConfiguration.getConfiguration()
       eConf.setParameter(ReasonerConfiguration.NUM_OF_WORKING_THREADS, "8")
@@ -114,7 +114,7 @@ new HTTPBuilder('http://aber-owl.net/').get(path: 'service/api/getStatuses.groov
       oReasoner.precomputeInferences(InferenceType.CLASS_HIERARCHY);
 
       println "[UNMIREOT] Unsatisfiable with " + it + " classes: " + oReasoner.getEquivalentClasses(manager.getOWLDataFactory().getOWLNothing()).getEntitiesMinusBottom().size()
-  for (OWLClass cl : newOntology.getClassesInSignature()) {
+  for (OWLClass cl : newOntology.getClassesInSignature(true)) {
     if(!oReasoner.isSatisfiable(cl)) {
       System.out.println("[UNMIREOT] Unsatisfiable class: " + cl.getIRI())
     }
@@ -140,7 +140,7 @@ new HTTPBuilder('http://aber-owl.net/').get(path: 'service/api/getStatuses.groov
   println "[UNMIREOT] Loading new ontology with imports"
 
   def newManager = OWLManager.createOWLOntologyManager();
-  def newOntology = newManager.loadOntologyFromOntologyDocument(new IRIDocumentSource(IRI.create("file:///home/reality/Projects/efotest/unmireot_test.ontology")), config);
+  def newOntology = newManager.loadOntologyFromOntologyDocument(new IRIDocumentSource(IRI.create("file:///home/aberowl/efotest/unmireot_test.ontology")), config);
 
   println "[UNMIREOT] Reasoning new ontology"
   ReasonerConfiguration eConf = ReasonerConfiguration.getConfiguration()
