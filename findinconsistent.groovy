@@ -32,26 +32,75 @@ import org.semanticweb.owlapi.manchestersyntax.renderer.*;
 import org.semanticweb.owlapi.reasoner.structural.*
 
 def ontologyIRI = args[0]
+def consistentOntologyFound = false
+def imports = ["http://aber-owl.net/ontology/MP/download",
+"http://aber-owl.net/ontology/MPATH/download",
+"http://aber-owl.net/ontology/ERO/download",
+"http://aber-owl.net/ontology/OGMS/download",
+"http://aber-owl.net/ontology/ATO/download",
+"http://aber-owl.net/ontology/BT/download",
+"http://aber-owl.net/ontology/MS/download",
+"http://aber-owl.net/ontology/PR/download",
+"http://aber-owl.net/ontology/FBbt/download",
+"http://aber-owl.net/ontology/IAO/download",
+"http://aber-owl.net/ontology/EO/download",
+"http://aber-owl.net/ontology/FO/download",
+"http://aber-owl.net/ontology/PATO/download",
+"http://aber-owl.net/ontology/GO/download",
+"http://aber-owl.net/ontology/SO/download",
+"http://aber-owl.net/ontology/DOID/download",
+"http://aber-owl.net/ontology/BTO/download",
+"http://aber-owl.net/ontology/HP/download",
+"http://aber-owl.net/ontology/ZEA/download",
+"http://aber-owl.net/ontology/ORDO/download",
+"http://aber-owl.net/ontology/CL/download",
+"http://aber-owl.net/ontology/PO/download",
+"http://aber-owl.net/ontology/OBI/download",
+"http://aber-owl.net/ontology/CHEBI/download",
+"http://aber-owl.net/ontology/UBERON/download"]
 
-println "[UNMIREOT] Loading ontology from " + ontologyIRI
+while(!consistentOntologyFound) {
+  consistentOntologyFound = true // not really, you know what i mean
 
-OWLOntology ontology
-OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
-OWLOntologyLoaderConfiguration config = new OWLOntologyLoaderConfiguration();
+  println "[UNMIREOT] Loading ontology from " + ontologyIRI
 
-config.setFollowRedirects(true);
-config.setMissingImportHandlingStrategy(MissingImportHandlingStrategy.SILENT);
-ontology = manager.loadOntologyFromOntologyDocument(new IRIDocumentSource(IRI.create(ontologyIRI)), config);
+  OWLOntology ontology
+  OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
+  OWLOntologyLoaderConfiguration config = new OWLOntologyLoaderConfiguration();
 
-ReasonerConfiguration eConf = ReasonerConfiguration.getConfiguration()
-eConf.setParameter(ReasonerConfiguration.NUM_OF_WORKING_THREADS, "8")
-eConf.setParameter(ReasonerConfiguration.INCREMENTAL_MODE_ALLOWED, "true")
-eConf.setParameter(ReasonerConfiguration.INCREMENTAL_TAXONOMY, "true")
+  config.setFollowRedirects(true);
+  config.setMissingImportHandlingStrategy(MissingImportHandlingStrategy.SILENT);
+  ontology = manager.loadOntologyFromOntologyDocument(new IRIDocumentSource(IRI.create(ontologyIRI)), config);
 
-OWLReasonerFactory reasonerFactory = new ElkReasonerFactory();
+  def success = true;
+  def oReasoner
+  try {
+    ReasonerConfiguration eConf = ReasonerConfiguration.getConfiguration()
+    eConf.setParameter(ReasonerConfiguration.NUM_OF_WORKING_THREADS, "24")
+    eConf.setParameter(ReasonerConfiguration.INCREMENTAL_MODE_ALLOWED, "true")
+    eConf.setParameter(ReasonerConfiguration.INCREMENTAL_TAXONOMY, "true")
 
-OWLReasonerConfiguration rConf = new ElkReasonerConfiguration(ElkReasonerConfiguration.getDefaultOwlReasonerConfiguration(new NullReasonerProgressMonitor()), eConf);
+    OWLReasonerFactory reasonerFactory = new ElkReasonerFactory();
 
-println "[UNMIREOT] Reasoning ontology with " + ontology.getImports().size() + " imports."
-OWLReasoner oReasoner = reasonerFactory.createReasoner(ontology, rConf);
-oReasoner.precomputeInferences(InferenceType.CLASS_HIERARCHY);
+    OWLReasonerConfiguration rConf = new ElkReasonerConfiguration(ElkReasonerConfiguration.getDefaultOwlReasonerConfiguration(new NullReasonerProgressMonitor()), eConf);
+
+    println "[UNMIREOT] Reasoning ontology with " + ontology.getImports().size() + " imports."
+    oReasoner = reasonerFactory.createReasoner(ontology, rConf);
+    oReasoner.precomputeInferences(InferenceType.CLASS_HIERARCHY);
+  } catch(e) {
+    println ontology.getDirectImports()[0].getOntologyID()
+    println "[UNMIREOT] Removing " + imports[0]
+
+    OWLImportsDeclaration importDeclaration = manager.getOWLDataFactory().getOWLImportsDeclaration(IRI.create(imports[0]));
+    manager.applyChange(new RemoveImport(ontology, importDeclaration));
+
+    File fileFormated = new File("unmireot_test.ontology");
+    manager.saveOntology(ontology, IRI.create(fileFormated.toURI()));
+
+    imports.remove(0)
+    consistentOntologyFound = false
+  }
+println "[UNMIREOT] Unsatisfiable classes: " + oReasoner.getEquivalentClasses(manager.getOWLDataFactory().getOWLNothing()).getEntitiesMinusBottom().size()
+}
+
+println "Success!"

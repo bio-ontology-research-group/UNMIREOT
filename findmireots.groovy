@@ -43,6 +43,7 @@ def c = 0;
 new HTTPBuilder('http://aber-owl.net/').get(path: 'service/api/getStatuses.groovy') { resp, ontologies ->
 	def possibleMireotOntologies = []
 
+    ontologies.remove('GAZ')
     ontologies.each { name, status ->
       if(status.status == 'classified') {
         def manager = OWLManager.createOWLOntologyManager();
@@ -73,6 +74,17 @@ new HTTPBuilder('http://aber-owl.net/').get(path: 'service/api/getStatuses.groov
         } 
       }
     }
+
+    println "[MIREOTFIND] Ontology count: " + ontologies.size()
+    println "[MIREOTFIND] Removing ontologies which are too large"
+    ontologies = ontologies.findAll { name, count -> 
+      if(oClasses[name]) {
+        return oClasses[name].size() < 100000 
+      } else {
+        return false 
+      }
+    }
+    println "[MIREOTFIND] New ontology count: " + ontologies.size()
 
     println "[MIREOTFIND] Ontologies with no imports: " + noImportOntologies.size()
     println "[MIREOTFIND] Comparing classes"
