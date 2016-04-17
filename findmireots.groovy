@@ -40,7 +40,7 @@ def oClasses = [:]
 def noImportOntologies = []
 def c = 0;
 
-new HTTPBuilder('http://aber-owl.net/').get(path: 'service/api/getStatuses.groovy') { resp, ontologies ->
+new HTTPBuilder('http://localhost/rtestserv/').get(path: 'service/api/getStatuses.groovy') { resp, ontologies ->
 	def possibleMireotOntologies = []
 
     ontologies.remove('GAZ')
