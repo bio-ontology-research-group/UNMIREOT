@@ -2,7 +2,9 @@
 
 All ontologies, including EFO, were the most recent versions available from AberOWL at 14:00 UTC 2016-04-22.
 
-Considering ELK results alone, the sum of unsatisfiable classes caused by individual imports into EFO is 2365. When all imports are considered, the ontology is inconsistent. After removing ERO as an import, the ontology becomes consistent, with a total number of 52540 unsatisfiable classes.
+The version of EFO used has 18,596 classes and 25,991 axioms.
+
+Considering ELK results alone, the sum of unsatisfiable classes caused by individual imports into EFO is 2,365. When all imports are considered, the ontology is inconsistent. After removing ERO as an import, the ontology becomes consistent, with a total number of 52,540 unsatisfiable classes.
 
 The only case, so far, in which a more expressive reasoner revealed additional unsatisfiable classes was OBI using HermiT, for which there were 3 more unsatisfiable classes.
 
@@ -21,9 +23,9 @@ This is the combination of EFO with all ontologies below, minus IDO, because thi
 
 ELK: *Inconsistent Ontology* TODO: Identify the axiom which causes inconsistency.
 
-After removal of ERO, the ontology is consistent.
+After removal of ERO, the ontology is consistent. This combined ontology has a total of xxx classes and yyy axioms.
 
-ELK: 52540 Unsatisfiable Classes
+ELK: 52,540 Unsatisfiable Classes
 
 ##ERO
 
