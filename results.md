@@ -1,6 +1,25 @@
 # EFO Combination Unsatisfiability Results Breakdown
 
-All ontologies, including EFO, were most recent versions available from AberOWL at 14:00 UTC 2016-04-2016.
+All ontologies, including EFO, were the most recent versions available from AberOWL at 14:00 UTC 2016-04-2016.
+
+Considering ELK results alone, the total number of unsatisfiable classes is 2365. However, the only case in which a more expressive reasoner revealed additional unsatisfiable classes was OBI using HermiT, for which there were 3 more unsatisfiable classes.
+
+I am currently awaiting results (or not, haha) from the following experiments, which originally timed out but were deemed 'interesting' and have been given extra time because there were unsatisfiable results revealed by ELK:
+
+* FBbt with HermiT
+* MP with FACT++
+* OBI with FACT++
+* HP with FACT++
+
+##All
+
+This is the combination of EFO with all ontologies below, minus IDO, because this is not loadable. 
+
+ELK: *Inconsistent Ontology* TODO: Identify the axiom which causes inconsistency.
+
+After removal of ERO, the ontology is consistent.
+
+ELK: 52540 Unsatisfiable Classes
 
 ##ERO
 
@@ -14,9 +33,9 @@ HermiT: 0 Unsatisfiable Classes
 
 ELK: 650 Unsatisfiable Classes
 
-FACT++: Inconsistent (Note: UBERON alone seems to be inconsistent also)
+FACT++: Inconsistent (Note: UBERON or one of its dependences considered alone seems to be inconsistent also)
 
-HermiT: Inconsistent (Note: UBERON alone seems to be inconsistent also)
+HermiT: Inconsistent (Note: UBERON or one of its dependencies considered alone seems to be inconsistent also)
 
 
 Inconsistency reason: Non-simple property '<http://purl.obolibrary.org/obo/BFO_0000051>' or its inverse appears in the cardinality restriction 'ObjectMaxCardinality(1 <http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org
