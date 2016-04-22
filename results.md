@@ -6,13 +6,12 @@ The version of EFO used has 18,596 classes and 25,991 axioms.
 
 Considering ELK results alone, the sum of unsatisfiable classes caused by individual imports into EFO is 2,365. When all imports are considered, the ontology is inconsistent. After removing ERO as an import, the ontology becomes consistent, with a total number of 52,540 unsatisfiable classes.
 
-The only case, so far, in which a more expressive reasoner revealed additional unsatisfiable classes was OBI using HermiT, for which there were 3 more unsatisfiable classes.
+The only case, so far, in which a more expressive reasoner revealed additional unsatisfiable classes was OBI, for which there were 3 more unsatisfiable classes.
 
 I am currently awaiting results (or not, haha) from the following experiments, which originally timed out but were deemed 'interesting' and have been given extra time because there were unsatisfiable results revealed by ELK:
 
 * FBbt with HermiT
 * MP with FACT++
-* OBI with FACT++
 * HP with FACT++
 
 Initially it seemed that the combination of EFO and UBERON classified with both of the more expressive reasoners (FACT++ and HermiT) caused an inconsistent ontology, however the same inconsistency can be reached by classifying UBERON alone. Do they know that their ontology is inconsistent??
@@ -132,9 +131,9 @@ HermiT: 150 Unsatisfiable Classes
 
 ELK: 138 Unsatisfiable Classes
 
-FACT++: Reasoner Timeout (Uncaught)
+FACT++: *141 Unsatisfiable Classes*
 
-HermiT: *141 Unsatisfiable Classes*
+HermiT: *141 Unsatisfiable Classes* (note this result was achieved much quicker than via FACT++)
 
 ##DOID
 
