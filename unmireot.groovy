@@ -68,12 +68,6 @@ println "[UNMIREOT] The following ontologies are referenced: " + mireotOntologie
 
 new HTTPBuilder('http://aber-owl.net/').get(path: 'service/api/getStatuses.groovy') { resp, ontologies ->
 
-  mireotOntologies = mireotOntologies.findAll {
-    return ontologies[it].status == 'classified';
-  }
-
-  println "[UNMIREOT] The following ontologies are referenced after removing dead ontologies: " + mireotOntologies
-
   println "[UNMIREOT] Creating new ontology with imports"
 
   def added = []
@@ -85,7 +79,7 @@ new HTTPBuilder('http://aber-owl.net/').get(path: 'service/api/getStatuses.groov
     OWLOntologyManager modManager = OWLManager.createOWLOntologyManager();
     modOntology = modManager.loadOntologyFromOntologyDocument(new IRIDocumentSource(IRI.create(ontologyIRI)), config);
 
-    OWLImportsDeclaration importDeclaration = modManager.getOWLDataFactory().getOWLImportsDeclaration(IRI.create("http://localhost/rtestserv/ontology/"+it+"/download"));
+    OWLImportsDeclaration importDeclaration = modManager.getOWLDataFactory().getOWLImportsDeclaration(IRI.create("http://aber-owl.net/ontology/"+it+"/download"));
     manager.applyChange(new AddImport(modOntology, importDeclaration));
 
     File fileFormated = new File("unmireot_test.ontology");

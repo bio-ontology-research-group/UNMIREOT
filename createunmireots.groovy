@@ -85,7 +85,7 @@ new HTTPBuilder('http://aber-owl.net/').get(path: 'service/api/getStatuses.groov
     OWLOntologyManager modManager = OWLManager.createOWLOntologyManager();
     modOntology = modManager.loadOntologyFromOntologyDocument(new IRIDocumentSource(IRI.create(ontologyIRI)), config);
 
-    OWLImportsDeclaration importDeclaration = modManager.getOWLDataFactory().getOWLImportsDeclaration(IRI.create("http://localhost/rtestserv/ontology/"+it+"/download"));
+    OWLImportsDeclaration importDeclaration = modManager.getOWLDataFactory().getOWLImportsDeclaration(IRI.create("http://aber-owl.net/ontology/"+it+"/download"));
     manager.applyChange(new AddImport(modOntology, importDeclaration));
     manager.applyChange(new AddImport(ontology, importDeclaration));
 
