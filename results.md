@@ -13,6 +13,8 @@ I am currently awaiting results (or not, haha) from the following experiments, w
 * OBI with FACT++
 * HP with FACT++
 
+Initially it seemed that the combination of EFO and UBERON classified with both of the more expressive reasoners (FACT++ and HermiT) caused an inconsistent ontology, however the same inconsistency can be reached by classifying UBERON alone. Do they know that their ontology is inconsistent??
+
 ##All
 
 This is the combination of EFO with all ontologies below, minus IDO, because this is not loadable. 
