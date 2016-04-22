@@ -48,9 +48,10 @@ HermiT: 0 Unsatisfiable Classes
 
 ##BTO
 
-FACT++: 0 Unsatisfiable Classes
 
 ELK: 0 Unsatisfiable Classes
+
+FACT++: 0 Unsatisfiable Classes
 
 HermiT: 0 Unsatisfiable Classes
 
