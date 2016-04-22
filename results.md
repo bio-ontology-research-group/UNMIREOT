@@ -1,4 +1,4 @@
-# EFO Combination Unsatisfiability Results Breakdown
+# EFO Combination Results Breakdown
 
 All ontologies, including EFO, were the most recent versions available from AberOWL at 14:00 UTC 2016-04-22.
 
