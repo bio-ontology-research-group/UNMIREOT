@@ -50,7 +50,7 @@ ontology = manager.loadOntologyFromOntologyDocument(new IRIDocumentSource(IRI.cr
 
 println "[UNMIREOT] Reasoning with JFact"
 
-OWLReasonerConfiguration rConf = new SimpleConfiguration(50000);
+OWLReasonerConfiguration rConf = new SimpleConfiguration();
 
 OWLReasoner oReasoner = new JFactFactory().createReasoner(ontology, rConf);
 oReasoner.precomputeInferences(InferenceType.CLASS_HIERARCHY);

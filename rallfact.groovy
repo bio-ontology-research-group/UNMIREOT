@@ -33,10 +33,19 @@ import org.semanticweb.elk.owlapi.ElkReasonerFactory;
 import org.semanticweb.elk.owlapi.ElkReasonerConfiguration
 import org.semanticweb.elk.reasoner.config.*
 
+def done = []
+new File('fact_done.txt').eachLine { line ->
+  done << line
+}
+
 new File('mods').eachFile() {
   it = it.toString()
   def ontologyIRI = "file:///home/aberowl/efotest/" + it
   def id = it.tokenize('.')[0].tokenize('/')[1] // lol
+
+  if(done.contains(id)) {
+    return
+  }
 
   println "[UNMIREOT]["+id+"] Loading ontology from " + ontologyIRI
 
@@ -49,7 +58,7 @@ new File('mods').eachFile() {
 
   try {
     ontology = manager.loadOntologyFromOntologyDocument(new IRIDocumentSource(IRI.create(ontologyIRI)));
-    if(id != 'EFO_MP' && id != 'EFO_OBI' && id != 'EFO_PR' && id != 'EFO_GO' && id != 'EFO_TO') {
+    if(id != 'EFO_MP' && id != 'EFO_OBI' && id != 'EFO_PR' && id != 'EFO_GO' && id != 'EFO_TO' && id != 'EFO_HP') {
       println "[UNMIREOT]["+id+"][FACT] Reasoning with JFact"
 
       OWLReasonerConfiguration rConf = new SimpleConfiguration(100000);

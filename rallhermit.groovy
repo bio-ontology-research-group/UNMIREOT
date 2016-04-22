@@ -32,21 +32,36 @@ import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.model.IRI;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyManager;
+def done = []
+new File('hermit_done.txt').eachLine { line ->
+  done << line
+}
+new File('mods').eachFile() {
+  it = it.toString()
+  def ontologyIRI = "file:///home/aberowl/efotest/" + it
+  def id = it.tokenize('.')[0].tokenize('/')[1] // lol
 
-def ontologyIRI = args[0]
+  if(done.contains(id)) {
+    return
+  }
+  // Load input ontology
 
-// Load input ontology
+  println "[UNMIREOT] Loading ontology from " + ontologyIRI
 
-println "[UNMIREOT] Loading ontology from " + ontologyIRI
+  try {
+    OWLOntology ontology
+    OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
+    OWLOntologyLoaderConfiguration config = new OWLOntologyLoaderConfiguration();
 
-OWLOntology ontology
-OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
-OWLOntologyLoaderConfiguration config = new OWLOntologyLoaderConfiguration();
+    ontology = manager.loadOntologyFromOntologyDocument(new IRIDocumentSource(IRI.create(ontologyIRI)));
 
-  ontology = manager.loadOntologyFromOntologyDocument(new IRIDocumentSource(IRI.create(ontologyIRI)));
+    println "[UNMIREOT][HermiT] Reasoning with HermiT"
+    OWLReasonerConfiguration rConf = new SimpleConfiguration(100000);
+    OWLReasoner oReasoner = new Reasoner.ReasonerFactory().createReasoner(ontology, rConf);
+    oReasoner.precomputeInferences(InferenceType.CLASS_HIERARCHY)
 
-  println "[UNMIREOT] Reasoning with HermiT"
-  OWLReasoner oReasoner = new Reasoner.ReasonerFactory().createReasoner(ontology);
-  oReasoner.precomputeInferences(InferenceType.CLASS_HIERARCHY);
-
-  println "[UNMIREOT][HermiT] Unsatisfiable classes: " + oReasoner.getEquivalentClasses(manager.getOWLDataFactory().getOWLNothing()).getEntitiesMinusBottom().size()
+    println "[UNMIREOT]["+id+"][HermiT] Unsatisfiable classes: " + oReasoner.getEquivalentClasses(manager.getOWLDataFactory().getOWLNothing()).getEntitiesMinusBottom().size()
+  } catch(e) {
+    println "[UNMIREOT]["+id+"] Unable to load ontology. Reason: " + e.getMessage().tokenize('\n')[0]
+  }
+}
