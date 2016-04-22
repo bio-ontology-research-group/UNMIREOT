@@ -1,0 +1,127 @@
+[UNMIREOT][EFO_ERO] Loading ontology from file:///home/aberowl/efotest/mods/EFO_ERO.ontology
+[UNMIREOT][EFO_ERO][FACT] Reasoning with JFact
+[UNMIREOT][EFO_ERO][FACT] Unsatisfiable classes: 0
+[UNMIREOT][EFO_ERO][ELK] Reasoning with ELK
+[UNMIREOT][EFO_ERO][ELK] Unsatisfiable classes: 0
+[UNMIREOT][EFO_FBbt] Loading ontology from file:///home/aberowl/efotest/mods/EFO_FBbt.ontology
+[UNMIREOT][EFO_FBbt][FACT] Reasoning with JFact
+[UNMIREOT][EFO_FBbt][FACT] Unable to reason with FACT. Reason: TimeOutException - Timeout occurred while reasoning!
+[UNMIREOT][EFO_FBbt][ELK] Reasoning with ELK
+[UNMIREOT][EFO_FBbt][ELK] Unsatisfiable classes: 0
+[UNMIREOT][EFO_SO] Loading ontology from file:///home/aberowl/efotest/mods/EFO_SO.ontology
+[UNMIREOT][EFO_SO][FACT] Reasoning with JFact
+[UNMIREOT][EFO_SO][FACT] Unsatisfiable classes: 0
+[UNMIREOT][EFO_SO][ELK] Reasoning with ELK
+[UNMIREOT][EFO_SO][ELK] Unsatisfiable classes: 0
+[UNMIREOT][EFO_OGMS] Loading ontology from file:///home/aberowl/efotest/mods/EFO_OGMS.ontology
+[UNMIREOT][EFO_OGMS][FACT] Reasoning with JFact
+[UNMIREOT][EFO_OGMS][FACT] Unsatisfiable classes: 0
+[UNMIREOT][EFO_OGMS][ELK] Reasoning with ELK
+[UNMIREOT][EFO_OGMS][ELK] Unsatisfiable classes: 0
+[UNMIREOT][EFO_ORDO] Loading ontology from file:///home/aberowl/efotest/mods/EFO_ORDO.ontology
+[UNMIREOT][EFO_ORDO][FACT] Reasoning with JFact
+[UNMIREOT][EFO_ORDO][FACT] Unsatisfiable classes: 0
+[UNMIREOT][EFO_ORDO][ELK] Reasoning with ELK
+[UNMIREOT][EFO_ORDO][ELK] Unsatisfiable classes: 0
+[UNMIREOT][EFO_ZEA] Loading ontology from file:///home/aberowl/efotest/mods/EFO_ZEA.ontology
+[UNMIREOT][EFO_ZEA][FACT] Reasoning with JFact
+[UNMIREOT][EFO_ZEA][FACT] Unsatisfiable classes: 0
+[UNMIREOT][EFO_ZEA][ELK] Reasoning with ELK
+[UNMIREOT][EFO_ZEA][ELK] Unsatisfiable classes: 0
+[UNMIREOT][EFO_MP] Loading ontology from file:///home/aberowl/efotest/mods/EFO_MP.ontology
+[UNMIREOT][EFO_MP][FACT] Unable to reason with FACT. Reason: Uncatchable timeout.
+[UNMIREOT][EFO_MP][ELK] Reasoning with ELK
+[UNMIREOT][EFO_MP][ELK] Unsatisfiable classes: 728
+[UNMIREOT][EFO_IAO] Loading ontology from file:///home/aberowl/efotest/mods/EFO_IAO.ontology
+[UNMIREOT][EFO_IAO][FACT] Reasoning with JFact
+[UNMIREOT][EFO_IAO][FACT] Unsatisfiable classes: 0
+[UNMIREOT][EFO_IAO][ELK] Reasoning with ELK
+[UNMIREOT][EFO_IAO][ELK] Unsatisfiable classes: 0
+[UNMIREOT][EFO_EO] Loading ontology from file:///home/aberowl/efotest/mods/EFO_EO.ontology
+[UNMIREOT][EFO_EO][FACT] Reasoning with JFact
+[UNMIREOT][EFO_EO][FACT] Unsatisfiable classes: 0
+[UNMIREOT][EFO_EO][ELK] Reasoning with ELK
+[UNMIREOT][EFO_EO][ELK] Unsatisfiable classes: 0
+[UNMIREOT][EFO_CL] Loading ontology from file:///home/aberowl/efotest/mods/EFO_CL.ontology
+[UNMIREOT][EFO_CL][FACT] Reasoning with JFact
+[UNMIREOT][EFO_CL][FACT] Unable to reason with FACT. Reason: TimeOutException - Timeout occurred while reasoning!
+[UNMIREOT][EFO_CL][ELK] Reasoning with ELK
+[UNMIREOT][EFO_CL][ELK] Unsatisfiable classes: 191
+[UNMIREOT][EFO_PO] Loading ontology from file:///home/aberowl/efotest/mods/EFO_PO.ontology
+[UNMIREOT][EFO_PO][FACT] Reasoning with JFact
+[UNMIREOT][EFO_PO][FACT] Unsatisfiable classes: 30
+[UNMIREOT][EFO_PO][ELK] Reasoning with ELK
+[UNMIREOT][EFO_PO][ELK] Unsatisfiable classes: 30
+[UNMIREOT][EFO_OBI] Loading ontology from file:///home/aberowl/efotest/mods/EFO_OBI.ontology
+[UNMIREOT][EFO_OBI][FACT] Unable to reason with FACT. Reason: Uncatchable timeout.
+[UNMIREOT][EFO_OBI][ELK] Reasoning with ELK
+[UNMIREOT][EFO_OBI][ELK] Unsatisfiable classes: 138
+[UNMIREOT][EFO_BTO] Loading ontology from file:///home/aberowl/efotest/mods/EFO_BTO.ontology
+[UNMIREOT][EFO_BTO][FACT] Reasoning with JFact
+[UNMIREOT][EFO_BTO][FACT] Unsatisfiable classes: 0
+[UNMIREOT][EFO_BTO][ELK] Reasoning with ELK
+[UNMIREOT][EFO_BTO][ELK] Unsatisfiable classes: 0
+[UNMIREOT][EFO_PR] Loading ontology from file:///home/aberowl/efotest/mods/EFO_PR.ontology
+[UNMIREOT][EFO_PR][FACT] Unable to reason with FACT. Reason: Uncatchable timeout.
+[UNMIREOT][EFO_PR][ELK] Reasoning with ELK
+[UNMIREOT][EFO_PR][ELK] Unsatisfiable classes: 0
+[UNMIREOT][EFO_MPATH] Loading ontology from file:///home/aberowl/efotest/mods/EFO_MPATH.ontology
+[UNMIREOT][EFO_MPATH][FACT] Reasoning with JFact
+[UNMIREOT][EFO_MPATH][FACT] Unsatisfiable classes: 0
+[UNMIREOT][EFO_MPATH][ELK] Reasoning with ELK
+[UNMIREOT][EFO_MPATH][ELK] Unsatisfiable classes: 0
+[UNMIREOT][EFO_ATO] Loading ontology from file:///home/aberowl/efotest/mods/EFO_ATO.ontology
+[UNMIREOT][EFO_ATO][FACT] Reasoning with JFact
+[UNMIREOT][EFO_ATO][FACT] Unsatisfiable classes: 0
+[UNMIREOT][EFO_ATO][ELK] Reasoning with ELK
+[UNMIREOT][EFO_ATO][ELK] Unsatisfiable classes: 0
+[UNMIREOT][EFO_AO] Loading ontology from file:///home/aberowl/efotest/mods/EFO_AO.ontology
+[UNMIREOT][EFO_AO][FACT] Reasoning with JFact
+[UNMIREOT][EFO_AO][FACT] Unsatisfiable classes: 0
+[UNMIREOT][EFO_AO][ELK] Reasoning with ELK
+[UNMIREOT][EFO_AO][ELK] Unsatisfiable classes: 0
+[UNMIREOT][EFO_PATO] Loading ontology from file:///home/aberowl/efotest/mods/EFO_PATO.ontology
+[UNMIREOT][EFO_PATO][FACT] Reasoning with JFact
+[UNMIREOT][EFO_PATO][FACT] Unsatisfiable classes: 0
+[UNMIREOT][EFO_PATO][ELK] Reasoning with ELK
+[UNMIREOT][EFO_PATO][ELK] Unsatisfiable classes: 0
+[UNMIREOT][EFO_UBERON] Loading ontology from file:///home/aberowl/efotest/mods/EFO_UBERON.ontology
+[UNMIREOT][EFO_UBERON][FACT] Reasoning with JFact
+[UNMIREOT][EFO_UBERON][FACT] Unable to reason with FACT. Reason: ReasonerInternalException - Non simple role used as simple: http://purl.obolibrary.org/obo/BFO_0000051
+[UNMIREOT][EFO_UBERON][ELK] Reasoning with ELK
+[UNMIREOT][EFO_UBERON][ELK] Unsatisfiable classes: 650
+[UNMIREOT][EFO_FO] Loading ontology from file:///home/aberowl/efotest/mods/EFO_FO.ontology
+[UNMIREOT][EFO_FO][FACT] Reasoning with JFact
+[UNMIREOT][EFO_FO][FACT] Unsatisfiable classes: 0
+[UNMIREOT][EFO_FO][ELK] Reasoning with ELK
+[UNMIREOT][EFO_FO][ELK] Unsatisfiable classes: 0
+[UNMIREOT][EFO_BT] Loading ontology from file:///home/aberowl/efotest/mods/EFO_BT.ontology
+[UNMIREOT][EFO_BT][FACT] Reasoning with JFact
+[UNMIREOT][EFO_BT][FACT] Unsatisfiable classes: 0
+[UNMIREOT][EFO_BT][ELK] Reasoning with ELK
+[UNMIREOT][EFO_BT][ELK] Unsatisfiable classes: 0
+[UNMIREOT][EFO_CHEBI] Loading ontology from file:///home/aberowl/efotest/mods/EFO_CHEBI.ontology
+[UNMIREOT][EFO_CHEBI][FACT] Reasoning with JFact
+[UNMIREOT][EFO_CHEBI][FACT] Unsatisfiable classes: 0
+[UNMIREOT][EFO_CHEBI][ELK] Reasoning with ELK
+[UNMIREOT][EFO_CHEBI][ELK] Unsatisfiable classes: 0
+[UNMIREOT][EFO_GO] Loading ontology from file:///home/aberowl/efotest/mods/EFO_GO.ontology
+[UNMIREOT][EFO_GO][FACT] Unable to reason with FACT. Reason: Uncatchable timeout.
+[UNMIREOT][EFO_GO][ELK] Reasoning with ELK
+[UNMIREOT][EFO_GO][ELK] Unsatisfiable classes: 0
+[UNMIREOT][EFO_TO] Loading ontology from file:///home/aberowl/efotest/mods/EFO_TO.ontology
+[UNMIREOT][EFO_TO][FACT] Unable to reason with FACT. Reason: Uncatchable timeout.
+[UNMIREOT][EFO_TO][ELK] Reasoning with ELK
+[UNMIREOT][EFO_TO][ELK] Unsatisfiable classes: 1
+[UNMIREOT][EFO_DOID] Loading ontology from file:///home/aberowl/efotest/mods/EFO_DOID.ontology
+[UNMIREOT][EFO_DOID][FACT] Reasoning with JFact
+[UNMIREOT][EFO_DOID][FACT] Unsatisfiable classes: 0
+[UNMIREOT][EFO_DOID][ELK] Reasoning with ELK
+[UNMIREOT][EFO_DOID][ELK] Unsatisfiable classes: 0
+[UNMIREOT][EFO_IDO] Loading ontology from file:///home/aberowl/efotest/mods/EFO_IDO.ontology
+[UNMIREOT][EFO_IDO] Unable to load ontology. Reason: Could not load imported ontology: <http://www.obofoundry.org/ro/ro.owl> Cause: http://www.obofoundry.org/ro/ro.owl
+[UNMIREOT][EFO_MS] Loading ontology from file:///home/aberowl/efotest/mods/EFO_MS.ontology
+[UNMIREOT][EFO_MS][FACT] Reasoning with JFact
+[UNMIREOT][EFO_MS][FACT] Unsatisfiable classes: 0
+[UNMIREOT][EFO_MS][ELK] Reasoning with ELK
+[UNMIREOT][EFO_MS][ELK] Unsatisfiable classes: 0

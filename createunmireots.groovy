@@ -68,12 +68,6 @@ println "[UNMIREOT] The following ontologies are referenced: " + mireotOntologie
 
 new HTTPBuilder('http://aber-owl.net/').get(path: 'service/api/getStatuses.groovy') { resp, ontologies ->
 
-  mireotOntologies = mireotOntologies.findAll {
-    return ontologies[it].status == 'classified';
-  }
-
-  println "[CREATEUNMIREOT] The following ontologies are referenced after removing dead ontologies: " + mireotOntologies
-
   println "[CREATEUNMIREOT] Creating new ontology with imports"
 
   def added = []
@@ -89,12 +83,12 @@ new HTTPBuilder('http://aber-owl.net/').get(path: 'service/api/getStatuses.groov
     manager.applyChange(new AddImport(modOntology, importDeclaration));
     manager.applyChange(new AddImport(ontology, importDeclaration));
 
-    File fileFormated = new File("mods/EFO_"+it+".ontology");
+    File fileFormated = new File("new_mods/EFO_"+it+".ontology");
     manager.saveOntology(modOntology, IRI.create(fileFormated.toURI()));
     println "[CREATEUNMIREOT] Saved EFO with " + it
   }
 
-  File fileFormated = new File("mods/EFO_all.ontology");
+  File fileFormated = new File("new_mods/EFO_all.ontology");
   manager.saveOntology(ontology, IRI.create(fileFormated.toURI()));
   println "[CREATEUNMIREOT] Saved EFO with all"
 }

@@ -56,23 +56,3 @@ OWLReasoner oReasoner = new JFactFactory().createReasoner(ontology, rConf);
 oReasoner.precomputeInferences(InferenceType.CLASS_HIERARCHY);
 
 println "[UNMIREOT] Unsatisfiable classes: " + oReasoner.getEquivalentClasses(manager.getOWLDataFactory().getOWLNothing()).getEntitiesMinusBottom().size()
-/*for(OWLClass cl : ontology.getClassesInSignature(true)) {
-  if(!oReasoner.isSatisfiable(cl)) {
-    System.out.println("Unsatisfiable: " + cl.getIRI())
-  }
-}*/
-
-println "[UNMIREOT] Reasoning with ELK"
-
-ReasonerConfiguration eConf = ReasonerConfiguration.getConfiguration()
-eConf.setParameter(ReasonerConfiguration.NUM_OF_WORKING_THREADS, "8")
-eConf.setParameter(ReasonerConfiguration.INCREMENTAL_MODE_ALLOWED, "true")
-eConf.setParameter(ReasonerConfiguration.INCREMENTAL_TAXONOMY, "true")
-
-OWLReasonerFactory reasonerFactory = new ElkReasonerFactory();
-
-OWLReasonerConfiguration erConf = new ElkReasonerConfiguration(ElkReasonerConfiguration.getDefaultOwlReasonerConfiguration(new NullReasonerProgressMonitor()), eConf);
-OWLReasoner eoReasoner = reasonerFactory.createReasoner(ontology, erConf);
-eoReasoner.precomputeInferences(InferenceType.CLASS_HIERARCHY);
-
-println "[UNMIREOT] Unsatisfiable classes: " + eoReasoner.getEquivalentClasses(manager.getOWLDataFactory().getOWLNothing()).getEntitiesMinusBottom().size()

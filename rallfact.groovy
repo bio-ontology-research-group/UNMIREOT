@@ -49,18 +49,21 @@ new File('mods').eachFile() {
 
   try {
     ontology = manager.loadOntologyFromOntologyDocument(new IRIDocumentSource(IRI.create(ontologyIRI)));
+    if(id != 'EFO_MP' && id != 'EFO_OBI' && id != 'EFO_PR' && id != 'EFO_GO' && id != 'EFO_TO') {
+      println "[UNMIREOT]["+id+"][FACT] Reasoning with JFact"
 
-    println "[UNMIREOT]["+id+"][FACT] Reasoning with JFact"
+      OWLReasonerConfiguration rConf = new SimpleConfiguration(100000);
+      
+      try {
+        OWLReasoner oReasoner = new JFactFactory().createReasoner(ontology, rConf);
+        oReasoner.precomputeInferences(InferenceType.CLASS_HIERARCHY);
 
-    OWLReasonerConfiguration rConf = new SimpleConfiguration(100000);
-    
-    try {
-      OWLReasoner oReasoner = new JFactFactory().createReasoner(ontology, rConf);
-      oReasoner.precomputeInferences(InferenceType.CLASS_HIERARCHY);
-
-      println "[UNMIREOT]["+id+"][FACT] Unsatisfiable classes: " + oReasoner.getEquivalentClasses(manager.getOWLDataFactory().getOWLNothing()).getEntitiesMinusBottom().size()
-    } catch(e) {
-      println "[UNMIREOT]["+id+"][FACT] Unable to reason with FACT. Reason: " + e.getClass().getSimpleName() + ' - ' + e.getMessage()
+        println "[UNMIREOT]["+id+"][FACT] Unsatisfiable classes: " + oReasoner.getEquivalentClasses(manager.getOWLDataFactory().getOWLNothing()).getEntitiesMinusBottom().size()
+      } catch(e) {
+        println "[UNMIREOT]["+id+"][FACT] Unable to reason with FACT. Reason: " + e.getClass().getSimpleName() + ' - ' + e.getMessage()
+      }
+    } else {
+      println "[UNMIREOT]["+id+"][FACT] Unable to reason with FACT. Reason: Uncatchable timeout."
     }
 
     println "[UNMIREOT]["+id+"][ELK] Reasoning with ELK"
