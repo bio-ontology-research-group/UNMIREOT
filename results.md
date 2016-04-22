@@ -1,6 +1,6 @@
 # EFO Combination Unsatisfiability Results Breakdown
 
-All ontologies, including EFO, were the most recent versions available from AberOWL at 14:00 UTC 2016-04-2016.
+All ontologies, including EFO, were the most recent versions available from AberOWL at 14:00 UTC 2016-04-22.
 
 Considering ELK results alone, the total number of unsatisfiable classes is 2365. However, the only case in which a more expressive reasoner revealed additional unsatisfiable classes was OBI using HermiT, for which there were 3 more unsatisfiable classes.
 
