@@ -23,7 +23,7 @@ This is the combination of EFO with all ontologies below, minus IDO, because thi
 
 ELK: *Inconsistent Ontology* TODO: Identify the axiom which causes inconsistency.
 
-After removal of ERO, the ontology is consistent. This combined ontology has a total of xxx classes and yyy axioms.
+After removal of ERO, the ontology is consistent. This combined ontology has a total of 297,591 classes and 25,991 axioms (the axiom count cannot be right!).
 
 ELK: 52,540 Unsatisfiable Classes
 
