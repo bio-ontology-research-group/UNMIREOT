@@ -137,7 +137,7 @@ FACT++: *141 Unsatisfiable Classes*
 
 HermiT: *141 Unsatisfiable Classes* (note this result was achieved much quicker than via FACT++, but still very slowly)
 
-The three extra classes which became unsatisfiable are: 
+The three extra classes which became unsatisfiable with the more expressive reasoners are: 
 * http://purl.obolibrary.org/obo/OBI_0100010 
 * http://purl.obolibrary.org/obo/OBI_0001946
 * http://purl.obolibrary.org/obo/OBI_0001951
