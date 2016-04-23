@@ -1,25 +1,34 @@
-# EFO Combination Unsatisfiability Results Breakdown
+# EFO Combination Results Breakdown
 
-All ontologies, including EFO, were the most recent versions available from AberOWL at 14:00 UTC 2016-04-2016.
+All ontologies, including EFO, were the most recent versions available from AberOWL at 14:00 UTC 2016-04-22.
 
-Considering ELK results alone, the total number of unsatisfiable classes is 2365. However, the only case in which a more expressive reasoner revealed additional unsatisfiable classes was OBI using HermiT, for which there were 3 more unsatisfiable classes.
+The version of EFO used has 18,596 classes and 25,991 axioms.
 
-I am currently awaiting results (or not, haha) from the following experiments, which originally timed out but were deemed 'interesting' and have been given extra time because there were unsatisfiable results revealed by ELK:
+Considering ELK results alone, the sum of unsatisfiable classes caused by individual imports into EFO is 2,365. When all imports are considered, the ontology is inconsistent. After removing ERO as an import, the ontology becomes consistent, with a total number of 52,540 unsatisfiable classes.
+
+The only case, so far, in which a more expressive reasoner revealed additional unsatisfiable classes was OBI, for which there were 3 more unsatisfiable classes.
+
+I am currently awaiting results (or not, haha) from the following experiments, which originally timed out but were deemed 'interesting' because there were unsatisfiable results revealed by ELK, so have been given extra time:
 
 * FBbt with HermiT
 * MP with FACT++
-* OBI with FACT++
 * HP with FACT++
+
+Initially it seemed that the combination of EFO and UBERON classified with both of the more expressive reasoners (FACT++ and HermiT) caused an inconsistent ontology, however the same inconsistency can be reached by classifying UBERON alone. Do they know that their ontology is inconsistent??
 
 ##All
 
 This is the combination of EFO with all ontologies below, minus IDO, because this is not loadable. 
 
-ELK: *Inconsistent Ontology* TODO: Identify the axiom which causes inconsistency.
+ELK: *Inconsistent Ontology*
 
-After removal of ERO, the ontology is consistent.
+Loading the inconsistent ontology in Protege to discover the source of the inconsistency required the removal of ZEA as an import because of an import renaming issue Protege wasn't able to sort out. Classifying the combined ontology in Protege using ELK confirmed the inconsistency, and the explanation tool revealed 21 axioms causing inconsistency before it ran out of RAM to continue, but the theme seems to be ObsoleteProperty, sampled in the following immage:
 
-ELK: 52540 Unsatisfiable Classes
+![inconsistencies](https://alsuti.xyz/NkON5amgb.png "EFO_ALL Inconsistencies")
+
+After removal of ERO, the ontology is consistent (this version also includes ZEA). This combined ontology has a total of 297,591 classes and 199,587 axioms.
+
+ELK: 52,540 Unsatisfiable Classes
 
 ##ERO
 
@@ -126,9 +135,15 @@ HermiT: 150 Unsatisfiable Classes
 
 ELK: 138 Unsatisfiable Classes
 
-FACT++: Reasoner Timeout (Uncaught)
+FACT++: *141 Unsatisfiable Classes*
 
-HermiT: *141 Unsatisfiable Classes*
+HermiT: *141 Unsatisfiable Classes* (note this result was achieved much quicker than via FACT++, but still very slowly)
+
+The three extra classes which became unsatisfiable with the more expressive reasoners are: 
+* http://purl.obolibrary.org/obo/OBI_0100010 
+* http://purl.obolibrary.org/obo/OBI_0001946
+* http://purl.obolibrary.org/obo/OBI_0001951
+
 
 ##DOID
 
