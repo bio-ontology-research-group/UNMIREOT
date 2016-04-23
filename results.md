@@ -48,6 +48,8 @@ Using http://purl.obolibrary.org/obo/uberon/basic.obo (Basic axiom version of UB
 
 ELK: 205 Unsatisfiable Classes
 
+HermiT: 205 Unsatisfiable Classes
+
 ##CL
 
 ELK: 191 Unsatisfiable Classes
