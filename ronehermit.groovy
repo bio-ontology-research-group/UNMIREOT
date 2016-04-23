@@ -48,5 +48,9 @@ OWLOntologyLoaderConfiguration config = new OWLOntologyLoaderConfiguration();
   println "[UNMIREOT] Reasoning with HermiT"
   OWLReasoner oReasoner = new Reasoner.ReasonerFactory().createReasoner(ontology);
   oReasoner.precomputeInferences(InferenceType.CLASS_HIERARCHY);
+  def unsatisfiable = oReasoner.getEquivalentClasses(manager.getOWLDataFactory().getOWLNothing()).getEntitiesMinusBottom()
+  println "[UNMIREOT][HermiT] Unsatisfiable classes: " + unsatisfiable.size()
+  unsatisfiable.each {
+    println it.getIRI()
+  }
 
-  println "[UNMIREOT][HermiT] Unsatisfiable classes: " + oReasoner.getEquivalentClasses(manager.getOWLDataFactory().getOWLNothing()).getEntitiesMinusBottom().size()
