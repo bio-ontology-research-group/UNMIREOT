@@ -22,7 +22,9 @@ This is the combination of EFO with all ontologies below, minus IDO, because thi
 
 ELK: *Inconsistent Ontology*
 
-Loading the inconsistent ontology in Protege to discover the source of the inconsistency required the removal of ZEA as an import because of an import renaming issue Protege wasn't able to sort out. Classifying the combined ontology in Protege using ELK confirmed the inconsistency, and the explanation tool revealed 2 axioms causing the inconsistency:
+Loading the inconsistent ontology in Protege to discover the source of the inconsistency required the removal of ZEA as an import because of an import renaming issue Protege wasn't able to sort out. Classifying the combined ontology in Protege using ELK confirmed the inconsistency, and the explanation tool revealed 21 axioms causing inconsistency before it ran out of RAM to continue, but the theme seems to be ObsoleteProperty, sampled in the following immage:
+
+![inconsistencies](https://alsuti.xyz/NkON5amgb.png "EFO_ALL Inconsistencies")
 
 After removal of ERO, the ontology is consistent (this version also includes ZEA). This combined ontology has a total of 297,591 classes and 199,587 axioms.
 
