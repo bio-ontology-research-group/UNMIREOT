@@ -14,8 +14,6 @@ I am currently awaiting results (or not, haha) from the following experiments, w
 * MP with FACT++
 * HP with FACT++
 
-Initially it seemed that the combination of EFO and UBERON classified with both of the more expressive reasoners (FACT++ and HermiT) caused an inconsistent ontology, however the same inconsistency can be reached by classifying UBERON alone. Do they know that their ontology is inconsistent??
-
 ##All
 
 This is the combination of EFO with all ontologies below, minus IDO, because this is not loadable. 
@@ -42,13 +40,13 @@ HermiT: 0 Unsatisfiable Classes
 
 ELK: 650 Unsatisfiable Classes
 
-FACT++: Inconsistent (Note: UBERON or one of its dependences considered alone seems to be inconsistent also)
+FACT++: Unable to classify (OWL-Full)
 
-HermiT: Inconsistent (Note: UBERON or one of its dependencies considered alone seems to be inconsistent also)
+HermiT: Unable to classify (OWL-Full)
 
+Using http://purl.obolibrary.org/obo/uberon/basic.obo (Basic axiom version of UBERON)
 
-Inconsistency reason: Non-simple property '<http://purl.obolibrary.org/obo/BFO_0000051>' or its inverse appears in the cardinality restriction 'ObjectMaxCardinality(1 <http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org
-/obo/UBERON_0000473>)'.
+ELK: 205 Unsatisfiable Classes
 
 ##CL
 
@@ -87,7 +85,7 @@ HermiT: 0 Unsatisfiable Classes
 
 ELK: 5 Unsatisfiable Classes
 
-FACT++: Reasoner Timeout (Uncaught)
+FACT++: 5 Unsatisfiable Classes
 
 HermiT: Unable to load ontology (OWLAPI3)
 

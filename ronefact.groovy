@@ -54,5 +54,8 @@ OWLReasonerConfiguration rConf = new SimpleConfiguration();
 
 OWLReasoner oReasoner = new JFactFactory().createReasoner(ontology, rConf);
 oReasoner.precomputeInferences(InferenceType.CLASS_HIERARCHY);
-
-println "[UNMIREOT] Unsatisfiable classes: " + oReasoner.getEquivalentClasses(manager.getOWLDataFactory().getOWLNothing()).getEntitiesMinusBottom().size()
+def unsatisfiable = oReasoner.getEquivalentClasses(manager.getOWLDataFactory().getOWLNothing()).getEntitiesMinusBottom()
+println "[UNMIREOT] Unsatisfiable classes: " + unsatisfiable.size()
+unsatisfiable.each {
+  println it
+}
