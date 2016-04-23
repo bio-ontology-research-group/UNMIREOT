@@ -8,7 +8,7 @@ Considering ELK results alone, the sum of unsatisfiable classes caused by indivi
 
 The only case, so far, in which a more expressive reasoner revealed additional unsatisfiable classes was OBI, for which there were 3 more unsatisfiable classes.
 
-I am currently awaiting results (or not, haha) from the following experiments, which originally timed out but were deemed 'interesting' and have been given extra time because there were unsatisfiable results revealed by ELK:
+I am currently awaiting results (or not, haha) from the following experiments, which originally timed out but were deemed 'interesting' because there were unsatisfiable results revealed by ELK, so have been given extra time:
 
 * FBbt with HermiT
 * MP with FACT++
@@ -20,9 +20,11 @@ Initially it seemed that the combination of EFO and UBERON classified with both 
 
 This is the combination of EFO with all ontologies below, minus IDO, because this is not loadable. 
 
-ELK: *Inconsistent Ontology* TODO: Identify the axiom which causes inconsistency.
+ELK: *Inconsistent Ontology*
 
-After removal of ERO, the ontology is consistent. This combined ontology has a total of 297,591 classes and 199,587 axioms (the axiom count cannot be right!).
+Loading the inconsistent ontology in Protege to discover the source of the inconsistency required the removal of ZEA as an import because of an import renaming issue Protege wasn't able to sort out. Classifying the combined ontology in Protege using ELK confirmed the inconsistency, and the explanation tool revealed 2 axioms causing the inconsistency:
+
+After removal of ERO, the ontology is consistent (this version also includes ZEA). This combined ontology has a total of 297,591 classes and 199,587 axioms.
 
 ELK: 52,540 Unsatisfiable Classes
 
@@ -133,7 +135,13 @@ ELK: 138 Unsatisfiable Classes
 
 FACT++: *141 Unsatisfiable Classes*
 
-HermiT: *141 Unsatisfiable Classes* (note this result was achieved much quicker than via FACT++)
+HermiT: *141 Unsatisfiable Classes* (note this result was achieved much quicker than via FACT++, but still very slowly)
+
+The three extra classes which became unsatisfiable are: 
+* http://purl.obolibrary.org/obo/OBI_0100010 
+* http://purl.obolibrary.org/obo/OBI_0001946
+* http://purl.obolibrary.org/obo/OBI_0001951
+
 
 ##DOID
 
