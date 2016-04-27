@@ -70,4 +70,10 @@ println "[UNMIREOT] Loading ontology from " + ontologyIRI
 
     unsatisfiable.each {
       println it.getIRI()
+      for(OWLAnnotation a : EntitySearcher.getAnnotations(it, ontology, manager.getOWLDataFactory().getRDFSLabel())) {
+        def v = a.getLiteral()
+        if(v instanceof OWLLiteral) {
+          println "  Label: " + v.getLiteral()
+        }
+      }
     }
