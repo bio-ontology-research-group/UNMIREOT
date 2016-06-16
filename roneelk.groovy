@@ -65,15 +65,10 @@ println "[UNMIREOT] Loading ontology from " + ontologyIRI
     OWLReasonerConfiguration erConf = new ElkReasonerConfiguration(ElkReasonerConfiguration.getDefaultOwlReasonerConfiguration(new NullReasonerProgressMonitor()), eConf);
     OWLReasoner eoReasoner = reasonerFactory.createReasoner(ontology, erConf);
     eoReasoner.precomputeInferences(InferenceType.CLASS_HIERARCHY);
-    def unsatisfiable = eoReasoner.getEquivalentClasses(manager.getOWLDataFactory().getOWLNothing()).getEntitiesMinusBottom()
-    println "[UNMIREOT][ELK] Unsatisfiable classes: " + unsatisfiable.size()
+    
+def unsatisfiable = eoReasoner.getEquivalentClasses(manager.getOWLDataFactory().getOWLNothing()).getEntitiesMinusBottom()
+  println "[UNMIREOT][OBI] Unsatisfiable classes: " + unsatisfiable.size()
+  unsatisfiable.each {
+    println it.getIRI()
+  }
 
-    unsatisfiable.each {
-      println it.getIRI()
-      for(OWLAnnotation a : EntitySearcher.getAnnotations(it, ontology, manager.getOWLDataFactory().getRDFSLabel())) {
-        def v = a.getLiteral()
-        if(v instanceof OWLLiteral) {
-          println "  Label: " + v.getLiteral()
-        }
-      }
-    }

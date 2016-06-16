@@ -31,86 +31,34 @@ import org.semanticweb.owlapi.search.*;
 import org.semanticweb.owlapi.manchestersyntax.renderer.*;
 import org.semanticweb.owlapi.reasoner.structural.*
 
-def onts = []
-new File('oo.txt').eachLine { line ->
-  onts << line
-}
+new HTTPBuilder('http://aber-owl.net/').get(path: 'service/api/getStatuses.groovy') { resp, ontologies ->
+	def nboabo = []
 
-def oClasses = [:]
-def noImportOntologies = []
-def c = 0;
-
-new HTTPBuilder('http://localhost/rtestserv/').get(path: 'service/api/getStatuses.groovy') { resp, ontologies ->
-	def possibleMireotOntologies = []
-
-    ontologies.remove('GAZ')
     ontologies.each { name, status ->
       def manager = OWLManager.createOWLOntologyManager();
       def config = new OWLOntologyLoaderConfiguration();
       config.setFollowRedirects(false);
       config.setMissingImportHandlingStrategy(MissingImportHandlingStrategy.SILENT);
 
-      println "[MIREOTFIND] Loading " + name
       def ontology
       try {
-        ontology = manager.loadOntologyFromOntologyDocument(new IRIDocumentSource(IRI.create("http://localhost/rtestserv/ontology/"+name+"/download")), config);
+        println "[BOFIND] Loading " + name
+        ontology = manager.loadOntologyFromOntologyDocument(new IRIDocumentSource(IRI.create("http://aber-owl.net/ontology/"+name+"/download")), config);
       } catch(e) {
-        println "[MIREOTFIND] Unable to load " + name
+        println "[BOFIND] Unable to load " + name
         e.printStackTrace()
       }
 
       if(ontology) {
-        if(ontology.getImports().size() == 0) {
-          noImportOntologies << name
-          println "[MIREOTFIND] " + name + " has no imports"
-        }
-        oClasses[name] = []
         ontology.getClassesInSignature(false).each {
-          oClasses[name] << it.getIRI()
-        }
-
-        println "[MIREOTFIND] Found " + oClasses[name].size() + " classes in " + name
-      } 
-    }
-
-    println "[MIREOTFIND] Ontology count: " + ontologies.size()
-    println "[MIREOTFIND] Removing ontologies which are too large"
-    ontologies = ontologies.findAll { name, count -> 
-      if(oClasses[name]) {
-        return oClasses[name].size() < 100000 
-      } else {
-        return false 
-      }
-    }
-    println "[MIREOTFIND] New ontology count: " + ontologies.size()
-
-    println "[MIREOTFIND] Ontologies with no imports: " + noImportOntologies.size()
-    println "[MIREOTFIND] Comparing classes"
-
-    ontologies.each { name, status ->
-      def uses = []
-      def refCount = 0
-
-      if(noImportOntologies.contains(name)) {
-        println "[MIREOTFIND] Comparing classes for " + name
-        if(oClasses[name]) {
-          oClasses.each { oName, iris ->
-            if(oName != name) {
-              iris.each {
-                if(oClasses[name].contains(it)) {
-                  refCount++
-                  if(!uses.contains(oName)) {
-                    uses << oName
-                  }
-                }
-              }
-            }
+          if(it.getIRI().toString().contains('ABO_')) {
+            nboabo << name
+            println '[BOFIND] ' + name + ' uses ABO'
+          } else if (it.getIRI().toString().contains('NBO_')) {
+            println '[BOFIND] ' + name + ' uses NBO'
+            nboabo << name
           }
         }
-
-        if(refCount > 0) {
-          println "[MIREOTFIND] " + name + " has no imports and references classes " + refCount + " times from the following ontologies: " + uses
-        }
-      }
+      } 
     }
 }
