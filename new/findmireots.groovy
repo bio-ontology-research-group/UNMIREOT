@@ -42,8 +42,8 @@ new HTTPBuilder('http://localhost/rtestserv/').get(path: 'service/api/getStatuse
     ontologies.remove('GAZ')
     def r = 0;
     ontologies.each { name, status ->
-    /*if(r>20){
-    return}*/
+    if(r>20){
+    return}
     r++
 
       def manager = OWLManager.createOWLOntologyManager();
@@ -66,7 +66,7 @@ new HTTPBuilder('http://localhost/rtestserv/').get(path: 'service/api/getStatuse
         }
         oClasses[name] = []
         ontology.getClassesInSignature(false).each {
-          oClasses[name] << it.getIRI()
+          oClasses[name] << it.getIRI().toString()
         }
         println "[MIREOTFIND] Found " + oClasses[name].size() + " classes in " + name
       } 
@@ -80,33 +80,33 @@ new HTTPBuilder('http://localhost/rtestserv/').get(path: 'service/api/getStatuse
     def patterns = new JsonSlurper().parseText(new File("ontology_iri_patterns.json").text)
     def uses = [:]
 
-    ontologies.each { name, status ->
-      println "[MIREOTFIND] Comparing classes for " + name
+    //oClasses is a map of ontologies, the value of which is a list of their iris
 
+    oClasses.each { name, classIRIs ->
       uses[name] = []
+      refCount = 0
 
-      if(noImportOntologies.contains(name)) {
-        def refCount = 0
-        oClasses.each { n, iriList ->
-        
-          iriList.each { iri ->
-
-            patterns.each { oOnt, oIriPattern ->
-              if(iri.toString().contains(oIriPattern) && oOnt != name) {
-                uses[name] << oOnt
-                refCount++
-              }
-            }
-          }
+      classIRIs.each { iri ->
+        patterns.each { oName, classIRIPattern ->
+          
+          if(iri.contains(classIRIPattern) && name != oName) {
+              uses[name] << oName
+              refCount++
         }
+
         uses[name] = uses[name].unique { a, b -> a <=> b }
 
-        if(refCount > 0) {
-          println "[MIREOTFIND] " + name + " has no imports and references classes " + refCount + " times from: " + uses[name]
-        } else {
-          println "[MIREOTFIND] " + name + " has no imports but defines all its own classes"
-        }
+        
       }
+        
+    }
+
+    
+if(refCount > 0) {
+      println "[MIREOTFIND] " + name + " has no imports and references classes " + refCount + " times from: " + uses[name]
+    } else {
+      println "[MIREOTFIND] " + name + " has no imports but defines all its own classes"
+    }
+    }
   }
 
-}
