@@ -42,8 +42,8 @@ new HTTPBuilder('http://localhost/rtestserv/').get(path: 'service/api/getStatuse
     ontologies.remove('GAZ')
     def r = 0;
     ontologies.each { name, status ->
-    if(r>20){
-    return}
+    /*if(r>20){
+    return}*/
     r++
 
       def manager = OWLManager.createOWLOntologyManager();
