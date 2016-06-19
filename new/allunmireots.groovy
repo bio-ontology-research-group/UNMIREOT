@@ -32,10 +32,16 @@ import org.semanticweb.owlapi.manchestersyntax.renderer.*;
 import org.semanticweb.owlapi.reasoner.structural.*
 import groovy.json.*
 
+def mireots = new JsonSlurper().parseText(new File("mireot_results.json").text)
+def c = 0
+mireots.each { name, imports ->
+  println "Running UNMIREOT on " + name
+  def results = run(name)
+  println "Saving results for " + name
+  new File("results/"+name+'.json') << new JsonBuilder(results).toPrettyString()
+}
 
-public class Unmireot {
-static public def run(oName) {
-  def oName = args[0]
+def run(oName) {
   def results = [:]
 
   // Load input ontology
@@ -77,7 +83,7 @@ static public def run(oName) {
       println "[UNMIREOT] Unable to load " + it + " with " + oName 
       println "[UNMIREOT] Removing "  + it + " from imports"
       added.remove(it)
-      results[oName] = 'Unloadable'
+      results[it] = 'Unloadable'
     }
 
     // Load and reason the new ontology
@@ -100,11 +106,13 @@ static public def run(oName) {
       oReasoner.precomputeInferences(InferenceType.CLASS_HIERARCHY);
 
       println "[UNMIREOT] Reasoned " + oName + " and " + it + ", resulting in " + oReasoner.getEquivalentClasses(manager.getOWLDataFactory().getOWLNothing()).getEntitiesMinusBottom().size() + " unsatisfiable classes"
+      results[it] = oReasoner.getEquivalentClasses(manager.getOWLDataFactory().getOWLNothing()).getEntitiesMinusBottom().size() + " unsatisfiable classes"
+
     } catch(e) {
       println "[UNMIREOT] Unable to load ontology with " + it
       println "[UNMIREOT] Removing "  + it + " from imports"
       added.remove(it)
-      results[oName] = 'Inconsistent'
+      results[it] = 'Inconsistent'
     }
   }
 
@@ -158,5 +166,4 @@ static public def run(oName) {
   }
 
   return results
-}
 }

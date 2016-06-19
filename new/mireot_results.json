@@ -1,0 +1,889 @@
+{
+  "AEO": [
+    "EHDAA2",
+    "CARO",
+    "ZFA",
+    "FB-BT",
+    "FBBT"
+  ],
+  "AI-RHEUM": [
+    "STY"
+  ],
+  "APO": [
+    "YPO"
+  ],
+  "BAO": [
+    "NIGO",
+    "BAO-GPCR",
+    "PATO",
+    "CHEBI",
+    "DOID"
+  ],
+  "BAO-GPCR": [
+    "NIGO"
+  ],
+  "BCO": [
+    "BFO",
+    "CHEBI",
+    "PATO",
+    "MIRNAO",
+    "MIXS",
+    "CARO"
+  ],
+  "BCTEO": [
+    "CANONT",
+    "IDQA"
+  ],
+  "BDO": [
+    "NCIT"
+  ],
+  "BHO": [
+    "GBM"
+  ],
+  "BIOMO": [
+    "SIO"
+  ],
+  "BMT": [
+    "EDAM"
+  ],
+  "BSPO": [
+    "CARO"
+  ],
+  "CANONT": [
+    "BCTEO",
+    "IDQA"
+  ],
+  "CCO": [
+    "RETO",
+    "NIGO",
+    "MI",
+    "NCBITAXON"
+  ],
+  "CCON": [
+    "ENVO"
+  ],
+  "CCONT": [
+    "EFO",
+    "CHEBI"
+  ],
+  "CEPH": [
+    "NIGO",
+    "NCBITAXON"
+  ],
+  "CHD": [
+    "NGSONTO"
+  ],
+  "CHEMBIO": [
+    "BP"
+  ],
+  "CHEMINF": [
+    "NIGO",
+    "CHEBI"
+  ],
+  "CHMO": [
+    "FIX",
+    "BFO",
+    "CHEBI",
+    "MS"
+  ],
+  "CL": [
+    "NIGO",
+    "NCBITAXON",
+    "PATO",
+    "CHEBI"
+  ],
+  "CNO_ACRONYM": [
+    "SBO",
+    "CNO"
+  ],
+  "COSTART": [
+    "STY"
+  ],
+  "CRISP": [
+    "STY"
+  ],
+  "CSEO": [
+    "NCIT",
+    "MO",
+    "UO",
+    "EXO",
+    "PATO"
+  ],
+  "CSO": [
+    "OFSMR"
+  ],
+  "CTENO": [
+    "NIGO",
+    "CHEBI"
+  ],
+  "CTO": [
+    "PHYLONT"
+  ],
+  "DDO": [
+    "DOID",
+    "UO",
+    "BFO"
+  ],
+  "DERMLEX": [
+    "ADW"
+  ],
+  "DERMO": [
+    "BCTEO",
+    "CANONT",
+    "IDQA"
+  ],
+  "DIAB": [
+    "HP"
+  ],
+  "DIAGONT": [
+    "NONRCTO"
+  ],
+  "DIDEO": [
+    "CHEBI",
+    "OAE",
+    "STATO",
+    "UO",
+    "NIGO",
+    "DRON",
+    "BFO",
+    "EFO",
+    "NCBITAXON"
+  ],
+  "DINTO": [
+    "CHEBI"
+  ],
+  "DPO": [
+    "FBCV",
+    "NIGO",
+    "BFO",
+    "PATO",
+    "CARO",
+    "FB-DV",
+    "FBDV",
+    "FB-BT",
+    "FBBT"
+  ],
+  "ECO": [
+    "BCTEO",
+    "CANONT",
+    "IDQA"
+  ],
+  "ECP": [
+    "STY"
+  ],
+  "EDAMTO": [
+    "EDAM"
+  ],
+  "EFO": [
+    "CHEBI",
+    "NCBITAXON",
+    "HP",
+    "NIGO",
+    "PATO",
+    "BTO",
+    "GRO",
+    "GRO-CPGA",
+    "PO",
+    "MIRNAO",
+    "MPATH",
+    "DOID",
+    "UO",
+    "FB-BT",
+    "FBBT",
+    "PECO",
+    "ZEA",
+    "FB-DV",
+    "FBDV"
+  ],
+  "EHDAA2": [
+    "CARO",
+    "FB-BT",
+    "FBBT",
+    "ZFA"
+  ],
+  "EMO": [
+    "CHEBI"
+  ],
+  "EO": [
+    "BFO"
+  ],
+  "EPO": [
+    "PTRANS",
+    "TRANS",
+    "PATO"
+  ],
+  "ERO": [
+    "NCBITAXON",
+    "PATO",
+    "MIRNAO",
+    "VIVO",
+    "VIVO-ISF",
+    "EDAM",
+    "SWO",
+    "NIGO"
+  ],
+  "FB-BT": [
+    "FBBT"
+  ],
+  "FB-CV": [
+    "FBCV"
+  ],
+  "FB-DV": [
+    "FBDV"
+  ],
+  "FB-SP": [
+    "FBSP"
+  ],
+  "FBBI": [
+    "FBbi"
+  ],
+  "FBBT": [
+    "FB-BT",
+    "NIGO",
+    "PATO",
+    "MIRNAO"
+  ],
+  "FBCV": [
+    "CHEBI",
+    "NIGO",
+    "PATO",
+    "FB-BT",
+    "FBBT",
+    "FB-DV",
+    "FBDV",
+    "CARO",
+    "BFO"
+  ],
+  "FBDV": [
+    "FB-DV",
+    "NIGO",
+    "BFO"
+  ],
+  "FBbi": [
+    "FBBI"
+  ],
+  "FIRE": [
+    "CCON"
+  ],
+  "FLOPO": [
+    "NPHO"
+  ],
+  "FTC": [
+    "NIGO",
+    "SCHEMA",
+    "CHEBI"
+  ],
+  "FYPO": [
+    "NIGO",
+    "CHEBI",
+    "MIRNAO",
+    "PATO",
+    "BTO"
+  ],
+  "GBM": [
+    "BHO",
+    "OFSMR"
+  ],
+  "GEO": [
+    "BFO",
+    "PATO",
+    "UO"
+  ],
+  "GEXO": [
+    "RETO",
+    "NIGO",
+    "MI",
+    "NCBITAXON"
+  ],
+  "GFO": [
+    "GFO-BIO"
+  ],
+  "GLYCORDF": [
+    "MS"
+  ],
+  "GO": [
+    "NIGO"
+  ],
+  "GO-EXT": [
+    "NIGO"
+  ],
+  "GO-PLUS": [
+    "NIGO",
+    "NCBITAXON",
+    "CHEBI",
+    "PATO",
+    "GRO",
+    "GRO-CPGA",
+    "PO",
+    "MIRNAO"
+  ],
+  "GPML": [
+    "BP"
+  ],
+  "GRO-CPGA": [
+    "GRO",
+    "PO"
+  ],
+  "HCPCS": [
+    "STY"
+  ],
+  "HINO": [
+    "CHEBI",
+    "NIGO",
+    "INO",
+    "BFO",
+    "MI",
+    "NCBITAXON",
+    "MIRNAO"
+  ],
+  "HUPSON": [
+    "CHEBI",
+    "BAO-GPCR",
+    "NCIT",
+    "UO",
+    "EFO",
+    "SIO",
+    "NCBITAXON",
+    "ECG",
+    "BP",
+    "SEP",
+    "GFO-BIO",
+    "ACGT-MO",
+    "NPO",
+    "BT"
+  ],
+  "ICD10CM": [
+    "STY"
+  ],
+  "ICD10PCS": [
+    "STY"
+  ],
+  "ICD9CM": [
+    "STY"
+  ],
+  "ICO": [
+    "NCBITAXON",
+    "PATO",
+    "NCIT",
+    "UO",
+    "CHEBI",
+    "BFO",
+    "NIGO",
+    "CARO",
+    "OAE"
+  ],
+  "ICPC": [
+    "STY"
+  ],
+  "IDODEN": [
+    "NCBITAXON",
+    "IDOMAL",
+    "NIGO",
+    "MIRO",
+    "CHEBI",
+    "ENVO",
+    "VO",
+    "CARO",
+    "FB-BT",
+    "FBBT",
+    "MIRNAO",
+    "HP",
+    "NPO",
+    "EFO"
+  ],
+  "IDOMAL": [
+    "MIRO",
+    "CHEBI",
+    "NCBITAXON",
+    "NIGO",
+    "VO",
+    "ENVO",
+    "CARO",
+    "PATO"
+  ],
+  "IDQA": [
+    "BCTEO",
+    "CANONT"
+  ],
+  "IFAR": [
+    "NCIT",
+    "HP"
+  ],
+  "INO": [
+    "MI",
+    "NIGO",
+    "BFO",
+    "MIRNAO"
+  ],
+  "IXNO": [
+    "NIGO"
+  ],
+  "LHN": [
+    "NIGO",
+    "LOGGERHEAD"
+  ],
+  "LOINC": [
+    "STY"
+  ],
+  "LPT": [
+    "BCTEO",
+    "CANONT",
+    "IDQA"
+  ],
+  "MAT": [
+    "XAO",
+    "ZFA",
+    "EMAPA",
+    "TAO",
+    "GRO",
+    "GRO-CPGA",
+    "PO",
+    "WB-BT",
+    "WBBT",
+    "EHDAA",
+    "FB-BT",
+    "FBBT",
+    "MA",
+    "TADS",
+    "TGMA",
+    "DDANAT",
+    "FAO",
+    "GRO-CPD",
+    "FB-DV",
+    "FBDV",
+    "ZEA",
+    "NIGO"
+  ],
+  "MEDLINEPLUS": [
+    "STY"
+  ],
+  "MESH": [
+    "STY"
+  ],
+  "MF": [
+    "BFO",
+    "NIGO",
+    "NBO"
+  ],
+  "MFOEM": [
+    "NIGO",
+    "NBO",
+    "BFO"
+  ],
+  "MIRNAO": [
+    "NCBITAXON",
+    "BFO",
+    "CHEBI",
+    "NIGO",
+    "NCIT",
+    "RNAO"
+  ],
+  "MIRO": [
+    "NCBITAXON",
+    "NIGO"
+  ],
+  "MOD": [
+    "PSIMOD"
+  ],
+  "MOP": [
+    "CHEBI",
+    "BFO"
+  ],
+  "MRO": [
+    "NCBITAXON",
+    "NIGO",
+    "MIRNAO",
+    "ECO",
+    "BFO"
+  ],
+  "MSTDE": [
+    "STY"
+  ],
+  "MSTDE-FRE": [
+    "STY"
+  ],
+  "NATPRO": [
+    "BT"
+  ],
+  "NBO": [
+    "NIGO",
+    "PATO"
+  ],
+  "NCRO": [
+    "MIRNAO",
+    "CHEBI",
+    "NIGO",
+    "BFO",
+    "DOID"
+  ],
+  "NGSONTO": [
+    "EDAM",
+    "NCBITAXON",
+    "MIRNAO"
+  ],
+  "NIDM-RESULTS": [
+    "PROVO",
+    "STATO",
+    "NGSONTO"
+  ],
+  "NIFCELL": [
+    "NIFSUBCELL"
+  ],
+  "NIFSUBCELL": [
+    "NIFCELL"
+  ],
+  "NMOBR": [
+    "INSECTH",
+    "NCBITAXON"
+  ],
+  "NMOSP": [
+    "NCBITAXON",
+    "RS",
+    "FBCV"
+  ],
+  "NMR": [
+    "BFO",
+    "PATO"
+  ],
+  "NPHO": [
+    "PATO",
+    "GRO",
+    "GRO-CPGA",
+    "PO"
+  ],
+  "OBCS": [
+    "BFO",
+    "MIRNAO",
+    "PATO",
+    "NCBITAXON",
+    "CHEBI",
+    "UO",
+    "NIGO"
+  ],
+  "OBI": [
+    "NIGO",
+    "CHEBI",
+    "BFO",
+    "NCBITAXON",
+    "PATO",
+    "MIRNAO",
+    "CARO",
+    "UO",
+    "ENVO",
+    "VO",
+    "HP"
+  ],
+  "OBIB": [
+    "BFO",
+    "PATO",
+    "CHEBI",
+    "GEO",
+    "NCBITAXON",
+    "EFO",
+    "VIVO",
+    "VIVO-ISF",
+    "CARO",
+    "ICO",
+    "UO",
+    "NIGO"
+  ],
+  "OBIWS": [
+    "NCBITAXON",
+    "CHEBI",
+    "BFO",
+    "MIRNAO"
+  ],
+  "OBI_BCGO": [
+    "EFO",
+    "CHEBI",
+    "MIRNAO",
+    "NIGO",
+    "BFO",
+    "PATO",
+    "BTO",
+    "UO",
+    "NCBITAXON",
+    "ENVO",
+    "RS",
+    "NBO",
+    "CARO",
+    "VT"
+  ],
+  "ODNAE": [
+    "DRON",
+    "OAE",
+    "NIGO",
+    "CHEBI",
+    "NCBITAXON",
+    "PATO",
+    "BFO"
+  ],
+  "OGDI": [
+    "OGR"
+  ],
+  "OGI": [
+    "NIGO",
+    "MIRNAO",
+    "CHEBI",
+    "BFO"
+  ],
+  "OGMS": [
+    "BFO"
+  ],
+  "OGSF": [
+    "VO",
+    "OGI",
+    "PATO",
+    "BFO",
+    "NCBITAXON",
+    "MIRNAO",
+    "CHEBI",
+    "NIGO",
+    "OAE"
+  ],
+  "OMIM": [
+    "STY"
+  ],
+  "OMIT": [
+    "NIGO",
+    "MOD",
+    "PSIMOD",
+    "DOID",
+    "MIRNAO",
+    "NCBITAXON",
+    "BFO",
+    "CHEBI"
+  ],
+  "ONTODM-CORE": [
+    "ONTODT"
+  ],
+  "ONTODM-KDD": [
+    "ONTODM-CORE",
+    "ONTODT"
+  ],
+  "ONTODT": [
+    "ONTODM-CORE"
+  ],
+  "OPL": [
+    "NCBITAXON",
+    "CARO",
+    "IDOMAL"
+  ],
+  "ORTH": [
+    "SIO"
+  ],
+  "PAE": [
+    "GRO",
+    "GRO-CPGA",
+    "PO"
+  ],
+  "PAV": [
+    "PROVO"
+  ],
+  "PCO": [
+    "NIGO",
+    "CARO",
+    "PATO",
+    "NCBITAXON"
+  ],
+  "PDO_CAS": [
+    "MIXS"
+  ],
+  "PDQ": [
+    "STY"
+  ],
+  "PE": [
+    "RAO"
+  ],
+  "PEAO": [
+    "MS",
+    "PECO",
+    "PP",
+    "EDAM",
+    "GRO",
+    "GRO-CPGA",
+    "PO"
+  ],
+  "PHAGE": [
+    "PHYLONT"
+  ],
+  "PO": [
+    "GRO",
+    "GRO-CPGA"
+  ],
+  "PORO": [
+    "CHEBI",
+    "NIGO",
+    "BFO",
+    "PATO",
+    "CARO"
+  ],
+  "PP": [
+    "EDAM"
+  ],
+  "PR": [
+    "NCBITAXON",
+    "NIGO",
+    "MOD",
+    "PSIMOD",
+    "CHEBI",
+    "BFO",
+    "MIRNAO"
+  ],
+  "PSDS": [
+    "GRO",
+    "GRO-CPGA",
+    "PO"
+  ],
+  "PSIMOD": [
+    "MOD"
+  ],
+  "PTO": [
+    "TO"
+  ],
+  "PTRANS": [
+    "TRANS"
+  ],
+  "PXO": [
+    "NCBITAXON",
+    "NIGO",
+    "MIRNAO",
+    "CHEBI",
+    "PATO",
+    "REX",
+    "AMINO-ACID"
+  ],
+  "RAO": [
+    "PE"
+  ],
+  "RETO": [
+    "NIGO",
+    "MI",
+    "NCBITAXON"
+  ],
+  "REXO": [
+    "RETO",
+    "NIGO",
+    "MI",
+    "NCBITAXON"
+  ],
+  "RNAO": [
+    "CHEBI"
+  ],
+  "ROO": [
+    "NCIT",
+    "UO"
+  ],
+  "RXNO": [
+    "CHEBI",
+    "MOP",
+    "BFO"
+  ],
+  "RXNORM": [
+    "STY"
+  ],
+  "SBOL": [
+    "MIRNAO"
+  ],
+  "SDO": [
+    "UNITSONT",
+    "BT"
+  ],
+  "SNMI": [
+    "STY"
+  ],
+  "SO": [
+    "MIRNAO"
+  ],
+  "SP": [
+    "CHEBI",
+    "EFO",
+    "BTO",
+    "GRO",
+    "GRO-CPGA",
+    "PO",
+    "NCIT",
+    "MO",
+    "NPO",
+    "NCBITAXON",
+    "SIO"
+  ],
+  "STATO": [
+    "BFO",
+    "NCBITAXON",
+    "NIGO",
+    "CHEBI",
+    "UO",
+    "CARO",
+    "MIRNAO"
+  ],
+  "SURGICAL": [
+    "PHYLONT"
+  ],
+  "SWO": [
+    "EDAM",
+    "ONTODM-CORE",
+    "ONTODM-KDD"
+  ],
+  "SYN": [
+    "NCIT"
+  ],
+  "TAO": [
+    "NIGO",
+    "CARO",
+    "PATO",
+    "VSAO"
+  ],
+  "TRANS": [
+    "PTRANS"
+  ],
+  "TYPON": [
+    "MIRNAO",
+    "ENVO",
+    "BFO"
+  ],
+  "UO": [
+    "PATO"
+  ],
+  "VANDF": [
+    "STY"
+  ],
+  "VIVO": [
+    "VIVO-ISF"
+  ],
+  "VIVO-ISF": [
+    "VIVO",
+    "BFO",
+    "UO"
+  ],
+  "VSAO": [
+    "CARO",
+    "NIGO",
+    "PATO"
+  ],
+  "WB-BT": [
+    "WBBT"
+  ],
+  "WB-LS": [
+    "WBLS"
+  ],
+  "WB-PHENOTYPE": [
+    "WBPHENOTYPE"
+  ],
+  "WIKIPATHWAYS": [
+    "SCHEMA",
+    "BP",
+    "GPML"
+  ],
+  "ZFA": [
+    "ZFS"
+  ],
+  "suicideo": [
+    "NCIT",
+    "ICNP2015",
+    "LOINC",
+    "EFO",
+    "HP",
+    "NBO"
+  ]
+}

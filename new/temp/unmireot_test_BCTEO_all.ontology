@@ -1,0 +1,1892 @@
+format-version: 1.2
+auto-generated-by: OBO-Edit 2.2
+default-namespace: bcteo
+import: http://localhost/rtestserv/ontology/CANONT/download
+ontology: TEMP
+
+[Term]
+id: ID:0000000
+name: Cell seeding
+def: "Phase in which cells are loaded onto a carrier, substrate or threedimensional material." []
+is_a: ID:0000023 ! In vitro study
+
+[Term]
+id: ID:0000001
+name: Cell expansion
+def: "Experimental phase aimed to amplify the number of cell in culture, through their doubling." []
+is_a: ID:0000023 ! In vitro study
+
+[Term]
+id: ID:0000002
+name: Scaffold property
+def: "Property that is typical of a specific scaffold, depending not only on the material but even on the shape, the size, the structure etc." []
+relationship: characterizes ID:0000035 ! Biomaterial
+
+[Term]
+id: ID:0000003
+name: Cell
+namespace: caro
+def: "Anatomical structure that has as its parts a maximally connected cell compartment surrounded by a plasma membrane." [CARO:0000013]
+relationship: intervenes_in ID:0000000 ! Cell seeding
+relationship: intervenes_in ID:0000001 ! Cell expansion
+relationship: intervenes_in ID:0000028 ! Implant
+relationship: part_of ID:0000008 ! Primary cell culture
+relationship: part_of ID:0000020 ! Cell line
+
+[Term]
+id: ID:0000004
+name: Mechanical property
+def: "Property that reveals the reaction, either elastic or plastic, of a metal to an applied stress. Tensile strength, yield strength, elongation, reduction of area, hardness, impact strength, and bend ability are examples of mechanical properties." []
+is_a: ID:0000002 ! Scaffold property
+
+[Term]
+id: ID:0000005
+name: Cell expansion environment
+def: "Experimental environment where cells are expanded. It describes all the biological parameters related to cell expansion." []
+relationship: intervenes_in ID:0000001 ! Cell expansion
+
+[Term]
+id: ID:0000006
+name: Morphological property
+def: "Property of materials, biological tissues or other objects, and their specific structural features. It can regard aspects of the outward appearance (shape, structure, pattern) as well as the form and structure of the internal parts." []
+is_a: ID:0000002 ! Scaffold property
+
+[Term]
+id: ID:0000007
+name: Neoformed tissue
+def: "Tissue grown on substitute material." []
+is_a: ID:0000102 ! Tissue
+relationship: derives_from ID:0000028 ! Implant
+relationship: intervenes_in ID:0000033 ! Cellular response evaluation
+
+[Term]
+id: ID:0000008
+name: Primary cell culture
+namespace: obi
+def: "Cell culture where the cells derive from a fresh tissue source." [OBI:0100061]
+relationship: derives_from ID:0000104 ! Isolated tissue
+
+[Term]
+id: ID:0000009
+name: Density
+def: "Mass per unit volume." []
+xref: OPB:00546
+is_a: ID:0000004 ! Mechanical property
+relationship: derives_from ID:0000137 ! Compression test
+relationship: derives_from ID:0000138 ! Tensile test
+relationship: derives_from ID:0000139 ! Fracture test
+relationship: derives_from ID:0000140 ! Torsion test
+
+[Term]
+id: ID:0000010
+name: Young's module
+def: "Measure of the stiffness of an elastic material and is a quantity used to characterize materials. It is defined as the ratio of the stress along an axis over the strain along that axis in the range of stress in which Hooke's law holds." []
+synonym: "Elastic modulus" RELATED []
+synonym: "Tensile modulus" RELATED []
+is_a: ID:0000004 ! Mechanical property
+relationship: derives_from ID:0000137 ! Compression test
+relationship: derives_from ID:0000138 ! Tensile test
+relationship: derives_from ID:0000139 ! Fracture test
+relationship: derives_from ID:0000140 ! Torsion test
+
+[Term]
+id: ID:0000011
+name: Pore shape
+def: "The shape of the pores in the material." []
+relationship: characterizes ID:0000017 ! Porosity
+
+[Term]
+id: ID:0000012
+name: Ovis aries
+namespace: ncbi_taxonomy
+xref: NCBITaxon:9940
+is_a: ID:0000082 ! Donor
+is_a: ID:0000083 ! Host
+
+[Term]
+id: ID:0000013
+name: Total porosity
+def: "Percentage of pore space." []
+relationship: characterizes ID:0000017 ! Porosity
+
+[Term]
+id: ID:0000014
+name: Disk
+def: "A round, flattened, platelike structure." []
+is_a: ID:0000026 ! Shape
+
+[Term]
+id: ID:0000015
+name: Resilience
+def: "Ability of a material to absorb energy when it is deformed elastically, and release that energy upon unloading." []
+is_a: ID:0000004 ! Mechanical property
+relationship: derives_from ID:0000137 ! Compression test
+relationship: derives_from ID:0000138 ! Tensile test
+relationship: derives_from ID:0000139 ! Fracture test
+relationship: derives_from ID:0000140 ! Torsion test
+
+[Term]
+id: ID:0000016
+name: Cube
+def: "A symmetrical three-dimensional shape, either solid or hollow, contained by six equal squares." []
+is_a: ID:0000026 ! Shape
+
+[Term]
+id: ID:0000017
+name: Porosity
+def: "Measure of the void (i.e., \"empty\") spaces in a material, and is a fraction of the volume of voids over the total volume, between 0 and 1, or as a percentage between 0 and 100%." []
+is_a: ID:0000006 ! Morphological property
+
+[Term]
+id: ID:0000018
+name: Culture medium
+def: "Liquid or gel designed to support the growth of microorganisms or cells. There are different types of media for growing different types of cells." []
+is_a: ID:0000247 ! Cell culture environment
+
+[Term]
+id: ID:0000019
+name: Expansion medium
+def: "Liquid or gel designed to expand cells. There are different types of media for culture different types of cells." []
+is_a: ID:0000005 ! Cell expansion environment
+
+[Term]
+id: ID:0000020
+name: Cell line
+namespace: ero
+def: "Population of cells cultured in vitro that are descended through one or more generations (and possible sub-cultures) from a single primary culture which was originally derived from part of an organism. The cells of such a population share common characteristics." [ERO:0000009]
+relationship: derives_from ID:0000104 ! Isolated tissue
+
+[Term]
+id: ID:0000021
+name: Experiment
+def: "A methodical procedure carried out with the goal of verifying, falsifying, or establishing the validity of a hypothesis." []
+
+[Term]
+id: ID:0000022
+name: Size
+def: "The magnitude of a quantity, such as length or mass, relative to a unit of measurement." []
+is_a: ID:0000006 ! Morphological property
+
+[Term]
+id: ID:0000023
+name: In vitro study
+def: "A study design that is done in a test environment, such as a culture dish, using an established cell culture procedure." []
+synonym: "In vitro study" RELATED [OBI:0001285]
+is_a: ID:0000021 ! Experiment
+
+[Term]
+id: ID:0000024
+name: Weight
+namespace: pato
+def: "A physical quality inhering in a bearer that has mass near a gravitational body." [PATO:0000128]
+relationship: characterizes ID:0000082 ! Donor
+
+[Term]
+id: ID:0000025
+name: Pore volume
+def: "The pores in the material considered collectively." []
+relationship: characterizes ID:0000017 ! Porosity
+
+[Term]
+id: ID:0000026
+name: Shape
+def: "Geometrical description of the part of that space occupied by the object, as determined by its external boundary, abstracting from location and orientation in space, size, and other properties such as colour, content, and material composition." []
+is_a: ID:0000006 ! Morphological property
+
+[Term]
+id: ID:0000027
+name: In vivo study
+namespace: obi
+def: "A study design that is conducted entirely in a living organism, e.g. a compound treatment in a mouse model." [OBI:0001199]
+is_a: ID:0000021 ! Experiment
+
+[Term]
+id: ID:0000028
+name: Implant
+def: "A medical device manufactured to replace a missing biological structure, support a damaged biological structure, or enhance an existing biological structure." []
+is_a: ID:0000027 ! In vivo study
+
+[Term]
+id: ID:0000029
+name: Ectopic implant
+def: "An substitute material implant out of the original place." []
+is_a: ID:0000028 ! Implant
+
+[Term]
+id: ID:0000030
+name: Orthotopic implant
+def: "A substitute material implant in the original place." []
+is_a: ID:0000028 ! Implant
+
+[Term]
+id: ID:0000031
+name: Connective tissue
+namespace: bto
+def: "The tissue which binds together and is the support of the various structures of the body. It is made up of fibroblasts, fibroglia, collagen fibrils, and elastic fibrils. It is derived from the mesoderm and in a broad sense includes the collagenous, elastic, mucous, reticular, osseous, and cartilaginous tissue. Some also include the blood in this group of tissues. Connective tissue is classified according to concentration of fibers as loose (areolar) and dense, the latter having more abundant fibers than the former." [BTO:0000421]
+is_a: ID:0000007 ! Neoformed tissue
+is_a: ID:0000103 ! Natural tissue
+
+[Term]
+id: ID:0000032
+name: Other ceramic material
+def: "Ceramic materials not included in the ceramic list." []
+is_a: ID:0000115 ! Ceramic
+
+[Term]
+id: ID:0000033
+name: Cellular response evaluation
+def: "Eveluation of the biochemical, molecular, mechanical events activated within the cell when cultured on a material. The nature of these intracellular events differs according to the type of cell and the considered material." []
+
+[Term]
+id: ID:0000034
+name: Gender
+namespace: snomedct
+def: "Range of physical, mental, and behavioral characteristics distinguishing between masculinity and femininity." [SNOMEDCT:263495000]
+relationship: characterizes ID:0000082 ! Donor
+relationship: characterizes ID:0000083 ! Host
+
+[Term]
+id: ID:0000035
+name: Biomaterial
+def: "A non-drug substance suitable for inclusion in systems which augment or replace the function of bodily tissues or organs." []
+relationship: intervenes_in ID:0000000 ! Cell seeding
+relationship: intervenes_in ID:0000028 ! Implant
+
+[Term]
+id: ID:0000036
+name: Intrinsic property
+def: "an essential or inherent property of a system or of a material itself or within. It is independent of how much of the material is present and is independent of the form of the material. Intrinsic properties are dependent mainly on the chemical composition or structure of the material." []
+relationship: characterizes ID:0000035 ! Biomaterial
+
+[Term]
+id: ID:0000037
+name: Physical property
+def: "Material's property that can be discerned without changing the chemical identity of the sample and that can be used to characterize matter and energy and their interactions." []
+is_a: ID:0000036 ! Intrinsic property
+
+[Term]
+id: ID:0000038
+name: Chemical property
+def: "Material's property that becomes evident during a chemical reaction." []
+is_a: ID:0000036 ! Intrinsic property
+
+[Term]
+id: ID:0000039
+name: Hydrophilicity
+def: "Property of a molecular entity to be attracted to, and tends to be dissolved by, water." []
+is_a: ID:0000038 ! Chemical property
+relationship: characterizes ID:0000178 ! Chitosan gel
+relationship: characterizes ID:0000179 ! Gelatin
+relationship: characterizes ID:0000180 ! Dextran gel
+relationship: characterizes ID:0000181 ! Polyethylene glycol gel
+relationship: characterizes ID:0000182 ! Chitosan-alginate composite
+
+[Term]
+id: ID:0000040
+name: Biocompatibility
+def: "Ability of a material to perform with an appropriate host response in a specific situation." []
+is_a: ID:0000038 ! Chemical property
+relationship: characterizes ID:0000089 ! Titanium
+relationship: characterizes ID:0000090 ! Alumina
+relationship: characterizes ID:0000094 ! Glass ceramic
+relationship: characterizes ID:0000095 ! Bioglass
+relationship: characterizes ID:0000096 ! Tricalcium phosphate
+relationship: characterizes ID:0000098 ! Calcium oxide
+relationship: characterizes ID:0000099 ! Calcium carbonate
+relationship: characterizes ID:0000100 ! Gypsum
+relationship: characterizes ID:0000113 ! Collagen
+relationship: characterizes ID:0000114 ! Chitosan
+relationship: characterizes ID:0000116 ! Calcium-phosphate based ceramic
+relationship: characterizes ID:0000150 ! Hydroxyapatite
+relationship: characterizes ID:0000210 ! Silicon-substituted tricalcium phosphate and hydroxyapatite
+relationship: characterizes ID:0000211 ! Silk
+relationship: characterizes ID:0000212 ! Titanium dioxide
+relationship: characterizes ID:0000213 ! Polycaprolactone-hydroxyapatite-collagen
+relationship: characterizes ID:0000214 ! Polycaprolactone-tricalcium phosphate
+relationship: characterizes ID:0000215 ! SPCL-Si
+relationship: characterizes ID:0000216 ! Collagen-polylactic-co-glycolic acid
+relationship: characterizes ID:0000218 ! Strontium-hardystonite-gahnite
+relationship: characterizes ID:0000219 ! Baghdadite-polycaprolactone-glass nanoparticle
+relationship: characterizes ID:0000222 ! Bioglass-collagen-phosphatidylserine
+relationship: characterizes ID:0000224 ! Collagen-glycosaminoglycan
+relationship: characterizes ID:0000225 ! Calcium-phosphate based ceramic-chitosan
+relationship: characterizes ID:0000245 ! Magnesium-calcium phosphate
+
+[Term]
+id: ID:0000041
+name: Hydrophobicity
+def: "Property of a molecular entity that is repelled from a mass of water." []
+is_a: ID:0000038 ! Chemical property
+relationship: characterizes ID:0000089 ! Titanium
+relationship: characterizes ID:0000090 ! Alumina
+relationship: characterizes ID:0000094 ! Glass ceramic
+relationship: characterizes ID:0000095 ! Bioglass
+relationship: characterizes ID:0000096 ! Tricalcium phosphate
+relationship: characterizes ID:0000113 ! Collagen
+relationship: characterizes ID:0000167 ! Polycaprolactone
+relationship: characterizes ID:0000210 ! Silicon-substituted tricalcium phosphate and hydroxyapatite
+relationship: characterizes ID:0000213 ! Polycaprolactone-hydroxyapatite-collagen
+relationship: characterizes ID:0000214 ! Polycaprolactone-tricalcium phosphate
+relationship: characterizes ID:0000215 ! SPCL-Si
+relationship: characterizes ID:0000216 ! Collagen-polylactic-co-glycolic acid
+relationship: characterizes ID:0000217 ! Polycaprolactone-polylactic-co-glycolic acid
+relationship: characterizes ID:0000219 ! Baghdadite-polycaprolactone-glass nanoparticle
+relationship: characterizes ID:0000222 ! Bioglass-collagen-phosphatidylserine
+relationship: characterizes ID:0000224 ! Collagen-glycosaminoglycan
+
+[Term]
+id: ID:0000042
+name: Resorbability
+def: "Property of a material that, upon placement within the organism, starts to dissolve (resorbed) and, in some cases, is slowly replaced by advancing tissue (such as bone)." []
+is_a: ID:0000038 ! Chemical property
+relationship: characterizes ID:0000092 ! Ultra high molecular weight polyethylene
+relationship: characterizes ID:0000096 ! Tricalcium phosphate
+relationship: characterizes ID:0000097 ! Polylactic acid
+relationship: characterizes ID:0000098 ! Calcium oxide
+relationship: characterizes ID:0000099 ! Calcium carbonate
+relationship: characterizes ID:0000100 ! Gypsum
+relationship: characterizes ID:0000113 ! Collagen
+relationship: characterizes ID:0000114 ! Chitosan
+relationship: characterizes ID:0000116 ! Calcium-phosphate based ceramic
+relationship: characterizes ID:0000167 ! Polycaprolactone
+relationship: characterizes ID:0000177 ! Alginate
+relationship: characterizes ID:0000178 ! Chitosan gel
+relationship: characterizes ID:0000179 ! Gelatin
+relationship: characterizes ID:0000180 ! Dextran gel
+relationship: characterizes ID:0000181 ! Polyethylene glycol gel
+relationship: characterizes ID:0000182 ! Chitosan-alginate composite
+relationship: characterizes ID:0000183 ! Collagen-hydroxyapatite composite
+relationship: characterizes ID:0000184 ! Polycaprolactone-hydroxyapatite composite
+relationship: characterizes ID:0000185 ! Collagen-chitosan composite
+relationship: characterizes ID:0000186 ! Polycaprolactone-collagen composite
+relationship: characterizes ID:0000188 ! Polyglycolic acid
+relationship: characterizes ID:0000189 ! Poloxamine-polylysine acrylate
+relationship: characterizes ID:0000190 ! Polylactic-co-glycolic acid
+relationship: characterizes ID:0000200 ! Poly-L-lactide
+relationship: characterizes ID:0000210 ! Silicon-substituted tricalcium phosphate and hydroxyapatite
+relationship: characterizes ID:0000211 ! Silk
+relationship: characterizes ID:0000213 ! Polycaprolactone-hydroxyapatite-collagen
+relationship: characterizes ID:0000214 ! Polycaprolactone-tricalcium phosphate
+relationship: characterizes ID:0000215 ! SPCL-Si
+relationship: characterizes ID:0000216 ! Collagen-polylactic-co-glycolic acid
+relationship: characterizes ID:0000217 ! Polycaprolactone-polylactic-co-glycolic acid
+relationship: characterizes ID:0000219 ! Baghdadite-polycaprolactone-glass nanoparticle
+relationship: characterizes ID:0000222 ! Bioglass-collagen-phosphatidylserine
+relationship: characterizes ID:0000223 ! Polyurethane
+relationship: characterizes ID:0000224 ! Collagen-glycosaminoglycan
+relationship: characterizes ID:0000225 ! Calcium-phosphate based ceramic-chitosan
+relationship: characterizes ID:0000245 ! Magnesium-calcium phosphate
+
+[Term]
+id: ID:0000043
+name: Thermal stability
+def: "Stability of a molecule at high temperatures." []
+is_a: ID:0000037 ! Physical property
+relationship: characterizes ID:0000086 ! Stainless steel
+relationship: characterizes ID:0000089 ! Titanium
+relationship: characterizes ID:0000090 ! Alumina
+relationship: characterizes ID:0000091 ! Partially stabilised zirconia
+relationship: characterizes ID:0000094 ! Glass ceramic
+relationship: characterizes ID:0000095 ! Bioglass
+relationship: characterizes ID:0000096 ! Tricalcium phosphate
+relationship: characterizes ID:0000097 ! Polylactic acid
+relationship: characterizes ID:0000098 ! Calcium oxide
+relationship: characterizes ID:0000099 ! Calcium carbonate
+relationship: characterizes ID:0000100 ! Gypsum
+relationship: characterizes ID:0000116 ! Calcium-phosphate based ceramic
+relationship: characterizes ID:0000150 ! Hydroxyapatite
+relationship: characterizes ID:0000176 ! Polyethylene glycol
+relationship: characterizes ID:0000210 ! Silicon-substituted tricalcium phosphate and hydroxyapatite
+relationship: characterizes ID:0000213 ! Polycaprolactone-hydroxyapatite-collagen
+relationship: characterizes ID:0000214 ! Polycaprolactone-tricalcium phosphate
+relationship: characterizes ID:0000225 ! Calcium-phosphate based ceramic-chitosan
+
+[Term]
+id: ID:0000044
+name: Electrical conductivity
+def: "It measures a material's ability to conduct an electric current." []
+is_a: ID:0000037 ! Physical property
+relationship: characterizes ID:0000086 ! Stainless steel
+relationship: characterizes ID:0000089 ! Titanium
+
+[Term]
+id: ID:0000045
+name: Thermal conductivity
+def: "Property of a material to conduct heat." []
+is_a: ID:0000037 ! Physical property
+relationship: characterizes ID:0000086 ! Stainless steel
+relationship: characterizes ID:0000089 ! Titanium
+
+[Term]
+id: ID:0000046
+name: Age
+namespace: mo
+def: "A temporal measurement of the time period elapsed since an identifiable point in the life cycle of an organism. If a developmental stage is specified, the identifiable point would be the beginning of that stage. Otherwise the identifiable point must be specified such as planting (e.g. 3 days post planting)." [MO:467]
+relationship: characterizes ID:0000082 ! Donor
+relationship: characterizes ID:0000083 ! Host
+
+[Term]
+id: ID:0000047
+name: Cell seeding time
+relationship: characterizes ID:0000000 ! Cell seeding
+
+[Term]
+id: ID:0000048
+name: Cell expansion time
+def: "Duration of the cellular expansion phase." []
+relationship: characterizes ID:0000001 ! Cell expansion
+
+[Term]
+id: ID:0000049
+name: Cell quantity
+def: "Amount of used cells." []
+relationship: characterizes ID:0000000 ! Cell seeding
+relationship: characterizes ID:0000001 ! Cell expansion
+
+[Term]
+id: ID:0000050
+name: Diameter
+namespace: pato
+def: "A length quality which is equal to the length of any straight line segment that passes through the center of a circle and whose endpoints are on the circular boundary." [PATO:0001334]
+is_a: ID:0000022 ! Size
+
+[Term]
+id: ID:0000051
+name: Pore size
+def: "It gives an indication of the median or mean size of the pores on a membrane surface." []
+is_a: ID:0000022 ! Size
+relationship: characterizes ID:0000017 ! Porosity
+
+[Term]
+id: ID:0000052
+name: Mechanics analysis
+def: "Studies about the mechanical behavior of materials, especially their motion and deformation under the action of forces, temperature changes, phase changes, and other external or internal agents." []
+is_a: ID:0000033 ! Cellular response evaluation
+
+[Term]
+id: ID:0000053
+name: Pore size distribution
+def: "It is the relative abundance of each pore size in a representative volume." []
+relationship: characterizes ID:0000017 ! Porosity
+
+[Term]
+id: ID:0000054
+name: Biomolecular analysis
+def: "Investigation of biomolecules, which are molecules that are involved in the maintenance and metabolic processes of all living organisms." []
+is_a: ID:0000033 ! Cellular response evaluation
+
+[Term]
+id: ID:0000055
+name: Length
+def: "The measurement of the extent of something along its greatest dimension." []
+is_a: ID:0000022 ! Size
+
+[Term]
+id: ID:0000056
+name: Height
+def: "The distance from the base of something to the top." []
+is_a: ID:0000022 ! Size
+
+[Term]
+id: ID:0000057
+name: Width
+def: "A piece of material measured along its smaller dimension or its crosswise grain." []
+is_a: ID:0000022 ! Size
+
+[Term]
+id: ID:0000058
+name: Cylinder
+def: "A solid geometric figure with straight parallel sides and a circular or oval section." []
+is_a: ID:0000026 ! Shape
+
+[Term]
+id: ID:0000059
+name: Sphere
+def: "A three-dimensional surface, all points of which are equidistant from a fixed point." []
+is_a: ID:0000026 ! Shape
+
+[Term]
+id: ID:0000060
+name: Atomic Force Microscopy
+def: "Very high-resolution type of scanning probe microscopy, with demonstrated resolution on the order of fractions of a nanometer, more than 1000 times better than the optical diffraction limit. The information is gathered by \"feeling\" the surface with a mechanical probe. Piezoelectric elements that facilitate tiny but accurate and precise movements on (electronic) command enable the very precise scanning." []
+synonym: "AFM" RELATED []
+is_a: ID:0000052 ! Mechanics analysis
+is_a: ID:0000071 ! Morphology analysis
+
+[Term]
+id: ID:0000061
+name: Dynamic Mechanical Analysis
+def: "Technique used to study and characterize materials. It is most useful for studying the viscoelastic behavior of polymers. A sinusoidal stress is applied and the strain in the material is measured, allowing one to determine the complex modulus. The temperature of the sample or the frequency of the stress are often varied, leading to variations in the complex modulus. Each test provides a stress-strain curve as output, which describes the relationship between the applied stress and the shown strain for a particular material." []
+synonym: "DMA" RELATED []
+is_a: ID:0000052 ! Mechanics analysis
+
+[Term]
+id: ID:0000062
+name: X-ray microtomography
+def: "Microtomography uses a similar technique as X-ray tomography systems used in medicine (CT Scans) but with much finer resolution.  Multiple 2D X-ray images are stored while either the sample or the source / detector pair is rotated.  Internal structures are reconstructed as a series of 2D cross sections (up to 2600 in a single scan) which are then used to analyze the two and three dimensional morphological parameters of the object. The process is non destructive and requires no special preparation of the specimen." []
+synonym: " Micro-CT" RELATED []
+is_a: ID:0000071 ! Morphology analysis
+
+[Term]
+id: ID:0000063
+name: Real-time polymerase chain reaction
+namespace: obi
+def: "A laboratory technique based on the PCR, which is used to amplify and simultaneously quantify a specific DNA molecule based on the use of complementary probes/primers. It enables both detection and quantification (as absolute number of copies or relative amount when normalized to DNA input or additional normalizing genes) of one or more specific sequences in a DNA sample." [OBI:0000893]
+synonym: "Kinetic polymerase chain reaction" RELATED []
+synonym: "qPCR" RELATED []
+synonym: "Quantitative real time polymerase chain reaction" RELATED []
+synonym: "Real Time PCR" RELATED []
+is_a: ID:0000054 ! Biomolecular analysis
+
+[Term]
+id: ID:0000064
+name: Transmission electron microscopy
+def: "Microscopy technique whereby a beam of electrons is transmitted through an ultra thin specimen, interacting with the specimen as it passes through. TEMs are capable of imaging at a significantly higher resolution than light microscopes: this enables to examine fine detail. An image is formed from the interaction of the electrons transmitted through the specimen; the image is magnified and focused onto an imaging device, such as a fluorescent screen, on a layer of photographic film, or to be detected by a sensor such as a CCD camera." []
+synonym: "TEM" RELATED []
+is_a: ID:0000071 ! Morphology analysis
+
+[Term]
+id: ID:0000065
+name: Gene expression microarray
+def: "Gene expression microarray technology measures the relative activity of previously identified target genes and provide the gene expression profiling, which is the measurement, at once, of the activation of thousands of genes, to create a global picture of cellular function." []
+synonym: "DNA microarray" RELATED [OBI:0400148]
+is_a: ID:0000054 ! Biomolecular analysis
+
+[Term]
+id: ID:0000066
+name: Mass Spectrometry
+namespace: obi
+def: "Measuring method consisting of turning elements in a sample into ions, isolating them according to the ratio between the mass and charge numbers and detecting it electrically." [OBI:0000470]
+xref: PRIDE:0000027
+is_a: ID:0000054 ! Biomolecular analysis
+
+[Term]
+id: ID:0000067
+name: Immunohistofluorescence
+def: "Histofluorescence (fluorescence of the tissues under exposure to ultraviolet rays following the injection of a fluorescent substance or as a result of a natural fluorescing substance) accomplished by injection of antibody labeled with fluorochrome." []
+synonym: "IHF" RELATED []
+is_a: ID:0000054 ! Biomolecular analysis
+
+[Term]
+id: ID:0000068
+name: Histochemical staining
+def: "study of the microscopic anatomy of cells and tissues of plants and animals. It is commonly performed by examining cells and tissues by sectioning and staining, followed by examination under a light microscope or electron microscope. Histological studies may be conducted via tissue culture, where live cells can be isolated and maintained in a proper environment outside the body for various research projects. The ability to visualize or differentially identify microscopic structures is frequently enhanced through the use of histological stains." []
+xref: OBI:0600020 "the visual examination of cells or tissue (or images of them) with an assessment regarding a quality of the cells or tissue. Parts are: staining, imaging, judgement"
+is_a: ID:0000071 ! Morphology analysis
+
+[Term]
+id: ID:0000069
+name: Immunohistochemistry
+namespace: mi
+def: "Method using an antibody coupled with some colouring agent to detect a specific protein within a tissue sample. In some cases the primary antibody is directly linked to a colouring agent, more often the primary antibody is targeted by a secondary antibody, targeting the primary antibody." [MI:1198]
+synonym: "IHC" RELATED []
+is_a: ID:0000054 ! Biomolecular analysis
+
+[Term]
+id: ID:0000070
+name: Scanning electron microscopy
+def: "Electron microscope that produces images of a sample by scanning it with a focused beam of electrons. The electrons interact with electrons in the sample, producing various signals that can be detected and that contain information about the sample's surface topography and composition. The electron beam is generally scanned in a raster scan pattern, and the beam's position is combined with the detected signal to produce an image. SEM can achieve resolution better than 1 nanometer." []
+synonym: "SEM" RELATED []
+is_a: ID:0000071 ! Morphology analysis
+
+[Term]
+id: ID:0000071
+name: Morphology analysis
+def: "Investigations about the form and structure of organisms and their specific features." []
+is_a: ID:0000033 ! Cellular response evaluation
+
+[Term]
+id: ID:0000072
+name: Chondrocyte
+namespace: bto
+def: "Cartilage cells. They make the structural components of cartilage." [BTO:0000249]
+is_a: ID:0000003 ! Cell
+
+[Term]
+id: ID:0000073
+name: Osteoblast
+namespace: cl
+def: "Skeletogenic cell that secretes osteoid, is capable of producing mineralized (hydroxyapatite) matrix, is located adjacent to or within osteoid tissue, and arises from the transformation of a preosteoblast cell." [CL:0000062]
+is_a: ID:0000003 ! Cell
+
+[Term]
+id: ID:0000074
+name: Mesenchymal stem cell
+namespace: bto
+def: "A special adult stem cell, which is a multipotent stem cell, that can be found in bone marrow and can produce all cell types of bone, cartilage, fat, blood, and connective tissues." [BTO:0003298]
+synonym: "MSC" RELATED []
+is_a: ID:0000003 ! Cell
+
+[Term]
+id: ID:0000075
+name: Organism
+namespace: obi
+def: "A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs." [OBI:0100026]
+
+[Term]
+id: ID:0000076
+name: Cell concentration
+def: "Amount of cells per volume of medium used." []
+relationship: characterizes ID:0000000 ! Cell seeding
+relationship: characterizes ID:0000001 ! Cell expansion
+
+[Term]
+id: ID:0000077
+name: Affymetrix technology
+def: "Affymetrix is a US company that manufactures DNA microarrays." []
+relationship: intervenes_in ID:0000065 ! Gene expression microarray
+
+[Term]
+id: ID:0000078
+name: Implant time
+def: "Time when the substitue material is within the host." []
+relationship: characterizes ID:0000028 ! Implant
+
+[Term]
+id: ID:0000079
+name: Cartilage
+namespace: bto
+def: "A specialized, fibrous connective tissue, forming most of the temporary skeleton of the embryo, providing a model in which most of the bones develop, and constituting an important part of the growth mechanism of the organism. It exists in several types, the most important of which are hyaline cartilage, elastic cartilage, and fibrocartilage. Also used as a general term to designate a mass of such tissue in a particular site in the body." [BTO:0000206]
+is_a: ID:0000031 ! Connective tissue
+is_a: ID:0000104 ! Isolated tissue
+
+[Term]
+id: ID:0000080
+name: Bone marrow
+namespace: bto
+def: "The soft, fatty, vascular tissue that fills most bone cavities and is the source of red blood cells and many white blood cells." [BTO:0000141]
+xref: BTO:0000141
+is_a: ID:0000104 ! Isolated tissue
+
+[Term]
+id: ID:0000081
+name: Adipose tissue
+namespace: bto
+def: "Connective tissue in which fat is stored and which has the cells distended by droplets of fat." [BTO:0001487]
+xref: BTO:0001487
+is_a: ID:0000104 ! Isolated tissue
+
+[Term]
+id: ID:0000082
+name: Donor
+namespace: obi
+def: "A role which inheres in an organism or part thereof from which any part including cell, organ or tissue is removed with the intention that the donated part will be placed into another organism and/or cultured in vitro." [OBI:1110087]
+is_a: ID:0000075 ! Organism
+
+[Term]
+id: ID:0000083
+name: Host
+def: "Organism for the implant." []
+is_a: ID:0000075 ! Organism
+relationship: intervenes_in ID:0000028 ! Implant
+
+[Term]
+id: ID:0000084
+name: Gel
+def: "Solid, jelly-like material that can have properties ranging from soft and weak to hard and tough. Gels are defined as a substantially dilute cross-linked system, which exhibits no flow when in the steady-state. By weight, gels are mostly liquid, yet they behave like solids due to a three-dimensional cross-linked network within the liquid. It is the crosslinking within the fluid that give a gel its structure (hardness) and contribute to the adhesive stick." []
+is_a: ID:0000035 ! Biomaterial
+
+[Term]
+id: ID:0000085
+name: Other metal material
+def: "Metal materials not included in the previous list." []
+is_a: ID:0000117 ! Metal
+
+[Term]
+id: ID:0000086
+name: Stainless steel
+def: "Steel alloy with a minimum of 10.5%[1] to 11% chromium content by mass. It does not readily corrode, rust or stain with water as ordinary steel does, but despite the name it is not fully stain-proof, most notably under low oxygen, high salinity, or poor circulation environments." []
+synonym: "Inox" RELATED []
+synonym: "Inox steel" RELATED []
+is_a: ID:0000117 ! Metal
+
+[Term]
+id: ID:0000087
+name: Other polymeric materials
+def: "Other polymeric materials not included in the previous list." []
+is_a: ID:0000119 ! Polymer
+
+[Term]
+id: ID:0000088
+name: Liquid Chromatography-Mass Spectrometry
+namespace: nci_thesaurus
+def: "Hyphenated technique, combining the separation power of liquid chromatography (LC), an analytical chromatographic technique for separating ions or molecules dissolved in a solvent, with the detection power of mass spectrometry(MS), a technique to separate gas phase ions according their m/z (mass to charge ratio) value. Used for drug screening, pharmacology studies, environmental analyses and forensics." [Thesaurus:Liquid_Chromatography_Mass_Spectrometry]
+synonym: "LC/MS" RELATED []
+is_a: ID:0000066 ! Mass Spectrometry
+
+[Term]
+id: ID:0000089
+name: Titanium
+def: "Chemical element with symbol Ti and atomic number 22. It has a low density and is a strong, lustrous, corrosion-resistant (including sea water, aqua regia and chlorine) transition metal with a silver color." []
+is_a: ID:0000117 ! Metal
+
+[Term]
+id: ID:0000090
+name: Alumina
+def: "Chemical compound of aluminium and oxygen with the chemical formula Al2O3." []
+synonym: "Aloxide" RELATED []
+synonym: "Aluminium oxide" RELATED []
+is_a: ID:0000115 ! Ceramic
+
+[Term]
+id: ID:0000091
+name: Partially stabilised zirconia
+def: "Non-metallic structural material that combines hardness, reduced fragility, and chemical inertness with high chemical stability in aggressive environments throughout a wide temperature range." []
+is_a: ID:0000175 ! Other biomaterials
+
+[Term]
+id: ID:0000092
+name: Ultra high molecular weight polyethylene
+def: "Subset of the thermoplastic polyethylene, characterized by extremely long chains, with a molecular weight usually between 2 and 6 million. The longer chain serves to transfer load more effectively to the polymer backbone by strengthening intermolecular interactions." []
+synonym: "High-modulus polyethylene" RELATED []
+synonym: "High-performance polyethylene" RELATED []
+synonym: "HMPE" RELATED []
+synonym: "HPPE" RELATED []
+synonym: "UHMW" RELATED []
+synonym: "UHMWPE" RELATED []
+is_a: ID:0000119 ! Polymer
+
+[Term]
+id: ID:0000093
+name: Other gel
+def: "Gel material not listed among the gels." []
+is_a: ID:0000084 ! Gel
+
+[Term]
+id: ID:0000094
+name: Glass ceramic
+def: "Polycrystalline material produced through controlled crystallization of base glass." []
+is_a: ID:0000115 ! Ceramic
+
+[Term]
+id: ID:0000095
+name: Bioglass
+def: "Family of bioactive glasses, composed of SiO2, Na2O, CaO and P2O5 in specific proportions." []
+is_a: ID:0000115 ! Ceramic
+
+[Term]
+id: ID:0000096
+name: Tricalcium phosphate
+def: "Calcium salt of phosphoric acid with the chemical formula Ca3(PO4)2." []
+synonym: "Bone phosphate of lime" RELATED []
+synonym: "BPL" RELATED []
+synonym: "Tribasic calcium phosphate" RELATED []
+is_a: ID:0000115 ! Ceramic
+
+[Term]
+id: ID:0000097
+name: Polylactic acid
+def: "Athermoplastic aliphatic polyester derived from renewable resources." []
+synonym: "PLA" RELATED []
+synonym: "Polylactide" RELATED []
+is_a: ID:0000119 ! Polymer
+
+[Term]
+id: ID:0000098
+name: Calcium oxide
+def: "Chemical compound with the formula CaO." []
+synonym: "Burnt lime" RELATED []
+synonym: "Quicklime" RELATED []
+is_a: ID:0000115 ! Ceramic
+
+[Term]
+id: ID:0000099
+name: Calcium carbonate
+def: "Chemical compound with the formula CaCO3." []
+is_a: ID:0000115 ! Ceramic
+
+[Term]
+id: ID:0000100
+name: Gypsum
+def: "Very soft sulfate mineral composed of calcium sulfate dihydrate, with the chemical formula CaSO4·2H2O." []
+is_a: ID:0000115 ! Ceramic
+
+[Term]
+id: ID:0000101
+name: Growth environment
+namespace: obi
+def: "The collection of material entities and their qualities that are located near a live organism, tissue or cell and can influence its growth." [OBI:0000997]
+relationship: intervenes_in ID:0000000 ! Cell seeding
+relationship: intervenes_in ID:0000001 ! Cell expansion
+relationship: intervenes_in ID:0000028 ! Implant
+
+[Term]
+id: ID:0000102
+name: Tissue
+namespace: caro
+def: "Anatomical structure, that consists of similar cells and intercellular matrix, aggregated according to genetically determined spatial relationships." [CARO:0000043]
+
+[Term]
+id: ID:0000103
+name: Natural tissue
+def: "Natural tissue located within the organism in the natural site." []
+is_a: ID:0000102 ! Tissue
+relationship: part_of ID:0000075 ! Organism
+
+[Term]
+id: ID:0000104
+name: Isolated tissue
+def: "Tissue that has been extracted from the organism." []
+is_a: ID:0000102 ! Tissue
+
+[Term]
+id: ID:0000105
+name: Bone
+namespace: bto
+def: "The hard form of connective tissue that constitutes the majority of the skeleton of most vertebrates; it consists of an organic component (the cells and matrix) and an inorganic, or mineral, component; the matrix contains a framework of collagenous fibers and is impregnated with the mineral component, chiefly calcium phosphate (85 per cent) and calcium carbonate (10 per cent), which imparts the quality of rigidity to bone." [BTO:0000140]
+is_a: ID:0000031 ! Connective tissue
+
+[Term]
+id: ID:0000106
+name: Homo sapiens
+namespace: ncbi_taxonomy
+xref: NCBITaxon:9606
+is_a: ID:0000082 ! Donor
+
+[Term]
+id: ID:0000107
+name: Mus musculus
+namespace: ncbi_taxonomy
+xref: NCBITaxon:10090
+is_a: ID:0000082 ! Donor
+is_a: ID:0000083 ! Host
+
+[Term]
+id: ID:0000108
+name: Rattus norvegicus
+namespace: ncbi_taxonomy
+xref: NCBITaxon:10116
+is_a: ID:0000082 ! Donor
+is_a: ID:0000083 ! Host
+
+[Term]
+id: ID:0000109
+name: Oryctolagus cuniculus
+namespace: ncbi_taxonomy
+xref: NCBITaxon:9986
+is_a: ID:0000082 ! Donor
+is_a: ID:0000083 ! Host
+
+[Term]
+id: ID:0000110
+name: Bos taurus
+namespace: ncbi_taxonomy
+xref: NCBITaxon:9913
+is_a: ID:0000082 ! Donor
+
+[Term]
+id: ID:0000111
+name: Capra aegagrus hircus
+namespace: ncbi_taxonomy
+xref: NCBITaxon:9925
+is_a: ID:0000083 ! Host
+
+[Term]
+id: ID:0000112
+name: Weight
+namespace: pato
+def: "A physical quality inhering in a bearer that has mass near a gravitational body." [PATO:0000128]
+relationship: characterizes ID:0000083 ! Host
+
+[Term]
+id: ID:0000113
+name: Collagen
+def: "Group of naturally occurring proteins found in animals, especially in the flesh and connective tissues of vertebrates. It is the main component of connective tissue, and is the most abundant protein in mammals, making up about 25% to 35% of the whole-body protein content." []
+is_a: ID:0000119 ! Polymer
+
+[Term]
+id: ID:0000114
+name: Chitosan
+namespace: chebi
+def: "An aminoglycan consisting of beta-(1->4)-linked D-glucosamine residues." [CHEBI:16261]
+is_a: ID:0000119 ! Polymer
+
+[Term]
+id: ID:0000115
+name: Ceramic
+def: "Inorganic, nonmetallic solid prepared by the action of heat and subsequent cooling." []
+is_a: ID:0000035 ! Biomaterial
+
+[Term]
+id: ID:0000116
+name: Calcium-phosphate based ceramic
+def: "Name given to a family of minerals containing calcium ions (Ca2+) together with orthophosphates (PO43-)" []
+is_a: ID:0000115 ! Ceramic
+
+[Term]
+id: ID:0000117
+name: Metal
+def: "Element, compound, or alloy that is a good conductor of both electricity and heat. Metals are usually shiny, malleable and ductile." []
+is_a: ID:0000035 ! Biomaterial
+
+[Term]
+id: ID:0000118
+name: Affymetrix chip
+namespace: ero
+def: "A nucleic acid microarray assay that uses the GeneChip System as the platform  for analyzing complex genetic information." [ERO:0001265]
+relationship: intervenes_in ID:0000077 ! Affymetrix technology
+
+[Term]
+id: ID:0000119
+name: Polymer
+namespace: chebi
+def: "A mixture, which is composed of macromolecules of different kinds and which may be differentiated by composition, length, degree of branching etc." [CHEBI:60027]
+is_a: ID:0000035 ! Biomaterial
+
+[Term]
+id: ID:0000120
+name: Bioactivity
+def: "The effect/reaction/interaction/response of a given agent, such as a biomaterial or drug, upon a living organism or on living tissue." []
+is_a: ID:0000038 ! Chemical property
+relationship: characterizes ID:0000094 ! Glass ceramic
+relationship: characterizes ID:0000095 ! Bioglass
+relationship: characterizes ID:0000096 ! Tricalcium phosphate
+relationship: characterizes ID:0000116 ! Calcium-phosphate based ceramic
+relationship: characterizes ID:0000150 ! Hydroxyapatite
+relationship: characterizes ID:0000183 ! Collagen-hydroxyapatite composite
+relationship: characterizes ID:0000184 ! Polycaprolactone-hydroxyapatite composite
+relationship: characterizes ID:0000210 ! Silicon-substituted tricalcium phosphate and hydroxyapatite
+relationship: characterizes ID:0000213 ! Polycaprolactone-hydroxyapatite-collagen
+relationship: characterizes ID:0000214 ! Polycaprolactone-tricalcium phosphate
+relationship: characterizes ID:0000218 ! Strontium-hardystonite-gahnite
+relationship: characterizes ID:0000225 ! Calcium-phosphate based ceramic-chitosan
+
+[Term]
+id: ID:0000121
+name: Bioinertness
+def: "It refers to any material that once placed in the human body has minimal interaction with its surrounding tissue. Generally a fibrous capsule might form around bioinert implants hence its biofunctionality relies on tissue integration through the implant." []
+is_a: ID:0000038 ! Chemical property
+relationship: characterizes ID:0000086 ! Stainless steel
+relationship: characterizes ID:0000090 ! Alumina
+relationship: characterizes ID:0000091 ! Partially stabilised zirconia
+relationship: characterizes ID:0000092 ! Ultra high molecular weight polyethylene
+relationship: characterizes ID:0000097 ! Polylactic acid
+relationship: characterizes ID:0000167 ! Polycaprolactone
+relationship: characterizes ID:0000176 ! Polyethylene glycol
+relationship: characterizes ID:0000177 ! Alginate
+relationship: characterizes ID:0000178 ! Chitosan gel
+relationship: characterizes ID:0000179 ! Gelatin
+relationship: characterizes ID:0000180 ! Dextran gel
+relationship: characterizes ID:0000181 ! Polyethylene glycol gel
+relationship: characterizes ID:0000182 ! Chitosan-alginate composite
+relationship: characterizes ID:0000188 ! Polyglycolic acid
+relationship: characterizes ID:0000189 ! Poloxamine-polylysine acrylate
+relationship: characterizes ID:0000190 ! Polylactic-co-glycolic acid
+relationship: characterizes ID:0000200 ! Poly-L-lactide
+relationship: characterizes ID:0000215 ! SPCL-Si
+relationship: characterizes ID:0000216 ! Collagen-polylactic-co-glycolic acid
+relationship: characterizes ID:0000217 ! Polycaprolactone-polylactic-co-glycolic acid
+relationship: characterizes ID:0000219 ! Baghdadite-polycaprolactone-glass nanoparticle
+
+[Term]
+id: ID:0000122
+name: Ultimate tensile strength
+def: "Maximum stress that a material can withstand while being stretched or pulled before failing or breaking." []
+synonym: " UTS" RELATED []
+synonym: "Tensile strength" RELATED []
+synonym: "TS" RELATED []
+synonym: "Ultimate strength" RELATED []
+is_a: ID:0000004 ! Mechanical property
+relationship: derives_from ID:0000138 ! Tensile test
+relationship: derives_from ID:0000139 ! Fracture test
+
+[Term]
+id: ID:0000123
+name: Bulk modulus
+def: "It measures the substance's resistance to uniform compression. It is defined as the ratio of the infinitesimal pressure increase to the resulting relative decrease of the volume." []
+is_a: ID:0000004 ! Mechanical property
+relationship: derives_from ID:0000137 ! Compression test
+relationship: derives_from ID:0000138 ! Tensile test
+relationship: derives_from ID:0000139 ! Fracture test
+relationship: derives_from ID:0000140 ! Torsion test
+
+[Term]
+id: ID:0000124
+name: Affymetrix protocol
+def: "The Affymetrix protocol first steps are RNA isolation and conversion to cDNA and cRNA. The RNA is then hybridized with the array probes (25-mer) and the unbound material washed away. Finally a signal amplifying reaction is performed, the microarray chip is ready to be scanned and the signal acquired." []
+relationship: intervenes_in ID:0000077 ! Affymetrix technology
+
+[Term]
+id: ID:0000125
+name: Affymetrix raw data file
+def: "DAT files contain raw image data; CEL files contain information about the expression levels of the individual probes; CHP files contain information about probe sets; EXP files contain information about experimental conditions and protocols. The CEL file (the most important for analysis) contains information about where each probe is on the chip, an intensity value, standard deviation of the intensity, the number of pixels used to calculate the intensity value, a flag to indicate an outlier as calculated by the algorithm and a user defined flag indicating the feature should be excluded from future analysis." []
+relationship: derives_from ID:0000077 ! Affymetrix technology
+
+[Term]
+id: ID:0000126
+name: Illumina technology
+def: "Illumina, Inc. is a US company that develops, manufactures and markets integrated systems for the analysis of genetic variation and biological function." []
+relationship: intervenes_in ID:0000065 ! Gene expression microarray
+
+[Term]
+id: ID:0000127
+name: Illumina chip
+def: "In Illumina's BeadArray Technology each bead is covered with hundreds of thousands of copies of a specific oligonucleotide that act as the capture sequences in one of Illumina's assays. Examples are MouseWG-6 v2.0 Expression BeadChip, HumanWG-6 Expression BeadChip." []
+relationship: intervenes_in ID:0000126 ! Illumina technology
+
+[Term]
+id: ID:0000128
+name: Illumina raw data file
+def: "Illumina BeadChip gene expression summary file contains the expression levels for each bead type on the arrays on the BeadChip." []
+relationship: derives_from ID:0000126 ! Illumina technology
+
+[Term]
+id: ID:0000129
+name: Other gene expression microarray technologies
+def: "Other gene expression microarray techniques not included in the previous list." []
+relationship: intervenes_in ID:0000065 ! Gene expression microarray
+
+[Term]
+id: ID:0000130
+name: Toluidine blue stain
+def: "It stains nucleic acids blue and polysaccharides purple." []
+xref: FBbi:00000049
+is_a: ID:0000068 ! Histochemical staining
+
+[Term]
+id: ID:0000131
+name: Alcian blue stains
+def: "Family of polyvalent basic dyes used to stain acidic polysaccharides such as glycosaminoglycans in cartilages and other body structures, some types of mucopolysaccharides, sialylated glycocalyx of cells etc." []
+xref: NDF-RT:N0000166971
+is_a: ID:0000068 ! Histochemical staining
+
+[Term]
+id: ID:0000132
+name: Masson's trichrome stain
+def: "Three-colour staining protocol able to distinguish cells from surrounding connective tissue. Most recipes produce red keratin and muscle fibers, blue or green collagen and bone, light red or pink cytoplasm, and dark brown to black cell nuclei." []
+is_a: ID:0000068 ! Histochemical staining
+
+[Term]
+id: ID:0000133
+name: Other stain
+def: "Staining methods not listed before." []
+is_a: ID:0000068 ! Histochemical staining
+
+[Term]
+id: ID:0000134
+name: Contact mode technique
+def: "Static mode operation where the static tip deflection is used as a feedback signal. The force between the tip and the surface is kept constant during scanning by maintaining a constant deflection." []
+is_a: ID:0000060 ! Atomic Force Microscopy
+
+[Term]
+id: ID:0000135
+name: Non-contact mode technique
+def: "The tip of the cantilever does not contact the sample surface. The van der Waals forces, which are strongest from 1 nm to 10 nm above the surface, or any other long range force which extends above the surface acts to decrease the resonance frequency of the cantilever. The absence of repulsive forces permits its use in the imaging of soft samples and does not require conducting samples." []
+is_a: ID:0000060 ! Atomic Force Microscopy
+
+[Term]
+id: ID:0000136
+name: Tapping mode technique
+def: "The cantilever is driven to oscillate up and down at near its resonance frequency by a small piezoelectric element mounted in the AFM tip holder similar to non-contact mode. However, the amplitude of this oscillation is greater than 10 nm, typically 100 to 200 nm. The interaction of forces acting on the cantilever when the tip comes close to the surface, Van der Waals forces, dipole-dipole interactions, electrostatic forces, etc. cause the amplitude of this oscillation to decrease as the tip gets closer to the sample." []
+is_a: ID:0000060 ! Atomic Force Microscopy
+
+[Term]
+id: ID:0000137
+name: Compression test
+def: "Mechanical test  where balanced inward (\"pushing\") forces are applied to different points of a material or structure. Applied forces have no net sum or torque directed. By inducing compression, mechanical properties such as compressive strength or modulus of elasticity, can be measured." []
+is_a: ID:0000061 ! Dynamic Mechanical Analysis
+
+[Term]
+id: ID:0000138
+name: Tensile test
+def: "Materials science test in which a sample is subjected to a controlled tension until failure. Properties that are directly measured via a tensile test are ultimate tensile strength, maximum elongation and reduction in area. From these measurements the following properties can also be determined: Young's modulus, Poisson's ratio, yield strength, and strain-hardening characteristics" []
+is_a: ID:0000061 ! Dynamic Mechanical Analysis
+
+[Term]
+id: ID:0000139
+name: Fracture test
+def: "Used to define a material's ability to resist deformation under load." []
+is_a: ID:0000061 ! Dynamic Mechanical Analysis
+
+[Term]
+id: ID:0000140
+name: Torsion test
+def: "Mechanical test  where an applied torque generate a twisting of the material." []
+is_a: ID:0000061 ! Dynamic Mechanical Analysis
+
+[Term]
+id: ID:0000141
+name: Other mechanical test
+def: "Test not included in the previous list." []
+is_a: ID:0000061 ! Dynamic Mechanical Analysis
+
+[Term]
+id: ID:0000142
+name: Illumina protocol
+def: "The Illumina Gene Expression microarray system uses total RNA as starting material (minimum of 250ng of total RNA at a minimum concentration of 25ng/ul). RNA isolation, cDNA synthesis, and in vitro transcription amplification are followed by hybridization on 50-mer probe sequences (several hundred thou- sand copies of the probe across the bead surface)." []
+relationship: intervenes_in ID:0000126 ! Illumina technology
+
+[Term]
+id: ID:0000143
+name: Direct detection method protocol
+def: "The direct method is a one-step staining method and involves a labeled antibody (e.g. FITC-conjugated antiserum) reacting directly with the antigen in tissue sections. While this technique utilizes only one antibody and therefore is simple and rapid, the sensitivity is lower due to little signal amplification, such as with indirect methods, and is less commonly used than indirect methods." []
+relationship: intervenes_in ID:0000067 ! Immunohistofluorescence
+relationship: intervenes_in ID:0000069 ! Immunohistochemistry
+
+[Term]
+id: ID:0000144
+name: Indirect detection method protocol
+def: "The indirect method involves an unlabeled primary antibody (first layer) that binds to the target antigen in the tissue and a labeled secondary antibody (second layer) that reacts with the primary antibody. The secondary antibody must be raised against the IgG of the animal species in which the primary antibody has been raised. This method is more sensitive than direct detection strategies because of signal amplification due to the binding of several secondary antibodies to each primary antibody if the secondary antibody is conjugated to the fluorescent or enzyme reporter." []
+relationship: intervenes_in ID:0000067 ! Immunohistofluorescence
+relationship: intervenes_in ID:0000069 ! Immunohistochemistry
+
+[Term]
+id: ID:0000145
+name: Formalin fixed paraffin embedded (FFPE) protocol
+def: "Tissue fixation in formalin (an aqueous solution containing formaldehyde) in order to prevent it from decaying or degeneration and to examine it clearly under a microscope for histological, pathological or cytological studies. The fixed tissue is then embedded in paraffin wax in order to solidify it and easily cut its fine sections." []
+is_a: ID:0000104 ! Isolated tissue
+relationship: intervenes_in ID:0000067 ! Immunohistofluorescence
+relationship: intervenes_in ID:0000068 ! Histochemical staining
+relationship: intervenes_in ID:0000069 ! Immunohistochemistry
+
+[Term]
+id: ID:0000146
+name: Hematoxylin-eosin stain
+namespace: ero
+def: "A histology technique that involves the staining of cells with a blue nuclear stain, hemalum followed by counterstaining with eosin, which stains eosinophilic structures in various shades of red, pink and orange." [ERO:0001605]
+is_a: ID:0000068 ! Histochemical staining
+
+[Term]
+id: ID:0000147
+name: Antibody
+namespace: go
+def: "An immunoglobulin complex that is secreted into extracellular space and found in mucosal areas or other tissues or circulating in the blood or lymph. In its canonical form, a circulating immunoglobulin complex is composed of two identical heavy chains and two identical light chains, held together by disulfide bonds. Some forms of are polymers of the basic structure and contain additional components such as J-chain and the secretory component." [GO:0042571]
+relationship: intervenes_in ID:0000067 ! Immunohistofluorescence
+relationship: intervenes_in ID:0000069 ! Immunohistochemistry
+
+[Term]
+id: ID:0000148
+name: Histochemistry stained tissue
+def: "Stained tissue are studied to define and examine: bulk tissues (for example muscle fibers or connective tissue), cell populations (i.e. different blood cells), or molecules within individual cells (for example DNA, proteins, lipids, carbohydrates)." []
+relationship: derives_from ID:0000068 ! Histochemical staining
+
+[Term]
+id: ID:0000149
+name: Immunohistochemistry stained tissue
+def: "Biological staining is used to mark cells in flow cytometry, and to flag proteins or nucleic acids in tissues. Examples of proteins examined with this technique are BSP, Col I, Col II." []
+relationship: derives_from ID:0000069 ! Immunohistochemistry
+
+[Term]
+id: ID:0000150
+name: Hydroxyapatite
+def: "Naturally occurring mineral form of calcium apatite with the formula Ca5(PO4)3(OH). Up to 50% of bone by weight is a modified form of hydroxyapatite (known as bone mineral)." []
+synonym: "HA" RELATED []
+synonym: "Hydroxylapatite" RELATED []
+synonym: "Synthetic hydroxyapatite" RELATED []
+is_a: ID:0000115 ! Ceramic
+
+[Term]
+id: ID:0000151
+name: Tandem Mass Spectrometry
+namespace: nci_thesaurus
+def: "Mass spectrometers coupled in series. The targeted compound is selectively ionized, and its characteristic ions are separated from others in the mixture in the first mass spectrometer. The selected primary ions are then decomposed by collision, and from the resulting products the final mass analyzer selects secondary ions characteristic of the targeted compound. Tandem mass spectrometry can achieve specificities and sensitivities equivalent of those of methods such as radioimmunoassay and gas chromatography/mass spectrometry, while performing analyses in much shorter times." [Thesaurus:Tandem_Mass_Spectrometry]
+synonym: "MS/MS" RELATED []
+is_a: ID:0000066 ! Mass Spectrometry
+
+[Term]
+id: ID:0000152
+name: Mass spectra file
+def: "MS/MS output file containing mass spectra, which show peaks due to the masses of the various ions produced by the fragmentation process. Spectra are converted into peptide sequence tags, used to identify a peptide in a protein database." []
+relationship: derives_from ID:0000066 ! Mass Spectrometry
+
+[Term]
+id: ID:0000153
+name: Mass spectrometry sample preparation protocol
+def: "The protocol depends on the ion source different requirements for volume, concentration, and composition of the analyte solution. Furthermore, in protein mass spectrometry usually the protein of interest is cleaved into peptides before analysis, either by in-gel digestion or by proteolysis in solution." []
+relationship: intervenes_in ID:0000066 ! Mass Spectrometry
+
+[Term]
+id: ID:0000154
+name: Composite
+def: "Materials made from two or more constituent materials with significantly different physical or chemical properties, that when combined, produce a material with characteristics different from the individual components. The individual components remain separate and distinct within the finished structure." []
+is_a: ID:0000035 ! Biomaterial
+
+[Term]
+id: ID:0000155
+name: Fibroblast
+namespace: cl
+def: "A connective tissue cell which secretes an extracellular matrix rich in collagen and other macromolecules. Flattened and irregular in outline with branching processes; appear fusiform or spindle-shaped." [CL:0000057]
+is_a: ID:0000003 ! Cell
+
+[Term]
+id: ID:0000156
+name: Primer
+namespace: ero
+def: "Nucleic acid reagent that is a short strand of nucleic acid that serves as a starting point for DNA or RNA synthesis." [ERO:0000631]
+relationship: intervenes_in ID:0000063 ! Real-time polymerase chain reaction
+
+[Term]
+id: ID:0000157
+name: Quantification file
+def: "Quantification can be relative or absolute. Relative quantification is based on internal reference genes to determine fold-differences in expression of the target gene. Absolute quantification gives the exact number of target DNA molecules by comparison with DNA standards. Examples of genes examined with this technique are COL1A1, COL2A1." []
+relationship: derives_from ID:0000063 ! Real-time polymerase chain reaction
+
+[Term]
+id: ID:0000158
+name: DNA-polymerase
+namespace: nci_thesaurus
+def: "Nucleotidyltransferases that catalyze the addition of deoxyribonucleotide residues to the end of a DNA." [Thesaurus:DNA_Polymerase]
+relationship: intervenes_in ID:0000063 ! Real-time polymerase chain reaction
+
+[Term]
+id: ID:0000159
+name: Immunoblotting
+namespace: msh
+def: "Immunologic method used for detecting or quantifying immunoreactive substances. The substance is identified by first immobilizing it by blotting onto a membrane and then tagging it with labeled antibodies." [MSH:D015151]
+is_a: ID:0000054 ! Biomolecular analysis
+
+[Term]
+id: ID:0000160
+name: Electrophoresis gel
+namespace: nci_thesaurus
+def: "A gel matrix through which molecules are separated, usually by size or charge, under the influence of an electrical field." [Thesaurus:Electrophoresis_Gel]
+relationship: intervenes_in ID:0000159 ! Immunoblotting
+
+[Term]
+id: ID:0000161
+name: Western blot
+namespace: mi
+def: "Procedure to identify and quantify proteins. A mixture of protein is first submitted to an electrophoresis in denaturing condition and then electro-transferred from the gel to a membrane. The membrane is then incubated with a primary antibody specific for a given protein or a specific residue modification in the sample under analysis. A secondary antibody, radiolabelled or fused to fluorophore or to a chromogenic enzyme, targets the first antibody and allows the visualisation of the protein band on the membrane." [MI:0113]
+is_a: ID:0000159 ! Immunoblotting
+
+[Term]
+id: ID:0000162
+name: Northern blot
+namespace: mmo
+def: "A multistep process in which a mixture of RNA is separated by gel electrophoresis, that is, separation of ionic solutes based on differences in rate of migration in an applied electric field using a semisolid colloid such as agarose or acrylamide as the support medium, followed by transfer to a membrane such as nitrocellulose or nylon and detection of specific RNAs by hybridization of a tagged or labelled polynucleotide, usually a single DNA fragment with a specific, known sequence." [MMO:0000339]
+is_a: ID:0000159 ! Immunoblotting
+
+[Term]
+id: ID:0000163
+name: Southern blot
+namespace: mi
+def: "A standard procedure to identify DNA fragments containing specific gene sequences. In this procedure i) a genome is fragmented using a restriction enzyme ii) the generated fragments are separated by electrophoresis iii) the fragments are transferred to a membrane iv)the membrane is incubated with a radio labelled probe that hybridises any complementary subsequence." [MI:0103]
+is_a: ID:0000159 ! Immunoblotting
+
+[Term]
+id: ID:0000164
+name: Agarose gel image
+def: "Image of the matrix gel containing the separated target molecules (proteins or nucleic acids)." []
+relationship: derives_from ID:0000159 ! Immunoblotting
+
+[Term]
+id: ID:0000165
+name: Staining protocol
+namespace: pdq
+def: "Any of the various methods that use a dye, reagent, or other material for producing coloration in tissues or microorganisms for microscopic examination." [PDQ:CDR0000575401]
+relationship: intervenes_in ID:0000068 ! Histochemical staining
+
+[Term]
+id: ID:0000166
+name: Immunohistofluorescence stained tissue
+def: "Tissues that, under exposure to ultraviolet rays, produce fluorescence. Examples of proteins examined with this technique are BSP, Col I, Col II." []
+relationship: derives_from ID:0000067 ! Immunohistofluorescence
+
+[Term]
+id: ID:0000167
+name: Polycaprolactone
+def: "Biodegradable polyester prepared by ring opening polymerization of caprolactone using a catalyst such as stannous octoate." []
+synonym: "PCL" RELATED []
+is_a: ID:0000119 ! Polymer
+
+[Term]
+id: ID:0000168
+name: AFM image
+def: "High-resolution image acquired from AFM technology. It shows a combination of surface (topological information about the roughness and the features of the surface is derived) and mechanical information, by means of the cantilever which measures the elasticity of the tested sample." []
+relationship: derives_from ID:0000060 ! Atomic Force Microscopy
+
+[Term]
+id: ID:0000170
+name: Fracture maximum load
+def: "The stress applied to fracture a specimen." []
+synonym: "Breaking strength" RELATED []
+synonym: "Fracture strength" RELATED []
+is_a: ID:0000004 ! Mechanical property
+relationship: derives_from ID:0000139 ! Fracture test
+
+[Term]
+id: ID:0000171
+name: Fracture maximum strain
+def: "The strain applied to fracture a specimen." []
+is_a: ID:0000004 ! Mechanical property
+relationship: derives_from ID:0000139 ! Fracture test
+
+[Term]
+id: ID:0000172
+name: Torsion modulus
+def: "Measure of the amount of torque that a radial shaft can sustain during its rotation in a mechanical system." []
+synonym: "Torsional stiffness" RELATED []
+is_a: ID:0000004 ! Mechanical property
+relationship: derives_from ID:0000140 ! Torsion test
+
+[Term]
+id: ID:0000173
+name: Maximum load
+def: "Maximum stress that a material can withstand while being stretched or pulled before failing or breaking." []
+synonym: "Tensile strength" RELATED []
+synonym: "Ultimate strength" RELATED []
+synonym: "Ultimate tensile strength" RELATED []
+is_a: ID:0000004 ! Mechanical property
+relationship: derives_from ID:0000138 ! Tensile test
+
+[Term]
+id: ID:0000174
+name: Maximum strain
+def: "Maximum strain that a material can withstand while being stretched or pulled before failing or breaking." []
+is_a: ID:0000004 ! Mechanical property
+relationship: derives_from ID:0000138 ! Tensile test
+
+[Term]
+id: ID:0000175
+name: Other biomaterials
+is_a: ID:0000035 ! Biomaterial
+
+[Term]
+id: ID:0000176
+name: Polyethylene glycol
+def: "Polyether compound whose structure is H-(O-CH2-CH2)n-OH." []
+synonym: "PEG" RELATED []
+is_a: ID:0000119 ! Polymer
+
+[Term]
+id: ID:0000177
+name: Alginate
+def: "Anionic polysaccharide distributed widely in the cell walls of brown algae, where through binding with water it forms a viscous gum. Characterized by biocompatibility and simple gelation with divalent cations such as Ca2+." []
+is_a: ID:0000084 ! Gel
+
+[Term]
+id: ID:0000178
+name: Chitosan gel
+def: "Gel obtained from chitosan, a linear polysaccharide composed of randomly distributed beta-(1-4)-linked D-glucosamine (deacetylated unit) and N-acetyl-D-glucosamine (acetylated unit), made by treating shrimp and other crustacean shells with the alkali sodium hydroxide." []
+is_a: ID:0000084 ! Gel
+
+[Term]
+id: ID:0000179
+name: Gelatin
+def: "Translucent, colorless, brittle (when dry), flavorless solid substance, derived from collagen obtained from various animal by-products." []
+is_a: ID:0000084 ! Gel
+
+[Term]
+id: ID:0000180
+name: Dextran gel
+def: "Gel based on dextran, a complex, branched glucan (polysaccharide made of many glucose molecules) composed of chains of varying lengths (from 3 to 2000 kilodaltons)." []
+is_a: ID:0000084 ! Gel
+
+[Term]
+id: ID:0000181
+name: Polyethylene glycol gel
+def: "Gel deriving from polyethylene glycol, produced by the interaction of ethylene oxide with water." []
+is_a: ID:0000084 ! Gel
+
+[Term]
+id: ID:0000182
+name: Chitosan-alginate composite
+def: "Material whose components are chitosan and alginate." []
+is_a: ID:0000154 ! Composite
+
+[Term]
+id: ID:0000183
+name: Collagen-hydroxyapatite composite
+def: "Material whose components are collagen and hydroxyapatite." []
+is_a: ID:0000154 ! Composite
+
+[Term]
+id: ID:0000184
+name: Polycaprolactone-hydroxyapatite composite
+def: "Material whose components are hydroxyapatite and polycaprolactone." []
+synonym: "PCL-HA" RELATED []
+is_a: ID:0000154 ! Composite
+
+[Term]
+id: ID:0000185
+name: Collagen-chitosan composite
+def: "Material whose components are chitosan and collagen." []
+is_a: ID:0000154 ! Composite
+
+[Term]
+id: ID:0000186
+name: Polycaprolactone-collagen composite
+def: "Material whose components are collagen and polycaprolactone." []
+is_a: ID:0000154 ! Composite
+
+[Term]
+id: ID:0000187
+name: Other composite
+def: "Composite material not listed among the composite materials." []
+is_a: ID:0000154 ! Composite
+
+[Term]
+id: ID:0000188
+name: Polyglycolic acid
+def: "Polymer prepared starting from glycolic acid by means of polycondensation or ring-opening polymerization." []
+synonym: "PGA" RELATED []
+synonym: "Polyglycolide" RELATED []
+is_a: ID:0000119 ! Polymer
+
+[Term]
+id: ID:0000189
+name: Poloxamine-polylysine acrylate
+def: "Polymer for tissue engineering applications composed by polylysine, used to confer endothelial cell attachment properties to the poloxamine-based polymer, and acrylate, which makes it photo-cross-linkable." []
+synonym: "PPA" RELATED []
+is_a: ID:0000119 ! Polymer
+
+[Term]
+id: ID:0000190
+name: Polylactic-co-glycolic acid
+def: "Copolymer synthesized by means of random ring-opening co-polymerization of two different monomers, the cyclic dimers (1,4-dioxane-2,5-diones) of glycolic acid and lactic acid." []
+synonym: "PLGA" RELATED []
+is_a: ID:0000119 ! Polymer
+
+[Term]
+id: ID:0000191
+name: Mechanical parameter of load
+def: "Dataset of physical parameters about mechanical tests performed, such as the applied intensity and velocity of strain." []
+relationship: intervenes_in ID:0000061 ! Dynamic Mechanical Analysis
+
+[Term]
+id: ID:0000192
+name: SEM image
+def: "High-resolution image acquired from SEM technique. Morphological information about sample surface and three-dimensional structure is derived." []
+relationship: derives_from ID:0000070 ! Scanning electron microscopy
+
+[Term]
+id: ID:0000193
+name: TEM image
+def: "High-resolution image of TEM acquisition. The image is formed from the interaction of the electrons transmitted through the specimen; it enables to examine fine details, even as small as a single column of atoms." []
+relationship: derives_from ID:0000064 ! Transmission electron microscopy
+
+[Term]
+id: ID:0000194
+name: X ray image
+def: "High-resolution 2D image from X-ray technology. Since X-rays interact with matter, it's possible to highlight specific physical entities (i.e. tissues, organs), having different X-ray adsorption properties, due to their chemico-physical nature." []
+relationship: derives_from ID:0000062 ! X-ray microtomography
+
+[Term]
+id: ID:0000195
+name: Excitation wavelength
+def: "Wavelength of the radiation (usually coming from a laser line) used to stimulate fluorescence in the measured object. The stimulated dye will emit radiation with a particular Emission Wavelength." []
+relationship: intervenes_in ID:0000067 ! Immunohistofluorescence
+
+[Term]
+id: ID:0000196
+name: Thermoplasticity
+def: "Material property consisting in becoming soft when heated and hard when cooled." []
+is_a: ID:0000037 ! Physical property
+relationship: characterizes ID:0000092 ! Ultra high molecular weight polyethylene
+relationship: characterizes ID:0000097 ! Polylactic acid
+relationship: characterizes ID:0000167 ! Polycaprolactone
+relationship: characterizes ID:0000176 ! Polyethylene glycol
+relationship: characterizes ID:0000188 ! Polyglycolic acid
+relationship: characterizes ID:0000190 ! Polylactic-co-glycolic acid
+relationship: characterizes ID:0000200 ! Poly-L-lactide
+relationship: characterizes ID:0000213 ! Polycaprolactone-hydroxyapatite-collagen
+relationship: characterizes ID:0000214 ! Polycaprolactone-tricalcium phosphate
+relationship: characterizes ID:0000215 ! SPCL-Si
+relationship: characterizes ID:0000216 ! Collagen-polylactic-co-glycolic acid
+relationship: characterizes ID:0000217 ! Polycaprolactone-polylactic-co-glycolic acid
+relationship: characterizes ID:0000219 ! Baghdadite-polycaprolactone-glass nanoparticle
+
+[Term]
+id: ID:0000197
+name: Flexural strength
+def: "Mechanical parameter for brittle material, defined as a material's ability to resist deformation under load." []
+synonym: "Bend strength" RELATED []
+synonym: "Fracture strength" RELATED []
+synonym: "Modulus of rupture" RELATED []
+is_a: ID:0000004 ! Mechanical property
+relationship: derives_from ID:0000139 ! Fracture test
+
+[Term]
+id: ID:0000198
+name: SEM protocol
+def: "It first aims at fixing samples, then at dehydrating them, through a ethanols scale, and finally at coating samples with gold/palladium alloy." []
+relationship: intervenes_in ID:0000070 ! Scanning electron microscopy
+
+[Term]
+id: ID:0000199
+name: TEM protocol
+def: "It aims at fixing samples, dehydrating and including them into resin (infiltration and embedding)." []
+relationship: intervenes_in ID:0000064 ! Transmission electron microscopy
+
+[Term]
+id: ID:0000200
+name: Poly-L-lactide
+def: "Form of polylactide, having lactic acid a chiral nature, and it is the product resulting from polymerization of L,L-lactide." []
+synonym: "L-lactide" RELATED []
+synonym: "PLLA" RELATED []
+is_a: ID:0000119 ! Polymer
+
+[Term]
+id: ID:0000201
+name: Real-time reverse-transcription polymerase chain reaction
+namespace: obi
+def: "It is a PCR real time preceded by a reverse transcription step (reverse transcription step = an RNA strand is reverse transcribed into its DNA complement using the enzyme reverse transcriptase)" [OBI:0000911]
+synonym: "qRT-PCR" RELATED []
+is_a: ID:0000063 ! Real-time polymerase chain reaction
+
+[Term]
+id: ID:0000202
+name: Extracellular matrix
+namespace: nci_thesaurus
+def: "Network of fibers that hold cells together. It is found within the extracellular space and in association with the basement membrane of the cell surface. It promotes cellular proliferation and provides a supporting structure to which cells or cell lysates in culture dishes adhere. It is broken down during normal physiological and disease processes such as bone remodeling, embryogenesis, cancer, and arthritis." [NCIThesaurus:C13232]
+relationship: derives_from ID:0000000 ! Cell seeding
+relationship: intervenes_in ID:0000033 ! Cellular response evaluation
+
+[Term]
+id: ID:0000203
+name: Growth factor
+namespace: nci_thesaurus
+def: "Extracellular signaling molecule involved in control of target cell proliferation, cell survival, and cell differentiation." [NCIThesaurus:C20424]
+relationship: characterizes ID:0000101 ! Growth environment
+
+[Term]
+id: ID:0000204
+name: Growth factor concentration
+def: "Measurable characteristic related to the concentration of growth factors." []
+relationship: characterizes ID:0000101 ! Growth environment
+
+[Term]
+id: ID:0000205
+name: Growth factor species
+def: "It defines the organism species the growth factor comes from." []
+relationship: characterizes ID:0000101 ! Growth environment
+
+[Term]
+id: ID:0000206
+name: Growth factor isoform
+def: "It defines the specific isoform of the growth factor." []
+relationship: characterizes ID:0000101 ! Growth environment
+
+[Term]
+id: ID:0000207
+name: Sus scrofa domesticus
+namespace: ncbi_taxonomy
+xref: NCBITaxon:9825
+is_a: ID:0000082 ! Donor
+is_a: ID:0000083 ! Host
+
+[Term]
+id: ID:0000208
+name: Adipose-derived stem cell
+namespace: bto
+def: "Most adult stem cells are lineage-restricted (multipotent) and are generally referred to by their tissue origin e.g. adipose-derived stem cell." [BTO:0005198]
+synonym: "ADSC" RELATED []
+is_a: ID:0000003 ! Cell
+
+[Term]
+id: ID:0000209
+name: Embryonic stem cell
+namespace: nci_thesaurus
+def: "Embryonic stem (ES) cells are cells derived from the inner cell mass of the early embryo that can be propagated indefinitely in the primitive undifferentiated state while remaining pluripotent." [NCIThesaurus:C12935]
+synonym: "ESC" RELATED []
+is_a: ID:0000003 ! Cell
+
+[Term]
+id: ID:0000210
+name: Silicon-substituted tricalcium phosphate and hydroxyapatite
+def: "Material whose components are silicon, tricalcium phosphate and hydroxyapatite." []
+is_a: ID:0000154 ! Composite
+
+[Term]
+id: ID:0000211
+name: Silk
+namespace: msh
+def: "A continuous protein fiber consisting primarily of fibroids. It is synthesized by a variety of insects and arachnids." [MeSH:D047011]
+is_a: ID:0000119 ! Polymer
+
+[Term]
+id: ID:0000212
+name: Titanium dioxide
+namespace: chebi
+def: "A titanium molecular entity that has formula O2Ti." [CHEBI:32234]
+is_a: ID:0000115 ! Ceramic
+
+[Term]
+id: ID:0000213
+name: Polycaprolactone-hydroxyapatite-collagen
+def: "Material whose components are polycaprolactone, collagen and hydroxyapatite." []
+is_a: ID:0000154 ! Composite
+
+[Term]
+id: ID:0000214
+name: Polycaprolactone-tricalcium phosphate
+def: "Material whose components are polycaprolactone and tricalcium phosphate." []
+is_a: ID:0000154 ! Composite
+
+[Term]
+id: ID:0000215
+name: SPCL-Si
+def: "Functionalized material. A blend of corn starch with polycaprolactone used to produce three-dimensional fibre meshes scaffolds, coupled with a calcium silicate solution for the in situ functionalization with Si-OH groups." []
+comment: From: Rodrigues AI et al. Bioactive starch-based scaffolds and human adipose stem cells are a good combination for bone tissue engineering. Acta Biomater. 2012, 8(10):3765-76.
+is_a: ID:0000154 ! Composite
+
+[Term]
+id: ID:0000216
+name: Collagen-polylactic-co-glycolic acid
+def: "Material whose components are collagen and polylactic-co-glycolic acid." []
+is_a: ID:0000154 ! Composite
+
+[Term]
+id: ID:0000217
+name: Polycaprolactone-polylactic-co-glycolic acid
+def: "Material whose components are polycaprolactone and polylactic-co-glycolic acid." []
+is_a: ID:0000154 ! Composite
+
+[Term]
+id: ID:0000218
+name: Strontium-hardystonite-gahnite
+def: "Ceramic material where Ca, Sr, Zn and Si ions have been incorporated." []
+comment: From: Roohani-Esfahani SI et al. Unique microstructural design of ceramic scaffolds for bone regeneration under load.  Acta Biomater. 2013, 9(6):7014-24.
+synonym: "Sr-HT-gahnite" RELATED []
+is_a: ID:0000115 ! Ceramic
+
+[Term]
+id: ID:0000219
+name: Baghdadite-polycaprolactone-glass nanoparticle
+def: "Baghdadite scaffolds were coated in polycaprolactone and nanoparticles of bio-glass. The PCL coating increased the scaffolds toughness while nBG enhanced bioactivity." []
+is_a: ID:0000175 ! Other biomaterials
+
+[Term]
+id: ID:0000220
+name: Periodontal ligament cell
+def: "Fibroblast-like cells characterized by collagen production but also possessing some osteoblastic features." []
+comment: From: Jonsson D et al. The human periodontal ligament cell: a fibroblast-like cell acting as an immune cell. J Periodontal Res. 2011, 46(2):153-7.
+is_a: ID:0000003 ! Cell
+
+[Term]
+id: ID:0000221
+name: Functionalization
+def: "Functionalization is employed for surface modification of industrial materials in order to achieve desired surface properties. It consists in modifying the surface of a material by bringing physical, chemical or biological characteristics different from the ones originally found on the surface of a material. The modification can be done by different methods with a view to altering a wide range of characteristics of the surface, such as: roughness, hydrophilicity, surface charge, surface energy, biocompatibility and reactivity. Coating of materials is a type of functionalization." []
+is_a: ID:0000002 ! Scaffold property
+relationship: characterizes ID:0000219 ! Baghdadite-polycaprolactone-glass nanoparticle
+
+[Term]
+id: ID:0000222
+name: Bioglass-collagen-phosphatidylserine
+def: "Material whose components are bioglass, collagen and phosphatidylserine." []
+is_a: ID:0000154 ! Composite
+
+[Term]
+id: ID:0000223
+name: Polyurethane
+namespace: msh
+def: "A group of thermoplastic or thermosetting polymers containing polyisocyanate. They are used as elastomers, as coatings, as fibers and as foams." [MeSH:D011140]
+is_a: ID:0000119 ! Polymer
+
+[Term]
+id: ID:0000224
+name: Collagen-glycosaminoglycan
+namespace: msh
+def: "Material whose components are collagen and glycosaminoglycan" [MeSH:C058506]
+synonym: "Collagen-GAG" RELATED []
+is_a: ID:0000154 ! Composite
+
+[Term]
+id: ID:0000225
+name: Calcium-phosphate based ceramic-chitosan
+def: "Material whose components are calcium-phosphate based ceramic and chitosan." []
+is_a: ID:0000154 ! Composite
+
+[Term]
+id: ID:0000226
+name: Bone-derived cell
+def: "Cell derived from bone." []
+synonym: "BDC" RELATED []
+is_a: ID:0000003 ! Cell
+
+[Term]
+id: ID:0000227
+name: Umbilical cord mesenchymal stem cell
+namespace: pdq
+def: "Multipotent stem cells of mesenchymal origin isolated from umbilical cord blood. Umbilical cord blood-derived mesenchymal stem cells can differentiate into a variety of cell types including fibroblasts, osteoblasts, chondrocytes, myocytes, adipocytes, and endothelial cells." [PDQ:CDR0000633689]
+synonym: "UCMSC" RELATED []
+synonym: "umbilical cord blood-derived mesenchymal stem cells" RELATED []
+is_a: ID:0000003 ! Cell
+
+[Term]
+id: ID:0000228
+name: MC3T3-E1 cell line
+namespace: bto
+def: "Mouse embryo/fetus calvaria fibroblasts; established from the calvaria of an embryo/fetus C57BL/6 mouse; described to differentiate to osteoblasts and to produce collagen." [BTO:0001957]
+is_a: ID:0000073 ! Osteoblast
+
+[Term]
+id: ID:0000229
+name: Pore interconnection
+def: "Level of connection between pores. It improves mass transport throughout the material." []
+synonym: "Interpore connectivity" RELATED []
+relationship: characterizes ID:0000017 ! Porosity
+
+[Term]
+id: ID:0000230
+name: Chemical functionalization
+def: "Addition of functional groups/peptides/proteins/molecules/growth factors onto the surface of a material by chemical synthesis methods. Chemical functionalization is one of the main methods to obtain the desired physical and chemical properties of materials, such as hydrophilicity or bioactivation." []
+is_a: ID:0000221 ! Functionalization
+
+[Term]
+id: ID:0000231
+name: Physical functionalization
+def: "Alteration of the the surface topography of a material,   producing microscale and nanoscale features in a well-controlled manner with nanocoating, film deposition, or in situ surface modifications at nanoscale level, with the aim to improve the material performances." []
+is_a: ID:0000221 ! Functionalization
+
+[Term]
+id: ID:0000232
+name: Extraction protocol
+namespace: efo
+def: "The procedure used to obtain something from a mixture or compound by chemical or physical or mechanical means." [EFO:0000490]
+relationship: characterizes ID:0000008 ! Primary cell culture
+
+[Term]
+id: ID:0000233
+name: Health status
+namespace: exo
+def: "The condition of an organism in all aspects (e.g., functional or metabolic efficiency)." [ExO:0000038]
+relationship: characterizes ID:0000082 ! Donor
+relationship: characterizes ID:0000083 ! Host
+
+[Term]
+id: ID:0000234
+name: Seeding efficiency
+def: "The percentage of cells plated (seeded, inoculated) which attach to the surface of the culture vessel within a specified period of time. The conditions under which such a determination is made should always be stated." []
+comment: From: Worthington Tissue Dissociation Guide, http://www.worthington-biochem.com/tissuedissociation/glossary.html#attachment
+synonym: "Attachment efficiency" RELATED []
+relationship: characterizes ID:0000000 ! Cell seeding
+
+[Term]
+id: ID:0000235
+name: Cytotoxicity text
+def: "It determines whether a product or compound will have any toxic effect due to leachables on living cells. Generally used as a screening tool for raw materials or component products before they are put into the design of a medical device." []
+is_a: ID:0000033 ! Cellular response evaluation
+
+[Term]
+id: ID:0000236
+name: Flow Cytometry
+namespace: msh
+def: "Technique using an instrument system for making, processing, and displaying one or more measurements on individual cells obtained from a cell suspension. Cells are usually stained with one or more fluorescent dyes specific to cell components of interest, e.g., DNA, and fluorescence of each cell is measured as it rapidly transverses the excitation beam (laser or mercury arc lamp). Fluorescence provides a quantitative measure of various biochemical and biophysical properties of the cell, as well as a basis for cell sorting. Other measurable optical parameters include light absorption and light scattering, the latter being applicable to the measurement of cell size, shape, density, granularity, and stain uptake." [MeSH:D005434]
+synonym: "FACS" RELATED []
+synonym: "Fluorescence-Activated Cell Sorting" RELATED []
+relationship: intervenes_in ID:0000243 ! Cell characterization
+
+[Term]
+id: ID:0000237
+name: NIH/3T3 cell line
+is_a: ID:0000155 ! Fibroblast
+
+[Term]
+id: ID:0000238
+name: Trabecular bone cell
+def: "Cell derived from trabecular (or cancellous, or spongy) bone." []
+is_a: ID:0000003 ! Cell
+
+[Term]
+id: ID:0000239
+name: Cortical bone cell
+def: "Cell derived from cortical bone." []
+is_a: ID:0000003 ! Cell
+
+[Term]
+id: ID:0000240
+name: Bone marrow stromal cell
+def: "Primary human marrow stromal cells (MSCs) cultured from adult bone marrow (BM) mononuclear cells (MNCs)." []
+synonym: "BMSC" RELATED []
+xref: BTO:0004122
+is_a: ID:0000003 ! Cell
+
+[Term]
+id: ID:0000241
+name: Dental pulp stem cell
+def: "Multipotent stem cells obtained from dental pulp." []
+synonym: "DPSC" RELATED []
+is_a: ID:0000003 ! Cell
+
+[Term]
+id: ID:0000242
+name: Bone marrow stromal stem cell
+def: "They are known to be able to transform into liver, nerve, muscle and kidney cells." [BTO:0002668]
+is_a: ID:0000003 ! Cell
+
+[Term]
+id: ID:0000243
+name: Cell characterization
+def: "Procedure addressed to ensure the quality of the cells. It assesses the cell source with regard to its identity/phenotype, to the presence of other cells types, adventitious agents, endogenous agents,and molecular contaminants." []
+is_a: ID:0000023 ! In vitro study
+
+[Term]
+id: ID:0000244
+name: MG63 cell line
+def: "Homo sapiens (human) bone, osteosarcoma cell line; established from a 14 year old caucasian male." [BTO:0001596]
+is_a: ID:0000248 ! Osteosarcoma cell
+
+[Term]
+id: ID:0000245
+name: Magnesium-calcium phosphate
+def: "Biocement fabricated by using the mixed powders of magnesium oxide (MgO) and calcium dihydrogen phosphate (Ca(H2PO4)2·H2O)." []
+synonym: "MCPB" RELATED []
+is_a: ID:0000115 ! Ceramic
+
+[Term]
+id: ID:0000246
+name: Bioerosion
+def: "Process that induces a non-hydrosoluble polymer to become hydrosoluble in physiological conditions." []
+is_a: ID:0000251 ! Biomaterial behaviour
+
+[Term]
+id: ID:0000247
+name: Cell culture environment
+def: "Experimental environment where cells are cultured onto \nthe material. It describes all the biological parameters related to cell culture." []
+relationship: intervenes_in ID:0000000 ! Cell seeding
+
+[Term]
+id: ID:0000248
+name: Osteosarcoma cell
+def: "Cell of a malignant neoplasm of the bone-forming tissues." []
+is_a: ID:0000003 ! Cell
+
+[Term]
+id: ID:0000249
+name: Cytotoxicity by elution test
+def: "Material is put in the culture medium for a predefined period of time. Later cells are cultured in that medium and observed under microscope to identify possible toxic effects." []
+is_a: ID:0000235 ! Cytotoxicity text
+
+[Term]
+id: ID:0000250
+name: Direct cytotoxicity test
+def: "Cells are seeded onto the material and observed under microscope to identify possible toxic effects." []
+is_a: ID:0000235 ! Cytotoxicity text
+
+[Term]
+id: ID:0000251
+name: Biomaterial behaviour
+def: "The set of behaviors that characterize a material on its chemical-physical nature." []
+relationship: characterizes ID:0000023 ! In vitro study
+relationship: characterizes ID:0000027 ! In vivo study
+
+[Term]
+id: ID:0000252
+name: Degradation
+namespace: nci_thesaurus
+def: "The reduction of a chemical compound to one less complex, as by splitting off one or more groups." [Thesaurus:C61559]
+is_a: ID:0000251 ! Biomaterial behaviour
+
+[Term]
+id: ID:0000253
+name: Bioreabsorption
+def: "Process of removal of a polymer or its degradation products through the cellular activity (phagocytosis)." []
+is_a: ID:0000251 ! Biomaterial behaviour
+
+[Typedef]
+id: characterizes
+name: characterizes
+
+[Typedef]
+id: derives_from
+name: derives_from
+
+[Typedef]
+id: intervenes_in
+name: intervenes_in
+
+[Typedef]
+id: part_of
+name: part_of
+
