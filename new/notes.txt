@@ -2,3 +2,4 @@ loadable ontologies in aberowl:
 
 [MIREOTFIND] New ontology count: 367
 [MIREOTFIND] Ontologies with no imports: 277
+(just about three quarters)

@@ -58,15 +58,15 @@ def run(oName) {
   println "[UNMIREOT] Creating new ontology with imports"
 
   def added = []
-  def manager = OWLManager.createOWLOntologyManager();
   def config = new OWLOntologyLoaderConfiguration();
-  config.setFollowRedirects(false);
+  config.setFollowRedirects(true);
   config.setMissingImportHandlingStrategy(MissingImportHandlingStrategy.SILENT);
 
   mireots[oName].each {
     println "[UNMIREOT] Adding " + it + " to ontology"
 
     try {
+      def manager = OWLManager.createOWLOntologyManager();
       def ontology = manager
         .loadOntologyFromOntologyDocument(new IRIDocumentSource(IRI.create("http://localhost/rtestserv/ontology/"+oName+"/download")), config);
 
@@ -82,10 +82,13 @@ def run(oName) {
     } catch(err) {
       println "[UNMIREOT] Unable to load " + it + " with " + oName 
       println "[UNMIREOT] Removing "  + it + " from imports"
+      err.printStackTrace();
+
       added.remove(it)
       results[it] = 'Unloadable'
     }
 
+if(results[it] != "Unloadable") {
     // Load and reason the new ontology
     def newOntology
     def newManager
@@ -105,17 +108,23 @@ def run(oName) {
       OWLReasoner oReasoner = reasonerFactory.createReasoner(newOntology, rConf);
       oReasoner.precomputeInferences(InferenceType.CLASS_HIERARCHY);
 
-      println "[UNMIREOT] Reasoned " + oName + " and " + it + ", resulting in " + oReasoner.getEquivalentClasses(manager.getOWLDataFactory().getOWLNothing()).getEntitiesMinusBottom().size() + " unsatisfiable classes"
-      results[it] = oReasoner.getEquivalentClasses(manager.getOWLDataFactory().getOWLNothing()).getEntitiesMinusBottom().size() + " unsatisfiable classes"
-
+      println "[UNMIREOT] Reasoned " + oName + " and " + it + ", resulting in " + oReasoner.getEquivalentClasses(newManager.getOWLDataFactory().getOWLNothing()).getEntitiesMinusBottom().size() + " unsatisfiable classes"
+  results[it] = [ 'count': oReasoner.getEquivalentClasses(newManager.getOWLDataFactory().getOWLNothing()).getEntitiesMinusBottom().size() ]
+  results[it]['classes'] = []
+  for (OWLClass cl : newOntology.getClassesInSignature(true)) {
+    if(!oReasoner.isSatisfiable(cl)) {
+      System.out.println("Unsatisfiable: " + cl.getIRI())
+      results[it]['classes'] << cl.getIRI().toString()
+    }
+  }
     } catch(e) {
-      println "[UNMIREOT] Unable to load ontology with " + it
+      println "[UNMIREOT] Unable to reason ontology with " + it
       println "[UNMIREOT] Removing "  + it + " from imports"
       added.remove(it)
       results[it] = 'Inconsistent'
     }
   }
-
+}
   println "[UNMIREOT] Finished checking all ontologies individually"
 
   // Modify the original ontology, adding all of the valid imports
@@ -154,14 +163,17 @@ def run(oName) {
   oReasoner.precomputeInferences(InferenceType.CLASS_HIERARCHY);
 
   println "[UNMIREOT] Unsatisfiable classes: " + oReasoner.getEquivalentClasses(newManager.getOWLDataFactory().getOWLNothing()).getEntitiesMinusBottom().size()
-  for (OWLClass cl : newOntology.getClassesInSignature()) {
+  results['ALL'] = [ 'count': oReasoner.getEquivalentClasses(newManager.getOWLDataFactory().getOWLNothing()).getEntitiesMinusBottom().size() ]
+  results['ALL']['classes'] = []
+  for (OWLClass cl : newOntology.getClassesInSignature(true)) {
     if(!oReasoner.isSatisfiable(cl)) {
       System.out.println("Unsatisfiable: " + cl.getIRI())
+      results['ALL']['classes'] << cl.getIRI().toString()
     }
   }
-  results['ALL'] = oReasoner.getEquivalentClasses(newManager.getOWLDataFactory().getOWLNothing()).getEntitiesMinusBottom().size()
+  
 
-  }catch(e) {
+  } catch(e) {
     results['ALL'] = 'Inconsistent'
   }
 

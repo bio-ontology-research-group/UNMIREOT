@@ -65,7 +65,7 @@ new HTTPBuilder('http://localhost/rtestserv/').get(path: 'service/api/getStatuse
           println "[MIREOTFIND] " + name + " has no imports"
         }
         oClasses[name] = []
-        ontology.getClassesInSignature(false).each {
+        ontology.getClassesInSignature(true).each {
           oClasses[name] << it.getIRI().toString()
         }
         println "[MIREOTFIND] Found " + oClasses[name].size() + " classes in " + name
@@ -79,8 +79,12 @@ new HTTPBuilder('http://localhost/rtestserv/').get(path: 'service/api/getStatuse
 
     def patterns = new JsonSlurper().parseText(new File("ontology_iri_patterns.json").text)
     def uses = [:]
+    def onts = []
+    new File('oo.txt').eachLine { line ->
+      onts << line
+    }
 
-    //oClasses is a map of ontologies, the value of which is a list of their iris
+    //oClasses (why the f is it called that?) is a map of ontologies, the value of which is a list of their iris
 
     oClasses.each { name, classIRIs ->
       uses[name] = []
@@ -92,21 +96,24 @@ new HTTPBuilder('http://localhost/rtestserv/').get(path: 'service/api/getStatuse
           if(iri.contains(classIRIPattern) && name != oName) {
               uses[name] << oName
               refCount++
+          }
+
         }
 
-        uses[name] = uses[name].unique { a, b -> a <=> b }
-
-        
+        def rec = onts.find { iri.contains(it) && it != name }
+        if(rec) {
+          uses[name] << rec
+          refCount++
+        }
       }
-        
-    }
 
-    
-if(refCount > 0) {
-      println "[MIREOTFIND] " + name + " has no imports and references classes " + refCount + " times from: " + uses[name]
-    } else {
-      println "[MIREOTFIND] " + name + " has no imports but defines all its own classes"
-    }
+      uses[name] = uses[name].unique { a, b -> a <=> b }
+
+      if(refCount > 0) {
+        println "[MIREOTFIND] " + name + " has no imports and references classes " + refCount + " times from: " + uses[name]
+      } else {
+        println "[MIREOTFIND] " + name + " has no imports but defines all its own classes"
+      }
     }
   }
 
