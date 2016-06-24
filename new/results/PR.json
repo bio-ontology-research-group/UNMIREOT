@@ -1,0 +1,177 @@
+{
+    "NCBITAXON": "Inconsistent",
+    "SP": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "BT": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "CL": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "RS": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "RP": "Inconsistent",
+    "RB": "Inconsistent",
+    "NIGO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "GO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "HC": "Inconsistent",
+    "MOD": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "PSIMOD": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "MO": "Inconsistent",
+    "CHEBI": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "BFO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "VT": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "MP": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "PW": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "EP": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "PP": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "EV": "Inconsistent",
+    "BP": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "MIRNAO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "SO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "MS": "Inconsistent",
+    "MI": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "PE": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "MF": {
+        "count": 4,
+        "classes": [
+            "http://purl.obolibrary.org/obo/MF_0000003",
+            "http://purl.obolibrary.org/obo/MF_0000000",
+            "http://purl.obolibrary.org/obo/MF_0000001",
+            "http://purl.obolibrary.org/obo/MF_0000012"
+        ]
+    },
+    "ADW": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "CN": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "OBI": {
+        "count": 0,
+        "classes": [
+            "http://www.w3.org/2002/07/owl#Nothing"
+        ]
+    },
+    "MA": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "HP": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "LHN": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "VFB": "Inconsistent",
+    "IPR": "Inconsistent",
+    "ALL": "Inconsistent"
+}

@@ -1,0 +1,99 @@
+{
+    "CHEBI": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "NIGO": {
+        "count": 16,
+        "classes": [
+            "http://purl.obolibrary.org/obo/GO_0044706",
+            "http://purl.obolibrary.org/obo/FBcv_0000402",
+            "http://purl.obolibrary.org/obo/FBcv_0000401",
+            "http://purl.obolibrary.org/obo/GO_0044705",
+            "http://purl.obolibrary.org/obo/GO_0048065",
+            "http://purl.obolibrary.org/obo/GO_0016545",
+            "http://purl.obolibrary.org/obo/GO_0007617",
+            "http://purl.obolibrary.org/obo/GO_0007619",
+            "http://purl.obolibrary.org/obo/GO_0008049",
+            "http://purl.obolibrary.org/obo/GO_0035648",
+            "http://purl.obolibrary.org/obo/GO_0045433",
+            "http://purl.obolibrary.org/obo/GO_0060179",
+            "http://purl.obolibrary.org/obo/GO_0008050",
+            "http://purl.obolibrary.org/obo/GO_0060180",
+            "http://purl.obolibrary.org/obo/GO_0048047",
+            "http://purl.obolibrary.org/obo/GO_0001759"
+        ]
+    },
+    "GO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "PATO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "ATO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "FB-BT": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "FBBT": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "FBbt": "Inconsistent",
+    "FB-DV": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "FBDV": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "CARO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "CO": "Inconsistent",
+    "CL": {
+        "count": 8,
+        "classes": [
+            "http://purl.obolibrary.org/obo/CL_0002590",
+            "http://purl.obolibrary.org/obo/CL_1000327",
+            "http://purl.obolibrary.org/obo/CL_1000325",
+            "http://purl.obolibrary.org/obo/CL_1000323",
+            "http://purl.obolibrary.org/obo/CL_1000321",
+            "http://purl.obolibrary.org/obo/CL_1000314",
+            "http://purl.obolibrary.org/obo/CL_1000326",
+            "http://purl.obolibrary.org/obo/CL_0009001"
+        ]
+    },
+    "BFO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "ALL": "Inconsistent"
+}

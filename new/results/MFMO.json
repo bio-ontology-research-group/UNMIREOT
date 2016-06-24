@@ -1,0 +1,68 @@
+{
+    "MF": {
+        "count": 4,
+        "classes": [
+            "http://purl.obolibrary.org/obo/MF_0000003",
+            "http://purl.obolibrary.org/obo/MF_0000000",
+            "http://purl.obolibrary.org/obo/MF_0000001",
+            "http://purl.obolibrary.org/obo/MF_0000012"
+        ]
+    },
+    "UBERON": "Inconsistent",
+    "ERO": {
+        "count": 0,
+        "classes": [
+            "http://www.w3.org/2002/07/owl#Nothing"
+        ]
+    },
+    "PATO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "ATO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "NIGO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "GO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "BFO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "CL": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "CARO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "ENVO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "RO": "Inconsistent",
+    "ALL": "Inconsistent"
+}

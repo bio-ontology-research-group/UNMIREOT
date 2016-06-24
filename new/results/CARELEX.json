@@ -1,0 +1,27 @@
+{
+    "RB": "Inconsistent",
+    "MF": {
+        "count": 4,
+        "classes": [
+            "http://purl.obolibrary.org/obo/MF_0000003",
+            "http://purl.obolibrary.org/obo/MF_0000000",
+            "http://purl.obolibrary.org/obo/MF_0000001",
+            "http://purl.obolibrary.org/obo/MF_0000012"
+        ]
+    },
+    "SO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "ALL": {
+        "count": 4,
+        "classes": [
+            "http://purl.obolibrary.org/obo/MF_0000003",
+            "http://purl.obolibrary.org/obo/MF_0000000",
+            "http://purl.obolibrary.org/obo/MF_0000001",
+            "http://purl.obolibrary.org/obo/MF_0000012"
+        ]
+    }
+}

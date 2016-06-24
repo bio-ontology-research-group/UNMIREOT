@@ -1,0 +1,89 @@
+{
+    "OGI": {
+        "count": 3,
+        "classes": [
+            "http://purl.obolibrary.org/obo/OGSF_0001003",
+            "http://purl.obolibrary.org/obo/SO_0001023",
+            "http://www.w3.org/2002/07/owl#Nothing",
+            "http://purl.obolibrary.org/obo/OGI_0000035"
+        ]
+    },
+    "AO": {
+        "count": 0,
+        "classes": [
+            "http://www.w3.org/2002/07/owl#Nothing"
+        ]
+    },
+    "VO": "Inconsistent",
+    "ERO": {
+        "count": 0,
+        "classes": [
+            "http://www.w3.org/2002/07/owl#Nothing"
+        ]
+    },
+    "PATO": {
+        "count": 0,
+        "classes": [
+            "http://www.w3.org/2002/07/owl#Nothing"
+        ]
+    },
+    "ATO": {
+        "count": 0,
+        "classes": [
+            "http://www.w3.org/2002/07/owl#Nothing"
+        ]
+    },
+    "BFO": {
+        "count": 0,
+        "classes": [
+            "http://www.w3.org/2002/07/owl#Nothing"
+        ]
+    },
+    "NCBITAXON": "Inconsistent",
+    "OBI": {
+        "count": 0,
+        "classes": [
+            "http://www.w3.org/2002/07/owl#Nothing"
+        ]
+    },
+    "MIRNAO": {
+        "count": 0,
+        "classes": [
+            "http://www.w3.org/2002/07/owl#Nothing"
+        ]
+    },
+    "SO": {
+        "count": 0,
+        "classes": [
+            "http://www.w3.org/2002/07/owl#Nothing"
+        ]
+    },
+    "CHEBI": {
+        "count": 0,
+        "classes": [
+            "http://www.w3.org/2002/07/owl#Nothing"
+        ]
+    },
+    "NIGO": {
+        "count": 0,
+        "classes": [
+            "http://www.w3.org/2002/07/owl#Nothing"
+        ]
+    },
+    "GO": {
+        "count": 0,
+        "classes": [
+            "http://www.w3.org/2002/07/owl#Nothing"
+        ]
+    },
+    "OAE": "Inconsistent",
+    "MS": "Inconsistent",
+    "EO": {
+        "count": 1,
+        "classes": [
+            "http://www.w3.org/2002/07/owl#Nothing",
+            "http://www.semanticweb.org/ethnicityOntology#Shona"
+        ]
+    },
+    "ALL": "Inconsistent"
+}

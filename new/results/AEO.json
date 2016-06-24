@@ -1,0 +1,64 @@
+{
+    "EHDAA2": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "EHDA": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "EO": {
+        "count": 1,
+        "classes": [
+            "http://www.semanticweb.org/ethnicityOntology#Shona"
+        ]
+    },
+    "CL": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "UBERON": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "ERO": {
+        "count": 0,
+        "classes": [
+            "http://www.w3.org/2002/07/owl#Nothing"
+        ]
+    },
+    "CARO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "ZFA": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "FB-BT": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "FBBT": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "FBbt": "Inconsistent",
+    "ALL": "Inconsistent"
+}

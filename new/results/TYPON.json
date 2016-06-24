@@ -1,0 +1,38 @@
+{
+    "MIRNAO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "SO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "ENVO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "BFO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "OBI": {
+        "count": 0,
+        "classes": [
+            "http://www.w3.org/2002/07/owl#Nothing"
+        ]
+    },
+    "ALL": {
+        "count": 0,
+        "classes": [
+            "http://www.w3.org/2002/07/owl#Nothing"
+        ]
+    }
+}

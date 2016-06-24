@@ -1,0 +1,40 @@
+{
+    "ERO": {
+        "count": 0,
+        "classes": [
+            "http://www.w3.org/2002/07/owl#Nothing"
+        ]
+    },
+    "AO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "VIVO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "BFO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "OCRE": "Inconsistent",
+    "UO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "OBI": {
+        "count": 0,
+        "classes": [
+            "http://www.w3.org/2002/07/owl#Nothing"
+        ]
+    },
+    "ALL": "Inconsistent"
+}

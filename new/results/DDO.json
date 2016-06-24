@@ -1,0 +1,51 @@
+{
+    "DOID": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "AO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "MS": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "UO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "MP": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "CHEBI": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "BFO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "OBI": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "ALL": "Inconsistent"
+}

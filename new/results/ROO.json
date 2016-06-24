@@ -1,0 +1,19 @@
+{
+    "NCIT": "Inconsistent",
+    "EV": "Inconsistent",
+    "OCRE": "Inconsistent",
+    "UO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "ICD10": "Inconsistent",
+    "SNOMEDCT": "Inconsistent",
+    "ALL": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    }
+}

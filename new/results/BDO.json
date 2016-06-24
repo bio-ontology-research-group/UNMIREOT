@@ -1,0 +1,54 @@
+{
+    "HP": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "NCIT": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "EV": "Inconsistent",
+    "RP": "Inconsistent",
+    "ATO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "MI": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "MS": "Inconsistent",
+    "PO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "pseudo": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "MA": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "INO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "ALL": "Inconsistent"
+}

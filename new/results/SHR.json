@@ -1,0 +1,52 @@
+{
+    "MO": "Inconsistent",
+    "SO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "RP": "Inconsistent",
+    "MS": "Inconsistent",
+    "HC": "Inconsistent",
+    "PR": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "EO": {
+        "count": 1,
+        "classes": [
+            "http://www.semanticweb.org/ethnicityOntology#Shona"
+        ]
+    },
+    "BP": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "HIV": "Inconsistent",
+    "CO": "Inconsistent",
+    "RB": "Inconsistent",
+    "MF": {
+        "count": 4,
+        "classes": [
+            "http://purl.obolibrary.org/obo/MF_0000003",
+            "http://purl.obolibrary.org/obo/MF_0000000",
+            "http://purl.obolibrary.org/obo/MF_0000001",
+            "http://purl.obolibrary.org/obo/MF_0000012"
+        ]
+    },
+    "ALL": {
+        "count": 5,
+        "classes": [
+            "http://purl.obolibrary.org/obo/MF_0000003",
+            "http://purl.obolibrary.org/obo/MF_0000000",
+            "http://purl.obolibrary.org/obo/MF_0000001",
+            "http://purl.obolibrary.org/obo/MF_0000012",
+            "http://www.semanticweb.org/ethnicityOntology#Shona"
+        ]
+    }
+}

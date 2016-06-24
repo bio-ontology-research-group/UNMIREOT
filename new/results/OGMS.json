@@ -1,0 +1,27 @@
+{
+    "BFO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "MS": "Inconsistent",
+    "OBI": {
+        "count": 0,
+        "classes": [
+            "http://www.w3.org/2002/07/owl#Nothing"
+        ]
+    },
+    "AO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "ALL": {
+        "count": 0,
+        "classes": [
+            "http://www.w3.org/2002/07/owl#Nothing"
+        ]
+    }
+}

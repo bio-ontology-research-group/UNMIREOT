@@ -1,0 +1,39 @@
+{
+    "CHEBI": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "MOP": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "MO": "Inconsistent",
+    "BFO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "AO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "OBI": {
+        "count": 0,
+        "classes": [
+            "http://www.w3.org/2002/07/owl#Nothing"
+        ]
+    },
+    "ALL": {
+        "count": 0,
+        "classes": [
+            "http://www.w3.org/2002/07/owl#Nothing"
+        ]
+    }
+}

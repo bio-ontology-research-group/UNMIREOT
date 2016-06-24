@@ -1,0 +1,130 @@
+{
+    "EO": {
+        "count": 1,
+        "classes": [
+            "http://www.semanticweb.org/ethnicityOntology#Shona"
+        ]
+    },
+    "CHEBI": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "OBI": "Inconsistent",
+    "OAE": "Inconsistent",
+    "STATO": {
+        "count": 16,
+        "classes": [
+            "http://purl.obolibrary.org/obo/OBI_0500017",
+            "http://purl.obolibrary.org/obo/OBI_0500003",
+            "http://purl.obolibrary.org/obo/OBI_0500005",
+            "http://purl.obolibrary.org/obo/OBI_0500007",
+            "http://purl.obolibrary.org/obo/OBI_0500011",
+            "http://purl.obolibrary.org/obo/OBI_0500012",
+            "http://purl.obolibrary.org/obo/OBI_0500013",
+            "http://purl.obolibrary.org/obo/STATO_0000186",
+            "http://purl.obolibrary.org/obo/STATO_0000256",
+            "http://purl.obolibrary.org/obo/STATO_0000254",
+            "http://purl.obolibrary.org/obo/STATO_0000248",
+            "http://purl.obolibrary.org/obo/STATO_0000091",
+            "http://purl.obolibrary.org/obo/STATO_0000222",
+            "http://purl.obolibrary.org/obo/STATO_0000147",
+            "http://purl.obolibrary.org/obo/STATO_0000123",
+            "http://purl.obolibrary.org/obo/STATO_0000046"
+        ]
+    },
+    "ATO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "FMA": "Inconsistent",
+    "UO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "NIGO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "GO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "DRON": "Inconsistent",
+    "AO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "BFO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "CHMO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "EFO": {
+        "count": 4,
+        "classes": [
+            "http://purl.obolibrary.org/obo/CHEBI_28001",
+            "http://purl.obolibrary.org/obo/CHEBI_18292",
+            "http://purl.obolibrary.org/obo/CHEBI_16522",
+            "http://purl.obolibrary.org/obo/CHEBI_15929"
+        ]
+    },
+    "FO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "NCBITAXON": "Inconsistent",
+    "MS": "Inconsistent",
+    "UBERON": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "ERO": {
+        "count": 0,
+        "classes": [
+            "http://www.w3.org/2002/07/owl#Nothing"
+        ]
+    },
+    "CL": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "IDO": "Inconsistent",
+    "PATO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "GAZ": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "ALL": "Inconsistent"
+}

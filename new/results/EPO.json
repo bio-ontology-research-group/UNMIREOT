@@ -1,0 +1,34 @@
+{
+    "IDO": "Inconsistent",
+    "EO": {
+        "count": 1,
+        "classes": [
+            "http://www.semanticweb.org/ethnicityOntology#Shona"
+        ]
+    },
+    "PTRANS": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "TRANS": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "PATO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "ATO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "ALL": "Inconsistent"
+}

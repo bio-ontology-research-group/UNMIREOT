@@ -1,0 +1,53 @@
+{
+    "AO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "MS": "Inconsistent",
+    "PECO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "EO": {
+        "count": 1,
+        "classes": [
+            "http://www.semanticweb.org/ethnicityOntology#Shona"
+        ]
+    },
+    "PP": "Inconsistent",
+    "EDAM": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "GRO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "GRO-CPGA": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "PO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "BFO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "ALL": "Inconsistent"
+}

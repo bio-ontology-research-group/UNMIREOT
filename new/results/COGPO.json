@@ -1,0 +1,48 @@
+{
+    "CO": "Inconsistent",
+    "FMA": "Inconsistent",
+    "PO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "OBI": "Inconsistent",
+    "AO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "BFO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "UO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "GAZ": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "PATO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "ATO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "ALL": "Inconsistent"
+}

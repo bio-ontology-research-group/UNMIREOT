@@ -1,0 +1,90 @@
+{
+    "RB": "Inconsistent",
+    "DOID": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "HC": "Inconsistent",
+    "CO": "Inconsistent",
+    "CN": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "PE": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "MA": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "EP": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "MI": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "PR": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "BT": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "EV": "Inconsistent",
+    "CL": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "MP": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "MO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "MF": {
+        "count": 4,
+        "classes": [
+            "http://purl.obolibrary.org/obo/MF_0000003",
+            "http://purl.obolibrary.org/obo/MF_0000000",
+            "http://purl.obolibrary.org/obo/MF_0000001",
+            "http://purl.obolibrary.org/obo/MF_0000012"
+        ]
+    },
+    "ALL": {
+        "count": 4,
+        "classes": [
+            "http://purl.obolibrary.org/obo/MF_0000003",
+            "http://purl.obolibrary.org/obo/MF_0000000",
+            "http://purl.obolibrary.org/obo/MF_0000001",
+            "http://purl.obolibrary.org/obo/MF_0000012"
+        ]
+    }
+}

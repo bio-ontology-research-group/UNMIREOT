@@ -1,0 +1,66 @@
+{
+    "SO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "NCBITAXON": "Inconsistent",
+    "GO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "BFO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "CHEBI": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "MS": "Inconsistent",
+    "NIGO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "OBI": {
+        "count": 0,
+        "classes": [
+            "http://www.w3.org/2002/07/owl#Nothing"
+        ]
+    },
+    "NCIT": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "EV": "Inconsistent",
+    "GRO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "RNAO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "AO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "ALL": "Inconsistent"
+}

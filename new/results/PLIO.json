@@ -1,0 +1,39 @@
+{
+    "MS": "Inconsistent",
+    "PR": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "NMR": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "CL": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "MF": {
+        "count": 4,
+        "classes": [
+            "http://purl.obolibrary.org/obo/MF_0000003",
+            "http://purl.obolibrary.org/obo/MF_0000000",
+            "http://purl.obolibrary.org/obo/MF_0000001",
+            "http://purl.obolibrary.org/obo/MF_0000012"
+        ]
+    },
+    "ALL": {
+        "count": 4,
+        "classes": [
+            "http://purl.obolibrary.org/obo/MF_0000003",
+            "http://purl.obolibrary.org/obo/MF_0000000",
+            "http://purl.obolibrary.org/obo/MF_0000001",
+            "http://purl.obolibrary.org/obo/MF_0000012"
+        ]
+    }
+}

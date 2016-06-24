@@ -1,0 +1,75 @@
+{
+    "NMR": {
+        "count": 1,
+        "classes": [
+            "http://www.projecthalo.com/aura#Synthesis-Of-Glutamine-with-ATP"
+        ]
+    },
+    "MP": {
+        "count": 1,
+        "classes": [
+            "http://www.projecthalo.com/aura#Synthesis-Of-Glutamine-with-ATP"
+        ]
+    },
+    "SO": {
+        "count": 1,
+        "classes": [
+            "http://www.projecthalo.com/aura#Synthesis-Of-Glutamine-with-ATP"
+        ]
+    },
+    "EP": {
+        "count": 1,
+        "classes": [
+            "http://www.projecthalo.com/aura#Synthesis-Of-Glutamine-with-ATP"
+        ]
+    },
+    "HC": {
+        "count": 1,
+        "classes": [
+            "http://www.projecthalo.com/aura#Synthesis-Of-Glutamine-with-ATP"
+        ]
+    },
+    "CO": {
+        "count": 1,
+        "classes": [
+            "http://www.projecthalo.com/aura#Synthesis-Of-Glutamine-with-ATP"
+        ]
+    },
+    "SP": {
+        "count": 1,
+        "classes": [
+            "http://www.projecthalo.com/aura#Synthesis-Of-Glutamine-with-ATP"
+        ]
+    },
+    "FO": {
+        "count": 1,
+        "classes": [
+            "http://www.projecthalo.com/aura#Synthesis-Of-Glutamine-with-ATP"
+        ]
+    },
+    "TO": {
+        "count": 1,
+        "classes": [
+            "http://www.projecthalo.com/aura#Synthesis-Of-Glutamine-with-ATP"
+        ]
+    },
+    "HIV": {
+        "count": 1,
+        "classes": [
+            "http://www.projecthalo.com/aura#Synthesis-Of-Glutamine-with-ATP"
+        ]
+    },
+    "AIDS": {
+        "count": 1,
+        "classes": [
+            "http://www.projecthalo.com/aura#Synthesis-Of-Glutamine-with-ATP"
+        ]
+    },
+    "PE": {
+        "count": 1,
+        "classes": [
+            "http://www.projecthalo.com/aura#Synthesis-Of-Glutamine-with-ATP"
+        ]
+    },
+    "ALL": "Inconsistent"
+}

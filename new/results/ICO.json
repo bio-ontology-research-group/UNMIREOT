@@ -1,0 +1,98 @@
+{
+    "AO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "OBI": {
+        "count": 0,
+        "classes": [
+            "http://www.w3.org/2002/07/owl#Nothing"
+        ]
+    },
+    "CO": "Inconsistent",
+    "NCBITAXON": "Inconsistent",
+    "PATO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "ATO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "NCIT": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "EV": "Inconsistent",
+    "MS": "Inconsistent",
+    "UO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "CHEBI": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "UBERON": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "ERO": {
+        "count": 0,
+        "classes": [
+            "http://www.w3.org/2002/07/owl#Nothing"
+        ]
+    },
+    "CL": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "BFO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "EO": {
+        "count": 1,
+        "classes": [
+            "http://www.semanticweb.org/ethnicityOntology#Shona"
+        ]
+    },
+    "NIGO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "GO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "CARO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "OAE": "Inconsistent",
+    "ALL": "Inconsistent"
+}

@@ -1,0 +1,104 @@
+{
+    "OBI": "Inconsistent",
+    "SWO": "Inconsistent",
+    "NCBITAXON": "Inconsistent",
+    "PATO": {
+        "count": 0,
+        "classes": [
+            "http://www.w3.org/2002/07/owl#Nothing"
+        ]
+    },
+    "ATO": {
+        "count": 0,
+        "classes": [
+            "http://www.w3.org/2002/07/owl#Nothing"
+        ]
+    },
+    "UBERON": {
+        "count": 0,
+        "classes": [
+            "http://www.w3.org/2002/07/owl#Nothing"
+        ]
+    },
+    "MIRNAO": {
+        "count": 25,
+        "classes": [
+            "http://www.w3.org/2002/07/owl#Nothing",
+            "http://purl.obolibrary.org/obo/SO_1000009",
+            "http://purl.obolibrary.org/obo/SO_1000027",
+            "http://purl.obolibrary.org/obo/SO_1000026",
+            "http://purl.obolibrary.org/obo/SO_1000025",
+            "http://purl.obolibrary.org/obo/SO_1000024",
+            "http://purl.obolibrary.org/obo/SO_1000023",
+            "http://purl.obolibrary.org/obo/SO_1000022",
+            "http://purl.obolibrary.org/obo/SO_1000021",
+            "http://purl.obolibrary.org/obo/SO_1000020",
+            "http://purl.obolibrary.org/obo/SO_1000019",
+            "http://purl.obolibrary.org/obo/SO_1000018",
+            "http://purl.obolibrary.org/obo/SO_1000017",
+            "http://purl.obolibrary.org/obo/SO_1000015",
+            "http://purl.obolibrary.org/obo/SO_1000013",
+            "http://purl.obolibrary.org/obo/SO_1000011",
+            "http://purl.obolibrary.org/obo/SO_1000010",
+            "http://purl.obolibrary.org/obo/SO_1000008",
+            "http://purl.obolibrary.org/obo/SO_1000012",
+            "http://purl.obolibrary.org/obo/SO_1000014",
+            "http://purl.obolibrary.org/obo/SO_1000016",
+            "http://purl.obolibrary.org/obo/SO_0001483",
+            "http://purl.obolibrary.org/obo/SO_0000694",
+            "http://purl.org/obo/owl/GO#GO_0035198",
+            "http://purl.org/obo/owl/GO#GO_0070883",
+            "http://purl.org/obo/owl/GO#GO_0070878"
+        ]
+    },
+    "SO": {
+        "count": 0,
+        "classes": [
+            "http://www.w3.org/2002/07/owl#Nothing"
+        ]
+    },
+    "AO": {
+        "count": 0,
+        "classes": [
+            "http://www.w3.org/2002/07/owl#Nothing"
+        ]
+    },
+    "VIVO": {
+        "count": 0,
+        "classes": [
+            "http://www.w3.org/2002/07/owl#Nothing"
+        ]
+    },
+    "VIVO-ISF": {
+        "count": 0,
+        "classes": [
+            "http://www.w3.org/2002/07/owl#Nothing"
+        ]
+    },
+    "MP": {
+        "count": 0,
+        "classes": [
+            "http://www.w3.org/2002/07/owl#Nothing"
+        ]
+    },
+    "EDAM": {
+        "count": 0,
+        "classes": [
+            "http://www.w3.org/2002/07/owl#Nothing"
+        ]
+    },
+    "OCRE": "Inconsistent",
+    "NIGO": {
+        "count": 0,
+        "classes": [
+            "http://www.w3.org/2002/07/owl#Nothing"
+        ]
+    },
+    "GO": {
+        "count": 0,
+        "classes": [
+            "http://www.w3.org/2002/07/owl#Nothing"
+        ]
+    },
+    "ALL": "Inconsistent"
+}

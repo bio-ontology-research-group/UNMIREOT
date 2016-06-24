@@ -1,0 +1,51 @@
+{
+    "MO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "FIX": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "OBI": {
+        "count": 0,
+        "classes": [
+            "http://www.w3.org/2002/07/owl#Nothing"
+        ]
+    },
+    "BFO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "CHEBI": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "AO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "MS": "Inconsistent",
+    "OBCS": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "ALL": {
+        "count": 0,
+        "classes": [
+            "http://www.w3.org/2002/07/owl#Nothing"
+        ]
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "HP": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "OF": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "MS": "Inconsistent",
+    "MA": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "HC": "Inconsistent",
+    "CHEBI": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "IPR": "Inconsistent",
+    "PE": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "RB": "Inconsistent",
+    "CO": "Inconsistent",
+    "ALL": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    }
+}

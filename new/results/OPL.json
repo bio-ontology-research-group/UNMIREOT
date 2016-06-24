@@ -1,0 +1,53 @@
+{
+    "NCBITAXON": "Inconsistent",
+    "AO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "UBERON": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "ERO": {
+        "count": 0,
+        "classes": [
+            "http://www.w3.org/2002/07/owl#Nothing"
+        ]
+    },
+    "CARO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "BT": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "IDOMAL": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "IDO": "Inconsistent",
+    "OBI": {
+        "count": 0,
+        "classes": [
+            "http://www.w3.org/2002/07/owl#Nothing"
+        ]
+    },
+    "CL": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "ALL": "Inconsistent"
+}

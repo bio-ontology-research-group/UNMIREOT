@@ -35,10 +35,25 @@ import groovy.json.*
 def mireots = new JsonSlurper().parseText(new File("mireot_results.json").text)
 def c = 0
 mireots.each { name, imports ->
-  println "Running UNMIREOT on " + name
-  def results = run(name)
-  println "Saving results for " + name
-  new File("results/"+name+'.json') << new JsonBuilder(results).toPrettyString()
+  try {
+    def otherResult = new JsonSlurper().parseText(new File("results/"+name+'.json').text)
+    def icons = otherResult.findAll { oName, res -> res == 'Inconsistent' }
+
+    if(icons.size() == otherResult.size()) {
+      println "re-running UNMIREOT on " + name + " because everything got fokt last time for some reason"
+      println "Running UNMIREOT on " + name
+      def results = run(name)
+      println "Saving results for " + name
+      new File("results/"+name+'.json').text = new JsonBuilder(results).toPrettyString()
+    } else {
+      println "skipping " + name + " because it's already done"
+    }
+  } catch(FileNotFoundException e) {
+    println "Running UNMIREOT on " + name
+    def results = run(name)
+    println "Saving results for " + name
+    new File("results/"+name+'.json').text = new JsonBuilder(results).toPrettyString()
+  }
 }
 
 def run(oName) {
@@ -65,9 +80,11 @@ def run(oName) {
   mireots[oName].each {
     println "[UNMIREOT] Adding " + it + " to ontology"
 
+    def ontology
+    def manager
     try {
-      def manager = OWLManager.createOWLOntologyManager();
-      def ontology = manager
+      manager = OWLManager.createOWLOntologyManager();
+      ontology = manager
         .loadOntologyFromOntologyDocument(new IRIDocumentSource(IRI.create("http://localhost/rtestserv/ontology/"+oName+"/download")), config);
 
       OWLImportsDeclaration importDeclaration = manager.getOWLDataFactory()
@@ -109,19 +126,26 @@ if(results[it] != "Unloadable") {
       oReasoner.precomputeInferences(InferenceType.CLASS_HIERARCHY);
 
       println "[UNMIREOT] Reasoned " + oName + " and " + it + ", resulting in " + oReasoner.getEquivalentClasses(newManager.getOWLDataFactory().getOWLNothing()).getEntitiesMinusBottom().size() + " unsatisfiable classes"
-  results[it] = [ 'count': oReasoner.getEquivalentClasses(newManager.getOWLDataFactory().getOWLNothing()).getEntitiesMinusBottom().size() ]
-  results[it]['classes'] = []
-  for (OWLClass cl : newOntology.getClassesInSignature(true)) {
-    if(!oReasoner.isSatisfiable(cl)) {
-      System.out.println("Unsatisfiable: " + cl.getIRI())
-      results[it]['classes'] << cl.getIRI().toString()
-    }
-  }
+      results[it] = [ 'count': oReasoner.getEquivalentClasses(newManager.getOWLDataFactory().getOWLNothing()).getEntitiesMinusBottom().size() ]
+      results[it]['classes'] = []
+      for (OWLClass cl : newOntology.getClassesInSignature(true)) {
+        if(!oReasoner.isSatisfiable(cl)) {
+          System.out.println("Unsatisfiable: " + cl.getIRI())
+          results[it]['classes'] << cl.getIRI().toString()
+        }
+      }
+    } catch(org.semanticweb.owlapi.io.UnparsableOntologyException e) {
+       println "[UNMIREOT] Unable to parse ontology with " + it
+      println "[UNMIREOT] Removing "  + it + " from imports"
+      added.remove(it)
+      results[it] = 'Unparseable'
+      e.printStackTrace()
     } catch(e) {
       println "[UNMIREOT] Unable to reason ontology with " + it
       println "[UNMIREOT] Removing "  + it + " from imports"
       added.remove(it)
       results[it] = 'Inconsistent'
+      e.printStackTrace()
     }
   }
 }

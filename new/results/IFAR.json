@@ -1,0 +1,35 @@
+{
+    "NCIT": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "EV": "Inconsistent",
+    "SNOMEDCT": "Inconsistent",
+    "HP": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "MI": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "INFECTION": "Inconsistent",
+    "MP": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "ALL": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    }
+}

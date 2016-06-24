@@ -1,0 +1,54 @@
+{
+    "ONTODT": "Inconsistent",
+    "OBI": "Inconsistent",
+    "AO": {
+        "count": 2,
+        "classes": [
+            "http://kt.ijs.si/panovp/OntoDM#OntoDM_661861",
+            "http://kt.ijs.si/panovp/OntoDM.owl#OntoDM_295724"
+        ]
+    },
+    "SWO": {
+        "count": 2,
+        "classes": [
+            "http://kt.ijs.si/panovp/OntoDM#OntoDM_661861",
+            "http://kt.ijs.si/panovp/OntoDM.owl#OntoDM_295724"
+        ]
+    },
+    "BFO": {
+        "count": 2,
+        "classes": [
+            "http://kt.ijs.si/panovp/OntoDM#OntoDM_661861",
+            "http://kt.ijs.si/panovp/OntoDM.owl#OntoDM_295724"
+        ]
+    },
+    "PATO": {
+        "count": 2,
+        "classes": [
+            "http://kt.ijs.si/panovp/OntoDM#OntoDM_661861",
+            "http://kt.ijs.si/panovp/OntoDM.owl#OntoDM_295724"
+        ]
+    },
+    "ATO": {
+        "count": 2,
+        "classes": [
+            "http://kt.ijs.si/panovp/OntoDM#OntoDM_661861",
+            "http://kt.ijs.si/panovp/OntoDM.owl#OntoDM_295724"
+        ]
+    },
+    "GAZ": {
+        "count": 2,
+        "classes": [
+            "http://kt.ijs.si/panovp/OntoDM#OntoDM_661861",
+            "http://kt.ijs.si/panovp/OntoDM.owl#OntoDM_295724"
+        ]
+    },
+    "UO": {
+        "count": 2,
+        "classes": [
+            "http://kt.ijs.si/panovp/OntoDM#OntoDM_661861",
+            "http://kt.ijs.si/panovp/OntoDM.owl#OntoDM_295724"
+        ]
+    },
+    "ALL": "Inconsistent"
+}

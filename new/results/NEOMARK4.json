@@ -1,0 +1,34 @@
+{
+    "DOID": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "AO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "MS": "Inconsistent",
+    "OBI": {
+        "count": 0,
+        "classes": [
+            "http://www.w3.org/2002/07/owl#Nothing"
+        ]
+    },
+    "HP": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "FMA": "Inconsistent",
+    "ALL": {
+        "count": 0,
+        "classes": [
+            "http://www.w3.org/2002/07/owl#Nothing"
+        ]
+    }
+}

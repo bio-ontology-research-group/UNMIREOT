@@ -1,0 +1,19 @@
+{
+    "PR": "Unloadable",
+    "PO": "Unloadable",
+    "MP": "Unloadable",
+    "HL7": "Inconsistent",
+    "TO": "Inconsistent",
+    "SCHEMA": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "ALL": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    }
+}

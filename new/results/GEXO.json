@@ -1,0 +1,250 @@
+{
+    "RETO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "NIGO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "GO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "MI": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "MS": "Inconsistent",
+    "RS": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "RP": "Inconsistent",
+    "PP": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "PR": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "SIO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "MP": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "HP": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "EP": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "MF": {
+        "count": 4,
+        "classes": [
+            "http://purl.obolibrary.org/obo/MF_0000003",
+            "http://purl.obolibrary.org/obo/MF_0000000",
+            "http://purl.obolibrary.org/obo/MF_0000001",
+            "http://purl.obolibrary.org/obo/MF_0000012"
+        ]
+    },
+    "BT": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "BP": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "CN": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "EV": "Inconsistent",
+    "MA": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "PE": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "HC": "Inconsistent",
+    "RB": "Inconsistent",
+    "SP": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "PW": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "CPT": "Inconsistent",
+    "BIM": "Inconsistent",
+    "ARD": "Inconsistent",
+    "BHN": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "VT": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "PTS": "Inconsistent",
+    "SSE": {
+        "count": 0,
+        "classes": [
+            "http://www.w3.org/2002/07/owl#Nothing"
+        ]
+    },
+    "CL": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "BMT": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "SO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "ADW": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "REX": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "IPR": "Inconsistent",
+    "RDL": "Inconsistent",
+    "ZEA": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "SYN": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "LPT": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "ENM": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "SD3": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "ZFA": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "ZFS": "Inconsistent",
+    "NCBITAXON": "Inconsistent",
+    "PDQ": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "RCD": "Inconsistent",
+    "GMM": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "ATC": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "PMR": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "DCM": "Inconsistent",
+    "PAV": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "HL7": "Inconsistent",
+    "ALL": "Inconsistent"
+}

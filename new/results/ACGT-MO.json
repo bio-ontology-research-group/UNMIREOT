@@ -1,0 +1,87 @@
+{
+    "EO": {
+        "count": 1,
+        "classes": [
+            "http://www.semanticweb.org/ethnicityOntology#Shona"
+        ]
+    },
+    "PR": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "EP": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "RB": "Inconsistent",
+    "RP": "Inconsistent",
+    "MA": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "MP": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "CO": "Inconsistent",
+    "ARD": "Inconsistent",
+    "PO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "CMF": "Inconsistent",
+    "MI": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "PP": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "SIO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "RS": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "HC": "Inconsistent",
+    "GO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "PE": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "ECG": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "ALL": "Inconsistent"
+}
