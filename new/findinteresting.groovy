@@ -35,6 +35,8 @@ new File('results').eachFile { file ->
 
   if(problematic == true) {
     problemOs++
+  } else {
+      println 'No issues detected.'
   }
 }
 
