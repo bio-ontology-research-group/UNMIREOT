@@ -24,6 +24,7 @@ CO: Inconsistent
 
 
 ## FB-CV.json
+No issues detected.
 
 ## SITBAC.json
 ALL: Inconsistent
@@ -126,12 +127,16 @@ NIGO: 5 unsatisfiable classes.
 
 
 ## NMR.json
+No issues detected.
 
 ## OOEVV.json
+No issues detected.
 
 ## BT.json
+No issues detected.
 
 ## EMAPA.json
+No issues detected.
 
 ## LHN.json
 ALL: 1142 unsatisfiable classes.
@@ -144,6 +149,7 @@ ICD10: Inconsistent
 
 
 ## MFO.json
+No issues detected.
 
 ## HUGO.json
 ALL: Inconsistent
@@ -158,6 +164,7 @@ NIGO: 8 unsatisfiable classes.
 
 
 ## FBBI.json
+No issues detected.
 
 ## BDO.json
 ALL: Inconsistent
@@ -182,6 +189,7 @@ CO: Inconsistent
 
 
 ## CHEMBIO.json
+No issues detected.
 
 ## OPL.json
 ALL: Inconsistent
@@ -200,8 +208,10 @@ matrRockIgneous: Inconsistent
 
 
 ## CRISP.json
+No issues detected.
 
 ## RNAO.json
+No issues detected.
 
 ## SWO.json
 ALL: Inconsistent
@@ -214,6 +224,7 @@ ONTODM-KDD: 10 unsatisfiable classes.
 
 
 ## RPO.json
+No issues detected.
 
 ## NIFSUBCELL.json
 CO: Inconsistent
@@ -280,6 +291,7 @@ NONRCTO: Inconsistent
 
 
 ## TYPON.json
+No issues detected.
 
 ## AI-RHEUM.json
 ALL: Inconsistent
@@ -334,14 +346,19 @@ matrRockIgneous: Inconsistent
 
 
 ## DERMLEX.json
+No issues detected.
 
 ## CDAO.json
+No issues detected.
 
 ## SPD.json
+No issues detected.
 
 ## PAV.json
+No issues detected.
 
 ## ATC.json
+No issues detected.
 
 ## MATRELEMENT.json
 CO: Inconsistent
@@ -364,6 +381,7 @@ GFO-BIO: 30 unsatisfiable classes.
 
 
 ## SSE.json
+No issues detected.
 
 ## IMGT-ONTOLOGY.json
 CO: Inconsistent
@@ -386,6 +404,7 @@ RB: Inconsistent
 
 
 ## BIOMO.json
+No issues detected.
 
 ## OFSMR.json
 ALL: Inconsistent
@@ -412,6 +431,7 @@ VO: Inconsistent
 
 
 ## PDQ.json
+No issues detected.
 
 ## PR.json
 ALL: Inconsistent
@@ -448,6 +468,7 @@ PP: Inconsistent
 
 
 ## ICD9CM.json
+No issues detected.
 
 ## DIKB.json
 DDI: Inconsistent
@@ -532,8 +553,10 @@ ALL: Inconsistent
 
 
 ## PE.json
+No issues detected.
 
 ## XAO.json
+No issues detected.
 
 ## CANCO.json
 CO: Inconsistent
@@ -546,6 +569,7 @@ EDAM: 116 unsatisfiable classes.
 
 
 ## OF.json
+No issues detected.
 
 ## DRON.json
 ALL: Inconsistent
@@ -584,6 +608,7 @@ ONTODM-CORE: 2 unsatisfiable classes.
 
 
 ## BNO.json
+No issues detected.
 
 ## NGSONTO.json
 ALL: 29 unsatisfiable classes.
@@ -614,6 +639,7 @@ FBbt: Inconsistent
 
 
 ## WSIO.json
+No issues detected.
 
 ## GEXO.json
 ALL: Inconsistent
@@ -716,6 +742,7 @@ ZFS: Inconsistent
 
 
 ## PSIMOD.json
+No issues detected.
 
 ## BMT.json
 ALL: 116 unsatisfiable classes.
@@ -724,8 +751,10 @@ EDAM: 116 unsatisfiable classes.
 
 
 ## PTRANS.json
+No issues detected.
 
 ## BTO.json
+No issues detected.
 
 ## MAT.json
 AAO: Inconsistent
@@ -828,8 +857,10 @@ VO: Inconsistent
 
 
 ## SPO.json
+No issues detected.
 
 ## PATO.json
+No issues detected.
 
 ## LPT.json
 ALL: Inconsistent
@@ -846,12 +877,14 @@ CO: Inconsistent
 
 
 ## INM-NPI.json
+No issues detected.
 
 ## APO.json
 YPO: Inconsistent
 
 
 ## SYMP.json
+No issues detected.
 
 ## AO.json
 ALL: Inconsistent
@@ -974,8 +1007,10 @@ PATO: Inconsistent
 
 
 ## SPTO.json
+No issues detected.
 
 ## RXNORM.json
+No issues detected.
 
 ## CHD.json
 ALL: 1 unsatisfiable classes.
@@ -1040,6 +1075,7 @@ SWO: Inconsistent
 
 
 ## ECG.json
+No issues detected.
 
 ## CADSRVS.json
 AIDS: Inconsistent
@@ -1110,6 +1146,7 @@ FBBI: Unloadable
 
 
 ## BHO.json
+No issues detected.
 
 ## NMOBR.json
 INSECTH: Inconsistent
@@ -1184,6 +1221,7 @@ NCBITAXON: Inconsistent
 
 
 ## FB-DV.json
+No issues detected.
 
 ## ADO.json
 ALL: Inconsistent
@@ -1236,6 +1274,7 @@ MS: Inconsistent
 
 
 ## MESH.json
+No issues detected.
 
 ## BAO-GPCR.json
 ALL: 1142 unsatisfiable classes.
@@ -1248,12 +1287,14 @@ MO: Inconsistent
 
 
 ## TRANS.json
+No issues detected.
 
 ## CHEMINF.json
 ALL: Inconsistent
 
 
 ## SURGICAL.json
+No issues detected.
 
 ## ACGT-MO.json
 ALL: Inconsistent
@@ -1278,10 +1319,13 @@ EV: Inconsistent
 
 
 ## ICECI.json
+No issues detected.
 
 ## CMPO.json
+No issues detected.
 
 ## FIRE.json
+No issues detected.
 
 ## MF.json
 ALL: 1763 unsatisfiable classes.
@@ -1380,6 +1424,7 @@ GRO-CPGA: Inconsistent
 
 
 ## VANDF.json
+No issues detected.
 
 ## CTENO.json
 ALL: Inconsistent
@@ -1454,6 +1499,7 @@ MO: Inconsistent
 
 
 ## HPIO.json
+No issues detected.
 
 ## GO-PLUS.json
 ALL: Inconsistent
@@ -1472,6 +1518,7 @@ UBERON: 23 unsatisfiable classes.
 
 
 ## GRO-CPD.json
+No issues detected.
 
 ## HIVO004.json
 AIDS: Inconsistent
@@ -1588,6 +1635,7 @@ OMRSE: Inconsistent
 
 
 ## EMAP.json
+No issues detected.
 
 ## NMOSP.json
 ALL: Inconsistent
@@ -1604,6 +1652,7 @@ CO: Inconsistent
 
 
 ## CTO.json
+No issues detected.
 
 ## SP.json
 ALL: Inconsistent
@@ -1634,6 +1683,7 @@ MS: Inconsistent
 
 
 ## CSSO.json
+No issues detected.
 
 ## PEDTERM.json
 HIV: Inconsistent
@@ -1650,8 +1700,10 @@ IDO: Inconsistent
 
 
 ## MOP.json
+No issues detected.
 
 ## CMO.json
+No issues detected.
 
 ## OBI.json
 ALL: Inconsistent
@@ -1690,8 +1742,10 @@ UBERON: Inconsistent
 
 
 ## SOY.json
+No issues detected.
 
 ## PP.json
+No issues detected.
 
 ## suicideo.json
 ALL: 17549 unsatisfiable classes.
@@ -1750,8 +1804,10 @@ WBPHENOTYPE: Inconsistent
 
 
 ## MEDLINEPLUS.json
+No issues detected.
 
 ## KISAO.json
+No issues detected.
 
 ## COGPO.json
 ALL: Inconsistent
@@ -1786,6 +1842,7 @@ RP: Inconsistent
 
 
 ## MMO.json
+No issues detected.
 
 ## REXO.json
 ALL: Inconsistent
@@ -1844,8 +1901,10 @@ EO: 1 unsatisfiable classes.
 
 
 ## TGMA.json
+No issues detected.
 
 ## INSECTH.json
+No issues detected.
 
 ## MCCL.json
 ALL: Inconsistent
@@ -2014,10 +2073,13 @@ ICD10: Inconsistent
 
 
 ## RAO.json
+No issues detected.
 
 ## GPML.json
+No issues detected.
 
 ## DIAB.json
+No issues detected.
 
 ## ECO.json
 ALL: Inconsistent
@@ -2026,6 +2088,7 @@ CO: Inconsistent
 
 
 ## ICPC.json
+No issues detected.
 
 ## CO-WHEAT.json
 CO: Inconsistent
@@ -2080,6 +2143,7 @@ NIGO: 314 unsatisfiable classes.
 
 
 ## FAO.json
+No issues detected.
 
 ## GENE-CDS.json
 CO: Inconsistent
@@ -2138,10 +2202,13 @@ C1902: Inconsistent
 
 
 ## UO.json
+No issues detected.
 
 ## WIKIPATHWAYS.json
+No issues detected.
 
 ## OMIM.json
+No issues detected.
 
 ## CANONT.json
 ALL: Inconsistent
@@ -2154,6 +2221,7 @@ RB: Inconsistent
 
 
 ## MPATH.json
+No issues detected.
 
 ## NIDM-RESULTS.json
 ALL: 31 unsatisfiable classes.
@@ -2184,6 +2252,7 @@ NCBITAXON: Inconsistent
 
 
 ## GBM.json
+No issues detected.
 
 ## CTCAE.json
 ALL: Inconsistent
@@ -2206,8 +2275,10 @@ SNOMEDCT: Inconsistent
 
 
 ## JERM.json
+No issues detected.
 
 ## SO.json
+No issues detected.
 
 ## CNO_ACRONYM.json
 CNO: Inconsistent
@@ -2234,6 +2305,7 @@ CO: Inconsistent
 
 
 ## REPO.json
+No issues detected.
 
 ## NBO.json
 ALL: Inconsistent
@@ -2262,6 +2334,7 @@ ZFA: 3 unsatisfiable classes.
 
 
 ## EHDAA.json
+No issues detected.
 
 ## CSO.json
 RB: Inconsistent
@@ -2300,6 +2373,7 @@ CO: Inconsistent
 
 
 ## PDO_CAS.json
+No issues detected.
 
 ## MIRNAO.json
 ALL: Inconsistent
@@ -2342,24 +2416,32 @@ matrRockIgneous: Inconsistent
 
 
 ## SAO.json
+No issues detected.
 
 ## pseudo.json
+No issues detected.
 
 ## EMO.json
+No issues detected.
 
 ## CAO.json
 OBI: Inconsistent
 
 
 ## SBOL.json
+No issues detected.
 
 ## CBO.json
+No issues detected.
 
 ## SCHEMA.json
+No issues detected.
 
 ## GRO.json
+No issues detected.
 
 ## BIRNLEX.json
+No issues detected.
 
 ## FTC.json
 ALL: 2232 unsatisfiable classes.
@@ -2392,6 +2474,7 @@ matrRockIgneous: Inconsistent
 
 
 ## MAMO.json
+No issues detected.
 
 ## MHC.json
 HC: Inconsistent
@@ -2414,6 +2497,7 @@ NIGO: 8 unsatisfiable classes.
 
 
 ## HAO.json
+No issues detected.
 
 ## NIGO.json
 ALL: 1142 unsatisfiable classes.
@@ -2438,6 +2522,7 @@ OAE: Inconsistent
 
 
 ## BSPO.json
+No issues detected.
 
 ## CSEO.json
 AIDS: Inconsistent
@@ -2458,8 +2543,10 @@ MO: 1 unsatisfiable classes.
 
 
 ## FLOPO.json
+No issues detected.
 
 ## CCON.json
+No issues detected.
 
 ## HINO.json
 ALL: Inconsistent
@@ -2484,8 +2571,10 @@ SP: 684 unsatisfiable classes.
 
 
 ## ATOL.json
+No issues detected.
 
 ## MOD.json
+No issues detected.
 
 ## WB-BT.json
 WBBT: Inconsistent
@@ -2522,6 +2611,7 @@ CO: Inconsistent
 
 
 ## LOINC.json
+No issues detected.
 
 ## FB-BT.json
 ALL: 2187 unsatisfiable classes.
@@ -2546,6 +2636,7 @@ SWO: 10 unsatisfiable classes.
 
 
 ## VIVO.json
+No issues detected.
 
 ## PSDS.json
 GRO-CPGA: Inconsistent
