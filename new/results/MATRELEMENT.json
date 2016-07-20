@@ -11,14 +11,14 @@
             
         ]
     },
-    "matrRockIgneous": "Inconsistent",
+    "matrRockIgneous": "UnloadableImportException",
     "CN": {
         "count": 0,
         "classes": [
             
         ]
     },
-    "CO": "Inconsistent",
+    "CO": "UnloadableImportException",
     "MI": {
         "count": 0,
         "classes": [
@@ -49,7 +49,7 @@
             
         ]
     },
-    "MS": "Inconsistent",
+    "MS": "UnloadableImportException",
     "ALL": {
         "count": 0,
         "classes": [

@@ -17,7 +17,7 @@
             
         ]
     },
-    "OBI": "Inconsistent",
+    "OBI": "InconsistentOntologyException",
     "ALL": {
         "count": 0,
         "classes": [

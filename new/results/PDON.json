@@ -11,7 +11,7 @@
             
         ]
     },
-    "CO": "Inconsistent",
+    "CO": "UnloadableImportException",
     "MI": {
         "count": 0,
         "classes": [
@@ -42,12 +42,12 @@
             
         ]
     },
-    "HIV": "Inconsistent",
+    "HIV": "UnloadableImportException",
     "VT": {
         "count": 0,
         "classes": [
             
         ]
     },
-    "ALL": "Inconsistent"
+    "ALL": "UnloadableImportException"
 }

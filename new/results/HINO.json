@@ -35,15 +35,15 @@
             
         ]
     },
-    "MS": "Inconsistent",
+    "MS": "UnloadableImportException",
     "BP": {
         "count": 0,
         "classes": [
             
         ]
     },
-    "HC": "Inconsistent",
-    "RB": "Inconsistent",
+    "HC": "UnloadableImportException",
+    "RB": "UnloadableImportException",
     "VT": {
         "count": 0,
         "classes": [
@@ -74,7 +74,7 @@
             
         ]
     },
-    "RP": "Inconsistent",
+    "RP": "UnloadableImportException",
     "PP": {
         "count": 0,
         "classes": [
@@ -87,7 +87,7 @@
             
         ]
     },
-    "NCBITAXON": "Inconsistent",
+    "NCBITAXON": "UnloadableImportException",
     "SP": {
         "count": 684,
         "classes": [
@@ -789,7 +789,7 @@
             
         ]
     },
-    "EV": "Inconsistent",
+    "EV": "UnloadableImportException",
     "MP": {
         "count": 0,
         "classes": [
@@ -826,13 +826,13 @@
             
         ]
     },
-    "OGG": "Inconsistent",
-    "OGG-MM": "Inconsistent",
+    "OGG": "UnloadableImportException",
+    "OGG-MM": "UnloadableImportException",
     "AO": {
         "count": 0,
         "classes": [
             
         ]
     },
-    "ALL": "Inconsistent"
+    "ALL": "UnloadableImportException"
 }

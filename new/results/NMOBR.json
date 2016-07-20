@@ -5,8 +5,8 @@
             
         ]
     },
-    "INSECTH": "Inconsistent",
-    "NCBITAXON": "Inconsistent",
+    "INSECTH": "UnloadableImportException",
+    "NCBITAXON": "UnloadableImportException",
     "RS": {
         "count": 0,
         "classes": [

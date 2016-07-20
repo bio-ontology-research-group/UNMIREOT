@@ -5,14 +5,14 @@
             
         ]
     },
-    "CO": "Inconsistent",
+    "CO": "UnloadableImportException",
     "ATO": {
         "count": 0,
         "classes": [
             
         ]
     },
-    "RP": "Inconsistent",
+    "RP": "UnloadableImportException",
     "MI": {
         "count": 0,
         "classes": [

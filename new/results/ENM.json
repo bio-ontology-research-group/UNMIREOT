@@ -113,7 +113,7 @@
             
         ]
     },
-    "EV": "Inconsistent",
+    "EV": "UnloadableImportException",
     "CHEMINF": {
         "count": 0,
         "classes": [
@@ -126,7 +126,7 @@
             
         ]
     },
-    "OAE": "Inconsistent",
+    "OAE": "UnloadableImportException",
     "ENVO": {
         "count": 0,
         "classes": [
@@ -151,5 +151,5 @@
             
         ]
     },
-    "ALL": "Inconsistent"
+    "ALL": "UnloadableImportException"
 }

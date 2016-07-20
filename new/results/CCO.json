@@ -59,7 +59,7 @@
             
         ]
     },
-    "HC": "Inconsistent",
+    "HC": "UnloadableImportException",
     "PW": {
         "count": 0,
         "classes": [
@@ -84,14 +84,14 @@
             
         ]
     },
-    "EV": "Inconsistent",
+    "EV": "UnloadableImportException",
     "ADW": {
         "count": 0,
         "classes": [
             
         ]
     },
-    "MS": "Inconsistent",
+    "MS": "UnloadableImportException",
     "MF": {
         "count": 4,
         "classes": [
@@ -107,14 +107,14 @@
             
         ]
     },
-    "DCM": "Inconsistent",
+    "DCM": "UnloadableImportException",
     "PE": {
         "count": 0,
         "classes": [
             
         ]
     },
-    "DDI": "Inconsistent",
+    "DDI": "UnloadableImportException",
     "SP": {
         "count": 0,
         "classes": [
@@ -127,15 +127,15 @@
             
         ]
     },
-    "RP": "Inconsistent",
+    "RP": "UnloadableImportException",
     "PDQ": {
         "count": 0,
         "classes": [
             
         ]
     },
-    "FLU": "Inconsistent",
-    "RB": "Inconsistent",
+    "FLU": "UnloadableImportException",
+    "RB": "UnloadableImportException",
     "PAE": {
         "count": 0,
         "classes": [
@@ -148,7 +148,7 @@
             
         ]
     },
-    "VFB": "Inconsistent",
+    "VFB": "UnloadableImportException",
     "SIO": {
         "count": 0,
         "classes": [
@@ -173,14 +173,14 @@
             
         ]
     },
-    "ARD": "Inconsistent",
+    "ARD": "UnloadableImportException",
     "SHR": {
         "count": 0,
         "classes": [
             
         ]
     },
-    "NCBITAXON": "Inconsistent",
+    "NCBITAXON": "UnloadableImportException",
     "PAV": {
         "count": 0,
         "classes": [
@@ -199,14 +199,14 @@
             
         ]
     },
-    "BIM": "Inconsistent",
+    "BIM": "UnloadableImportException",
     "BHN": {
         "count": 0,
         "classes": [
             
         ]
     },
-    "IPR": "Inconsistent",
+    "IPR": "UnloadableImportException",
     "NMR": {
         "count": 0,
         "classes": [
@@ -219,7 +219,7 @@
             
         ]
     },
-    "CPT": "Inconsistent",
+    "CPT": "UnloadableImportException",
     "SYN": {
         "count": 0,
         "classes": [
@@ -268,25 +268,25 @@
             
         ]
     },
-    "HL7": "Inconsistent",
+    "HL7": "UnloadableImportException",
     "FIX": {
         "count": 0,
         "classes": [
             
         ]
     },
-    "FMA": "Inconsistent",
-    "CO": "Inconsistent",
+    "FMA": "NullPointerException",
+    "CO": "UnloadableImportException",
     "LDA": {
         "count": 0,
         "classes": [
             
         ]
     },
-    "PTS": "Inconsistent",
-    "RDL": "Inconsistent",
-    "RCD": "Inconsistent",
-    "IMR": "Inconsistent",
+    "PTS": "UnloadableImportException",
+    "RDL": "UnloadableImportException",
+    "RCD": "UnloadableImportException",
+    "IMR": "UnloadableImportException",
     "REX": {
         "count": 0,
         "classes": [
@@ -299,7 +299,7 @@
             
         ]
     },
-    "HIV": "Inconsistent",
-    "CTX": "Inconsistent",
-    "ALL": "Inconsistent"
+    "HIV": "UnloadableImportException",
+    "CTX": "UnloadableImportException",
+    "ALL": "UnloadableImportException"
 }

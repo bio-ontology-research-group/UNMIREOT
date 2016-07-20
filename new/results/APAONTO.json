@@ -1,5 +1,5 @@
 {
-    "AIDS": "Inconsistent",
+    "AIDS": "UnloadableImportException",
     "GO": {
         "count": 0,
         "classes": [
@@ -30,7 +30,7 @@
             "http://www.semanticweb.org/ethnicityOntology#Shona"
         ]
     },
-    "HIV": "Inconsistent",
+    "HIV": "UnloadableImportException",
     "AO": {
         "count": 0,
         "classes": [

@@ -23,7 +23,7 @@
             
         ]
     },
-    "HC": "Inconsistent",
+    "HC": "UnloadableImportException",
     "CL": {
         "count": 0,
         "classes": [
@@ -36,7 +36,7 @@
             
         ]
     },
-    "RB": "Inconsistent",
+    "RB": "UnloadableImportException",
     "PE": {
         "count": 0,
         "classes": [
@@ -106,16 +106,16 @@
             
         ]
     },
-    "VO": "Inconsistent",
-    "MS": "Inconsistent",
+    "VO": "UnloadableImportException",
+    "MS": "UnloadableImportException",
     "PP": {
         "count": 0,
         "classes": [
             
         ]
     },
-    "EV": "Inconsistent",
-    "TO": "Inconsistent",
+    "EV": "UnloadableImportException",
+    "TO": "UnloadableImportException",
     "MO": {
         "count": 0,
         "classes": [
@@ -146,23 +146,23 @@
             
         ]
     },
-    "BIM": "Inconsistent",
+    "BIM": "UnloadableImportException",
     "PW": {
         "count": 0,
         "classes": [
             
         ]
     },
-    "CO": "Inconsistent",
+    "CO": "UnloadableImportException",
     "BMT": {
         "count": 0,
         "classes": [
             
         ]
     },
-    "HL7": "Inconsistent",
-    "RP": "Inconsistent",
-    "OAE": "Inconsistent",
+    "HL7": "UnloadableImportException",
+    "RP": "UnloadableImportException",
+    "OAE": "UnloadableImportException",
     "PR": {
         "count": 0,
         "classes": [
@@ -175,6 +175,6 @@
             
         ]
     },
-    "CMF": "Inconsistent",
-    "ALL": "Inconsistent"
+    "CMF": "UnloadableImportException",
+    "ALL": "UnloadableImportException"
 }

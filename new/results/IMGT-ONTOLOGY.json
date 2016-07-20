@@ -1,14 +1,14 @@
 {
-    "RB": "Inconsistent",
-    "TO": "Inconsistent",
+    "RB": "UnloadableImportException",
+    "TO": "UnloadableImportException",
     "PR": {
         "count": 0,
         "classes": [
             
         ]
     },
-    "HC": "Inconsistent",
-    "RP": "Inconsistent",
+    "HC": "UnloadableImportException",
+    "RP": "UnloadableImportException",
     "EP": {
         "count": 0,
         "classes": [
@@ -21,7 +21,7 @@
             
         ]
     },
-    "CO": "Inconsistent",
+    "CO": "UnloadableImportException",
     "ALL": {
         "count": 0,
         "classes": [

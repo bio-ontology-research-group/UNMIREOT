@@ -1,13 +1,13 @@
 {
-    "CO": "Inconsistent",
-    "MS": "Inconsistent",
+    "CO": "UnloadableImportException",
+    "MS": "UnloadableImportException",
     "PW": {
         "count": 0,
         "classes": [
             
         ]
     },
-    "matrRockIgneous": "Inconsistent",
+    "matrRockIgneous": "UnloadableImportException",
     "BDO": {
         "count": 0,
         "classes": [

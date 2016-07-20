@@ -1,6 +1,6 @@
 {
-    "HIV": "Inconsistent",
-    "AIDS": "Inconsistent",
+    "HIV": "UnloadableImportException",
+    "AIDS": "UnloadableImportException",
     "ALL": {
         "count": 0,
         "classes": [

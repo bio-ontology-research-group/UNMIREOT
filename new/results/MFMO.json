@@ -8,7 +8,7 @@
             "http://purl.obolibrary.org/obo/MF_0000012"
         ]
     },
-    "UBERON": "Inconsistent",
+    "UBERON": "InconsistentOntologyException",
     "ERO": {
         "count": 0,
         "classes": [
@@ -63,6 +63,6 @@
             
         ]
     },
-    "RO": "Inconsistent",
-    "ALL": "Inconsistent"
+    "RO": "UnloadableImportException",
+    "ALL": "UnloadableImportException"
 }

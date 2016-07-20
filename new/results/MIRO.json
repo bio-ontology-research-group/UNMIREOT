@@ -5,7 +5,7 @@
             
         ]
     },
-    "NCBITAXON": "Inconsistent",
+    "NCBITAXON": "UnloadableImportException",
     "NIGO": {
         "count": 0,
         "classes": [

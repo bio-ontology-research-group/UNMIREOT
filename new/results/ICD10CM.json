@@ -1,5 +1,5 @@
 {
-    "ICD10": "Inconsistent",
+    "ICD10": "UnloadableImportException",
     "STY": {
         "count": 0,
         "classes": [

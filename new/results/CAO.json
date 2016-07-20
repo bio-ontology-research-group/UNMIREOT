@@ -1,5 +1,5 @@
 {
-    "OBI": "Inconsistent",
+    "OBI": "InconsistentOntologyException",
     "AO": {
         "count": 0,
         "classes": [

@@ -1,5 +1,5 @@
 {
-    "CO": "Inconsistent",
+    "CO": "UnloadableImportException",
     "ALL": {
         "count": 0,
         "classes": [

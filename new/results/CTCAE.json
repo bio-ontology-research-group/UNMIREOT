@@ -1,5 +1,15 @@
 {
-    "EV": "Unloadable",
-    "CO": "Unloadable",
-    "ALL": "Inconsistent"
+    "EV": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "CO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "ALL": "OWLOntologyStorageException"
 }

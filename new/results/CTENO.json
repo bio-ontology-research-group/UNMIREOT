@@ -1,13 +1,7 @@
 {
     "NIGO": {
-        "count": 262,
+        "count": 261,
         "classes": [
-            "http://purl.obolibrary.org/obo/GO_0060179",
-            "http://purl.obolibrary.org/obo/GO_0008050",
-            "http://purl.obolibrary.org/obo/GO_0007617",
-            "http://purl.obolibrary.org/obo/GO_0008049",
-            "http://purl.obolibrary.org/obo/GO_0060180",
-            "http://purl.obolibrary.org/obo/GO_0048047",
             "http://purl.obolibrary.org/obo/UBERON_0002537",
             "http://purl.obolibrary.org/obo/UBERON_0002512",
             "http://purl.obolibrary.org/obo/GO_0007320",
@@ -108,6 +102,7 @@
             "http://purl.obolibrary.org/obo/UBERON_0000453",
             "http://purl.obolibrary.org/obo/UBERON_0000371",
             "http://purl.obolibrary.org/obo/GO_0048477",
+            "http://purl.obolibrary.org/obo/UBERON_0013523",
             "http://purl.obolibrary.org/obo/CL_0002093",
             "http://purl.obolibrary.org/obo/CL_0002090",
             "http://purl.obolibrary.org/obo/CL_0000360",
@@ -127,6 +122,7 @@
             "http://purl.obolibrary.org/obo/UBERON_0013203",
             "http://purl.obolibrary.org/obo/UBERON_0003374",
             "http://purl.obolibrary.org/obo/UBERON_0012326",
+            "http://purl.obolibrary.org/obo/CL_0000590",
             "http://purl.obolibrary.org/obo/CL_0000088",
             "http://purl.obolibrary.org/obo/UBERON_0003422",
             "http://purl.obolibrary.org/obo/CL_0000025",
@@ -137,7 +133,6 @@
             "http://purl.obolibrary.org/obo/UBERON_0005170",
             "http://purl.obolibrary.org/obo/UBERON_0000920",
             "http://purl.obolibrary.org/obo/GO_0044706",
-            "http://purl.obolibrary.org/obo/GO_0044705",
             "http://purl.obolibrary.org/obo/UBERON_0004345",
             "http://purl.obolibrary.org/obo/UBERON_0004354",
             "http://purl.obolibrary.org/obo/UBERON_0004360",
@@ -152,7 +147,6 @@
             "http://purl.obolibrary.org/obo/UBERON_0001987",
             "http://purl.obolibrary.org/obo/UBERON_0005307",
             "http://purl.obolibrary.org/obo/UBERON_0005335",
-            "http://purl.obolibrary.org/obo/UBERON_0011203",
             "http://purl.obolibrary.org/obo/UBERON_0011202",
             "http://purl.obolibrary.org/obo/UBERON_0004544",
             "http://purl.obolibrary.org/obo/UBERON_0004547",
@@ -185,7 +179,6 @@
             "http://purl.obolibrary.org/obo/UBERON_0004806",
             "http://purl.obolibrary.org/obo/UBERON_0010008",
             "http://purl.obolibrary.org/obo/UBERON_0010006",
-            "http://purl.obolibrary.org/obo/CL_0000590",
             "http://purl.obolibrary.org/obo/UBERON_0007807",
             "http://purl.obolibrary.org/obo/UBERON_0007806",
             "http://purl.obolibrary.org/obo/UBERON_0004224",
@@ -237,7 +230,6 @@
             "http://purl.obolibrary.org/obo/UBERON_0035784",
             "http://purl.obolibrary.org/obo/UBERON_0010148",
             "http://purl.obolibrary.org/obo/UBERON_0004691",
-            "http://purl.obolibrary.org/obo/UBERON_0013523",
             "http://purl.obolibrary.org/obo/UBERON_0007180",
             "http://purl.obolibrary.org/obo/UBERON_0010260",
             "http://purl.obolibrary.org/obo/UBERON_0005471",
@@ -250,6 +242,8 @@
             "http://purl.obolibrary.org/obo/UBERON_0006265",
             "http://purl.obolibrary.org/obo/UBERON_0007118",
             "http://purl.obolibrary.org/obo/UBERON_0005458",
+            "http://purl.obolibrary.org/obo/UBERON_0011203",
+            "http://purl.obolibrary.org/obo/GO_0007617",
             "http://purl.obolibrary.org/obo/UBERON_0034695",
             "http://purl.obolibrary.org/obo/UBERON_0009994",
             "http://purl.obolibrary.org/obo/GO_0007565",
@@ -264,7 +258,12 @@
             "http://purl.obolibrary.org/obo/UBERON_0000998",
             "http://purl.obolibrary.org/obo/UBERON_0005192",
             "http://purl.obolibrary.org/obo/UBERON_2001266",
-            "http://purl.obolibrary.org/obo/UBERON_2001263"
+            "http://purl.obolibrary.org/obo/UBERON_2001263",
+            "http://purl.obolibrary.org/obo/GO_0060179",
+            "http://purl.obolibrary.org/obo/GO_0008050",
+            "http://purl.obolibrary.org/obo/GO_0008049",
+            "http://purl.obolibrary.org/obo/GO_0060180",
+            "http://purl.obolibrary.org/obo/GO_0048047"
         ]
     },
     "GO": {
@@ -273,27 +272,158 @@
             "http://www.w3.org/2002/07/owl#Nothing"
         ]
     },
-    "UBERON": "Inconsistent",
-    "ERO": "Inconsistent",
-    "CHEBI": "Inconsistent",
-    "CL": "Inconsistent",
-    "NCBITAXON": "Inconsistent",
-    "PR": "Inconsistent",
-    "EHDAA2": "Inconsistent",
-    "EHDA": "Inconsistent",
-    "PATO": "Inconsistent",
-    "ATO": "Inconsistent",
-    "ENVO": "Inconsistent",
-    "FMA": "Inconsistent",
-    "BTO": "Inconsistent",
-    "BT": "Inconsistent",
-    "NBO": "Inconsistent",
-    "CARO": "Inconsistent",
-    "BSPO": "Inconsistent",
-    "EMAPA": "Inconsistent",
-    "EMAP": "Inconsistent",
-    "RO": "Inconsistent",
-    "BFO": "Inconsistent",
-    "ZFA": "Inconsistent",
-    "ALL": "Inconsistent"
+    "UBERON": {
+        "count": 29,
+        "classes": [
+            "http://purl.obolibrary.org/obo/UBERON_0006763",
+            "http://purl.obolibrary.org/obo/UBERON_0006718",
+            "http://purl.obolibrary.org/obo/UBERON_0022286",
+            "http://purl.obolibrary.org/obo/UBERON_0013398",
+            "http://purl.obolibrary.org/obo/UBERON_0013230",
+            "http://purl.obolibrary.org/obo/UBERON_0013224",
+            "http://purl.obolibrary.org/obo/UBERON_0006343",
+            "http://purl.obolibrary.org/obo/UBERON_0006342",
+            "http://purl.obolibrary.org/obo/UBERON_0022273",
+            "http://purl.obolibrary.org/obo/UBERON_0010207",
+            "http://purl.obolibrary.org/obo/UBERON_0005908",
+            "http://purl.obolibrary.org/obo/UBERON_0018374",
+            "http://purl.obolibrary.org/obo/UBERON_0010310",
+            "http://purl.obolibrary.org/obo/UBERON_0014698",
+            "http://purl.obolibrary.org/obo/UBERON_0010306",
+            "http://purl.obolibrary.org/obo/UBERON_0000050",
+            "http://purl.obolibrary.org/obo/UBERON_0012442",
+            "http://purl.obolibrary.org/obo/UBERON_0001812",
+            "http://purl.obolibrary.org/obo/UBERON_0001811",
+            "http://purl.obolibrary.org/obo/UBERON_0015155",
+            "http://purl.obolibrary.org/obo/UBERON_0006442",
+            "http://purl.obolibrary.org/obo/UBERON_0010367",
+            "http://purl.obolibrary.org/obo/UBERON_0010366",
+            "http://purl.obolibrary.org/obo/UBERON_0010307",
+            "http://purl.obolibrary.org/obo/UBERON_0010305",
+            "http://purl.obolibrary.org/obo/UBERON_0010209",
+            "http://purl.obolibrary.org/obo/CL_0002550",
+            "http://www.w3.org/2002/07/owl#Nothing",
+            "http://purl.obolibrary.org/obo/CL_2000084",
+            "http://purl.obolibrary.org/obo/CL_1000432"
+        ]
+    },
+    "ERO": {
+        "count": 0,
+        "classes": [
+            "http://www.w3.org/2002/07/owl#Nothing"
+        ]
+    },
+    "CHEBI": {
+        "count": 0,
+        "classes": [
+            "http://www.w3.org/2002/07/owl#Nothing"
+        ]
+    },
+    "CL": {
+        "count": 4,
+        "classes": [
+            "http://purl.obolibrary.org/obo/UBERON_0013398",
+            "http://purl.obolibrary.org/obo/UBERON_0005033",
+            "http://purl.obolibrary.org/obo/UBERON_0004781",
+            "http://purl.obolibrary.org/obo/UBERON_0000207",
+            "http://www.w3.org/2002/07/owl#Nothing"
+        ]
+    },
+    "NCBITAXON": "UnloadableImportException",
+    "PR": {
+        "count": 0,
+        "classes": [
+            "http://www.w3.org/2002/07/owl#Nothing"
+        ]
+    },
+    "EHDAA2": {
+        "count": 0,
+        "classes": [
+            "http://www.w3.org/2002/07/owl#Nothing"
+        ]
+    },
+    "EHDA": {
+        "count": 0,
+        "classes": [
+            "http://www.w3.org/2002/07/owl#Nothing"
+        ]
+    },
+    "PATO": {
+        "count": 0,
+        "classes": [
+            "http://www.w3.org/2002/07/owl#Nothing"
+        ]
+    },
+    "ATO": {
+        "count": 0,
+        "classes": [
+            "http://www.w3.org/2002/07/owl#Nothing"
+        ]
+    },
+    "ENVO": {
+        "count": 0,
+        "classes": [
+            "http://www.w3.org/2002/07/owl#Nothing"
+        ]
+    },
+    "FMA": "NullPointerException",
+    "BTO": {
+        "count": 0,
+        "classes": [
+            "http://www.w3.org/2002/07/owl#Nothing"
+        ]
+    },
+    "BT": {
+        "count": 0,
+        "classes": [
+            "http://www.w3.org/2002/07/owl#Nothing"
+        ]
+    },
+    "NBO": {
+        "count": 3,
+        "classes": [
+            "http://purl.obolibrary.org/obo/GO_0042750",
+            "http://purl.obolibrary.org/obo/GO_0044250",
+            "http://purl.obolibrary.org/obo/GO_0042751",
+            "http://www.w3.org/2002/07/owl#Nothing"
+        ]
+    },
+    "CARO": {
+        "count": 0,
+        "classes": [
+            "http://www.w3.org/2002/07/owl#Nothing"
+        ]
+    },
+    "BSPO": {
+        "count": 0,
+        "classes": [
+            "http://www.w3.org/2002/07/owl#Nothing"
+        ]
+    },
+    "EMAPA": {
+        "count": 0,
+        "classes": [
+            "http://www.w3.org/2002/07/owl#Nothing"
+        ]
+    },
+    "EMAP": {
+        "count": 0,
+        "classes": [
+            "http://www.w3.org/2002/07/owl#Nothing"
+        ]
+    },
+    "RO": "UnloadableImportException",
+    "BFO": {
+        "count": 0,
+        "classes": [
+            "http://www.w3.org/2002/07/owl#Nothing"
+        ]
+    },
+    "ZFA": {
+        "count": 0,
+        "classes": [
+            "http://www.w3.org/2002/07/owl#Nothing"
+        ]
+    },
+    "ALL": "UnloadableImportException"
 }

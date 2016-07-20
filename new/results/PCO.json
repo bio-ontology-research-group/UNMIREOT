@@ -44,7 +44,7 @@
             
         ]
     },
-    "CO": "Inconsistent",
+    "CO": "UnloadableImportException",
     "AO": {
         "count": 0,
         "classes": [
@@ -63,6 +63,6 @@
             
         ]
     },
-    "NCBITAXON": "Inconsistent",
-    "ALL": "Inconsistent"
+    "NCBITAXON": "UnloadableImportException",
+    "ALL": "UnloadableImportException"
 }

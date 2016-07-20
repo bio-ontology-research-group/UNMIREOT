@@ -1,4 +1,9 @@
 {
-    "FBBI": "Unloadable",
-    "ALL": "Inconsistent"
+    "FBBI": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "ALL": "OWLOntologyStorageException"
 }

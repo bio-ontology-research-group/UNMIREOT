@@ -17,7 +17,7 @@
             
         ]
     },
-    "CO": "Inconsistent",
+    "CO": "UnloadableImportException",
     "SP": {
         "count": 0,
         "classes": [

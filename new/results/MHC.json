@@ -1,12 +1,12 @@
 {
-    "HC": "Inconsistent",
+    "HC": "UnloadableImportException",
     "MI": {
         "count": 0,
         "classes": [
             
         ]
     },
-    "RB": "Inconsistent",
+    "RB": "UnloadableImportException",
     "MP": {
         "count": 0,
         "classes": [

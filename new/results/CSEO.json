@@ -5,7 +5,7 @@
             
         ]
     },
-    "EV": "Inconsistent",
+    "EV": "UnloadableImportException",
     "MO": {
         "count": 1,
         "classes": [
@@ -18,14 +18,14 @@
             "http://www.semanticweb.org/ethnicityOntology#Shona"
         ]
     },
-    "AIDS": "Inconsistent",
+    "AIDS": "UnloadableImportException",
     "UO": {
         "count": 0,
         "classes": [
             
         ]
     },
-    "CO": "Inconsistent",
+    "CO": "UnloadableImportException",
     "EXO": {
         "count": 0,
         "classes": [
@@ -129,7 +129,7 @@
             "http://www.cvrgrid.org/files/ECGOntologyv1.owl#ECG_000000617"
         ]
     },
-    "ARD": "Inconsistent",
+    "ARD": "UnloadableImportException",
     "PATO": {
         "count": 0,
         "classes": [
@@ -142,5 +142,5 @@
             
         ]
     },
-    "ALL": "Inconsistent"
+    "ALL": "UnloadableImportException"
 }

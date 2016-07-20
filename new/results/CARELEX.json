@@ -1,5 +1,5 @@
 {
-    "RB": "Inconsistent",
+    "RB": "UnloadableImportException",
     "MF": {
         "count": 4,
         "classes": [

@@ -1,5 +1,5 @@
 {
-    "RB": "Inconsistent",
+    "RB": "UnloadableImportException",
     "PTO": {
         "count": 0,
         "classes": [
@@ -12,15 +12,15 @@
             
         ]
     },
-    "HC": "Inconsistent",
-    "RP": "Inconsistent",
+    "HC": "UnloadableImportException",
+    "RP": "UnloadableImportException",
     "RS": {
         "count": 0,
         "classes": [
             
         ]
     },
-    "RDL": "Inconsistent",
+    "RDL": "UnloadableImportException",
     "GAZ": {
         "count": 0,
         "classes": [
@@ -33,7 +33,7 @@
             
         ]
     },
-    "VO": "Inconsistent",
+    "VO": "UnloadableImportException",
     "MF": {
         "count": 4,
         "classes": [
@@ -55,8 +55,8 @@
             
         ]
     },
-    "EV": "Inconsistent",
-    "ARD": "Inconsistent",
+    "EV": "UnloadableImportException",
+    "ARD": "UnloadableImportException",
     "EP": {
         "count": 0,
         "classes": [
@@ -69,12 +69,17 @@
             
         ]
     },
-    "MO": "Inconsistent",
+    "MO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
     "EO": {
         "count": 1,
         "classes": [
             "http://www.semanticweb.org/ethnicityOntology#Shona"
         ]
     },
-    "ALL": "Inconsistent"
+    "ALL": "UnloadableImportException"
 }

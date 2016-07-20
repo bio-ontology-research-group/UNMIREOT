@@ -61,9 +61,9 @@
             "http://www.semanticweb.org/ethnicityOntology#Shona"
         ]
     },
-    "CO": "Inconsistent",
-    "MS": "Inconsistent",
-    "NCBITAXON": "Inconsistent",
+    "CO": "UnloadableImportException",
+    "MS": "UnloadableImportException",
+    "NCBITAXON": "UnloadableImportException",
     "EFO": {
         "count": 0,
         "classes": [
@@ -106,7 +106,7 @@
             "http://www.w3.org/2002/07/owl#Nothing"
         ]
     },
-    "OMRSE": "Inconsistent",
+    "OMRSE": "UnloadableImportException",
     "CARO": {
         "count": 0,
         "classes": [
@@ -149,5 +149,5 @@
             "http://www.w3.org/2002/07/owl#Nothing"
         ]
     },
-    "ALL": "Inconsistent"
+    "ALL": "UnloadableImportException"
 }

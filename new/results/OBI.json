@@ -29,7 +29,7 @@
             "http://www.w3.org/2002/07/owl#Nothing"
         ]
     },
-    "NCBITAXON": "Inconsistent",
+    "NCBITAXON": "UnloadableImportException",
     "PATO": {
         "count": 0,
         "classes": [
@@ -48,7 +48,7 @@
             "http://www.w3.org/2002/07/owl#Nothing"
         ]
     },
-    "ERO": "Inconsistent",
+    "ERO": "InconsistentOntologyException",
     "MIRNAO": {
         "count": 0,
         "classes": [
@@ -91,7 +91,7 @@
             "http://www.w3.org/2002/07/owl#Nothing"
         ]
     },
-    "VO": "Inconsistent",
+    "VO": "UnloadableImportException",
     "EO": {
         "count": 1,
         "classes": [
@@ -99,8 +99,8 @@
             "http://www.semanticweb.org/ethnicityOntology#Shona"
         ]
     },
-    "IDO": "Inconsistent",
-    "MS": "Inconsistent",
+    "IDO": "UnloadableImportException",
+    "MS": "UnloadableImportException",
     "HP": {
         "count": 0,
         "classes": [
@@ -113,5 +113,5 @@
             "http://www.w3.org/2002/07/owl#Nothing"
         ]
     },
-    "ALL": "Inconsistent"
+    "ALL": "UnloadableImportException"
 }

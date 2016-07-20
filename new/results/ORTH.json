@@ -59,6 +59,6 @@
             
         ]
     },
-    "RO": "Inconsistent",
-    "ALL": "Inconsistent"
+    "RO": "UnloadableImportException",
+    "ALL": "UnloadableImportException"
 }

@@ -56,7 +56,7 @@
             
         ]
     },
-    "FBbt": "Inconsistent",
+    "FBbt": "UnloadableImportException",
     "FB-DV": {
         "count": 0,
         "classes": [
@@ -75,7 +75,7 @@
             
         ]
     },
-    "CO": "Inconsistent",
+    "CO": "UnloadableImportException",
     "CL": {
         "count": 8,
         "classes": [
@@ -95,5 +95,5 @@
             
         ]
     },
-    "ALL": "Inconsistent"
+    "ALL": "UnloadableImportException"
 }

@@ -5,16 +5,16 @@
             
         ]
     },
-    "RB": "Inconsistent",
-    "CO": "Inconsistent",
+    "RB": "UnloadableImportException",
+    "CO": "UnloadableImportException",
     "CN": {
         "count": 0,
         "classes": [
             
         ]
     },
-    "MS": "Inconsistent",
-    "HC": "Inconsistent",
+    "MS": "UnloadableImportException",
+    "HC": "UnloadableImportException",
     "ALL": {
         "count": 0,
         "classes": [

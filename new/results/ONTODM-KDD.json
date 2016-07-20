@@ -1,5 +1,5 @@
 {
-    "OBI": "Inconsistent",
+    "OBI": "InconsistentOntologyException",
     "AO": {
         "count": 10,
         "classes": [
@@ -62,5 +62,5 @@
             "http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_000156"
         ]
     },
-    "ALL": "Inconsistent"
+    "ALL": "UnloadableImportException"
 }

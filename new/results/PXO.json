@@ -5,9 +5,9 @@
             
         ]
     },
-    "EV": "Inconsistent",
-    "IPR": "Inconsistent",
-    "NCBITAXON": "Inconsistent",
+    "EV": "UnloadableImportException",
+    "IPR": "UnloadableImportException",
+    "NCBITAXON": "UnloadableImportException",
     "PO": {
         "count": 0,
         "classes": [
@@ -20,7 +20,7 @@
             
         ]
     },
-    "RP": "Inconsistent",
+    "RP": "UnloadableImportException",
     "BP": {
         "count": 0,
         "classes": [
@@ -17201,15 +17201,15 @@
             "http://purl.obolibrary.org/obo/MF_0000012"
         ]
     },
-    "RB": "Inconsistent",
-    "CO": "Inconsistent",
+    "RB": "UnloadableImportException",
+    "CO": "UnloadableImportException",
     "PW": {
         "count": 0,
         "classes": [
             
         ]
     },
-    "HC": "Inconsistent",
+    "HC": "UnloadableImportException",
     "RS": {
         "count": 0,
         "classes": [
@@ -17222,7 +17222,7 @@
             
         ]
     },
-    "MS": "Inconsistent",
+    "MS": "UnloadableImportException",
     "STY": {
         "count": 0,
         "classes": [
@@ -17277,7 +17277,7 @@
             
         ]
     },
-    "VO": "Inconsistent",
+    "VO": "UnloadableImportException",
     "PE": {
         "count": 0,
         "classes": [
@@ -17308,8 +17308,13 @@
             
         ]
     },
-    "MO": "Inconsistent",
-    "DDI": "Inconsistent",
+    "MO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "DDI": "UnloadableImportException",
     "APO": {
         "count": 0,
         "classes": [
@@ -17322,7 +17327,7 @@
             
         ]
     },
-    "TO": "Inconsistent",
+    "TO": "UnloadableImportException",
     "PAV": {
         "count": 0,
         "classes": [
@@ -17335,7 +17340,7 @@
             
         ]
     },
-    "ISO": "Inconsistent",
+    "ISO": "UnloadableImportException",
     "TRAK": {
         "count": 0,
         "classes": [
@@ -17372,7 +17377,7 @@
             
         ]
     },
-    "HL7": "Inconsistent",
+    "HL7": "UnloadableImportException",
     "LDA": {
         "count": 0,
         "classes": [
@@ -17385,7 +17390,7 @@
             
         ]
     },
-    "RDL": "Inconsistent",
+    "RDL": "UnloadableImportException",
     "PMR": {
         "count": 0,
         "classes": [
@@ -17404,14 +17409,14 @@
             
         ]
     },
-    "BIM": "Inconsistent",
+    "BIM": "UnloadableImportException",
     "PDQ": {
         "count": 0,
         "classes": [
             
         ]
     },
-    "DCM": "Inconsistent",
+    "DCM": "UnloadableImportException",
     "TADS": {
         "count": 0,
         "classes": [
@@ -17430,7 +17435,7 @@
             
         ]
     },
-    "CPT": "Inconsistent",
+    "CPT": "UnloadableImportException",
     "CRISP": {
         "count": 0,
         "classes": [
@@ -17449,8 +17454,8 @@
             
         ]
     },
-    "IMR": "Inconsistent",
-    "ARD": "Inconsistent",
+    "IMR": "UnloadableImportException",
+    "ARD": "UnloadableImportException",
     "SD3": {
         "count": 0,
         "classes": [
@@ -17475,15 +17480,15 @@
             
         ]
     },
-    "NIC": "Inconsistent",
+    "NIC": "UnloadableImportException",
     "IFAR": {
         "count": 0,
         "classes": [
             
         ]
     },
-    "PTS": "Inconsistent",
-    "PLO": "Inconsistent",
+    "PTS": "UnloadableImportException",
+    "PLO": "UnloadableImportException",
     "BNO": {
         "count": 0,
         "classes": [
@@ -17496,9 +17501,9 @@
             
         ]
     },
-    "CTX": "Inconsistent",
-    "HIV": "Inconsistent",
-    "ASLI": "Inconsistent",
+    "CTX": "UnloadableImportException",
+    "HIV": "UnloadableImportException",
+    "ASLI": "UnloadableImportException",
     "ADAR": {
         "count": 0,
         "classes": [
@@ -17535,7 +17540,7 @@
             
         ]
     },
-    "FALL": "Inconsistent",
+    "FALL": "UnloadableImportException",
     "EO": {
         "count": 1,
         "classes": [
@@ -17554,7 +17559,7 @@
             
         ]
     },
-    "OGDI": "Inconsistent",
+    "OGDI": "InconsistentOntologyException",
     "BFO": {
         "count": 0,
         "classes": [
@@ -17585,7 +17590,7 @@
             
         ]
     },
-    "ICPS": "Inconsistent",
+    "ICPS": "UnloadableImportException",
     "DDO": {
         "count": 0,
         "classes": [
@@ -17604,7 +17609,7 @@
             
         ]
     },
-    "OPE": "Inconsistent",
+    "OPE": "UnloadableImportException",
     "INO": {
         "count": 0,
         "classes": [
@@ -17647,14 +17652,14 @@
             "http://www.w3.org/2002/07/owl#Nothing"
         ]
     },
-    "RCD": "Inconsistent",
+    "RCD": "UnloadableImportException",
     "SDO": {
         "count": 0,
         "classes": [
             
         ]
     },
-    "FMA": "Inconsistent",
+    "FMA": "NullPointerException",
     "HOM": {
         "count": 0,
         "classes": [
@@ -17667,8 +17672,8 @@
             
         ]
     },
-    "OGG": "Inconsistent",
-    "CMF": "Inconsistent",
+    "OGG": "UnloadableImportException",
+    "CMF": "UnloadableImportException",
     "GAZ": {
         "count": 0,
         "classes": [
@@ -17693,20 +17698,20 @@
             
         ]
     },
-    "IDO": "Inconsistent",
+    "IDO": "UnloadableImportException",
     "PSDS": {
         "count": 0,
         "classes": [
             
         ]
     },
-    "AAO": "Inconsistent",
-    "GMO": "Inconsistent",
+    "AAO": "UnloadableImportException",
+    "GMO": "UnloadableImportException",
     "BRO": {
         "count": 0,
         "classes": [
             
         ]
     },
-    "ALL": "Inconsistent"
+    "ALL": "UnloadableImportException"
 }

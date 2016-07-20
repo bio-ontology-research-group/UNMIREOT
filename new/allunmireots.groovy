@@ -39,7 +39,7 @@ mireots.each { name, imports ->
     def otherResult = new JsonSlurper().parseText(new File("results/"+name+'.json').text)
     def icons = otherResult.findAll { oName, res -> res == 'Inconsistent' }
 
-    if(icons.size() == otherResult.size()) {
+    if(icons.size() > 1) {
       println "re-running UNMIREOT on " + name + " because everything got fokt last time for some reason"
       println "Running UNMIREOT on " + name
       def results = run(name)
@@ -102,7 +102,7 @@ def run(oName) {
       err.printStackTrace();
 
       added.remove(it)
-      results[it] = 'Unloadable'
+      results[it] = err.getClass().getSimpleName() 
     }
 
 if(results[it] != "Unloadable") {
@@ -128,24 +128,30 @@ if(results[it] != "Unloadable") {
       println "[UNMIREOT] Reasoned " + oName + " and " + it + ", resulting in " + oReasoner.getEquivalentClasses(newManager.getOWLDataFactory().getOWLNothing()).getEntitiesMinusBottom().size() + " unsatisfiable classes"
       results[it] = [ 'count': oReasoner.getEquivalentClasses(newManager.getOWLDataFactory().getOWLNothing()).getEntitiesMinusBottom().size() ]
       results[it]['classes'] = []
-      for (OWLClass cl : newOntology.getClassesInSignature(true)) {
+      for(OWLClass cl : newOntology.getClassesInSignature(true)) {
         if(!oReasoner.isSatisfiable(cl)) {
           System.out.println("Unsatisfiable: " + cl.getIRI())
           results[it]['classes'] << cl.getIRI().toString()
         }
       }
     } catch(org.semanticweb.owlapi.io.UnparsableOntologyException e) {
-       println "[UNMIREOT] Unable to parse ontology with " + it
+      println "[UNMIREOT] Unable to parse ontology with " + it
       println "[UNMIREOT] Removing "  + it + " from imports"
       added.remove(it)
-      results[it] = 'Unparseable'
+      results[it] = e.getClass().getSimpleName() 
       e.printStackTrace()
-    } catch(e) {
+    } catch(org.semanticweb.owlapi.model.UnloadableImportException e) {
+      println "[UNMIREOT] Unable to unloadable ontology with " + it
+      println "[UNMIREOT] Removing "  + it + " from imports"
+      added.remove(it)
+      results[it] = e.getClass().getSimpleName() 
+    } catch(org.semanticweb.owlapi.reasoner.InconsistentOntologyException e) {
       println "[UNMIREOT] Unable to reason ontology with " + it
       println "[UNMIREOT] Removing "  + it + " from imports"
       added.remove(it)
-      results[it] = 'Inconsistent'
-      e.printStackTrace()
+      results[it] = e.getClass().getSimpleName() 
+    } catch(e) {
+      results[it] = e.getClass().getSimpleName() 
     }
   }
 }
@@ -198,7 +204,7 @@ if(results[it] != "Unloadable") {
   
 
   } catch(e) {
-    results['ALL'] = 'Inconsistent'
+    results['ALL'] = e.getClass().getSimpleName() 
   }
 
   return results

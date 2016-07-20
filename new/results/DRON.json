@@ -1,15 +1,70 @@
 {
-    "PR": "Inconsistent",
-    "CHEBI": "Inconsistent",
-    "BFO": "Inconsistent",
-    "OBI": "Inconsistent",
-    "UO": "Inconsistent",
-    "APO": "Inconsistent",
-    "NIGO": "Inconsistent",
-    "GO": "Unloadable",
-    "AO": "Inconsistent",
-    "MS": "Inconsistent",
-    "PATO": "Inconsistent",
-    "ATO": "Inconsistent",
-    "ALL": "Inconsistent"
+    "PR": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "CHEBI": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "BFO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "OBI": {
+        "count": 0,
+        "classes": [
+            "http://www.w3.org/2002/07/owl#Nothing"
+        ]
+    },
+    "UO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "APO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "NIGO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "GO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "AO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "MS": "UnloadableImportException",
+    "PATO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "ATO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "ALL": "UnloadableImportException"
 }

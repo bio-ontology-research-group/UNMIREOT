@@ -1,5 +1,5 @@
 {
-    "CTX": "Inconsistent",
+    "CTX": "UnloadableImportException",
     "FO": {
         "count": 0,
         "classes": [
@@ -12,7 +12,12 @@
             
         ]
     },
-    "MO": "Inconsistent",
+    "MO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
     "HP": {
         "count": 0,
         "classes": [
@@ -25,14 +30,14 @@
             
         ]
     },
-    "CO": "Inconsistent",
+    "CO": "UnloadableImportException",
     "MA": {
         "count": 0,
         "classes": [
             
         ]
     },
-    "RB": "Inconsistent",
+    "RB": "UnloadableImportException",
     "CN": {
         "count": 0,
         "classes": [
@@ -81,7 +86,7 @@
             
         ]
     },
-    "RP": "Inconsistent",
+    "RP": "UnloadableImportException",
     "PR": {
         "count": 0,
         "classes": [
@@ -106,13 +111,13 @@
             
         ]
     },
-    "MS": "Inconsistent",
+    "MS": "UnloadableImportException",
     "BP": {
         "count": 0,
         "classes": [
             
         ]
     },
-    "EV": "Inconsistent",
-    "ALL": "Inconsistent"
+    "EV": "UnloadableImportException",
+    "ALL": "UnloadableImportException"
 }

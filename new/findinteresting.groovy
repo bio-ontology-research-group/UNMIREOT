@@ -14,29 +14,30 @@ new File('results').eachFile { file ->
   def problematic = false
 
   results.each { ont, res ->
-     
-    if(res == 'Inconsistent') {
-      println ont + ': Inconsistent'
-      println ''
-      inc++
-      problematic = true
-    } else if(res == 'Unloadable') {
-      println ont + ': Unloadable'
-      println ''
-      unload++
-      problematic = true
-    } else if(res.count != 0) {
-      println ont + ': ' + res.count + ' unsatisfiable classes.'
-      println ''
-      unsat += res.count
-      problematic = true
+    println ''
+    try {     
+      if(res == 'InconsistentOntologyException') {
+        println ont + ': Inconsistent'
+        inc++
+        problematic = true
+      } else if(res == 'UnloadableImportException') {
+        println ont + ': Unloadable'
+        unload++
+        problematic = true
+      } else if(res.count != 0) {
+        println ont + ': ' + res.count + ' unsatisfiable classes.'
+        unsat += res.count
+        problematic = true
+      } else {
+        println ont + ': No issues detected.'
+      }
+    } catch(e) {
+      println ont + ': ' + res
     }
   }
 
   if(problematic == true) {
     problemOs++
-  } else {
-      println 'No issues detected.'
   }
 }
 

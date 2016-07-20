@@ -5,8 +5,8 @@
             
         ]
     },
-    "GRO-CPGA": "Inconsistent",
-    "PO": "Inconsistent",
+    "GRO-CPGA": "UnloadableImportException",
+    "PO": "UnloadableImportException",
     "ALL": {
         "count": 0,
         "classes": [

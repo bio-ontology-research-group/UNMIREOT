@@ -11,8 +11,8 @@
             "http://www.w3.org/2002/07/owl#Nothing"
         ]
     },
-    "CO": "Inconsistent",
-    "NCBITAXON": "Inconsistent",
+    "CO": "UnloadableImportException",
+    "NCBITAXON": "UnloadableImportException",
     "PATO": {
         "count": 0,
         "classes": [
@@ -31,8 +31,8 @@
             
         ]
     },
-    "EV": "Inconsistent",
-    "MS": "Inconsistent",
+    "EV": "UnloadableImportException",
+    "MS": "UnloadableImportException",
     "UO": {
         "count": 0,
         "classes": [
@@ -93,6 +93,6 @@
             
         ]
     },
-    "OAE": "Inconsistent",
-    "ALL": "Inconsistent"
+    "OAE": "UnloadableImportException",
+    "ALL": "UnloadableImportException"
 }

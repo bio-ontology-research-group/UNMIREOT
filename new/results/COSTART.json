@@ -5,7 +5,7 @@
             
         ]
     },
-    "RP": "Inconsistent",
+    "RP": "UnloadableImportException",
     "MA": {
         "count": 0,
         "classes": [
@@ -18,7 +18,7 @@
             
         ]
     },
-    "TO": "Inconsistent",
+    "TO": "UnloadableImportException",
     "SP": {
         "count": 0,
         "classes": [
@@ -37,7 +37,7 @@
             
         ]
     },
-    "MS": "Inconsistent",
+    "MS": "UnloadableImportException",
     "MO": {
         "count": 0,
         "classes": [
@@ -68,7 +68,7 @@
             
         ]
     },
-    "ARD": "Inconsistent",
+    "ARD": "UnloadableImportException",
     "CL": {
         "count": 0,
         "classes": [
@@ -105,7 +105,7 @@
             
         ]
     },
-    "IDO": "Inconsistent",
+    "IDO": "UnloadableImportException",
     "MI": {
         "count": 0,
         "classes": [
@@ -120,7 +120,7 @@
             "http://purl.obolibrary.org/obo/GO_0042751"
         ]
     },
-    "CO": "Inconsistent",
+    "CO": "UnloadableImportException",
     "SO": {
         "count": 0,
         "classes": [
@@ -181,14 +181,14 @@
             "http://www.w3.org/2002/07/owl#Nothing"
         ]
     },
-    "FALL": "Inconsistent",
+    "FALL": "UnloadableImportException",
     "CCO": {
         "count": 0,
         "classes": [
             
         ]
     },
-    "RB": "Inconsistent",
+    "RB": "UnloadableImportException",
     "FO": {
         "count": 0,
         "classes": [
@@ -207,8 +207,8 @@
             
         ]
     },
-    "EV": "Inconsistent",
-    "NIC": "Inconsistent",
+    "EV": "UnloadableImportException",
+    "NIC": "UnloadableImportException",
     "CEPH": {
         "count": 0,
         "classes": [
@@ -221,15 +221,15 @@
             
         ]
     },
-    "ISO": "Inconsistent",
-    "OPE": "Inconsistent",
+    "ISO": "UnloadableImportException",
+    "OPE": "UnloadableImportException",
     "PTO": {
         "count": 0,
         "classes": [
             
         ]
     },
-    "VO": "Inconsistent",
+    "VO": "UnloadableImportException",
     "BFO": {
         "count": 0,
         "classes": [
@@ -248,7 +248,7 @@
             
         ]
     },
-    "PLO": "Inconsistent",
+    "PLO": "UnloadableImportException",
     "BP": {
         "count": 0,
         "classes": [
@@ -282,8 +282,8 @@
             
         ]
     },
-    "FLU": "Inconsistent",
-    "HIV": "Inconsistent",
+    "FLU": "UnloadableImportException",
+    "HIV": "UnloadableImportException",
     "FIX": {
         "count": 0,
         "classes": [
@@ -296,7 +296,7 @@
             
         ]
     },
-    "DDI": "Inconsistent",
+    "DDI": "UnloadableImportException",
     "GRO": {
         "count": 0,
         "classes": [
@@ -327,5 +327,5 @@
             
         ]
     },
-    "ALL": "Inconsistent"
+    "ALL": "UnloadableImportException"
 }

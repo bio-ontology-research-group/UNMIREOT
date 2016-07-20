@@ -53,12 +53,12 @@
             
         ]
     },
-    "FBbt": "Inconsistent",
+    "FBbt": "UnloadableImportException",
     "ZFA": {
         "count": 0,
         "classes": [
             
         ]
     },
-    "ALL": "Inconsistent"
+    "ALL": "UnloadableImportException"
 }

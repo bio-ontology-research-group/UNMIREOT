@@ -11,29 +11,29 @@
             
         ]
     },
-    "MS": "Inconsistent",
+    "MS": "UnloadableImportException",
     "MA": {
         "count": 0,
         "classes": [
             
         ]
     },
-    "HC": "Inconsistent",
+    "HC": "UnloadableImportException",
     "CHEBI": {
         "count": 0,
         "classes": [
             
         ]
     },
-    "IPR": "Inconsistent",
+    "IPR": "UnloadableImportException",
     "PE": {
         "count": 0,
         "classes": [
             
         ]
     },
-    "RB": "Inconsistent",
-    "CO": "Inconsistent",
+    "RB": "UnloadableImportException",
+    "CO": "UnloadableImportException",
     "ALL": {
         "count": 0,
         "classes": [

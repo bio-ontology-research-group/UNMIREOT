@@ -1,5 +1,5 @@
 {
-    "FBSP": "Inconsistent",
+    "FBSP": "UnloadableImportException",
     "ALL": {
         "count": 0,
         "classes": [

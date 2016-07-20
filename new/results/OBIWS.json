@@ -1,5 +1,5 @@
 {
-    "NCBITAXON": "Inconsistent",
+    "NCBITAXON": "UnloadableImportException",
     "OBI": {
         "count": 0,
         "classes": [

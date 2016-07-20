@@ -1,5 +1,5 @@
 {
-    "WBPHENOTYPE": "Inconsistent",
+    "WBPHENOTYPE": "UnloadableImportException",
     "BP": {
         "count": 0,
         "classes": [

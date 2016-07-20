@@ -35,7 +35,7 @@
             
         ]
     },
-    "CO": "Inconsistent",
+    "CO": "UnloadableImportException",
     "MIRNAO": {
         "count": 0,
         "classes": [

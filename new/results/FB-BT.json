@@ -2191,7 +2191,7 @@
             "http://purl.obolibrary.org/obo/FBbt_00111436"
         ]
     },
-    "FBbt": "Inconsistent",
+    "FBbt": "UnloadableImportException",
     "ALL": {
         "count": 2187,
         "classes": [

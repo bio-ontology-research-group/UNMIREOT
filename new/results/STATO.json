@@ -35,7 +35,7 @@
             
         ]
     },
-    "NCBITAXON": "Inconsistent",
+    "NCBITAXON": "UnloadableImportException",
     "NIGO": {
         "count": 0,
         "classes": [
@@ -60,7 +60,7 @@
             
         ]
     },
-    "MS": "Inconsistent",
+    "MS": "UnloadableImportException",
     "CARO": {
         "count": 0,
         "classes": [
@@ -91,5 +91,5 @@
             
         ]
     },
-    "ALL": "Inconsistent"
+    "ALL": "UnloadableImportException"
 }

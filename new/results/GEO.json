@@ -5,7 +5,7 @@
             "http://www.semanticweb.org/ethnicityOntology#Shona"
         ]
     },
-    "OBI": "Inconsistent",
+    "OBI": "InconsistentOntologyException",
     "BFO": {
         "count": 0,
         "classes": [

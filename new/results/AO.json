@@ -53,8 +53,18 @@
             
         ]
     },
-    "MO": "Inconsistent",
-    "EV": "Inconsistent",
-    "OBA": "Inconsistent",
-    "ALL": "Inconsistent"
+    "MO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "EV": "UnloadableImportException",
+    "OBA": "UnloadableImportException",
+    "ALL": {
+        "count": 0,
+        "classes": [
+            "http://www.w3.org/2002/07/owl#Nothing"
+        ]
+    }
 }

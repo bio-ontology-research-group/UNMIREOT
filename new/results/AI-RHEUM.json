@@ -5,7 +5,7 @@
             
         ]
     },
-    "MS": "Inconsistent",
+    "MS": "UnloadableImportException",
     "MF": {
         "count": 4,
         "classes": [
@@ -15,7 +15,7 @@
             "http://purl.obolibrary.org/obo/MF_0000012"
         ]
     },
-    "CO": "Inconsistent",
+    "CO": "UnloadableImportException",
     "EO": {
         "count": 1,
         "classes": [
@@ -34,7 +34,7 @@
             
         ]
     },
-    "OPE": "Inconsistent",
+    "OPE": "UnloadableImportException",
     "PP": {
         "count": 0,
         "classes": [
@@ -65,7 +65,12 @@
             
         ]
     },
-    "MO": "Inconsistent",
+    "MO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
     "EMO": {
         "count": 0,
         "classes": [
@@ -108,7 +113,7 @@
             
         ]
     },
-    "RB": "Inconsistent",
+    "RB": "UnloadableImportException",
     "EP": {
         "count": 0,
         "classes": [
@@ -121,7 +126,7 @@
             
         ]
     },
-    "NIC": "Inconsistent",
+    "NIC": "UnloadableImportException",
     "AO": {
         "count": 0,
         "classes": [
@@ -140,14 +145,14 @@
             
         ]
     },
-    "HC": "Inconsistent",
+    "HC": "UnloadableImportException",
     "CL": {
         "count": 0,
         "classes": [
             
         ]
     },
-    "VO": "Inconsistent",
+    "VO": "UnloadableImportException",
     "SP": {
         "count": 0,
         "classes": [
@@ -172,24 +177,24 @@
             
         ]
     },
-    "TO": "Inconsistent",
-    "RP": "Inconsistent",
+    "TO": "UnloadableImportException",
+    "RP": "UnloadableImportException",
     "SYN": {
         "count": 0,
         "classes": [
             
         ]
     },
-    "ISO": "Inconsistent",
+    "ISO": "UnloadableImportException",
     "CN": {
         "count": 0,
         "classes": [
             
         ]
     },
-    "RCD": "Inconsistent",
-    "EV": "Inconsistent",
-    "FLU": "Inconsistent",
+    "RCD": "UnloadableImportException",
+    "EV": "UnloadableImportException",
+    "FLU": "UnloadableImportException",
     "ECG": {
         "count": 0,
         "classes": [
@@ -208,5 +213,5 @@
             
         ]
     },
-    "ALL": "Inconsistent"
+    "ALL": "UnloadableImportException"
 }

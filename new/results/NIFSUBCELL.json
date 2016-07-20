@@ -1,5 +1,5 @@
 {
-    "FMA": "Inconsistent",
+    "FMA": "NullPointerException",
     "NIFCELL": {
         "count": 0,
         "classes": [
@@ -12,12 +12,7 @@
             
         ]
     },
-    "PATO": "Inconsistent",
-    "CO": "Inconsistent",
-    "ALL": {
-        "count": 0,
-        "classes": [
-            
-        ]
-    }
+    "PATO": "UnloadableImportException",
+    "CO": "UnloadableImportException",
+    "ALL": "NullPointerException"
 }

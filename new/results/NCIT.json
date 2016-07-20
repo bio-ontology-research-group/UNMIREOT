@@ -1,6 +1,6 @@
 {
-    "EV": "Unloadable",
-    "C1902": "Unloadable",
-    "CO": "Unloadable",
-    "ALL": "Inconsistent"
+    "EV": "UnloadableImportException",
+    "C1902": "UnloadableImportException",
+    "CO": "UnloadableImportException",
+    "ALL": "OWLOntologyStorageException"
 }

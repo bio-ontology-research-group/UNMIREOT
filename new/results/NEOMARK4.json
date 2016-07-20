@@ -11,7 +11,7 @@
             
         ]
     },
-    "MS": "Inconsistent",
+    "MS": "UnloadableImportException",
     "OBI": {
         "count": 0,
         "classes": [
@@ -24,11 +24,6 @@
             
         ]
     },
-    "FMA": "Inconsistent",
-    "ALL": {
-        "count": 0,
-        "classes": [
-            "http://www.w3.org/2002/07/owl#Nothing"
-        ]
-    }
+    "FMA": "NullPointerException",
+    "ALL": "NullPointerException"
 }

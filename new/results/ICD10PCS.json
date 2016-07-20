@@ -1,12 +1,12 @@
 {
-    "ICD10": "Inconsistent",
+    "ICD10": "UnloadableImportException",
     "BT": {
         "count": 0,
         "classes": [
             
         ]
     },
-    "HC": "Inconsistent",
+    "HC": "UnloadableImportException",
     "BP": {
         "count": 0,
         "classes": [
@@ -31,14 +31,14 @@
             
         ]
     },
-    "CTX": "Inconsistent",
+    "CTX": "UnloadableImportException",
     "GMM": {
         "count": 0,
         "classes": [
             
         ]
     },
-    "DCM": "Inconsistent",
+    "DCM": "UnloadableImportException",
     "GBM": {
         "count": 0,
         "classes": [
@@ -51,7 +51,7 @@
             
         ]
     },
-    "HL7": "Inconsistent",
+    "HL7": "UnloadableImportException",
     "STY": {
         "count": 0,
         "classes": [

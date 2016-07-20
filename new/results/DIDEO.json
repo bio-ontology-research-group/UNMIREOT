@@ -11,8 +11,8 @@
             
         ]
     },
-    "OBI": "Inconsistent",
-    "OAE": "Inconsistent",
+    "OBI": "InconsistentOntologyException",
+    "OAE": "UnloadableImportException",
     "STATO": {
         "count": 16,
         "classes": [
@@ -40,7 +40,7 @@
             
         ]
     },
-    "FMA": "Inconsistent",
+    "FMA": "NullPointerException",
     "UO": {
         "count": 0,
         "classes": [
@@ -59,7 +59,7 @@
             
         ]
     },
-    "DRON": "Inconsistent",
+    "DRON": "UnloadableImportException",
     "AO": {
         "count": 0,
         "classes": [
@@ -93,8 +93,8 @@
             
         ]
     },
-    "NCBITAXON": "Inconsistent",
-    "MS": "Inconsistent",
+    "NCBITAXON": "UnloadableImportException",
+    "MS": "UnloadableImportException",
     "UBERON": {
         "count": 0,
         "classes": [
@@ -113,7 +113,7 @@
             
         ]
     },
-    "IDO": "Inconsistent",
+    "IDO": "UnloadableImportException",
     "PATO": {
         "count": 0,
         "classes": [
@@ -126,5 +126,5 @@
             
         ]
     },
-    "ALL": "Inconsistent"
+    "ALL": "UnloadableImportException"
 }

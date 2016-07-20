@@ -5,7 +5,7 @@
             
         ]
     },
-    "CNO": "Inconsistent",
+    "CNO": "UnloadableImportException",
     "OBI": {
         "count": 0,
         "classes": [

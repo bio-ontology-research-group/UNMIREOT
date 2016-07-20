@@ -5,7 +5,7 @@
             
         ]
     },
-    "HL7": "Inconsistent",
+    "HL7": "UnloadableImportException",
     "ALL": {
         "count": 0,
         "classes": [

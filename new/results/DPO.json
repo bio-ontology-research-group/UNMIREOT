@@ -80,8 +80,8 @@
             
         ]
     },
-    "FBbt": "Inconsistent",
-    "CO": "Inconsistent",
+    "FBbt": "UnloadableImportException",
+    "CO": "UnloadableImportException",
     "CL": {
         "count": 8,
         "classes": [
@@ -95,5 +95,5 @@
             "http://purl.obolibrary.org/obo/CL_0009001"
         ]
     },
-    "ALL": "Inconsistent"
+    "ALL": "UnloadableImportException"
 }

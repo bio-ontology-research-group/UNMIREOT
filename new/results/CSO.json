@@ -17,7 +17,7 @@
             
         ]
     },
-    "RB": "Inconsistent",
+    "RB": "UnloadableImportException",
     "CL": {
         "count": 0,
         "classes": [

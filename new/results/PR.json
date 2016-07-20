@@ -1,5 +1,5 @@
 {
-    "NCBITAXON": "Inconsistent",
+    "NCBITAXON": "UnloadableImportException",
     "SP": {
         "count": 0,
         "classes": [
@@ -24,8 +24,8 @@
             
         ]
     },
-    "RP": "Inconsistent",
-    "RB": "Inconsistent",
+    "RP": "UnloadableImportException",
+    "RB": "UnloadableImportException",
     "NIGO": {
         "count": 0,
         "classes": [
@@ -38,7 +38,7 @@
             
         ]
     },
-    "HC": "Inconsistent",
+    "HC": "UnloadableImportException",
     "MOD": {
         "count": 0,
         "classes": [
@@ -51,7 +51,12 @@
             
         ]
     },
-    "MO": "Inconsistent",
+    "MO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
     "CHEBI": {
         "count": 0,
         "classes": [
@@ -94,7 +99,7 @@
             
         ]
     },
-    "EV": "Inconsistent",
+    "EV": "UnloadableImportException",
     "BP": {
         "count": 0,
         "classes": [
@@ -113,7 +118,7 @@
             
         ]
     },
-    "MS": "Inconsistent",
+    "MS": "UnloadableImportException",
     "MI": {
         "count": 0,
         "classes": [
@@ -171,7 +176,7 @@
             
         ]
     },
-    "VFB": "Inconsistent",
-    "IPR": "Inconsistent",
-    "ALL": "Inconsistent"
+    "VFB": "UnloadableImportException",
+    "IPR": "UnloadableImportException",
+    "ALL": "UnloadableImportException"
 }

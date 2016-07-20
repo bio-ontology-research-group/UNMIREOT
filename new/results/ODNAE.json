@@ -5,7 +5,7 @@
             
         ]
     },
-    "OAE": "Inconsistent",
+    "OAE": "UnloadableImportException",
     "NIGO": {
         "count": 0,
         "classes": [
@@ -42,8 +42,8 @@
             
         ]
     },
-    "NCBITAXON": "Inconsistent",
-    "MS": "Inconsistent",
+    "NCBITAXON": "UnloadableImportException",
+    "MS": "UnloadableImportException",
     "AO": {
         "count": 0,
         "classes": [
@@ -74,5 +74,5 @@
             
         ]
     },
-    "ALL": "Inconsistent"
+    "ALL": "UnloadableImportException"
 }

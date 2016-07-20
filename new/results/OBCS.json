@@ -41,7 +41,7 @@
             
         ]
     },
-    "NCBITAXON": "Inconsistent",
+    "NCBITAXON": "UnloadableImportException",
     "CHEBI": {
         "count": 0,
         "classes": [
@@ -72,5 +72,5 @@
             
         ]
     },
-    "ALL": "Inconsistent"
+    "ALL": "UnloadableImportException"
 }

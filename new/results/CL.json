@@ -364,7 +364,7 @@
             
         ]
     },
-    "NCBITAXON": "Inconsistent",
+    "NCBITAXON": "UnloadableImportException",
     "PATO": {
         "count": 0,
         "classes": [
@@ -383,6 +383,6 @@
             
         ]
     },
-    "FMA": "Inconsistent",
-    "ALL": "Inconsistent"
+    "FMA": "NullPointerException",
+    "ALL": "UnloadableImportException"
 }

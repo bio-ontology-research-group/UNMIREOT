@@ -2191,7 +2191,7 @@
             "http://purl.obolibrary.org/obo/FBbt_00067050"
         ]
     },
-    "FBbt": "Inconsistent",
+    "FBbt": "UnloadableImportException",
     "NIGO": {
         "count": 8,
         "classes": [
@@ -2235,5 +2235,5 @@
             
         ]
     },
-    "ALL": "Inconsistent"
+    "ALL": "UnloadableImportException"
 }

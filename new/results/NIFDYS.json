@@ -11,8 +11,8 @@
             
         ]
     },
-    "PATO": "Inconsistent",
-    "CO": "Inconsistent",
+    "PATO": "UnloadableImportException",
+    "CO": "UnloadableImportException",
     "ALL": {
         "count": 0,
         "classes": [

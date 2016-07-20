@@ -17,8 +17,8 @@
             
         ]
     },
-    "RP": "Inconsistent",
-    "RB": "Inconsistent",
+    "RP": "UnloadableImportException",
+    "RB": "UnloadableImportException",
     "MA": {
         "count": 0,
         "classes": [
@@ -31,14 +31,14 @@
             "http://www.w3.org/2002/07/owl#Nothing"
         ]
     },
-    "HC": "Inconsistent",
+    "HC": "UnloadableImportException",
     "PTO": {
         "count": 0,
         "classes": [
             
         ]
     },
-    "MS": "Inconsistent",
+    "MS": "UnloadableImportException",
     "BP": {
         "count": 0,
         "classes": [
@@ -69,7 +69,7 @@
             
         ]
     },
-    "CO": "Inconsistent",
+    "CO": "UnloadableImportException",
     "AO": {
         "count": 0,
         "classes": [

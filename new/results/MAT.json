@@ -17,7 +17,7 @@
             
         ]
     },
-    "FMA": "Inconsistent",
+    "FMA": "NullPointerException",
     "EMAPA": {
         "count": 0,
         "classes": [
@@ -60,7 +60,7 @@
             
         ]
     },
-    "WBBT": "Inconsistent",
+    "WBBT": "UnloadableImportException",
     "FO": {
         "count": 0,
         "classes": [
@@ -79,14 +79,14 @@
             
         ]
     },
-    "EV": "Inconsistent",
+    "EV": "UnloadableImportException",
     "MP": {
         "count": 0,
         "classes": [
             
         ]
     },
-    "AAO": "Inconsistent",
+    "AAO": "UnloadableImportException",
     "FB-BT": {
         "count": 0,
         "classes": [
@@ -99,7 +99,7 @@
             
         ]
     },
-    "FBbt": "Inconsistent",
+    "FBbt": "UnloadableImportException",
     "MA": {
         "count": 0,
         "classes": [
@@ -166,5 +166,5 @@
             
         ]
     },
-    "ALL": "Inconsistent"
+    "ALL": "UnloadableImportException"
 }

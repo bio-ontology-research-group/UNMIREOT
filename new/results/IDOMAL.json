@@ -1,5 +1,5 @@
 {
-    "IDO": "Inconsistent",
+    "IDO": "UnloadableImportException",
     "OBI": {
         "count": 0,
         "classes": [
@@ -30,7 +30,7 @@
             
         ]
     },
-    "NCBITAXON": "Inconsistent",
+    "NCBITAXON": "UnloadableImportException",
     "NIGO": {
         "count": 0,
         "classes": [
@@ -43,7 +43,7 @@
             
         ]
     },
-    "VO": "Inconsistent",
+    "VO": "UnloadableImportException",
     "ENVO": {
         "count": 0,
         "classes": [
@@ -110,5 +110,5 @@
             
         ]
     },
-    "ALL": "Inconsistent"
+    "ALL": "UnloadableImportException"
 }

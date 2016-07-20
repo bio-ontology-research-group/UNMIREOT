@@ -1,12 +1,12 @@
 {
-    "MS": "Inconsistent",
+    "MS": "UnloadableImportException",
     "STY": {
         "count": 0,
         "classes": [
             
         ]
     },
-    "CO": "Inconsistent",
+    "CO": "UnloadableImportException",
     "ALL": {
         "count": 0,
         "classes": [

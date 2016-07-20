@@ -1,13 +1,18 @@
 {
-    "ECG": "Inconsistent",
+    "ECG": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
     "RS": {
         "count": 0,
         "classes": [
             
         ]
     },
-    "MS": "Inconsistent",
-    "EV": "Inconsistent",
+    "MS": "UnloadableImportException",
+    "EV": "UnloadableImportException",
     "PR": {
         "count": 0,
         "classes": [
@@ -26,15 +31,15 @@
             
         ]
     },
-    "CO": "Inconsistent",
-    "RP": "Inconsistent",
+    "CO": "UnloadableImportException",
+    "RP": "UnloadableImportException",
     "MI": {
         "count": 0,
         "classes": [
             
         ]
     },
-    "HC": "Inconsistent",
+    "HC": "UnloadableImportException",
     "CN": {
         "count": 0,
         "classes": [
@@ -47,7 +52,7 @@
             
         ]
     },
-    "AIDS": "Inconsistent",
+    "AIDS": "UnloadableImportException",
     "pseudo": {
         "count": 0,
         "classes": [
@@ -60,5 +65,5 @@
             
         ]
     },
-    "ALL": "Inconsistent"
+    "ALL": "UnloadableImportException"
 }

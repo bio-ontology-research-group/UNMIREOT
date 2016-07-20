@@ -11,7 +11,7 @@
             
         ]
     },
-    "C1902": "Inconsistent",
+    "C1902": "UnloadableImportException",
     "ALL": {
         "count": 0,
         "classes": [

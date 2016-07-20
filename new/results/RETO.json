@@ -17,8 +17,8 @@
             
         ]
     },
-    "RP": "Inconsistent",
-    "PTS": "Inconsistent",
+    "RP": "UnloadableImportException",
+    "PTS": "UnloadableImportException",
     "PP": {
         "count": 0,
         "classes": [
@@ -49,7 +49,7 @@
             
         ]
     },
-    "MS": "Inconsistent",
+    "MS": "UnloadableImportException",
     "MA": {
         "count": 0,
         "classes": [
@@ -68,15 +68,15 @@
             
         ]
     },
-    "HC": "Inconsistent",
+    "HC": "UnloadableImportException",
     "PR": {
         "count": 0,
         "classes": [
             
         ]
     },
-    "NCBITAXON": "Inconsistent",
-    "RB": "Inconsistent",
+    "NCBITAXON": "UnloadableImportException",
+    "RB": "UnloadableImportException",
     "CN": {
         "count": 0,
         "classes": [
@@ -89,14 +89,14 @@
             
         ]
     },
-    "TO": "Inconsistent",
+    "TO": "UnloadableImportException",
     "BHN": {
         "count": 0,
         "classes": [
             
         ]
     },
-    "RDL": "Inconsistent",
+    "RDL": "UnloadableImportException",
     "EP": {
         "count": 0,
         "classes": [
@@ -154,16 +154,16 @@
             
         ]
     },
-    "EV": "Inconsistent",
-    "DCM": "Inconsistent",
-    "IPR": "Inconsistent",
+    "EV": "UnloadableImportException",
+    "DCM": "UnloadableImportException",
+    "IPR": "UnloadableImportException",
     "ADW": {
         "count": 0,
         "classes": [
             
         ]
     },
-    "CPT": "Inconsistent",
+    "CPT": "UnloadableImportException",
     "SYN": {
         "count": 0,
         "classes": [
@@ -182,14 +182,14 @@
             
         ]
     },
-    "ZFS": "Inconsistent",
+    "ZFS": "UnloadableImportException",
     "REX": {
         "count": 0,
         "classes": [
             
         ]
     },
-    "ARD": "Inconsistent",
+    "ARD": "UnloadableImportException",
     "ATC": {
         "count": 0,
         "classes": [
@@ -214,14 +214,14 @@
             
         ]
     },
-    "HL7": "Inconsistent",
+    "HL7": "UnloadableImportException",
     "SO": {
         "count": 0,
         "classes": [
             
         ]
     },
-    "BIM": "Inconsistent",
+    "BIM": "UnloadableImportException",
     "SSE": {
         "count": 0,
         "classes": [
@@ -234,12 +234,12 @@
             
         ]
     },
-    "RCD": "Inconsistent",
+    "RCD": "UnloadableImportException",
     "PMR": {
         "count": 0,
         "classes": [
             
         ]
     },
-    "ALL": "Inconsistent"
+    "ALL": "UnloadableImportException"
 }

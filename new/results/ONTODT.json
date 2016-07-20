@@ -12,7 +12,7 @@
             
         ]
     },
-    "OBI": "Inconsistent",
+    "OBI": "InconsistentOntologyException",
     "ALL": {
         "count": 2,
         "classes": [

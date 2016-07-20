@@ -1,5 +1,5 @@
 {
-    "NCBITAXON": "Inconsistent",
+    "NCBITAXON": "UnloadableImportException",
     "AO": {
         "count": 0,
         "classes": [
@@ -36,7 +36,7 @@
             
         ]
     },
-    "IDO": "Inconsistent",
+    "IDO": "UnloadableImportException",
     "OBI": {
         "count": 0,
         "classes": [
@@ -49,5 +49,5 @@
             
         ]
     },
-    "ALL": "Inconsistent"
+    "ALL": "InconsistentOntologyException"
 }

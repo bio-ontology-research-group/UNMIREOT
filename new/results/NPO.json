@@ -1,9 +1,9 @@
 {
-    "CHEBI": "Unloadable",
-    "PO": "Unloadable",
-    "GO": "Unloadable",
-    "REX": "Unloadable",
-    "ATO": "Unloadable",
-    "FIX": "Unloadable",
-    "ALL": "Inconsistent"
+    "CHEBI": "UnparsableOntologyException",
+    "PO": "UnparsableOntologyException",
+    "GO": "UnparsableOntologyException",
+    "REX": "UnparsableOntologyException",
+    "ATO": "UnparsableOntologyException",
+    "FIX": "UnparsableOntologyException",
+    "ALL": "OWLOntologyStorageException"
 }

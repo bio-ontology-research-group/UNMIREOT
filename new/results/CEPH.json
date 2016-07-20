@@ -29,7 +29,7 @@
             "http://www.w3.org/2002/07/owl#Nothing"
         ]
     },
-    "NCBITAXON": "Inconsistent",
+    "NCBITAXON": "UnloadableImportException",
     "CL": {
         "count": 0,
         "classes": [

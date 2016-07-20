@@ -5,8 +5,8 @@
             
         ]
     },
-    "EV": "Inconsistent",
-    "SNOMEDCT": "Inconsistent",
+    "EV": "UnloadableImportException",
+    "SNOMEDCT": "UnloadableImportException",
     "HP": {
         "count": 0,
         "classes": [
@@ -19,7 +19,7 @@
             
         ]
     },
-    "INFECTION": "Inconsistent",
+    "INFECTION": "UnloadableImportException",
     "MP": {
         "count": 0,
         "classes": [

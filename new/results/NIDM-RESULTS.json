@@ -36,12 +36,8 @@
         ]
     },
     "ALL": {
-        "count": 31,
+        "count": 35,
         "classes": [
-            "http://purl.obolibrary.org/obo/OBI_0000626",
-            "http://purl.obolibrary.org/obo/OBI_0001573",
-            "http://purl.obolibrary.org/obo/STATO_0000064",
-            "http://purl.obolibrary.org/obo/STATO_0000111",
             "http://purl.obolibrary.org/obo/OBI_0001864",
             "http://purl.obolibrary.org/obo/OBI_0001863",
             "http://purl.obolibrary.org/obo/OBI_0001862",
@@ -59,17 +55,25 @@
             "http://purl.obolibrary.org/obo/OBI_0000724",
             "http://purl.obolibrary.org/obo/OBI_0000723",
             "http://purl.obolibrary.org/obo/OBI_0000716",
+            "http://purl.obolibrary.org/obo/OBI_0000626",
             "http://purl.obolibrary.org/obo/OBI_0000706",
             "http://purl.obolibrary.org/obo/OBI_0000697",
             "http://purl.obolibrary.org/obo/OBI_0001924",
             "http://purl.obolibrary.org/obo/OBI_0001925",
+            "http://purl.obolibrary.org/obo/OBI_0001573",
             "http://purl.obolibrary.org/obo/OBI_0001919",
+            "http://purl.obolibrary.org/obo/OBI_0002019",
+            "http://purl.obolibrary.org/obo/OBI_0002017",
+            "http://purl.obolibrary.org/obo/OBI_0002015",
+            "http://purl.obolibrary.org/obo/OBI_0001966",
             "http://www.w3.org/2002/07/owl#Nothing",
             "http://purl.obolibrary.org/obo/OBI_0000695",
             "http://purl.obolibrary.org/obo/OBI_0001674",
             "http://purl.obolibrary.org/obo/OBI_0001258",
             "http://purl.obolibrary.org/obo/OBI_0000992",
-            "http://purl.obolibrary.org/obo/OBI_0001920"
+            "http://purl.obolibrary.org/obo/OBI_0001920",
+            "http://purl.obolibrary.org/obo/STATO_0000064",
+            "http://purl.obolibrary.org/obo/STATO_0000111"
         ]
     }
 }

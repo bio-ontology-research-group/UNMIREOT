@@ -1,13 +1,13 @@
 {
-    "RB": "Inconsistent",
+    "RB": "UnloadableImportException",
     "DOID": {
         "count": 0,
         "classes": [
             
         ]
     },
-    "HC": "Inconsistent",
-    "CO": "Inconsistent",
+    "HC": "UnloadableImportException",
+    "CO": "UnloadableImportException",
     "CN": {
         "count": 0,
         "classes": [
@@ -50,7 +50,7 @@
             
         ]
     },
-    "EV": "Inconsistent",
+    "EV": "UnloadableImportException",
     "CL": {
         "count": 0,
         "classes": [

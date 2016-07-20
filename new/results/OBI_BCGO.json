@@ -35,7 +35,7 @@
             
         ]
     },
-    "BCGO": "Inconsistent",
+    "BCGO": "UnloadableImportException",
     "MIRNAO": {
         "count": 0,
         "classes": [
@@ -128,21 +128,21 @@
             
         ]
     },
-    "NCBITAXON": "Inconsistent",
+    "NCBITAXON": "UnloadableImportException",
     "SWO": {
         "count": 0,
         "classes": [
             
         ]
     },
-    "MS": "Inconsistent",
+    "MS": "UnloadableImportException",
     "ENVO": {
         "count": 0,
         "classes": [
             
         ]
     },
-    "FMA": "Inconsistent",
+    "FMA": "NullPointerException",
     "RS": {
         "count": 0,
         "classes": [
@@ -181,5 +181,5 @@
             
         ]
     },
-    "ALL": "Inconsistent"
+    "ALL": "UnloadableImportException"
 }

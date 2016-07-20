@@ -1,6 +1,6 @@
 {
-    "ONTODT": "Inconsistent",
-    "OBI": "Inconsistent",
+    "ONTODT": "UnloadableImportException",
+    "OBI": "InconsistentOntologyException",
     "AO": {
         "count": 2,
         "classes": [
@@ -9,10 +9,12 @@
         ]
     },
     "SWO": {
-        "count": 2,
+        "count": 4,
         "classes": [
             "http://kt.ijs.si/panovp/OntoDM#OntoDM_661861",
-            "http://kt.ijs.si/panovp/OntoDM.owl#OntoDM_295724"
+            "http://kt.ijs.si/panovp/OntoDM.owl#OntoDM_295724",
+            "http://www.ebi.ac.uk/swo/data/SWO_3000056",
+            "http://www.ebi.ac.uk/swo/data/SWO_3000055"
         ]
     },
     "BFO": {
@@ -50,5 +52,5 @@
             "http://kt.ijs.si/panovp/OntoDM.owl#OntoDM_295724"
         ]
     },
-    "ALL": "Inconsistent"
+    "ALL": "UnloadableImportException"
 }

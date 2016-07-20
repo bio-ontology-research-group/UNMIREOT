@@ -1,51 +1,127 @@
 
 ## ICO.json
-ALL: Inconsistent
 
-CO: Inconsistent
+ALL: Unloadable
+
+AO: No issues detected.
+
+ATO: No issues detected.
+
+BFO: No issues detected.
+
+CARO: No issues detected.
+
+CHEBI: No issues detected.
+
+CL: No issues detected.
+
+CO: Unloadable
 
 EO: 1 unsatisfiable classes.
 
-EV: Inconsistent
+ERO: No issues detected.
 
-MS: Inconsistent
+EV: Unloadable
 
-NCBITAXON: Inconsistent
+GO: No issues detected.
 
-OAE: Inconsistent
+MS: Unloadable
 
+NCBITAXON: Unloadable
+
+NCIT: No issues detected.
+
+NIGO: No issues detected.
+
+OAE: Unloadable
+
+OBI: No issues detected.
+
+PATO: No issues detected.
+
+UBERON: No issues detected.
+
+UO: No issues detected.
 
 ## FB-SP.json
-FBSP: Inconsistent
 
+ALL: No issues detected.
+
+FBSP: Unloadable
 
 ## ONL-MR-DA.json
-CO: Inconsistent
 
+ALL: No issues detected.
+
+CO: Unloadable
+
+MA: No issues detected.
+
+MP: No issues detected.
+
+PE: No issues detected.
+
+SO: No issues detected.
+
+SP: No issues detected.
 
 ## FB-CV.json
-No issues detected.
+
+ALL: No issues detected.
+
+FBCV: No issues detected.
 
 ## SITBAC.json
-ALL: Inconsistent
 
-HC: Inconsistent
+ALL: No issues detected.
 
+HC: Unloadable
+
+HP: No issues detected.
+
+MO: No issues detected.
 
 ## ONTOTOXNUC.json
-CO: Inconsistent
 
-HC: Inconsistent
+ALL: No issues detected.
 
-MS: Inconsistent
+AO: No issues detected.
 
-RB: Inconsistent
+BP: No issues detected.
 
-RP: Inconsistent
+CL: No issues detected.
 
+CO: Unloadable
+
+ERO: No issues detected.
+
+HC: Unloadable
+
+HP: No issues detected.
+
+MA: No issues detected.
+
+MP: No issues detected.
+
+MS: Unloadable
+
+PDQ: No issues detected.
+
+PE: No issues detected.
+
+PO: No issues detected.
+
+PTO: No issues detected.
+
+RB: Unloadable
+
+RP: Unloadable
+
+SO: No issues detected.
 
 ## NCIT.json
-ALL: Inconsistent
+
+ALL: OWLOntologyStorageException
 
 C1902: Unloadable
 
@@ -53,15 +129,15 @@ CO: Unloadable
 
 EV: Unloadable
 
-
 ## ONTOLURGENCES.json
-ALL: Inconsistent
+
+ALL: 663 unsatisfiable classes.
 
 AO: 16 unsatisfiable classes.
 
 BP: 16 unsatisfiable classes.
 
-CO: Inconsistent
+CO: Unloadable
 
 ECG: 16 unsatisfiable classes.
 
@@ -71,11 +147,11 @@ EO: 17 unsatisfiable classes.
 
 EP: 16 unsatisfiable classes.
 
-EV: Inconsistent
+EV: Unloadable
 
-HC: Inconsistent
+HC: Unloadable
 
-HIV: Inconsistent
+HIV: Unloadable
 
 MA: 16 unsatisfiable classes.
 
@@ -85,7 +161,7 @@ MI: 16 unsatisfiable classes.
 
 MP: 16 unsatisfiable classes.
 
-MS: Inconsistent
+MS: Unloadable
 
 NIHSS: 16 unsatisfiable classes.
 
@@ -97,7 +173,7 @@ PP: 16 unsatisfiable classes.
 
 PR: 16 unsatisfiable classes.
 
-RP: Inconsistent
+RP: Unloadable
 
 RS: 16 unsatisfiable classes.
 
@@ -105,423 +181,1063 @@ SO: 16 unsatisfiable classes.
 
 SP: 16 unsatisfiable classes.
 
-VO: Inconsistent
-
+VO: Unloadable
 
 ## OBI_BCGO.json
-ALL: Inconsistent
 
-BCGO: Inconsistent
+ALL: Unloadable
+
+AO: No issues detected.
+
+ATO: No issues detected.
+
+BCGO: Unloadable
+
+BFO: No issues detected.
+
+BT: No issues detected.
+
+BTO: No issues detected.
+
+CARO: No issues detected.
+
+CHEBI: No issues detected.
+
+CL: No issues detected.
+
+EFO: No issues detected.
+
+ENVO: No issues detected.
 
 EO: 5 unsatisfiable classes.
 
-FMA: Inconsistent
+ERO: No issues detected.
 
-MS: Inconsistent
+FMA: NullPointerException
+
+FO: No issues detected.
+
+GAZ: No issues detected.
+
+GO: No issues detected.
+
+MIRNAO: No issues detected.
+
+MP: No issues detected.
+
+MS: Unloadable
 
 NBO: 3 unsatisfiable classes.
 
-NCBITAXON: Inconsistent
+NCBITAXON: Unloadable
 
 NIGO: 5 unsatisfiable classes.
 
+OBI: No issues detected.
+
+PATO: No issues detected.
+
+PR: No issues detected.
+
+RS: No issues detected.
+
+SO: No issues detected.
+
+SWO: No issues detected.
+
+UBERON: No issues detected.
+
+UO: No issues detected.
+
+VT: No issues detected.
 
 ## NMR.json
-No issues detected.
+
+ALL: No issues detected.
+
+ATO: No issues detected.
+
+BFO: No issues detected.
+
+PATO: No issues detected.
 
 ## OOEVV.json
-No issues detected.
+
+ALL: No issues detected.
+
+AO: No issues detected.
+
+BFO: No issues detected.
 
 ## BT.json
-No issues detected.
+
+ALL: No issues detected.
+
+EP: No issues detected.
 
 ## EMAPA.json
-No issues detected.
+
+ALL: No issues detected.
+
+EMAP: No issues detected.
 
 ## LHN.json
+
 ALL: 1142 unsatisfiable classes.
 
-LOGGERHEAD: Inconsistent
+GO: No issues detected.
 
+LOGGERHEAD: Unloadable
+
+NIGO: No issues detected.
 
 ## ICD10CM.json
-ICD10: Inconsistent
 
+ALL: No issues detected.
+
+ICD10: Unloadable
+
+STY: No issues detected.
 
 ## MFO.json
-No issues detected.
+
+ALL: No issues detected.
+
+FO: No issues detected.
 
 ## HUGO.json
-ALL: Inconsistent
+
+ALL: OWLOntologyStorageException
 
 EV: Unloadable
 
-
 ## FBDV.json
+
 ALL: 1365 unsatisfiable classes.
+
+BFO: No issues detected.
+
+FB-DV: No issues detected.
+
+GO: No issues detected.
 
 NIGO: 8 unsatisfiable classes.
 
-
 ## FBBI.json
-No issues detected.
+
+ALL: No issues detected.
+
+FBbi: No issues detected.
 
 ## BDO.json
-ALL: Inconsistent
 
-EV: Inconsistent
+ALL: Unloadable
 
-MS: Inconsistent
+ATO: No issues detected.
 
-RP: Inconsistent
+EV: Unloadable
 
+HP: No issues detected.
+
+INO: No issues detected.
+
+MA: No issues detected.
+
+MI: No issues detected.
+
+MS: Unloadable
+
+NCIT: No issues detected.
+
+PO: No issues detected.
+
+RP: Unloadable
+
+pseudo: No issues detected.
 
 ## FYPO.json
-ALL: Inconsistent
+
+ALL: Unloadable
+
+ATO: No issues detected.
+
+BT: No issues detected.
+
+BTO: No issues detected.
+
+CHEBI: No issues detected.
 
 CL: 20 unsatisfiable classes.
 
-NIGO: 497 unsatisfiable classes.
+GO: No issues detected.
 
+MIRNAO: No issues detected.
+
+NIGO: 512 unsatisfiable classes.
+
+PATO: No issues detected.
+
+PO: No issues detected.
+
+PR: No issues detected.
+
+SO: No issues detected.
 
 ## BCO.json
-CO: Inconsistent
 
+ALL: No issues detected.
+
+AO: No issues detected.
+
+ATO: No issues detected.
+
+BFO: No issues detected.
+
+CARO: No issues detected.
+
+CHEBI: No issues detected.
+
+CO: Unloadable
+
+MIRNAO: No issues detected.
+
+MIXS: No issues detected.
+
+OBI: No issues detected.
+
+PATO: No issues detected.
+
+PR: No issues detected.
+
+SO: No issues detected.
 
 ## CHEMBIO.json
-No issues detected.
+
+ALL: No issues detected.
+
+BP: No issues detected.
 
 ## OPL.json
+
 ALL: Inconsistent
 
-IDO: Inconsistent
+AO: No issues detected.
 
-NCBITAXON: Inconsistent
+BT: No issues detected.
 
+CARO: No issues detected.
+
+CL: No issues detected.
+
+ERO: No issues detected.
+
+IDO: Unloadable
+
+IDOMAL: No issues detected.
+
+NCBITAXON: Unloadable
+
+OBI: No issues detected.
+
+UBERON: No issues detected.
 
 ## MATR.json
-CO: Inconsistent
 
-MS: Inconsistent
+ALL: No issues detected.
 
-matrRockIgneous: Inconsistent
+AO: No issues detected.
 
+BDO: No issues detected.
+
+CN: No issues detected.
+
+CO: Unloadable
+
+EP: No issues detected.
+
+MI: No issues detected.
+
+MS: Unloadable
+
+PDO: No issues detected.
+
+PW: No issues detected.
+
+SO: No issues detected.
+
+matrRockIgneous: Unloadable
 
 ## CRISP.json
-No issues detected.
+
+ALL: No issues detected.
+
+SP: No issues detected.
+
+STY: No issues detected.
 
 ## RNAO.json
-No issues detected.
+
+ALL: No issues detected.
+
+AO: No issues detected.
+
+CHEBI: No issues detected.
 
 ## SWO.json
+
 ALL: Inconsistent
 
-EDAM: 2258 unsatisfiable classes.
+AO: No issues detected.
 
-ONTODM-CORE: 2 unsatisfiable classes.
+EDAM: 177 unsatisfiable classes.
+
+OBI: No issues detected.
+
+ONTODM-CORE: 4 unsatisfiable classes.
 
 ONTODM-KDD: 10 unsatisfiable classes.
 
-
 ## RPO.json
-No issues detected.
+
+ALL: No issues detected.
+
+CN: No issues detected.
+
+HP: No issues detected.
+
+PE: No issues detected.
+
+pseudo: No issues detected.
 
 ## NIFSUBCELL.json
-CO: Inconsistent
 
-FMA: Inconsistent
+ALL: NullPointerException
 
-PATO: Inconsistent
+ATO: No issues detected.
 
+CO: Unloadable
+
+FMA: NullPointerException
+
+NIFCELL: No issues detected.
+
+PATO: Unloadable
 
 ## WB-LS.json
-WBLS: Inconsistent
 
+ALL: No issues detected.
+
+WBLS: Unloadable
 
 ## INO.json
-ALL: 1142 unsatisfiable classes.
 
+ALL: Unloadable
+
+AO: No issues detected.
+
+BFO: No issues detected.
+
+GO: No issues detected.
+
+MI: No issues detected.
+
+MIRNAO: No issues detected.
+
+NIGO: No issues detected.
+
+OBI: No issues detected.
+
+PR: No issues detected.
+
+PW: No issues detected.
+
+SO: No issues detected.
 
 ## CHMO.json
-MS: Inconsistent
 
+ALL: No issues detected.
+
+AO: No issues detected.
+
+BFO: No issues detected.
+
+CHEBI: No issues detected.
+
+FIX: No issues detected.
+
+MO: No issues detected.
+
+MS: Unloadable
+
+OBCS: No issues detected.
+
+OBI: No issues detected.
 
 ## MATRCOMPOUND.json
-CO: Inconsistent
 
-MS: Inconsistent
+ALL: No issues detected.
 
-matrRockIgneous: Inconsistent
+AO: No issues detected.
 
+BDO: No issues detected.
+
+CN: No issues detected.
+
+CO: Unloadable
+
+EP: No issues detected.
+
+MI: No issues detected.
+
+MS: Unloadable
+
+PDO: No issues detected.
+
+PW: No issues detected.
+
+SO: No issues detected.
+
+matrRockIgneous: Unloadable
 
 ## PTO.json
-TO: Inconsistent
 
+ALL: No issues detected.
+
+TO: Unloadable
 
 ## ADMIN.json
-MS: Inconsistent
 
+ALL: No issues detected.
+
+MS: Unloadable
 
 ## NCCO.json
-MS: Inconsistent
 
+ALL: No issues detected.
+
+MS: Unloadable
 
 ## PROCCHEMICAL.json
-CO: Inconsistent
 
-MS: Inconsistent
+ALL: No issues detected.
 
-matrRockIgneous: Inconsistent
+AO: No issues detected.
 
+BDO: No issues detected.
+
+CN: No issues detected.
+
+CO: Unloadable
+
+EP: No issues detected.
+
+MI: No issues detected.
+
+MS: Unloadable
+
+PDO: No issues detected.
+
+PW: No issues detected.
+
+SO: No issues detected.
+
+matrRockIgneous: Unloadable
 
 ## PDON.json
-ALL: Inconsistent
 
-CO: Inconsistent
+ALL: Unloadable
 
-HIV: Inconsistent
+AO: No issues detected.
 
+CO: Unloadable
+
+EP: No issues detected.
+
+HIV: Unloadable
+
+MA: No issues detected.
+
+MI: No issues detected.
+
+MP: No issues detected.
+
+PE: No issues detected.
+
+RS: No issues detected.
+
+VT: No issues detected.
 
 ## DIAGONT.json
+
 ALL: 12 unsatisfiable classes.
 
 CTO: 12 unsatisfiable classes.
 
-NONRCTO: Inconsistent
-
+NONRCTO: Unloadable
 
 ## TYPON.json
-No issues detected.
+
+ALL: No issues detected.
+
+BFO: No issues detected.
+
+ENVO: No issues detected.
+
+MIRNAO: No issues detected.
+
+OBI: No issues detected.
+
+SO: No issues detected.
 
 ## AI-RHEUM.json
-ALL: Inconsistent
 
-CO: Inconsistent
+ALL: Unloadable
+
+AO: No issues detected.
+
+ATC: No issues detected.
+
+BP: No issues detected.
+
+BT: No issues detected.
+
+CL: No issues detected.
+
+CN: No issues detected.
+
+CO: Unloadable
+
+CSO: No issues detected.
+
+ECG: No issues detected.
+
+EMO: No issues detected.
 
 EO: 1 unsatisfiable classes.
 
-EV: Inconsistent
+EP: No issues detected.
 
-FLU: Inconsistent
+ERO: No issues detected.
 
-HC: Inconsistent
+EV: Unloadable
 
-ISO: Inconsistent
+FLU: Unloadable
+
+GO: No issues detected.
+
+HC: Unloadable
+
+HP: No issues detected.
+
+ISO: Unloadable
+
+MA: No issues detected.
 
 MF: 4 unsatisfiable classes.
 
-MO: Inconsistent
+MI: No issues detected.
 
-MS: Inconsistent
+MO: No issues detected.
 
-NIC: Inconsistent
+MP: No issues detected.
 
-OPE: Inconsistent
+MS: Unloadable
 
-RB: Inconsistent
+NIC: Unloadable
 
-RCD: Inconsistent
+OF: No issues detected.
 
-RP: Inconsistent
+OPE: Unloadable
 
-TO: Inconsistent
+PE: No issues detected.
 
-VO: Inconsistent
+PMR: No issues detected.
 
+PO: No issues detected.
+
+PP: No issues detected.
+
+PR: No issues detected.
+
+RB: Unloadable
+
+RCD: Unloadable
+
+RP: Unloadable
+
+RS: No issues detected.
+
+SHR: No issues detected.
+
+SO: No issues detected.
+
+SP: No issues detected.
+
+STY: No issues detected.
+
+SWEET: No issues detected.
+
+SYN: No issues detected.
+
+TO: Unloadable
+
+VO: Unloadable
+
+VT: No issues detected.
 
 ## BCTEO.json
-ALL: Inconsistent
 
+ALL: Unloadable
+
+CANONT: No issues detected.
+
+IDQA: No issues detected.
 
 ## MOC.json
-CO: Inconsistent
 
-HC: Inconsistent
+ALL: No issues detected.
 
-MS: Inconsistent
+AO: No issues detected.
 
-VO: Inconsistent
+BDO: No issues detected.
 
-matrRockIgneous: Inconsistent
+CN: No issues detected.
 
+CO: Unloadable
+
+EP: No issues detected.
+
+HC: Unloadable
+
+MI: No issues detected.
+
+MS: Unloadable
+
+PDO: No issues detected.
+
+PW: No issues detected.
+
+SO: No issues detected.
+
+VO: Unloadable
+
+matrRockIgneous: Unloadable
 
 ## DERMLEX.json
-No issues detected.
+
+ADW: No issues detected.
+
+ALL: No issues detected.
 
 ## CDAO.json
-No issues detected.
+
+ALL: No issues detected.
+
+AO: No issues detected.
+
+BFO: No issues detected.
 
 ## SPD.json
-No issues detected.
+
+ALL: No issues detected.
+
+SP: No issues detected.
 
 ## PAV.json
-No issues detected.
+
+ALL: No issues detected.
+
+PROVO: No issues detected.
 
 ## ATC.json
-No issues detected.
+
+ALL: No issues detected.
+
+CL: No issues detected.
+
+MA: No issues detected.
 
 ## MATRELEMENT.json
-CO: Inconsistent
 
-MS: Inconsistent
+ALL: No issues detected.
 
-matrRockIgneous: Inconsistent
+AO: No issues detected.
 
+BDO: No issues detected.
+
+CN: No issues detected.
+
+CO: Unloadable
+
+EP: No issues detected.
+
+MI: No issues detected.
+
+MS: Unloadable
+
+PDO: No issues detected.
+
+PW: No issues detected.
+
+SO: No issues detected.
+
+matrRockIgneous: Unloadable
 
 ## MSTDE.json
-CO: Inconsistent
 
-MS: Inconsistent
+ALL: No issues detected.
 
+CO: Unloadable
+
+MS: Unloadable
+
+STY: No issues detected.
 
 ## GFO.json
+
 ALL: 30 unsatisfiable classes.
 
 GFO-BIO: 30 unsatisfiable classes.
 
-
 ## SSE.json
-No issues detected.
+
+ALL: No issues detected.
+
+CN: No issues detected.
 
 ## IMGT-ONTOLOGY.json
-CO: Inconsistent
 
-HC: Inconsistent
+ALL: No issues detected.
 
-RB: Inconsistent
+CL: No issues detected.
 
-RP: Inconsistent
+CO: Unloadable
 
-TO: Inconsistent
+EP: No issues detected.
 
+HC: Unloadable
+
+PR: No issues detected.
+
+RB: Unloadable
+
+RP: Unloadable
+
+TO: Unloadable
 
 ## BRO.json
-RB: Inconsistent
 
+ALL: No issues detected.
+
+NMR: No issues detected.
+
+PE: No issues detected.
+
+RB: Unloadable
 
 ## BRO_ACRONYM.json
-RB: Inconsistent
 
+ALL: No issues detected.
+
+NMR: No issues detected.
+
+PE: No issues detected.
+
+RB: Unloadable
 
 ## BIOMO.json
-No issues detected.
+
+ALL: No issues detected.
+
+AO: No issues detected.
+
+MO: No issues detected.
+
+SIO: No issues detected.
 
 ## OFSMR.json
-ALL: Inconsistent
 
-ARD: Inconsistent
+ALL: Unloadable
+
+ARD: Unloadable
+
+CN: No issues detected.
 
 EO: 1 unsatisfiable classes.
 
-EV: Inconsistent
+EP: No issues detected.
 
-HC: Inconsistent
+EV: Unloadable
+
+GAZ: No issues detected.
+
+HC: Unloadable
+
+HOM: No issues detected.
+
+MA: No issues detected.
 
 MF: 4 unsatisfiable classes.
 
-MO: Inconsistent
+MO: No issues detected.
 
-RB: Inconsistent
+PO: No issues detected.
 
-RDL: Inconsistent
+PTO: No issues detected.
 
-RP: Inconsistent
+PW: No issues detected.
 
-VO: Inconsistent
+RB: Unloadable
 
+RDL: Unloadable
+
+RP: Unloadable
+
+RS: No issues detected.
+
+VO: Unloadable
 
 ## PDQ.json
-No issues detected.
+
+ALL: No issues detected.
+
+STY: No issues detected.
 
 ## PR.json
-ALL: Inconsistent
 
-EV: Inconsistent
+ADW: No issues detected.
 
-HC: Inconsistent
+ALL: Unloadable
 
-IPR: Inconsistent
+BFO: No issues detected.
+
+BP: No issues detected.
+
+BT: No issues detected.
+
+CHEBI: No issues detected.
+
+CL: No issues detected.
+
+CN: No issues detected.
+
+EP: No issues detected.
+
+EV: Unloadable
+
+GO: No issues detected.
+
+HC: Unloadable
+
+HP: No issues detected.
+
+IPR: Unloadable
+
+LHN: No issues detected.
+
+MA: No issues detected.
 
 MF: 4 unsatisfiable classes.
 
-MO: Inconsistent
+MI: No issues detected.
 
-MS: Inconsistent
+MIRNAO: No issues detected.
 
-NCBITAXON: Inconsistent
+MO: No issues detected.
 
-RB: Inconsistent
+MOD: No issues detected.
 
-RP: Inconsistent
+MP: No issues detected.
 
-VFB: Inconsistent
+MS: Unloadable
 
+NCBITAXON: Unloadable
+
+NIGO: No issues detected.
+
+OBI: No issues detected.
+
+PE: No issues detected.
+
+PP: No issues detected.
+
+PSIMOD: No issues detected.
+
+PW: No issues detected.
+
+RB: Unloadable
+
+RP: Unloadable
+
+RS: No issues detected.
+
+SO: No issues detected.
+
+SP: No issues detected.
+
+VFB: Unloadable
+
+VT: No issues detected.
 
 ## PEAO.json
-ALL: Inconsistent
+
+ALL: Unloadable
+
+AO: No issues detected.
+
+BFO: No issues detected.
+
+EDAM: No issues detected.
 
 EO: 1 unsatisfiable classes.
 
-MS: Inconsistent
+GRO: No issues detected.
 
-PP: Inconsistent
+GRO-CPGA: No issues detected.
 
+MS: Unloadable
+
+PECO: No issues detected.
+
+PO: No issues detected.
+
+PP: Unloadable
 
 ## ICD9CM.json
-No issues detected.
+
+ALL: No issues detected.
+
+STY: No issues detected.
 
 ## DIKB.json
-DDI: Inconsistent
 
-EV: Inconsistent
+ALL: No issues detected.
 
+DDI: Unloadable
+
+EV: Unloadable
 
 ## TOK.json
-TO: Inconsistent
 
+ALL: No issues detected.
+
+BT: No issues detected.
+
+TO: Unloadable
 
 ## CARRE.json
+
 ALL: 1 unsatisfiable classes.
 
 EO: 1 unsatisfiable classes.
 
-
 ## ABA-AMB.json
-ALL: Inconsistent
 
-CO: Inconsistent
+ALL: Unloadable
 
-CTX: Inconsistent
+AO: No issues detected.
 
-EV: Inconsistent
+BP: No issues detected.
 
-MO: Inconsistent
+CL: No issues detected.
 
-MS: Inconsistent
+CN: No issues detected.
 
-RB: Inconsistent
+CO: Unloadable
 
-RP: Inconsistent
+CTX: Unloadable
 
+EP: No issues detected.
+
+EV: Unloadable
+
+FO: No issues detected.
+
+HP: No issues detected.
+
+MA: No issues detected.
+
+MO: No issues detected.
+
+MP: No issues detected.
+
+MS: Unloadable
+
+PE: No issues detected.
+
+PMR: No issues detected.
+
+PO: No issues detected.
+
+PP: No issues detected.
+
+PR: No issues detected.
+
+RB: Unloadable
+
+RP: Unloadable
+
+RS: No issues detected.
+
+SO: No issues detected.
+
+SP: No issues detected.
+
+VT: No issues detected.
 
 ## FBCV.json
-ALL: Inconsistent
+
+ALL: Unloadable
+
+ATO: No issues detected.
+
+BFO: No issues detected.
+
+CARO: No issues detected.
+
+CHEBI: No issues detected.
 
 CL: 8 unsatisfiable classes.
 
-CO: Inconsistent
+CO: Unloadable
 
-FBbt: Inconsistent
+FB-BT: No issues detected.
+
+FB-DV: No issues detected.
+
+FBBT: No issues detected.
+
+FBDV: No issues detected.
+
+FBbt: Unloadable
+
+GO: No issues detected.
 
 NIGO: 16 unsatisfiable classes.
 
+PATO: No issues detected.
 
 ## VSAO.json
-ALL: Inconsistent
 
+ALL: Unloadable
+
+AO: No issues detected.
+
+ATO: No issues detected.
+
+CARO: No issues detected.
+
+CL: No issues detected.
+
+GO: No issues detected.
+
+NIGO: No issues detected.
+
+PATO: No issues detected.
 
 ## MFOEM.json
-ALL: 1760 unsatisfiable classes.
+
+ALL: 1792 unsatisfiable classes.
 
 AO: 1 unsatisfiable classes.
 
@@ -531,395 +1247,953 @@ FO: 1 unsatisfiable classes.
 
 GO: 6 unsatisfiable classes.
 
-MF: Inconsistent
+MF: Unloadable
 
-MS: Inconsistent
+MS: Unloadable
 
 NBO: 9 unsatisfiable classes.
 
 NIGO: 6 unsatisfiable classes.
 
-
 ## DINTO.json
+
 ALL: 13 unsatisfiable classes.
 
 CHEBI: 13 unsatisfiable classes.
 
-TO: Inconsistent
+CL: No issues detected.
 
+PO: No issues detected.
+
+TO: Unloadable
 
 ## ADAR.json
-ALL: Inconsistent
 
+ADO: No issues detected.
+
+ALL: No issues detected.
+
+ATO: No issues detected.
+
+MA: No issues detected.
+
+OBI: No issues detected.
 
 ## PE.json
-No issues detected.
+
+ALL: No issues detected.
+
+RAO: No issues detected.
 
 ## XAO.json
-No issues detected.
+
+ALL: No issues detected.
+
+AO: No issues detected.
 
 ## CANCO.json
-CO: Inconsistent
 
+ALL: No issues detected.
+
+CO: Unloadable
+
+PP: No issues detected.
+
+ROO: No issues detected.
 
 ## EDAMTO.json
+
 ALL: 116 unsatisfiable classes.
 
 EDAM: 116 unsatisfiable classes.
 
-
 ## OF.json
-No issues detected.
+
+ALL: No issues detected.
+
+MI: No issues detected.
+
+PP: No issues detected.
 
 ## DRON.json
-ALL: Inconsistent
 
-AO: Inconsistent
+ALL: Unloadable
 
-APO: Inconsistent
+AO: No issues detected.
 
-ATO: Inconsistent
+APO: No issues detected.
 
-BFO: Inconsistent
+ATO: No issues detected.
 
-CHEBI: Inconsistent
+BFO: No issues detected.
 
-GO: Unloadable
+CHEBI: No issues detected.
 
-MS: Inconsistent
+GO: No issues detected.
 
-NIGO: Inconsistent
+MS: Unloadable
 
-OBI: Inconsistent
+NIGO: No issues detected.
 
-PATO: Inconsistent
+OBI: No issues detected.
 
-PR: Inconsistent
+PATO: No issues detected.
 
-UO: Inconsistent
+PR: No issues detected.
 
+UO: No issues detected.
 
 ## ONTODT.json
+
 ALL: 2 unsatisfiable classes.
+
+AO: No issues detected.
 
 OBI: Inconsistent
 
 ONTODM-CORE: 2 unsatisfiable classes.
 
-
 ## BNO.json
-No issues detected.
+
+ALL: No issues detected.
+
+MI: No issues detected.
+
+PR: No issues detected.
 
 ## NGSONTO.json
-ALL: 29 unsatisfiable classes.
 
-NCBITAXON: Inconsistent
+ALL: 33 unsatisfiable classes.
 
-OBI: 29 unsatisfiable classes.
+AO: No issues detected.
 
+EDAM: No issues detected.
+
+MIRNAO: No issues detected.
+
+NCBITAXON: Unloadable
+
+OBI: 33 unsatisfiable classes.
+
+SO: No issues detected.
 
 ## GO.json
+
 ALL: 1142 unsatisfiable classes.
 
 NIGO: 1142 unsatisfiable classes.
 
-
 ## CPTAC.json
-CPT: Inconsistent
 
-MS: Inconsistent
+ALL: No issues detected.
 
+CPT: Unloadable
+
+MS: Unloadable
 
 ## AEO.json
-ALL: Inconsistent
+
+ALL: Unloadable
+
+CARO: No issues detected.
+
+CL: No issues detected.
+
+EHDA: No issues detected.
+
+EHDAA2: No issues detected.
 
 EO: 1 unsatisfiable classes.
 
-FBbt: Inconsistent
+ERO: No issues detected.
 
+FB-BT: No issues detected.
+
+FBBT: No issues detected.
+
+FBbt: Unloadable
+
+UBERON: No issues detected.
+
+ZFA: No issues detected.
 
 ## WSIO.json
-No issues detected.
+
+ALL: No issues detected.
+
+SIO: No issues detected.
 
 ## GEXO.json
-ALL: Inconsistent
 
-ARD: Inconsistent
+ADW: No issues detected.
 
-BIM: Inconsistent
+ALL: Unloadable
 
-CPT: Inconsistent
+ARD: Unloadable
 
-DCM: Inconsistent
+ATC: No issues detected.
 
-EV: Inconsistent
+BHN: No issues detected.
 
-HC: Inconsistent
+BIM: Unloadable
 
-HL7: Inconsistent
+BMT: No issues detected.
 
-IPR: Inconsistent
+BP: No issues detected.
+
+BT: No issues detected.
+
+CL: No issues detected.
+
+CN: No issues detected.
+
+CPT: Unloadable
+
+DCM: Unloadable
+
+ENM: No issues detected.
+
+EP: No issues detected.
+
+EV: Unloadable
+
+GMM: No issues detected.
+
+GO: No issues detected.
+
+HC: Unloadable
+
+HL7: Unloadable
+
+HP: No issues detected.
+
+IPR: Unloadable
+
+LPT: No issues detected.
+
+MA: No issues detected.
 
 MF: 4 unsatisfiable classes.
 
-MS: Inconsistent
+MI: No issues detected.
 
-NCBITAXON: Inconsistent
+MP: No issues detected.
 
-PTS: Inconsistent
+MS: Unloadable
 
-RB: Inconsistent
+NCBITAXON: Unloadable
 
-RCD: Inconsistent
+NIGO: No issues detected.
 
-RDL: Inconsistent
+PAV: No issues detected.
 
-RP: Inconsistent
+PDQ: No issues detected.
 
-ZFS: Inconsistent
+PE: No issues detected.
 
+PMR: No issues detected.
+
+PP: No issues detected.
+
+PR: No issues detected.
+
+PTS: Unloadable
+
+PW: No issues detected.
+
+RB: Unloadable
+
+RCD: Unloadable
+
+RDL: Unloadable
+
+RETO: No issues detected.
+
+REX: No issues detected.
+
+RP: Unloadable
+
+RS: No issues detected.
+
+SD3: No issues detected.
+
+SIO: No issues detected.
+
+SO: No issues detected.
+
+SP: No issues detected.
+
+SSE: No issues detected.
+
+SYN: No issues detected.
+
+VT: No issues detected.
+
+ZEA: No issues detected.
+
+ZFA: No issues detected.
+
+ZFS: Unloadable
 
 ## SDO.json
-FMA: Inconsistent
 
-MS: Inconsistent
+ALL: NullPointerException
 
+AO: No issues detected.
+
+BT: No issues detected.
+
+FMA: NullPointerException
+
+MS: Unloadable
+
+PP: No issues detected.
+
+UNITSONT: No issues detected.
 
 ## MCBCC.json
+
 ALL: 4 unsatisfiable classes.
 
-CO: Inconsistent
+BT: No issues detected.
 
-EV: Inconsistent
+CL: No issues detected.
 
-HC: Inconsistent
+CN: No issues detected.
+
+CO: Unloadable
+
+DOID: No issues detected.
+
+EP: No issues detected.
+
+EV: Unloadable
+
+HC: Unloadable
+
+MA: No issues detected.
 
 MF: 4 unsatisfiable classes.
 
-RB: Inconsistent
+MI: No issues detected.
 
+MO: No issues detected.
+
+MP: No issues detected.
+
+PE: No issues detected.
+
+PR: No issues detected.
+
+RB: Unloadable
 
 ## EFO.json
-ALL: Inconsistent
+
+ALL: Unloadable
+
+AO: No issues detected.
+
+ATO: No issues detected.
+
+BT: No issues detected.
+
+BTO: No issues detected.
+
+CHEBI: No issues detected.
+
+CL: No issues detected.
+
+DOID: No issues detected.
 
 EO: 1 unsatisfiable classes.
 
-ERO: 1027 unsatisfiable classes.
+ERO: 119 unsatisfiable classes.
 
-FBbt: Inconsistent
+FB-BT: No issues detected.
+
+FB-DV: No issues detected.
+
+FBBT: No issues detected.
+
+FBDV: No issues detected.
+
+FBbt: Unloadable
+
+FO: No issues detected.
+
+GO: No issues detected.
+
+GRO: No issues detected.
 
 GRO-CPGA: 35 unsatisfiable classes.
 
-IDO: Inconsistent
+HP: No issues detected.
 
-MS: Inconsistent
+IDO: Unloadable
 
-NCBITAXON: Inconsistent
+MIRNAO: No issues detected.
+
+MP: No issues detected.
+
+MPATH: No issues detected.
+
+MS: Unloadable
+
+NCBITAXON: Unloadable
+
+NIGO: No issues detected.
 
 OBI: 167 unsatisfiable classes.
 
+ORDO: No issues detected.
+
+PATO: No issues detected.
+
+PECO: No issues detected.
+
 PO: 35 unsatisfiable classes.
 
+PR: No issues detected.
+
+SO: No issues detected.
+
+UBERON: No issues detected.
+
+UO: No issues detected.
+
+ZEA: No issues detected.
 
 ## GRO-CPGA.json
-PO: Inconsistent
 
+ALL: No issues detected.
+
+GRO: No issues detected.
+
+PO: Unloadable
 
 ## MIRO.json
+
 ALL: 1142 unsatisfiable classes.
 
-NCBITAXON: Inconsistent
+FO: No issues detected.
 
+GO: No issues detected.
+
+MI: No issues detected.
+
+NCBITAXON: Unloadable
+
+NIGO: No issues detected.
 
 ## ONL-MSA.json
-CO: Inconsistent
 
-MS: Inconsistent
+ALL: No issues detected.
 
+CO: Unloadable
+
+MS: Unloadable
+
+ROO: No issues detected.
 
 ## ZFA.json
-ZFS: Inconsistent
 
+ALL: No issues detected.
+
+ZFS: Unloadable
 
 ## PSIMOD.json
-No issues detected.
+
+ALL: No issues detected.
+
+MO: No issues detected.
+
+MOD: No issues detected.
 
 ## BMT.json
+
 ALL: 116 unsatisfiable classes.
 
 EDAM: 116 unsatisfiable classes.
 
-
 ## PTRANS.json
-No issues detected.
+
+ALL: No issues detected.
+
+TRANS: No issues detected.
 
 ## BTO.json
-No issues detected.
+
+ALL: No issues detected.
+
+BT: No issues detected.
 
 ## MAT.json
-AAO: Inconsistent
 
-ALL: Inconsistent
+AAO: Unloadable
 
-EV: Inconsistent
+ALL: Unloadable
 
-FBbt: Inconsistent
+AO: No issues detected.
 
-FMA: Inconsistent
+DDANAT: No issues detected.
 
-WBBT: Inconsistent
+EHDA: No issues detected.
 
+EHDAA: No issues detected.
+
+EMAP: No issues detected.
+
+EMAPA: No issues detected.
+
+EV: Unloadable
+
+FAO: No issues detected.
+
+FB-BT: No issues detected.
+
+FB-DV: No issues detected.
+
+FBBT: No issues detected.
+
+FBDV: No issues detected.
+
+FBbt: Unloadable
+
+FMA: NullPointerException
+
+FO: No issues detected.
+
+GO: No issues detected.
+
+GRO: No issues detected.
+
+GRO-CPD: No issues detected.
+
+GRO-CPGA: No issues detected.
+
+MA: No issues detected.
+
+MP: No issues detected.
+
+NIGO: No issues detected.
+
+PO: No issues detected.
+
+TADS: No issues detected.
+
+TAO: No issues detected.
+
+TGMA: No issues detected.
+
+WB-BT: No issues detected.
+
+WBBT: Unloadable
+
+XAO: No issues detected.
+
+ZEA: No issues detected.
+
+ZFA: No issues detected.
 
 ## NCRO.json
+
 ALL: Inconsistent
 
+AO: No issues detected.
+
+BFO: No issues detected.
+
+CHEBI: No issues detected.
+
+CL: No issues detected.
+
+DOID: No issues detected.
+
+ERO: No issues detected.
+
+GO: No issues detected.
+
+MIRNAO: No issues detected.
+
+MP: No issues detected.
+
+NIGO: No issues detected.
+
+OBI: No issues detected.
+
+PR: No issues detected.
+
+SO: No issues detected.
+
+UBERON: No issues detected.
 
 ## MATRROCKIGNEOUS.json
-CO: Inconsistent
 
-MS: Inconsistent
+ALL: No issues detected.
 
-matrRockIgneous: Inconsistent
+AO: No issues detected.
 
+BDO: No issues detected.
+
+CN: No issues detected.
+
+CO: Unloadable
+
+EP: No issues detected.
+
+MI: No issues detected.
+
+MS: Unloadable
+
+PDO: No issues detected.
+
+PW: No issues detected.
+
+SO: No issues detected.
+
+matrRockIgneous: Unloadable
 
 ## XEO.json
+
 ALL: 1 unsatisfiable classes.
 
 EO: 1 unsatisfiable classes.
 
-
 ## TTO.json
-TO: Inconsistent
 
+ALL: No issues detected.
+
+TO: Unloadable
 
 ## MNR.json
-CO: Inconsistent
 
-MS: Inconsistent
+ALL: No issues detected.
 
-matrRockIgneous: Inconsistent
+AO: No issues detected.
 
+BDO: No issues detected.
+
+CN: No issues detected.
+
+CO: Unloadable
+
+EP: No issues detected.
+
+MI: No issues detected.
+
+MS: Unloadable
+
+PDO: No issues detected.
+
+PW: No issues detected.
+
+SO: No issues detected.
+
+matrRockIgneous: Unloadable
 
 ## PROPREO.json
-CO: Inconsistent
 
-HC: Inconsistent
+ALL: No issues detected.
 
-IPR: Inconsistent
+CHEBI: No issues detected.
 
-MS: Inconsistent
+CO: Unloadable
 
-RB: Inconsistent
+HC: Unloadable
 
+HP: No issues detected.
+
+IPR: Unloadable
+
+MA: No issues detected.
+
+MS: Unloadable
+
+OF: No issues detected.
+
+PE: No issues detected.
+
+RB: Unloadable
 
 ## COSTART.json
-ALL: Inconsistent
 
-ARD: Inconsistent
+ADO: No issues detected.
 
-CO: Inconsistent
+ALL: Unloadable
 
-DDI: Inconsistent
+AO: No issues detected.
+
+ARD: Unloadable
+
+ATO: No issues detected.
+
+BDO: No issues detected.
+
+BFO: No issues detected.
+
+BNO: No issues detected.
+
+BP: No issues detected.
+
+BRO: No issues detected.
+
+BT: No issues detected.
+
+CARO: No issues detected.
+
+CCO: No issues detected.
+
+CEPH: No issues detected.
+
+CL: No issues detected.
+
+CN: No issues detected.
+
+CO: Unloadable
+
+CTO: No issues detected.
+
+CYTO: No issues detected.
+
+DDI: Unloadable
+
+DIAB: No issues detected.
+
+DRON: No issues detected.
+
+EMO: No issues detected.
+
+ENM: No issues detected.
 
 EO: 1 unsatisfiable classes.
 
-EV: Inconsistent
+EP: No issues detected.
 
-FALL: Inconsistent
+ERO: No issues detected.
 
-FLU: Inconsistent
+EV: Unloadable
 
-HIV: Inconsistent
+EXO: No issues detected.
 
-IDO: Inconsistent
+FALL: Unloadable
 
-ISO: Inconsistent
+FIX: No issues detected.
+
+FLU: Unloadable
+
+FO: No issues detected.
+
+GO: No issues detected.
+
+GRO: No issues detected.
+
+HIV: Unloadable
+
+HOM: No issues detected.
+
+IDO: Unloadable
+
+INO: No issues detected.
+
+ISO: Unloadable
+
+MA: No issues detected.
 
 MF: 4 unsatisfiable classes.
 
-MS: Inconsistent
+MI: No issues detected.
+
+MO: No issues detected.
+
+MP: No issues detected.
+
+MS: Unloadable
 
 NBO: 3 unsatisfiable classes.
 
-NIC: Inconsistent
+NIC: Unloadable
 
-OPE: Inconsistent
+OBI: No issues detected.
 
-PLO: Inconsistent
+OPE: Unloadable
 
-RB: Inconsistent
+OPL: No issues detected.
 
-RP: Inconsistent
+PE: No issues detected.
 
-TO: Inconsistent
+PLO: Unloadable
 
-VO: Inconsistent
+PO: No issues detected.
 
+PP: No issues detected.
+
+PR: No issues detected.
+
+PTO: No issues detected.
+
+RB: Unloadable
+
+REX: No issues detected.
+
+RP: Unloadable
+
+RS: No issues detected.
+
+SIO: No issues detected.
+
+SO: No issues detected.
+
+SP: No issues detected.
+
+STY: No issues detected.
+
+SYN: No issues detected.
+
+TO: Unloadable
+
+TRANS: No issues detected.
+
+VO: Unloadable
 
 ## SPO.json
-No issues detected.
+
+ALL: No issues detected.
+
+PO: No issues detected.
 
 ## PATO.json
-No issues detected.
+
+ALL: No issues detected.
+
+ATO: No issues detected.
 
 ## LPT.json
-ALL: Inconsistent
 
+ALL: Unloadable
+
+BCTEO: No issues detected.
+
+CANONT: No issues detected.
+
+IDQA: No issues detected.
 
 ## OBIWS.json
-NCBITAXON: Inconsistent
 
+ALL: No issues detected.
+
+AO: No issues detected.
+
+BFO: No issues detected.
+
+CHEBI: No issues detected.
+
+MIRNAO: No issues detected.
+
+NCBITAXON: Unloadable
+
+OBI: No issues detected.
+
+SO: No issues detected.
 
 ## PHYLONT.json
-ALL: Inconsistent
 
-CO: Inconsistent
+ALL: No issues detected.
 
+ATO: No issues detected.
+
+CO: Unloadable
+
+MA: No issues detected.
+
+MO: No issues detected.
+
+PO: No issues detected.
+
+PR: No issues detected.
 
 ## INM-NPI.json
-No issues detected.
+
+ALL: No issues detected.
+
+PP: No issues detected.
 
 ## APO.json
-YPO: Inconsistent
 
+ALL: No issues detected.
+
+MP: No issues detected.
+
+PO: No issues detected.
+
+YPO: Unloadable
 
 ## SYMP.json
-No issues detected.
+
+ALL: No issues detected.
+
+MP: No issues detected.
 
 ## AO.json
-ALL: Inconsistent
 
-EV: Inconsistent
+ALL: No issues detected.
 
-MO: Inconsistent
+ATO: No issues detected.
 
-OBA: Inconsistent
+BRO: No issues detected.
 
+CTO: No issues detected.
+
+EP: No issues detected.
+
+ERO: No issues detected.
+
+EV: Unloadable
+
+FO: No issues detected.
+
+MA: No issues detected.
+
+MO: No issues detected.
+
+OBA: Unloadable
+
+PE: No issues detected.
+
+SO: No issues detected.
 
 ## BRIDG.json
-HL7: Inconsistent
 
-MP: Unloadable
+ALL: No issues detected.
 
-PO: Unloadable
+HL7: Unloadable
 
-PR: Unloadable
+MP: No issues detected.
 
-TO: Inconsistent
+PO: No issues detected.
 
+PR: No issues detected.
+
+SCHEMA: No issues detected.
+
+TO: Unloadable
 
 ## PHAGE.json
-ALL: 1751 unsatisfiable classes.
+
+ALL: Unloadable
 
 GO: 8 unsatisfiable classes.
 
-MS: Inconsistent
+MS: Unloadable
 
-NIGO: 1660 unsatisfiable classes.
+NIGO: 1692 unsatisfiable classes.
 
+PHYLONT: No issues detected.
+
+PW: No issues detected.
 
 ## ONTODM-CORE.json
-ALL: Inconsistent
+
+ALL: Unloadable
 
 AO: 2 unsatisfiable classes.
 
@@ -931,101 +2205,197 @@ GAZ: 2 unsatisfiable classes.
 
 OBI: Inconsistent
 
-ONTODT: Inconsistent
+ONTODT: Unloadable
 
 PATO: 2 unsatisfiable classes.
 
-SWO: 2 unsatisfiable classes.
+SWO: 4 unsatisfiable classes.
 
 UO: 2 unsatisfiable classes.
 
-
 ## DIDEO.json
-ALL: Inconsistent
 
-DRON: Inconsistent
+ALL: Unloadable
+
+AO: No issues detected.
+
+ATO: No issues detected.
+
+BFO: No issues detected.
+
+CHEBI: No issues detected.
+
+CHMO: No issues detected.
+
+CL: No issues detected.
+
+DRON: Unloadable
 
 EFO: 4 unsatisfiable classes.
 
 EO: 1 unsatisfiable classes.
 
-FMA: Inconsistent
+ERO: No issues detected.
 
-IDO: Inconsistent
+FMA: NullPointerException
 
-MS: Inconsistent
+FO: No issues detected.
 
-NCBITAXON: Inconsistent
+GAZ: No issues detected.
 
-OAE: Inconsistent
+GO: No issues detected.
+
+IDO: Unloadable
+
+MS: Unloadable
+
+NCBITAXON: Unloadable
+
+NIGO: No issues detected.
+
+OAE: Unloadable
 
 OBI: Inconsistent
 
+PATO: No issues detected.
+
 STATO: 16 unsatisfiable classes.
 
+UBERON: No issues detected.
+
+UO: No issues detected.
 
 ## CL.json
-ALL: Inconsistent
 
-FMA: Inconsistent
+ALL: Unloadable
 
-NCBITAXON: Inconsistent
+ATO: No issues detected.
+
+CHEBI: No issues detected.
+
+ERO: No issues detected.
+
+FMA: NullPointerException
+
+GO: No issues detected.
+
+NCBITAXON: Unloadable
 
 NIGO: 336 unsatisfiable classes.
 
+PATO: No issues detected.
+
+PR: No issues detected.
+
+UBERON: No issues detected.
 
 ## NPO.json
-ALL: Inconsistent
 
-ATO: Unloadable
+ALL: OWLOntologyStorageException
 
-CHEBI: Unloadable
+ATO: UnparsableOntologyException
 
-FIX: Unloadable
+CHEBI: UnparsableOntologyException
 
-GO: Unloadable
+FIX: UnparsableOntologyException
 
-PO: Unloadable
+GO: UnparsableOntologyException
 
-REX: Unloadable
+PO: UnparsableOntologyException
 
+REX: UnparsableOntologyException
 
 ## ATO.json
-TO: Inconsistent
 
+ALL: No issues detected.
+
+TO: Unloadable
 
 ## ORTH.json
-ALL: Inconsistent
 
-RO: Inconsistent
+ALL: Unloadable
 
+AO: No issues detected.
+
+ATO: No issues detected.
+
+BFO: No issues detected.
+
+CARO: No issues detected.
+
+CL: No issues detected.
+
+ENVO: No issues detected.
+
+GO: No issues detected.
+
+NIGO: No issues detected.
+
+PATO: No issues detected.
+
+RO: Unloadable
+
+SIO: No issues detected.
 
 ## NIFDYS.json
-CO: Inconsistent
 
-PATO: Inconsistent
+ALL: No issues detected.
 
+ATO: No issues detected.
+
+CO: Unloadable
+
+OBI: No issues detected.
+
+PATO: Unloadable
 
 ## SPTO.json
-No issues detected.
+
+ALL: No issues detected.
+
+SP: No issues detected.
 
 ## RXNORM.json
-No issues detected.
+
+ALL: No issues detected.
+
+RXNO: No issues detected.
+
+STY: No issues detected.
 
 ## CHD.json
+
 ALL: 1 unsatisfiable classes.
 
-CO: Inconsistent
+BCO: No issues detected.
 
-EV: Inconsistent
+BP: No issues detected.
 
-RB: Inconsistent
+CO: Unloadable
 
+EP: No issues detected.
+
+EV: Unloadable
+
+FO: No issues detected.
+
+HP: No issues detected.
+
+MA: No issues detected.
+
+MI: No issues detected.
+
+NGSONTO: No issues detected.
+
+RB: Unloadable
+
+SO: No issues detected.
 
 ## ESSO.json
-AIDS: Inconsistent
 
-ALL: Inconsistent
+AIDS: Unloadable
+
+ALL: 508 unsatisfiable classes.
 
 AO: 508 unsatisfiable classes.
 
@@ -1035,15 +2405,15 @@ CL: 508 unsatisfiable classes.
 
 CN: 508 unsatisfiable classes.
 
-DCM: Inconsistent
+DCM: Unloadable
 
-EP: 508 unsatisfiable classes.
+EP: Unloadable
 
 FIRE: 508 unsatisfiable classes.
 
-HC: Inconsistent
+HC: Unloadable
 
-HIV: Inconsistent
+HIV: Unloadable
 
 MA: 508 unsatisfiable classes.
 
@@ -1053,282 +2423,735 @@ PE: 508 unsatisfiable classes.
 
 PO: 508 unsatisfiable classes.
 
-RP: Inconsistent
+RP: Unloadable
 
 RS: 508 unsatisfiable classes.
 
 SO: 508 unsatisfiable classes.
 
-
 ## ERO.json
-ALL: Inconsistent
+
+ALL: Unloadable
+
+AO: No issues detected.
+
+ATO: No issues detected.
+
+EDAM: No issues detected.
+
+GO: No issues detected.
 
 MIRNAO: 25 unsatisfiable classes.
 
-NCBITAXON: Inconsistent
+MP: No issues detected.
+
+NCBITAXON: Unloadable
+
+NIGO: No issues detected.
 
 OBI: Inconsistent
 
-OCRE: Inconsistent
+OCRE: Unloadable
 
-SWO: Inconsistent
+PATO: No issues detected.
 
+SO: No issues detected.
+
+SWO: 149 unsatisfiable classes.
+
+UBERON: No issues detected.
+
+VIVO: No issues detected.
+
+VIVO-ISF: No issues detected.
 
 ## ECG.json
-No issues detected.
+
+ALL: No issues detected.
+
+EMO: No issues detected.
+
+GO: No issues detected.
 
 ## CADSRVS.json
-AIDS: Inconsistent
 
-ALL: Inconsistent
+ADO: No issues detected.
 
-ARD: Inconsistent
+AIDS: Unloadable
 
-CMF: Inconsistent
+ALL: Unloadable
 
-CO: Inconsistent
+AO: No issues detected.
 
-CPT: Inconsistent
+ARD: Unloadable
 
-CTX: Inconsistent
+ATC: No issues detected.
+
+ATO: No issues detected.
+
+BMT: No issues detected.
+
+BP: No issues detected.
+
+BT: No issues detected.
+
+CCO: No issues detected.
+
+CL: No issues detected.
+
+CMF: Unloadable
+
+CMO: No issues detected.
+
+CN: No issues detected.
+
+CO: Unloadable
+
+CPT: Unloadable
+
+CTCAE: No issues detected.
+
+CTX: Unloadable
+
+ECG: No issues detected.
+
+ECP: No issues detected.
 
 EO: 1 unsatisfiable classes.
 
-EV: Inconsistent
+EP: No issues detected.
 
-HC: Inconsistent
+EV: Unloadable
 
-HIV: Inconsistent
+FO: No issues detected.
 
-IMR: Inconsistent
+GBM: No issues detected.
 
-ISO: Inconsistent
+GO: No issues detected.
+
+HC: Unloadable
+
+HIV: Unloadable
+
+HP: No issues detected.
+
+IMR: Unloadable
+
+INO: No issues detected.
+
+ISO: Unloadable
+
+MA: No issues detected.
 
 MF: 4 unsatisfiable classes.
 
-MS: Inconsistent
+MI: No issues detected.
 
-OPE: Inconsistent
+MO: No issues detected.
 
-RB: Inconsistent
+MP: No issues detected.
 
-RP: Inconsistent
+MS: Unloadable
 
-TO: Inconsistent
+NMR: No issues detected.
 
+OF: No issues detected.
+
+OPE: Unloadable
+
+PE: No issues detected.
+
+PO: No issues detected.
+
+PP: No issues detected.
+
+PR: No issues detected.
+
+RB: Unloadable
+
+RP: Unloadable
+
+RS: No issues detected.
+
+SO: No issues detected.
+
+SP: No issues detected.
+
+SWO: No issues detected.
+
+TO: Unloadable
+
+VT: No issues detected.
 
 ## OGI.json
-ALL: 2059 unsatisfiable classes.
+
+ALL: 2061 unsatisfiable classes.
+
+AO: No issues detected.
+
+BFO: No issues detected.
+
+CHEBI: No issues detected.
+
+GO: No issues detected.
+
+MIRNAO: No issues detected.
+
+NIGO: No issues detected.
+
+OBI: No issues detected.
 
 OGSF: 3 unsatisfiable classes.
 
+SO: No issues detected.
 
 ## VTO.json
-TO: Inconsistent
 
+ALL: No issues detected.
+
+TAXRANK: No issues detected.
+
+TO: Unloadable
 
 ## IDQA.json
-ALL: Inconsistent
 
+ALL: Unloadable
+
+BCTEO: No issues detected.
+
+CANONT: No issues detected.
 
 ## CARELEX.json
+
 ALL: 4 unsatisfiable classes.
 
 MF: 4 unsatisfiable classes.
 
-RB: Inconsistent
+RB: Unloadable
 
+SO: No issues detected.
 
 ## FBbi.json
-ALL: Inconsistent
 
-FBBI: Unloadable
+ALL: OWLOntologyStorageException
 
+FBBI: No issues detected.
 
 ## BHO.json
-No issues detected.
+
+ALL: No issues detected.
+
+BP: No issues detected.
+
+GBM: No issues detected.
 
 ## NMOBR.json
-INSECTH: Inconsistent
 
-NCBITAXON: Inconsistent
+ALL: No issues detected.
 
+FBCV: No issues detected.
+
+INSECTH: Unloadable
+
+MO: No issues detected.
+
+NCBITAXON: Unloadable
+
+NMOSP: No issues detected.
+
+RS: No issues detected.
 
 ## HCPCS.json
-HC: Inconsistent
 
+ALL: No issues detected.
+
+AO: No issues detected.
+
+BP: No issues detected.
+
+CL: No issues detected.
+
+CN: No issues detected.
+
+EP: No issues detected.
+
+GO: No issues detected.
+
+HC: Unloadable
+
+STY: No issues detected.
 
 ## CCO.json
-ALL: Inconsistent
 
-ARD: Inconsistent
+ADW: No issues detected.
 
-BIM: Inconsistent
+ALL: Unloadable
 
-CO: Inconsistent
+ARD: Unloadable
 
-CPT: Inconsistent
+ATC: No issues detected.
 
-CTX: Inconsistent
+BHN: No issues detected.
 
-DCM: Inconsistent
+BIM: Unloadable
 
-DDI: Inconsistent
+BMT: No issues detected.
 
-EV: Inconsistent
+BP: No issues detected.
 
-FLU: Inconsistent
+BT: No issues detected.
 
-FMA: Inconsistent
+CHD: No issues detected.
 
-HC: Inconsistent
+CL: No issues detected.
 
-HIV: Inconsistent
+CN: No issues detected.
 
-HL7: Inconsistent
+CO: Unloadable
 
-IMR: Inconsistent
+CPT: Unloadable
 
-IPR: Inconsistent
+CTX: Unloadable
+
+DCM: Unloadable
+
+DDI: Unloadable
+
+ECG: No issues detected.
+
+ECP: No issues detected.
+
+ENM: No issues detected.
+
+EP: No issues detected.
+
+EV: Unloadable
+
+FIX: No issues detected.
+
+FLU: Unloadable
+
+FMA: NullPointerException
+
+GO: No issues detected.
+
+HC: Unloadable
+
+HIV: Unloadable
+
+HL7: Unloadable
+
+HP: No issues detected.
+
+IMR: Unloadable
+
+IPR: Unloadable
+
+LDA: No issues detected.
+
+LHN: No issues detected.
+
+LPT: No issues detected.
+
+MA: No issues detected.
 
 MF: 4 unsatisfiable classes.
 
-MS: Inconsistent
+MI: No issues detected.
 
-NCBITAXON: Inconsistent
+MNR: No issues detected.
 
-PTS: Inconsistent
+MP: No issues detected.
 
-RB: Inconsistent
+MS: Unloadable
 
-RCD: Inconsistent
+NCBITAXON: Unloadable
 
-RDL: Inconsistent
+NIGO: No issues detected.
 
-RP: Inconsistent
+NMR: No issues detected.
 
-VFB: Inconsistent
+PAE: No issues detected.
 
+PAV: No issues detected.
+
+PDQ: No issues detected.
+
+PE: No issues detected.
+
+PMR: No issues detected.
+
+PP: No issues detected.
+
+PR: No issues detected.
+
+PTS: Unloadable
+
+PW: No issues detected.
+
+RB: Unloadable
+
+RCD: Unloadable
+
+RDL: Unloadable
+
+RETO: No issues detected.
+
+REX: No issues detected.
+
+RP: Unloadable
+
+RS: No issues detected.
+
+SD3: No issues detected.
+
+SHR: No issues detected.
+
+SIO: No issues detected.
+
+SO: No issues detected.
+
+SP: No issues detected.
+
+SSE: No issues detected.
+
+STY: No issues detected.
+
+SYN: No issues detected.
+
+VFB: Unloadable
+
+VT: No issues detected.
 
 ## MRO.json
-ALL: 3785 unsatisfiable classes.
 
-CO: Inconsistent
+ALL: 3787 unsatisfiable classes.
+
+AO: No issues detected.
+
+BFO: No issues detected.
+
+CO: Unloadable
+
+ECO: No issues detected.
 
 EO: 1 unsatisfiable classes.
 
-NCBITAXON: Inconsistent
+GO: No issues detected.
 
+MIRNAO: No issues detected.
+
+NCBITAXON: Unloadable
+
+NIGO: No issues detected.
+
+OBI: No issues detected.
+
+PR: No issues detected.
+
+SO: No issues detected.
 
 ## FB-DV.json
-No issues detected.
+
+ALL: No issues detected.
+
+FBDV: No issues detected.
 
 ## ADO.json
-ALL: Inconsistent
 
-ARD: Inconsistent
+ALL: Unloadable
 
-CO: Inconsistent
+AO: No issues detected.
 
-HIV: Inconsistent
+APO: No issues detected.
 
-MS: Inconsistent
+ARD: Unloadable
 
-RB: Inconsistent
+BP: No issues detected.
 
-RP: Inconsistent
+BT: No issues detected.
 
-TO: Inconsistent
+CL: No issues detected.
 
+CN: No issues detected.
+
+CO: Unloadable
+
+EP: No issues detected.
+
+GRO: No issues detected.
+
+HIV: Unloadable
+
+MA: No issues detected.
+
+MI: No issues detected.
+
+MP: No issues detected.
+
+MS: Unloadable
+
+PE: No issues detected.
+
+PP: No issues detected.
+
+PR: No issues detected.
+
+RB: Unloadable
+
+RP: Unloadable
+
+RS: No issues detected.
+
+SO: No issues detected.
+
+SP: No issues detected.
+
+TO: Unloadable
 
 ## APAONTO.json
-AIDS: Inconsistent
+
+AIDS: Unloadable
 
 ALL: 1 unsatisfiable classes.
 
+AO: No issues detected.
+
+CL: No issues detected.
+
+CN: No issues detected.
+
 EO: 1 unsatisfiable classes.
 
-HIV: Inconsistent
+GO: No issues detected.
 
+HIV: Unloadable
+
+MP: No issues detected.
+
+PR: No issues detected.
 
 ## IDOMAL.json
-ALL: Inconsistent
 
-IDO: Inconsistent
+ALL: Unloadable
 
-NCBITAXON: Inconsistent
+AO: No issues detected.
 
-VO: Inconsistent
+ATO: No issues detected.
 
+BP: No issues detected.
+
+CARO: No issues detected.
+
+CHEBI: No issues detected.
+
+CL: No issues detected.
+
+ENVO: No issues detected.
+
+ERO: No issues detected.
+
+FO: No issues detected.
+
+GO: No issues detected.
+
+IDO: Unloadable
+
+MI: No issues detected.
+
+MIRO: No issues detected.
+
+MP: No issues detected.
+
+NCBITAXON: Unloadable
+
+NIGO: No issues detected.
+
+OBI: No issues detected.
+
+PATO: No issues detected.
+
+PR: No issues detected.
+
+UBERON: No issues detected.
+
+VO: Unloadable
 
 ## PORO.json
-ALL: Inconsistent
+
+ALL: Unloadable
+
+ATO: No issues detected.
+
+BFO: No issues detected.
+
+CARO: No issues detected.
+
+CHEBI: No issues detected.
+
+CL: No issues detected.
+
+ERO: No issues detected.
+
+GO: No issues detected.
+
+NIGO: No issues detected.
+
+PATO: No issues detected.
+
+PO: No issues detected.
 
 UBERON: 1 unsatisfiable classes.
 
-
 ## MSTDE-FRE.json
-CO: Inconsistent
 
-MS: Inconsistent
+ALL: No issues detected.
 
+CO: Unloadable
+
+MS: Unloadable
+
+STY: No issues detected.
 
 ## MESH.json
-No issues detected.
+
+ALL: No issues detected.
+
+STY: No issues detected.
 
 ## BAO-GPCR.json
+
 ALL: 1142 unsatisfiable classes.
 
+AO: No issues detected.
+
+GO: No issues detected.
+
+NIGO: No issues detected.
 
 ## GFO-BIO.json
-ALL: Inconsistent
 
-MO: Inconsistent
+ALL: No issues detected.
 
+DDANAT: No issues detected.
+
+GO: No issues detected.
+
+MA: No issues detected.
+
+MO: No issues detected.
+
+PO: No issues detected.
 
 ## TRANS.json
-No issues detected.
+
+ALL: No issues detected.
+
+PTRANS: No issues detected.
 
 ## CHEMINF.json
-ALL: Inconsistent
 
+ALL: Unloadable
+
+AO: No issues detected.
+
+ATO: No issues detected.
+
+BFO: No issues detected.
+
+CHEBI: No issues detected.
+
+GAZ: No issues detected.
+
+GO: No issues detected.
+
+MI: No issues detected.
+
+NIGO: No issues detected.
+
+OBI: No issues detected.
+
+PATO: No issues detected.
+
+PR: No issues detected.
+
+UO: No issues detected.
 
 ## SURGICAL.json
-No issues detected.
+
+ALL: No issues detected.
+
+PHYLONT: No issues detected.
 
 ## ACGT-MO.json
-ALL: Inconsistent
 
-ARD: Inconsistent
+ALL: 1 unsatisfiable classes.
 
-CMF: Inconsistent
+ARD: Unloadable
 
-CO: Inconsistent
+CMF: Unloadable
+
+CO: Unloadable
+
+ECG: No issues detected.
 
 EO: 1 unsatisfiable classes.
 
-HC: Inconsistent
+EP: No issues detected.
 
-RB: Inconsistent
+GO: No issues detected.
 
-RP: Inconsistent
+HC: Unloadable
 
+MA: No issues detected.
+
+MI: No issues detected.
+
+MP: No issues detected.
+
+PE: No issues detected.
+
+PO: No issues detected.
+
+PP: No issues detected.
+
+PR: No issues detected.
+
+RB: Unloadable
+
+RP: Unloadable
+
+RS: No issues detected.
+
+SIO: No issues detected.
 
 ## ONTOKBCF.json
-EV: Inconsistent
 
+ALL: No issues detected.
+
+EV: Unloadable
 
 ## ICECI.json
-No issues detected.
+
+ALL: No issues detected.
+
+MO: No issues detected.
 
 ## CMPO.json
-No issues detected.
+
+ALL: No issues detected.
+
+MP: No issues detected.
 
 ## FIRE.json
-No issues detected.
+
+ALL: No issues detected.
+
+CCON: No issues detected.
 
 ## MF.json
-ALL: 1763 unsatisfiable classes.
+
+ALL: 1795 unsatisfiable classes.
 
 AO: 4 unsatisfiable classes.
 
@@ -1336,15 +3159,15 @@ BFO: 4 unsatisfiable classes.
 
 GO: 9 unsatisfiable classes.
 
-MS: Inconsistent
+MS: Unloadable
 
 NBO: 12 unsatisfiable classes.
 
 NIGO: 9 unsatisfiable classes.
 
-
 ## IDODEN.json
-ALL: Inconsistent
+
+ALL: Unloadable
 
 AO: 16 unsatisfiable classes.
 
@@ -1354,7 +3177,7 @@ CHEBI: 92 unsatisfiable classes.
 
 CL: 129 unsatisfiable classes.
 
-EFO: 1038 unsatisfiable classes.
+EFO: 130 unsatisfiable classes.
 
 ENVO: 16 unsatisfiable classes.
 
@@ -1364,9 +3187,9 @@ FB-BT: 16 unsatisfiable classes.
 
 FBBT: 16 unsatisfiable classes.
 
-FBbt: Inconsistent
+FBbt: Unloadable
 
-FLU: Inconsistent
+FLU: Unloadable
 
 FO: 16 unsatisfiable classes.
 
@@ -1376,7 +3199,7 @@ GRO: 16 unsatisfiable classes.
 
 HP: 16 unsatisfiable classes.
 
-IDO: Inconsistent
+IDO: Unloadable
 
 IDOMAL: 25 unsatisfiable classes.
 
@@ -1388,9 +3211,9 @@ MIRO: 26 unsatisfiable classes.
 
 MP: 16 unsatisfiable classes.
 
-MS: Inconsistent
+MS: Unloadable
 
-NCBITAXON: Inconsistent
+NCBITAXON: Unloadable
 
 NIGO: 16 unsatisfiable classes.
 
@@ -1404,911 +3227,2167 @@ SO: 16 unsatisfiable classes.
 
 UBERON: 16 unsatisfiable classes.
 
-VO: Inconsistent
-
+VO: Unloadable
 
 ## BHN.json
-RB: Inconsistent
 
+ALL: No issues detected.
+
+RB: Unloadable
 
 ## IFAR.json
-EV: Inconsistent
 
-INFECTION: Inconsistent
+ALL: No issues detected.
 
-SNOMEDCT: Inconsistent
+EV: Unloadable
 
+HP: No issues detected.
+
+INFECTION: Unloadable
+
+MI: No issues detected.
+
+MP: No issues detected.
+
+NCIT: No issues detected.
+
+SNOMEDCT: Unloadable
 
 ## PO.json
-GRO-CPGA: Inconsistent
 
+ALL: No issues detected.
+
+GRO: No issues detected.
+
+GRO-CPGA: Unloadable
 
 ## VANDF.json
-No issues detected.
+
+ALL: No issues detected.
+
+STY: No issues detected.
 
 ## CTENO.json
-ALL: Inconsistent
 
-ATO: Inconsistent
+ALL: Unloadable
 
-BFO: Inconsistent
+ATO: No issues detected.
 
-BSPO: Inconsistent
+BFO: No issues detected.
 
-BT: Inconsistent
+BSPO: No issues detected.
 
-BTO: Inconsistent
+BT: No issues detected.
 
-CARO: Inconsistent
+BTO: No issues detected.
 
-CHEBI: Inconsistent
+CARO: No issues detected.
 
-CL: Inconsistent
+CHEBI: No issues detected.
 
-EHDA: Inconsistent
+CL: 4 unsatisfiable classes.
 
-EHDAA2: Inconsistent
+EHDA: No issues detected.
 
-EMAP: Inconsistent
+EHDAA2: No issues detected.
 
-EMAPA: Inconsistent
+EMAP: No issues detected.
 
-ENVO: Inconsistent
+EMAPA: No issues detected.
 
-ERO: Inconsistent
+ENVO: No issues detected.
 
-FMA: Inconsistent
+ERO: No issues detected.
 
-NBO: Inconsistent
+FMA: NullPointerException
 
-NCBITAXON: Inconsistent
-
-NIGO: 262 unsatisfiable classes.
-
-PATO: Inconsistent
-
-PR: Inconsistent
-
-RO: Inconsistent
-
-UBERON: Inconsistent
-
-ZFA: Inconsistent
-
-
-## VIVO-ISF.json
-ALL: Inconsistent
-
-OCRE: Inconsistent
-
-
-## DPO.json
-ALL: Inconsistent
-
-CL: 8 unsatisfiable classes.
-
-CO: Inconsistent
-
-FBbt: Inconsistent
-
-NIGO: 16 unsatisfiable classes.
-
-
-## RXNO.json
-MO: Inconsistent
-
-
-## HPIO.json
-No issues detected.
-
-## GO-PLUS.json
-ALL: Inconsistent
-
-CL: 14 unsatisfiable classes.
-
-GO: 83 unsatisfiable classes.
-
-NCBITAXON: Inconsistent
-
-NIGO: 1956 unsatisfiable classes.
-
-OBA: Inconsistent
-
-UBERON: 23 unsatisfiable classes.
-
-
-## GRO-CPD.json
-No issues detected.
-
-## HIVO004.json
-AIDS: Inconsistent
-
-HIV: Inconsistent
-
-
-## PXO.json
-AAO: Inconsistent
-
-ALL: Inconsistent
-
-ARD: Inconsistent
-
-ASLI: Inconsistent
-
-BIM: Inconsistent
-
-CMF: Inconsistent
-
-CO: Inconsistent
-
-CPT: Inconsistent
-
-CTX: Inconsistent
-
-DCM: Inconsistent
-
-DDI: Inconsistent
-
-EO: 1 unsatisfiable classes.
-
-EV: Inconsistent
-
-FALL: Inconsistent
-
-FMA: Inconsistent
-
-GMO: Inconsistent
-
-HC: Inconsistent
-
-HIV: Inconsistent
-
-HL7: Inconsistent
-
-ICPS: Inconsistent
-
-IDO: Inconsistent
-
-IMR: Inconsistent
-
-IPR: Inconsistent
-
-ISO: Inconsistent
-
-MF: 1000 unsatisfiable classes.
-
-MO: Inconsistent
-
-MS: Inconsistent
-
-NCBITAXON: Inconsistent
-
-NIC: Inconsistent
-
-NIGO: 16134 unsatisfiable classes.
-
-OGDI: Inconsistent
-
-OGG: Inconsistent
-
-OPE: Inconsistent
-
-PLO: Inconsistent
-
-PTS: Inconsistent
-
-RB: Inconsistent
-
-RCD: Inconsistent
-
-RDL: Inconsistent
-
-RP: Inconsistent
-
-TO: Inconsistent
-
-VO: Inconsistent
-
-
-## CYTO.json
-ALL: Inconsistent
-
-
-## XCO.json
-CO: Inconsistent
-
-
-## OBIB.json
-ALL: Inconsistent
-
-CO: Inconsistent
-
-EO: 1 unsatisfiable classes.
-
-MS: Inconsistent
-
-NCBITAXON: Inconsistent
-
-OBI: 7 unsatisfiable classes.
-
-OMRSE: Inconsistent
-
-
-## EMAP.json
-No issues detected.
-
-## NMOSP.json
-ALL: Inconsistent
-
-NCBITAXON: Inconsistent
-
-
-## GLYCORDF.json
-MS: Inconsistent
-
-
-## PMA.json
-CO: Inconsistent
-
-
-## CTO.json
-No issues detected.
-
-## SP.json
-ALL: Inconsistent
-
-CHEBI: 122 unsatisfiable classes.
-
-EFO: 924 unsatisfiable classes.
-
-EO: 1 unsatisfiable classes.
-
-EV: Inconsistent
-
-GRO-CPGA: 558 unsatisfiable classes.
-
-MS: Inconsistent
-
-NCBITAXON: Inconsistent
-
-NCIT: 1 unsatisfiable classes.
-
-PO: 642 unsatisfiable classes.
-
-SNOMEDCT: Inconsistent
-
-
-## OGMS.json
-MS: Inconsistent
-
-
-## CSSO.json
-No issues detected.
-
-## PEDTERM.json
-HIV: Inconsistent
-
-TO: Inconsistent
-
-
-## EPO.json
-ALL: Inconsistent
-
-EO: 1 unsatisfiable classes.
-
-IDO: Inconsistent
-
-
-## MOP.json
-No issues detected.
-
-## CMO.json
-No issues detected.
-
-## OBI.json
-ALL: Inconsistent
-
-EO: 1 unsatisfiable classes.
-
-ERO: Inconsistent
-
-IDO: Inconsistent
-
-MS: Inconsistent
-
-NCBITAXON: Inconsistent
-
-VO: Inconsistent
-
-
-## CEPH.json
-ALL: 1376 unsatisfiable classes.
-
-NCBITAXON: Inconsistent
-
-
-## IXNO.json
-ALL: 1142 unsatisfiable classes.
-
-
-## MFMO.json
-ALL: Inconsistent
-
-MF: 4 unsatisfiable classes.
-
-RO: Inconsistent
-
-UBERON: Inconsistent
-
-
-## SOY.json
-No issues detected.
-
-## PP.json
-No issues detected.
-
-## suicideo.json
-ALL: 17549 unsatisfiable classes.
-
-EV: Inconsistent
-
-ICNP2015: Inconsistent
+GO: No issues detected.
 
 NBO: 3 unsatisfiable classes.
 
-RCD: Inconsistent
+NCBITAXON: Unloadable
 
-SNOMEDCT: Inconsistent
+NIGO: 261 unsatisfiable classes.
 
+PATO: No issues detected.
+
+PR: No issues detected.
+
+RO: Unloadable
+
+UBERON: 29 unsatisfiable classes.
+
+ZFA: No issues detected.
+
+## VIVO-ISF.json
+
+ALL: Inconsistent
+
+AO: No issues detected.
+
+BFO: No issues detected.
+
+ERO: No issues detected.
+
+OBI: No issues detected.
+
+OCRE: Unloadable
+
+UO: No issues detected.
+
+VIVO: No issues detected.
+
+## DPO.json
+
+ALL: Unloadable
+
+ATO: No issues detected.
+
+BFO: No issues detected.
+
+CARO: No issues detected.
+
+CL: 8 unsatisfiable classes.
+
+CO: Unloadable
+
+FB-BT: No issues detected.
+
+FB-DV: No issues detected.
+
+FBBT: No issues detected.
+
+FBCV: No issues detected.
+
+FBDV: No issues detected.
+
+FBbt: Unloadable
+
+GO: No issues detected.
+
+NIGO: 16 unsatisfiable classes.
+
+PATO: No issues detected.
+
+## RXNO.json
+
+ALL: No issues detected.
+
+AO: No issues detected.
+
+BFO: No issues detected.
+
+CHEBI: No issues detected.
+
+MO: No issues detected.
+
+MOP: No issues detected.
+
+OBI: No issues detected.
+
+## HPIO.json
+
+ALL: No issues detected.
+
+HP: No issues detected.
+
+## GO-PLUS.json
+
+ALL: Unloadable
+
+ATO: No issues detected.
+
+BFO: No issues detected.
+
+CHEBI: No issues detected.
+
+CL: 14 unsatisfiable classes.
+
+ERO: No issues detected.
+
+GO: 83 unsatisfiable classes.
+
+GRO: No issues detected.
+
+GRO-CPGA: No issues detected.
+
+MIRNAO: No issues detected.
+
+NCBITAXON: Unloadable
+
+NIGO: 1980 unsatisfiable classes.
+
+OBA: Unloadable
+
+PATO: No issues detected.
+
+PO: No issues detected.
+
+PR: No issues detected.
+
+SO: No issues detected.
+
+UBERON: 23 unsatisfiable classes.
+
+## GRO-CPD.json
+
+ALL: No issues detected.
+
+GRO: No issues detected.
+
+## HIVO004.json
+
+AIDS: Unloadable
+
+ALL: No issues detected.
+
+HIV: Unloadable
+
+## PXO.json
+
+AAO: Unloadable
+
+ADAR: No issues detected.
+
+ADO: No issues detected.
+
+ADW: No issues detected.
+
+ALL: Unloadable
+
+AMINO-ACID: No issues detected.
+
+AO: No issues detected.
+
+APO: No issues detected.
+
+ARD: Unloadable
+
+ASLI: Unloadable
+
+ATC: No issues detected.
+
+ATO: No issues detected.
+
+BCO: No issues detected.
+
+BFO: No issues detected.
+
+BHN: No issues detected.
+
+BIM: Unloadable
+
+BMT: No issues detected.
+
+BNO: No issues detected.
+
+BP: No issues detected.
+
+BRO: No issues detected.
+
+BSPO: No issues detected.
+
+BT: No issues detected.
+
+CHD: No issues detected.
+
+CHEBI: No issues detected.
+
+CL: No issues detected.
+
+CMF: Unloadable
+
+CN: No issues detected.
+
+CO: Unloadable
+
+CPT: Unloadable
+
+CRISP: No issues detected.
+
+CTO: No issues detected.
+
+CTX: Unloadable
+
+DCM: Unloadable
+
+DDI: Unloadable
+
+DDO: No issues detected.
+
+DIAB: No issues detected.
+
+ECG: No issues detected.
+
+ECP: No issues detected.
+
+EDAM: No issues detected.
+
+EDDA: No issues detected.
+
+ELIG: No issues detected.
+
+EMAP: No issues detected.
+
+EMO: No issues detected.
+
+ENM: No issues detected.
+
+EO: 1 unsatisfiable classes.
+
+EP: No issues detected.
+
+ERO: No issues detected.
+
+EV: Unloadable
+
+EXO: No issues detected.
+
+FALL: Unloadable
+
+FIRE: No issues detected.
+
+FIX: No issues detected.
+
+FMA: NullPointerException
+
+FO: No issues detected.
+
+FTC: No issues detected.
+
+GAZ: No issues detected.
+
+GMO: Unloadable
+
+GO: No issues detected.
+
+HC: Unloadable
+
+HIV: Unloadable
+
+HL7: Unloadable
+
+HOM: No issues detected.
+
+HP: No issues detected.
+
+ICPS: Unloadable
+
+IDO: Unloadable
+
+IFAR: No issues detected.
+
+IMR: Unloadable
+
+INO: No issues detected.
+
+IPR: Unloadable
+
+ISO: Unloadable
+
+LDA: No issues detected.
+
+LHN: No issues detected.
+
+LPT: No issues detected.
+
+MA: No issues detected.
+
+MF: 1000 unsatisfiable classes.
+
+MI: No issues detected.
+
+MIRNAO: No issues detected.
+
+MNR: No issues detected.
+
+MO: No issues detected.
+
+MP: No issues detected.
+
+MRO: No issues detected.
+
+MS: Unloadable
+
+NCBITAXON: Unloadable
+
+NIC: Unloadable
+
+NIGO: 16134 unsatisfiable classes.
+
+NMR: No issues detected.
+
+NPO: No issues detected.
+
+OBI: No issues detected.
+
+OF: No issues detected.
+
+OGDI: Inconsistent
+
+OGG: Unloadable
+
+OPE: Unloadable
+
+OPL: No issues detected.
+
+PAE: No issues detected.
+
+PATO: No issues detected.
+
+PAV: No issues detected.
+
+PDQ: No issues detected.
+
+PE: No issues detected.
+
+PLO: Unloadable
+
+PMR: No issues detected.
+
+PO: No issues detected.
+
+PP: No issues detected.
+
+PR: No issues detected.
+
+PSDS: No issues detected.
+
+PTO: No issues detected.
+
+PTS: Unloadable
+
+PW: No issues detected.
+
+RB: Unloadable
+
+RCD: Unloadable
+
+RDL: Unloadable
+
+REX: No issues detected.
+
+ROO: No issues detected.
+
+RP: Unloadable
+
+RS: No issues detected.
+
+SD3: No issues detected.
+
+SDO: No issues detected.
+
+SHR: No issues detected.
+
+SO: No issues detected.
+
+SP: No issues detected.
+
+SSE: No issues detected.
+
+STY: No issues detected.
+
+SYN: No issues detected.
+
+TADS: No issues detected.
+
+TO: Unloadable
+
+TRAK: No issues detected.
+
+VO: Unloadable
+
+VT: No issues detected.
+
+ZFA: No issues detected.
+
+## CYTO.json
+
+ALL: No issues detected.
+
+TO: Unloadable
+
+## XCO.json
+
+ALL: No issues detected.
+
+CO: Unloadable
+
+## OBIB.json
+
+ALL: Unloadable
+
+AO: No issues detected.
+
+APO: No issues detected.
+
+ATO: No issues detected.
+
+BFO: No issues detected.
+
+CARO: No issues detected.
+
+CHEBI: No issues detected.
+
+CL: No issues detected.
+
+CO: Unloadable
+
+EFO: No issues detected.
+
+EO: 1 unsatisfiable classes.
+
+ERO: No issues detected.
+
+FO: No issues detected.
+
+GAZ: No issues detected.
+
+GEO: No issues detected.
+
+GO: No issues detected.
+
+ICO: No issues detected.
+
+MI: No issues detected.
+
+MS: Unloadable
+
+NCBITAXON: Unloadable
+
+NIGO: No issues detected.
+
+OBI: 7 unsatisfiable classes.
+
+OMRSE: Unloadable
+
+PATO: No issues detected.
+
+UBERON: No issues detected.
+
+UO: No issues detected.
+
+VIVO: No issues detected.
+
+VIVO-ISF: No issues detected.
+
+## EMAP.json
+
+ALL: No issues detected.
+
+MA: No issues detected.
+
+## NMOSP.json
+
+ALL: No issues detected.
+
+FBCV: No issues detected.
+
+MESH: No issues detected.
+
+MO: No issues detected.
+
+NCBITAXON: Unloadable
+
+RS: No issues detected.
+
+## GLYCORDF.json
+
+ALL: No issues detected.
+
+GO: No issues detected.
+
+MS: Unloadable
+
+## PMA.json
+
+ALL: No issues detected.
+
+CO: Unloadable
+
+MA: No issues detected.
+
+## CTO.json
+
+ALL: No issues detected.
+
+PHYLONT: No issues detected.
+
+## SP.json
+
+ALL: Unloadable
+
+AO: No issues detected.
+
+BP: No issues detected.
+
+BT: No issues detected.
+
+BTO: No issues detected.
+
+CHEBI: 122 unsatisfiable classes.
+
+CL: No issues detected.
+
+EFO: 32 unsatisfiable classes.
+
+EO: 1 unsatisfiable classes.
+
+ERO: No issues detected.
+
+EV: Unloadable
+
+FO: No issues detected.
+
+GRO: No issues detected.
+
+GRO-CPGA: 558 unsatisfiable classes.
+
+MA: No issues detected.
+
+MO: No issues detected.
+
+MS: Unloadable
+
+NCBITAXON: Unloadable
+
+NCIT: 1 unsatisfiable classes.
+
+NPO: No issues detected.
+
+OBI: No issues detected.
+
+PO: 642 unsatisfiable classes.
+
+SIO: No issues detected.
+
+SNOMEDCT: Unloadable
+
+SO: No issues detected.
+
+UBERON: No issues detected.
+
+## OGMS.json
+
+ALL: No issues detected.
+
+AO: No issues detected.
+
+BFO: No issues detected.
+
+MS: Unloadable
+
+OBI: No issues detected.
+
+## CSSO.json
+
+ALL: No issues detected.
+
+SO: No issues detected.
+
+## PEDTERM.json
+
+ALL: No issues detected.
+
+CHD: No issues detected.
+
+CN: No issues detected.
+
+HIV: Unloadable
+
+MP: No issues detected.
+
+TO: Unloadable
+
+## EPO.json
+
+ALL: Unloadable
+
+ATO: No issues detected.
+
+EO: 1 unsatisfiable classes.
+
+IDO: Unloadable
+
+PATO: No issues detected.
+
+PTRANS: No issues detected.
+
+TRANS: No issues detected.
+
+## MOP.json
+
+ALL: No issues detected.
+
+BFO: No issues detected.
+
+CHEBI: No issues detected.
+
+MO: No issues detected.
+
+## CMO.json
+
+ALL: No issues detected.
+
+MO: No issues detected.
+
+## OBI.json
+
+ALL: Unloadable
+
+AO: No issues detected.
+
+ATO: No issues detected.
+
+BFO: No issues detected.
+
+CARO: No issues detected.
+
+CHEBI: No issues detected.
+
+CL: No issues detected.
+
+ENVO: No issues detected.
+
+EO: 1 unsatisfiable classes.
+
+ERO: Inconsistent
+
+GAZ: No issues detected.
+
+GO: No issues detected.
+
+HP: No issues detected.
+
+IDO: Unloadable
+
+MIRNAO: No issues detected.
+
+MS: Unloadable
+
+NCBITAXON: Unloadable
+
+NIGO: No issues detected.
+
+PATO: No issues detected.
+
+PR: No issues detected.
+
+SO: No issues detected.
+
+UBERON: No issues detected.
+
+UO: No issues detected.
+
+VO: Unloadable
+
+## CEPH.json
+
+ALL: 1376 unsatisfiable classes.
+
+CL: No issues detected.
+
+EP: No issues detected.
+
+ERO: No issues detected.
+
+GO: No issues detected.
+
+NCBITAXON: Unloadable
+
+NIGO: No issues detected.
+
+UBERON: No issues detected.
+
+## IXNO.json
+
+ALL: 1142 unsatisfiable classes.
+
+GO: No issues detected.
+
+NIGO: No issues detected.
+
+## MFMO.json
+
+ALL: Unloadable
+
+ATO: No issues detected.
+
+BFO: No issues detected.
+
+CARO: No issues detected.
+
+CL: No issues detected.
+
+ENVO: No issues detected.
+
+ERO: No issues detected.
+
+GO: No issues detected.
+
+MF: 4 unsatisfiable classes.
+
+NIGO: No issues detected.
+
+PATO: No issues detected.
+
+RO: Unloadable
+
+UBERON: Inconsistent
+
+## SOY.json
+
+ALL: No issues detected.
+
+SO: No issues detected.
+
+## PP.json
+
+ALL: No issues detected.
+
+BFO: No issues detected.
+
+EDAM: No issues detected.
+
+## suicideo.json
+
+ALL: 15930 unsatisfiable classes.
+
+AO: No issues detected.
+
+BFO: No issues detected.
+
+CL: No issues detected.
+
+CRISP: No issues detected.
+
+EFO: No issues detected.
+
+EV: Unloadable
+
+FO: No issues detected.
+
+HP: No issues detected.
+
+ICNP2015: Unloadable
+
+LOINC: No issues detected.
+
+MESH: No issues detected.
+
+MI: No issues detected.
+
+NBO: 3 unsatisfiable classes.
+
+NCIT: No issues detected.
+
+RCD: Unloadable
+
+SNOMEDCT: Unloadable
+
+SP: No issues detected.
 
 ## OMIT.json
-ALL: Inconsistent
 
-FMA: Inconsistent
+ALL: Unloadable
 
-MO: Inconsistent
+BFO: No issues detected.
 
-NCBITAXON: Inconsistent
+CHEBI: No issues detected.
 
+DOID: No issues detected.
+
+FMA: NullPointerException
+
+GO: No issues detected.
+
+MI: No issues detected.
+
+MIRNAO: No issues detected.
+
+MO: No issues detected.
+
+MOD: No issues detected.
+
+NCBITAXON: Unloadable
+
+NIGO: No issues detected.
+
+PR: No issues detected.
+
+PSIMOD: No issues detected.
+
+SO: No issues detected.
 
 ## AURA.json
-AIDS: 1 unsatisfiable classes.
 
-ALL: Inconsistent
+AIDS: Unloadable
 
-CO: 1 unsatisfiable classes.
+ALL: UnparsableOntologyException
 
-EP: 1 unsatisfiable classes.
+CO: Unloadable
 
-FO: 1 unsatisfiable classes.
+EP: UnparsableOntologyException
 
-HC: 1 unsatisfiable classes.
+FO: UnparsableOntologyException
 
-HIV: 1 unsatisfiable classes.
+HC: Unloadable
 
-MP: 1 unsatisfiable classes.
+HIV: Unloadable
 
-NMR: 1 unsatisfiable classes.
+MP: UnparsableOntologyException
 
-PE: 1 unsatisfiable classes.
+NMR: UnparsableOntologyException
 
-SO: 1 unsatisfiable classes.
+PE: UnparsableOntologyException
 
-SP: 1 unsatisfiable classes.
+SO: UnparsableOntologyException
 
-TO: 1 unsatisfiable classes.
+SP: UnparsableOntologyException
 
+TO: Unloadable
 
 ## WB-PHENOTYPE.json
-WBPHENOTYPE: Inconsistent
 
+ALL: No issues detected.
+
+BP: No issues detected.
+
+WBPHENOTYPE: Unloadable
 
 ## MEDLINEPLUS.json
-No issues detected.
+
+ALL: No issues detected.
+
+EP: No issues detected.
+
+STY: No issues detected.
 
 ## KISAO.json
-No issues detected.
+
+ALL: No issues detected.
+
+AO: No issues detected.
 
 ## COGPO.json
-ALL: Inconsistent
 
-CO: Inconsistent
+ALL: Unloadable
 
-FMA: Inconsistent
+AO: No issues detected.
+
+ATO: No issues detected.
+
+BFO: No issues detected.
+
+CO: Unloadable
+
+FMA: NullPointerException
+
+GAZ: No issues detected.
 
 OBI: Inconsistent
 
+PATO: No issues detected.
+
+PO: No issues detected.
+
+UO: No issues detected.
 
 ## SHR.json
+
 ALL: 5 unsatisfiable classes.
 
-CO: Inconsistent
+BP: No issues detected.
+
+CO: Unloadable
 
 EO: 1 unsatisfiable classes.
 
-HC: Inconsistent
+HC: Unloadable
 
-HIV: Inconsistent
+HIV: Unloadable
 
 MF: 4 unsatisfiable classes.
 
-MO: Inconsistent
+MO: No issues detected.
 
-MS: Inconsistent
+MS: Unloadable
 
-RB: Inconsistent
+PR: No issues detected.
 
-RP: Inconsistent
+RB: Unloadable
 
+RP: Unloadable
+
+SO: No issues detected.
 
 ## MMO.json
-No issues detected.
+
+ALL: No issues detected.
+
+MO: No issues detected.
 
 ## REXO.json
-ALL: Inconsistent
 
-ARD: Inconsistent
+ADW: No issues detected.
 
-BIM: Inconsistent
+ALL: Unloadable
 
-CPT: Inconsistent
+ARD: Unloadable
 
-DCM: Inconsistent
+ATC: No issues detected.
 
-EV: Inconsistent
+BHN: No issues detected.
 
-HC: Inconsistent
+BIM: Unloadable
 
-HL7: Inconsistent
+BMT: No issues detected.
 
-IPR: Inconsistent
+BP: No issues detected.
+
+BT: No issues detected.
+
+CL: No issues detected.
+
+CN: No issues detected.
+
+CPT: Unloadable
+
+DCM: Unloadable
+
+ENM: No issues detected.
+
+EP: No issues detected.
+
+EV: Unloadable
+
+GMM: No issues detected.
+
+GO: No issues detected.
+
+HC: Unloadable
+
+HL7: Unloadable
+
+HP: No issues detected.
+
+IPR: Unloadable
+
+LPT: No issues detected.
+
+MA: No issues detected.
 
 MF: 4 unsatisfiable classes.
 
-MS: Inconsistent
+MI: No issues detected.
 
-NCBITAXON: Inconsistent
+MP: No issues detected.
 
-PTS: Inconsistent
+MS: Unloadable
 
-RB: Inconsistent
+NCBITAXON: Unloadable
 
-RCD: Inconsistent
+NIGO: No issues detected.
 
-RDL: Inconsistent
+PAV: No issues detected.
 
-RP: Inconsistent
+PDQ: No issues detected.
 
-ZFS: Inconsistent
+PE: No issues detected.
 
+PMR: No issues detected.
+
+PP: No issues detected.
+
+PR: No issues detected.
+
+PTS: Unloadable
+
+PW: No issues detected.
+
+RB: Unloadable
+
+RCD: Unloadable
+
+RDL: Unloadable
+
+RETO: No issues detected.
+
+REX: No issues detected.
+
+RP: Unloadable
+
+RS: No issues detected.
+
+SD3: No issues detected.
+
+SIO: No issues detected.
+
+SO: No issues detected.
+
+SP: No issues detected.
+
+SSE: No issues detected.
+
+SYN: No issues detected.
+
+VT: No issues detected.
+
+ZEA: No issues detected.
+
+ZFA: No issues detected.
+
+ZFS: Unloadable
 
 ## GEO.json
+
 ALL: 1 unsatisfiable classes.
+
+AO: No issues detected.
+
+ATO: No issues detected.
+
+BFO: No issues detected.
 
 EO: 1 unsatisfiable classes.
 
 OBI: Inconsistent
 
+PATO: No issues detected.
+
+UO: No issues detected.
 
 ## TAO.json
-ALL: Inconsistent
 
+ALL: Unloadable
+
+AO: No issues detected.
+
+ATO: No issues detected.
+
+CARO: No issues detected.
+
+CL: No issues detected.
+
+GO: No issues detected.
+
+NIGO: No issues detected.
+
+PATO: No issues detected.
+
+VSAO: No issues detected.
 
 ## PECO.json
+
 ALL: 1 unsatisfiable classes.
 
 EO: 1 unsatisfiable classes.
 
-
 ## TGMA.json
-No issues detected.
+
+ALL: No issues detected.
+
+MA: No issues detected.
 
 ## INSECTH.json
-No issues detected.
+
+ALL: No issues detected.
+
+MO: No issues detected.
 
 ## MCCL.json
-ALL: Inconsistent
 
-ARD: Inconsistent
+ADAR: No issues detected.
 
-CO: Inconsistent
+ADO: No issues detected.
+
+ALL: Unloadable
+
+AO: No issues detected.
+
+APO: No issues detected.
+
+ARD: Unloadable
+
+ATC: No issues detected.
+
+ATO: No issues detected.
+
+BCO: No issues detected.
+
+BFO: No issues detected.
+
+BP: No issues detected.
+
+BT: No issues detected.
+
+CHD: No issues detected.
+
+CL: No issues detected.
+
+CN: No issues detected.
+
+CO: Unloadable
+
+CRISP: No issues detected.
+
+EMO: No issues detected.
 
 EO: 1 unsatisfiable classes.
 
-EV: Inconsistent
+EP: No issues detected.
 
-HC: Inconsistent
+EV: Unloadable
 
-HIV: Inconsistent
+EXO: No issues detected.
 
-IMR: Inconsistent
+FO: No issues detected.
 
-INO: Inconsistent
+FTC: No issues detected.
 
-ISO: Inconsistent
+GBM: No issues detected.
+
+GO: No issues detected.
+
+GRO: No issues detected.
+
+HC: Unloadable
+
+HIV: Unloadable
+
+HOM: No issues detected.
+
+HP: No issues detected.
+
+IMR: Unloadable
+
+INO: No issues detected.
+
+ISO: Unloadable
+
+MA: No issues detected.
 
 MF: 4 unsatisfiable classes.
 
-MS: Inconsistent
+MI: No issues detected.
 
-OPE: Inconsistent
+MO: No issues detected.
 
-RB: Inconsistent
+MP: No issues detected.
 
-RP: Inconsistent
+MS: Unloadable
 
-TO: Inconsistent
+NPO: No issues detected.
 
+OF: No issues detected.
+
+OPE: Unloadable
+
+PE: No issues detected.
+
+PO: No issues detected.
+
+PP: No issues detected.
+
+PR: No issues detected.
+
+PW: No issues detected.
+
+RB: Unloadable
+
+ROO: No issues detected.
+
+RP: Unloadable
+
+RS: No issues detected.
+
+SO: No issues detected.
+
+SP: No issues detected.
+
+SYN: No issues detected.
+
+TO: Unloadable
 
 ## OGSF.json
-ALL: Inconsistent
+
+ALL: Unloadable
+
+AO: No issues detected.
+
+ATO: No issues detected.
+
+BFO: No issues detected.
+
+CHEBI: No issues detected.
 
 EO: 1 unsatisfiable classes.
 
-MS: Inconsistent
+ERO: No issues detected.
 
-NCBITAXON: Inconsistent
+GO: No issues detected.
 
-OAE: Inconsistent
+MIRNAO: No issues detected.
+
+MS: Unloadable
+
+NCBITAXON: Unloadable
+
+NIGO: No issues detected.
+
+OAE: Unloadable
+
+OBI: No issues detected.
 
 OGI: 3 unsatisfiable classes.
 
-VO: Inconsistent
+PATO: No issues detected.
 
+SO: No issues detected.
+
+VO: Unloadable
 
 ## ODNAE.json
-ALL: Inconsistent
 
-MS: Inconsistent
+ALL: Unloadable
 
-NCBITAXON: Inconsistent
+AO: No issues detected.
 
-OAE: Inconsistent
+ATO: No issues detected.
 
+BFO: No issues detected.
 
-## OGDI.json
-ALL: Inconsistent
+CHEBI: No issues detected.
 
-HP: Inconsistent
+CL: No issues detected.
 
-MI: Inconsistent
+DRON: No issues detected.
 
-MO: Inconsistent
+ERO: No issues detected.
 
-OGR: Inconsistent
+GO: No issues detected.
 
+MS: Unloadable
+
+NCBITAXON: Unloadable
+
+NIGO: No issues detected.
+
+OAE: Unloadable
+
+OBI: No issues detected.
+
+PATO: No issues detected.
+
+UBERON: No issues detected.
 
 ## ONTOPNEUMO.json
-CO: Inconsistent
 
-RP: Inconsistent
+ALL: No issues detected.
 
+ATO: No issues detected.
+
+CO: Unloadable
+
+MI: No issues detected.
+
+PO: No issues detected.
+
+RP: Unloadable
 
 ## HUPSON.json
-ALL: Inconsistent
 
-EFO: 1299 unsatisfiable classes.
+ACGT-MO: No issues detected.
 
-EV: Inconsistent
+ALL: Unloadable
 
-FMA: Inconsistent
+AO: No issues detected.
 
-IDO: Inconsistent
+ATO: No issues detected.
 
-IMR: Inconsistent
+BAO-GPCR: No issues detected.
 
-MS: Inconsistent
+BP: No issues detected.
 
-NCBITAXON: Inconsistent
+BT: No issues detected.
+
+CHEBI: No issues detected.
+
+CL: No issues detected.
+
+DOID: No issues detected.
+
+ECG: No issues detected.
+
+EDAM: No issues detected.
+
+EFO: 521 unsatisfiable classes.
+
+EV: Unloadable
+
+FBbi: No issues detected.
+
+FMA: NullPointerException
+
+FO: No issues detected.
+
+GFO-BIO: No issues detected.
+
+GO: No issues detected.
+
+HP: No issues detected.
+
+IDO: Unloadable
+
+IMR: Unloadable
+
+MP: No issues detected.
+
+MS: Unloadable
+
+NCBITAXON: Unloadable
+
+NCIT: No issues detected.
 
 NPO: 353 unsatisfiable classes.
 
 OBI: 1 unsatisfiable classes.
 
+PR: No issues detected.
+
+REX: No issues detected.
+
+SBO: No issues detected.
+
+SEP: No issues detected.
+
+SIO: No issues detected.
+
+SO: No issues detected.
+
+SP: No issues detected.
+
+UO: No issues detected.
 
 ## DERMO.json
-ALL: Inconsistent
 
+ALL: Unloadable
+
+BCTEO: No issues detected.
+
+CANONT: No issues detected.
+
+IDQA: No issues detected.
+
+MO: No issues detected.
 
 ## PAE.json
-GRO-CPGA: Inconsistent
 
-PO: Inconsistent
+ALL: No issues detected.
 
+GRO: No issues detected.
+
+GRO-CPGA: Unloadable
+
+PO: Unloadable
 
 ## CCONT.json
-ALL: Inconsistent
+
+ALL: Unloadable
+
+AO: No issues detected.
+
+ATO: No issues detected.
+
+BT: No issues detected.
 
 BTO: 5 unsatisfiable classes.
 
+CCO: No issues detected.
+
+CHEBI: No issues detected.
+
 CL: 6 unsatisfiable classes.
 
-EFO: Inconsistent
+DOID: No issues detected.
+
+EFO: Unloadable
 
 EO: 1 unsatisfiable classes.
 
-ERO: 5493 unsatisfiable classes.
+ERO: 5616 unsatisfiable classes.
 
-EV: Inconsistent
+EV: Unloadable
 
-FBbt: Inconsistent
+FB-BT: No issues detected.
+
+FB-DV: No issues detected.
+
+FBBT: No issues detected.
+
+FBDV: No issues detected.
+
+FBbt: Unloadable
+
+FO: No issues detected.
+
+GO: No issues detected.
+
+GRO: No issues detected.
 
 GRO-CPGA: 583 unsatisfiable classes.
 
-IDO: Inconsistent
+HP: No issues detected.
 
-MS: Inconsistent
+IDO: Unloadable
 
-NCBITAXON: Inconsistent
+MIRNAO: No issues detected.
 
-OBI: 4488 unsatisfiable classes.
+MP: No issues detected.
 
-ORDO: 1 unsatisfiable classes.
+MPATH: No issues detected.
+
+MS: Unloadable
+
+NCBITAXON: Unloadable
+
+NIGO: No issues detected.
+
+OBI: 4521 unsatisfiable classes.
+
+ORDO: No issues detected.
+
+PATO: No issues detected.
+
+PECO: No issues detected.
 
 PO: 667 unsatisfiable classes.
 
-TO: Inconsistent
+PR: No issues detected.
+
+PTO: No issues detected.
+
+SO: No issues detected.
+
+TO: Unloadable
 
 UBERON: 8 unsatisfiable classes.
 
+UO: No issues detected.
+
+ZEA: No issues detected.
 
 ## ONL-DP.json
-CO: Inconsistent
 
+ALL: No issues detected.
+
+CO: Unloadable
+
+MA: No issues detected.
+
+MP: No issues detected.
+
+PE: No issues detected.
+
+SO: No issues detected.
+
+SP: No issues detected.
 
 ## IAO.json
-ALL: Inconsistent
 
+ALL: Unloadable
+
+AO: No issues detected.
+
+ATO: No issues detected.
+
+GAZ: No issues detected.
+
+OBI: No issues detected.
 
 ## ICD10PCS.json
-CTX: Inconsistent
 
-DCM: Inconsistent
+ALL: No issues detected.
 
-HC: Inconsistent
+BP: No issues detected.
 
-HL7: Inconsistent
+BT: No issues detected.
 
-ICD10: Inconsistent
+CL: No issues detected.
 
+CN: No issues detected.
+
+CTX: Unloadable
+
+DCM: Unloadable
+
+FTC: No issues detected.
+
+GBM: No issues detected.
+
+GMM: No issues detected.
+
+HC: Unloadable
+
+HL7: Unloadable
+
+HP: No issues detected.
+
+ICD10: Unloadable
+
+STY: No issues detected.
 
 ## RAO.json
-No issues detected.
+
+ALL: No issues detected.
+
+PE: No issues detected.
 
 ## GPML.json
-No issues detected.
+
+ALL: No issues detected.
+
+BP: No issues detected.
 
 ## DIAB.json
-No issues detected.
+
+ALL: No issues detected.
+
+HP: No issues detected.
+
+MP: No issues detected.
 
 ## ECO.json
-ALL: Inconsistent
 
-CO: Inconsistent
+ALL: Unloadable
 
+BCTEO: No issues detected.
+
+CANONT: No issues detected.
+
+CO: Unloadable
+
+IDQA: No issues detected.
 
 ## ICPC.json
-No issues detected.
+
+ALL: No issues detected.
+
+STY: No issues detected.
 
 ## CO-WHEAT.json
-CO: Inconsistent
 
+ALL: No issues detected.
+
+CO: Unloadable
 
 ## RETO.json
-ALL: Inconsistent
 
-ARD: Inconsistent
+ADW: No issues detected.
 
-BIM: Inconsistent
+ALL: Unloadable
 
-CPT: Inconsistent
+ARD: Unloadable
 
-DCM: Inconsistent
+ATC: No issues detected.
 
-EV: Inconsistent
+BHN: No issues detected.
 
-HC: Inconsistent
+BIM: Unloadable
 
-HL7: Inconsistent
+BMT: No issues detected.
 
-IPR: Inconsistent
+BP: No issues detected.
+
+BT: No issues detected.
+
+CL: No issues detected.
+
+CN: No issues detected.
+
+CPT: Unloadable
+
+DCM: Unloadable
+
+ENM: No issues detected.
+
+EP: No issues detected.
+
+EV: Unloadable
+
+GMM: No issues detected.
+
+GO: No issues detected.
+
+HC: Unloadable
+
+HL7: Unloadable
+
+HP: No issues detected.
+
+IPR: Unloadable
+
+LPT: No issues detected.
+
+MA: No issues detected.
 
 MF: 4 unsatisfiable classes.
 
-MS: Inconsistent
+MI: No issues detected.
 
-NCBITAXON: Inconsistent
+MP: No issues detected.
 
-PTS: Inconsistent
+MS: Unloadable
 
-RB: Inconsistent
+NCBITAXON: Unloadable
 
-RCD: Inconsistent
+NIGO: No issues detected.
 
-RDL: Inconsistent
+PAV: No issues detected.
 
-RP: Inconsistent
+PDQ: No issues detected.
 
-TO: Inconsistent
+PE: No issues detected.
 
-ZFS: Inconsistent
+PMR: No issues detected.
 
+PP: No issues detected.
+
+PR: No issues detected.
+
+PTS: Unloadable
+
+PW: No issues detected.
+
+RB: Unloadable
+
+RCD: Unloadable
+
+RDL: Unloadable
+
+REX: No issues detected.
+
+RP: Unloadable
+
+RS: No issues detected.
+
+SD3: No issues detected.
+
+SIO: No issues detected.
+
+SO: No issues detected.
+
+SP: No issues detected.
+
+SSE: No issues detected.
+
+SYN: No issues detected.
+
+TO: Unloadable
+
+VT: No issues detected.
+
+ZEA: No issues detected.
+
+ZFA: No issues detected.
+
+ZFS: Unloadable
 
 ## GO-EXT.json
+
 ALL: 1311 unsatisfiable classes.
 
 GO: 3 unsatisfiable classes.
 
 NIGO: 314 unsatisfiable classes.
 
-
 ## FAO.json
-No issues detected.
+
+ALL: No issues detected.
+
+AO: No issues detected.
 
 ## GENE-CDS.json
-CO: Inconsistent
 
-HC: Inconsistent
+ALL: No issues detected.
 
-MS: Inconsistent
+CN: No issues detected.
 
-RB: Inconsistent
+CO: Unloadable
 
+HC: Unloadable
+
+MI: No issues detected.
+
+MS: Unloadable
+
+RB: Unloadable
 
 ## RCTV2.json
-ALL: Inconsistent
 
-BIM: Inconsistent
+ALL: Unloadable
 
-CMF: Inconsistent
+AO: No issues detected.
 
-CO: Inconsistent
+BIM: Unloadable
+
+BMT: No issues detected.
+
+BP: No issues detected.
+
+BT: No issues detected.
+
+CL: No issues detected.
+
+CMF: Unloadable
+
+CN: No issues detected.
+
+CO: Unloadable
 
 EO: 1 unsatisfiable classes.
 
-EV: Inconsistent
+EP: No issues detected.
 
-HC: Inconsistent
+EV: Unloadable
 
-HL7: Inconsistent
+FO: No issues detected.
+
+GAZ: No issues detected.
+
+GO: No issues detected.
+
+HC: Unloadable
+
+HL7: Unloadable
+
+HP: No issues detected.
+
+MA: No issues detected.
 
 MF: 4 unsatisfiable classes.
 
-MS: Inconsistent
+MI: No issues detected.
 
-OAE: Inconsistent
+MO: No issues detected.
 
-RB: Inconsistent
+MP: No issues detected.
 
-RP: Inconsistent
+MS: Unloadable
 
-TO: Inconsistent
+OAE: Unloadable
 
-VO: Inconsistent
+OF: No issues detected.
 
+PE: No issues detected.
+
+PP: No issues detected.
+
+PR: No issues detected.
+
+PW: No issues detected.
+
+RB: Unloadable
+
+RP: Unloadable
+
+RS: No issues detected.
+
+SD3: No issues detected.
+
+SO: No issues detected.
+
+SP: No issues detected.
+
+TO: Unloadable
+
+VO: Unloadable
+
+VT: No issues detected.
 
 ## NEOMARK4.json
-FMA: Inconsistent
 
-MS: Inconsistent
+ALL: NullPointerException
 
+AO: No issues detected.
+
+DOID: No issues detected.
+
+FMA: NullPointerException
+
+HP: No issues detected.
+
+MS: Unloadable
+
+OBI: No issues detected.
 
 ## NEMO.json
+
+ALL: No issues detected.
+
+AO: No issues detected.
+
+ATO: No issues detected.
+
+EMO: No issues detected.
+
 OBI: Inconsistent
 
-
 ## SNMI.json
-C1902: Inconsistent
 
+ALL: No issues detected.
+
+C1902: Unloadable
+
+MI: No issues detected.
+
+STY: No issues detected.
 
 ## UO.json
-No issues detected.
+
+ALL: No issues detected.
+
+ATO: No issues detected.
+
+PATO: No issues detected.
 
 ## WIKIPATHWAYS.json
-No issues detected.
+
+ALL: No issues detected.
+
+BP: No issues detected.
+
+GPML: No issues detected.
+
+SBO: No issues detected.
+
+SCHEMA: No issues detected.
 
 ## OMIM.json
-No issues detected.
+
+ALL: No issues detected.
+
+MI: No issues detected.
+
+STY: No issues detected.
 
 ## CANONT.json
-ALL: Inconsistent
 
+ALL: Unloadable
+
+BCTEO: No issues detected.
+
+IDQA: No issues detected.
 
 ## DLORO.json
-CO: Inconsistent
 
-RB: Inconsistent
+ALL: No issues detected.
 
+CL: No issues detected.
+
+CN: No issues detected.
+
+CO: Unloadable
+
+HP: No issues detected.
+
+RB: Unloadable
 
 ## MPATH.json
-No issues detected.
+
+ALL: No issues detected.
+
+MP: No issues detected.
 
 ## NIDM-RESULTS.json
-ALL: 31 unsatisfiable classes.
 
+ALL: 35 unsatisfiable classes.
+
+ATO: No issues detected.
+
+NGSONTO: No issues detected.
+
+OBI: No issues detected.
+
+PROVO: No issues detected.
+
+SP: No issues detected.
+
+STATO: No issues detected.
 
 ## PLIO.json
+
 ALL: 4 unsatisfiable classes.
+
+CL: No issues detected.
 
 MF: 4 unsatisfiable classes.
 
-MS: Inconsistent
+MS: Unloadable
 
+NMR: No issues detected.
+
+PR: No issues detected.
 
 ## SMASH.json
+
 ALL: 2 unsatisfiable classes.
 
 RS: 2 unsatisfiable classes.
 
-
 ## STATO.json
-ALL: Inconsistent
+
+ALL: Unloadable
+
+AO: No issues detected.
+
+ATO: No issues detected.
+
+BFO: No issues detected.
+
+CARO: No issues detected.
+
+CHEBI: No issues detected.
+
+CL: No issues detected.
 
 EO: 7 unsatisfiable classes.
 
-MS: Inconsistent
+GO: No issues detected.
 
-NCBITAXON: Inconsistent
+MIRNAO: No issues detected.
 
+MS: Unloadable
+
+NCBITAXON: Unloadable
+
+NIGO: No issues detected.
+
+OBI: No issues detected.
+
+PR: No issues detected.
+
+SO: No issues detected.
+
+UO: No issues detected.
 
 ## GBM.json
-No issues detected.
+
+ALL: No issues detected.
+
+BHO: No issues detected.
+
+BP: No issues detected.
+
+OFSMR: No issues detected.
 
 ## CTCAE.json
-ALL: Inconsistent
 
-CO: Unloadable
+ALL: OWLOntologyStorageException
+
+CO: No issues detected.
+
+EV: No issues detected.
+
+## ROO.json
+
+ALL: No issues detected.
 
 EV: Unloadable
 
-
-## ROO.json
-EV: Inconsistent
-
-ICD10: Inconsistent
+ICD10: Unloadable
 
 NCIT: Inconsistent
 
-OCRE: Inconsistent
+OCRE: Unloadable
 
-SNOMEDCT: Inconsistent
+SNOMEDCT: Unloadable
 
+UO: No issues detected.
 
 ## JERM.json
-No issues detected.
+
+ALL: No issues detected.
+
+HP: No issues detected.
+
+MA: No issues detected.
+
+MESH: No issues detected.
+
+MO: No issues detected.
 
 ## SO.json
-No issues detected.
+
+ALL: No issues detected.
+
+MIRNAO: No issues detected.
 
 ## CNO_ACRONYM.json
-CNO: Inconsistent
 
+ALL: No issues detected.
+
+AO: No issues detected.
+
+CNO: Unloadable
+
+OBI: No issues detected.
+
+SBO: No issues detected.
 
 ## MEO.json
+
 ALL: 1 unsatisfiable classes.
 
 EO: 1 unsatisfiable classes.
 
-
 ## ICF.json
-ICD10: Inconsistent
 
+ALL: No issues detected.
+
+ICD10: Unloadable
 
 ## EHDAA2.json
-ALL: Inconsistent
 
-FBbt: Inconsistent
+AEO: No issues detected.
 
+ALL: Unloadable
+
+CARO: No issues detected.
+
+CL: No issues detected.
+
+EHDA: No issues detected.
+
+ERO: No issues detected.
+
+FB-BT: No issues detected.
+
+FBBT: No issues detected.
+
+FBbt: Unloadable
+
+MP: No issues detected.
+
+UBERON: No issues detected.
+
+ZFA: No issues detected.
 
 ## ADW.json
-CO: Inconsistent
 
+ALL: No issues detected.
+
+CO: Unloadable
 
 ## REPO.json
-No issues detected.
+
+ALL: No issues detected.
+
+EP: No issues detected.
 
 ## NBO.json
-ALL: Inconsistent
+
+ALL: Unloadable
 
 ATO: 3 unsatisfiable classes.
 
@@ -2324,7 +5403,9 @@ EMAPA: 3 unsatisfiable classes.
 
 ERO: 3 unsatisfiable classes.
 
-NIGO: 1663 unsatisfiable classes.
+GO: No issues detected.
+
+NIGO: 1695 unsatisfiable classes.
 
 PATO: 3 unsatisfiable classes.
 
@@ -2332,297 +5413,775 @@ UBERON: 3 unsatisfiable classes.
 
 ZFA: 3 unsatisfiable classes.
 
-
 ## EHDAA.json
-No issues detected.
+
+ALL: No issues detected.
+
+EHDA: No issues detected.
+
+PR: No issues detected.
 
 ## CSO.json
-RB: Inconsistent
 
+ALL: No issues detected.
+
+CL: No issues detected.
+
+MO: No issues detected.
+
+OFSMR: No issues detected.
+
+PP: No issues detected.
+
+RB: Unloadable
+
+RS: No issues detected.
 
 ## NPHO.json
-ALL: Inconsistent
 
+ALL: Unloadable
+
+ATO: No issues detected.
+
+FLOPO: No issues detected.
+
+GRO: No issues detected.
+
+GRO-CPGA: No issues detected.
+
+PATO: No issues detected.
+
+PO: No issues detected.
 
 ## EO.json
+
 ALL: 1 unsatisfiable classes.
 
 BFO: 1 unsatisfiable classes.
 
 MO: 1 unsatisfiable classes.
 
-
 ## EP.json
-CO: Inconsistent
 
-FMA: Inconsistent
+ALL: Unloadable
 
+ATO: No issues detected.
+
+CO: Unloadable
+
+FMA: NullPointerException
+
+GO: No issues detected.
+
+PATO: No issues detected.
 
 ## NIFCELL.json
-CO: Inconsistent
 
-PATO: Inconsistent
+ALL: No issues detected.
 
+ATO: No issues detected.
+
+CO: Unloadable
+
+NIFSUBCELL: No issues detected.
+
+PATO: Unloadable
 
 ## MO.json
-CO: Inconsistent
 
+ALL: No issues detected.
+
+CO: Unloadable
 
 ## NATPRO.json
-CO: Inconsistent
 
+ALL: No issues detected.
+
+ATC: No issues detected.
+
+BT: No issues detected.
+
+CHEBI: No issues detected.
+
+CL: No issues detected.
+
+CO: Unloadable
+
+DOID: No issues detected.
+
+MP: No issues detected.
+
+NPO: No issues detected.
 
 ## PDO_CAS.json
-No issues detected.
+
+ALL: No issues detected.
+
+ATO: No issues detected.
+
+MIXS: No issues detected.
 
 ## MIRNAO.json
-ALL: Inconsistent
 
-EV: Inconsistent
+ALL: Unloadable
 
-MS: Inconsistent
+AO: No issues detected.
 
-NCBITAXON: Inconsistent
+BFO: No issues detected.
 
+CHEBI: No issues detected.
+
+EV: Unloadable
+
+GO: No issues detected.
+
+GRO: No issues detected.
+
+MS: Unloadable
+
+NCBITAXON: Unloadable
+
+NCIT: No issues detected.
+
+NIGO: No issues detected.
+
+OBI: No issues detected.
+
+RNAO: No issues detected.
+
+SO: No issues detected.
 
 ## SSO.json
-CO: Inconsistent
 
+ALL: No issues detected.
+
+CO: Unloadable
 
 ## SYN.json
-AIDS: Inconsistent
 
-BRCT: Inconsistent
+AIDS: Unloadable
 
-CO: Inconsistent
+ALL: No issues detected.
 
-EV: Inconsistent
+BMT: No issues detected.
 
+BP: No issues detected.
+
+BRCT: Unloadable
+
+BT: No issues detected.
+
+CL: No issues detected.
+
+CN: No issues detected.
+
+CO: Unloadable
+
+EP: No issues detected.
+
+EV: Unloadable
+
+GRO: No issues detected.
+
+NCIT: No issues detected.
 
 ## ECP.json
-HL7: Inconsistent
 
+ALL: No issues detected.
+
+HL7: Unloadable
+
+STY: No issues detected.
 
 ## DDO.json
-ALL: Inconsistent
 
+ALL: No issues detected.
+
+AO: No issues detected.
+
+BFO: No issues detected.
+
+CHEBI: No issues detected.
+
+DOID: No issues detected.
+
+MP: No issues detected.
+
+MS: Unloadable
+
+OBI: No issues detected.
+
+UO: No issues detected.
 
 ## MINERAL.json
-CO: Inconsistent
 
-MS: Inconsistent
+ALL: No issues detected.
 
-matrRockIgneous: Inconsistent
+AO: No issues detected.
 
+BDO: No issues detected.
+
+CN: No issues detected.
+
+CO: Unloadable
+
+EP: No issues detected.
+
+MI: No issues detected.
+
+MS: Unloadable
+
+PDO: No issues detected.
+
+PW: No issues detected.
+
+SO: No issues detected.
+
+matrRockIgneous: Unloadable
 
 ## SAO.json
-No issues detected.
+
+ALL: No issues detected.
+
+AO: No issues detected.
 
 ## pseudo.json
-No issues detected.
+
+ALL: No issues detected.
+
+GO: No issues detected.
 
 ## EMO.json
-No issues detected.
+
+ALL: No issues detected.
+
+CHEBI: No issues detected.
+
+GO: No issues detected.
+
+MO: No issues detected.
 
 ## CAO.json
+
+ALL: No issues detected.
+
+AO: No issues detected.
+
+CHEBI: No issues detected.
+
 OBI: Inconsistent
 
+PR: No issues detected.
 
 ## SBOL.json
-No issues detected.
+
+ALL: No issues detected.
+
+MIRNAO: No issues detected.
+
+SBO: No issues detected.
+
+SO: No issues detected.
 
 ## CBO.json
-No issues detected.
+
+ALL: No issues detected.
+
+VT: No issues detected.
 
 ## SCHEMA.json
-No issues detected.
+
+ALL: No issues detected.
+
+GO: No issues detected.
 
 ## GRO.json
-No issues detected.
+
+ALL: No issues detected.
+
+BP: No issues detected.
+
+MA: No issues detected.
+
+MP: No issues detected.
+
+SP: No issues detected.
 
 ## BIRNLEX.json
-No issues detected.
+
+ALL: No issues detected.
+
+ATO: No issues detected.
 
 ## FTC.json
+
 ALL: 2232 unsatisfiable classes.
 
-HC: Inconsistent
+BT: No issues detected.
+
+CHEBI: No issues detected.
+
+GO: No issues detected.
+
+HC: Unloadable
+
+MP: No issues detected.
 
 NIGO: 1886 unsatisfiable classes.
 
+SCHEMA: No issues detected.
 
 ## CN.json
-ALL: Inconsistent
 
-CO: Inconsistent
+ALL: 642 unsatisfiable classes.
 
-HC: Inconsistent
+CO: Unloadable
 
-ISO: Inconsistent
+HC: Unloadable
 
-RP: Inconsistent
+HP: No issues detected.
 
-VO: Inconsistent
+ISO: Unloadable
 
+LDA: No issues detected.
+
+MA: No issues detected.
+
+MI: No issues detected.
+
+MO: No issues detected.
+
+MP: No issues detected.
+
+OF: No issues detected.
+
+PO: No issues detected.
+
+PP: No issues detected.
+
+RP: Unloadable
+
+RS: No issues detected.
+
+SO: No issues detected.
+
+SP: No issues detected.
+
+VO: Unloadable
 
 ## MATRROCK.json
-CO: Inconsistent
 
-MS: Inconsistent
+ALL: No issues detected.
 
-matrRockIgneous: Inconsistent
+AO: No issues detected.
 
+BDO: No issues detected.
+
+CN: No issues detected.
+
+CO: Unloadable
+
+EP: No issues detected.
+
+MI: No issues detected.
+
+MS: Unloadable
+
+PDO: No issues detected.
+
+PW: No issues detected.
+
+SO: No issues detected.
+
+matrRockIgneous: Unloadable
 
 ## MAMO.json
-No issues detected.
+
+ALL: No issues detected.
+
+MA: No issues detected.
 
 ## MHC.json
-HC: Inconsistent
 
-RB: Inconsistent
+ALL: No issues detected.
 
+HC: Unloadable
+
+MA: No issues detected.
+
+MI: No issues detected.
+
+MP: No issues detected.
+
+RB: Unloadable
 
 ## RNPRIO.json
-CO: Inconsistent
 
+ALL: No issues detected.
+
+BT: No issues detected.
+
+CO: Unloadable
 
 ## FBBT.json
-ALL: Inconsistent
+
+ALL: Unloadable
+
+ATO: No issues detected.
 
 FB-BT: 2187 unsatisfiable classes.
 
-FBbt: Inconsistent
+FBbt: Unloadable
+
+GO: No issues detected.
+
+MIRNAO: No issues detected.
 
 NIGO: 8 unsatisfiable classes.
 
+PATO: No issues detected.
+
+SO: No issues detected.
 
 ## HAO.json
-No issues detected.
+
+ALL: No issues detected.
+
+AO: No issues detected.
 
 ## NIGO.json
+
 ALL: 1142 unsatisfiable classes.
 
 GO: 1142 unsatisfiable classes.
 
-
 ## BAO.json
-ALL: Inconsistent
 
-GO: Unloadable
+ALL: Unloadable
 
-NCBITAXON: Inconsistent
+AO: No issues detected.
 
+ATO: No issues detected.
+
+BAO-GPCR: No issues detected.
+
+CHEBI: No issues detected.
+
+CL: No issues detected.
+
+DOID: No issues detected.
+
+EFO: No issues detected.
+
+ERO: No issues detected.
+
+FO: No issues detected.
+
+GO: No issues detected.
+
+NCBITAXON: Unloadable
+
+NIGO: No issues detected.
+
+PATO: No issues detected.
+
+UBERON: No issues detected.
 
 ## ENM.json
-ALL: Inconsistent
 
-EV: Inconsistent
+ALL: Unloadable
 
-OAE: Inconsistent
+AO: No issues detected.
 
+ATO: No issues detected.
+
+BAO-GPCR: No issues detected.
+
+BFO: No issues detected.
+
+BT: No issues detected.
+
+BTO: No issues detected.
+
+CCO: No issues detected.
+
+CCONT: No issues detected.
+
+CHEBI: No issues detected.
+
+CHEMINF: No issues detected.
+
+CHMO: No issues detected.
+
+CL: No issues detected.
+
+EFO: No issues detected.
+
+ENVO: No issues detected.
+
+EV: Unloadable
+
+FIX: No issues detected.
+
+FO: No issues detected.
+
+GO: No issues detected.
+
+NCIT: No issues detected.
+
+NIGO: No issues detected.
+
+NPO: No issues detected.
+
+OAE: Unloadable
+
+OBCS: No issues detected.
+
+OBI: No issues detected.
+
+PATO: No issues detected.
+
+STATO: No issues detected.
+
+UO: No issues detected.
 
 ## BSPO.json
-No issues detected.
+
+ALL: No issues detected.
+
+CARO: No issues detected.
+
+PO: No issues detected.
 
 ## CSEO.json
-AIDS: Inconsistent
 
-ALL: Inconsistent
+AIDS: Unloadable
 
-ARD: Inconsistent
+ALL: Unloadable
 
-CO: Inconsistent
+ARD: Unloadable
+
+ATO: No issues detected.
+
+BMT: No issues detected.
+
+BP: No issues detected.
+
+BT: No issues detected.
+
+CL: No issues detected.
+
+CN: No issues detected.
+
+CO: Unloadable
 
 ECG: 56 unsatisfiable classes.
 
 EO: 1 unsatisfiable classes.
 
-EV: Inconsistent
+EP: No issues detected.
+
+EV: Unloadable
+
+EXO: No issues detected.
 
 MO: 1 unsatisfiable classes.
 
+NCIT: No issues detected.
+
+PATO: No issues detected.
+
+UO: No issues detected.
 
 ## FLOPO.json
-No issues detected.
+
+ALL: No issues detected.
+
+NPHO: No issues detected.
+
+PO: No issues detected.
 
 ## CCON.json
-No issues detected.
+
+ALL: No issues detected.
+
+ENVO: No issues detected.
 
 ## HINO.json
-ALL: Inconsistent
 
-EV: Inconsistent
+ALL: Unloadable
 
-HC: Inconsistent
+AO: No issues detected.
 
-MS: Inconsistent
+BFO: No issues detected.
 
-NCBITAXON: Inconsistent
+BP: No issues detected.
 
-OGG: Inconsistent
+BT: No issues detected.
 
-OGG-MM: Inconsistent
+CHEBI: No issues detected.
 
-RB: Inconsistent
+CL: No issues detected.
 
-RP: Inconsistent
+CN: No issues detected.
+
+EP: No issues detected.
+
+EV: Unloadable
+
+GO: No issues detected.
+
+HC: Unloadable
+
+HP: No issues detected.
+
+INO: No issues detected.
+
+MI: No issues detected.
+
+MIRNAO: No issues detected.
+
+MP: No issues detected.
+
+MS: Unloadable
+
+NCBITAXON: Unloadable
+
+NIGO: No issues detected.
+
+OBI: No issues detected.
+
+OGG: Unloadable
+
+OGG-MM: Unloadable
+
+PE: No issues detected.
+
+PP: No issues detected.
+
+PR: No issues detected.
+
+PW: No issues detected.
+
+RB: Unloadable
+
+RP: Unloadable
+
+RS: No issues detected.
+
+SO: No issues detected.
 
 SP: 684 unsatisfiable classes.
 
+VT: No issues detected.
 
 ## ATOL.json
-No issues detected.
+
+ALL: No issues detected.
+
+ATO: No issues detected.
 
 ## MOD.json
-No issues detected.
+
+ALL: No issues detected.
+
+MO: No issues detected.
+
+PSIMOD: No issues detected.
 
 ## WB-BT.json
-WBBT: Inconsistent
 
+ALL: No issues detected.
+
+WBBT: Unloadable
 
 ## OBCS.json
-ALL: Inconsistent
 
-NCBITAXON: Inconsistent
+ALL: Unloadable
 
+AO: No issues detected.
+
+ATO: No issues detected.
+
+BFO: No issues detected.
+
+CHEBI: No issues detected.
+
+CL: No issues detected.
+
+GO: No issues detected.
+
+MIRNAO: No issues detected.
+
+NCBITAXON: Unloadable
+
+NIGO: No issues detected.
+
+OBI: No issues detected.
+
+PATO: No issues detected.
+
+SO: No issues detected.
+
+UO: No issues detected.
 
 ## ENVO.json
-VO: Inconsistent
 
+ALL: No issues detected.
+
+VO: Unloadable
 
 ## EOL.json
+
 ALL: 1 unsatisfiable classes.
 
 EO: 1 unsatisfiable classes.
 
-
 ## PCO.json
-ALL: Inconsistent
 
-CO: Inconsistent
+ALL: Unloadable
 
-NCBITAXON: Inconsistent
+AO: No issues detected.
+
+ATO: No issues detected.
+
+CARO: No issues detected.
+
+CO: Unloadable
+
+GO: No issues detected.
+
+NCBITAXON: Unloadable
 
 NIGO: 28 unsatisfiable classes.
 
+PATO: No issues detected.
 
 ## COGAT.json
-CO: Inconsistent
 
+ALL: No issues detected.
+
+AO: No issues detected.
+
+CO: Unloadable
 
 ## LOINC.json
-No issues detected.
+
+ALL: No issues detected.
+
+STY: No issues detected.
 
 ## FB-BT.json
+
 ALL: 2187 unsatisfiable classes.
 
 FBBT: 2187 unsatisfiable classes.
 
-FBbt: Inconsistent
-
+FBbt: Unloadable
 
 ## ONTODM-KDD.json
-ALL: Inconsistent
+
+ALL: Unloadable
 
 AO: 10 unsatisfiable classes.
 
@@ -2634,41 +6193,69 @@ ONTODT: 10 unsatisfiable classes.
 
 SWO: 10 unsatisfiable classes.
 
-
 ## VIVO.json
-No issues detected.
+
+ALL: No issues detected.
+
+ERO: No issues detected.
+
+SP: No issues detected.
+
+VIVO-ISF: No issues detected.
 
 ## PSDS.json
-GRO-CPGA: Inconsistent
 
-PO: Inconsistent
+ALL: No issues detected.
 
+GRO: No issues detected.
+
+GRO-CPGA: Unloadable
+
+PO: Unloadable
 
 ## GALEN.json
-AIDS: Inconsistent
 
-ALL: Inconsistent
+AIDS: Unloadable
 
-CO: Inconsistent
+ALL: Unloadable
 
-ECG: Inconsistent
+BP: No issues detected.
 
-EV: Inconsistent
+BT: No issues detected.
 
-HC: Inconsistent
+CN: No issues detected.
 
-MS: Inconsistent
+CO: Unloadable
 
-RP: Inconsistent
+ECG: No issues detected.
 
+EV: Unloadable
+
+HC: Unloadable
+
+MEDO: No issues detected.
+
+MI: No issues detected.
+
+MS: Unloadable
+
+PR: No issues detected.
+
+RP: Unloadable
+
+RS: No issues detected.
+
+SP: No issues detected.
+
+pseudo: No issues detected.
 ## Overall results
-Total MIREOT ontologies: 309
+Total MIREOT ontologies: 308
 
-Total MIREOT ontologies with some 'problem' concerning its references: 218
+Total MIREOT ontologies with some 'problem' concerning its references: 211
 
-Inconsistent ontology combinations: 700
+Inconsistent ontology combinations: 17
 
-Unloadable ontology combinations: 18
+Unloadable ontology combinations: 619
 
-Unsatisfiable class total: 109604
+Unsatisfiable class total: 101345
 

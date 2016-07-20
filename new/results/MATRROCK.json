@@ -1,6 +1,6 @@
 {
-    "matrRockIgneous": "Inconsistent",
-    "MS": "Inconsistent",
+    "matrRockIgneous": "UnloadableImportException",
+    "MS": "UnloadableImportException",
     "PW": {
         "count": 0,
         "classes": [
@@ -19,7 +19,7 @@
             
         ]
     },
-    "CO": "Inconsistent",
+    "CO": "UnloadableImportException",
     "MI": {
         "count": 0,
         "classes": [

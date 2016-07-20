@@ -5,8 +5,8 @@
             
         ]
     },
-    "CO": "Inconsistent",
-    "MS": "Inconsistent",
+    "CO": "UnloadableImportException",
+    "MS": "UnloadableImportException",
     "ALL": {
         "count": 0,
         "classes": [

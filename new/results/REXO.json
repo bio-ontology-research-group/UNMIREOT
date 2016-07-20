@@ -23,7 +23,7 @@
             
         ]
     },
-    "MS": "Inconsistent",
+    "MS": "UnloadableImportException",
     "RS": {
         "count": 0,
         "classes": [
@@ -39,7 +39,7 @@
             "http://purl.obolibrary.org/obo/MF_0000012"
         ]
     },
-    "RP": "Inconsistent",
+    "RP": "UnloadableImportException",
     "PP": {
         "count": 0,
         "classes": [
@@ -94,21 +94,21 @@
             
         ]
     },
-    "EV": "Inconsistent",
+    "EV": "UnloadableImportException",
     "MA": {
         "count": 0,
         "classes": [
             
         ]
     },
-    "HC": "Inconsistent",
+    "HC": "UnloadableImportException",
     "PE": {
         "count": 0,
         "classes": [
             
         ]
     },
-    "RB": "Inconsistent",
+    "RB": "UnloadableImportException",
     "SP": {
         "count": 0,
         "classes": [
@@ -127,9 +127,9 @@
             
         ]
     },
-    "CPT": "Inconsistent",
-    "BIM": "Inconsistent",
-    "ARD": "Inconsistent",
+    "CPT": "UnloadableImportException",
+    "BIM": "UnloadableImportException",
+    "ARD": "UnloadableImportException",
     "BHN": {
         "count": 0,
         "classes": [
@@ -142,7 +142,7 @@
             
         ]
     },
-    "PTS": "Inconsistent",
+    "PTS": "UnloadableImportException",
     "SSE": {
         "count": 0,
         "classes": [
@@ -173,7 +173,7 @@
             
         ]
     },
-    "IPR": "Inconsistent",
+    "IPR": "UnloadableImportException",
     "ZEA": {
         "count": 0,
         "classes": [
@@ -204,16 +204,16 @@
             
         ]
     },
-    "ZFS": "Inconsistent",
-    "NCBITAXON": "Inconsistent",
+    "ZFS": "UnloadableImportException",
+    "NCBITAXON": "UnloadableImportException",
     "PDQ": {
         "count": 0,
         "classes": [
             
         ]
     },
-    "RDL": "Inconsistent",
-    "RCD": "Inconsistent",
+    "RDL": "UnloadableImportException",
+    "RCD": "UnloadableImportException",
     "GMM": {
         "count": 0,
         "classes": [
@@ -232,7 +232,7 @@
             
         ]
     },
-    "DCM": "Inconsistent",
+    "DCM": "UnloadableImportException",
     "LPT": {
         "count": 0,
         "classes": [
@@ -245,6 +245,6 @@
             
         ]
     },
-    "HL7": "Inconsistent",
-    "ALL": "Inconsistent"
+    "HL7": "UnloadableImportException",
+    "ALL": "UnloadableImportException"
 }

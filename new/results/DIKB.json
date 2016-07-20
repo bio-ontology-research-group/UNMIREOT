@@ -1,6 +1,6 @@
 {
-    "EV": "Inconsistent",
-    "DDI": "Inconsistent",
+    "EV": "UnloadableImportException",
+    "DDI": "UnloadableImportException",
     "ALL": {
         "count": 0,
         "classes": [

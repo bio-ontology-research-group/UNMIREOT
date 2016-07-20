@@ -5,14 +5,14 @@
             
         ]
     },
-    "RB": "Inconsistent",
+    "RB": "UnloadableImportException",
     "CL": {
         "count": 0,
         "classes": [
             
         ]
     },
-    "CO": "Inconsistent",
+    "CO": "UnloadableImportException",
     "CN": {
         "count": 0,
         "classes": [

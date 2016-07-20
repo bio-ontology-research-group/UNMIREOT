@@ -5,7 +5,7 @@
             
         ]
     },
-    "MS": "Inconsistent",
+    "MS": "UnloadableImportException",
     "PECO": {
         "count": 0,
         "classes": [
@@ -18,7 +18,7 @@
             "http://www.semanticweb.org/ethnicityOntology#Shona"
         ]
     },
-    "PP": "Inconsistent",
+    "PP": "UnloadableImportException",
     "EDAM": {
         "count": 0,
         "classes": [
@@ -49,5 +49,5 @@
             
         ]
     },
-    "ALL": "Inconsistent"
+    "ALL": "UnloadableImportException"
 }

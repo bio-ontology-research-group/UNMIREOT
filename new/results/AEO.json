@@ -59,6 +59,6 @@
             
         ]
     },
-    "FBbt": "Inconsistent",
-    "ALL": "Inconsistent"
+    "FBbt": "UnloadableImportException",
+    "ALL": "UnloadableImportException"
 }

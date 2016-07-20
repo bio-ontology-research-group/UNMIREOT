@@ -1,4 +1,4 @@
 {
-    "EV": "Unloadable",
-    "ALL": "Inconsistent"
+    "EV": "UnloadableImportException",
+    "ALL": "OWLOntologyStorageException"
 }

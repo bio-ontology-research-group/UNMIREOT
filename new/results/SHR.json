@@ -1,14 +1,19 @@
 {
-    "MO": "Inconsistent",
+    "MO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
     "SO": {
         "count": 0,
         "classes": [
             
         ]
     },
-    "RP": "Inconsistent",
-    "MS": "Inconsistent",
-    "HC": "Inconsistent",
+    "RP": "UnloadableImportException",
+    "MS": "UnloadableImportException",
+    "HC": "UnloadableImportException",
     "PR": {
         "count": 0,
         "classes": [
@@ -27,9 +32,9 @@
             
         ]
     },
-    "HIV": "Inconsistent",
-    "CO": "Inconsistent",
-    "RB": "Inconsistent",
+    "HIV": "UnloadableImportException",
+    "CO": "UnloadableImportException",
+    "RB": "UnloadableImportException",
     "MF": {
         "count": 4,
         "classes": [

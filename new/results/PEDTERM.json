@@ -1,5 +1,5 @@
 {
-    "TO": "Inconsistent",
+    "TO": "UnloadableImportException",
     "CHD": {
         "count": 0,
         "classes": [
@@ -18,7 +18,7 @@
             
         ]
     },
-    "HIV": "Inconsistent",
+    "HIV": "UnloadableImportException",
     "ALL": {
         "count": 0,
         "classes": [

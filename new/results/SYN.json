@@ -5,8 +5,8 @@
             
         ]
     },
-    "EV": "Inconsistent",
-    "AIDS": "Inconsistent",
+    "EV": "UnloadableImportException",
+    "AIDS": "UnloadableImportException",
     "GRO": {
         "count": 0,
         "classes": [
@@ -19,8 +19,8 @@
             
         ]
     },
-    "CO": "Inconsistent",
-    "BRCT": "Inconsistent",
+    "CO": "UnloadableImportException",
+    "BRCT": "UnloadableImportException",
     "CN": {
         "count": 0,
         "classes": [

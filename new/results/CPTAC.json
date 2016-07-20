@@ -1,6 +1,6 @@
 {
-    "MS": "Inconsistent",
-    "CPT": "Inconsistent",
+    "MS": "UnloadableImportException",
+    "CPT": "UnloadableImportException",
     "ALL": {
         "count": 0,
         "classes": [

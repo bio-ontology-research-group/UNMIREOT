@@ -1,5 +1,5 @@
 {
-    "FMA": "Inconsistent",
+    "FMA": "NullPointerException",
     "GO": {
         "count": 0,
         "classes": [
@@ -18,11 +18,6 @@
             
         ]
     },
-    "CO": "Inconsistent",
-    "ALL": {
-        "count": 0,
-        "classes": [
-            
-        ]
-    }
+    "CO": "UnloadableImportException",
+    "ALL": "UnloadableImportException"
 }

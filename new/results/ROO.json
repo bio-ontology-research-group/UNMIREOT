@@ -1,15 +1,15 @@
 {
-    "NCIT": "Inconsistent",
-    "EV": "Inconsistent",
-    "OCRE": "Inconsistent",
+    "NCIT": "InconsistentOntologyException",
+    "EV": "UnloadableImportException",
+    "OCRE": "UnloadableImportException",
     "UO": {
         "count": 0,
         "classes": [
             
         ]
     },
-    "ICD10": "Inconsistent",
-    "SNOMEDCT": "Inconsistent",
+    "ICD10": "UnloadableImportException",
+    "SNOMEDCT": "UnloadableImportException",
     "ALL": {
         "count": 0,
         "classes": [

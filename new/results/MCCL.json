@@ -17,7 +17,7 @@
             
         ]
     },
-    "MS": "Inconsistent",
+    "MS": "UnloadableImportException",
     "EP": {
         "count": 0,
         "classes": [
@@ -30,7 +30,7 @@
             
         ]
     },
-    "TO": "Inconsistent",
+    "TO": "UnloadableImportException",
     "EO": {
         "count": 1,
         "classes": [
@@ -67,21 +67,21 @@
             
         ]
     },
-    "RP": "Inconsistent",
+    "RP": "UnloadableImportException",
     "PE": {
         "count": 0,
         "classes": [
             
         ]
     },
-    "CO": "Inconsistent",
+    "CO": "UnloadableImportException",
     "BP": {
         "count": 0,
         "classes": [
             
         ]
     },
-    "RB": "Inconsistent",
+    "RB": "UnloadableImportException",
     "AO": {
         "count": 0,
         "classes": [
@@ -100,7 +100,7 @@
             
         ]
     },
-    "HC": "Inconsistent",
+    "HC": "UnloadableImportException",
     "HP": {
         "count": 0,
         "classes": [
@@ -113,14 +113,14 @@
             
         ]
     },
-    "IMR": "Inconsistent",
+    "IMR": "UnloadableImportException",
     "SYN": {
         "count": 0,
         "classes": [
             
         ]
     },
-    "ARD": "Inconsistent",
+    "ARD": "UnloadableImportException",
     "PO": {
         "count": 0,
         "classes": [
@@ -190,7 +190,7 @@
             
         ]
     },
-    "OPE": "Inconsistent",
+    "OPE": "UnloadableImportException",
     "CRISP": {
         "count": 0,
         "classes": [
@@ -203,7 +203,7 @@
             
         ]
     },
-    "ISO": "Inconsistent",
+    "ISO": "UnloadableImportException",
     "BCO": {
         "count": 0,
         "classes": [
@@ -234,14 +234,19 @@
             
         ]
     },
-    "EV": "Inconsistent",
+    "EV": "UnloadableImportException",
     "OF": {
         "count": 0,
         "classes": [
             
         ]
     },
-    "INO": "Inconsistent",
+    "INO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
     "ADAR": {
         "count": 0,
         "classes": [
@@ -254,7 +259,7 @@
             
         ]
     },
-    "HIV": "Inconsistent",
+    "HIV": "UnloadableImportException",
     "EMO": {
         "count": 0,
         "classes": [
@@ -267,5 +272,5 @@
             
         ]
     },
-    "ALL": "Inconsistent"
+    "ALL": "UnloadableImportException"
 }

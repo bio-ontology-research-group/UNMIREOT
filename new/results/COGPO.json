@@ -1,13 +1,13 @@
 {
-    "CO": "Inconsistent",
-    "FMA": "Inconsistent",
+    "CO": "UnloadableImportException",
+    "FMA": "NullPointerException",
     "PO": {
         "count": 0,
         "classes": [
             
         ]
     },
-    "OBI": "Inconsistent",
+    "OBI": "InconsistentOntologyException",
     "AO": {
         "count": 0,
         "classes": [
@@ -44,5 +44,5 @@
             
         ]
     },
-    "ALL": "Inconsistent"
+    "ALL": "UnloadableImportException"
 }

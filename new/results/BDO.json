@@ -11,8 +11,8 @@
             
         ]
     },
-    "EV": "Inconsistent",
-    "RP": "Inconsistent",
+    "EV": "UnloadableImportException",
+    "RP": "UnloadableImportException",
     "ATO": {
         "count": 0,
         "classes": [
@@ -25,7 +25,7 @@
             
         ]
     },
-    "MS": "Inconsistent",
+    "MS": "UnloadableImportException",
     "PO": {
         "count": 0,
         "classes": [
@@ -50,5 +50,5 @@
             
         ]
     },
-    "ALL": "Inconsistent"
+    "ALL": "UnloadableImportException"
 }

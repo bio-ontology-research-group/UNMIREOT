@@ -1,9 +1,24 @@
 {
-    "PR": "Unloadable",
-    "PO": "Unloadable",
-    "MP": "Unloadable",
-    "HL7": "Inconsistent",
-    "TO": "Inconsistent",
+    "PR": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "PO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "MP": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "HL7": "UnloadableImportException",
+    "TO": "UnloadableImportException",
     "SCHEMA": {
         "count": 0,
         "classes": [

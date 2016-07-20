@@ -1,5 +1,5 @@
 {
-    "TO": "Inconsistent",
+    "TO": "UnloadableImportException",
     "CHEBI": {
         "count": 13,
         "classes": [

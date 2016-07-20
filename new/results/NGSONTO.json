@@ -1,6 +1,6 @@
 {
     "OBI": {
-        "count": 29,
+        "count": 33,
         "classes": [
             "http://purl.obolibrary.org/obo/OBI_0000626",
             "http://purl.obolibrary.org/obo/OBI_0001573",
@@ -26,6 +26,10 @@
             "http://purl.obolibrary.org/obo/OBI_0001924",
             "http://purl.obolibrary.org/obo/OBI_0001925",
             "http://purl.obolibrary.org/obo/OBI_0001919",
+            "http://purl.obolibrary.org/obo/OBI_0002019",
+            "http://purl.obolibrary.org/obo/OBI_0002017",
+            "http://purl.obolibrary.org/obo/OBI_0002015",
+            "http://purl.obolibrary.org/obo/OBI_0001966",
             "http://www.w3.org/2002/07/owl#Nothing",
             "http://purl.obolibrary.org/obo/OBI_0000695",
             "http://purl.obolibrary.org/obo/OBI_0001674",
@@ -46,7 +50,7 @@
             
         ]
     },
-    "NCBITAXON": "Inconsistent",
+    "NCBITAXON": "UnloadableImportException",
     "MIRNAO": {
         "count": 0,
         "classes": [
@@ -60,7 +64,7 @@
         ]
     },
     "ALL": {
-        "count": 29,
+        "count": 33,
         "classes": [
             "http://purl.obolibrary.org/obo/OBI_0000626",
             "http://purl.obolibrary.org/obo/OBI_0001573",
@@ -86,6 +90,10 @@
             "http://purl.obolibrary.org/obo/OBI_0001924",
             "http://purl.obolibrary.org/obo/OBI_0001925",
             "http://purl.obolibrary.org/obo/OBI_0001919",
+            "http://purl.obolibrary.org/obo/OBI_0002019",
+            "http://purl.obolibrary.org/obo/OBI_0002017",
+            "http://purl.obolibrary.org/obo/OBI_0002015",
+            "http://purl.obolibrary.org/obo/OBI_0001966",
             "http://www.w3.org/2002/07/owl#Nothing",
             "http://purl.obolibrary.org/obo/OBI_0000695",
             "http://purl.obolibrary.org/obo/OBI_0001674",
