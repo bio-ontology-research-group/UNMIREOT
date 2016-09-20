@@ -1,0 +1,11 @@
+ERO has 151 unsats with SWO
+NIGO has 1634 unsats with GO
+OBI 613 unsats with GO
+OBI 109 unsat with TO
+OBI+ERO=inconsistent
+OBI+VO=inconsistent
+OBI 1113 unsat with HP
+NCRO 1 unsat with OBI
+
+PCO_all 78 unsat
+NCRO_all = inconsistent
