@@ -43,15 +43,13 @@ eConf.setParameter(ReasonerConfiguration.INCREMENTAL_MODE_ALLOWED, "true")
 eConf.setParameter(ReasonerConfiguration.INCREMENTAL_TAXONOMY, "true")
 def reasonerFactory = new ElkReasonerFactory();
 def rConf = new ElkReasonerConfiguration(ElkReasonerConfiguration.getDefaultOwlReasonerConfiguration(new NullReasonerProgressMonitor()), eConf);
-def aCounts = [:]
+def aCounts = new JsonSlurper().parseText(new File("acount.json").text)
 
 def mireots = new JsonSlurper().parseText(new File("mireot_ontologies.json").text)
 mireots.each { id, refs ->
   def res = new JsonSlurper().parseText(new File("results/"+id+".json").text)
 
   res.each { comb, results ->
-    println results instanceof String
-    println results.hasProperty('classes')
     if(!(results instanceof String) && results['count'] > 0) { // there are some unsats
       def ontology
       def manager = OWLManager.createOWLOntologyManager()
@@ -62,6 +60,12 @@ mireots.each { id, refs ->
       def combinationPath = "temp/unmireot_test_" + id + "_and_" + comb + ".ontology"
 
       try {
+
+        if(aCounts[id + '_' + comb]) {
+          println "skipping " + id + " and " + comb
+          return
+        }
+
         ontology = manager
           .loadOntologyFromOntologyDocument(new IRIDocumentSource(IRI.create("file://"+currentDir+combinationPath)), config);
 
@@ -69,11 +73,20 @@ mireots.each { id, refs ->
         oReasoner.precomputeInferences(InferenceType.CLASS_HIERARCHY);
 
         println "[UNMIREOT] Reasoned " + id + " and " + comb + ", resulting in " + oReasoner.getEquivalentClasses(manager.getOWLDataFactory().getOWLNothing()).getEntitiesMinusBottom().size() + " unsatisfiable classes:"
+
         aCounts[id + '_' + comb] = [:]
+
         for(OWLClass cl : ontology.getClassesInSignature(true)) {
           if(!oReasoner.isSatisfiable(cl)) {
             def iri = cl.getIRI().toString() 
+            if(aCounts['last_iri'] == iri) {
+              println 'skipping because timeout iri'
+              continue;
+            }
             aCounts[id + '_' + comb][iri] = []
+            aCounts['last_iri'] = iri
+
+            new File('acount.json').text = new JsonBuilder(aCounts).toPrettyString()
 
             BlackBoxExplanation exp = new BlackBoxExplanation(ontology, reasonerFactory, oReasoner);
             HSTExplanationGenerator multExplanator = new HSTExplanationGenerator(exp);
@@ -91,7 +104,6 @@ mireots.each { id, refs ->
           }
         }
 
-        new File('acount.json').text = new JsonBuilder(aCounts).toPrettyString()
       } catch(org.semanticweb.owlapi.io.UnparsableOntologyException e) {
         println "[UNMIREOT] Unable to parse ontology with " + comb
       } catch(org.semanticweb.owlapi.model.UnloadableImportException e) {
