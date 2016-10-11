@@ -69,10 +69,11 @@ mireots.each { id, refs ->
         oReasoner.precomputeInferences(InferenceType.CLASS_HIERARCHY);
 
         println "[UNMIREOT] Reasoned " + id + " and " + comb + ", resulting in " + oReasoner.getEquivalentClasses(manager.getOWLDataFactory().getOWLNothing()).getEntitiesMinusBottom().size() + " unsatisfiable classes:"
-        aCounts[id + '_' + comb] = []
+        aCounts[id + '_' + comb] = [:]
         for(OWLClass cl : ontology.getClassesInSignature(true)) {
           if(!oReasoner.isSatisfiable(cl)) {
             def iri = cl.getIRI().toString() 
+            aCounts[id + '_' + comb][iri] = []
 
             BlackBoxExplanation exp = new BlackBoxExplanation(ontology, reasonerFactory, oReasoner);
             HSTExplanationGenerator multExplanator = new HSTExplanationGenerator(exp);
@@ -83,7 +84,7 @@ mireots.each { id, refs ->
                 System.out.println("Axioms causing the unsatisfiability: ");
                 for (OWLAxiom causingAxiom : explanation) {
                   System.out.println(causingAxiom);
-                  aCounts[id + '_' + comb] << causingAxiom.toString()
+                  aCounts[id + '_' + comb][iri] << causingAxiom.toString()
                 }
                 System.out.println("------------------");
             }
