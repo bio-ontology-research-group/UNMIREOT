@@ -35,6 +35,7 @@ import com.clarkparsia.owlapi.explanation.BlackBoxExplanation;
 import com.clarkparsia.owlapi.explanation.HSTExplanationGenerator;
 import groovy.transform.TimedInterrupt
 import java.util.concurrent.TimeUnit
+import java.util.concurrent.TimeoutException
 import groovy.json.*
 
 class CountAxioms {
@@ -64,7 +65,7 @@ class CountAxioms {
           def combinationPath = "temp/unmireot_test_" + id + "_and_" + comb + ".ontology"
 
           try {
-            if(aCounts.dead_combos.contains(id + '_' + comb)) {
+            if((aCounts[id + '_' + comb] && aCounts[id + '_' + comb].size() > 0) || aCounts.dead_combos.contains(id + '_' + comb)) {
               println "skipping " + id + " and " + comb
               return
             }
@@ -96,7 +97,6 @@ class CountAxioms {
     }
   }
 
-  @TimedInterrupt(value = 10L, unit = TimeUnit.HOURS)
   def findExplanations(ontology, oReasoner, id, comb) {
     for(OWLClass cl : ontology.getClassesInSignature(true)) {
       if(!oReasoner.isSatisfiable(cl)) {
@@ -114,8 +114,21 @@ class CountAxioms {
         HSTExplanationGenerator multExplanator = new HSTExplanationGenerator(exp)
 
         try {
-          getClassExplanations(multExplanator, cl, iri, id, comb)
-        } catch(e) {
+          def t = new Thread(new getExplanations(['multExplanator':multExplanator,'cl':cl,'comb':comb,'id':id,'iri':iri]))
+          def startTime = System.currentTimeMillis();
+          def endTime = startTime + (60000L*2);
+          t.start()
+
+          while (System.currentTimeMillis() < endTime) {
+              try {
+                   Thread.sleep(500L);  // Sleep 1/2 second
+              } catch (InterruptedException e) {
+              }
+          }
+
+          t.interrupt();
+          t.join();
+        } catch(java.util.concurrent.TimeoutException e) {
           println e.getClass().getSimpleName()
           new File('acount.json').text = new JsonBuilder(aCounts).toPrettyString()
           e.printStackTrace()
@@ -123,18 +136,23 @@ class CountAxioms {
       }
     }
   }
+}
 
-  @TimedInterrupt(value = 5L, unit = TimeUnit.MINUTES)
-  def getClassExplanations(multExplanator, cl, iri, id, comb) {
+class getExplanations implements Runnable {
+  def multExplanator
+  def cl
+  def iri
+  def id
+  def comb
+
+  @Override
+  void run() {
     Set<Set<OWLAxiom>> explanations=multExplanator.getExplanations(cl);
+    def aCounts = new JsonSlurper().parseText(new File("acount.json").text)
     for(Set<OWLAxiom> explanation : explanations) {
-        //System.out.println("------------------");
-        //System.out.println("Axioms causing the unsatisfiability: ");
-        for (OWLAxiom causingAxiom : explanation) {
-          //System.out.println(causingAxiom);
-          aCounts[id + '_' + comb][iri] << causingAxiom.toString()
-        }
-        //System.out.println("------------------");
+      for (OWLAxiom causingAxiom : explanation) {
+        aCounts[id + '_' + comb][iri] << causingAxiom.toString()
+      }
     }
   }
 }
