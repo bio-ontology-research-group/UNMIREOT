@@ -115,8 +115,8 @@ class CountAxioms {
 
         try {
           def t = new Thread(new getExplanations(['multExplanator':multExplanator,'cl':cl,'comb':comb,'id':id,'iri':iri]))
-          def startTime = System.currentTimeMillis();
-          def endTime = startTime + (60000L*2);
+          def startTime = System.currentTimeMillis()
+          def endTime = startTime + (60000L*3)
           t.start()
 
           while (System.currentTimeMillis() < endTime) {
