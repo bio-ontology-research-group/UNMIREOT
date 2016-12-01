@@ -116,18 +116,21 @@ class CountAxioms {
         try {
           def t = new Thread(new getExplanations(['multExplanator':multExplanator,'cl':cl,'comb':comb,'id':id,'iri':iri]))
           def startTime = System.currentTimeMillis()
-          def endTime = startTime + (60000L*3)
+          def endTime = startTime + (60000L*2)
           t.start()
 
-          while (System.currentTimeMillis() < endTime) {
+          while(System.currentTimeMillis() < endTime) {
               try {
-                   Thread.sleep(500L);  // Sleep 1/2 second
+                Thread.sleep(500L);  // Sleep 1/2 second
               } catch (InterruptedException e) {
+                println "already done?"
               }
           }
 
-          t.interrupt();
-          t.join();
+          t.interrupt()
+          t.join()
+
+          aCounts = new JsonSlurper().parseText(new File("acount.json").text) // Load any new changes....
         } catch(java.util.concurrent.TimeoutException e) {
           println e.getClass().getSimpleName()
           new File('acount.json').text = new JsonBuilder(aCounts).toPrettyString()
@@ -154,6 +157,7 @@ class getExplanations implements Runnable {
         aCounts[id + '_' + comb][iri] << causingAxiom.toString()
       }
     }
+    new File('acount.json').text = new JsonBuilder(aCounts).toPrettyString()
   }
 }
 

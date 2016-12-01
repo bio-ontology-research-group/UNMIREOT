@@ -4094,6 +4094,254 @@
             "SubClassOf(Annotation(<http://www.co-ode.org/patterns#createdBy> \"http://www.ebi.ac.uk/ontology/webulous#OPPL_pattern\"^^xsd:string) <http://www.orpha.net/ORDO/Orphanet_31837> <http://www.ebi.ac.uk/efo/EFO_0001361>)"
         ]
     },
+    "CCO_GO": {
+        "http://purl.obolibrary.org/obo/IntAct_EBI-2215791": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/IntAct_EBI-2275892": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/IntAct_EBI-2346004": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/IntAct_EBI-2463807": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/IntAct_EBI-2463813": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/IntAct_EBI-2463818": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/IntAct_EBI-2463823": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/IntAct_EBI-2463828": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/IntAct_EBI-2463833": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/IntAct_EBI-2560950": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/IntAct_EBI-2613075": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/IntAct_EBI-262153": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/IntAct_EBI-279314": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/IntAct_EBI-282736": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/IntAct_EBI-335831": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/IntAct_EBI-335843": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/IntAct_EBI-3665102": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/IntAct_EBI-3685063": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/IntAct_EBI-3685737": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/IntAct_EBI-3685745": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/IntAct_EBI-3685785": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/IntAct_EBI-3693190": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/IntAct_EBI-3701179": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/IntAct_EBI-3758581": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/IntAct_EBI-3762253": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/IntAct_EBI-376455": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/IntAct_EBI-376458": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/IntAct_EBI-376461": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/IntAct_EBI-3778032": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/IntAct_EBI-3782815": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/IntAct_EBI-380034": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/IntAct_EBI-3932133": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/IntAct_EBI-3932173": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/IntAct_EBI-3932183": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/IntAct_EBI-3932193": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/IntAct_EBI-509581": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/IntAct_EBI-514636": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/IntAct_EBI-5283727": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/IntAct_EBI-593759": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/IntAct_EBI-599101": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/IntAct_EBI-619101": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/IntAct_EBI-655716": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/IntAct_EBI-655728": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/IntAct_EBI-655738": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/IntAct_EBI-655748": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/IntAct_EBI-656095": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/IntAct_EBI-728594": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/IntAct_EBI-728597": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/IntAct_EBI-729906": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/IntAct_EBI-732223": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/IntAct_EBI-732235": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/IntAct_EBI-737747": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/IntAct_EBI-752848": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/IntAct_EBI-769729": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/IntAct_EBI-770052": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/IntAct_EBI-777086": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/IntAct_EBI-785523": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/IntAct_EBI-790575": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/IntAct_EBI-793588": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/IntAct_EBI-800456": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/IntAct_EBI-805004": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/IntAct_EBI-805026": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/IntAct_EBI-805054": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/IntAct_EBI-809795": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/IntAct_EBI-818622": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/IntAct_EBI-849170": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/IntAct_EBI-895654": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/IntAct_EBI-910875": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/IntAct_EBI-929933": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/IntAct_EBI-939510": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/IntAct_EBI-979050": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/IntAct_EBI-979082": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/NCBIGene_174620": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/NCBIGene_174658": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/NCBIGene_174698": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/NCBIGene_56305": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/NCBIGene_56317": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/UniProt_A6NEM2": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/UniProt_B9EJ22": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/UniProt_Q6DCG5": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/UniProt_Q92878": [
+            
+        ],
+        "http://purl.obolibrary.org/obo/UniProt_Q92889": [
+            
+        ]
+    },
     "dead_combos": [
         "CCONT_CL",
         "CCONT_IDO",
