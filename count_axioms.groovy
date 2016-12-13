@@ -34,9 +34,10 @@ import java.io.PrintWriter
 import com.clarkparsia.owlapi.explanation.BlackBoxExplanation;
 import com.clarkparsia.owlapi.explanation.HSTExplanationGenerator;
 import groovy.transform.TimedInterrupt
-import java.util.concurrent.TimeUnit
-import java.util.concurrent.TimeoutException
+
+import java.util.concurrent.*
 import groovy.json.*
+import groovyx.gpars.*
 
 class CountAxioms {
   def aCounts = new JsonSlurper().parseText(new File("acount.json").text)
@@ -99,26 +100,28 @@ class CountAxioms {
   }
 
   def findExplanations(ontology, oReasoner, id, comb) {
-    for(OWLClass cl : ontology.getClassesInSignature(true)) {
-      if(!oReasoner.isSatisfiable(cl)) {
-        def iri = cl.getIRI().toString() 
-        if(aCounts[id + '_' + comb].containsKey(iri)) {
-          println "skipping iri " + iri
-          continue;
+    def oExplanations = new ConcurrentHashMap()
+
+    GParsPool.withPool {
+      ontology.getClassesInSignature(true).eachParallel { cl ->
+        if(!oReasoner.isSatisfiable(cl)) {
+          def iri = cl.getIRI().toString() 
+          oExplanations[iri] = []
+          println 'procing ' + iri
+
+          BlackBoxExplanation exp = new BlackBoxExplanation(ontology, reasonerFactory, oReasoner)
+
+          Set<OWLAxiom> explanations = exp.getExplanation(cl)
+          for (OWLAxiom causingAxiom : explanations) {
+            oExplanations[iri] << causingAxiom.toString()
+          }
+
         }
-        aCounts[id + '_' + comb][iri] = []
-        println 'procing ' + iri
-
-        BlackBoxExplanation exp = new BlackBoxExplanation(ontology, reasonerFactory, oReasoner)
-
-        Set<OWLAxiom> explanations = exp.getExplanation(cl)
-        for (OWLAxiom causingAxiom : explanations) {
-          aCounts[id + '_' + comb][iri] << causingAxiom.toString()
-        }
-
-        new File('acount.json').text = new JsonBuilder(aCounts).toPrettyString()
       }
     }
+
+    aCounts[id + '_' + comb] = oExplanations
+    new File('acount.json').text = new JsonBuilder(aCounts).toPrettyString()
   }
 }
 
