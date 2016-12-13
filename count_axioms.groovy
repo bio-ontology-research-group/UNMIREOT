@@ -1,15 +1,15 @@
 @Grapes([
-          @Grab(group='com.google.code.gson', module='gson', version='2.3.1'),
-          @Grab(group='org.slf4j', module='slf4j-log4j12', version='1.7.10'),
-          @Grab(group='org.semanticweb.elk', module='elk-owlapi', version='0.4.2'),
-          @Grab(group='net.sourceforge.owlapi', module='owlapi-api', version='4.1.0'),
-          @Grab(group='net.sourceforge.owlapi', module='owlapi-apibinding', version='4.1.0'),
-          @Grab(group='net.sourceforge.owlapi', module='owlapi-impl', version='4.1.0'),
-          @Grab(group='net.sourceforge.owlapi', module='owlapi-parsers', version='4.1.0'),
-          @Grab(group='org.codehaus.gpars', module='gpars', version='1.1.0'),
-          @Grab(group='org.codehaus.groovy.modules.http-builder', module='http-builder', version='0.7' ),
-	  @GrabConfig(systemClassLoader=true)
-	])
+  @Grab(group='com.google.code.gson', module='gson', version='2.3.1'),
+  @Grab(group='org.slf4j', module='slf4j-log4j12', version='1.7.10'),
+  @Grab(group='org.semanticweb.elk', module='elk-owlapi', version='0.4.2'),
+  @Grab(group='net.sourceforge.owlapi', module='owlapi-api', version='4.1.0'),
+  @Grab(group='net.sourceforge.owlapi', module='owlapi-apibinding', version='4.1.0'),
+  @Grab(group='net.sourceforge.owlapi', module='owlapi-impl', version='4.1.0'),
+  @Grab(group='net.sourceforge.owlapi', module='owlapi-parsers', version='4.1.0'),
+  @Grab(group='org.codehaus.gpars', module='gpars', version='1.1.0'),
+  @Grab(group='org.codehaus.groovy.modules.http-builder', module='http-builder', version='0.7' ),
+  @GrabConfig(systemClassLoader=true)
+])
  
 import org.semanticweb.owlapi.io.* 
 import org.semanticweb.owlapi.model.*
@@ -90,7 +90,8 @@ class CountAxioms {
             println "skipping " + id + '_' + comb
             aCounts.dead_combos << id + '_' + comb
             new File('acount.json').text = new JsonBuilder(aCounts).toPrettyString()
-            println e.getClass().getSimpleName()
+            //println e.getClass().getSimpleName()
+            e.printStackTrace()
           }
         }
       }
@@ -108,56 +109,16 @@ class CountAxioms {
         aCounts[id + '_' + comb][iri] = []
         println 'procing ' + iri
 
-        new File('acount.json').text = new JsonBuilder(aCounts).toPrettyString()
-
         BlackBoxExplanation exp = new BlackBoxExplanation(ontology, reasonerFactory, oReasoner)
-        HSTExplanationGenerator multExplanator = new HSTExplanationGenerator(exp)
 
-        try {
-          def t = new Thread(new getExplanations(['multExplanator':multExplanator,'cl':cl,'comb':comb,'id':id,'iri':iri]))
-          def startTime = System.currentTimeMillis()
-          def endTime = startTime + (60000L*2)
-          t.start()
-
-          while(System.currentTimeMillis() < endTime) {
-              try {
-                Thread.sleep(500L);  // Sleep 1/2 second
-              } catch (InterruptedException e) {
-                println "already done?"
-              }
-          }
-
-          t.interrupt()
-          t.join()
-
-          aCounts = new JsonSlurper().parseText(new File("acount.json").text) // Load any new changes....
-        } catch(java.util.concurrent.TimeoutException e) {
-          println e.getClass().getSimpleName()
-          new File('acount.json').text = new JsonBuilder(aCounts).toPrettyString()
-          e.printStackTrace()
+        Set<OWLAxiom> explanations = exp.getExplanation(cl)
+        for (OWLAxiom causingAxiom : explanations) {
+          aCounts[id + '_' + comb][iri] << causingAxiom.toString()
         }
+
+        new File('acount.json').text = new JsonBuilder(aCounts).toPrettyString()
       }
     }
-  }
-}
-
-class getExplanations implements Runnable {
-  def multExplanator
-  def cl
-  def iri
-  def id
-  def comb
-
-  @Override
-  void run() {
-    Set<Set<OWLAxiom>> explanations=multExplanator.getExplanations(cl);
-    def aCounts = new JsonSlurper().parseText(new File("acount.json").text)
-    for(Set<OWLAxiom> explanation : explanations) {
-      for (OWLAxiom causingAxiom : explanation) {
-        aCounts[id + '_' + comb][iri] << causingAxiom.toString()
-      }
-    }
-    new File('acount.json').text = new JsonBuilder(aCounts).toPrettyString()
   }
 }
 
