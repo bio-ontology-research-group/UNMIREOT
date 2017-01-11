@@ -1,0 +1,29 @@
+{
+    "NCIT": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "EV": "UnloadableImportException",
+    "SNOMEDCT": "IllegalArgumentException",
+    "HP": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "MI": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "INFECTION": "UnloadableImportException",
+    "MP": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    }
+}

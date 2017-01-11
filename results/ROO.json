@@ -1,0 +1,13 @@
+{
+    "NCIT": "InconsistentOntologyException",
+    "EV": "UnloadableImportException",
+    "OCRE": "UnloadableImportException",
+    "UO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "ICD10": "IllegalArgumentException",
+    "SNOMEDCT": "IllegalArgumentException"
+}

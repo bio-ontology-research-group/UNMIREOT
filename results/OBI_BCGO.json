@@ -1,0 +1,188 @@
+{
+    "EFO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "FO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "OBI": "InconsistentOntologyException",
+    "UBERON": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "ERO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "CHEBI": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "BCGO": "UnloadableImportException",
+    "MIRNAO": "UnloadableImportException",
+    "SO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "CL": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "NIGO": {
+        "count": 5,
+        "classes": [
+            "http://purl.obolibrary.org/obo/GO_0044706",
+            "http://purl.obolibrary.org/obo/GO_0007565",
+            "http://purl.obolibrary.org/obo/GO_0048477",
+            "http://purl.obolibrary.org/obo/CL_0000021",
+            "http://purl.obolibrary.org/obo/CL_0000023"
+        ]
+    },
+    "GO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "EO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "PR": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "AO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "BFO": {
+        "count": 4,
+        "classes": [
+            "http://purl.obolibrary.org/obo/OBI_0000291",
+            "http://purl.obolibrary.org/obo/BCGO_0000088",
+            "http://purl.obolibrary.org/obo/OBI_0002019",
+            "http://purl.obolibrary.org/obo/OBI_0002018"
+        ]
+    },
+    "PATO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "ATO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "BTO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "BT": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "UO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "NCBITAXON": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "SWO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "MS": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "ENVO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "FMA": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "RS": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "NBO": {
+        "count": 3,
+        "classes": [
+            "http://purl.obolibrary.org/obo/GO_0042750",
+            "http://purl.obolibrary.org/obo/GO_0044250",
+            "http://purl.obolibrary.org/obo/GO_0042751"
+        ]
+    },
+    "CARO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "VT": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "GAZ": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "MP": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    }
+}

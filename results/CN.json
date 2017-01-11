@@ -1,0 +1,84 @@
+{
+    "SO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "MA": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "PP": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "PO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "MI": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "RP": "UnloadableImportException",
+    "MP": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "RS": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "OF": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "SP": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "MO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "VO": {
+        "count": 0,
+        "classes": [
+            "http://www.w3.org/2002/07/owl#Nothing"
+        ]
+    },
+    "ISO": "UnloadableImportException",
+    "HP": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "LDA": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "HC": "UnloadableImportException",
+    "CO": "UnloadableImportException"
+}

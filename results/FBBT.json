@@ -1,0 +1,52 @@
+{
+    "FB-BT": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "FBbt": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "NIGO": {
+        "count": 8,
+        "classes": [
+            "http://purl.obolibrary.org/obo/GO_0044706",
+            "http://purl.obolibrary.org/obo/FBbt_00003555",
+            "http://purl.obolibrary.org/obo/GO_0007320",
+            "http://purl.obolibrary.org/obo/FBbt_00004923",
+            "http://purl.obolibrary.org/obo/FBbt_00004922",
+            "http://purl.obolibrary.org/obo/FBbt_00004921",
+            "http://purl.obolibrary.org/obo/GO_0046693",
+            "http://purl.obolibrary.org/obo/GO_0046692"
+        ]
+    },
+    "GO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "PATO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "ATO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "MIRNAO": "UnloadableImportException",
+    "SO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    }
+}

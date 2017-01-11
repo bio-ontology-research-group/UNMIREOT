@@ -39,6 +39,7 @@ import java.util.concurrent.*
 import groovy.json.*
 import groovyx.gpars.*
 
+// todo: you don't even have to use a class, just use @Field instead
 class CountAxioms {
   def aCounts = new JsonSlurper().parseText(new File("acount.json").text)
   def reasonerFactory = new ElkReasonerFactory();
@@ -72,10 +73,10 @@ class CountAxioms {
             }
 
             def ontology = manager
-              .loadOntologyFromOntologyDocument(new IRIDocumentSource(IRI.create("file://"+currentDir+combinationPath)), config);
+              .loadOntologyFromOntologyDocument(new IRIDocumentSource(IRI.create("file://"+currentDir+combinationPath)), config)
 
-            def oReasoner = reasonerFactory.createReasoner(ontology, rConf);
-            oReasoner.precomputeInferences(InferenceType.CLASS_HIERARCHY);
+            def oReasoner = reasonerFactory.createReasoner(ontology, rConf)
+            oReasoner.precomputeInferences(InferenceType.CLASS_HIERARCHY)
 
             println "[UNMIREOT] Reasoned " + id + " and " + comb + ", resulting in " + oReasoner.getEquivalentClasses(manager.getOWLDataFactory().getOWLNothing()).getEntitiesMinusBottom().size() + " unsatisfiable classes:"
             aCounts[id + '_' + comb] = [:]
@@ -112,10 +113,9 @@ class CountAxioms {
           BlackBoxExplanation exp = new BlackBoxExplanation(ontology, reasonerFactory, oReasoner)
 
           Set<OWLAxiom> explanations = exp.getExplanation(cl)
-          for (OWLAxiom causingAxiom : explanations) {
+          for(OWLAxiom causingAxiom : explanations) {
             oExplanations[iri] << causingAxiom.toString()
           }
-
         }
       }
     }

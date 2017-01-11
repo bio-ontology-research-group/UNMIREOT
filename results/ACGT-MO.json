@@ -1,0 +1,86 @@
+{
+    "EO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "PR": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "EP": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "RB": "UnloadableImportException",
+    "RP": "UnloadableImportException",
+    "MA": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "MP": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "CO": "UnloadableImportException",
+    "ARD": "UnloadableImportException",
+    "PO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "CMF": "UnloadableImportException",
+    "MI": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "PP": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "SIO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "RS": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "HC": "UnloadableImportException",
+    "GO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "PE": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "ECG": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    }
+}

@@ -1,0 +1,61 @@
+{
+    "ONTODT": {
+        "count": 2,
+        "classes": [
+            "http://kt.ijs.si/panovp/OntoDM#OntoDM_661861",
+            "http://kt.ijs.si/panovp/OntoDM.owl#OntoDM_295724"
+        ]
+    },
+    "OBI": "InconsistentOntologyException",
+    "AO": {
+        "count": 2,
+        "classes": [
+            "http://kt.ijs.si/panovp/OntoDM#OntoDM_661861",
+            "http://kt.ijs.si/panovp/OntoDM.owl#OntoDM_295724"
+        ]
+    },
+    "SWO": {
+        "count": 4,
+        "classes": [
+            "http://kt.ijs.si/panovp/OntoDM#OntoDM_661861",
+            "http://kt.ijs.si/panovp/OntoDM.owl#OntoDM_295724",
+            "http://www.ebi.ac.uk/swo/data/SWO_3000056",
+            "http://www.ebi.ac.uk/swo/data/SWO_3000055"
+        ]
+    },
+    "BFO": {
+        "count": 2,
+        "classes": [
+            "http://kt.ijs.si/panovp/OntoDM#OntoDM_661861",
+            "http://kt.ijs.si/panovp/OntoDM.owl#OntoDM_295724"
+        ]
+    },
+    "PATO": {
+        "count": 2,
+        "classes": [
+            "http://kt.ijs.si/panovp/OntoDM#OntoDM_661861",
+            "http://kt.ijs.si/panovp/OntoDM.owl#OntoDM_295724"
+        ]
+    },
+    "ATO": {
+        "count": 2,
+        "classes": [
+            "http://kt.ijs.si/panovp/OntoDM#OntoDM_661861",
+            "http://kt.ijs.si/panovp/OntoDM.owl#OntoDM_295724"
+        ]
+    },
+    "GAZ": {
+        "count": 2,
+        "classes": [
+            "http://kt.ijs.si/panovp/OntoDM#OntoDM_661861",
+            "http://kt.ijs.si/panovp/OntoDM.owl#OntoDM_295724"
+        ]
+    },
+    "UO": {
+        "count": 2,
+        "classes": [
+            "http://kt.ijs.si/panovp/OntoDM#OntoDM_661861",
+            "http://kt.ijs.si/panovp/OntoDM.owl#OntoDM_295724"
+        ]
+    }
+}

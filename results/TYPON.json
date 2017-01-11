@@ -1,0 +1,22 @@
+{
+    "MIRNAO": "UnloadableImportException",
+    "SO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "ENVO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "BFO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "OBI": "InconsistentOntologyException"
+}

@@ -1,0 +1,91 @@
+{
+    "NCIT": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "EV": "UnloadableImportException",
+    "CL": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "SNOMEDCT": "IllegalArgumentException",
+    "MESH": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "CRISP": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "ICNP2015": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "LOINC": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "SP": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "RCD": "IllegalArgumentException",
+    "MI": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "EFO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "FO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "HP": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "NBO": {
+        "count": 3,
+        "classes": [
+            "http://purl.obolibrary.org/obo/GO_0042750",
+            "http://purl.obolibrary.org/obo/GO_0044250",
+            "http://purl.obolibrary.org/obo/GO_0042751"
+        ]
+    },
+    "AO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "BFO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    }
+}

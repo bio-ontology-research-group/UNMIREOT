@@ -1,0 +1,63 @@
+{
+    "BFO": {
+        "count": 5,
+        "classes": [
+            "http://purl.obolibrary.org/obo/IAO_0000109",
+            "http://purl.obolibrary.org/obo/OBI_0001620",
+            "http://purl.obolibrary.org/obo/OBI_0001573",
+            "http://purl.obolibrary.org/obo/OBI_0600047",
+            "http://purl.obolibrary.org/obo/OBI_0000973"
+        ]
+    },
+    "OBI": "InconsistentOntologyException",
+    "CHEBI": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "AO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "PATO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "ATO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "CO": "UnloadableImportException",
+    "MIRNAO": "UnloadableImportException",
+    "SO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "MIXS": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "CARO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "PR": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    }
+}

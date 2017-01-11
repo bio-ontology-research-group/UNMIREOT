@@ -1,0 +1,34 @@
+{
+    "NCBITAXON": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "OBI": "InconsistentOntologyException",
+    "AO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "CHEBI": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "BFO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "MIRNAO": "UnloadableImportException",
+    "SO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    }
+}

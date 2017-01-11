@@ -1,0 +1,44 @@
+{
+    "MO": "UnloadableImportException",
+    "SO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "RP": "UnloadableImportException",
+    "MS": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "HC": "UnloadableImportException",
+    "PR": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "EO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "BP": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "HIV": "IllegalArgumentException",
+    "CO": "UnloadableImportException",
+    "RB": "UnloadableImportException",
+    "MF": {
+        "count": 1,
+        "classes": [
+            "http://purl.obolibrary.org/obo/MF_0000003"
+        ]
+    }
+}

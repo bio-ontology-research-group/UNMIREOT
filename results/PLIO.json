@@ -1,0 +1,32 @@
+{
+    "MS": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "PR": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "NMR": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "CL": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "MF": {
+        "count": 1,
+        "classes": [
+            "http://purl.obolibrary.org/obo/MF_0000003"
+        ]
+    }
+}

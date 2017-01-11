@@ -1,0 +1,15 @@
+{
+    "RB": "UnloadableImportException",
+    "MF": {
+        "count": 1,
+        "classes": [
+            "http://purl.obolibrary.org/obo/MF_0000003"
+        ]
+    },
+    "SO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    }
+}

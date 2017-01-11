@@ -1,0 +1,65 @@
+{
+    "HC": "UnloadableImportException",
+    "VO": {
+        "count": 0,
+        "classes": [
+            "http://www.w3.org/2002/07/owl#Nothing"
+        ]
+    },
+    "BDO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "PW": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "matrRockIgneous": "UnloadableImportException",
+    "CN": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "CO": "UnloadableImportException",
+    "MI": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "AO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "EP": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "PDO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "SO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "MS": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    }
+}

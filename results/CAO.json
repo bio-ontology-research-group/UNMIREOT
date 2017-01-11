@@ -1,0 +1,21 @@
+{
+    "OBI": "InconsistentOntologyException",
+    "AO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "CHEBI": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "PR": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    }
+}

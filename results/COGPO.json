@@ -1,0 +1,52 @@
+{
+    "CO": "UnloadableImportException",
+    "FMA": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "PO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "OBI": {
+        "count": 0,
+        "classes": [
+            "http://www.w3.org/2002/07/owl#Nothing"
+        ]
+    },
+    "AO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "BFO": "UnloadableImportException",
+    "UO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "GAZ": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "PATO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "ATO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    }
+}

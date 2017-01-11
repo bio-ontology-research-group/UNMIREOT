@@ -1,0 +1,93 @@
+{
+    "OBI": "InconsistentOntologyException",
+    "ATO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "AO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "EO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "BFO": {
+        "count": 6,
+        "classes": [
+            "http://purl.obolibrary.org/obo/STATO_0000147",
+            "http://purl.obolibrary.org/obo/STATO_0000186",
+            "http://purl.obolibrary.org/obo/STATO_0000256",
+            "http://purl.obolibrary.org/obo/STATO_0000254",
+            "http://purl.obolibrary.org/obo/STATO_0000091",
+            "http://purl.obolibrary.org/obo/STATO_0000123"
+        ]
+    },
+    "NCBITAXON": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "NIGO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "GO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "CHEBI": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "UO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "MS": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "CARO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "PR": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "CL": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "MIRNAO": "UnloadableImportException",
+    "SO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    }
+}

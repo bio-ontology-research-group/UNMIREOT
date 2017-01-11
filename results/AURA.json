@@ -1,0 +1,14 @@
+{
+    "NMR": "UnparsableOntologyException",
+    "MP": "UnparsableOntologyException",
+    "SO": "UnparsableOntologyException",
+    "EP": "UnparsableOntologyException",
+    "HC": "UnloadableImportException",
+    "CO": "UnloadableImportException",
+    "SP": "UnparsableOntologyException",
+    "FO": "UnparsableOntologyException",
+    "TO": "UnparsableOntologyException",
+    "HIV": "IllegalArgumentException",
+    "AIDS": "UnloadableImportException",
+    "PE": "UnparsableOntologyException"
+}

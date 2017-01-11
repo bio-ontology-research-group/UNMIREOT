@@ -1,0 +1,38 @@
+{
+    "PROVO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "STATO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "ATO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "OBI": {
+        "count": 0,
+        "classes": [
+            "http://www.w3.org/2002/07/owl#Nothing"
+        ]
+    },
+    "NGSONTO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "SP": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    }
+}

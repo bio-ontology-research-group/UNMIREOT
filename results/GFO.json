@@ -1,0 +1,38 @@
+{
+    "GFO-BIO": {
+        "count": 30,
+        "classes": [
+            "http://www.onto-med.de/ontologies/gfo.owl#Processual_role",
+            "http://www.onto-med.de/ontologies/gfo.owl#Process",
+            "http://www.onto-med.de/ontologies/gfo.owl#Discrete_process",
+            "http://www.onto-med.de/ontologies/gfo.owl#Continuous_process",
+            "http://www.onto-med.de/ontologies/gfo.owl#Material_boundary",
+            "http://www.onto-med.de/ontologies/gfo.owl#State",
+            "http://onto.eva.mpg.de/ontologies/gfo-bio.owl#Pathway",
+            "http://onto.eva.mpg.de/ontologies/gfo-bio.owl#Plant_anatomical_development",
+            "http://onto.eva.mpg.de/ontologies/gfo-bio.owl#Arabidopsis_development",
+            "http://onto.eva.mpg.de/ontologies/gfo-bio.owl#Plant_development_stage",
+            "http://www.onto-med.de/ontologies/gfo.owl#Situoid",
+            "http://onto.eva.mpg.de/ontologies/gfo-bio.owl#Organism_development",
+            "http://onto.eva.mpg.de/ontologies/gfo-bio.owl#Biological_situoid",
+            "http://www.onto-med.de/ontologies/gfo.owl#Material_surface",
+            "http://www.geneontology.org/owl/#PO_0007033",
+            "http://www.onto-med.de/ontologies/gfo.owl#Material_line",
+            "http://www.onto-med.de/ontologies/gfo.owl#Configuroid",
+            "http://www.onto-med.de/ontologies/gfo.owl#Material_point",
+            "http://www.w3.org/2002/07/owl#Nothing",
+            "http://onto.eva.mpg.de/ontologies/gfo-bio.owl#Chemical_process",
+            "http://onto.eva.mpg.de/ontologies/gfo-bio.owl#Biological_process",
+            "http://www.geneontology.org/owl/#PO_0007021",
+            "http://onto.eva.mpg.de/ontologies/gfo-bio.owl#Arabidopsis_development_stage",
+            "http://www.geneontology.org/owl/#TAIR_0000022",
+            "http://www.geneontology.org/owl/#TAIR_0000021",
+            "http://onto.eva.mpg.de/ontologies/gfo-bio.owl#Biological_configuroid",
+            "http://onto.eva.mpg.de/ontologies/gfo-bio.owl#Plant_development",
+            "http://onto.eva.mpg.de/ontologies/gfo-bio.owl#Chemical_reaction",
+            "http://onto.eva.mpg.de/ontologies/gfo-bio.owl#Arabidopsis_anatomical_development",
+            "http://onto.eva.mpg.de/ontologies/gfo-bio.owl#Development_stage",
+            "http://onto.eva.mpg.de/ontologies/gfo-bio.owl#Anatomical_development"
+        ]
+    }
+}

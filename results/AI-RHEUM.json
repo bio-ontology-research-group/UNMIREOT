@@ -1,0 +1,223 @@
+{
+    "STY": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "MS": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "MF": {
+        "count": 1,
+        "classes": [
+            "http://purl.obolibrary.org/obo/MF_0000003"
+        ]
+    },
+    "CO": "UnloadableImportException",
+    "EO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "PR": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "SO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "OPE": "UnloadableImportException",
+    "PP": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "MA": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "PMR": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "BP": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "MI": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "MO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "EMO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "MP": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "VT": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "SWEET": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "ATC": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "PE": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "GO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "RB": "UnloadableImportException",
+    "EP": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "SHR": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "NIC": "UnloadableImportException",
+    "AO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "RS": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "PO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "HC": "UnloadableImportException",
+    "CL": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "VO": {
+        "count": 0,
+        "classes": [
+            "http://www.w3.org/2002/07/owl#Nothing"
+        ]
+    },
+    "SP": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "BT": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "HP": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "OF": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "TO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "RP": "UnloadableImportException",
+    "SYN": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "ISO": "UnloadableImportException",
+    "CN": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "RCD": "IllegalArgumentException",
+    "EV": "UnloadableImportException",
+    "FLU": "UnloadableImportException",
+    "ECG": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "ERO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "CSO": "UnloadableImportException"
+}

@@ -1,0 +1,15 @@
+{
+    "EDAM": {
+        "count": 2,
+        "classes": [
+            "http://edamontology.org/operation_3200",
+            "http://edamontology.org/data_1022"
+        ]
+    },
+    "BFO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    }
+}

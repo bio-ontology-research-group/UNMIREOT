@@ -1,0 +1,59 @@
+{
+    "EP": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "NGSONTO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "MI": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "EV": "UnloadableImportException",
+    "BCO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "FO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "MA": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "HP": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "RB": "UnloadableImportException",
+    "SO": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "BP": {
+        "count": 0,
+        "classes": [
+            
+        ]
+    },
+    "CO": "UnloadableImportException"
+}
