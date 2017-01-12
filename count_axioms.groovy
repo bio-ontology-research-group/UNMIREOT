@@ -80,7 +80,7 @@ class CountAxioms {
 
             println "[UNMIREOT] Reasoned " + id + " and " + comb + ", resulting in " + oReasoner.getEquivalentClasses(manager.getOWLDataFactory().getOWLNothing()).getEntitiesMinusBottom().size() + " unsatisfiable classes:"
             aCounts[id + '_' + comb] = [:]
-            findExplanations(ontology, oReasoner, id, comb)
+            findExplanations(ontology, oReasoner, id, comb, results['classes'], manager)
           } catch(org.semanticweb.owlapi.io.UnparsableOntologyException e) {
             println "[UNMIREOT] Unable to parse ontology with " + comb
           } catch(org.semanticweb.owlapi.model.UnloadableImportException e) {
@@ -100,22 +100,23 @@ class CountAxioms {
     }
   }
 
-  def findExplanations(ontology, oReasoner, id, comb) {
+  // fix the fieeeeeeelds this is awful
+  def findExplanations(ontology, oReasoner, id, comb, uClasses, manager) {
     def oExplanations = new ConcurrentHashMap()
 
     GParsPool.withPool {
-      ontology.getClassesInSignature(true).eachParallel { cl ->
-        if(!oReasoner.isSatisfiable(cl)) {
-          def iri = cl.getIRI().toString() 
-          oExplanations[iri] = []
-          println 'procing ' + iri
+      uClasses.eachParallel { iri ->
+        OWLDataFactory factory = manager.getOWLDataFactory();
+        def cl = factory.getOWLClass(IRI.create(iri))
+        println 'thinking about ' + iri
+        oExplanations[iri] = []
+        println 'procing ' + iri
 
-          BlackBoxExplanation exp = new BlackBoxExplanation(ontology, reasonerFactory, oReasoner)
+        BlackBoxExplanation exp = new BlackBoxExplanation(ontology, reasonerFactory, oReasoner)
 
-          Set<OWLAxiom> explanations = exp.getExplanation(cl)
-          for(OWLAxiom causingAxiom : explanations) {
-            oExplanations[iri] << causingAxiom.toString()
-          }
+        Set<OWLAxiom> explanations = exp.getExplanation(cl)
+        for(OWLAxiom causingAxiom : explanations) {
+          oExplanations[iri] << causingAxiom.toString()
         }
       }
     }

@@ -101,4 +101,4 @@ try {
   e.printStackTrace()
 }
 
-new File('counts_comb/'+id+'_'+comb+'.json').text = new JsonBuilder(aCounts).toPrettyString()
+new File(id+'_'+comb+'.json').text = new JsonBuilder(aCounts).toPrettyString()

@@ -104,4 +104,4 @@ mireotResults.each { comb, results ->
   }
 }
 
-new File('counts_ontology/'+id+'.json').text = new JsonBuilder(aCounts).toPrettyString()
+new File(id+'.json').text = new JsonBuilder(aCounts).toPrettyString()
