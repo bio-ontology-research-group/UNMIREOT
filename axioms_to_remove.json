@@ -1,0 +1,343 @@
+{
+    "ONTOLURGENCES_AO": [
+        "SubClassOf(<http://www.limics.fr/ontologies/ontolurgences#Attributs> <http://www.limics.fr/ontologies/ontolurgences#MetaObjetAbstrait>)"
+    ],
+    "ONTOLURGENCES_BP": [
+        "SubClassOf(<http://www.limics.fr/ontologies/ontolurgences#Attributs> <http://www.limics.fr/ontologies/ontolurgences#MetaObjetAbstrait>)"
+    ],
+    "ONTOLURGENCES_ECG": [
+        "SubClassOf(<http://www.limics.fr/ontologies/ontolurgences#Attributs> <http://www.limics.fr/ontologies/ontolurgences#MetaObjetAbstrait>)"
+    ],
+    "ONTOLURGENCES_ECP": [
+        "SubClassOf(<http://www.limics.fr/ontologies/ontolurgences#Attributs> <http://www.limics.fr/ontologies/ontolurgences#MetaObjetAbstrait>)"
+    ],
+    "ONTOLURGENCES_EO": [
+        "SubClassOf(<http://www.limics.fr/ontologies/ontolurgences#Attributs> <http://www.limics.fr/ontologies/ontolurgences#MetaObjetAbstrait>)"
+    ],
+    "ONTOLURGENCES_EP": [
+        "SubClassOf(<http://www.limics.fr/ontologies/ontolurgences#Attributs> <http://www.limics.fr/ontologies/ontolurgences#MetaObjetAbstrait>)"
+    ],
+    "ONTOLURGENCES_MA": [
+        "SubClassOf(<http://www.limics.fr/ontologies/ontolurgences#Attributs> <http://www.limics.fr/ontologies/ontolurgences#MetaObjetAbstrait>)"
+    ],
+    "ONTOLURGENCES_MF": [
+        "SubClassOf(<http://purl.obolibrary.org/obo/MF_0000003> <http://purl.obolibrary.org/obo/MF_0000018>)",
+        "SubClassOf(<http://www.limics.fr/ontologies/ontolurgences#Attributs> <http://www.limics.fr/ontologies/ontolurgences#MetaObjetAbstrait>)"
+    ],
+    "ONTOLURGENCES_MI": [
+        "SubClassOf(<http://www.limics.fr/ontologies/ontolurgences#Attributs> <http://www.limics.fr/ontologies/ontolurgences#MetaObjetAbstrait>)"
+    ],
+    "ONTOLURGENCES_MS": [
+        "SubClassOf(<http://www.limics.fr/ontologies/ontolurgences#Attributs> <http://www.limics.fr/ontologies/ontolurgences#MetaObjetAbstrait>)"
+    ],
+    "ONTOLURGENCES_NIHSS": [
+        "SubClassOf(<http://www.limics.fr/ontologies/ontolurgences#Attributs> <http://www.limics.fr/ontologies/ontolurgences#MetaObjetAbstrait>)"
+    ],
+    "ONTOLURGENCES_PE": [
+        "SubClassOf(<http://www.limics.fr/ontologies/ontolurgences#Attributs> <http://www.limics.fr/ontologies/ontolurgences#MetaObjetAbstrait>)"
+    ],
+    "ONTOLURGENCES_PO": [
+        "SubClassOf(<http://www.limics.fr/ontologies/ontolurgences#Attributs> <http://www.limics.fr/ontologies/ontolurgences#MetaObjetAbstrait>)"
+    ],
+    "ONTOLURGENCES_PP": [
+        "SubClassOf(<http://www.limics.fr/ontologies/ontolurgences#Attributs> <http://www.limics.fr/ontologies/ontolurgences#MetaObjetAbstrait>)"
+    ],
+    "ONTOLURGENCES_RS": [
+        "SubClassOf(<http://www.limics.fr/ontologies/ontolurgences#Attributs> <http://www.limics.fr/ontologies/ontolurgences#MetaObjetAbstrait>)"
+    ],
+    "ONTOLURGENCES_SO": [
+        "SubClassOf(<http://www.limics.fr/ontologies/ontolurgences#Attributs> <http://www.limics.fr/ontologies/ontolurgences#MetaObjetAbstrait>)"
+    ],
+    "ONTOLURGENCES_SP": [
+        "SubClassOf(<http://www.limics.fr/ontologies/ontolurgences#Attributs> <http://www.limics.fr/ontologies/ontolurgences#MetaObjetAbstrait>)"
+    ],
+    "ONTOLURGENCES_VO": [
+        "SubClassOf(<http://www.limics.fr/ontologies/ontolurgences#Attributs> <http://www.limics.fr/ontologies/ontolurgences#MetaObjetAbstrait>)",
+        null
+    ],
+    "FBDV_NIGO": [
+        "SubClassOf(<http://purl.obolibrary.org/obo/GO_0022403> <http://purl.obolibrary.org/obo/GO_0022402>)"
+    ],
+    "FYPO_CL": [
+        "SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001995> <http://purl.obolibrary.org/obo/PATO_0001241>)"
+    ],
+    "FYPO_GO": [
+        "TransitiveObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>)",
+        "DisjointClasses(<http://purl.obolibrary.org/obo/GO_0098589> <http://purl.obolibrary.org/obo/GO_0098805>)"
+    ],
+    "FYPO_NIGO": [
+        "SubClassOf(<http://purl.obolibrary.org/obo/GO_0022403> <http://purl.obolibrary.org/obo/GO_0044848>)",
+        "DisjointClasses(<http://purl.obolibrary.org/obo/GO_0009987> <http://purl.obolibrary.org/obo/GO_0051704>)"
+    ],
+    "BCO_BFO": [
+        "SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000040> <http://purl.obolibrary.org/obo/BFO_0000004>)"
+    ],
+    "SWO_EDAM": [
+        "SubClassOf(<http://edamontology.org/topic_0605> <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>)",
+        "DisjointClasses(<http://edamontology.org/topic_0003> owl:DeprecatedClass)",
+        "DisjointClasses(<http://purl.obolibrary.org/obo/IAO_0000027> owl:DeprecatedClass)",
+        "DisjointClasses(<http://edamontology.org/data_0842> <http://edamontology.org/data_2527>)",
+        "SubClassOf(<http://edamontology.org/data_1540> owl:DeprecatedClass)",
+        "DisjointClasses(<http://edamontology.org/data_0006> owl:DeprecatedClass)",
+        "DisjointClasses(<http://purl.obolibrary.org/obo/IAO_0000098> owl:DeprecatedClass)",
+        "SubClassOf(<http://edamontology.org/format_3476> owl:DeprecatedClass)",
+        "SubClassOf(<http://edamontology.org/operation_2420> owl:DeprecatedClass)",
+        "DisjointClasses(<http://edamontology.org/operation_0004> owl:DeprecatedClass)",
+        "DisjointClasses(<http://www.ebi.ac.uk/swo/SWO_0000003> owl:DeprecatedClass)"
+    ],
+    "SWO_ONTODM-CORE": [
+        "DisjointClasses(Annotation(Annotation(rdfs:comment \"Generated by the OWL API (version 4.2.0) https://github.com/owlcs/owlapi on 1/18/17 2:01 PM\"^^xsd:string) rdfs:comment \"DisjointClasses(<http://kt.ijs.si/panovp/OntoDM#OntoDM_661861>) replaced by DisjointClasses(<http://kt.ijs.si/panovp/OntoDM#OntoDM_661861> owl:Thing)\"^^xsd:string) <http://kt.ijs.si/panovp/OntoDM#OntoDM_661861> owl:Thing)",
+        "DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000004> <http://purl.obolibrary.org/obo/BFO_0000020> <http://purl.obolibrary.org/obo/BFO_0000031>)"
+    ],
+    "SWO_ONTODM-KDD": [
+        "DisjointClasses(<http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_034091> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_065302> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_182818> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_192590> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_306075> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_372590> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_457447> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_519965> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_619649> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_774277> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_777650> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_856277> <http://kt.ijs.si/panovp/OntoDM#OntoKDD_686083> <http://kt.ijs.si/panovp/OntoDM#OntoKDD_924908> <http://kt.ijs.si/panovp/OntoDM#OntoKDD_996620> <http://kt.ijs.si/panovp/OntoDM-KDD.owl#OntoDM-KDD_080788> <http://kt.ijs.si/panovp/OntoDM-KDD.owl#OntoDM-KDD_112804> <http://kt.ijs.si/panovp/OntoDM-KDD.owl#OntoDM-KDD_136068> <http://kt.ijs.si/panovp/OntoDM-KDD.owl#OntoDM-KDD_175546> <http://kt.ijs.si/panovp/OntoDM-KDD.owl#OntoDM-KDD_256502> <http://kt.ijs.si/panovp/OntoDM-KDD.owl#OntoDM-KDD_422668> <http://kt.ijs.si/panovp/OntoDM-KDD.owl#OntoDM-KDD_705033> <http://kt.ijs.si/panovp/OntoDM-KDD.owl#OntoDM-KDD_717981> <http://kt.ijs.si/panovp/OntoDM-KDD.owl#OntoDM-KDD_852502>)",
+        "SubClassOf(<http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_000323> ObjectSomeValuesFrom(<http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_000215> ObjectIntersectionOf(<http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_000312> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_000314> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_000317> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_000331>)))",
+        "SubClassOf(<http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_537902> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#has_part> ObjectIntersectionOf(<http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_182818> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_519965> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_774277>)))",
+        "SubClassOf(<http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_785708> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#has_part> ObjectIntersectionOf(<http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_192590> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_372590> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_457447> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_856277>)))"
+    ],
+    "NIFSUBCELL_PATO": [
+        "DisjointClasses(<http://purl.obolibrary.org/obo/PATO_0001236> <http://purl.obolibrary.org/obo/PATO_0001241>)",
+        "EquivalentClasses(<http://purl.obolibrary.org/obo/PATO_0001997> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000070> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/pato#decreased_in_magnitude_relative_to> <http://purl.obolibrary.org/obo/PATO_0000461>)) )"
+    ],
+    "DIAGONT_CTO": [
+        "SubClassOf(<http://www.owl-ontologies.com/RCTOntology.owl#TrialDetails> <http://www.owl-ontologies.com/RCTOntology.owl#Concept>)",
+        "SubClassOf(<http://www.owl-ontologies.com/RCTOntology.owl#SearchMethods> <http://www.owl-ontologies.com/RCTOntology.owl#DataCollectionDescription>)"
+    ],
+    "AI-RHEUM_MF": [
+        "SubClassOf(<http://purl.obolibrary.org/obo/MF_0000003> <http://purl.obolibrary.org/obo/MF_0000018>)"
+    ],
+    "GFO_GFO-BIO": [
+        "DisjointClasses(<http://www.onto-med.de/ontologies/gfo.owl#Occurrent> <http://www.onto-med.de/ontologies/gfo.owl#Process>)",
+        "SubClassOf(<http://www.onto-med.de/ontologies/gfo.owl#Material_boundary> ObjectSomeValuesFrom(<http://www.onto-med.de/ontologies/gfo.owl#framed_by> <http://www.onto-med.de/ontologies/gfo.owl#Spatial_boundary>))",
+        null
+    ],
+    "OFSMR_MF": [
+        "SubClassOf(<http://purl.obolibrary.org/obo/MF_0000003> <http://purl.obolibrary.org/obo/MF_0000018>)"
+    ],
+    "PR_MF": [
+        "SubClassOf(<http://purl.obolibrary.org/obo/MF_0000003> <http://purl.obolibrary.org/obo/MF_0000018>)"
+    ],
+    "PEAO_EDAM": [
+        "DisjointClasses(<http://edamontology.org/data_0842> <http://edamontology.org/data_2527>)",
+        "DisjointClasses(<http://edamontology.org/data_0006> <http://edamontology.org/operation_0004>)"
+    ],
+    "EDAMTO_EDAM": [
+        "DisjointClasses(<http://edamontology.org/topic_0003> owl:DeprecatedClass)",
+        "SubClassOf(<http://edamontology.org/data_2099> <http://edamontology.org/data_0842>)"
+    ],
+    "ONTODT_ONTODM-CORE": [
+        "DisjointClasses(Annotation(Annotation(rdfs:comment \"Generated by the OWL API (version 4.2.0) https://github.com/owlcs/owlapi on 1/18/17 9:24 AM\"^^xsd:string) rdfs:comment \"DisjointClasses(<http://kt.ijs.si/panovp/OntoDM#OntoDM_661861>) replaced by DisjointClasses(<http://kt.ijs.si/panovp/OntoDM#OntoDM_661861> owl:Thing)\"^^xsd:string) <http://kt.ijs.si/panovp/OntoDM#OntoDM_661861> owl:Thing)"
+    ],
+    "NGSONTO_EDAM": [
+        "DisjointClasses(<http://edamontology.org/data_0842> <http://edamontology.org/data_2527>)",
+        "DisjointClasses(<http://edamontology.org/data_0006> <http://edamontology.org/operation_0004>)"
+    ],
+    "NGSONTO_OBI": [
+        "DisjointClasses(<http://www.ifomis.org/bfo/1.1/snap#DependentContinuant> <http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant>)",
+        null
+    ],
+    "MCBCC_MF": [
+        "SubClassOf(<http://purl.obolibrary.org/obo/MF_0000003> <http://purl.obolibrary.org/obo/MF_0000018>)"
+    ],
+    "EFO_CL": [
+        "DisjointClasses(<http://purl.obolibrary.org/obo/UBERON_0001004> <http://purl.obolibrary.org/obo/UBERON_0001007>)"
+    ],
+    "EFO_GRO-CPGA": [
+        "SubClassOf(<http://purl.obolibrary.org/obo/PO_0009013> <http://purl.obolibrary.org/obo/PO_0009007>)"
+    ],
+    "EFO_HP": [
+        "SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000108> <http://purl.obolibrary.org/obo/UBERON_0000067>)",
+        "DisjointClasses(<http://purl.obolibrary.org/obo/UBERON_0001004> <http://purl.obolibrary.org/obo/UBERON_0001007>)"
+    ],
+    "EFO_MP": [
+        "SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000067> <http://purl.obolibrary.org/obo/UBERON_0000105>)",
+        "DisjointClasses(<http://purl.obolibrary.org/obo/UBERON_0001004> <http://purl.obolibrary.org/obo/UBERON_0001007>)"
+    ],
+    "EFO_OBI": [
+        "SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000002> <http://purl.obolibrary.org/obo/BFO_0000001>)",
+        "SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000031> <http://purl.obolibrary.org/obo/BFO_0000002>)",
+        null
+    ],
+    "EFO_PO": [
+        "SubClassOf(<http://purl.obolibrary.org/obo/PO_0009013> <http://purl.obolibrary.org/obo/PO_0009007>)"
+    ],
+    "EFO_UBERON": [
+        "SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000108> <http://purl.obolibrary.org/obo/UBERON_0000067>)",
+        "DisjointClasses(<http://purl.obolibrary.org/obo/UBERON_0001004> <http://purl.obolibrary.org/obo/UBERON_0001007>)"
+    ],
+    "BMT_EDAM": [
+        "DisjointClasses(<http://edamontology.org/topic_0003> owl:DeprecatedClass)",
+        "SubClassOf(<http://edamontology.org/data_2099> <http://edamontology.org/data_0842>)"
+    ],
+    "NCRO_OBI": [
+        "DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000004> <http://purl.obolibrary.org/obo/BFO_0000020> <http://purl.obolibrary.org/obo/BFO_0000031>)",
+        null
+    ],
+    "COSTART_MF": [
+        "SubClassOf(<http://purl.obolibrary.org/obo/MF_0000003> <http://purl.obolibrary.org/obo/MF_0000018>)"
+    ],
+    "COSTART_NBO": [
+        "DisjointClasses(<http://purl.obolibrary.org/obo/GO_0007610> <http://purl.obolibrary.org/obo/GO_0032502>)"
+    ],
+    "ONTODM-CORE_AO": [
+        "DisjointClasses(Annotation(Annotation(rdfs:comment \"Generated by the OWL API (version 4.1.0) https://github.com/owlcs/owlapi on 19/07/16 06:24\"^^xsd:string) rdfs:comment \"DisjointClasses(<http://kt.ijs.si/panovp/OntoDM#OntoDM_661861>) replaced by DisjointClasses(<http://kt.ijs.si/panovp/OntoDM#OntoDM_661861> owl:Thing)\"^^xsd:string) <http://kt.ijs.si/panovp/OntoDM#OntoDM_661861> owl:Thing)"
+    ],
+    "ONTODM-CORE_ATO": [
+        "DisjointClasses(Annotation(Annotation(rdfs:comment \"Generated by the OWL API (version 4.1.0) https://github.com/owlcs/owlapi on 19/07/16 06:24\"^^xsd:string) rdfs:comment \"DisjointClasses(<http://kt.ijs.si/panovp/OntoDM#OntoDM_661861>) replaced by DisjointClasses(<http://kt.ijs.si/panovp/OntoDM#OntoDM_661861> owl:Thing)\"^^xsd:string) <http://kt.ijs.si/panovp/OntoDM#OntoDM_661861> owl:Thing)"
+    ],
+    "ONTODM-CORE_BFO": [
+        "DisjointClasses(Annotation(Annotation(rdfs:comment \"Generated by the OWL API (version 4.1.0) https://github.com/owlcs/owlapi on 19/07/16 06:24\"^^xsd:string) rdfs:comment \"DisjointClasses(<http://kt.ijs.si/panovp/OntoDM#OntoDM_661861>) replaced by DisjointClasses(<http://kt.ijs.si/panovp/OntoDM#OntoDM_661861> owl:Thing)\"^^xsd:string) <http://kt.ijs.si/panovp/OntoDM#OntoDM_661861> owl:Thing)"
+    ],
+    "ONTODM-CORE_GAZ": [
+        "DisjointClasses(Annotation(Annotation(rdfs:comment \"Generated by the OWL API (version 4.1.0) https://github.com/owlcs/owlapi on 19/07/16 06:24\"^^xsd:string) rdfs:comment \"DisjointClasses(<http://kt.ijs.si/panovp/OntoDM#OntoDM_661861>) replaced by DisjointClasses(<http://kt.ijs.si/panovp/OntoDM#OntoDM_661861> owl:Thing)\"^^xsd:string) <http://kt.ijs.si/panovp/OntoDM#OntoDM_661861> owl:Thing)"
+    ],
+    "ONTODM-CORE_ONTODT": [
+        "DisjointClasses(Annotation(Annotation(rdfs:comment \"Generated by the OWL API (version 4.1.0) https://github.com/owlcs/owlapi on 19/07/16 06:24\"^^xsd:string) rdfs:comment \"DisjointClasses(<http://kt.ijs.si/panovp/OntoDM#OntoDM_661861>) replaced by DisjointClasses(<http://kt.ijs.si/panovp/OntoDM#OntoDM_661861> owl:Thing)\"^^xsd:string) <http://kt.ijs.si/panovp/OntoDM#OntoDM_661861> owl:Thing)"
+    ],
+    "ONTODM-CORE_PATO": [
+        "DisjointClasses(Annotation(Annotation(rdfs:comment \"Generated by the OWL API (version 4.1.0) https://github.com/owlcs/owlapi on 19/07/16 06:24\"^^xsd:string) rdfs:comment \"DisjointClasses(<http://kt.ijs.si/panovp/OntoDM#OntoDM_661861>) replaced by DisjointClasses(<http://kt.ijs.si/panovp/OntoDM#OntoDM_661861> owl:Thing)\"^^xsd:string) <http://kt.ijs.si/panovp/OntoDM#OntoDM_661861> owl:Thing)"
+    ],
+    "ONTODM-CORE_SWO": [
+        "DisjointClasses(Annotation(Annotation(rdfs:comment \"Generated by the OWL API (version 4.1.0) https://github.com/owlcs/owlapi on 19/07/16 06:24\"^^xsd:string) rdfs:comment \"DisjointClasses(<http://kt.ijs.si/panovp/OntoDM#OntoDM_661861>) replaced by DisjointClasses(<http://kt.ijs.si/panovp/OntoDM#OntoDM_661861> owl:Thing)\"^^xsd:string) <http://kt.ijs.si/panovp/OntoDM#OntoDM_661861> owl:Thing)",
+        "DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000004> <http://purl.obolibrary.org/obo/BFO_0000020> <http://purl.obolibrary.org/obo/BFO_0000031>)"
+    ],
+    "ONTODM-CORE_UO": [
+        "DisjointClasses(Annotation(Annotation(rdfs:comment \"Generated by the OWL API (version 4.1.0) https://github.com/owlcs/owlapi on 19/07/16 06:25\"^^xsd:string) rdfs:comment \"DisjointClasses(<http://kt.ijs.si/panovp/OntoDM#OntoDM_661861>) replaced by DisjointClasses(<http://kt.ijs.si/panovp/OntoDM#OntoDM_661861> owl:Thing)\"^^xsd:string) <http://kt.ijs.si/panovp/OntoDM#OntoDM_661861> owl:Thing)"
+    ],
+    "CL_GO": [
+        "SubClassOf(<http://purl.obolibrary.org/obo/GO_0098805> <http://purl.obolibrary.org/obo/GO_0016020>)"
+    ],
+    "CL_NIGO": [
+        "DisjointClasses(<http://purl.obolibrary.org/obo/GO_0009987> <http://purl.obolibrary.org/obo/GO_0032501>)"
+    ],
+    "CL_UBERON": [
+        "DisjointClasses(Annotation(<http://www.geneontology.org/formats/oboInOwl#source> \"CARO\"^^xsd:string) <http://purl.obolibrary.org/obo/UBERON_0000476> <http://purl.obolibrary.org/obo/UBERON_0010000>)",
+        "DisjointClasses(<http://purl.obolibrary.org/obo/UBERON_0002530> <http://purl.obolibrary.org/obo/UBERON_0013398>)"
+    ],
+    "NIFDYS_PATO": [
+        "DisjointClasses(<http://purl.obolibrary.org/obo/PATO_0001236> <http://purl.obolibrary.org/obo/PATO_0001241>)",
+        "EquivalentClasses(<http://purl.obolibrary.org/obo/PATO_0001997> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000070> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/pato#decreased_in_magnitude_relative_to> <http://purl.obolibrary.org/obo/PATO_0000461>)) )"
+    ],
+    "ERO_EDAM": [
+        "DisjointClasses(<http://edamontology.org/data_0842> <http://edamontology.org/data_2527>)",
+        "DisjointClasses(<http://edamontology.org/data_0006> <http://edamontology.org/operation_0004>)",
+        null
+    ],
+    "ERO_MP": [
+        "SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000001> <http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant>)",
+        null
+    ],
+    "ERO_SWO": [
+        "DisjointClasses(<http://purl.obolibrary.org/obo/IAO_0000030> <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>)",
+        "SubClassOf(<http://www.geneontology.org/formats/oboInOwl#ObsoleteClass> owl:DeprecatedClass)",
+        null
+    ],
+    "CADSRVS_MF": [
+        "SubClassOf(<http://purl.obolibrary.org/obo/MF_0000003> <http://purl.obolibrary.org/obo/MF_0000018>)"
+    ],
+    "OGI_GO": [
+        "DisjointClasses(<http://purl.obolibrary.org/obo/GO_0022414> <http://purl.obolibrary.org/obo/GO_0044848>)"
+    ],
+    "OGI_OBI": [
+        "DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000004> <http://purl.obolibrary.org/obo/BFO_0000020> <http://purl.obolibrary.org/obo/BFO_0000031>)",
+        null
+    ],
+    "CARELEX_MF": [
+        "SubClassOf(<http://purl.obolibrary.org/obo/MF_0000003> <http://purl.obolibrary.org/obo/MF_0000018>)"
+    ],
+    "PORO_NIGO": [
+        "SubClassOf(<http://purl.obolibrary.org/obo/GO_0007292> <http://purl.obolibrary.org/obo/GO_0007276>)"
+    ],
+    "OBIB_OBI": [
+        "DisjointClasses(<http://purl.obolibrary.org/obo/GO_0008150> <http://purl.obolibrary.org/obo/OBI_0000011>)",
+        null
+    ],
+    "PP_EDAM": [
+        "DisjointClasses(<http://edamontology.org/data_0842> <http://edamontology.org/data_2527>)",
+        "DisjointClasses(<http://edamontology.org/data_0006> <http://edamontology.org/operation_0004>)"
+    ],
+    "suicideo_NBO": [
+        "DisjointClasses(<http://purl.obolibrary.org/obo/GO_0007610> <http://purl.obolibrary.org/obo/GO_0032502>)"
+    ],
+    "SHR_MF": [
+        "SubClassOf(<http://purl.obolibrary.org/obo/MF_0000003> <http://purl.obolibrary.org/obo/MF_0000018>)"
+    ],
+    "OGSF_GO": [
+        "DisjointClasses(<http://purl.obolibrary.org/obo/GO_0022414> <http://purl.obolibrary.org/obo/GO_0044848>)",
+        null
+    ],
+    "OGSF_OBI": [
+        "DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000004> <http://purl.obolibrary.org/obo/BFO_0000020> <http://purl.obolibrary.org/obo/BFO_0000031>)",
+        null
+    ],
+    "OGSF_VO": [
+        "EquivalentClasses(<http://purl.obolibrary.org/obo/VO_0000624> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/VO_0000420> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/OBI_0100026> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000087> <http://purl.obolibrary.org/obo/VO_0001275>))) )",
+        null
+    ],
+    "GO-EXT_NIGO": [
+        "DisjointClasses(<http://purl.obolibrary.org/obo/GO_0009987> <http://purl.obolibrary.org/obo/GO_0032501>)",
+        "SubClassOf(<http://purl.obolibrary.org/obo/GO_0016043> <http://purl.obolibrary.org/obo/GO_0009987>)",
+        "DisjointClasses(<http://purl.obolibrary.org/obo/GO_0009987> <http://purl.obolibrary.org/obo/GO_0051704>)"
+    ],
+    "RCTV2_MF": [
+        "SubClassOf(<http://purl.obolibrary.org/obo/MF_0000003> <http://purl.obolibrary.org/obo/MF_0000018>)"
+    ],
+    "PLIO_MF": [
+        "SubClassOf(<http://purl.obolibrary.org/obo/MF_0000003> <http://purl.obolibrary.org/obo/MF_0000018>)"
+    ],
+    "SMASH_RS": [
+        "SubClassOf(<http://aimlab.cs.uoregon.edu/smash/ontologies/social-activity.owl#OfflineCommunityEvent> <http://aimlab.cs.uoregon.edu/smash/ontologies/social-activity.owl#OfflineSocialEvent>)"
+    ],
+    "STATO_BFO": [
+        "SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000040> <http://purl.obolibrary.org/obo/BFO_0000004>)"
+    ],
+    "EO_BFO": [
+        "SubClassOf(<http://www.semanticweb.org/ethnicityOntology#Africa> <http://www.semanticweb.org/ethnicityOntology#Main_Language_Spoken>)"
+    ],
+    "EO_MO": [
+        "SubClassOf(<http://www.semanticweb.org/ethnicityOntology#Africa> <http://www.semanticweb.org/ethnicityOntology#Main_Language_Spoken>)"
+    ],
+    "NIFCELL_PATO": [
+        "DisjointClasses(<http://purl.obolibrary.org/obo/PATO_0001236> <http://purl.obolibrary.org/obo/PATO_0001241>)",
+        "EquivalentClasses(<http://purl.obolibrary.org/obo/PATO_0001997> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000070> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/pato#decreased_in_magnitude_relative_to> <http://purl.obolibrary.org/obo/PATO_0000461>)) )"
+    ],
+    "DDO_MP": [
+        "SubClassOf(<http://purl.obolibrary.org/obo/GO_0048771> <http://purl.obolibrary.org/obo/GO_0044707>)"
+    ],
+    "FBBT_NIGO": [
+        "DisjointClasses(<http://purl.obolibrary.org/obo/GO_0032501> <http://purl.obolibrary.org/obo/GO_0051704>)"
+    ],
+    "ENM_NPO": [
+        
+    ],
+    "CSEO_ECG": [
+        "DisjointClasses(<http://www.ifomis.org/snap#Continuant> <http://www.ifomis.org/span#Occurrent>)"
+    ],
+    "CSEO_MO": [
+        "SubClassOf(<http://www.ifomis.org/snap#SpecificallyDependentContinuant> <http://www.ifomis.org/snap#DependentContinuant>)"
+    ],
+    "ONTODM-KDD_AO": [
+        "DisjointClasses(<http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_034091> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_065302> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_182818> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_192590> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_306075> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_372590> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_457447> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_519965> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_619649> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_774277> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_777650> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_856277> <http://kt.ijs.si/panovp/OntoDM#OntoKDD_686083> <http://kt.ijs.si/panovp/OntoDM#OntoKDD_924908> <http://kt.ijs.si/panovp/OntoDM#OntoKDD_996620> <http://kt.ijs.si/panovp/OntoDM-KDD.owl#OntoDM-KDD_080788> <http://kt.ijs.si/panovp/OntoDM-KDD.owl#OntoDM-KDD_112804> <http://kt.ijs.si/panovp/OntoDM-KDD.owl#OntoDM-KDD_136068> <http://kt.ijs.si/panovp/OntoDM-KDD.owl#OntoDM-KDD_175546> <http://kt.ijs.si/panovp/OntoDM-KDD.owl#OntoDM-KDD_256502> <http://kt.ijs.si/panovp/OntoDM-KDD.owl#OntoDM-KDD_422668> <http://kt.ijs.si/panovp/OntoDM-KDD.owl#OntoDM-KDD_705033> <http://kt.ijs.si/panovp/OntoDM-KDD.owl#OntoDM-KDD_717981> <http://kt.ijs.si/panovp/OntoDM-KDD.owl#OntoDM-KDD_852502>)",
+        "SubClassOf(<http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_000323> ObjectSomeValuesFrom(<http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_000215> ObjectIntersectionOf(<http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_000312> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_000314> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_000317> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_000331>)))",
+        "SubClassOf(<http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_537902> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#has_part> ObjectIntersectionOf(<http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_182818> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_519965> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_774277>)))",
+        "SubClassOf(<http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_785708> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#has_part> ObjectIntersectionOf(<http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_192590> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_372590> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_457447> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_856277>)))"
+    ],
+    "ONTODM-KDD_ONTODM-CORE": [
+        "DisjointClasses(<http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_034091> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_065302> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_182818> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_192590> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_306075> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_372590> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_457447> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_519965> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_619649> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_774277> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_777650> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_856277> <http://kt.ijs.si/panovp/OntoDM#OntoKDD_686083> <http://kt.ijs.si/panovp/OntoDM#OntoKDD_924908> <http://kt.ijs.si/panovp/OntoDM#OntoKDD_996620> <http://kt.ijs.si/panovp/OntoDM-KDD.owl#OntoDM-KDD_080788> <http://kt.ijs.si/panovp/OntoDM-KDD.owl#OntoDM-KDD_112804> <http://kt.ijs.si/panovp/OntoDM-KDD.owl#OntoDM-KDD_136068> <http://kt.ijs.si/panovp/OntoDM-KDD.owl#OntoDM-KDD_175546> <http://kt.ijs.si/panovp/OntoDM-KDD.owl#OntoDM-KDD_256502> <http://kt.ijs.si/panovp/OntoDM-KDD.owl#OntoDM-KDD_422668> <http://kt.ijs.si/panovp/OntoDM-KDD.owl#OntoDM-KDD_705033> <http://kt.ijs.si/panovp/OntoDM-KDD.owl#OntoDM-KDD_717981> <http://kt.ijs.si/panovp/OntoDM-KDD.owl#OntoDM-KDD_852502>)",
+        "SubClassOf(<http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_000323> ObjectSomeValuesFrom(<http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_000215> ObjectIntersectionOf(<http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_000312> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_000314> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_000317> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_000331>)))",
+        "SubClassOf(<http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_785708> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#has_part> ObjectIntersectionOf(<http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_192590> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_372590> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_457447> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_856277>)))",
+        "DisjointClasses(Annotation(Annotation(rdfs:comment \"Generated by the OWL API (version 4.2.0) https://github.com/owlcs/owlapi on 1/18/17 9:24 AM\"^^xsd:string) rdfs:comment \"DisjointClasses(<http://kt.ijs.si/panovp/OntoDM#OntoDM_661861>) replaced by DisjointClasses(<http://kt.ijs.si/panovp/OntoDM#OntoDM_661861> owl:Thing)\"^^xsd:string) <http://kt.ijs.si/panovp/OntoDM#OntoDM_661861> owl:Thing)"
+    ],
+    "ONTODM-KDD_ONTODT": [
+        "DisjointClasses(<http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_034091> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_065302> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_182818> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_192590> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_306075> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_372590> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_457447> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_519965> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_619649> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_774277> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_777650> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_856277> <http://kt.ijs.si/panovp/OntoDM#OntoKDD_686083> <http://kt.ijs.si/panovp/OntoDM#OntoKDD_924908> <http://kt.ijs.si/panovp/OntoDM#OntoKDD_996620> <http://kt.ijs.si/panovp/OntoDM-KDD.owl#OntoDM-KDD_080788> <http://kt.ijs.si/panovp/OntoDM-KDD.owl#OntoDM-KDD_112804> <http://kt.ijs.si/panovp/OntoDM-KDD.owl#OntoDM-KDD_136068> <http://kt.ijs.si/panovp/OntoDM-KDD.owl#OntoDM-KDD_175546> <http://kt.ijs.si/panovp/OntoDM-KDD.owl#OntoDM-KDD_256502> <http://kt.ijs.si/panovp/OntoDM-KDD.owl#OntoDM-KDD_422668> <http://kt.ijs.si/panovp/OntoDM-KDD.owl#OntoDM-KDD_705033> <http://kt.ijs.si/panovp/OntoDM-KDD.owl#OntoDM-KDD_717981> <http://kt.ijs.si/panovp/OntoDM-KDD.owl#OntoDM-KDD_852502>)",
+        "SubClassOf(<http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_000323> ObjectSomeValuesFrom(<http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_000215> ObjectIntersectionOf(<http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_000312> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_000314> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_000317> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_000331>)))",
+        "SubClassOf(<http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_537902> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#has_part> ObjectIntersectionOf(<http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_182818> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_519965> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_774277>)))",
+        "SubClassOf(<http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_785708> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#has_part> ObjectIntersectionOf(<http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_192590> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_372590> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_457447> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_856277>)))"
+    ],
+    "ONTODM-KDD_SWO": [
+        "DisjointClasses(<http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_034091> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_065302> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_182818> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_192590> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_306075> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_372590> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_457447> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_519965> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_619649> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_774277> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_777650> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_856277> <http://kt.ijs.si/panovp/OntoDM#OntoKDD_686083> <http://kt.ijs.si/panovp/OntoDM#OntoKDD_924908> <http://kt.ijs.si/panovp/OntoDM#OntoKDD_996620> <http://kt.ijs.si/panovp/OntoDM-KDD.owl#OntoDM-KDD_080788> <http://kt.ijs.si/panovp/OntoDM-KDD.owl#OntoDM-KDD_112804> <http://kt.ijs.si/panovp/OntoDM-KDD.owl#OntoDM-KDD_136068> <http://kt.ijs.si/panovp/OntoDM-KDD.owl#OntoDM-KDD_175546> <http://kt.ijs.si/panovp/OntoDM-KDD.owl#OntoDM-KDD_256502> <http://kt.ijs.si/panovp/OntoDM-KDD.owl#OntoDM-KDD_422668> <http://kt.ijs.si/panovp/OntoDM-KDD.owl#OntoDM-KDD_705033> <http://kt.ijs.si/panovp/OntoDM-KDD.owl#OntoDM-KDD_717981> <http://kt.ijs.si/panovp/OntoDM-KDD.owl#OntoDM-KDD_852502>)",
+        "SubClassOf(<http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_000323> ObjectSomeValuesFrom(<http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_000215> ObjectIntersectionOf(<http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_000312> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_000314> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_000317> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_000331>)))",
+        "SubClassOf(<http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_537902> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#has_part> ObjectIntersectionOf(<http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_182818> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_519965> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_774277>)))",
+        "SubClassOf(<http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_785708> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#has_part> ObjectIntersectionOf(<http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_192590> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_372590> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_457447> <http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_856277>)))"
+    ]
+}
