@@ -4,10 +4,10 @@ def toRemove = [:]
 
 new File('jsons/').eachFile { f ->
   def combinations = new JsonSlurper().parseText(f.text)
-  def naughtyCounts = [:]
-  println f.toString()
 
   combinations.each { cName, unsats ->
+    def naughtyCounts = [:]
+
     unsats.each { cIRI, axioms ->
       axioms.each { axiom ->
         if(!naughtyCounts.containsKey(axiom)) {
@@ -16,6 +16,8 @@ new File('jsons/').eachFile { f ->
         naughtyCounts[axiom]++
       }
     }
+
+    new File('naughtycounts/'+cName+'.json').text = new JsonBuilder(naughtyCounts).toPrettyString()
 
     toRemove[cName] = []
     unsats.each { cIRI, axioms ->
@@ -28,7 +30,9 @@ new File('jsons/').eachFile { f ->
             naughtiestInvolvedScore = naughtyCounts[it]
           }
         }
-        toRemove[cName] << naughtiestInvolvedAxiom
+        if(naughtiestInvolvedAxiom != null) { // This happens in the case of it being owl#Nothing, in which case there are no explanations
+          toRemove[cName] << naughtiestInvolvedAxiom
+        }
       }
     }
   }
