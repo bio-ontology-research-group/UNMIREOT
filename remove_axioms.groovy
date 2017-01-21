@@ -86,9 +86,13 @@ def removeAxioms(id) {
   }
 
   if(totalRemoved >= axiomsToRemove[id].size()) {
-    def newOntologyFile = new File("removed/unmireot_test_removed_"+id+".ontology")
-    manager.saveOntology(ontology, IRI.create(newOntologyFile.toURI()));
-    println "Saved " + newOntologyFile 
+    try {
+      def newOntologyFile = new File("removed/unmireot_test_removed_"+id+".ontology")
+      manager.saveOntology(ontology, IRI.create(newOntologyFile.toURI()));
+      println "Saved " + newOntologyFile 
+    } catch(e) {
+      println "Ontology upset, unable to save???"
+    }
   } else {
     println "Removed axioms less than what was necessary. Some issue there. Not saving."
   }
