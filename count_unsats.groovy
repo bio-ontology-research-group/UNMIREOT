@@ -29,7 +29,7 @@ def ontology
 def manager = OWLManager.createOWLOntologyManager()
 def config = new OWLOntologyLoaderConfiguration()
 config.setFollowRedirects(true)
-config.setMissingImportHandlingStrategy(MissingImportHandlingStrategy.SILENT)
+//config.setMissingImportHandlingStrategy(MissingImportHandlingStrategy.SILENT)
 
 try {
   def oFile = new File(args[0])

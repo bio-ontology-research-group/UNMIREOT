@@ -25,7 +25,13 @@ import groovy.transform.Field
 
 axiomsToRemove.each { id, a ->
   println "Processing " + id
-  removeAxioms(id)
+
+  def newOntologyFile = new File("removed/unmireot_test_removed_"+id+".ontology")
+  if(!newOntologyFile.exists()) {
+    removeAxioms(id)
+  } else {
+    println "skipping because already exists"
+  }
 }
 
 def removeAxioms(id) {
@@ -33,7 +39,7 @@ def removeAxioms(id) {
   def manager = OWLManager.createOWLOntologyManager()
   def config = new OWLOntologyLoaderConfiguration()
   config.setFollowRedirects(true)
-  config.setMissingImportHandlingStrategy(MissingImportHandlingStrategy.SILENT)
+  //config.setMissingImportHandlingStrategy(MissingImportHandlingStrategy.SILENT)
 
   try {
     def oFile = new File("temp/unmireot_test_"+id.replaceFirst(/_/,"_and_")+".ontology")
