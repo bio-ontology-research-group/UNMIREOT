@@ -1,0 +1,23 @@
+{
+    "PP_EDAM": {
+        "http://edamontology.org/operation_3200": [
+            "DisjointClasses(<http://edamontology.org/data_0006> <http://edamontology.org/operation_0004>)",
+            "SubClassOf(<http://edamontology.org/data_0842> <http://edamontology.org/data_0006>)",
+            "SubClassOf(<http://edamontology.org/data_1869> <http://edamontology.org/data_0976>)",
+            "SubClassOf(<http://edamontology.org/operation_3200> <http://edamontology.org/data_1872>)",
+            "SubClassOf(<http://edamontology.org/operation_3200> <http://edamontology.org/operation_2478>)",
+            "SubClassOf(<http://edamontology.org/data_2909> <http://edamontology.org/data_1869>)",
+            "SubClassOf(<http://edamontology.org/data_1872> <http://edamontology.org/data_2909>)",
+            "SubClassOf(<http://edamontology.org/data_0976> <http://edamontology.org/data_0842>)",
+            "ObjectPropertyDomain(<http://edamontology.org/has_input> <http://edamontology.org/operation_0004>)",
+            "SubClassOf(<http://edamontology.org/operation_2478> ObjectSomeValuesFrom(<http://edamontology.org/has_input> <http://edamontology.org/data_2977>))"
+        ],
+        "http://edamontology.org/data_1022": [
+            "DisjointClasses(<http://edamontology.org/data_0842> <http://edamontology.org/data_2527>)",
+            "SubClassOf(<http://edamontology.org/data_1022> <http://edamontology.org/data_2914>)",
+            "SubClassOf(<http://edamontology.org/data_2914> <http://edamontology.org/data_2527>)",
+            "SubClassOf(<http://edamontology.org/data_2099> <http://edamontology.org/data_0842>)",
+            "SubClassOf(<http://edamontology.org/data_1022> <http://edamontology.org/data_2099>)"
+        ]
+    }
+}

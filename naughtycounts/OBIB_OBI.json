@@ -1,0 +1,12 @@
+{
+    "SubClassOf(<http://www.ebi.ac.uk/efo/EFO_0004318> <http://purl.obolibrary.org/obo/GO_0008150>)": 6,
+    "SubClassOf(<http://www.ebi.ac.uk/efo/EFO_0004318> <http://purl.obolibrary.org/obo/OBI_0000011>)": 6,
+    "SubClassOf(<http://purl.obolibrary.org/obo/OBIB_0000041> <http://purl.obolibrary.org/obo/OBIB_0000053>)": 1,
+    "SubClassOf(<http://purl.obolibrary.org/obo/OBIB_0000053> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000413> <http://www.ebi.ac.uk/efo/EFO_0004318>))": 2,
+    "DisjointClasses(<http://purl.obolibrary.org/obo/GO_0008150> <http://purl.obolibrary.org/obo/OBI_0000011>)": 7,
+    "SubClassOf(<http://purl.obolibrary.org/obo/OBIB_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000136> <http://www.ebi.ac.uk/efo/EFO_0004318>))": 1,
+    "SubClassOf(<http://purl.obolibrary.org/obo/OBIB_0000052> <http://www.ebi.ac.uk/efo/EFO_0004318>)": 1,
+    "SubClassOf(<http://purl.obolibrary.org/obo/OBIB_0000054> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000136> <http://www.ebi.ac.uk/efo/EFO_0004318>))": 1,
+    "SubClassOf(<http://www.ebi.ac.uk/efo/EFO_0004774> <http://purl.obolibrary.org/obo/OBI_0000011>)": 1,
+    "SubClassOf(<http://www.ebi.ac.uk/efo/EFO_0004774> <http://purl.obolibrary.org/obo/GO_0008150>)": 1
+}

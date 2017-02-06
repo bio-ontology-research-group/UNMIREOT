@@ -1,0 +1,65 @@
+{
+    "FBDV_NIGO": {
+        "http://purl.obolibrary.org/obo/GO_0000279": [
+            "SubClassOf(<http://purl.obolibrary.org/obo/GO_0022403> <http://purl.obolibrary.org/obo/GO_0022402>)",
+            "DisjointClasses(<http://purl.obolibrary.org/obo/GO_0009987> <http://purl.obolibrary.org/obo/GO_0044848>)",
+            "SubClassOf(<http://purl.obolibrary.org/obo/GO_0000279> <http://purl.obolibrary.org/obo/GO_0022403>)",
+            "SubClassOf(<http://purl.obolibrary.org/obo/GO_0022403> <http://purl.obolibrary.org/obo/GO_0044848>)",
+            "SubClassOf(<http://purl.obolibrary.org/obo/GO_0022402> <http://purl.obolibrary.org/obo/GO_0009987>)"
+        ],
+        "http://purl.obolibrary.org/obo/GO_0051325": [
+            "SubClassOf(<http://purl.obolibrary.org/obo/GO_0022403> <http://purl.obolibrary.org/obo/GO_0022402>)",
+            "DisjointClasses(<http://purl.obolibrary.org/obo/GO_0009987> <http://purl.obolibrary.org/obo/GO_0044848>)",
+            "SubClassOf(<http://purl.obolibrary.org/obo/GO_0051325> <http://purl.obolibrary.org/obo/GO_0022403>)",
+            "SubClassOf(<http://purl.obolibrary.org/obo/GO_0022403> <http://purl.obolibrary.org/obo/GO_0044848>)",
+            "SubClassOf(<http://purl.obolibrary.org/obo/GO_0022402> <http://purl.obolibrary.org/obo/GO_0009987>)"
+        ],
+        "http://purl.obolibrary.org/obo/FBdv_00007022": [
+            "SubClassOf(<http://purl.obolibrary.org/obo/GO_0022403> <http://purl.obolibrary.org/obo/GO_0022402>)",
+            "DisjointClasses(<http://purl.obolibrary.org/obo/GO_0009987> <http://purl.obolibrary.org/obo/GO_0044848>)",
+            "SubClassOf(<http://purl.obolibrary.org/obo/FBdv_00007022> <http://purl.obolibrary.org/obo/GO_0051325>)",
+            "SubClassOf(<http://purl.obolibrary.org/obo/GO_0051325> <http://purl.obolibrary.org/obo/GO_0022403>)",
+            "SubClassOf(<http://purl.obolibrary.org/obo/GO_0022403> <http://purl.obolibrary.org/obo/GO_0044848>)",
+            "SubClassOf(<http://purl.obolibrary.org/obo/GO_0022402> <http://purl.obolibrary.org/obo/GO_0009987>)"
+        ],
+        "http://purl.obolibrary.org/obo/FBdv_00007023": [
+            "SubClassOf(<http://purl.obolibrary.org/obo/GO_0022403> <http://purl.obolibrary.org/obo/GO_0022402>)",
+            "DisjointClasses(<http://purl.obolibrary.org/obo/GO_0009987> <http://purl.obolibrary.org/obo/GO_0044848>)",
+            "SubClassOf(<http://purl.obolibrary.org/obo/GO_0000279> <http://purl.obolibrary.org/obo/GO_0022403>)",
+            "SubClassOf(<http://purl.obolibrary.org/obo/GO_0022403> <http://purl.obolibrary.org/obo/GO_0044848>)",
+            "SubClassOf(<http://purl.obolibrary.org/obo/GO_0022402> <http://purl.obolibrary.org/obo/GO_0009987>)",
+            "EquivalentClasses(<http://purl.obolibrary.org/obo/FBdv_00007023> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0000279> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBdv_00007011>)) )"
+        ],
+        "http://purl.obolibrary.org/obo/GO_0022403": [
+            "SubClassOf(<http://purl.obolibrary.org/obo/GO_0022403> <http://purl.obolibrary.org/obo/GO_0022402>)",
+            "DisjointClasses(<http://purl.obolibrary.org/obo/GO_0009987> <http://purl.obolibrary.org/obo/GO_0044848>)",
+            "SubClassOf(<http://purl.obolibrary.org/obo/GO_0022403> <http://purl.obolibrary.org/obo/GO_0044848>)",
+            "SubClassOf(<http://purl.obolibrary.org/obo/GO_0022402> <http://purl.obolibrary.org/obo/GO_0009987>)"
+        ],
+        "http://purl.obolibrary.org/obo/FBdv_00005313": [
+            "SubClassOf(<http://purl.obolibrary.org/obo/FBdv_00005313> <http://purl.obolibrary.org/obo/FBdv_00007022>)",
+            "SubClassOf(<http://purl.obolibrary.org/obo/GO_0022403> <http://purl.obolibrary.org/obo/GO_0022402>)",
+            "DisjointClasses(<http://purl.obolibrary.org/obo/GO_0009987> <http://purl.obolibrary.org/obo/GO_0044848>)",
+            "SubClassOf(<http://purl.obolibrary.org/obo/FBdv_00007022> <http://purl.obolibrary.org/obo/GO_0051325>)",
+            "SubClassOf(<http://purl.obolibrary.org/obo/GO_0022403> <http://purl.obolibrary.org/obo/GO_0044848>)",
+            "SubClassOf(<http://purl.obolibrary.org/obo/GO_0051325> <http://purl.obolibrary.org/obo/GO_0022403>)",
+            "SubClassOf(<http://purl.obolibrary.org/obo/GO_0022402> <http://purl.obolibrary.org/obo/GO_0009987>)"
+        ],
+        "http://purl.obolibrary.org/obo/GO_0007126": [
+            "SubClassOf(<http://purl.obolibrary.org/obo/GO_0022403> <http://purl.obolibrary.org/obo/GO_0022402>)",
+            "SubClassOf(<http://purl.obolibrary.org/obo/GO_0007126> <http://purl.obolibrary.org/obo/GO_0022403>)",
+            "DisjointClasses(<http://purl.obolibrary.org/obo/GO_0009987> <http://purl.obolibrary.org/obo/GO_0044848>)",
+            "SubClassOf(<http://purl.obolibrary.org/obo/GO_0022403> <http://purl.obolibrary.org/obo/GO_0044848>)",
+            "SubClassOf(<http://purl.obolibrary.org/obo/GO_0022402> <http://purl.obolibrary.org/obo/GO_0009987>)"
+        ],
+        "http://purl.obolibrary.org/obo/FBdv_00005314": [
+            "SubClassOf(<http://purl.obolibrary.org/obo/GO_0022403> <http://purl.obolibrary.org/obo/GO_0022402>)",
+            "DisjointClasses(<http://purl.obolibrary.org/obo/GO_0009987> <http://purl.obolibrary.org/obo/GO_0044848>)",
+            "SubClassOf(<http://purl.obolibrary.org/obo/FBdv_00005314> <http://purl.obolibrary.org/obo/FBdv_00007023>)",
+            "SubClassOf(<http://purl.obolibrary.org/obo/GO_0000279> <http://purl.obolibrary.org/obo/GO_0022403>)",
+            "SubClassOf(<http://purl.obolibrary.org/obo/GO_0022403> <http://purl.obolibrary.org/obo/GO_0044848>)",
+            "SubClassOf(<http://purl.obolibrary.org/obo/GO_0022402> <http://purl.obolibrary.org/obo/GO_0009987>)",
+            "EquivalentClasses(<http://purl.obolibrary.org/obo/FBdv_00007023> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0000279> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBdv_00007011>)) )"
+        ]
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "SubClassOf(<http://purl.obolibrary.org/obo/GO_0007320> <http://purl.obolibrary.org/obo/GO_0044706>)": 5,
+    "SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004921> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0046693>))": 3,
+    "DisjointClasses(<http://purl.obolibrary.org/obo/GO_0032501> <http://purl.obolibrary.org/obo/GO_0051704>)": 8,
+    "SubClassOf(<http://purl.obolibrary.org/obo/GO_0044706> <http://purl.obolibrary.org/obo/GO_0032501>)": 5,
+    "SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00003555> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00004921>))": 1,
+    "SubClassOf(<http://purl.obolibrary.org/obo/GO_0044706> <http://purl.obolibrary.org/obo/GO_0051704>)": 7,
+    "SubClassOf(<http://purl.obolibrary.org/obo/GO_0046692> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0007320>))": 4,
+    "SubClassOf(<http://purl.obolibrary.org/obo/GO_0046693> <http://purl.obolibrary.org/obo/GO_0046692>)": 5,
+    "SubClassOf(<http://purl.obolibrary.org/obo/GO_0007320> <http://purl.obolibrary.org/obo/GO_0048609>)": 1,
+    "SubClassOf(<http://purl.obolibrary.org/obo/GO_0048609> <http://purl.obolibrary.org/obo/GO_0032501>)": 3,
+    "SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004922> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0046693>))": 1,
+    "SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004923> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00004921>))": 1,
+    "SubClassOf(<http://purl.obolibrary.org/obo/GO_0046692> <http://purl.obolibrary.org/obo/GO_0044703>)": 1,
+    "SubClassOf(<http://purl.obolibrary.org/obo/GO_0044703> <http://purl.obolibrary.org/obo/GO_0051704>)": 1,
+    "SubClassOf(<http://purl.obolibrary.org/obo/GO_0046692> <http://purl.obolibrary.org/obo/GO_0048609>)": 2,
+    "SubClassOf(<http://purl.obolibrary.org/obo/GO_0046692> <http://purl.obolibrary.org/obo/GO_0044706>)": 1
+}

@@ -1,0 +1,11 @@
+{
+    "SubClassOf(<http://purl.obolibrary.org/obo/MF_0000003> <http://purl.obolibrary.org/obo/MF_0000018>)": 1,
+    "SubClassOf(<http://purl.obolibrary.org/obo/MF_0000020> <http://purl.obolibrary.org/obo/OGMS_0000060>)": 1,
+    "SubClassOf(<http://purl.obolibrary.org/obo/MF_0000003> <http://purl.obolibrary.org/obo/BFO_0000019>)": 1,
+    "SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000020> <http://purl.obolibrary.org/obo/BFO_0000002>)": 1,
+    "DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000002> <http://purl.obolibrary.org/obo/BFO_0000003>)": 1,
+    "SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000019> <http://purl.obolibrary.org/obo/BFO_0000020>)": 1,
+    "SubClassOf(<http://purl.obolibrary.org/obo/MF_0000018> <http://purl.obolibrary.org/obo/MF_0000020>)": 1,
+    "SubClassOf(<http://purl.obolibrary.org/obo/OGMS_0000060> <http://purl.obolibrary.org/obo/BFO_0000015>)": 1,
+    "SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000015> <http://purl.obolibrary.org/obo/BFO_0000003>)": 1
+}

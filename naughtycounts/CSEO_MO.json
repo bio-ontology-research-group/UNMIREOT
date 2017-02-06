@@ -1,0 +1,13 @@
+{
+    "EquivalentClasses(<http://www.ifomis.org/snap#SpecificallyDependentContinuant> ObjectUnionOf(<http://www.ifomis.org/snap#Quality> <http://www.ifomis.org/snap#RealizableEntity>) )": 1,
+    "SubClassOf(<http://scai.fraunhofer.de/CSEO#CSEO_03000020> <http://www.ifomis.org/snap#Disposition>)": 1,
+    "SubClassOf(<http://www.ifomis.org/snap#SpecificallyDependentContinuant> <http://www.ifomis.org/snap#DependentContinuant>)": 1,
+    "SubClassOf(<http://www.ifomis.org/snap#MaterialEntity> <http://www.ifomis.org/snap#IndependentContinuant>)": 1,
+    "SubClassOf(<http://scai.fraunhofer.de/CSEO#CSEO_00000815> <http://www.ifomis.org/snap#Object>)": 1,
+    "SubClassOf(<http://mged.sourceforge.net/ontologies/MGEDOntology.owl#BioMaterialCharacteristics> <http://scai.fraunhofer.de/CSEO#CSEO_03000020>)": 1,
+    "SubClassOf(<http://mged.sourceforge.net/ontologies/MGEDOntology.owl#CellularComponent> <http://mged.sourceforge.net/ontologies/MGEDOntology.owl#BioMaterialCharacteristics>)": 1,
+    "SubClassOf(<http://www.ifomis.org/snap#Disposition> <http://www.ifomis.org/snap#RealizableEntity>)": 1,
+    "SubClassOf(<http://mged.sourceforge.net/ontologies/MGEDOntology.owl#CellularComponent> <http://scai.fraunhofer.de/CSEO#CSEO_00000815>)": 1,
+    "DisjointClasses(<http://www.ifomis.org/snap#DependentContinuant> <http://www.ifomis.org/snap#IndependentContinuant>)": 1,
+    "EquivalentClasses(<http://www.ifomis.org/snap#MaterialEntity> ObjectUnionOf(<http://www.ifomis.org/snap#FiatObjectPart> <http://www.ifomis.org/snap#Object> <http://www.ifomis.org/snap#ObjectAggregate>) )": 1
+}

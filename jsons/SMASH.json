@@ -1,0 +1,14 @@
+{
+    "SMASH_RS": {
+        "http://aimlab.cs.uoregon.edu/smash/ontologies/social-activity.owl#GroupCommunication": [
+            "SubClassOf(<http://aimlab.cs.uoregon.edu/smash/ontologies/social-activity.owl#OfflineCommunityEvent> <http://aimlab.cs.uoregon.edu/smash/ontologies/social-activity.owl#OfflineSocialEvent>)",
+            "SubClassOf(<http://aimlab.cs.uoregon.edu/smash/ontologies/social-activity.owl#GroupCommunication> <http://aimlab.cs.uoregon.edu/smash/ontologies/social-activity.owl#OfflineCommunityEvent>)",
+            "DisjointClasses(<http://aimlab.cs.uoregon.edu/smash/ontologies/social-activity.owl#GroupCommunication> <http://aimlab.cs.uoregon.edu/smash/ontologies/social-activity.owl#Meetup> <http://aimlab.cs.uoregon.edu/smash/ontologies/social-activity.owl#OfflineSocialEvent> <http://aimlab.cs.uoregon.edu/smash/ontologies/social-activity.owl#OnlineSocialEvent>)"
+        ],
+        "http://aimlab.cs.uoregon.edu/smash/ontologies/social-activity.owl#Meetup": [
+            "SubClassOf(<http://aimlab.cs.uoregon.edu/smash/ontologies/social-activity.owl#Meetup> <http://aimlab.cs.uoregon.edu/smash/ontologies/social-activity.owl#OfflineCommunityEvent>)",
+            "SubClassOf(<http://aimlab.cs.uoregon.edu/smash/ontologies/social-activity.owl#OfflineCommunityEvent> <http://aimlab.cs.uoregon.edu/smash/ontologies/social-activity.owl#OfflineSocialEvent>)",
+            "DisjointClasses(<http://aimlab.cs.uoregon.edu/smash/ontologies/social-activity.owl#GroupCommunication> <http://aimlab.cs.uoregon.edu/smash/ontologies/social-activity.owl#Meetup> <http://aimlab.cs.uoregon.edu/smash/ontologies/social-activity.owl#OfflineSocialEvent> <http://aimlab.cs.uoregon.edu/smash/ontologies/social-activity.owl#OnlineSocialEvent>)"
+        ]
+    }
+}

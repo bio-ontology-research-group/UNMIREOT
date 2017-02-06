@@ -1,0 +1,9 @@
+{
+    "DisjointClasses(Annotation(<http://www.geneontology.org/formats/oboInOwl#source> \"CARO\"^^xsd:string) <http://purl.obolibrary.org/obo/UBERON_0000476> <http://purl.obolibrary.org/obo/UBERON_0010000>)": 1,
+    "SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000064> <http://purl.obolibrary.org/obo/UBERON_0010000>)": 1,
+    "SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000207> <http://purl.obolibrary.org/obo/UBERON_0005389>)": 1,
+    "SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0005389> <http://purl.obolibrary.org/obo/UBERON_0000064>)": 1,
+    "SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000207> <http://purl.obolibrary.org/obo/UBERON_0000476>)": 1,
+    "DisjointClasses(<http://purl.obolibrary.org/obo/UBERON_0002530> <http://purl.obolibrary.org/obo/UBERON_0013398>)": 1,
+    "EquivalentClasses(<http://purl.obolibrary.org/obo/UBERON_0013398> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0002530> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/cl#part_of> <http://purl.obolibrary.org/obo/UBERON_0001776>)) )": 1
+}

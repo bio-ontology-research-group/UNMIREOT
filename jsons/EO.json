@@ -1,0 +1,30 @@
+{
+    "EO_BFO": {
+        "http://www.semanticweb.org/ethnicityOntology#Shona": [
+            "SubClassOf(<http://www.semanticweb.org/ethnicityOntology#Africa> <http://www.semanticweb.org/ethnicityOntology#Main_Language_Spoken>)",
+            "SubClassOf(<http://www.semanticweb.org/ethnicityOntology#African_Nationality> <http://www.semanticweb.org/ethnicityOntology#Nationality>)",
+            "SubClassOf(<http://www.semanticweb.org/ethnicityOntology#Shona> <http://www.semanticweb.org/ethnicityOntology#Africa>)",
+            "DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000004> <http://purl.obolibrary.org/obo/BFO_0000031>)",
+            "SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000141> <http://purl.obolibrary.org/obo/BFO_0000004>)",
+            "SubClassOf(<http://www.semanticweb.org/ethnicityOntology#Main_Language_Spoken> <http://www.semanticweb.org/ethnicityOntology#Language>)",
+            "SubClassOf(<http://www.semanticweb.org/ethnicityOntology#Nationality> <http://www.semanticweb.org/ethnicityOntology#Information_Content_Entity>)",
+            "SubClassOf(<http://www.semanticweb.org/ethnicityOntology#Shona> <http://www.semanticweb.org/ethnicityOntology#African_Nationality>)",
+            "SubClassOf(<http://www.semanticweb.org/ethnicityOntology#Information_Content_Entity> <http://purl.obolibrary.org/obo/BFO_0000031>)",
+            "SubClassOf(<http://www.semanticweb.org/ethnicityOntology#Language> <http://purl.obolibrary.org/obo/BFO_0000141>)"
+        ]
+    },
+    "EO_MO": {
+        "http://www.semanticweb.org/ethnicityOntology#Shona": [
+            "SubClassOf(<http://www.semanticweb.org/ethnicityOntology#Africa> <http://www.semanticweb.org/ethnicityOntology#Main_Language_Spoken>)",
+            "SubClassOf(<http://www.semanticweb.org/ethnicityOntology#African_Nationality> <http://www.semanticweb.org/ethnicityOntology#Nationality>)",
+            "SubClassOf(<http://www.semanticweb.org/ethnicityOntology#Shona> <http://www.semanticweb.org/ethnicityOntology#Africa>)",
+            "DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000004> <http://purl.obolibrary.org/obo/BFO_0000031>)",
+            "SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000141> <http://purl.obolibrary.org/obo/BFO_0000004>)",
+            "SubClassOf(<http://www.semanticweb.org/ethnicityOntology#Main_Language_Spoken> <http://www.semanticweb.org/ethnicityOntology#Language>)",
+            "SubClassOf(<http://www.semanticweb.org/ethnicityOntology#Nationality> <http://www.semanticweb.org/ethnicityOntology#Information_Content_Entity>)",
+            "SubClassOf(<http://www.semanticweb.org/ethnicityOntology#Shona> <http://www.semanticweb.org/ethnicityOntology#African_Nationality>)",
+            "SubClassOf(<http://www.semanticweb.org/ethnicityOntology#Information_Content_Entity> <http://purl.obolibrary.org/obo/BFO_0000031>)",
+            "SubClassOf(<http://www.semanticweb.org/ethnicityOntology#Language> <http://purl.obolibrary.org/obo/BFO_0000141>)"
+        ]
+    }
+}

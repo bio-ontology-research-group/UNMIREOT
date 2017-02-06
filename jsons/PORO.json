@@ -1,0 +1,52 @@
+{
+    "PORO_NIGO": {
+        "http://purl.obolibrary.org/obo/CL_0000021": [
+            "SubClassOf(<http://purl.obolibrary.org/obo/GO_0007281> <http://purl.obolibrary.org/obo/GO_0048468>)",
+            "SubClassOf(<http://purl.obolibrary.org/obo/GO_0048468> <http://purl.obolibrary.org/obo/GO_0009987>)",
+            "SubClassOf(<http://purl.obolibrary.org/obo/GO_0007292> <http://purl.obolibrary.org/obo/GO_0007276>)",
+            "SubClassOf(<http://purl.obolibrary.org/obo/GO_0007276> <http://purl.obolibrary.org/obo/GO_0048609>)",
+            "SubClassOf(<http://purl.obolibrary.org/obo/GO_0048477> <http://purl.obolibrary.org/obo/GO_0007281>)",
+            "SubClassOf(<http://purl.obolibrary.org/obo/GO_0048477> <http://purl.obolibrary.org/obo/GO_0007292>)",
+            "EquivalentClasses(<http://purl.obolibrary.org/obo/CL_0000021> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000586> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0048477>)) )",
+            "DisjointClasses(<http://purl.obolibrary.org/obo/GO_0009987> <http://purl.obolibrary.org/obo/GO_0032501>)",
+            "SubClassOf(<http://purl.obolibrary.org/obo/GO_0048609> <http://purl.obolibrary.org/obo/GO_0032501>)"
+        ],
+        "http://purl.obolibrary.org/obo/PORO_0000320": [
+            "SubClassOf(<http://purl.obolibrary.org/obo/GO_0044763> <http://purl.obolibrary.org/obo/GO_0009987>)",
+            "SubClassOf(<http://purl.obolibrary.org/obo/PORO_0000320> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> <http://purl.obolibrary.org/obo/CL_0000023>))",
+            "SubClassOf(<http://purl.obolibrary.org/obo/GO_0007276> <http://purl.obolibrary.org/obo/GO_0048609>)",
+            "SubClassOf(<http://purl.obolibrary.org/obo/GO_0048477> <http://purl.obolibrary.org/obo/GO_0007281>)",
+            "DisjointClasses(<http://purl.obolibrary.org/obo/GO_0009987> <http://purl.obolibrary.org/obo/GO_0032501>)",
+            "SubClassOf(<http://purl.obolibrary.org/obo/GO_0048609> <http://purl.obolibrary.org/obo/GO_0032501>)",
+            "SubClassOf(<http://purl.obolibrary.org/obo/GO_0007281> <http://purl.obolibrary.org/obo/GO_0022412>)",
+            "SubClassOf(<http://purl.obolibrary.org/obo/GO_0007292> <http://purl.obolibrary.org/obo/GO_0007276>)",
+            "SubClassOf(<http://purl.obolibrary.org/obo/GO_0022412> <http://purl.obolibrary.org/obo/GO_0044763>)",
+            "SubClassOf(<http://purl.obolibrary.org/obo/GO_0048477> <http://purl.obolibrary.org/obo/GO_0007292>)",
+            "EquivalentClasses(<http://purl.obolibrary.org/obo/CL_0000021> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000586> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0048477>)) )",
+            "SubClassOf(<http://purl.obolibrary.org/obo/CL_0000023> <http://purl.obolibrary.org/obo/CL_0000021>)"
+        ],
+        "http://purl.obolibrary.org/obo/GO_0048477": [
+            "SubClassOf(<http://purl.obolibrary.org/obo/GO_0007281> <http://purl.obolibrary.org/obo/GO_0048468>)",
+            "SubClassOf(<http://purl.obolibrary.org/obo/GO_0048468> <http://purl.obolibrary.org/obo/GO_0009987>)",
+            "SubClassOf(<http://purl.obolibrary.org/obo/GO_0007292> <http://purl.obolibrary.org/obo/GO_0007276>)",
+            "SubClassOf(<http://purl.obolibrary.org/obo/GO_0007276> <http://purl.obolibrary.org/obo/GO_0048609>)",
+            "SubClassOf(<http://purl.obolibrary.org/obo/GO_0048477> <http://purl.obolibrary.org/obo/GO_0007281>)",
+            "SubClassOf(<http://purl.obolibrary.org/obo/GO_0048477> <http://purl.obolibrary.org/obo/GO_0007292>)",
+            "SubClassOf(<http://purl.obolibrary.org/obo/GO_0048609> <http://purl.obolibrary.org/obo/GO_0032501>)",
+            "DisjointClasses(<http://purl.obolibrary.org/obo/GO_0009987> <http://purl.obolibrary.org/obo/GO_0032501>)"
+        ],
+        "http://purl.obolibrary.org/obo/CL_0000023": [
+            "SubClassOf(<http://purl.obolibrary.org/obo/GO_0044763> <http://purl.obolibrary.org/obo/GO_0009987>)",
+            "SubClassOf(<http://purl.obolibrary.org/obo/GO_0007292> <http://purl.obolibrary.org/obo/GO_0007276>)",
+            "SubClassOf(<http://purl.obolibrary.org/obo/GO_0007276> <http://purl.obolibrary.org/obo/GO_0048609>)",
+            "SubClassOf(<http://purl.obolibrary.org/obo/GO_0048477> <http://purl.obolibrary.org/obo/GO_0007281>)",
+            "SubClassOf(<http://purl.obolibrary.org/obo/GO_0022412> <http://purl.obolibrary.org/obo/GO_0044763>)",
+            "SubClassOf(<http://purl.obolibrary.org/obo/GO_0048477> <http://purl.obolibrary.org/obo/GO_0007292>)",
+            "SubClassOf(<http://purl.obolibrary.org/obo/CL_0000023> <http://purl.obolibrary.org/obo/CL_0000021>)",
+            "EquivalentClasses(<http://purl.obolibrary.org/obo/CL_0000021> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000586> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0048477>)) )",
+            "DisjointClasses(<http://purl.obolibrary.org/obo/GO_0009987> <http://purl.obolibrary.org/obo/GO_0032501>)",
+            "SubClassOf(<http://purl.obolibrary.org/obo/GO_0048609> <http://purl.obolibrary.org/obo/GO_0032501>)",
+            "SubClassOf(<http://purl.obolibrary.org/obo/GO_0007281> <http://purl.obolibrary.org/obo/GO_0022412>)"
+        ]
+    }
+}

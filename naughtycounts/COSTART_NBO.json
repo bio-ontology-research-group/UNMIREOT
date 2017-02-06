@@ -1,0 +1,11 @@
+{
+    "DisjointClasses(<http://purl.obolibrary.org/obo/GO_0007610> <http://purl.obolibrary.org/obo/GO_0032502>)": 3,
+    "SubClassOf(<http://purl.obolibrary.org/obo/GO_0022611> <http://purl.obolibrary.org/obo/GO_0032502>)": 2,
+    "SubClassOf(<http://purl.obolibrary.org/obo/GO_0042750> <http://purl.obolibrary.org/obo/GO_0030431>)": 2,
+    "SubClassOf(<http://purl.obolibrary.org/obo/GO_0030431> <http://purl.obolibrary.org/obo/GO_0007610>)": 3,
+    "SubClassOf(<http://purl.obolibrary.org/obo/GO_0042750> <http://purl.obolibrary.org/obo/GO_0022611>)": 2,
+    "SubClassOf(<http://purl.obolibrary.org/obo/GO_0042751> <http://purl.obolibrary.org/obo/GO_0044767>)": 1,
+    "SubClassOf(<http://purl.obolibrary.org/obo/GO_0042751> <http://purl.obolibrary.org/obo/GO_0030431>)": 1,
+    "SubClassOf(<http://purl.obolibrary.org/obo/GO_0044767> <http://purl.obolibrary.org/obo/GO_0032502>)": 1,
+    "SubClassOf(<http://purl.obolibrary.org/obo/GO_0044250> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0042750>))": 1
+}

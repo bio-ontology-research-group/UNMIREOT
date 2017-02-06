@@ -1,0 +1,16 @@
+{
+    "SubClassOf(<http://www.owl-ontologies.com/RCTOntology.owl#TrialDetails> <http://www.owl-ontologies.com/RCTOntology.owl#Concept>)": 9,
+    "SubClassOf(<http://www.owl-ontologies.com/RCTOntology.owl#BackgroundDetails> <http://www.owl-ontologies.com/RCTOntology.owl#TrialDetails>)": 1,
+    "DisjointClasses(<http://www.owl-ontologies.com/RCTOntology.owl#Concept> <http://www.owl-ontologies.com/RCTOntology.owl#TrialDetails>)": 9,
+    "SubClassOf(<http://www.owl-ontologies.com/RCTOntology.owl#ConclusionDetails> <http://www.owl-ontologies.com/RCTOntology.owl#TrialDetails>)": 1,
+    "SubClassOf(<http://www.owl-ontologies.com/RCTOntology.owl#CorrectionDetails> <http://www.owl-ontologies.com/RCTOntology.owl#TrialDetails>)": 1,
+    "SubClassOf(<http://www.owl-ontologies.com/RCTOntology.owl#Device> <http://www.owl-ontologies.com/RCTOntology.owl#TrialDetails>)": 1,
+    "SubClassOf(<http://www.owl-ontologies.com/RCTOntology.owl#ElectronicSearching> <http://www.owl-ontologies.com/RCTOntology.owl#SearchMethods>)": 1,
+    "SubClassOf(<http://www.owl-ontologies.com/RCTOntology.owl#SearchMethods> <http://www.owl-ontologies.com/RCTOntology.owl#DataCollectionDescription>)": 3,
+    "DisjointClasses(<http://www.owl-ontologies.com/RCTOntology.owl#DataCollectionDescription> <http://www.owl-ontologies.com/RCTOntology.owl#SearchMethods>)": 3,
+    "SubClassOf(<http://www.owl-ontologies.com/RCTOntology.owl#HandSearching> <http://www.owl-ontologies.com/RCTOntology.owl#SearchMethods>)": 1,
+    "SubClassOf(<http://www.owl-ontologies.com/RCTOntology.owl#MaterialMethods> <http://www.owl-ontologies.com/RCTOntology.owl#TrialDetails>)": 1,
+    "SubClassOf(<http://www.owl-ontologies.com/RCTOntology.owl#RetractionDetails> <http://www.owl-ontologies.com/RCTOntology.owl#TrialDetails>)": 1,
+    "SubClassOf(<http://www.owl-ontologies.com/RCTOntology.owl#StoppingDetails> <http://www.owl-ontologies.com/RCTOntology.owl#TrialDetails>)": 1,
+    "SubClassOf(<http://www.owl-ontologies.com/RCTOntology.owl#TrialDesign> ObjectSomeValuesFrom(<http://www.owl-ontologies.com/RCTOntology.owl#allowsValuesFrom> <http://www.owl-ontologies.com/RCTOntology.owl#TrialDetails>))": 1
+}

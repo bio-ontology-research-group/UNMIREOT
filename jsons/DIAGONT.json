@@ -1,0 +1,62 @@
+{
+    "DIAGONT_CTO": {
+        "http://www.owl-ontologies.com/RCTOntology.owl#StoppingDetails": [
+            "SubClassOf(<http://www.owl-ontologies.com/RCTOntology.owl#StoppingDetails> <http://www.owl-ontologies.com/RCTOntology.owl#TrialDetails>)",
+            "SubClassOf(<http://www.owl-ontologies.com/RCTOntology.owl#TrialDetails> <http://www.owl-ontologies.com/RCTOntology.owl#Concept>)",
+            "DisjointClasses(<http://www.owl-ontologies.com/RCTOntology.owl#Concept> <http://www.owl-ontologies.com/RCTOntology.owl#TrialDetails>)"
+        ],
+        "http://www.owl-ontologies.com/RCTOntology.owl#RetractionDetails": [
+            "SubClassOf(<http://www.owl-ontologies.com/RCTOntology.owl#TrialDetails> <http://www.owl-ontologies.com/RCTOntology.owl#Concept>)",
+            "SubClassOf(<http://www.owl-ontologies.com/RCTOntology.owl#RetractionDetails> <http://www.owl-ontologies.com/RCTOntology.owl#TrialDetails>)",
+            "DisjointClasses(<http://www.owl-ontologies.com/RCTOntology.owl#Concept> <http://www.owl-ontologies.com/RCTOntology.owl#TrialDetails>)"
+        ],
+        "http://www.owl-ontologies.com/RCTOntology.owl#CorrectionDetails": [
+            "SubClassOf(<http://www.owl-ontologies.com/RCTOntology.owl#CorrectionDetails> <http://www.owl-ontologies.com/RCTOntology.owl#TrialDetails>)",
+            "SubClassOf(<http://www.owl-ontologies.com/RCTOntology.owl#TrialDetails> <http://www.owl-ontologies.com/RCTOntology.owl#Concept>)",
+            "DisjointClasses(<http://www.owl-ontologies.com/RCTOntology.owl#Concept> <http://www.owl-ontologies.com/RCTOntology.owl#TrialDetails>)"
+        ],
+        "http://www.owl-ontologies.com/RCTOntology.owl#BackgroundDetails": [
+            "SubClassOf(<http://www.owl-ontologies.com/RCTOntology.owl#TrialDetails> <http://www.owl-ontologies.com/RCTOntology.owl#Concept>)",
+            "SubClassOf(<http://www.owl-ontologies.com/RCTOntology.owl#BackgroundDetails> <http://www.owl-ontologies.com/RCTOntology.owl#TrialDetails>)",
+            "DisjointClasses(<http://www.owl-ontologies.com/RCTOntology.owl#Concept> <http://www.owl-ontologies.com/RCTOntology.owl#TrialDetails>)"
+        ],
+        "http://www.owl-ontologies.com/RCTOntology.owl#SearchMethods": [
+            "SubClassOf(<http://www.owl-ontologies.com/RCTOntology.owl#SearchMethods> <http://www.owl-ontologies.com/RCTOntology.owl#DataCollectionDescription>)",
+            "DisjointClasses(<http://www.owl-ontologies.com/RCTOntology.owl#DataCollectionDescription> <http://www.owl-ontologies.com/RCTOntology.owl#SearchMethods>)"
+        ],
+        "http://www.owl-ontologies.com/RCTOntology.owl#ConclusionDetails": [
+            "SubClassOf(<http://www.owl-ontologies.com/RCTOntology.owl#TrialDetails> <http://www.owl-ontologies.com/RCTOntology.owl#Concept>)",
+            "SubClassOf(<http://www.owl-ontologies.com/RCTOntology.owl#ConclusionDetails> <http://www.owl-ontologies.com/RCTOntology.owl#TrialDetails>)",
+            "DisjointClasses(<http://www.owl-ontologies.com/RCTOntology.owl#Concept> <http://www.owl-ontologies.com/RCTOntology.owl#TrialDetails>)"
+        ],
+        "http://www.owl-ontologies.com/RCTOntology.owl#Device": [
+            "SubClassOf(<http://www.owl-ontologies.com/RCTOntology.owl#Device> <http://www.owl-ontologies.com/RCTOntology.owl#TrialDetails>)",
+            "SubClassOf(<http://www.owl-ontologies.com/RCTOntology.owl#TrialDetails> <http://www.owl-ontologies.com/RCTOntology.owl#Concept>)",
+            "DisjointClasses(<http://www.owl-ontologies.com/RCTOntology.owl#Concept> <http://www.owl-ontologies.com/RCTOntology.owl#TrialDetails>)"
+        ],
+        "http://www.owl-ontologies.com/RCTOntology.owl#TrialDesign": [
+            "SubClassOf(<http://www.owl-ontologies.com/RCTOntology.owl#TrialDetails> <http://www.owl-ontologies.com/RCTOntology.owl#Concept>)",
+            "SubClassOf(<http://www.owl-ontologies.com/RCTOntology.owl#TrialDesign> ObjectSomeValuesFrom(<http://www.owl-ontologies.com/RCTOntology.owl#allowsValuesFrom> <http://www.owl-ontologies.com/RCTOntology.owl#TrialDetails>))",
+            "DisjointClasses(<http://www.owl-ontologies.com/RCTOntology.owl#Concept> <http://www.owl-ontologies.com/RCTOntology.owl#TrialDetails>)"
+        ],
+        "http://www.owl-ontologies.com/RCTOntology.owl#TrialDetails": [
+            "SubClassOf(<http://www.owl-ontologies.com/RCTOntology.owl#TrialDetails> <http://www.owl-ontologies.com/RCTOntology.owl#Concept>)",
+            "DisjointClasses(<http://www.owl-ontologies.com/RCTOntology.owl#Concept> <http://www.owl-ontologies.com/RCTOntology.owl#TrialDetails>)"
+        ],
+        "http://www.owl-ontologies.com/RCTOntology.owl#MaterialMethods": [
+            "SubClassOf(<http://www.owl-ontologies.com/RCTOntology.owl#TrialDetails> <http://www.owl-ontologies.com/RCTOntology.owl#Concept>)",
+            "SubClassOf(<http://www.owl-ontologies.com/RCTOntology.owl#MaterialMethods> <http://www.owl-ontologies.com/RCTOntology.owl#TrialDetails>)",
+            "DisjointClasses(<http://www.owl-ontologies.com/RCTOntology.owl#Concept> <http://www.owl-ontologies.com/RCTOntology.owl#TrialDetails>)"
+        ],
+        "http://www.owl-ontologies.com/RCTOntology.owl#HandSearching": [
+            "SubClassOf(<http://www.owl-ontologies.com/RCTOntology.owl#SearchMethods> <http://www.owl-ontologies.com/RCTOntology.owl#DataCollectionDescription>)",
+            "DisjointClasses(<http://www.owl-ontologies.com/RCTOntology.owl#DataCollectionDescription> <http://www.owl-ontologies.com/RCTOntology.owl#SearchMethods>)",
+            "SubClassOf(<http://www.owl-ontologies.com/RCTOntology.owl#HandSearching> <http://www.owl-ontologies.com/RCTOntology.owl#SearchMethods>)"
+        ],
+        "http://www.owl-ontologies.com/RCTOntology.owl#ElectronicSearching": [
+            "SubClassOf(<http://www.owl-ontologies.com/RCTOntology.owl#ElectronicSearching> <http://www.owl-ontologies.com/RCTOntology.owl#SearchMethods>)",
+            "SubClassOf(<http://www.owl-ontologies.com/RCTOntology.owl#SearchMethods> <http://www.owl-ontologies.com/RCTOntology.owl#DataCollectionDescription>)",
+            "DisjointClasses(<http://www.owl-ontologies.com/RCTOntology.owl#DataCollectionDescription> <http://www.owl-ontologies.com/RCTOntology.owl#SearchMethods>)"
+        ]
+    }
+}
