@@ -50,7 +50,7 @@ def runUNMIREOT(id) {
   def manager = OWLManager.createOWLOntologyManager()
   def config = new OWLOntologyLoaderConfiguration()
   config.setFollowRedirects(true)
-  config.setMissingImportHandlingStrategy(MissingImportHandlingStrategy.SILENT)
+  //config.setMissingImportHandlingStrategy(MissingImportHandlingStrategy.SILENT)
   
   def ontology 
   def ooFile = new File('temp/unmireot_test_' + id + '_all.ontology')
@@ -58,6 +58,7 @@ def runUNMIREOT(id) {
     ontology = manager.loadOntologyFromOntologyDocument(new IRIDocumentSource(IRI.create(ooFile.toURI())), config) 
   } catch(e) {
     results.error = 'Loading Error: ' + e.getClass().getSimpleName()
+    e.printStackTrace()
     println '[UNMIREOT] Problem loading ' + id
   }
 
