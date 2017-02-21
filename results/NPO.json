@@ -1,8 +1,0 @@
-{
-    "CHEBI": "UnparsableOntologyException",
-    "PO": "UnparsableOntologyException",
-    "GO": "UnparsableOntologyException",
-    "REX": "UnparsableOntologyException",
-    "ATO": "UnparsableOntologyException",
-    "FIX": "UnparsableOntologyException"
-}
