@@ -41,7 +41,12 @@ def mireots = new JsonSlurper().parseText(new File("mireot_ontologies.json").tex
 def i = 0
 mireots.each { id, refs ->
   println '[UNMIREOT][' + i + '/' + mireots.size() + '] Processing ' + id 
-  runUNMIREOT(id)
+  def oFile = 'results/' + id + '.json'
+  def zF = new JsonSlurper().parseText(new File(oFile).text)
+  if(zF.error == "Loading Error: Unknown") {
+    println '[UNMIREOT] Running'
+    runUNMIREOT(id)
+  }
   i++
 }
 
@@ -50,10 +55,10 @@ def runUNMIREOT(id) {
   def manager = OWLManager.createOWLOntologyManager()
   def config = new OWLOntologyLoaderConfiguration()
   config.setFollowRedirects(true)
-  //config.setMissingImportHandlingStrategy(MissingImportHandlingStrategy.SILENT)
+  config.setMissingImportHandlingStrategy(MissingImportHandlingStrategy.SILENT)
   
   def ontology 
-  def ooFile = new File('temp/unmireot_test_' + id + '_all.ontology')
+  def ooFile = new File('tempall/unmireot_test_' + id + '_all.ontology')
   try {
     ontology = manager.loadOntologyFromOntologyDocument(new IRIDocumentSource(IRI.create(ooFile.toURI())), config) 
   } catch(e) {
