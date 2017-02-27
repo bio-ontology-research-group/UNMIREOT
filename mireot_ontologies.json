@@ -1,521 +1,71 @@
 {
-    "ERO": [
-        "NCBITAXON",
-        "MIRNAO",
-        "DOID",
-        "UO",
-        "PATO",
-        "EDAM",
-        "BFO",
-        "SWO",
-        "VIVO",
-    ],
-    "PSIMOD": [
-        "MOD"
-    ],
-    "NCRO": [
-        "BFO",
-        "CHEBI",
-        "DOID",
-        "MIRNAO"
-    ],
-    "RETO": [
-        "MI",
-        "NCBITAXON"
-    ],
-    "DPO": [
-        "PATO",
-        "BFO",
-        "FBDV",
-        "CARO",
-        "FBCV"
-    ],
-    "FBDV": [
-        "BFO"
-    ],
-    "PAV": [
-        "PROVO"
-    ],
-    "CCON": [
-        "ENVO"        
-    ],
-    "download": [
-        "FO"
-    ],
-    "FBCV": [
-        "CHEBI",
-        "PATO",
-        "BFO",
-        "FBDV",
-        "CARO"
-    ],
-    "IDQA": [
+    "CANONT": [
         "BCTEO",
-        "CANONT"
+        "IDQA"
     ],
-    "AEO": [
-        "CARO"
-    ],
-    "PCO": [
-        "NCBITAXON",
-        "PATO",
-        "ENVO",
-        "BFO",
-        "CARO"
-    ],
-    "PXO": [
-        "NCBITAXON",
-        "MIRNAO",
-        "CHEBI",
-        "PATO",
-        "REX",
-        "AMINO-ACID"
-    ],
-    "CCO": [
-        "MI",
-        "NCBITAXON",
-        "RETO"
-    ],
-    "TAO": [
-        "VSAO",
-        "PATO",
-        "CARO"
-    ],
-    "ICO": [
-        "NCBITAXON",
-        "CHEBI",
-        "OAE",
-        "UO",
-        "PATO",
-        "BFO",
-        "CARO",
-        "NCIT"
-    ],
-    "FTC": [
-        "CHEBI",
-        "SCHEMA"
-    ],
-    "SDO": [
-        "BT",
-        "UNITSONT"
-    ],
-    "ONTODM-KDD": [
-      "ONTODM-CORE",
-      "ONTODT"
-    ],
-    "LHN": [
-        "LOGGERHEAD"
-    ],
-    "CHD": [
-        "NGSONTO" 
-    ],
-    "HUPSON": [
-        "NCBITAXON",
-        "BP",
-        "ACGT-MO",
-        "ECG",
-        "EFO",
-        "BT",
-        "CHEBI",
-        "UO",
-        "BAO-GPCR",
-        "SIO",
-        "SEP",
-        "NPO",
-        "NCIT",
-        "GFO-BIO"
-    ],
-    "SYN": [
-        "NCIT"
-    ],
-    "OBI": [
-        "NCBITAXON",
-        "VO",
-        "MIRNAO",
-        "HP",
-        "CHEBI",
-        "UO",
-        "PATO",
-        "ENVO",
-        "BFO"
-    ],
-    "SO": [
-        "MIRNAO"
-    ],
+    "CHMO": "Loading Error: UnparsableOntologyException",
     "EDAMTO": [
         "EDAM"
     ],
-    "ROO": [
-        "FMA",
-        "STY",
-        "RADLEX",
-        "UO",
-        "CTCAE",
-        "SEDI",
-        "NCIT"
-    ],
-    "EO": [
-        "PECO"
-    ],
-    "UO": [
-        "PATO"
-    ],
-    "VSAO": [
-        "PATO",
-        "CARO"
-    ],
-    "CLO": [
-        "NCBITAXON",
-        "DOID",
-        "EFO",
-        "PATO",
-        "BFO",
-        "NCIT"
-    ],
-    "PSDS": [
-        "GRO-CPGA",
-        "GRO",
-        "PO"
-    ],
-    "SWO": [
-        "ONTODM-CORE",
-        "ONTODM-KDD",
-        "EDAM",
-        "BFO"
-    ],
-    "OCVDAE": [
-        "DOID",
-        "OAE",
-        "PATO",
-        "BFO"
-    ],
-    "IDOMAL": [
-        "CHEBI",
-        "ENVO",
-        "MIRO",
-        "PATO"
-    ],
-    "GEXO": [
-        "MI",
-        "NCBITAXON",
-        "RETO"
-    ],
-    "EHDAA2": [
-        "CARO"
-    ],
-    "HSAPDV": [
-        "NCBITAXON"
-    ],
-    "CTO": [
-        "PHYLONT"    
-    ],
-    "FB-CV": [
-        "PATO",
-        "BFO",
-        "FBDV",
-        "CARO",
-        "FBCV"
-    ],
-    "CMPO": [
-        "CHEBI",
-        "PATO"
-    ],
-    "OBIB": [
-        "NCBITAXON",
-        "MIRNAO",
-        "ICO",
-        "GEO",
-        "EFO",
-        "CHEBI",
-        "UO",
-        "PATO",
-        "BFO",
-        "VIVO"
-    ],
-    "LPT": [
-        "BCTEO",
-        "CANONT",
-        "IDQA"
-    ],
-    "CHEMBIO": [
-        "BP"
-    ],
     "GBM": [
-        "OFSMR",
-        "BHO"
+        "BHO",
+        "OFSMR"
     ],
-    "DERMLEX": [
-        "ADW"
-    ],
-    "MRO": [
-        "NCBITAXON",
-        "MIRNAO",
-        "BFO",
-        "ECO"
-    ],
-    "ECP": [
+    "GPML": [
         
     ],
-    "OBIWS": [
-        "NCBITAXON",
-        "MIRNAO",
+    "HUPSON": [
         "CHEBI",
-        "BFO"
-    ],
-    "FB-DV": [
-        "BFO",
-        "FBDV"
-    ],
-    "EFO": [
-        "NCBITAXON",
-        "MIRNAO",
-        "MPATH",
-        "DOID",
-        "BTO",
-        "HP",
-        "TO",
-        "PO",
-        "CHEBI",
-        "UO",
-        "MA",
-        "PATO",
-        "WB-LS",
-        "ZEA",
-        "GRO-CPGA",
-        "ZFA",
-        "PECO",
-        "WBLS",
-        "FBDV",
-        "GRO",
-        "PTO"
-    ],
-    "INO": [
-        "MIRNAO",
-        "PW",
-        "MI",
-        "BFO",
-        "OGG-MM"
-    ],
-    "NMOSP": [
-        "NCBITAXON",
-        "RS",
-        "FBCV"
-    ],
-    "BCO": [
-        "NCBITAXON",
-        "MIXS",
-        "CHEBI",
-        "BFO",
-        "CARO"
-    ],
-    "FBbt": [
-        "MIRNAO",
-        "PATO"
-    ],
-    "MOD": [
-        "PSIMOD"
-    ],
-    "REXO": [
-        "MI",
-        "NCBITAXON",
-        "RETO"
-    ],
-    "STATO": [
-        "NCBITAXON",
-        "MIRNAO",
-        "CHEBI",
-        "UO",
-        "BFO",
-        "CARO"
-    ],
-    "FIRE": [
-        "CCON" 
-    ],
-    "CSEO": [
-        "MO",
-        "UO",
-        "PATO",
+        "OBI",
+        "BAO-GPCR",
         "NCIT",
-        "EXO"
-    ],
-    "OBCS": [
-        "NCBITAXON",
-        "MIRNAO",
-        "CHEBI",
+        "IAO",
         "UO",
-        "PATO",
-        "BFO",
-        "STATO"
-    ],
-    "BMT": [
-        "EDAM"
-    ],
-    "ODNAE": [
+        "EFO",
+        "SIO",
+        "GO",
         "NCBITAXON",
-        "OAE",
-        "CHEBI",
-        "PATO",
-        "BFO",
-        "DRON"
+        "ECG",
+        "BP",
+        "SEP",
+        "GFO-BIO",
+        "EDAM",
+        "FMA",
+        "CL",
+        "ACGT-MO",
+        "NPO",
+        "OGMS",
+        "BT"
     ],
-    "PTO": [
-        "TO"
-    ],
-    "EMO": [
-        "CHEBI" 
-    ],
-    "FB-BT": [
-        "MIRNAO",
-        "PATO"
-    ],
-    "NIDM-RESULTS": [
-        "NGSONTO",
-        "PROVO",
-        "STATO"
-    ],
-    "BCCHRCATALOG": [
-        "RH-MESH" 
-    ],
-    "OGG": [
-        "NCBITAXON",
-        "BFO",
-        "OGG-MM"
-    ],
-    "CAS": [
-        "MIXS" 
-    ],
-    "EDAM-BIOIMAGING": [
-        "EDAM"
-    ],
-    "OPL": [
-        "NCBITAXON",
-        "IDOMAL",
-        "CARO"
-    ],
-    "FBBT": [
-        "MIRNAO",
-        "PATO"
-    ],
-    "BSPO": [
-        "CARO"
+    "LDA": [
+        
     ],
     "MOP": [
         "CHEBI",
         "BFO"
     ],
-    "GFO": [
-        "GFO-BIO"
-    ],
-    "SP": [
-        "MO",
-        "NCBITAXON",
-        "EFO",
-        "BTO",
-        "PO",
-        "CHEBI",
-        "SIO",
-        "GRO-CPGA",
-        "NPO",
-        "GRO",
-        "NCIT"
-    ],
-    "GRO-CPGA": [
-        "GRO",
-        "PO"
-    ],
-    "BHO": [
-        "GBM"
-    ],
-    "RAO": [
-        "PE"    
-    ],
-    "WB-LS": [
-        "WBLS"
-    ],
-    "IAO": [
-        "UO",
-        "PATO",
-        "BFO"
-    ],
-    "CANONT": [
-        "BCTEO",
-        "IDQA"
-    ],
-    "ICW": [
-        "OFSMR"
-    ],
-    "DIAB": [
-        "DOID",
-        "EFO",
-        "HP",
-        "SIO"
-    ],
-    "GLYCORDF": [
-        "MS" 
-    ],
-    "IFAR": [
-        "HP",
-        "NCIT"
-    ],
-    "FYPO": [
-        "MIRNAO",
-        "BTO",
-        "CHEBI",
-        "PATO"
-    ],
-    "BCTEO": [
-        "CANONT",
-        "IDQA"
-    ],
-    "PAE": [
-        "GRO-CPGA",
-        "GRO",
-        "PO"
-    ],
-    "PR": [
+    "OCVDAE": [
+        "UBERON",
+        "OAE",
         "BFO",
-        "CHEBI",
-        "MIRNAO",
-        "MOD",
-        "NCBITAXON",
-        "PSIMOD"
-    ],
-    "WB-PHENOTYPE": [
-        "WBPHENOTYPE"
-    ],
-    "BCGO": [
-        "NCBITAXON",
-        "MIRNAO",
-        "EFO",
-        "BTO",
-        "NBO",
-        "CHEBI",
-        "UO",
+        "GO",
         "PATO",
-        "ENVO",
+        "OBI",
+        "OGMS",
+        "DOID"
+    ],
+    "STATO": [
+        "OBI",
+        "GO",
+        "NCBITAXON",
+        "CHEBI",
+        "IAO",
         "BFO",
         "CARO",
-        "RS",
-        "VT"
-    ],
-    "SBOL": [
-        "MIRNAO"
-    ],
-    "RXNO": [
-        
-    ],
-    "DIAGONT": [
-        "NONRCTO"
-    ],
-    "ZFA": [
-        "ZFS"
-    ],
-    "PE": [
-        "RAO" 
-    ],
-    "VIVO-ISF": [
         "UO",
-        "BFO",
-        "VIVO"
+        "CL",
+        "OGMS",
+        "MIRNAO",
+        "SO"
     ]
 }

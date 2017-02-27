@@ -29,12 +29,13 @@ import groovy.transform.Field
 currentDir.subSequence(0, currentDir.length() - 1)
 
 def pats = new JsonSlurper().parseText(new File("iri_patterns.json").text)
-def results = [:]
+def results = new JsonSlurper().parseText(new File("mireot_ontologies.json").text)
 
 new File('temp/').eachFile { f ->
+  new File('mireot_ontologies.json').text = new JsonBuilder(results).toPrettyString()
   def id = f.getName().split('_').last().replace('.ontology','')
 
-  if(new File('tempall/'+id+'_all.ontology').exists()) {
+  if(results.containsKey(id)) {
     println 'skip ' + id
     return;
   }
@@ -42,13 +43,13 @@ new File('temp/').eachFile { f ->
   def manager = OWLManager.createOWLOntologyManager()
   def config = new OWLOntologyLoaderConfiguration()
   config.setFollowRedirects(true)
-  config.setMissingImportHandlingStrategy(MissingImportHandlingStrategy.SILENT)
+  //config.setMissingImportHandlingStrategy(MissingImportHandlingStrategy.SILENT)
   
   def ontology 
   try {
     ontology = manager.loadOntologyFromOntologyDocument(new IRIDocumentSource(IRI.create(f.toURI())), config) 
   } catch(e) {
-    results.error = 'Loading Error: ' + e.getClass().getSimpleName()
+    results[id] = 'Loading Error: ' + e.getClass().getSimpleName()
     e.printStackTrace()
     println '[UNMIREOT] Problem loading ' + id
   }
@@ -57,7 +58,8 @@ new File('temp/').eachFile { f ->
     results[id] = []
     ontology.getClassesInSignature(true).each {
       pats.each { n, p ->
-        if(n != id && it.getIRI().toString().indexOf(p) != -1 && !results[id].contains(n)) {
+        def os = it.getIRI().toString()
+        if(n != id && !results[id].contains(n) && (os.indexOf(p) != -1 || os.indexOf('/'+n+'_') != -1 || os.indexOf(';'+n+'_') != -1)) {
           results[id] << n
         }
       }

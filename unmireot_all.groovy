@@ -38,14 +38,23 @@ eConf.setParameter(ReasonerConfiguration.INCREMENTAL_TAXONOMY, "true")
 
 def mireots = new JsonSlurper().parseText(new File("mireot_ontologies.json").text)
 
-def i = 0
+def i = 1
 mireots.each { id, refs ->
   println '[UNMIREOT][' + i + '/' + mireots.size() + '] Processing ' + id 
-  def oFile = 'results/' + id + '.json'
-  def zF = new JsonSlurper().parseText(new File(oFile).text)
-  if(zF.error == "Loading Error: Unknown") {
+  def oFile = new File('results/' + id + '.json')
+  if(id == 'ERO'){return}
+  if(!oFile.exists()) {
     println '[UNMIREOT] Running'
     runUNMIREOT(id)
+  } else {
+    def v = new JsonSlurper().parseText(oFile.text)
+    if(v.error != false) {
+      println '[UNMIREOT] Running'
+      runUNMIREOT(id)
+    } else {
+
+      println 'skip'
+    }
   }
   i++
 }
@@ -58,7 +67,7 @@ def runUNMIREOT(id) {
   config.setMissingImportHandlingStrategy(MissingImportHandlingStrategy.SILENT)
   
   def ontology 
-  def ooFile = new File('tempall/unmireot_test_' + id + '_all.ontology')
+  def ooFile = new File('tempall/' + id + '_all.ontology')
   try {
     ontology = manager.loadOntologyFromOntologyDocument(new IRIDocumentSource(IRI.create(ooFile.toURI())), config) 
   } catch(e) {
@@ -85,7 +94,6 @@ def runUNMIREOT(id) {
       }
     }
   } else {
-    results.error = 'Loading Error: Unknown'
     println '[UNMIREOT] Problem loading ' + id
   }
 
