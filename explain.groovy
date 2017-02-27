@@ -37,33 +37,12 @@ eConf.setParameter(ReasonerConfiguration.INCREMENTAL_TAXONOMY, "true")
 @Field def rConf = new ElkReasonerConfiguration(ElkReasonerConfiguration.getDefaultOwlReasonerConfiguration(new NullReasonerProgressMonitor()), eConf);
 
 def mireots = new JsonSlurper().parseText(new File("mireot_ontologies.json").text)
+def id = args[0]
 
-def i = 1
-mireots.each { id, refs ->
-  println '[UNMIREOT][' + i + '/' + mireots.size() + '] Processing ' + id 
-  if(refs instanceof String) {
-    println 'skip because noload'
-    return
-  }
-  def oFile = new File('results/' + id + '.json')
-  if(!oFile.exists()) {
-    println '[UNMIREOT] Running'
-    runUNMIREOT(id)
-  } else {
-    def v = new JsonSlurper().parseText(oFile.text)
-    if(v.error != false) {
-      println '[UNMIREOT] Running'
-      runUNMIREOT(id)
-    } else {
-
-      println 'skip'
-    }
-  }
-  i++
-}
+runUNMIREOT(id)
 
 def runUNMIREOT(id) {
-  def results = [ 'error': false, 'unsatisfiable': [:] ]
+  def results = [ 'error': false, 'unsatisfiable': [] ]
   def manager = OWLManager.createOWLOntologyManager()
   def config = new OWLOntologyLoaderConfiguration()
   config.setFollowRedirects(true)
@@ -90,18 +69,9 @@ def runUNMIREOT(id) {
     }
 
     if(!results.error) {
-      ontology.getClassesInSignature(true).eachParallel { cl ->
-        if(!oReasoner.isSatisfiable(cl)) {
-          def iri = cl.getIRI().toString() 
-          results.unsatisfiable[iri] = []
-          println 'procing ' + iri
-
-          BlackBoxExplanation exp = new BlackBoxExplanation(ontology, reasonerFactory, oReasoner)
-
-          Set<OWLAxiom> explanations = exp.getExplanation(cl)
-          for(OWLAxiom causingAxiom : explanations) {
-            results.unsatisfiable[iri] << causingAxiom.toString()
-          }
+      ontology.getClassesInSignature(true).each {
+        if(!oReasoner.isSatisfiable(it)) {
+          results.unsatisfiable << it.getIRI().toString()
         }
       }
     }
