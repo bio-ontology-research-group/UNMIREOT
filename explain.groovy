@@ -25,6 +25,9 @@ import groovy.json.*
 import groovyx.gpars.*
 import groovy.transform.Field
 
+import com.clarkparsia.owlapi.explanation.BlackBoxExplanation;
+import com.clarkparsia.owlapi.explanation.HSTExplanationGenerator;
+
 @Field def currentDir = new File('.').getAbsolutePath()
 currentDir.subSequence(0, currentDir.length() - 1)
 
@@ -36,13 +39,12 @@ eConf.setParameter(ReasonerConfiguration.INCREMENTAL_TAXONOMY, "true")
 @Field def reasonerFactory = new ElkReasonerFactory();
 @Field def rConf = new ElkReasonerConfiguration(ElkReasonerConfiguration.getDefaultOwlReasonerConfiguration(new NullReasonerProgressMonitor()), eConf);
 
-def mireots = new JsonSlurper().parseText(new File("mireot_ontologies.json").text)
 def id = args[0]
 
 runUNMIREOT(id)
 
 def runUNMIREOT(id) {
-  def results = [ 'error': false, 'unsatisfiable': [] ]
+  def results = [ 'error': false, 'unsatisfiable': [:] ]
   def manager = OWLManager.createOWLOntologyManager()
   def config = new OWLOntologyLoaderConfiguration()
   config.setFollowRedirects(true)
@@ -69,9 +71,18 @@ def runUNMIREOT(id) {
     }
 
     if(!results.error) {
-      ontology.getClassesInSignature(true).each {
-        if(!oReasoner.isSatisfiable(it)) {
-          results.unsatisfiable << it.getIRI().toString()
+      ontology.getClassesInSignature(true).each { cl ->
+        if(!oReasoner.isSatisfiable(cl)) {
+          def iri = cl.getIRI().toString() 
+          results.unsatisfiable[iri] = []
+          println 'procing ' + iri
+
+          BlackBoxExplanation exp = new BlackBoxExplanation(ontology, reasonerFactory, oReasoner)
+
+          Set<OWLAxiom> explanations = exp.getExplanation(cl)
+          for(OWLAxiom causingAxiom : explanations) {
+            results.unsatisfiable[iri] << causingAxiom.toString()
+          }
         }
       }
     }
