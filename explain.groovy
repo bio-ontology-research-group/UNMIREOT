@@ -59,6 +59,7 @@ def runUNMIREOT(id) {
     e.printStackTrace()
     println '[UNMIREOT] Problem loading ' + id
   }
+  println 'done loading'
 
   if(ontology) {
    def oReasoner
