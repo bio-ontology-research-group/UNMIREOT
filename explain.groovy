@@ -40,58 +40,54 @@ eConf.setParameter(ReasonerConfiguration.INCREMENTAL_TAXONOMY, "true")
 @Field def rConf = new ElkReasonerConfiguration(ElkReasonerConfiguration.getDefaultOwlReasonerConfiguration(new NullReasonerProgressMonitor()), eConf);
 
 def id = args[0]
+def results = [ 'error': false, 'unsatisfiable': [:] ]
+def manager = OWLManager.createOWLOntologyManager()
 
-runUNMIREOT(id)
+def config = new OWLOntologyLoaderConfiguration()
+config.setFollowRedirects(true)
+config.setMissingImportHandlingStrategy(MissingImportHandlingStrategy.SILENT)
 
-def runUNMIREOT(id) {
-  def results = [ 'error': false, 'unsatisfiable': [:] ]
-  def manager = OWLManager.createOWLOntologyManager()
-  def config = new OWLOntologyLoaderConfiguration()
-  config.setFollowRedirects(true)
-  config.setMissingImportHandlingStrategy(MissingImportHandlingStrategy.SILENT)
-  
-  def ontology 
-  def ooFile = new File('tempall/' + id + '_all.ontology')
+def ontology 
+def ooFile = new File('tempall/' + id + '_all.ontology')
+try {
+  ontology = manager.loadOntologyFromOntologyDocument(new IRIDocumentSource(IRI.create(ooFile.toURI())), config) 
+} catch(e) {
+  results.error = 'Loading Error: ' + e.getClass().getSimpleName()
+  e.printStackTrace()
+  println '[UNMIREOT] Problem loading ' + id
+}
+println 'done loading'
+
+if(ontology) {
+ def oReasoner
   try {
-    ontology = manager.loadOntologyFromOntologyDocument(new IRIDocumentSource(IRI.create(ooFile.toURI())), config) 
+    oReasoner = reasonerFactory.createReasoner(ontology, rConf) 
+    oReasoner.precomputeInferences(InferenceType.CLASS_HIERARCHY)
   } catch(e) {
-    results.error = 'Loading Error: ' + e.getClass().getSimpleName()
-    e.printStackTrace()
-    println '[UNMIREOT] Problem loading ' + id
+    results.error = 'Reasoning: ' + e.getClass().getSimpleName()
+    println '[UNMIREOT] Problem reasoning ' + id
   }
-  println 'done loading'
 
-  if(ontology) {
-   def oReasoner
-    try {
-      oReasoner = reasonerFactory.createReasoner(ontology, rConf) 
-      oReasoner.precomputeInferences(InferenceType.CLASS_HIERARCHY)
-    } catch(e) {
-      results.error = 'Reasoning: ' + e.getClass().getSimpleName()
-      println '[UNMIREOT] Problem reasoning ' + id
-    }
+  if(!results.error) {
+    ontology.getClassesInSignature(true).each { cl ->
+      if(!oReasoner.isSatisfiable(cl)) {
+        def iri = cl.getIRI().toString() 
+        results.unsatisfiable[iri] = []
+        println 'procing ' + iri
 
-    if(!results.error) {
-      ontology.getClassesInSignature(true).each { cl ->
-        if(!oReasoner.isSatisfiable(cl)) {
-          def iri = cl.getIRI().toString() 
-          results.unsatisfiable[iri] = []
-          println 'procing ' + iri
+        BlackBoxExplanation exp = new BlackBoxExplanation(ontology, reasonerFactory, oReasoner)
 
-          BlackBoxExplanation exp = new BlackBoxExplanation(ontology, reasonerFactory, oReasoner)
-
-          Set<OWLAxiom> explanations = exp.getExplanation(cl)
-          for(OWLAxiom causingAxiom : explanations) {
-            results.unsatisfiable[iri] << causingAxiom.toString()
-          }
+        Set<OWLAxiom> explanations = exp.getExplanation(cl)
+        for(OWLAxiom causingAxiom : explanations) {
+          results.unsatisfiable[iri] << causingAxiom.toString()
         }
       }
     }
-  } else {
-    println '[UNMIREOT] Problem loading ' + id
   }
-
-  def oFile = 'results/' + id + '.json'
-  new File(oFile).text = new JsonBuilder(results).toPrettyString()
-  println '[UNMIREOT] Saved ' + id
+} else {
+  println '[UNMIREOT] Problem loading ' + id
 }
+
+def oFile = 'results/' + id + '.json'
+new File(oFile).text = new JsonBuilder(results).toPrettyString()
+println '[UNMIREOT] Saved ' + id

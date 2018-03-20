@@ -1,5 +1,0 @@
-{
-    "DisjointClasses(<http://purl.obolibrary.org/obo/UBERON_0001004> <http://purl.obolibrary.org/obo/UBERON_0001007>)": 1,
-    "SubClassOf(<http://www.ebi.ac.uk/efo/EFO_0000836> <http://purl.obolibrary.org/obo/UBERON_0001004>)": 1,
-    "SubClassOf(<http://www.ebi.ac.uk/efo/EFO_0000836> <http://purl.obolibrary.org/obo/UBERON_0001007>)": 1
-}

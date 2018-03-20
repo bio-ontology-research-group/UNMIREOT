@@ -31,9 +31,10 @@ currentDir.subSequence(0, currentDir.length() - 1)
 def pats = new JsonSlurper().parseText(new File("iri_patterns.json").text)
 def results = new JsonSlurper().parseText(new File("mireot_ontologies.json").text)
 
-new File('temp/').eachFile { f ->
+new File('ontologies/').eachFile { f ->
   new File('mireot_ontologies.json').text = new JsonBuilder(results).toPrettyString()
-  def id = f.getName().split('_').last().replace('.ontology','')
+  def id = f.getName()
+  println 'processing ' + id
 
   if(results.containsKey(id)) {
     println 'skip ' + id
@@ -65,19 +66,29 @@ new File('temp/').eachFile { f ->
       }
     }
 
-
     if(results[id].size() > 0) {
       println id + ': ' + results[id].join(', ')
 
       results[id].each {
-        def importDeclaration = manager.getOWLDataFactory().getOWLImportsDeclaration(IRI.create("file:/home/aberowl/UNMIREOT/temp/unmireot_test_"+it+".ontology"));
+        def path = '/gpfs/bb/lxs511/UNMIREOT/ontologies/'+it+'.owl'
+        if(!new File(path).exists()) {
+          path = '/gpfs/bb/lxs511/UNMIREOT/ontologies/'+it+'.obo'
+        }
+        if(!new File(path).exists()) { //messy
+          println 'problems'
+          results[id] << 'could not find ' + it
+          return;
+        }
+
+        def importDeclaration = manager.getOWLDataFactory().getOWLImportsDeclaration(IRI.create(path));
         manager.applyChange(new AddImport(ontology, importDeclaration));
 
         try {
-          File fileFormated = new File("tempall/"+id+"_all.ontology");
+          File fileFormated = new File("ontologies_merged/"+id+"_all.ontology");
           manager.saveOntology(ontology, IRI.create(fileFormated.toURI()));
         } catch(e) {
           println 'problems'
+          results[id] << 'could not save merged ontology'
         }
       }
     }
