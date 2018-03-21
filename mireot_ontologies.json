@@ -1,333 +1,438 @@
 {
-    "ABA-AMB.owl": [
+    "GDCO.owl": [
+        "BFO"
+    ],
+    "WSIO.obo": [
         
     ],
-    "ABD.owl": [
-        
-    ],
-    "ADAR.owl": [
-        
-    ],
-    "ADMIN.owl": [
-        
-    ],
-    "ADO.owl": [
-        
-    ],
-    "AEO.owl": [
-        "CL",
-        "CARO"
-    ],
-    "AGRO.owl": [
-        "OBI",
-        "PATO",
-        "UO",
-        "CHEBI",
-        "IAO",
-        "ENVO",
-        "RO",
-        "BFO",
-        "GO",
-        "NCBITAXON",
-        "OGMS"
-    ],
-    "ALLERGYDETECTOR.owl": [
-        
-    ],
-    "AMINO-ACID.owl": [
-        
-    ],
-    "ANCESTRO.owl": [
-        
-    ],
-    "AO.owl": [
-        
-    ],
-    "APAONTO.owl": [
-        
-    ],
-    "APO.obo": [
-        "YPO"
-    ],
-    "ASDPTO.owl": [
-        
-    ],
-    "ATMO.obo": [
-        
-    ],
-    "ATO.obo": [
-        
-    ],
-    "ATOL.owl": [
-        
-    ],
-    "AUDITORYH.owl": [
-        
-    ],
-    "AURA.owl": [
-        
-    ],
-    "BCGO.owl": "Loading Error: UnloadableImportException",
-    "BCO.owl": [
-        "MIXS",
-        "BFO",
-        "OBI",
+    "OBIWS.owl": [
         "NCBITAXON",
         "IAO",
+        "OBI",
         "CHEBI",
-        "PCO",
-        "CARO"
-    ],
-    "BCTEO.obo": [
-        "CANONT",
-        "IDQA"
-    ],
-    "BCTT.owl": [
-        
-    ],
-    "BFO.owl": [
-        
-    ],
-    "BHN.owl": [
-        
-    ],
-    "BHO.owl": [
-        "GBM"
-    ],
-    "BIBFRAME.owl": [
-        
-    ],
-    "BIBLIOTEK-O.owl": [
-        "SCHEMA",
-        "PROVO"
-    ],
-    "BIM.owl": [
-        
-    ],
-    "BIOBIPON.owl": [
-        "MIRNAO",
-        "SO",
-        "CHEBI",
-        "GO"
-    ],
-    "BIPON.owl": [
-        "GO",
-        "CHEBI",
-        "SBO",
+        "BFO",
         "MIRNAO",
         "SO"
     ],
-    "BIRNLEX.owl": [
+    "PYRAMIDALH.owl": [
         
     ],
-    "BIRTHDAYH.owl": [
+    "FB-BT.obo": [
+        "GO",
+        "PATO",
+        "MIRNAO",
+        "SO"
+    ],
+    "NCIT.owl": [
         
     ],
-    "BMO.owl": [
+    "SCDO.owl": [
         
     ],
-    "BMT.owl": [
-        "EDAM"
+    "PE.owl": [
+        "RAO"
     ],
-    "BMTO.owl": [
-        "EDAM"
-    ],
-    "BNO.owl": [
-        
-    ],
-    "BP.owl": [
-        
-    ],
-    "BRO-Activity.owl": [
-        
-    ],
-    "BRO-AreaOfResearch.owl": [
-        
-    ],
-    "BRO-Chinese.owl": [
-        
-    ],
-    "BRO-Resource.owl": [
-        
-    ],
-    "BRODMANNH.owl": [
-        
-    ],
-    "BSAO.obo": [
-        
-    ],
-    "BSPO.owl": [
-        "CARO"
-    ],
-    "BT.owl": [
-        
-    ],
-    "BTO.obo": [
-        
-    ],
-    "BiositemapIM.owl": [
-        
-    ],
-    "CABRO.owl": [
-        
-    ],
-    "CANONT.obo": [
-        "BCTEO",
-        "IDQA"
-    ],
-    "CAO.owl": [
-        "OBI",
-        "IAO"
-    ],
-    "CARELEX.owl": [
-        
-    ],
-    "CARRE.owl": [
-        
-    ],
-    "CBLAYERH.owl": [
-        
-    ],
-    "CBO.owl": [
-        
-    ],
-    "CCCNO.owl": [
-        "DOCCC"
-    ],
-    "CCLAYERH.owl": [
-        
-    ],
-    "CCON.owl": [
-        "ENVO"
-    ],
-    "CEDARVS.owl": [
-        
-    ],
-    "CELEGANH.owl": [
-        
-    ],
-    "CHD.owl": [
-        "NGSONTO"
-    ],
-    "CHEBI.obo": [
-        
-    ],
-    "CHEMBIO.owl": [
-        "BP"
-    ],
-    "CHMO.owl": [
-        "BFO",
-        "OBI",
-        "CHEBI",
-        "IAO",
-        "MS",
-        "OBCS"
-    ],
-    "CIDOC-CRM.owl": [
+    "ICF-d1.owl": "EXCLUDED",
+    "MOOCCUADO.obo": [
         
     ],
     "CIINTEADO.obo": [
         
     ],
-    "CIO.owl": [
+    "FaBiO.owl": [
         
     ],
-    "CIRCUITH.owl": [
+    "ICF-d860-d879.owl": "EXCLUDED",
+    "OBI.owl": [
+        "IAO",
+        "GO",
+        "UBERON",
+        "PATO",
+        "NCBITAXON",
+        "CHEBI",
+        "UO",
+        "CL",
+        "BFO",
+        "VO",
+        "MIRNAO",
+        "SO",
+        "ENVO",
+        "OGMS",
+        "CHMO",
+        "HP"
+    ],
+    "ATO.obo": [
         
     ],
-    "CISAVIADO.obo": [
+    "OVAE.owl": [
+        "UBERON",
+        "VO",
+        "CHEBI",
+        "NCBITAXON",
+        "OAE",
+        "PATO",
+        "OGG",
+        "OGG-MM",
+        "BFO",
+        "IAO",
+        "OBI",
+        "OGMS",
+        "CARO",
+        "EFO"
+    ],
+    "iceci-place_of_occurrence.owl": [
+        "ICECI"
+    ],
+    "ADMIN.owl": [
         
     ],
-    "CKDO.owl": [
+    "WB-LS.obo": "EXCLUDED",
+    "obi-fged.owl": [
+        "UO",
+        "OBI",
+        "CHEBI",
+        "GO",
+        "CL",
+        "UBERON",
+        "IAO",
+        "PATO",
+        "NCBITAXON",
+        "VO",
+        "HP",
+        "CARO",
+        "BFO",
+        "OGMS",
+        "MIRNAO",
+        "SO"
+    ],
+    "ERO.owl": [
+        "OBI",
+        "SWO",
+        "NCBITAXON",
+        "PATO",
+        "UBERON",
+        "MIRNAO",
+        "SO",
+        "IAO",
+        "VIVO",
+        "MP",
+        "EDAM",
+        "GO",
+        "OGMS",
+        "PCO",
+        "UO",
+        "DOID",
+        "BFO"
+    ],
+    "ICO.owl": [
+        "IAO",
+        "OMRSE",
+        "OBI",
+        "CARO",
+        "NCBITAXON",
+        "BFO",
+        "NCIT",
+        "OGMS",
+        "UBERON",
+        "CHEBI",
+        "UO",
+        "PATO",
+        "CL",
+        "OAE"
+    ],
+    "PGXO.owl": [
+        "PROVO"
+    ],
+    "SP.owl": [
+        "GRO",
+        "PO",
+        "OBI",
+        "CHEBI",
+        "UBERON",
+        "EFO",
+        "NCBITAXON",
+        "BTO",
+        "ERO",
+        "SIO",
+        "IAO",
+        "NCIT",
+        "MO",
+        "BFO",
+        "CL",
+        "NPO",
+        "OGI"
+    ],
+    "HOM-UCSF_UCareDispostion.owl": "EXCLUDED",
+    "ECP.owl": [
+        "STY"
+    ],
+    "EPO.owl": [
         
     ],
-    "CMO.obo": [
+    "goslim_yeast.obo": "EXCLUDED",
+    "APO.obo": [
+        "YPO"
+    ],
+    "RNPRIO.owl": [
         
     ],
-    "CMPO.owl": [
+    "PLOSTHES.skos": [
+        
+    ],
+    "ONTOMA.owl": [
+        
+    ],
+    "ADO.owl": [
+        
+    ],
+    "RNAO.obo": [
+        "CHEBI"
+    ],
+    "foaf.owl": [
+        "VIVO",
+    ],
+    "ICF-NoCodeLabel.owl": "EXCLUDED",
+    "RO.owl": [
+        
+    ],
+    "ISO19115DTC.owl": [
+        
+    ],
+    "CARELEX.owl": [
+        
+    ],
+    "HRDO.owl": [
+        
+    ],
+    "OA.owl": [
+        
+    ],
+    "ESSO.owl": [
+        
+    ],
+    "GO-EXT.obo": "EXCLUDED",
+    "MCBCC.owl": [
+        
+    ],
+    "TM-CONST.owl": [
+        
+    ],
+    "BRO-Activity.owl": [
+        
+    ],
+    "PDON.owl": [
+        
+    ],
+    "MOP.owl": [
+        "CHEBI",
+        "BFO"
+    ],
+    "CBLAYERH.owl": [
+        
+    ],
+    "SPTO.obo": "EXCLUDED",
+    "FIRE.owl": [
+        "CCON"
+    ],
+    "citation.owl": [
+        
+    ],
+    "OGG-MM.owl": [
+        "OGG",
+        "BFO",
+        "OBI",
+        "NCBITAXON"
+    ],
+    "NCIt-Activity.owl": [
+        
+    ],
+    "MFO.obo": [
+        
+    ],
+    "SIO.owl": [
+        
+    ],
+    "APAONTO.owl": [
+        
+    ],
+    "ICF-d810-d839.owl": "EXCLUDED",
+    "BCGO.owl": "Loading Error: UnloadableImportException",
+    "OMP.obo": [
         "GO",
         "PATO",
-        "CHEBI",
-        "CL"
+        "CHEBI"
     ],
-    "CN.owl": [
+    "ATOL.owl": [
+        
+    ],
+    "SOPHARM.owl": [
+        "SNPO"
+    ],
+    "iceci-activity.owl": "EXCLUDED",
+    "iceci-descriptor_for_intent.owl": "EXCLUDED",
+    "EPSO.owl": [
+        
+    ],
+    "MEDEON.owl": [
+        
+    ],
+    "MEGO.obo": [
+        
+    ],
+    "SMASHPHYSICAL.owl": "EXCLUDED",
+    "FIX.obo": [
         
     ],
     "CO-WHEAT.obo": [
         
     ],
+    "OBIB.owl": [
+        "UO",
+        "CL",
+        "FMA",
+        "CHEBI",
+        "OBI",
+        "ERO",
+        "IAO",
+        "DOID",
+        "NCIT",
+        "OGMS",
+        "DRON",
+        "EFO",
+        "UBERON",
+        "PATO",
+        "ICO",
+        "NCBITAXON",
+        "OMRSE",
+        "FLU",
+        "GEO",
+        "GO",
+        "BFO",
+        "MIRNAO",
+        "SO",
+        "OAE",
+        "VIVO",
+        "PCO"
+    ],
+    "goslim_pombe.obo": "EXCLUDED",
+    "FISHO.owl": [
+        
+    ],
+    "DOID.obo": [
+        
+    ],
     "COGAT.owl": [
         
     ],
-    "COMODI.owl": [
+    "SIBO.owl": [
+        "NCBITAXON"
+    ],
+    "ICF-d5.owl": "EXCLUDED",
+    "BNO.owl": [
         
     ],
-    "COPDO.owl": [
-        "OFSMR"
-    ],
-    "CPTAC.owl": [
+    "PYRAMIDAL2H.owl": [
         
     ],
-    "CSEO.owl": [
-        "NCIT",
-        "MO",
-        "UO",
-        "EXO",
-        "PATO"
-    ],
-    "CSO.owl": [
-        "OFSMR"
-    ],
-    "CSSO.owl": [
+    "PW.obo": [
         
     ],
-    "CTO.owl": [
-        "PHYLONT"
-    ],
-    "CVAO.owl": [
+    "ABD.owl": [
         
     ],
-    "CYTO.owl": [
+    "H3_HIPSeptotemporalAxis.owl": [
+        "ABA-AMB"
+    ],
+    "skos.owl": [
         
     ],
-    "DCAT.owl": [
+    "G-O.owl": [
+        "BFO"
+    ],
+    "ONTOLURGENCES.owl": [
         
     ],
-    "DCMITYPE.owl": [
+    "OARCS.owl": [
         
     ],
-    "DCT.owl": [
+    "SDO.owl": [
+        "IAO",
+        "UNITSONT",
+        "OGMS",
+        "BT"
+    ],
+    "AEO.owl": [
+        "CL",
+        "CARO"
+    ],
+    "CEDARVS.owl": [
         
     ],
-    "DCTERMS.skos": [
+    "MONDO.owl": [
         
     ],
-    "DDANAT.obo": [
+    "OGROUP.owl": [
         
     ],
-    "DDPHENO.owl": [
+    "PDRO.owl": "Loading Error: UnloadableImportException",
+    "PSIMOD.obo": "EXCLUDED",
+    "TIME.owl": [
         
     ],
-    "DERMLEX.owl": [
-        "ADW"
-    ],
-    "DERMO.obo": [
+    "CCLAYERH.owl": [
         
     ],
-    "DIAB.owl": [
-        "HP",
-        "MP",
+    "envo_153.obo": "EXCLUDED",
+    "ORDO.owl": [
+        
+    ],
+    "ONTOTOXNUC.owl": [
+        
+    ],
+    "BSAO.obo": [
+        
+    ],
+    "EXON.owl": [
+        
+    ],
+    "AUDITORYH.owl": [
+        
+    ],
+    "CISAVIADO.obo": [
+        
+    ],
+    "VICO.owl": [
+        "NCBITAXON",
+        "VO",
         "DOID",
-        "SIO",
+        "SYMP",
+        "OAE",
+        "OGG",
+        "OGG-MM",
+        "CHEBI",
+        "BFO",
+        "ICO",
+        "PATO",
+        "UBERON",
+        "OBI",
+        "IAO",
+        "CARO",
         "EFO"
     ],
-    "DIAGONT.owl": [
-        "NONRCTO"
-    ],
-    "DILIo.owl": [
+    "SNMD_BC.owl": [
         
     ],
-    "DLORO.owl": [
+    "FBbi.obo": "EXCLUDED",
+    "NIDM-RESULTS.owl": [
+        "PROVO",
+        "STATO",
+        "OBI",
+        "NGSONTO"
+    ],
+    "TRANS.owl": [
+        "PHYLONT"
+    ],
+    "ISO19115MI.owl": [
         
     ],
     "DMTO.owl": [
@@ -342,42 +447,594 @@
         "PHYLONT",
         "BFO"
     ],
+    "FAST-TOPICAL.skos": [
+        "SCHEMA"
+    ],
+    "ASDPTO.owl": [
+        
+    ],
+    "MECHANOH.owl": [
+        
+    ],
+    "BP.owl": [
+        
+    ],
+    "OGR.owl": [
+        
+    ],
+    "TEDDY.owl": [
+        
+    ],
+    "STY.umls": [
+        
+    ],
+    "SMASHBIOMARKER.owl": "EXCLUDED",
+    "DERMLEX.owl": [
+        "ADW"
+    ],
+    "SPD.obo": [
+        
+    ],
+    "dcelements.owl": [
+        
+    ],
+    "PDO_CAS.owl": [
+        "MIXS"
+    ],
+    "TRIAGE.owl": [
+        
+    ],
+    "LDA.owl": [
+        
+    ],
+    "NEUROTRANSH.owl": [
+        
+    ],
+    "CBO.owl": [
+        
+    ],
+    "EDAM-BIOIMAGING.owl": "EXCLUDED",
+    "BRODMANNH.owl": [
+        
+    ],
+    "GCO.owl": [
+        
+    ],
+    "HOM.obo": [
+        
+    ],
+    "WB-BT.obo": "EXCLUDED",
+    "SPO.owl": [
+        
+    ],
+    "NBO.owl": [
+        "GO",
+        "CHEBI",
+        "UBERON",
+        "PATO"
+    ],
+    "FAST-EVENT-SKOS.skos": [
+        "SCHEMA"
+    ],
+    "GFO.owl": "EXCLUDED",
+    "CMO.obo": [
+        
+    ],
+    "IFAR.owl": [
+        "NCIT",
+        "HP",
+        "MP"
+    ],
+    "BIBFRAME.owl": [
+        
+    ],
+    "CHMO.owl": [
+        "BFO",
+        "OBI",
+        "CHEBI",
+        "IAO",
+        "MS",
+        "OBCS"
+    ],
+    "BCTEO.obo": [
+        "CANONT",
+        "IDQA"
+    ],
     "DOCCC.owl": [
         
     ],
-    "DOID.obo": [
+    "ONTODM-KDD.owl": [
+        "OBI",
+        "IAO",
+        "ONTODM-CORE",
+        "ONTODT",
+        "SWO"
+    ],
+    "GALEN.owl": [
         
     ],
-    "DSEO.owl": [
+    "SHR.owl": [
+        
+    ],
+    "MONO.owl": [
+        
+    ],
+    "EO.owl": [
+        "BFO"
+    ],
+    "obi-device.owl": [
+        
+    ],
+    "SNMI.umls": "Loading Error: UnparsableOntologyException",
+    "ORDO_OBO.obo": [
+        "ORDO"
+    ],
+    "geopolitical.owl": [
+        
+    ],
+    "DCT.owl": [
+        
+    ],
+    "CHD.owl": [
+        "NGSONTO"
+    ],
+    "MHCRO.owl": [
+        "MRO",
+        "ECO",
+        "GO",
+        "NCBITAXON",
+        "OBI",
+        "MIRNAO",
+        "SO",
+        "IAO",
+        "BFO"
+    ],
+    "SYMP.owl": [
+        
+    ],
+    "H2_HIPClassicRegions.owl": [
+        "ABA-AMB"
+    ],
+    "CIDOC-CRM.owl": [
+        
+    ],
+    "RADLEX.owl": [
+        
+    ],
+    "GPML.owl": [
+        
+    ],
+    "DLORO.owl": [
+        
+    ],
+    "ICF-d4.owl": "EXCLUDED",
+    "goslim_pir.obo": "EXCLUDED",
+    "BIRTHDAYH.owl": [
+        
+    ],
+    "SPINALH.owl": [
+        
+    ],
+    "BIOBIPON.owl": [
+        "MIRNAO",
+        "SO",
+        "CHEBI",
+        "GO"
+    ],
+    "NPI.owl": [
+        
+    ],
+    "WB-PHENOTYPE.obo": "EXCLUDED",
+    "DCMITYPE.owl": [
+        
+    ],
+    "TM-OTHER-FACTORS.owl": [
+        
+    ],
+    "HSAPDV.owl": [
+        "UBERON",
+        "NCBITAXON"
+    ],
+    "ICF-d6.owl": "EXCLUDED",
+    "CYTO.owl": [
+        
+    ],
+    "BIM.owl": [
+        
+    ],
+    "HP.obo": [
+        
+    ],
+    "MPATH.obo": [
+        
+    ],
+    "PHARE.owl": [
+        
+    ],
+    "MAT.obo": [
+        "XAO",
+        "ZFA",
+        "GRO",
+        "PO",
+        "EMAPA",
+        "TAO",
+        "EHDAA",
+        "MP",
+        "FBbt",
+        "MA",
+        "WBBT",
+        "TADS",
+        "AAO",
+        "TGMA",
+        "DDANAT",
+        "FAO",
+        "GRO-CPD",
+        "ZEA",
+        "FBDV",
+        "GO"
+    ],
+    "iceci-intent.owl": "EXCLUDED",
+    "DILIo.owl": [
+        
+    ],
+    "CTO.owl": [
+        "PHYLONT"
+    ],
+    "VT.obo": [
+        
+    ],
+    "NIHSS.owl": [
+        
+    ],
+    "HAO.owl": [
+        
+    ],
+    "EMO.owl": [
+        "CHEBI"
+    ],
+    "TGMA.obo": [
+        
+    ],
+    "ELIG.owl": [
+        
+    ],
+    "GENE-CDS.owl": [
+        
+    ],
+    "BMT.owl": [
+        "EDAM"
+    ],
+    "SNOMEDCT-MAS.owl": [
+        
+    ],
+    "CSSO.owl": [
+        
+    ],
+    "IAML-MOP.skos": [
+        
+    ],
+    "CCON.owl": [
+        "ENVO"
+    ],
+    "PCMO.owl": [
+        
+    ],
+    "TOP-MENELAS.owl": [
+        
+    ],
+    "PIERO.owl": [
+        
+    ],
+    "DCTERMS.skos": [
+        
+    ],
+    "DERMO.obo": [
+        
+    ],
+    "SSO.owl": [
+        
+    ],
+    "FAST-FORMGENRE.skos": [
+        "SCHEMA"
+    ],
+    "VARIO.obo": [
+        
+    ],
+    "goslim_goa.obo": "EXCLUDED",
+    "CELEGANH.owl": [
+        
+    ],
+    "UNITSONT.owl": [
+        
+    ],
+    "BMO.owl": [
+        
+    ],
+    "FAST-TITLE.skos": [
+        "SCHEMA"
+    ],
+    "ICF-d840-d859.owl": "EXCLUDED",
+    "KORO.owl": [
+        "BFO",
+        "IAO"
+    ],
+    "PECO.obo": [
+        "EO"
+    ],
+    "PAV.owl": [
+        "PROVO"
+    ],
+    "XAO.obo": [
+        
+    ],
+    "ICECI.owl": [
+        
+    ],
+    "ABA-AMB.owl": [
+        
+    ],
+    "DDPHENO.owl": [
+        
+    ],
+    "ROS.owl": [
+        "PHYLONT"
+    ],
+    "NCCNEHR.owl": [
+        
+    ],
+    "PMO.owl": [
+        
+    ],
+    "OCMR.owl": [
+        "CHEBI",
+        "UBERON",
+        "NCBITAXON",
+        "OAE",
+        "IAO",
+        "PATO",
+        "BFO",
+        "DRON",
+        "GRO",
+        "PO",
+        "OGMS",
+        "OBI"
+    ],
+    "ICF.owl": [
+        
+    ],
+    "EPILONT.owl": [
+        
+    ],
+    "NEOMARK3.owl": [
+        
+    ],
+    "PYRAMIDAL1H.owl": [
         
     ],
     "ECGF.owl": [
         
     ],
+    "PTO.owl": [
+        "TO"
+    ],
+    "FALDO.owl": [
+        
+    ],
+    "BIPON.owl": [
+        "GO",
+        "CHEBI",
+        "SBO",
+        "MIRNAO",
+        "SO"
+    ],
+    "TM-MER.owl": [
+        
+    ],
+    "ZEA.obo": [
+        
+    ],
+    "BRO-Resource.owl": [
+        
+    ],
+    "SBOL.obo": [
+        "MIRNAO",
+        "SO"
+    ],
+    "IDOMAL.obo": [
+        "OBI",
+        "MIRO",
+        "CL",
+        "CHEBI",
+        "NCBITAXON",
+        "GO",
+        "SYMP",
+        "VO",
+        "ENVO",
+        "IAO",
+        "UBERON",
+        "IDODEN",
+        "CARO",
+        "PATO",
+        "EFO"
+    ],
+    "FB-SP.obo": "EXCLUDED",
+    "GMM.obo": [
+        
+    ],
+    "MCCV.owl": [
+        "MEO"
+    ],
+    "ESFO.owl": [
+        
+    ],
+    "TADS.obo": [
+        
+    ],
+    "MERA.owl": [
+        
+    ],
+    "ATMO.obo": [
+        
+    ],
+    "DDANAT.obo": [
+        
+    ],
+    "iceci-details_for_activity.owl": "EXCLUDED",
+    "MOBLAYERH.owl": [
+        
+    ],
+    "PTRANS.obo": "EXCLUDED",
+    "FMA-SUBSET.obo": "EXCLUDED",
     "ECGT.owl": [
         
     ],
-    "ECO.obo": [
+    "GEXO.owl": [
+        "GO",
+        "MI",
+        "SIO",
+        "MOD",
+        "PSIMOD",
+        "NCBITAXON",
+        "OGMS"
+    ],
+    "AO.owl": [
         
     ],
-    "ECP.owl": [
-        "STY"
-    ],
-    "EDAM-BIOIMAGING.owl": [
-        "EDAM"
-    ],
-    "EDAM.owl": [
+    "ADAR.owl": [
         
     ],
-    "EDAMT.owl": [
-        "EDAM"
+    "FOOD_ONTOLOGY.owl": [
+        
+    ],
+    "PDUMDV.owl": [
+        
+    ],
+    "STATO.owl": [
+        "OBI",
+        "GO",
+        "IAO",
+        "NCBITAXON",
+        "CHEBI",
+        "BFO",
+        "UO",
+        "CARO",
+        "CL",
+        "OGMS",
+        "MIRNAO",
+        "SO"
+    ],
+    "ICD9CM-PROC.owl": [
+        
+    ],
+    "TAXRANK.obo": [
+        
+    ],
+    "PSDS.obo": [
+        "GRO",
+        "PO"
+    ],
+    "ICF-d2.owl": "EXCLUDED",
+    "HFO.owl": [
+        
+    ],
+    "OHD.owl": [
+        "FMA",
+        "BFO",
+        "OBI",
+        "OMRSE",
+        "IAO",
+        "NCBITAXON",
+        "OGMS",
+        "CARO"
+    ],
+    "MIRNAO.owl": [
+        "SO",
+        "NCBITAXON",
+        "BFO",
+        "CHEBI",
+        "OGMS",
+        "GO",
+        "OBI",
+        "NCIT",
+        "RNAO"
+    ],
+    "BiositemapIM.owl": [
+        
+    ],
+    "OMIT.owl": [
+        "GO",
+        "MOD",
+        "PSIMOD",
+        "DOID",
+        "MIRNAO",
+        "SO",
+        "NCBITAXON",
+        "FMA",
+        "BFO",
+        "CHEBI"
+    ],
+    "EUPATH.owl": [
+        "ENVO",
+        "UBERON",
+        "DOID",
+        "SYMP",
+        "OBI",
+        "FLU",
+        "MIRNAO",
+        "SO",
+        "IAO",
+        "CHEBI",
+        "HP",
+        "CL",
+        "BFO",
+        "OGMS",
+        "OMRSE",
+        "NCBITAXON",
+        "ERO",
+        "UO",
+        "PCO",
+        "OBCS",
+        "PATO",
+        "EFO",
+        "DRON",
+        "GRO",
+        "PO",
+        "BTO",
+        "CARO",
+        "OBIB",
+        "STATO",
+        "GO"
+    ],
+    "EHDAA2.obo": [
+        "CL",
+        "CARO",
+        "UBERON",
+        "FBBT",
+        "ZFA"
+    ],
+    "MRO.owl": [
+        
+    ],
+    "REPO.owl": [
+        
+    ],
+    "FYPO.obo": [
+        "CHEBI",
+        "GO",
+        "CL",
+        "MIRNAO",
+        "SO",
+        "PATO",
+        "BTO"
+    ],
+    "MWLA.owl": [
+        
     ],
     "EFO.owl": [
         "UBERON",
         "NCBITAXON",
         "GO",
         "GRO",
-        "GRO-CPGA",
         "PO",
         "CHEBI",
         "DOID",
@@ -406,333 +1063,84 @@
         "SO",
         "ZEA"
     ],
-    "EHDA.obo": [
-        
-    ],
-    "EHDAA.obo": [
-        
-    ],
-    "EHDAA2.obo": [
-        "CL",
-        "CARO",
-        "UBERON",
-        "FBBT",
-        "FBbt",
-        "ZFA"
-    ],
-    "ELIG.owl": [
-        
-    ],
-    "EMAPA.owl": [
-        
-    ],
-    "EMO.owl": [
-        "CHEBI"
-    ],
-    "ENDOCRINEH.owl": [
-        
-    ],
-    "ENVO.owl": [
-        "UBERON",
-        "CHEBI",
-        "PATO",
-        "NCBITAXON",
-        "OBI",
-        "BFO",
-        "GO",
-        "FLOPO",
-        "GRO",
-        "GRO-CPGA",
-        "PO",
-        "OMP",
-        "PCO",
-        "FAO",
-        "CARO",
-        "RO"
-    ],
-    "EO.owl": [
-        "BFO"
-    ],
-    "EOL.owl": [
-        
-    ],
-    "EPILONT.owl": [
-        
-    ],
-    "EPO.owl": [
-        
-    ],
-    "EPSO.owl": [
-        
-    ],
-    "ERO.owl": [
-        "OBI",
-        "SWO",
-        "NCBITAXON",
-        "PATO",
-        "UBERON",
-        "MIRNAO",
-        "SO",
-        "IAO",
-        "VIVO",
-        "VIVO-ISF",
-        "MP",
-        "EDAM",
-        "GO",
-        "OGMS",
-        "PCO",
-        "UO",
-        "DOID",
-        "BFO"
-    ],
-    "ESFO.owl": [
-        
-    ],
-    "ESSO.owl": [
-        
-    ],
-    "EUPATH.owl": [
-        "ENVO",
-        "UBERON",
-        "DOID",
-        "SYMP",
-        "OBI",
-        "FLU",
-        "MIRNAO",
-        "SO",
-        "IAO",
-        "CHEBI",
-        "HP",
-        "CL",
-        "BFO",
-        "OGMS",
-        "OMRSE",
-        "NCBITAXON",
-        "ERO",
-        "UO",
-        "PCO",
-        "OBCS",
-        "PATO",
-        "EFO",
-        "DRON",
-        "GRO",
-        "GRO-CPGA",
-        "PO",
-        "BTO",
-        "CARO",
-        "OBIB",
-        "STATO",
-        "GO"
-    ],
-    "EXO.obo": [
-        
-    ],
-    "EXON.owl": [
-        
-    ],
-    "FALDO.owl": [
-        
-    ],
-    "FAO.owl": [
-        
-    ],
-    "FAST-EVENT-SKOS.skos": [
-        "SCHEMA"
-    ],
-    "FAST-EVENT.owl": [
-        "SCHEMA"
-    ],
-    "FAST-FORMGENRE.skos": [
-        "SCHEMA"
-    ],
-    "FAST-GENREFORM.owl": [
-        "SCHEMA"
-    ],
-    "FAST-TITLE.skos": [
-        "SCHEMA"
-    ],
-    "FAST-TOPICAL.skos": [
-        "SCHEMA"
-    ],
-    "FB-BT.obo": [
-        "GO",
-        "PATO",
-        "MIRNAO",
-        "SO"
-    ],
-    "FB-CV.owl": [
-        "GO",
-        "PATO",
-        "FBDV",
-        "BFO",
-        "CARO",
-        "CL",
-        "PCO"
-    ],
-    "FB-DV.obo": [
-        "GO",
-        "BFO"
-    ],
-    "FB-SP.obo": "EXCLUDED",
-    "FBbi.obo": "EXCLUDED",
-    "FIRE.owl": [
-        "CCON"
-    ],
-    "FISH-AST.skos": [
-        
-    ],
-    "FISHO.owl": [
-        
-    ],
-    "FIX.obo": [
-        
-    ],
-    "FLOPO.owl": [
-        "PATO",
-        "GRO",
-        "GRO-CPGA",
-        "PO"
-    ],
-    "FMA-SUBSET.obo": [
-        "FMA"
-    ],
-    "FO.owl": [
+    "NEUDIGS.owl": [
         
     ],
     "FOOD_ONT.owl": [
         
     ],
-    "FOOD_ONTOLOGY.owl": [
+    "JERM.owl": [
         
     ],
-    "FTC.owl": [
-        "GO",
-        "SCHEMA",
-        "CHEBI"
-    ],
-    "FUNCTIONALH.owl": [
+    "AURA.owl": [
         
     ],
-    "FYPO.obo": [
-        "CHEBI",
-        "GO",
-        "CL",
-        "MIRNAO",
-        "SO",
-        "PATO",
-        "BTO"
-    ],
-    "FaBiO.owl": [
+    "ECO.obo": [
         
     ],
-    "G-O.owl": [
-        "BFO"
-    ],
-    "GALEN.owl": [
-        
-    ],
-    "GANGLIONH.owl": [
-        
-    ],
-    "GBM.owl": [
-        "BHO",
-        "OFSMR"
-    ],
-    "GBOL.owl": [
-        "PROVO"
-    ],
-    "GCO.owl": [
-        
-    ],
-    "GDCO.owl": [
-        "BFO"
-    ],
-    "GENE-CDS.owl": [
-        
-    ],
-    "GEXO.owl": [
-        "GO",
-        "MI",
-        "SIO",
-        "MOD",
-        "PSIMOD",
+    "BCO.owl": [
+        "MIXS",
+        "BFO",
+        "OBI",
         "NCBITAXON",
+        "IAO",
+        "CHEBI",
+        "PCO",
+        "CARO"
+    ],
+    "pseudo.obo": [
+        
+    ],
+    "CANONT.obo": [
+        "BCTEO",
+        "IDQA"
+    ],
+    "RS.obo": [
+        
+    ],
+    "PHENX.owl": [
+        
+    ],
+    "EOL.owl": [
+        
+    ],
+    "FLOPO.owl": [
+        "PATO",
+        "GRO",
+        "PO"
+    ],
+    "CSEO.owl": [
+        "NCIT",
+        "MO",
+        "UO",
+        "EXO",
+        "PATO"
+    ],
+    "RSA.owl": [
+        
+    ],
+    "SMASHSOCIAL.owl": "EXCLUDED",
+    "OCVDAE.owl": [
+        "UBERON",
+        "OAE",
+        "BFO",
+        "GO",
+        "PATO",
+        "OBI",
         "OGMS"
     ],
-    "GFO.owl": [
-        "GFO-BIO"
-    ],
-    "GFVO.owl": [
+    "SMD_NPLSM.owl": [
         
     ],
-    "GLYCORDF.owl": [
-        "MS"
-    ],
-    "GMM.obo": [
+    "TTO.obo": [
         
     ],
-    "GO-EXT.obo": "EXCLUDED",
-    "GO.obo": "EXCLUDED",
-    "GPML.owl": [
+    "NCBI_NMOsp_1_2_2.obo": "EXCLUDED",
+    "CARRE.owl": [
         
     ],
-    "GRO.owl": [
+    "MADS-RDF.owl": [
         
-    ],
-    "GYRISULCIH.owl": [
-        
-    ],
-    "H1_NMOABA_1_0.owl": [
-        "ABA-AMB"
-    ],
-    "H1_NMOABA_2_0.owl": [
-        "ABA-AMB"
-    ],
-    "H2_HIPClassicRegions.owl": [
-        "ABA-AMB"
-    ],
-    "H3_HIPSeptotemporalAxis.owl": [
-        "ABA-AMB"
-    ],
-    "HAAURAADO.obo": [
-        
-    ],
-    "HAO.owl": [
-        
-    ],
-    "HAROREADO.obo": [
-        
-    ],
-    "HEIO.owl": [
-        
-    ],
-    "HFO.owl": [
-        
-    ],
-    "HIPLAYERH.owl": [
-        
-    ],
-    "HIVO004.owl": [
-        
-    ],
-    "HOM-ICD9.owl": [
-        
-    ],
-    "HOM-UCSF_UCareDispostion.owl": [
-        "HOM"
-    ],
-    "HOM.obo": [
-        
-    ],
-    "HP.obo": [
-        
-    ],
-    "HRDO.owl": [
-        
-    ],
-    "HSAPDV.owl": [
-        "UBERON",
-        "NCBITAXON"
     ],
     "HUGO.owl": [
         
@@ -760,373 +1168,100 @@
         "OGMS",
         "BT"
     ],
-    "IAML-MOP.skos": [
+    "PEDTERM.owl": [
         
     ],
-    "IAO.owl": [
-        "BFO",
-        "UO",
-        "OBI",
-        "PATO"
-    ],
-    "ICD11-BODYSYSTEM.owl": [
+    "RNRMU.owl": [
         
     ],
-    "ICD9CM-PROC.owl": [
-        
-    ],
-    "ICECI.owl": [
-        
-    ],
-    "ICF-NOCM.owl": [
-        "ICF"
-    ],
-    "ICF-NoCodeLabel.owl": [
-        "ICF"
-    ],
-    "ICF-d1.owl": [
-        "ICF"
-    ],
-    "ICF-d2.owl": [
-        "ICF"
-    ],
-    "ICF-d3.owl": [
-        "ICF"
-    ],
-    "ICF-d4.owl": [
-        "ICF"
-    ],
-    "ICF-d5.owl": [
-        "ICF"
-    ],
-    "ICF-d6.owl": [
-        "ICF"
-    ],
-    "ICF-d7.owl": [
-        "ICF"
-    ],
-    "ICF-d8.owl": [
-        "ICF"
-    ],
-    "ICF-d810-d839.owl": [
-        "ICF"
-    ],
-    "ICF-d840-d859.owl": [
-        "ICF"
-    ],
-    "ICF-d860-d879.owl": [
-        "ICF"
-    ],
-    "ICF-d9.owl": [
-        "ICF"
-    ],
-    "ICF.owl": [
-        
-    ],
-    "ICO.owl": [
-        "IAO",
-        "OMRSE",
-        "OBI",
-        "CARO",
-        "NCBITAXON",
-        "BFO",
-        "NCIT",
-        "OGMS",
-        "UBERON",
-        "CHEBI",
-        "UO",
-        "PATO",
-        "CL",
-        "OAE"
-    ],
-    "ICW.owl": [
+    "CSO.owl": [
         "OFSMR"
     ],
-    "IDO.owl": [
-        "BFO",
-        "OGMS",
+    "XEO.obo": [
+        
+    ],
+    "PE-O.owl": [
+        
+    ],
+    "FO.owl": [
+        
+    ],
+    "PHYLONT.owl": [
+        
+    ],
+    "UK.owl": [
+        
+    ],
+    "ANCESTRO.owl": [
+        
+    ],
+    "RAO.owl": [
+        "PE"
+    ],
+    "PYRAMIDAL3H.owl": [
+        
+    ],
+    "TAO.obo": [
         "GO",
-        "NCBITAXON",
-        "OBI",
-        "CL",
-        "PTRANS",
-        "TRANS",
-        "IAO",
         "CARO",
-        "UBERON",
-        "CHEBI"
-    ],
-    "IDOBRU.owl": [
-        "OGG",
-        "OGG-MM",
-        "OGMS",
-        "NCBITAXON",
-        "GO",
         "CL",
-        "VO",
-        "OBI",
-        "BFO",
-        "IAO",
-        "UBERON",
-        "CHEBI",
-        "PTRANS",
-        "TRANS",
-        "CARO",
-        "ENVO"
+        "VSAO",
+        "PATO"
     ],
-    "IDOMAL.obo": [
-        "OBI",
-        "MIRO",
-        "CL",
-        "CHEBI",
-        "NCBITAXON",
-        "GO",
-        "SYMP",
-        "VO",
-        "ENVO",
-        "IAO",
-        "UBERON",
-        "IDODEN",
-        "CARO",
-        "PATO",
-        "EFO"
-    ],
-    "IDQA.obo": [
-        "BCTEO",
-        "CANONT"
-    ],
-    "IFAR.owl": [
-        "NCIT",
-        "HP",
-        "MP"
-    ],
-    "INM-NPI.owl": [
-        
-    ],
-    "INSECTH.owl": [
-        
-    ],
-    "ISO19115DTC.owl": [
-        
-    ],
-    "ISO19115MI.owl": [
-        
-    ],
-    "ISO19115ROLES.skos": [
-        
-    ],
-    "ISO19115TCC.owl": [
-        
-    ],
-    "ISO639-2.owl": [
-        
-    ],
-    "ITEMAS.owl": [
-        
-    ],
-    "IXNO.obo": [
-        "GO"
-    ],
-    "JERM.owl": [
-        
-    ],
-    "KISAO.owl": [
-        
-    ],
-    "KORO.owl": [
-        "BFO",
-        "IAO"
-    ],
-    "LBO.obo": [
-        
-    ],
-    "LCMPT.skos": [
-        
-    ],
-    "LDA.owl": [
-        
-    ],
-    "LPT.obo": [
-        "BCTEO",
-        "CANONT",
-        "IDQA"
-    ],
-    "MA.obo": [
-        
-    ],
-    "MADS-RDF.owl": [
-        
-    ],
-    "MAMO.owl": [
-        
-    ],
-    "MAMOVIEW.owl": [
-        "MAMO"
-    ],
-    "MAT.obo": [
-        "XAO",
-        "ZFA",
-        "GRO",
-        "GRO-CPGA",
-        "PO",
-        "EMAPA",
-        "TAO",
-        "EHDAA",
-        "MP",
-        "FBBT",
-        "FBbt",
-        "MA",
-        "WBBT",
-        "TADS",
-        "AAO",
-        "TGMA",
-        "DDANAT",
-        "FAO",
-        "GRO-CPD",
-        "ZEA",
-        "FBDV",
-        "GO"
-    ],
-    "MCBCC.owl": [
-        
-    ],
-    "MCCL.owl": [
-        
-    ],
-    "MCCV.owl": [
-        "MEO"
-    ],
-    "MECHANOH.owl": [
-        
-    ],
-    "MEDEON.owl": [
+    "GO.obo": [
         
     ],
     "MEDO.owl": [
         
     ],
-    "MEGO.obo": [
-        
-    ],
-    "MERA.owl": [
-        
-    ],
-    "MFO.obo": [
-        
-    ],
-    "MHCRO.owl": [
-        "MRO",
-        "ECO",
-        "GO",
-        "NCBITAXON",
-        "OBI",
-        "MIRNAO",
-        "SO",
-        "IAO",
-        "BFO"
-    ],
-    "MI.owl": [
-        
-    ],
-    "MINI-FAST-1.skos": [
-        "SCHEMA"
-    ],
-    "MIRNAO.owl": [
-        "SO",
-        "NCBITAXON",
-        "BFO",
-        "CHEBI",
-        "OGMS",
-        "GO",
-        "OBI",
-        "NCIT",
-        "RNAO"
-    ],
-    "MIXS.owl": [
-        
-    ],
-    "MIXSCV.obo": [
-        
-    ],
-    "MIZZOU_CCO.owl": [
-        "NCCO"
-    ],
     "MMO.obo": [
         
     ],
-    "MMUSDV.owl": [
+    "PHFUMIADO.obo": [
         
     ],
-    "MOBLAYERH.owl": [
-        
+    "GLYCORDF.owl": [
+        "MS"
     ],
-    "MONDO.owl": [
-        
-    ],
-    "MONO.owl": [
-        
-    ],
-    "MOOCCIADO.obo": [
-        
-    ],
-    "MOOCCUADO.obo": [
-        
-    ],
-    "MOOCULADO.obo": [
-        
-    ],
-    "MOP.owl": [
-        "CHEBI",
-        "BFO"
-    ],
-    "MPATH.obo": [
-        
-    ],
-    "MRO.owl": [
-        
-    ],
-    "MWLA.owl": [
-        
-    ],
-    "NBO.owl": [
+    "FTC.owl": [
         "GO",
-        "CHEBI",
-        "UBERON",
-        "PATO"
+        "SCHEMA",
+        "CHEBI"
     ],
-    "NCBI_NMOsp_1_0_0.obo": [
-        "NCBITAXON",
-        "RS"
-    ],
-    "NCBI_NMOsp_1_2_2.obo": [
-        "RS"
-    ],
-    "NCCNEHR.owl": [
+    "NONRCTO.owl": "Loading Error: UnloadableImportException",
+    "PHMAMMADO.obo": [
         
     ],
-    "NCCO.owl": [
+    "HAROREADO.obo": [
         
     ],
-    "NCIT.owl": [
+    "XCO.obo": [
         
     ],
-    "NCIT_NEOPLASM.owl": "EXCLUDED",
-    "NCIt-Activity.owl": [
+    "TRON.obo": [
         
     ],
-    "NEOMARK3.owl": [
+    "ONTOPNEUMO.owl": [
         
     ],
-    "NEOMARK4.owl": [
+    "ONTOAD.owl": [
+        
+    ],
+    "iceci-instrument_object_substance.owl": "EXCLUDED",
+    "EMAPA.owl": [
+        
+    ],
+    "CAO.owl": [
+        "OBI",
+        "IAO"
+    ],
+    "VIVO-ISF.owl": [
+        "ERO",
         "IAO",
-        "OGMS",
+        "VIVO",
+        "BFO",
+        "UO",
         "OBI"
-    ],
-    "NEUDIGS.owl": [
-        
-    ],
-    "NEUROTRANSH.owl": [
-        
     ],
     "NIAID-GSC-BRC.owl": [
         "IAO",
@@ -1144,109 +1279,13 @@
         "CARO",
         "ENVO"
     ],
-    "NIDM-RESULTS.owl": [
-        "PROVO",
-        "STATO",
-        "OBI",
-        "NGSONTO"
-    ],
-    "NIF-RTH.owl": [
+    "H1_NMOABA_2_0.owl": "EXCLUDED",
+    "NCBI_NMOsp_1_0_0.obo": "EXCLUDED",
+    "EHDAA.obo": [
         
     ],
-    "NIGO.obo": "EXCLUDED",
-    "NIHSS.owl": [
+    "OGMD.obo": [
         
-    ],
-    "NMOSP.owl": [
-        "NCBITAXON",
-        "RS",
-        "FBCV"
-    ],
-    "NONRCTO.owl": "Loading Error: UnloadableImportException",
-    "NPI.owl": [
-        
-    ],
-    "NPO.owl": [
-        
-    ],
-    "NeuroFMA.owl": [
-        
-    ],
-    "OA.owl": [
-        
-    ],
-    "OARCS.owl": [
-        
-    ],
-    "OBCS.owl": [
-        "IAO",
-        "OBI",
-        "UO",
-        "PATO",
-        "MIRNAO",
-        "SO",
-        "NCBITAXON",
-        "BFO",
-        "STATO",
-        "CHEBI",
-        "GO",
-        "CL"
-    ],
-    "OBI.owl": [
-        "IAO",
-        "GO",
-        "UBERON",
-        "PATO",
-        "NCBITAXON",
-        "CHEBI",
-        "UO",
-        "CL",
-        "BFO",
-        "VO",
-        "MIRNAO",
-        "SO",
-        "ENVO",
-        "OGMS",
-        "CHMO",
-        "HP"
-    ],
-    "OBIB.owl": [
-        "UO",
-        "CL",
-        "FMA",
-        "CHEBI",
-        "OBI",
-        "ERO",
-        "IAO",
-        "DOID",
-        "NCIT",
-        "OGMS",
-        "DRON",
-        "EFO",
-        "UBERON",
-        "PATO",
-        "ICO",
-        "NCBITAXON",
-        "OMRSE",
-        "FLU",
-        "GEO",
-        "GO",
-        "BFO",
-        "MIRNAO",
-        "SO",
-        "OAE",
-        "VIVO",
-        "VIVO-ISF",
-        "PCO"
-    ],
-    "OBIWS.owl": [
-        "NCBITAXON",
-        "IAO",
-        "OBI",
-        "CHEBI",
-        "BFO",
-        "MIRNAO",
-        "SO"
     ],
     "OBI_BCGO.owl": [
         "OBI",
@@ -1275,32 +1314,327 @@
         "SWO",
         "RS"
     ],
+    "FISH-AST.skos": [
+        
+    ],
+    "EHDA.obo": [
+        
+    ],
+    "goslim_plant.obo": "EXCLUDED",
+    "NCIT_NEOPLASM.owl": "EXCLUDED",
+    "OGG.owl": [
+        "OGG-MM",
+        "BFO",
+        "NCBITAXON",
+        "OBI"
+    ],
+    "CHEMBIO.owl": [
+        "BP"
+    ],
+    "INM-NPI.owl": [
+        
+    ],
+    "CHEBI.obo": [
+        
+    ],
+    "RCTV2.owl": [
+        
+    ],
+    "goslim_candida.obo": "EXCLUDED",
+    "CABRO.owl": [
+        
+    ],
+    "RDAU.owl": [
+        
+    ],
+    "event.owl": [
+        "VIVO"
+    ],
+    "BRO-Chinese.owl": [
+        
+    ],
+    "NIGO.obo": [
+        "GO"
+    ],
+    "GFVO.owl": [
+        
+    ],
+    "ITEMAS.owl": [
+        
+    ],
+    "DIAGONT.owl": [
+        "NONRCTO"
+    ],
+    "COPDO.owl": [
+        "OFSMR"
+    ],
+    "NMOSP.owl": [
+        "NCBITAXON",
+        "RS",
+        "FBCV"
+    ],
+    "CPTAC.owl": [
+        
+    ],
+    "MOOCCIADO.obo": [
+        
+    ],
+    "iceci-countermeasures.owl": "EXCLUDED",
+    "NIF-RTH.owl": [
+        
+    ],
+    "THREELPH.owl": [
+        
+    ],
+    "ICW.owl": [
+        "OFSMR"
+    ],
+    "dcterms.owl": [
+        
+    ],
+    "RDA-CONTENT.owl": [
+        
+    ],
+    "RXNO.obo": [
+      "CHEBI",
+      "MOP",
+      "IAO",
+      "BFO",
+      "OBI"
+    ],
+    "SNOMED-Ethnic-Group.owl": [
+        
+    ],
+    "PATO.owl": [
+        
+    ],
+    "SCHEMA.owl": [
+        
+    ],
+    "DSEO.owl": [
+        
+    ],
+    "WIKIPATHWAYS.owl": [
+        "BP"
+    ],
+    "ZECO.owl": [
+        
+    ],
+    "BT.owl": [
+        
+    ],
+    "GRO.owl": [
+        
+    ],
+    "FUNCTIONALH.owl": [
+        
+    ],
+    "PLIO.owl": [
+        
+    ],
+    "SOY.obo": [
+        
+    ],
+    "CMPO.owl": [
+        "GO",
+        "PATO",
+        "CHEBI",
+        "CL"
+    ],
+    "FAST-GENREFORM.owl": [
+        "SCHEMA"
+    ],
+    "LBO.obo": [
+        
+    ],
+    "RETO.obo": [
+        "GO",
+        "MI",
+        "MOD",
+        "PSIMOD",
+        "SIO",
+        "NCBITAXON",
+        "OGMS"
+    ],
+    "FAST-EVENT.owl": [
+        "SCHEMA"
+    ],
+    "COMODI.owl": [
+        
+    ],
+    "ISO19115ROLES.skos": [
+        
+    ],
+    "ENVO.owl": [
+        "UBERON",
+        "CHEBI",
+        "PATO",
+        "NCBITAXON",
+        "OBI",
+        "BFO",
+        "GO",
+        "FLOPO",
+        "GRO",
+        "PO",
+        "OMP",
+        "PCO",
+        "FAO",
+        "CARO",
+        "RO"
+    ],
+    "iceci-substance_use.owl": "EXCLUDED",
+    "provenance.owl": [
+        "VIVO"
+    ],
+    "GYRISULCIH.owl": [
+        
+    ],
+    "VTO.owl": [
+        "TAXRANK"
+    ],
+    "PATHLEX.owl": [
+        
+    ],
+    "IAO.owl": [
+        "BFO",
+        "UO",
+        "OBI",
+        "PATO"
+    ],
+    "VHOG.obo": [
+        
+    ],
+    "HAAURAADO.obo": [
+        
+    ],
+    "SYN.owl": [
+        "NCIT",
+        "CL"
+    ],
+    "GANGLIONH.owl": [
+        
+    ],
+    "ICF-d9.owl": [
+        "ICF"
+    ],
+    "SMD_NPLSM_BRST.owl": [
+        
+    ],
+    "MIZZOU_CCO.owl": [
+        "NCCO"
+    ],
+    "OBCS.owl": [
+        "IAO",
+        "OBI",
+        "UO",
+        "PATO",
+        "MIRNAO",
+        "SO",
+        "NCBITAXON",
+        "BFO",
+        "STATO",
+        "CHEBI",
+        "GO",
+        "CL"
+    ],
     "OCHV.owl": [
         
     ],
-    "OCMR.owl": [
-        "CHEBI",
-        "UBERON",
-        "NCBITAXON",
-        "OAE",
+    "RPO.owl": [
+        
+    ],
+    "EDAM.owl": [
+        
+    ],
+    "NCCO.owl": [
+        
+    ],
+    "MIXS.owl": [
+        
+    ],
+    "NEOMARK4.owl": [
         "IAO",
-        "PATO",
-        "BFO",
-        "DRON",
-        "GRO",
-        "GRO-CPGA",
-        "PO",
         "OGMS",
         "OBI"
     ],
-    "OCVDAE.owl": [
-        "UBERON",
-        "OAE",
-        "BFO",
+    "TM-SIGNS-AND-SYMPTS.owl": [
+        
+    ],
+    "HIPLAYERH.owl": [
+        
+    ],
+    "BHO.owl": [
+        "GBM"
+    ],
+    "BTO.obo": [
+        
+    ],
+    "IDQA.obo": [
+        "BCTEO",
+        "CANONT"
+    ],
+    "GBOL.owl": [
+        "PROVO"
+    ],
+    "PPO.owl": [
+        "GRO",
+        "GRO-CPGA",
+        "PO",
         "GO",
-        "PATO",
+        "IAO",
+        "BCO",
+        "MIXS",
+        "BFO",
         "OBI",
+        "PATO",
+        "UBERON"
+    ],
+    "GBM.owl": [
+        "BHO",
+        "OFSMR"
+    ],
+    "ISO19115TCC.owl": [
+        
+    ],
+    "NeuroFMA.owl": [
+        
+    ],
+    "REXO.owl": [
+        "GO",
+        "MI",
+        "NCBITAXON",
+        "SIO",
+        "MOD",
+        "PSIMOD",
         "OGMS"
+    ],
+    "FB-DV.obo": [
+        "GO",
+        "BFO"
+    ],
+    "SURGICAL.owl": [
+        "PHYLONT"
+    ],
+    "bibliographic.owl": [
+        "VIVO"
+    ],
+    "TDWGSPEC.owl": [
+        
+    ],
+    "ZFS.owl": [
+        
+    ],
+    "TOK.owl": [
+        
+    ],
+    "HOM-ICD9.owl": [
+        
+    ],
+    "CKDO.owl": [
+        
+    ],
+    "ONTOKBCF.owl": [
+        
     ],
     "ODNAE.owl": [
         "DRON",
@@ -1316,33 +1650,99 @@
         "OBI",
         "BFO"
     ],
-    "OFSMR.owl": [
+    "EXO.obo": [
         
     ],
-    "OGG-MM.owl": "EXCLUDED",
-    "OGG.owl": [
-        "BFO",
-        "NCBITAXON",
-        "OBI"
-    ],
-    "OGMD.obo": [
-        
-    ],
-    "OGR.owl": [
-        
-    ],
-    "OGROUP.owl": [
-        
-    ],
-    "OHD.owl": [
-        "FMA",
-        "BFO",
-        "OBI",
-        "OMRSE",
-        "IAO",
-        "NCBITAXON",
-        "OGMS",
+    "VSAO.obo": [
+        "CL",
+        "GO",
+        "PATO",
         "CARO"
+    ],
+    "UPHENO.owl": [
+        "HP",
+        "MP"
+    ],
+    "BIBLIOTEK-O.owl": [
+        "SCHEMA",
+        "PROVO"
+    ],
+    "AGRO.owl": [
+        "OBI",
+        "PATO",
+        "UO",
+        "CHEBI",
+        "IAO",
+        "ENVO",
+        "RO",
+        "BFO",
+        "GO",
+        "NCBITAXON",
+        "OGMS"
+    ],
+    "OPE.owl": "Loading Error: UnloadableImportException",
+    "EDAMT.owl": [
+        "EDAM"
+    ],
+    "PAE.obo": [
+        "GRO",
+        "GRO-CPGA",
+        "PO"
+    ],
+    "SITBAC.owl": [
+        
+    ],
+    "MAMOVIEW.owl": [
+        "MAMO"
+    ],
+    "H1_NMOABA_1_0.owl": [
+        "ABA-AMB"
+    ],
+    "MOOCULADO.obo": [
+        
+    ],
+    "ROO.owl": [
+        "FMA",
+        "NCIT",
+        "STY",
+        "UO",
+        "CTCAE",
+        "SEDI",
+        "RADLEX"
+    ],
+    "IXNO.obo": [
+        "GO"
+    ],
+    "MCCL.owl": [
+        
+    ],
+    "PHYLO.owl": "EXCLUDED",
+    "PSO.owl": [
+        
+    ],
+    "OLATDV.owl": [
+        
+    ],
+    "AMINO-ACID.owl": [
+        
+    ],
+    "LPT.obo": [
+        "BCTEO",
+        "CANONT",
+        "IDQA"
+    ],
+    "DIAB.owl": [
+        "HP",
+        "MP",
+        "DOID",
+        "SIO",
+        "EFO"
+    ],
+    "PLANA.owl": [
+        
+    ],
+    "BIRNLEX.owl": [
+        
     ],
     "OHMI.owl": [
         "NCBITAXON",
@@ -1358,60 +1758,134 @@
         "UPHENO",
         "PCO",
         "CARO",
-        "GO",
+        "GO"
     ],
-    "OLATDV.owl": [
+    "PDO.owl": [
         
     ],
-    "OMIT.owl": [
-        "GO",
-        "MOD",
-        "PSIMOD",
-        "DOID",
-        "MIRNAO",
-        "SO",
-        "NCBITAXON",
-        "FMA",
-        "BFO",
-        "CHEBI"
+    "BMTO.owl": [
+        "EDAM"
     ],
-    "OMP.obo": [
+    "CVAO.owl": [
+        
+    ],
+    "IDOBRU.owl": [
+        "OGG",
+        "OGG-MM",
+        "OGMS",
+        "NCBITAXON",
+        "GO",
+        "CL",
+        "VO",
+        "OBI",
+        "BFO",
+        "IAO",
+        "UBERON",
+        "CHEBI",
+        "TRANS",
+        "CARO",
+        "ENVO"
+    ],
+    "SCTO.owl": [
+        "OGMS",
+        "BFO",
+        "IAO",
+        "OBI"
+    ],
+    "MAMO.owl": [
+        
+    ],
+    "ICF-d7.owl": "EXCLUDED",
+    "FB-CV.owl": [
+        "FBBT",
         "GO",
         "PATO",
-        "CHEBI"
+        "FBDV",
+        "BFO",
+        "CARO",
+        "CL",
+        "PCO"
     ],
-    "OMV.owl": [
+    "BHN.owl": [
+        
+    ],
+    "BRO-AreaOfResearch.owl": [
+        
+    ],
+    "SEDI.owl": [
         
     ],
     "ONLIRA.owl": [
         
     ],
-    "ONTOAD.owl": [
+    "OFSMR.owl": [
         
     ],
-    "ONTODM-KDD.owl": [
-        "OBI",
-        "IAO",
-        "ONTODM-CORE",
-        "ONTODT",
-        "SWO"
-    ],
-    "ONTOKBCF.owl": [
+    "KISAO.owl": [
         
     ],
-    "ONTOLURGENCES.owl": [
+    "CIO.owl": [
         
     ],
-    "ONTOMA.owl": [
+    "HIVO004.owl": [
         
     ],
-    "ONTOPNEUMO.owl": [
+    "iceci-mechanism.owl": "EXCLUDED",
+    "BFO.owl": [
         
     ],
-    "ONTOTOXNUC.owl": [
+    "MIXSCV.obo": [
+        
+    ],
+    "FAO.owl": [
+        
+    ],
+    "HEIO.owl": [
+        
+    ],
+    "MMUSDV.owl": [
+        
+    ],
+    "SO.owl": [
+        "MIRNAO"
+    ],
+    "ZFA.obo": [
+        "ZFS"
+    ],
+    "PROVO.owl": [
+        
+    ],
+    "CCCNO.owl": [
+        "DOCCC"
+    ],
+    "BCTT.owl": [
+        
+    ],
+    "OMV.owl": [
         
     ],
     "OPB.owl": [
+        
+    ],
+    "ISO639-2.owl": [
+        
+    ],
+    "SciRes.owl": [
+        "ERO",
+        "VIVO",
+        "OBI"
+    ],
+    "TRAK.obo": [
+        
+    ],
+    "CIRCUITH.owl": [
+        
+    ],
+    "iceci-details_for_mechanism.owl": "EXCLUDED",
+    "LCMPT.skos": [
+        
+    ],
+    "ICD11-BODYSYSTEM.owl": [
         
     ],
     "OPL.owl": [
@@ -1423,356 +1897,14 @@
         "OBI",
         "CL"
     ],
-    "ORDO.owl": [
-        
-    ],
-    "ORDO_OBO.obo": "EXCLUDED",
-    "OVAE.owl": [
-        "UBERON",
-        "VO",
-        "CHEBI",
-        "NCBITAXON",
-        "OAE",
-        "PATO",
-        "OGG",
-        "OGG-MM",
-        "BFO",
-        "IAO",
-        "OBI",
-        "OGMS",
-        "CARO",
-        "EFO"
-    ],
-    "PAE.obo": [
-        "GRO",
-        "GRO-CPGA",
-        "PO"
-    ],
-    "PATHLEX.owl": [
-        
-    ],
-    "PATO.owl": [
-        
-    ],
-    "PAV.owl": [
-        "PROVO"
-    ],
-    "PCMO.owl": [
-        
-    ],
-    "PDO.owl": [
-        
-    ],
-    "PDON.owl": [
-        
-    ],
-    "PDO_CAS.owl": [
-        "MIXS"
-    ],
-    "PDRO.owl": "Loading Error: UnloadableImportException",
-    "PDUMDV.owl": [
-        
-    ],
-    "PE-O.owl": [
-        
-    ],
-    "PE.owl": [
-        "RAO"
-    ],
-    "PECO.obo": [
-        "EO"
-    ],
-    "PEDTERM.owl": [
-        
-    ],
-    "PGXO.owl": [
-        "PROVO"
-    ],
-    "PHARE.owl": [
-        
-    ],
-    "PHENX.owl": [
-        
-    ],
-    "PHFUMIADO.obo": [
-        
-    ],
-    "PHMAMMADO.obo": [
-        
-    ],
-    "PHYLO.owl": [
-        "PHYLONT"
-    ],
-    "PHYLONT.owl": [
-        
-    ],
-    "PIERO.owl": [
-        
-    ],
-    "PLANA.owl": [
-        
-    ],
-    "PLIO.owl": [
-        
-    ],
-    "PLOSTHES.skos": [
-        
-    ],
-    "PMO.owl": [
-        
-    ],
-    "PMR.owl": [
-        
-    ],
-    "POSITIONALH.owl": [
-        
-    ],
-    "PPO.owl": [
-        "GRO",
-        "GRO-CPGA",
-        "PO",
-        "GO",
-        "IAO",
-        "BCO",
-        "MIXS",
-        "BFO",
-        "OBI",
-        "PATO",
-        "UBERON"
-    ],
-    "PROVO.owl": [
-        
-    ],
-    "PSDS.obo": [
-        "GRO",
-        "GRO-CPGA",
-        "PO"
-    ],
-    "PSIMOD.obo": [
-        "MOD"
-    ],
-    "PSO.owl": [
-        
-    ],
-    "PTO.owl": [
-        "TO"
-    ],
-    "PTRANS.obo": [
-        "TRANS"
-    ],
-    "PW.obo": [
-        
-    ],
-    "PYRAMIDAL1H.owl": [
-        
-    ],
-    "PYRAMIDAL2H.owl": [
-        
-    ],
-    "PYRAMIDAL3H.owl": [
-        
-    ],
-    "PYRAMIDALH.owl": [
-        
-    ],
-    "RADLEX.owl": [
-        
-    ],
-    "RAO.owl": [
-        "PE"
-    ],
-    "RCTV2.owl": [
-        
-    ],
-    "RDA-CONTENT.owl": [
-        
-    ],
-    "RDAU.owl": [
-        
-    ],
-    "REPO.owl": [
-        
-    ],
-    "RETO.obo": [
-        "GO",
-        "MI",
-        "MOD",
-        "PSIMOD",
-        "SIO",
-        "NCBITAXON",
-        "OGMS"
-    ],
-    "REXO.owl": [
-        "GO",
-        "MI",
-        "NCBITAXON",
-        "SIO",
-        "MOD",
-        "PSIMOD",
-        "OGMS"
-    ],
-    "RNAO.obo": [
-        "CHEBI"
-    ],
-    "RNPRIO.owl": [
-        
-    ],
-    "RNRMU.owl": [
-        
-    ],
-    "RO.owl": [
-        
-    ],
-    "ROO.owl": [
-        "FMA",
-        "NCIT",
-        "STY",
-        "UO",
-        "CTCAE",
-        "SEDI",
-        "RADLEX"
-    ],
-    "ROS.owl": [
-        "PHYLONT"
-    ],
-    "RPO.owl": [
-        
-    ],
-    "RS.obo": [
-        
-    ],
-    "RSA.owl": [
-        
-    ],
-    "RXNO.obo": [
-        "CHEBI",
-        "MOP",
-        "IAO",
-        "BFO",
-        "OBI"
-    ],
-    "SBOL.obo": [
-        "MIRNAO",
-        "SO"
-    ],
-    "SCDO.owl": [
-        
-    ],
-    "SCHEMA.owl": [
-        
-    ],
-    "SCTO.owl": [
-        "OGMS",
-        "BFO",
-        "IAO",
-        "OBI"
-    ],
-    "SDO.owl": [
-        "IAO",
-        "UNITSONT",
-        "OGMS",
-        "BT"
-    ],
-    "SEDI.owl": [
-        
-    ],
-    "SHR.owl": [
-        
-    ],
-    "SIBO.owl": [
-        "NCBITAXON"
-    ],
-    "SIO.owl": [
-        
-    ],
-    "SITBAC.owl": [
-        
-    ],
-    "SMASHBIOMARKER.owl": "EXCLUDED",
-    "SMASHPHYSICAL.owl": "EXCLUDED",
-    "SMASHSOCIAL.owl": "EXCLUDED",
-    "SMD_NPLSM.owl": [
-        
-    ],
-    "SMD_NPLSM_BRST.owl": [
-        
-    ],
-    "SNMD_BC.owl": [
-        
-    ],
     "SNMD_BDY.owl": [
         
     ],
-    "SNMI.umls": "Loading Error: UnparsableOntologyException",
-    "SNOMED-Ethnic-Group.owl": [
+    "DCAT.owl": [
         
     ],
-    "SNOMEDCT-MAS.owl": [
-        
-    ],
-    "SO.owl": [
-        "MIRNAO"
-    ],
-    "SOPHARM.owl": [
-        "SNPO"
-    ],
-    "SOY.obo": [
-        
-    ],
-    "SP.owl": [
-        "GRO",
-        "GRO-CPGA",
-        "PO",
-        "OBI",
-        "CHEBI",
-        "UBERON",
-        "EFO",
-        "NCBITAXON",
-        "BTO",
-        "ERO",
-        "SIO",
-        "IAO",
-        "NCIT",
-        "MO",
-        "BFO",
-        "CL",
-        "NPO",
-        "OGI"
-    ],
-    "SPD.obo": [
-        
-    ],
-    "SPINALH.owl": [
-        
-    ],
-    "SPO.owl": [
-        
-    ],
-    "SPTO.obo": [
-        "SP"
-    ],
-    "SSO.owl": [
-        
-    ],
-    "STATO.owl": [
-        "OBI",
-        "GO",
-        "IAO",
-        "NCBITAXON",
-        "CHEBI",
-        "BFO",
-        "UO",
-        "CARO",
-        "CL",
-        "OGMS",
-        "MIRNAO",
-        "SO"
-    ],
-    "STY.umls": [
-        
-    ],
-    "SURGICAL.owl": [
-        "PHYLONT"
+    "MINI-FAST-1.skos": [
+        "SCHEMA"
     ],
     "SWO.owl": [
         "EDAM",
@@ -1782,241 +1914,57 @@
         "IAO",
         "BFO"
     ],
-    "SYMP.owl": [
+    "POSITIONALH.owl": [
         
     ],
-    "SYN.owl": [
-        "NCIT",
-        "CL"
-    ],
-    "SciRes.owl": [
-        "ERO",
-        "VIVO",
-        "VIVO-ISF",
-        "OBI"
-    ],
-    "TADS.obo": [
-        
-    ],
-    "TAO.obo": [
+    "IDO.owl": [
+        "BFO",
+        "OGMS",
         "GO",
-        "CARO",
+        "NCBITAXON",
+        "OBI",
         "CL",
-        "VSAO",
-        "PATO"
+        "TRANS",
+        "IAO",
+        "CARO",
+        "UBERON",
+        "CHEBI"
     ],
-    "TAXRANK.obo": [
+    "ICF-d3.owl": "EXCLUDED",
+    "ICF-d8.owl": "EXCLUDED",
+    "ALLERGYDETECTOR.owl": [
         
     ],
-    "TDWGSPEC.owl": [
+    "INSECTH.owl": [
         
     ],
-    "TEDDY.owl": [
+    "iceci-details_for_place_of_occurrence.owl": "EXCLUDED",
+    "ICF-NOCM.owl": "EXCLUDED",
+    "PMR.owl": [
         
     ],
-    "TGMA.obo": [
+    "ENDOCRINEH.owl": [
         
     ],
-    "THREELPH.owl": [
-        
-    ],
-    "TIME.owl": [
-        
-    ],
-    "TM-CONST.owl": [
-        
-    ],
-    "TM-MER.owl": [
-        
-    ],
-    "TM-OTHER-FACTORS.owl": [
-        
-    ],
-    "TM-SIGNS-AND-SYMPTS.owl": [
+    "CN.owl": [
         
     ],
     "TMA.owl": [
         
     ],
-    "TOK.owl": [
+    "MI.owl": [
         
     ],
-    "TOP-MENELAS.owl": [
+    "BSPO.owl": [
+        "CARO"
+    ],
+    "MA.obo": [
         
     ],
-    "TRAK.obo": [
-        
-    ],
-    "TRANS.owl": [
-        "PHYLONT"
-    ],
-    "TRIAGE.owl": [
-        
-    ],
-    "TRON.obo": [
-        
-    ],
-    "TTO.obo": [
-        
-    ],
-    "UK.owl": [
-        
-    ],
-    "UNITSONT.owl": [
+    "NPO.owl": [
         
     ],
     "UO.owl": [
         "PATO"
-    ],
-    "UPHENO.owl": [
-        "HP",
-        "MP"
-    ],
-    "VARIO.obo": [
-        
-    ],
-    "VHOG.obo": [
-        
-    ],
-    "VICO.owl": [
-        "NCBITAXON",
-        "VO",
-        "DOID",
-        "SYMP",
-        "OAE",
-        "OGG",
-        "OGG-MM",
-        "CHEBI",
-        "BFO",
-        "ICO",
-        "PATO",
-        "UBERON",
-        "OBI",
-        "IAO",
-        "CARO",
-        "EFO"
-    ],
-    "VIVO-ISF.owl": [
-        "ERO",
-        "IAO",
-        "VIVO",
-        "BFO",
-        "UO",
-        "OBI"
-    ],
-    "VSAO.obo": [
-        "CL",
-        "GO",
-        "PATO",
-        "CARO"
-    ],
-    "VT.obo": [
-        
-    ],
-    "VTO.owl": [
-        "TAXRANK"
-    ],
-    "WB-BT.obo": "EXCLUDED",
-    "WB-LS.obo": "EXCLUDED",
-    "WB-PHENOTYPE.obo": "EXCLUDED",
-    "WIKIPATHWAYS.owl": [
-        "BP"
-    ],
-    "WSIO.obo": [
-        
-    ],
-    "XAO.obo": [
-        
-    ],
-    "XCO.obo": [
-        
-    ],
-    "XEO.obo": [
-        
-    ],
-    "ZEA.obo": [
-        
-    ],
-    "ZECO.owl": [
-        
-    ],
-    "ZFA.obo": [
-        "ZFS"
-    ],
-    "ZFS.owl": [
-        
-    ],
-    "bibliographic.owl": [
-        "VIVO",
-        "VIVO-ISF"
-    ],
-    "citation.owl": [
-        
-    ],
-    "dcelements.owl": [
-        
-    ],
-    "dcterms.owl": [
-        
-    ],
-    "envo_153.obo": "EXCLUDED",
-    "event.owl": [
-        "VIVO",
-        "VIVO-ISF"
-    ],
-    "foaf.owl": [
-        "VIVO",
-        "VIVO-ISF"
-    ],
-    "geopolitical.owl": [
-        
-    ],
-    "goslim_candida.obo": "EXCLUDED",
-    "goslim_goa.obo": "EXCLUDED",
-    "goslim_pir.obo": "EXCLUDED",
-    "goslim_plant.obo": "EXCLUDED",
-    "goslim_pombe.obo": "EXCLUDED",
-    "goslim_yeast.obo": "EXCLUDED",
-    "iceci-activity.owl": "EXCLUDED",
-    "iceci-countermeasures.owl": "EXCLUDED",
-    "iceci-descriptor_for_intent.owl": "EXCLUDED",
-    "iceci-details_for_activity.owl": "EXCLUDED",
-    "iceci-details_for_mechanism.owl": "EXCLUDED",
-    "iceci-details_for_place_of_occurrence.owl": "EXCLUDED",
-    "iceci-instrument_object_substance.owl": "EXCLUDED",
-    "iceci-intent.owl": "EXCLUDED",
-    "iceci-mechanism.owl": "EXCLUDED",
-    "iceci-place_of_occurrence.owl": "EXCLUDED",
-    "iceci-substance_use.owl": "EXCLUDED",
-    "obi-device.owl": [
-        
-    ],
-    "obi-fged.owl": [
-        "UO",
-        "OBI",
-        "CHEBI",
-        "GO",
-        "CL",
-        "UBERON",
-        "IAO",
-        "PATO",
-        "NCBITAXON",
-        "VO",
-        "HP",
-        "CARO",
-        "BFO",
-        "OGMS",
-        "MIRNAO",
-        "SO"
-    ],
-    "provenance.owl": [
-        "VIVO",
-        "VIVO-ISF"
-    ],
-    "pseudo.obo": [
-        
-    ],
-    "skos.owl": [
-        
     ]
 }

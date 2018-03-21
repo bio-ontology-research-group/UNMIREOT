@@ -30,7 +30,7 @@ currentDir.subSequence(0, currentDir.length() - 1)
 
 def pats = new JsonSlurper().parseText(new File("iri_patterns.json").text)
 def results = new JsonSlurper().parseText(new File("mireot_ontologies.json").text)
-//def results = [:]
+results = [:]
 
 new File('ontologies/').eachFile { f ->
   new File('mireot_ontologies.json').text = new JsonBuilder(results).toPrettyString()
@@ -71,9 +71,9 @@ new File('ontologies/').eachFile { f ->
       println id + ': ' + results[id].join(', ')
 
       results[id].each {
-        def path = '/gpfs/bb/lxs511/UNMIREOT/ontologies/'+it+'.owl'
+        def path = '/home/lus11/UNMIREOT/ontologies/'+it+'.owl'
         if(!new File(path).exists()) {
-          path = '/gpfs/bb/lxs511/UNMIREOT/ontologies/'+it+'.obo'
+          path = '/home/lus11/UNMIREOT/ontologies/'+it+'.obo'
         }
 
         def importDeclaration = manager.getOWLDataFactory().getOWLImportsDeclaration(IRI.create(path));
