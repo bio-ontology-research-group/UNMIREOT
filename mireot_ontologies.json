@@ -28,7 +28,6 @@
         "RO",
         "BFO",
         "GO",
-        "NIGO",
         "NCBITAXON",
         "OGMS"
     ],
@@ -109,12 +108,10 @@
         "MIRNAO",
         "SO",
         "CHEBI",
-        "GO",
-        "NIGO"
+        "GO"
     ],
     "BIPON.owl": [
         "GO",
-        "NIGO",
         "CHEBI",
         "SBO",
         "MIRNAO",
@@ -249,7 +246,6 @@
     ],
     "CMPO.owl": [
         "GO",
-        "NIGO",
         "PATO",
         "CHEBI",
         "CL"
@@ -380,7 +376,6 @@
         "UBERON",
         "NCBITAXON",
         "GO",
-        "NIGO",
         "GRO",
         "GRO-CPGA",
         "PO",
@@ -445,7 +440,6 @@
         "OBI",
         "BFO",
         "GO",
-        "NIGO",
         "FLOPO",
         "GRO",
         "GRO-CPGA",
@@ -485,7 +479,6 @@
         "MP",
         "EDAM",
         "GO",
-        "NIGO",
         "OGMS",
         "PCO",
         "UO",
@@ -529,8 +522,7 @@
         "CARO",
         "OBIB",
         "STATO",
-        "GO",
-        "NIGO"
+        "GO"
     ],
     "EXO.obo": [
         
@@ -563,20 +555,13 @@
         "SCHEMA"
     ],
     "FB-BT.obo": [
-        "FBBT",
-        "FBbt",
         "GO",
-        "NIGO",
         "PATO",
         "MIRNAO",
         "SO"
     ],
     "FB-CV.owl": [
-        "FBCV",
-        "FBBT",
-        "FBbt",
         "GO",
-        "NIGO",
         "PATO",
         "FBDV",
         "BFO",
@@ -586,17 +571,10 @@
     ],
     "FB-DV.obo": [
         "GO",
-        "NIGO",
-        "FBDV",
         "BFO"
     ],
-    "FB-SP.obo": [
-        "FBSP"
-    ],
-    "FBbi.obo": [
-        "FBBI",
-        "could not save merged ontology"
-    ],
+    "FB-SP.obo": "EXCLUDED",
+    "FBbi.obo": "EXCLUDED",
     "FIRE.owl": [
         "CCON"
     ],
@@ -629,7 +607,6 @@
     ],
     "FTC.owl": [
         "GO",
-        "NIGO",
         "SCHEMA",
         "CHEBI"
     ],
@@ -639,7 +616,6 @@
     "FYPO.obo": [
         "CHEBI",
         "GO",
-        "NIGO",
         "CL",
         "MIRNAO",
         "SO",
@@ -676,7 +652,6 @@
     ],
     "GEXO.owl": [
         "GO",
-        "NIGO",
         "MI",
         "SIO",
         "MOD",
@@ -696,13 +671,8 @@
     "GMM.obo": [
         
     ],
-    "GO-EXT.obo": [
-        "GO",
-        "NIGO"
-    ],
-    "GO.obo": [
-        "NIGO"
-    ],
+    "GO-EXT.obo": "EXCLUDED",
+    "GO.obo": "EXCLUDED",
     "GPML.owl": [
         
     ],
@@ -876,7 +846,6 @@
         "BFO",
         "OGMS",
         "GO",
-        "NIGO",
         "NCBITAXON",
         "OBI",
         "CL",
@@ -893,7 +862,6 @@
         "OGMS",
         "NCBITAXON",
         "GO",
-        "NIGO",
         "CL",
         "VO",
         "OBI",
@@ -913,7 +881,6 @@
         "CHEBI",
         "NCBITAXON",
         "GO",
-        "NIGO",
         "SYMP",
         "VO",
         "ENVO",
@@ -958,8 +925,7 @@
         
     ],
     "IXNO.obo": [
-        "GO",
-        "NIGO"
+        "GO"
     ],
     "JERM.owl": [
         
@@ -1019,8 +985,7 @@
         "GRO-CPD",
         "ZEA",
         "FBDV",
-        "GO",
-        "NIGO"
+        "GO"
     ],
     "MCBCC.owl": [
         
@@ -1053,7 +1018,6 @@
         "MRO",
         "ECO",
         "GO",
-        "NIGO",
         "NCBITAXON",
         "OBI",
         "MIRNAO",
@@ -1074,7 +1038,6 @@
         "CHEBI",
         "OGMS",
         "GO",
-        "NIGO",
         "OBI",
         "NCIT",
         "RNAO"
@@ -1127,7 +1090,6 @@
     ],
     "NBO.owl": [
         "GO",
-        "NIGO",
         "CHEBI",
         "UBERON",
         "PATO"
@@ -1148,10 +1110,7 @@
     "NCIT.owl": [
         
     ],
-    "NCIT_NEOPLASM.owl": [
-        "NCIT",
-        "could not save merged ontology"
-    ],
+    "NCIT_NEOPLASM.owl": "EXCLUDED",
     "NCIt-Activity.owl": [
         
     ],
@@ -1176,7 +1135,6 @@
         "MIRNAO",
         "SO",
         "GO",
-        "NIGO",
         "BFO",
         "CHEBI",
         "PATO",
@@ -1195,9 +1153,7 @@
     "NIF-RTH.owl": [
         
     ],
-    "NIGO.obo": [
-        "GO"
-    ],
+    "NIGO.obo": "EXCLUDED",
     "NIHSS.owl": [
         
     ],
@@ -1234,13 +1190,11 @@
         "STATO",
         "CHEBI",
         "GO",
-        "NIGO",
         "CL"
     ],
     "OBI.owl": [
         "IAO",
         "GO",
-        "NIGO",
         "UBERON",
         "PATO",
         "NCBITAXON",
@@ -1277,7 +1231,6 @@
         "FLU",
         "GEO",
         "GO",
-        "NIGO",
         "BFO",
         "MIRNAO",
         "SO",
@@ -1298,7 +1251,6 @@
     "OBI_BCGO.owl": [
         "OBI",
         "GO",
-        "NIGO",
         "CHEBI",
         "UBERON",
         "CL",
@@ -1346,7 +1298,6 @@
         "OAE",
         "BFO",
         "GO",
-        "NIGO",
         "PATO",
         "OBI",
         "OGMS"
@@ -1355,7 +1306,6 @@
         "DRON",
         "OAE",
         "GO",
-        "NIGO",
         "CL",
         "UBERON",
         "CHEBI",
@@ -1369,14 +1319,8 @@
     "OFSMR.owl": [
         
     ],
-    "OGG-MM.owl": [
-        "OGG",
-        "BFO",
-        "OBI",
-        "NCBITAXON"
-    ],
+    "OGG-MM.owl": "EXCLUDED",
     "OGG.owl": [
-        "OGG-MM",
         "BFO",
         "NCBITAXON",
         "OBI"
@@ -1415,14 +1359,12 @@
         "PCO",
         "CARO",
         "GO",
-        "NIGO"
     ],
     "OLATDV.owl": [
         
     ],
     "OMIT.owl": [
         "GO",
-        "NIGO",
         "MOD",
         "PSIMOD",
         "DOID",
@@ -1435,7 +1377,6 @@
     ],
     "OMP.obo": [
         "GO",
-        "NIGO",
         "PATO",
         "CHEBI"
     ],
@@ -1485,9 +1426,7 @@
     "ORDO.owl": [
         
     ],
-    "ORDO_OBO.obo": [
-        "ORDO"
-    ],
+    "ORDO_OBO.obo": "EXCLUDED",
     "OVAE.owl": [
         "UBERON",
         "VO",
@@ -1593,7 +1532,6 @@
         "GRO-CPGA",
         "PO",
         "GO",
-        "NIGO",
         "IAO",
         "BCO",
         "MIXS",
@@ -1657,7 +1595,6 @@
     ],
     "RETO.obo": [
         "GO",
-        "NIGO",
         "MI",
         "MOD",
         "PSIMOD",
@@ -1667,7 +1604,6 @@
     ],
     "REXO.owl": [
         "GO",
-        "NIGO",
         "MI",
         "NCBITAXON",
         "SIO",
@@ -1676,8 +1612,7 @@
         "OGMS"
     ],
     "RNAO.obo": [
-        "CHEBI",
-        "could not save merged ontology"
+        "CHEBI"
     ],
     "RNPRIO.owl": [
         
@@ -1714,8 +1649,7 @@
         "MOP",
         "IAO",
         "BFO",
-        "OBI",
-        "could not save merged ontology"
+        "OBI"
     ],
     "SBOL.obo": [
         "MIRNAO",
@@ -1754,15 +1688,9 @@
     "SITBAC.owl": [
         
     ],
-    "SMASHBIOMARKER.owl": [
-        "SMASH"
-    ],
-    "SMASHPHYSICAL.owl": [
-        "SMASH"
-    ],
-    "SMASHSOCIAL.owl": [
-        "SMASH"
-    ],
+    "SMASHBIOMARKER.owl": "EXCLUDED",
+    "SMASHPHYSICAL.owl": "EXCLUDED",
+    "SMASHSOCIAL.owl": "EXCLUDED",
     "SMD_NPLSM.owl": [
         
     ],
@@ -1829,7 +1757,6 @@
     "STATO.owl": [
         "OBI",
         "GO",
-        "NIGO",
         "IAO",
         "NCBITAXON",
         "CHEBI",
@@ -1873,7 +1800,6 @@
     ],
     "TAO.obo": [
         "GO",
-        "NIGO",
         "CARO",
         "CL",
         "VSAO",
@@ -1981,7 +1907,6 @@
     "VSAO.obo": [
         "CL",
         "GO",
-        "NIGO",
         "PATO",
         "CARO"
     ],
@@ -1991,15 +1916,9 @@
     "VTO.owl": [
         "TAXRANK"
     ],
-    "WB-BT.obo": [
-        "WBBT"
-    ],
-    "WB-LS.obo": [
-        "WBLS"
-    ],
-    "WB-PHENOTYPE.obo": [
-        "WBPHENOTYPE"
-    ],
+    "WB-BT.obo": "EXCLUDED",
+    "WB-LS.obo": "EXCLUDED",
+    "WB-PHENOTYPE.obo": "EXCLUDED",
     "WIKIPATHWAYS.owl": [
         "BP"
     ],
@@ -2040,9 +1959,7 @@
     "dcterms.owl": [
         
     ],
-    "envo_153.obo": [
-        "ENVO"
-    ],
+    "envo_153.obo": "EXCLUDED",
     "event.owl": [
         "VIVO",
         "VIVO-ISF"
@@ -2054,63 +1971,23 @@
     "geopolitical.owl": [
         
     ],
-    "goslim_candida.obo": [
-        "GO",
-        "NIGO"
-    ],
-    "goslim_goa.obo": [
-        "GO",
-        "NIGO"
-    ],
-    "goslim_pir.obo": [
-        "GO",
-        "NIGO"
-    ],
-    "goslim_plant.obo": [
-        "GO",
-        "NIGO"
-    ],
-    "goslim_pombe.obo": [
-        "GO",
-        "NIGO"
-    ],
-    "goslim_yeast.obo": [
-        "GO",
-        "NIGO"
-    ],
-    "iceci-activity.owl": [
-        "ICECI"
-    ],
-    "iceci-countermeasures.owl": [
-        "ICECI"
-    ],
-    "iceci-descriptor_for_intent.owl": [
-        "ICECI"
-    ],
-    "iceci-details_for_activity.owl": [
-        "ICECI"
-    ],
-    "iceci-details_for_mechanism.owl": [
-        "ICECI"
-    ],
-    "iceci-details_for_place_of_occurrence.owl": [
-        "ICECI"
-    ],
-    "iceci-instrument_object_substance.owl": [
-        "ICECI"
-    ],
-    "iceci-intent.owl": [
-        "ICECI"
-    ],
-    "iceci-mechanism.owl": [
-        "ICECI"
-    ],
-    "iceci-place_of_occurrence.owl": [
-        "ICECI"
-    ],
-    "iceci-substance_use.owl": [
-        "ICECI"
-    ],
+    "goslim_candida.obo": "EXCLUDED",
+    "goslim_goa.obo": "EXCLUDED",
+    "goslim_pir.obo": "EXCLUDED",
+    "goslim_plant.obo": "EXCLUDED",
+    "goslim_pombe.obo": "EXCLUDED",
+    "goslim_yeast.obo": "EXCLUDED",
+    "iceci-activity.owl": "EXCLUDED",
+    "iceci-countermeasures.owl": "EXCLUDED",
+    "iceci-descriptor_for_intent.owl": "EXCLUDED",
+    "iceci-details_for_activity.owl": "EXCLUDED",
+    "iceci-details_for_mechanism.owl": "EXCLUDED",
+    "iceci-details_for_place_of_occurrence.owl": "EXCLUDED",
+    "iceci-instrument_object_substance.owl": "EXCLUDED",
+    "iceci-intent.owl": "EXCLUDED",
+    "iceci-mechanism.owl": "EXCLUDED",
+    "iceci-place_of_occurrence.owl": "EXCLUDED",
+    "iceci-substance_use.owl": "EXCLUDED",
     "obi-device.owl": [
         
     ],
@@ -2119,7 +1996,6 @@
         "OBI",
         "CHEBI",
         "GO",
-        "NIGO",
         "CL",
         "UBERON",
         "IAO",

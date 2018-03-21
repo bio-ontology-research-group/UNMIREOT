@@ -73,7 +73,7 @@ def runUNMIREOT(id) {
   config.setMissingImportHandlingStrategy(MissingImportHandlingStrategy.SILENT)
   
   def ontology 
-  def ooFile = new File('tempall/' + id + '_all.ontology')
+  def ooFile = new File('ontologies_merged/' + id + '_all.ontology')
   try {
     ontology = manager.loadOntologyFromOntologyDocument(new IRIDocumentSource(IRI.create(ooFile.toURI())), config) 
   } catch(e) {
