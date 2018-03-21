@@ -25,12 +25,15 @@ import groovy.json.*
 import groovyx.gpars.*
 import groovy.transform.Field
 
+import com.clarkparsia.owlapi.explanation.BlackBoxExplanation;
+import com.clarkparsia.owlapi.explanation.HSTExplanationGenerator;
+
 @Field def currentDir = new File('.').getAbsolutePath()
 currentDir.subSequence(0, currentDir.length() - 1)
 
 // Reasoner configuration
 @Field def eConf = ReasonerConfiguration.getConfiguration()
-eConf.setParameter(ReasonerConfiguration.NUM_OF_WORKING_THREADS, "8")
+eConf.setParameter(ReasonerConfiguration.NUM_OF_WORKING_THREADS, "24")
 eConf.setParameter(ReasonerConfiguration.INCREMENTAL_MODE_ALLOWED, "true")
 eConf.setParameter(ReasonerConfiguration.INCREMENTAL_TAXONOMY, "true")
 @Field def reasonerFactory = new ElkReasonerFactory();
