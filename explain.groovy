@@ -33,13 +33,12 @@ currentDir.subSequence(0, currentDir.length() - 1)
 
 // Reasoner configuration
 @Field def eConf = ReasonerConfiguration.getConfiguration()
-eConf.setParameter(ReasonerConfiguration.NUM_OF_WORKING_THREADS, "8")
+eConf.setParameter(ReasonerConfiguration.NUM_OF_WORKING_THREADS, "24")
 eConf.setParameter(ReasonerConfiguration.INCREMENTAL_MODE_ALLOWED, "true")
 eConf.setParameter(ReasonerConfiguration.INCREMENTAL_TAXONOMY, "true")
 @Field def reasonerFactory = new ElkReasonerFactory();
 @Field def rConf = new ElkReasonerConfiguration(ElkReasonerConfiguration.getDefaultOwlReasonerConfiguration(new NullReasonerProgressMonitor()), eConf);
 
-def id = args[0]
 def results = [ 'error': false, 'unsatisfiable': [:] ]
 def manager = OWLManager.createOWLOntologyManager()
 
@@ -48,7 +47,8 @@ config.setFollowRedirects(true)
 config.setMissingImportHandlingStrategy(MissingImportHandlingStrategy.SILENT)
 
 def ontology 
-def ooFile = new File('tempall/' + id + '_all.ontology')
+def ooFile = new File(args[0])
+println "Loading ${ooFile}"
 try {
   ontology = manager.loadOntologyFromOntologyDocument(new IRIDocumentSource(IRI.create(ooFile.toURI())), config) 
 } catch(e) {
@@ -69,11 +69,21 @@ if(ontology) {
   }
 
   if(!results.error) {
+    def uCount = 0
     ontology.getClassesInSignature(true).each { cl ->
+      if(!oReasoner.isSatisfiable(cl)) {
+        uCount++
+      }
+    }
+
+    println "Total unsatisfiable: " + uCount
+
+    ontology.getClassesInSignature(true).eachWithIndex { cl, i ->
       if(!oReasoner.isSatisfiable(cl)) {
         def iri = cl.getIRI().toString() 
         results.unsatisfiable[iri] = []
-        println 'procing ' + iri
+
+        println "Processing ${iri} (${i+1}/${uCount})"
 
         BlackBoxExplanation exp = new BlackBoxExplanation(ontology, reasonerFactory, oReasoner)
 
@@ -88,6 +98,5 @@ if(ontology) {
   println '[UNMIREOT] Problem loading ' + id
 }
 
-def oFile = 'results/' + id + '.json'
-new File(oFile).text = new JsonBuilder(results).toPrettyString()
+new File('results.json').text = new JsonBuilder(results).toPrettyString()
 println '[UNMIREOT] Saved ' + id
