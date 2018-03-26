@@ -39,7 +39,13 @@ eConf.setParameter(ReasonerConfiguration.INCREMENTAL_TAXONOMY, "true")
 @Field def reasonerFactory = new ElkReasonerFactory();
 @Field def rConf = new ElkReasonerConfiguration(ElkReasonerConfiguration.getDefaultOwlReasonerConfiguration(new NullReasonerProgressMonitor()), eConf);
 
+
+def rFile = new File('results.json')
 def results = [ 'error': false, 'unsatisfiable': [:] ]
+if(rFile.exists()) {
+  results = new JsonSlurper().parseText(rFile.text)
+}
+
 def manager = OWLManager.createOWLOntologyManager()
 
 def config = new OWLOntologyLoaderConfiguration()
@@ -54,7 +60,7 @@ try {
 } catch(e) {
   results.error = 'Loading Error: ' + e.getClass().getSimpleName()
   e.printStackTrace()
-  println '[UNMIREOT] Problem loading ' + id
+  println '[UNMIREOT] Problem loading ontology'
 }
 println 'done loading'
 
@@ -65,7 +71,7 @@ if(ontology) {
     oReasoner.precomputeInferences(InferenceType.CLASS_HIERARCHY)
   } catch(e) {
     results.error = 'Reasoning: ' + e.getClass().getSimpleName()
-    println '[UNMIREOT] Problem reasoning ' + id
+    println '[UNMIREOT] Problem reasoning'
   }
 
   if(!results.error) {
@@ -77,13 +83,19 @@ if(ontology) {
     }
 
     println "Total unsatisfiable: " + uCount
+    def uDone = 0
 
-    ontology.getClassesInSignature(true).eachWithIndex { cl, i ->
+    ontology.getClassesInSignature(true).each { cl ->
       if(!oReasoner.isSatisfiable(cl)) {
         def iri = cl.getIRI().toString() 
+        if(results.unsatisfiable.containsKey(iri)) {
+          println "Skipping already done: ${iri} (${uDone+1}/${uCount})"
+          uCount++
+          return;
+        }
         results.unsatisfiable[iri] = []
 
-        println "Processing ${iri} (${i+1}/${uCount})"
+        println "Processing ${iri} (${uDone+1}/${uCount})"
 
         BlackBoxExplanation exp = new BlackBoxExplanation(ontology, reasonerFactory, oReasoner)
 
@@ -91,6 +103,9 @@ if(ontology) {
         for(OWLAxiom causingAxiom : explanations) {
           results.unsatisfiable[iri] << causingAxiom.toString()
         }
+
+        new File('results.json').text = new JsonBuilder(results).toPrettyString()
+        uDone++
       }
     }
   }
