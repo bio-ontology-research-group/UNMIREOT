@@ -90,7 +90,7 @@ if(ontology) {
         def iri = cl.getIRI().toString() 
         if(results.unsatisfiable.containsKey(iri)) {
           println "Skipping already done: ${iri} (${uDone+1}/${uCount})"
-          uCount++
+          uDone++
           return;
         }
         results.unsatisfiable[iri] = []
