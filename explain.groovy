@@ -1,13 +1,15 @@
-@Grapes([
-  @Grab(group='com.google.code.gson', module='gson', version='2.3.1'),
+@Grapes([                                                                                                                                                                                                                                      
+  @Grab(group='net.sourceforge.owlapi', module='owlapi-api', version='5.1.4'),
+  @Grab(group='net.sourceforge.owlapi', module='owlapi-apibinding', version='5.1.4'),
+  @Grab(group='net.sourceforge.owlapi', module='owlapi-impl', version='5.1.4'),
+  @Grab(group='net.sourceforge.owlapi', module='owlapi-parsers', version='5.1.4'),
+  @Grab(group='org.apache.commons', module='commons-rdf-api', version='0.5.0'),
   @Grab(group='org.slf4j', module='slf4j-log4j12', version='1.7.10'),
-  @Grab(group='org.semanticweb.elk', module='elk-owlapi', version='0.4.2'),
-  @Grab(group='net.sourceforge.owlapi', module='owlapi-api', version='4.1.0'),
-  @Grab(group='net.sourceforge.owlapi', module='owlapi-apibinding', version='4.1.0'),
-  @Grab(group='net.sourceforge.owlapi', module='owlapi-impl', version='4.1.0'),
-  @Grab(group='net.sourceforge.owlapi', module='owlapi-parsers', version='4.1.0'),
-  @Grab(group='org.codehaus.gpars', module='gpars', version='1.1.0'),
-  @Grab(group='org.codehaus.groovy.modules.http-builder', module='http-builder', version='0.7' ),
+  @Grab('com.xlson.groovycsv:groovycsv:1.1'),
+
+  @GrabResolver(name='sonatype-nexus-snapshots', root='https://oss.sonatype.org/content/repositories/snapshots/'),
+  @Grab(group='org.semanticweb.elk', module='elk-owlapi5', version='0.5.0-SNAPSHOT'),
+
   @GrabConfig(systemClassLoader=true)
 ])
 
@@ -33,9 +35,9 @@ currentDir.subSequence(0, currentDir.length() - 1)
 
 // Reasoner configuration
 @Field def eConf = ReasonerConfiguration.getConfiguration()
-eConf.setParameter(ReasonerConfiguration.NUM_OF_WORKING_THREADS, "24")
+eConf.setParameter(ReasonerConfiguration.NUM_OF_WORKING_THREADS, "90")
 eConf.setParameter(ReasonerConfiguration.INCREMENTAL_MODE_ALLOWED, "true")
-eConf.setParameter(ReasonerConfiguration.INCREMENTAL_TAXONOMY, "true")
+//eConf.setParameter(ReasonerConfiguration.INCREMENTAL_TAXONOMY, "true")
 @Field def reasonerFactory = new ElkReasonerFactory();
 @Field def rConf = new ElkReasonerConfiguration(ElkReasonerConfiguration.getDefaultOwlReasonerConfiguration(new NullReasonerProgressMonitor()), eConf);
 
@@ -114,4 +116,4 @@ if(ontology) {
 }
 
 new File('results.json').text = new JsonBuilder(results).toPrettyString()
-println '[UNMIREOT] Saved ' + id
+println '[UNMIREOT] Saved results'
