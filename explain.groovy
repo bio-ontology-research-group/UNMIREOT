@@ -112,7 +112,7 @@ if(ontology) {
     }
   }
 } else {
-  println '[UNMIREOT] Problem loading ' + id
+  println '[UNMIREOT] Problem loading '
 }
 
 new File('results.json').text = new JsonBuilder(results).toPrettyString()

@@ -39,7 +39,6 @@ ecocore
 ehdaa2
 emapa
 envo
-epo
 ero
 eupath
 exo
@@ -64,7 +63,6 @@ hsapdv
 iao
 ico
 ido
-idomal
 kisao
 ma
 mamo
