@@ -37,7 +37,7 @@ config.setFollowRedirects(true)
 
 // So, we will take the first ontology, and then add imports for all the others to this.
 
-def PREFIX = "http://purl.obolibrary.org/obo/"
+def PREFIX = "file:/home/slater/UNMIREOT/obo/ontologies/"
 def masterOntology = manager.loadOntologyFromOntologyDocument(
       new IRIDocumentSource(IRI.create(PREFIX + oList[0] + '.owl')), config)
 
