@@ -75,7 +75,7 @@ while(unsats) {
 
   println "Unsatisfiable classes remaining: ${unsatClasses.size()}"
 
-  unsats = unsatsClasses.size() > 0
+  unsats = unsatClasses.size() > 0
 }
 
 def findNaughties(unsatClasses) {
@@ -128,7 +128,7 @@ def removeAxiom(toRemove) {
         manager.removeAxiom(it, axiom)
         hadToRemove = true
 
-        println "Removing ${axiom.toString()} from import"
+        println "Removing ${axiom.toString()} from import ${it.getOntologyID().getOntologyIRI()}"
       }
     }
 

@@ -1,88 +1,73 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/bfo.owl#"
      xml:base="http://purl.obolibrary.org/obo/bfo.owl"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:go="http://purl.obolibrary.org/obo/go#"
-     xmlns:po="http://purl.obolibrary.org/obo/po#"
-     xmlns:so="http://purl.obolibrary.org/obo/so#"
-     xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:xao="http://purl.obolibrary.org/obo/xao#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:zfa="http://purl.obolibrary.org/obo/zfa#"
-     xmlns:doid="http://purl.obolibrary.org/obo/doid#"
-     xmlns:foaf="http://xmlns.com/foaf/0.1/"
-     xmlns:pato="http://purl.obolibrary.org/obo/pato#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:chebi="http://purl.obolibrary.org/obo/chebi/"
-     xmlns:terms="http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/"
-     xmlns:chebi1="http://purl.obolibrary.org/obo/chebi#"
-     xmlns:chebi2="http://purl.obolibrary.org/obo/chebi#1"
-     xmlns:chebi3="http://purl.obolibrary.org/obo/chebi#3"
-     xmlns:chebi4="http://purl.obolibrary.org/obo/chebi#2"
-     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/bfo.owl">
         <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl"/>
-        <owl:imports rdf:resource="file:/home/slater/UNMIREOT/dependency_0.owl"/>
+        <owl:imports rdf:resource="file:/home/slater/UNMIREOT/obo/deps/xao.owl"/>
+        <owl:imports rdf:resource="file:/home/slater/UNMIREOT/obo/deps/obi.owl"/>
+        <owl:imports rdf:resource="file:/home/slater/UNMIREOT/obo/deps/zfa.owl"/>
         <owl:imports rdf:resource="file:/home/slater/UNMIREOT/obo/deps/chebi.owl"/>
-        <owl:imports rdf:resource="file:/home/slater/UNMIREOT/obo/deps/doid.owl"/>
+        <owl:imports rdf:resource="file:/home/slater/UNMIREOT/obo/deps/po.owl"/>
         <owl:imports rdf:resource="file:/home/slater/UNMIREOT/obo/deps/go.owl"/>
         <owl:imports rdf:resource="file:/home/slater/UNMIREOT/obo/deps/pato.owl"/>
-        <owl:imports rdf:resource="file:/home/slater/UNMIREOT/obo/deps/po.owl"/>
-        <owl:imports rdf:resource="file:/home/slater/UNMIREOT/obo/deps/xao.owl"/>
-        <owl:imports rdf:resource="file:/home/slater/UNMIREOT/obo/deps/zfa.owl"/>
-        <obo:IAO_0000116>BFO 2 Reference: BFO does not claim to be a complete coverage of all entities. It seeks only to provide coverage of those entities studied by empirical science together with those entities which affect or are involved in human activities such as data processing and planning – coverage that is sufficiently broad to provide assistance to those engaged in building domain ontologies for purposes of data annotation [17</obo:IAO_0000116>
-        <obo:IAO_0000116>BFO 2 Reference: BFO’s treatment of continuants and occurrents – as also its treatment of regions, rests on a dichotomy between space and time, and on the view that there are two perspectives on reality – earlier called the ‘SNAP’ and ‘SPAN’ perspectives, both of which are essential to the non-reductionist representation of reality as we understand it from the best available science [30</obo:IAO_0000116>
-        <obo:IAO_0000116>BFO 2 Reference: For both terms and relational expressions in BFO, we distinguish between primitive and defined. ‘Entity’ is an example of one such primitive term. Primitive terms in a highest-level ontology such as BFO are terms that are so basic to our understanding of reality that there is no way of defining them in a non-circular fashion. For these, therefore, we can provide only elucidations, supplemented by examples and by axioms.</obo:IAO_0000116>
-        <dc:contributor>Alan Ruttenberg</dc:contributor>
-        <dc:contributor>Albert Goldfain</dc:contributor>
-        <dc:contributor>Barry Smith</dc:contributor>
-        <dc:contributor>Bill Duncan</dc:contributor>
-        <dc:contributor>Bjoern Peters</dc:contributor>
-        <dc:contributor>Chris Mungall</dc:contributor>
-        <dc:contributor>David Osumi-Sutherland</dc:contributor>
-        <dc:contributor>Fabian Neuhaus</dc:contributor>
-        <dc:contributor>James A. Overton</dc:contributor>
-        <dc:contributor>Janna Hastings</dc:contributor>
-        <dc:contributor>Jie Zheng</dc:contributor>
-        <dc:contributor>Jonathan Bona</dc:contributor>
-        <dc:contributor>Larry Hunter</dc:contributor>
-        <dc:contributor>Leonard Jacuzzo</dc:contributor>
-        <dc:contributor>Ludger Jansen</dc:contributor>
-        <dc:contributor>Mark Ressler</dc:contributor>
+        <owl:imports rdf:resource="file:/home/slater/UNMIREOT/obo/deps/doid.owl"/>
+        <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/bfo/dev/owl"/>
         <dc:contributor>Mathias Brochhausen</dc:contributor>
-        <dc:contributor>Mauricio Almeida</dc:contributor>
-        <dc:contributor>Melanie Courtot</dc:contributor>
-        <dc:contributor>Pierre Grenon</dc:contributor>
-        <dc:contributor>Randall Dipert</dc:contributor>
-        <dc:contributor>Robert Rovetto</dc:contributor>
+        <obo:IAO_0000116>BFO 2 Reference: BFO does not claim to be a complete coverage of all entities. It seeks only to provide coverage of those entities studied by empirical science together with those entities which affect or are involved in human activities such as data processing and planning – coverage that is sufficiently broad to provide assistance to those engaged in building domain ontologies for purposes of data annotation [17</obo:IAO_0000116>
         <dc:contributor>Ron Rudnicki</dc:contributor>
+        <dc:contributor>Janna Hastings</dc:contributor>
+        <dc:contributor>Leonard Jacuzzo</dc:contributor>
+        <dc:contributor>Randall Dipert</dc:contributor>
+        <dc:contributor>Barry Smith</dc:contributor>
         <dc:contributor>Stefan Schulz</dc:contributor>
-        <dc:contributor>Thomas Bittner</dc:contributor>
+        <dc:contributor>Larry Hunter</dc:contributor>
         <dc:contributor>Werner Ceusters</dc:contributor>
+        <foaf:homepage rdf:resource="http://ifomis.org/bfo"/>
+        <rdfs:seeAlso rdf:resource="http://groups.google.com/group/bfo-devel"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo/2014-05-03/ReleaseNotes"/>
+        <dc:contributor>Jonathan Bona</dc:contributor>
+        <dc:contributor>Robert Rovetto</dc:contributor>
+        <dc:contributor>Albert Goldfain</dc:contributor>
         <dc:contributor>Yongqun &quot;Oliver&quot; He</dc:contributor>
+        <dc:contributor>Melanie Courtot</dc:contributor>
+        <dc:contributor>Bjoern Peters</dc:contributor>
+        <dc:contributor>Alan Ruttenberg</dc:contributor>
+        <dc:contributor>Bill Duncan</dc:contributor>
+        <dc:contributor>Ludger Jansen</dc:contributor>
+        <rdfs:seeAlso rdf:resource="http://groups.google.com/group/bfo-owl-devel"/>
+        <dc:contributor>Thomas Bittner</dc:contributor>
+        <rdfs:seeAlso rdf:resource="http://groups.google.com/group/bfo-discuss"/>
+        <dc:contributor>Chris Mungall</dc:contributor>
         <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <dc:contributor>Jie Zheng</dc:contributor>
+        <dc:contributor>Mauricio Almeida</dc:contributor>
+        <dc:contributor>Mark Ressler</dc:contributor>
+        <rdfs:comment xml:lang="en">This is an early version of BFO version 2 and has not yet been extensively reviewed by the project team members. Please see the project site http://code.google.com/p/bfo/ , the bfo2 owl discussion group http://groups.google.com/group/bfo-owl-devel , the bfo2 discussion group http://groups.google.com/group/bfo-devel, the tracking google doc http://goo.gl/IlrEE, and the current version of the bfo2 reference http://purl.obolibrary.org/obo/bfo/dev/bfo2-reference.docx . This ontology is generated from a specification at http://bfo.googlecode.com/svn/trunk/src/ontology/owl-group/specification/ and with the code that generates the OWL version in http://bfo.googlecode.com/svn/trunk/src/tools/. A very early version of BFO version 2 in CLIF is at http://purl.obolibrary.org/obo/bfo/dev/bfo.clif</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://bfo.googlecode.com/svn/trunk/src/tools/"/>
         <rdfs:comment xml:lang="en">The http://purl.obolibary.org/obo/bfo/classes-only.owl variant of BFO (&quot;bfo_classes_only.owl&quot;) includes only the class hierarchy and annotations from the full OWL version of BFO 2: http://purl.obolibary.org/obo/bfo.owl (&quot;bfo.owl&quot;). There are no object properties or logical axioms that use the object properties in bfo_classes_only.owl. As the logical axioms in the bfo_classes_only.owl variant are limited to subclass and disjoint assertions they are much weaker than the logical axioms in bfo.owl.
  
 If you plan to use the relations that define BFO 2, you should import bfo.owl instead of bfo_classes_only.owl. To the extent that the relations are used without importing bfo.owl, be mindful that they should be used in a manner consistent with their use in bfo.owl. Otherwise if your ontology is imported by a another ontology that imports bfo.owl there may be inconsistencies. 
  
 See the BFO 2 release notes for further information about BFO 2. Please note that the current release of bfo.owl uses temporal relations when the subject or object is a continuant, a major change from BFO 1.</rdfs:comment>
-        <rdfs:comment xml:lang="en">This is an early version of BFO version 2 and has not yet been extensively reviewed by the project team members. Please see the project site http://code.google.com/p/bfo/ , the bfo2 owl discussion group http://groups.google.com/group/bfo-owl-devel , the bfo2 discussion group http://groups.google.com/group/bfo-devel, the tracking google doc http://goo.gl/IlrEE, and the current version of the bfo2 reference http://purl.obolibrary.org/obo/bfo/dev/bfo2-reference.docx . This ontology is generated from a specification at http://bfo.googlecode.com/svn/trunk/src/ontology/owl-group/specification/ and with the code that generates the OWL version in http://bfo.googlecode.com/svn/trunk/src/tools/. A very early version of BFO version 2 in CLIF is at http://purl.obolibrary.org/obo/bfo/dev/bfo.clif</rdfs:comment>
+        <dc:contributor>David Osumi-Sutherland</dc:contributor>
+        <dc:contributor>Pierre Grenon</dc:contributor>
         <rdfs:isDefinedBy rdf:resource="http://bfo.googlecode.com/svn/trunk/src/ontology/owl-group/specification/"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo/2012-07-20/Reference"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo/2014-05-03/ReleaseNotes"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo/dev/bfo.clif"/>
-        <rdfs:seeAlso rdf:resource="http://bfo.googlecode.com/svn/trunk/src/tools/"/>
-        <rdfs:seeAlso rdf:resource="http://groups.google.com/group/bfo-devel"/>
-        <rdfs:seeAlso rdf:resource="http://groups.google.com/group/bfo-discuss"/>
-        <rdfs:seeAlso rdf:resource="http://groups.google.com/group/bfo-owl-devel"/>
-        <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/bfo/dev/owl"/>
-        <foaf:homepage rdf:resource="http://code.google.com/p/bfo/"/>
-        <foaf:homepage rdf:resource="http://ifomis.org/bfo"/>
+        <dc:contributor>James A. Overton</dc:contributor>
         <foaf:mbox rdf:resource="mailto:bfo-owl-devel@googlegroups.com"/>
+        <dc:contributor>Fabian Neuhaus</dc:contributor>
+        <obo:IAO_0000116>BFO 2 Reference: BFO’s treatment of continuants and occurrents – as also its treatment of regions, rests on a dichotomy between space and time, and on the view that there are two perspectives on reality – earlier called the ‘SNAP’ and ‘SPAN’ perspectives, both of which are essential to the non-reductionist representation of reality as we understand it from the best available science [30</obo:IAO_0000116>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo/dev/bfo.clif"/>
+        <foaf:homepage rdf:resource="http://code.google.com/p/bfo/"/>
+        <obo:IAO_0000116>BFO 2 Reference: For both terms and relational expressions in BFO, we distinguish between primitive and defined. ‘Entity’ is an example of one such primitive term. Primitive terms in a highest-level ontology such as BFO are terms that are so basic to our understanding of reality that there is no way of defining them in a non-circular fashion. For these, therefore, we can provide only elucidations, supplemented by examples and by axioms.</obo:IAO_0000116>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo/2012-07-20/Reference"/>
     </owl:Ontology>
     
 
@@ -95,12 +80,10 @@ See the BFO 2 release notes for further information about BFO 2. Please note tha
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
     
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000179 -->
-
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000179">
         <obo:IAO_0000115 xml:lang="en">Relates an entity in the ontology to the name of the variable that is used to represent it in the code that generates the BFO OWL file from the lispy specification.</obo:IAO_0000115>
@@ -112,7 +95,6 @@ See the BFO 2 release notes for further information about BFO 2. Please note tha
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000180 -->
-
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000180">
         <obo:IAO_0000115 xml:lang="en">Relates an entity in the ontology to the term that is used to represent it in the the CLIF specification of BFO2</obo:IAO_0000115>
@@ -126,7 +108,6 @@ See the BFO 2 release notes for further information about BFO 2. Please note tha
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
 
-
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111">
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
         <rdfs:label xml:lang="en">editor preferred term</rdfs:label>
@@ -135,7 +116,6 @@ See the BFO 2 release notes for further information about BFO 2. Please note tha
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
-
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112">
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
@@ -146,7 +126,6 @@ See the BFO 2 release notes for further information about BFO 2. Please note tha
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
-
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
         <rdfs:label xml:lang="en">definition</rdfs:label>
@@ -156,13 +135,14 @@ See the BFO 2 release notes for further information about BFO 2. Please note tha
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
 
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label xml:lang="en">editor note</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
-
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117">
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
@@ -173,7 +153,6 @@ See the BFO 2 release notes for further information about BFO 2. Please note tha
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
 
-
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118">
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
         <rdfs:label xml:lang="en">alternative term</rdfs:label>
@@ -182,7 +161,6 @@ See the BFO 2 release notes for further information about BFO 2. Please note tha
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
-
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119">
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
@@ -193,7 +171,6 @@ See the BFO 2 release notes for further information about BFO 2. Please note tha
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000232 -->
 
-
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000232">
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
         <rdfs:label xml:lang="en">curator note</rdfs:label>
@@ -202,7 +179,6 @@ See the BFO 2 release notes for further information about BFO 2. Please note tha
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
-
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
@@ -213,7 +189,6 @@ See the BFO 2 release notes for further information about BFO 2. Please note tha
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000600 -->
 
-
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000600">
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
         <rdfs:label xml:lang="en">elucidation</rdfs:label>
@@ -222,7 +197,6 @@ See the BFO 2 release notes for further information about BFO 2. Please note tha
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000601 -->
-
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000601">
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
@@ -233,7 +207,6 @@ See the BFO 2 release notes for further information about BFO 2. Please note tha
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000602 -->
 
-
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000602">
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
         <rdfs:label xml:lang="en">has associated axiom(fol)</rdfs:label>
@@ -242,7 +215,6 @@ See the BFO 2 release notes for further information about BFO 2. Please note tha
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0010000 -->
-
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0010000">
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
@@ -253,13 +225,11 @@ See the BFO 2 release notes for further information about BFO 2. Please note tha
 
     <!-- http://purl.org/dc/elements/1.1/contributor -->
 
-
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
     
 
 
     <!-- http://purl.org/dc/elements/1.1/member -->
-
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/member"/>
     
@@ -267,20 +237,17 @@ See the BFO 2 release notes for further information about BFO 2. Please note tha
 
     <!-- http://www.w3.org/2000/01/rdf-schema#isDefinedBy -->
 
-
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
     
 
 
     <!-- http://www.w3.org/2000/01/rdf-schema#seeAlso -->
 
-
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/homepage -->
-
 
     <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/homepage"/>
     
@@ -294,12 +261,10 @@ See the BFO 2 release notes for further information about BFO 2. Please note tha
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
     
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000001 -->
-
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000001">
         <obo:BFO_0000179>entity</obo:BFO_0000179>
@@ -332,7 +297,6 @@ See the BFO 2 release notes for further information about BFO 2. Please note tha
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000002 -->
-
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000002">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
@@ -411,7 +375,6 @@ See the BFO 2 release notes for further information about BFO 2. Please note tha
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000003 -->
 
-
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000003">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <obo:BFO_0000179>occurrent</obo:BFO_0000179>
@@ -475,7 +438,6 @@ See the BFO 2 release notes for further information about BFO 2. Please note tha
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000004 -->
-
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000004">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
@@ -543,7 +505,6 @@ See the BFO 2 release notes for further information about BFO 2. Please note tha
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000006 -->
 
-
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000006">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000141"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
@@ -594,7 +555,6 @@ See the BFO 2 release notes for further information about BFO 2. Please note tha
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000008 -->
-
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000008">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
@@ -661,7 +621,6 @@ See the BFO 2 release notes for further information about BFO 2. Please note tha
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000009 -->
 
-
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000009">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/BFO_0000028"/>
@@ -690,7 +649,6 @@ See the BFO 2 release notes for further information about BFO 2. Please note tha
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000011 -->
-
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000011">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
@@ -778,7 +736,6 @@ See the BFO 2 release notes for further information about BFO 2. Please note tha
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
 
-
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
         <obo:BFO_0000179>process</obo:BFO_0000179>
@@ -812,7 +769,6 @@ See the BFO 2 release notes for further information about BFO 2. Please note tha
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000016 -->
-
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000016">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
@@ -860,8 +816,8 @@ See the BFO 2 release notes for further information about BFO 2. Please note tha
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000017 -->
 
-
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000017">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <obo:BFO_0000179>realizable</obo:BFO_0000179>
         <obo:BFO_0000180>RealizableEntity</obo:BFO_0000180>
@@ -906,7 +862,6 @@ See the BFO 2 release notes for further information about BFO 2. Please note tha
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000018 -->
 
-
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000018">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/BFO_0000028"/>
@@ -933,7 +888,6 @@ See the BFO 2 release notes for further information about BFO 2. Please note tha
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000019 -->
-
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
@@ -981,7 +935,6 @@ See the BFO 2 release notes for further information about BFO 2. Please note tha
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000020 -->
 
-
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000020">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
         <obo:BFO_0000179>sdc</obo:BFO_0000179>
@@ -1027,7 +980,6 @@ See the BFO 2 release notes for further information about BFO 2. Please note tha
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000023 -->
 
-
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000023">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
         <obo:BFO_0000179>role</obo:BFO_0000179>
@@ -1061,7 +1013,6 @@ See the BFO 2 release notes for further information about BFO 2. Please note tha
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000024 -->
-
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000024">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
@@ -1097,7 +1048,6 @@ See the BFO 2 release notes for further information about BFO 2. Please note tha
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000026 -->
 
-
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000026">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/BFO_0000028"/>
@@ -1126,7 +1076,6 @@ See the BFO 2 release notes for further information about BFO 2. Please note tha
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000027 -->
 
-
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000027">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <obo:BFO_0000179>object-aggregate</obo:BFO_0000179>
@@ -1144,8 +1093,8 @@ See the BFO 2 release notes for further information about BFO 2. Please note tha
         <obo:IAO_0000112 xml:lang="en">the nitrogen atoms in the atmosphere</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">the restaurants in Palo Alto</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">your collection of Meissen ceramic plates.</obo:IAO_0000112>
-        <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: object aggregates may gain and lose parts while remaining numerically identical (one and the same individual) over time. This holds both for aggregates whose membership is determined naturally (the aggregate of cells in your body) and aggregates determined by fiat (a baseball team, a congressional committee).</obo:IAO_0000116>
         <obo:IAO_0000116>An entity a is an object aggregate if and only if there is a mutually exhaustive and pairwise disjoint partition of a into objects </obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: object aggregates may gain and lose parts while remaining numerically identical (one and the same individual) over time. This holds both for aggregates whose membership is determined naturally (the aggregate of cells in your body) and aggregates determined by fiat (a baseball team, a congressional committee).</obo:IAO_0000116>
         <obo:IAO_0000119>ISBN:978-3-938793-98-5pp124-158#Thomas Bittner and Barry Smith, &apos;A Theory of Granular Partitions&apos;, in K. Munn and B. Smith (eds.), Applied Ontology: An Introduction, Frankfurt/Lancaster: ontos, 2008, 125-158.</obo:IAO_0000119>
         <obo:IAO_0000600 xml:lang="en">b is an object aggregate means: b is a material entity consisting exactly of a plurality of objects as member_parts at all times at which b exists. (axiom label in BFO2 Reference: [025-004])</obo:IAO_0000600>
         <obo:IAO_0000602>(forall (x) (if (ObjectAggregate x) (and (MaterialEntity x) (forall (t) (if (existsAt x t) (exists (y z) (and (Object y) (Object z) (memberPartOfAt y x t) (memberPartOfAt z x t) (not (= y z)))))) (not (exists (w t_1) (and (memberPartOfAt w x t_1) (not (Object w)))))))) // axiom label in BFO2 CLIF: [025-004] </obo:IAO_0000602>
@@ -1187,7 +1136,6 @@ See the BFO 2 release notes for further information about BFO 2. Please note tha
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000028 -->
 
-
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000028">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
         <obo:BFO_0000179>3d-s-region</obo:BFO_0000179>
@@ -1215,7 +1163,6 @@ See the BFO 2 release notes for further information about BFO 2. Please note tha
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000029 -->
-
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000029">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000141"/>
@@ -1258,7 +1205,6 @@ See the BFO 2 release notes for further information about BFO 2. Please note tha
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000030 -->
 
-
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000030">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <obo:BFO_0000179>object</obo:BFO_0000179>
@@ -1294,7 +1240,6 @@ See the BFO 2 release notes for further information about BFO 2. Please note tha
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000031 -->
 
-
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000031">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
         <obo:BFO_0000179>gdc</obo:BFO_0000179>
@@ -1323,7 +1268,6 @@ See the BFO 2 release notes for further information about BFO 2. Please note tha
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000034 -->
-
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000034">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
@@ -1354,7 +1298,6 @@ See the BFO 2 release notes for further information about BFO 2. Please note tha
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000035 -->
-
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000035">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
@@ -1397,7 +1340,6 @@ See the BFO 2 release notes for further information about BFO 2. Please note tha
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000038 -->
 
-
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000038">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/BFO_0000148"/>
@@ -1426,7 +1368,6 @@ See the BFO 2 release notes for further information about BFO 2. Please note tha
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
-
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
@@ -1498,7 +1439,6 @@ See the BFO 2 release notes for further information about BFO 2. Please note tha
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000140 -->
 
-
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000140">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000141"/>
         <obo:BFO_0000179>cf-boundary</obo:BFO_0000179>
@@ -1535,7 +1475,6 @@ See the BFO 2 release notes for further information about BFO 2. Please note tha
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000141 -->
 
-
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000141">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
         <obo:BFO_0000179>immaterial</obo:BFO_0000179>
@@ -1548,7 +1487,6 @@ See the BFO 2 release notes for further information about BFO 2. Please note tha
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000142 -->
-
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000142">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000140"/>
@@ -1582,7 +1520,6 @@ See the BFO 2 release notes for further information about BFO 2. Please note tha
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000144 -->
-
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000144">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
@@ -1628,7 +1565,6 @@ See the BFO 2 release notes for further information about BFO 2. Please note tha
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000145 -->
 
-
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000145">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <obo:BFO_0000179>r-quality</obo:BFO_0000179>
@@ -1657,7 +1593,6 @@ See the BFO 2 release notes for further information about BFO 2. Please note tha
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000146 -->
 
-
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000146">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000140"/>
         <obo:BFO_0000179>2d-cf-boundary</obo:BFO_0000179>
@@ -1683,7 +1618,6 @@ See the BFO 2 release notes for further information about BFO 2. Please note tha
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000147 -->
-
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000147">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000140"/>
@@ -1723,7 +1657,6 @@ See the BFO 2 release notes for further information about BFO 2. Please note tha
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000148 -->
 
-
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000148">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
         <obo:BFO_0000179>0d-t-region</obo:BFO_0000179>
@@ -1756,7 +1689,6 @@ See the BFO 2 release notes for further information about BFO 2. Please note tha
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000182 -->
 
-
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000182">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <obo:BFO_0000179>history</obo:BFO_0000179>
@@ -1782,7 +1714,6 @@ See the BFO 2 release notes for further information about BFO 2. Please note tha
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
     <rdf:Description rdf:about="http://example.com/bfo-spec-label">
         <obo:IAO_0000119>Person:Alan Ruttenberg</obo:IAO_0000119>
     </rdf:Description>
@@ -1802,14 +1733,9 @@ See the BFO 2 release notes for further information about BFO 2. Please note tha
         <owl:annotatedTarget xml:lang="en">To say that spatiotemporal region s spatially_projects_onto spatial region r at t is to say that r is the spatial extent of s at t. (axiom label in BFO2 Reference: [081-003])</owl:annotatedTarget>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/081-003"/>
     </owl:Axiom>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000116">
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
-        <rdfs:label xml:lang="en">editor note</rdfs:label>
-    </rdf:Description>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 5.1.4) https://github.com/owlcs/owlapi/ -->
-
+<!-- Generated by the OWL API (version 4.1.0) https://github.com/owlcs/owlapi -->
 
