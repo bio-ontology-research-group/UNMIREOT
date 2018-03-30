@@ -1,4 +1,4 @@
-@Grapes([                                                                                                                                                                                                                                      
+@Grapes([
   @Grab(group='net.sourceforge.owlapi', module='owlapi-api', version='5.1.4'),
   @Grab(group='net.sourceforge.owlapi', module='owlapi-apibinding', version='5.1.4'),
   @Grab(group='net.sourceforge.owlapi', module='owlapi-impl', version='5.1.4'),
@@ -40,7 +40,6 @@ eConf.setParameter(ReasonerConfiguration.INCREMENTAL_MODE_ALLOWED, "true")
 //eConf.setParameter(ReasonerConfiguration.INCREMENTAL_TAXONOMY, "true")
 @Field def reasonerFactory = new ElkReasonerFactory();
 @Field def rConf = new ElkReasonerConfiguration(ElkReasonerConfiguration.getDefaultOwlReasonerConfiguration(new NullReasonerProgressMonitor()), eConf);
-
 
 def rFile = new File('results.json')
 def results = [ 'error': false, 'unsatisfiable': [:] ]
