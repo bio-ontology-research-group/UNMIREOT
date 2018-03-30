@@ -33,7 +33,7 @@ def COMBO_FOLDER = 'combos/'
 def pFile = new File(args[0])
 def pName = pFile.getName().tokenize('.')[0]
 def oFolder = new File(args[1])
-def unsatCounts = [:]
+def unsatCounts = new JsonSlurper().parseText(new File("results.json").text)
 
 def manager = OWLManager.createOWLOntologyManager()
 def config = new OWLOntologyLoaderConfiguration()
@@ -85,6 +85,12 @@ println "Checking combos for unsats..."
 
 new File(COMBO_FOLDER).eachFile { oFile ->
   idx++
+
+  if(unsatCounts.containsKey(oFile.getName())) {
+    println "Skipping already done ${oFile.getName()} (${idx}/${total})"
+    return;
+  }
+
   println "Classifying ${oFile.getName()} (${idx}/${total})"
 
   def ontology
@@ -105,7 +111,7 @@ new File(COMBO_FOLDER).eachFile { oFile ->
       println '  Problem reasoning: ' + e.getMessage()
     }
 
-    if(oReasoner) {
+    if(oReasoner && oReasoner.isConsistent()) {
       def unsats = 0
 
       ontology.getClassesInSignature(true).collect { cl ->
