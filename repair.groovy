@@ -1,4 +1,4 @@
-@Grapes([                                                                                                                                                                                                                                      
+@Grapes([
   @Grab(group='net.sourceforge.owlapi', module='owlapi-api', version='5.1.4'),
   @Grab(group='net.sourceforge.owlapi', module='owlapi-apibinding', version='5.1.4'),
   @Grab(group='net.sourceforge.owlapi', module='owlapi-impl', version='5.1.4'),
