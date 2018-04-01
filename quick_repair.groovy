@@ -143,8 +143,6 @@ def removeAxiom(toRemove) {
   }
 }
 
-// TODO use the recursive method only if there are a large amount of unsatisfiable classes, or if we don't find any unsatisfiable classes beyond like, level 9? composite approach should mean that we catch all situations.
-// or go up to a certain level, or discern the highest level axioms, and take a sample of those. look into: how to get the depth of a class; the unsatisfiable class with the most superclasses?????
 // Get the top unsatisfiable classes
 def getUnsatisfiableClasses() {
   println "Getting unsats..."
@@ -192,7 +190,6 @@ def getUnsatisfiableClasses() {
     allOnts.collect { o ->
       o.getSubClassAxiomsForSuperClass(dClass).size()
     }.each { scCount ->
-      println scCount
       if(scCount > 0) { // collect all non-leaf node unsat classes
         highest << dClass
         if(scCount > subCount) {
@@ -202,11 +199,27 @@ def getUnsatisfiableClasses() {
     }
   }
 
-  // TODO: exclude from the list ones that are parents of other ones
+  println "Found ${highest.size()} non-leaf unsats with the highest @ ${subCount} out of a total ${unsatisfiableClasses.size()} unsats"
+
+  // TODO: NOTE: we could actually store the subclass axioms in a map from the previous step, instead of having run through all of them again.
+  def toRemove = []
+  highest.each { dClass ->
+    allOnts.each { o ->
+      def removableSub = o.getSubClassAxiomsForSuperClass(dClass).find { highest.contains(it.getSubClass()) }
+      if(removableSub && !toRemove.contains(removableSub.getSubClass())) {
+        toRemove << removableSub.getSubClass()
+      }
+    }
+  }
+
+  println "Removing ${toRemove.size()}"
+
+  highest.removeAll(toRemove)
+
+  println "Now looking at ${highest.size()} unsats out of a total ${unsatisfiableClasses.size()}"
 
   // TODO if this set is empty, simply return all of the unsats!
 
-  println "Found highest unsats: ${highest.size()} with the highest @ ${subCount} out of a total ${unsatisfiableClasses.size()} unsats"
 
   return highest
 }
