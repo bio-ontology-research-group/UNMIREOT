@@ -37,41 +37,84 @@ eConf.setParameter(ReasonerConfiguration.INCREMENTAL_MODE_ALLOWED, "true")
 @Field def rConf = new ElkReasonerConfiguration(ElkReasonerConfiguration.getDefaultOwlReasonerConfiguration(new NullReasonerProgressMonitor()), eConf);
 
 @Field def oFile = new File(args[0])
+@Field def outFile = new File(args[1])
 @Field def oReasoner
+
+@Field def manager = OWLManager.createOWLOntologyManager()
+@Field def df = OWLManager.getOWLDataFactory()
+@Field def config = new OWLOntologyLoaderConfiguration()
+config.setFollowRedirects(true)
 
 // First we will count the naughtiest axioms
 def unsats = true
 def removedAxioms = []
 def runCount = 0
 
-getUnsatisfiableClasses()
-
-/*while(unsats) {
+/** 
+ * 1. Get all unsatisfiable classes
+ * 2. Remove all leaf-node unsatisfiable classes
+ * 3. Remove from this set all unsatisfiable classes which have a superclass in
+ *      the set
+ * 4. Find and then remove most implicated axiom in unsatisfiability justifications
+ *      for these
+ * 5. If unsatisfiable classes remain, return to 1, otherwise save and exit
+ *      because you've just fixed the ontology boiiiiiiiiiiiiiiiiiiiiiii
+ */
+while(unsats) {
   runCount++
-  def unsatClasses = getUnsatisfiableClasses()
-  def naughties = findNaughties(unsatClasses)
+  println "ROUND ${runCount}"
+
+  manager.clearOntologies()
+
+  def toLoad = oFile
+  if(runCount > 1) {
+    toLoad = outFile
+  }
+
+  def unsatClasses = getUnsatisfiableClasses(toLoad)
+  println "Unsatisfiable classes: ${unsatClasses.size()}"
+
+  def topUnsats = getTopUnsatisfiableClasses(unsatClasses)
+  def naughties = findNaughties(topUnsats)
   def naughtiest = naughties.max { it.value }
   def naughtiestAxiom = naughtiest.key
   def naughtiestCount = naughtiest.value
 
-  println "ROUND ${runCount}"
-  println "Unsatisfiable classes: ${unsatClasses.size()}"
   println "Removing naughtiest axiom: ${naughtiestAxiom} with ${naughtiestCount} implications"
 
   removeAxiom(naughtiestAxiom)
   removedAxioms << naughtiestAxiom
   naughties.remove(naughtiestAxiom)
 
-  def unsatsRemaining = getUnsatisfiableClasses()
+  // TODO: i think that the incremental reasoner mode may update the unsat
+  //  counts without having to reload. will have to test that
+  def unsatsRemaining = getUnsatisfiableClasses(outFile)
   println "Unsatisfiable classes remaining: ${unsatsRemaining.size()}"
 
-  unsats = unsatsRemaining.size() > 0
-}*/
+  unsats = unsatsRemining.size() > 0
+}
 
+// Find axiom explanations for unsatisfiable classes
 def findNaughties(unsatClasses) {
+  def allExplanations = [:]
+
+  unsatClasses.eachWithIndex { dClass, idx ->
+    def iri = dClass.getIRI()
+    allExplanations[iri] = []
+
+    println "Processing ${iri} (${idx+1}/${unsatClasses.size()})"
+
+    def exp = new BlackBoxExplanation(ontology, reasonerFactory, oReasoner)
+
+    def explanations = exp.getExplanation(dClass)
+    for(OWLAxiom causingAxiom : explanations) {
+      allExplanations[iri] << causingAxiom.toString()
+    }
+  }
+
   def naughtyCounts = [:]
   
-  unsatClasses.each { cName, axioms ->
+  allExplanations.each { cName, axioms ->
     axioms.each { ax ->
       if(!naughtyCounts.containsKey(ax)) {
         naughtyCounts[ax] = 0
@@ -83,27 +126,11 @@ def findNaughties(unsatClasses) {
   return naughtyCounts
 }
 
+// remove given axiom from ontology
 def removeAxiom(toRemove) {
-  def manager = OWLManager.createOWLOntologyManager()
-  def config = new OWLOntologyLoaderConfiguration()
-  config.setFollowRedirects(true)
-
-  println "Loading ${oFile}..."
-
-  try {
-    ontology = manager
-        .loadOntologyFromOntologyDocument(new IRIDocumentSource(IRI.create(oFile.toURI())), config);
-  } catch(e) {
-    println "Failed to load ontology"
-    e.printStackTrace()
-    return;
-  }
-
-  // First remove from the ontology itself.
   ontology.getAxioms().each {
     if(toRemove == it.toString()) {
       manager.removeAxiom(ontology, it)
-
       println "Removing ${it.toString()} from main ontology"
     }
   }
@@ -136,24 +163,20 @@ def removeAxiom(toRemove) {
   }
 
   try {
-    manager.saveOntology(ontology, IRI.create(oFile.toURI()));
+    manager.saveOntology(ontology, IRI.create(outFile.toURI()));
     println "Saved ${oFile}"
   } catch(e) {
     println "Ontology upset, unable to save???"
   }
 }
 
-// Get the top unsatisfiable classes
-def getUnsatisfiableClasses() {
-  println "Getting unsats..."
-  def manager = OWLManager.createOWLOntologyManager()
-  def df = OWLManager.getOWLDataFactory()
-  def config = new OWLOntologyLoaderConfiguration()
-  config.setFollowRedirects(true)
+// load the ontology and get an unsat count
+def getUnsatisfiableClasses(toLoad) {
+  println "Loading ontology..." // TODO this should probably be in its own funxion
 
   try {
     ontology = manager
-        .loadOntologyFromOntologyDocument(new IRIDocumentSource(IRI.create(oFile.toURI())), config);
+        .loadOntologyFromOntologyDocument(new IRIDocumentSource(IRI.create(toLoad.toURI())), config);
   } catch(e) {
     println "Failed to load ontology"
     e.printStackTrace()
@@ -169,6 +192,7 @@ def getUnsatisfiableClasses() {
     println 'Problem reasoning'
   }
 
+  println "Getting unsats..."
   def unsatisfiableClasses = ontology.getClassesInSignature(true).collect { cl ->
     if(!oReasoner.isSatisfiable(cl)) {
       return cl
@@ -178,6 +202,16 @@ def getUnsatisfiableClasses() {
 
   println "Found ${unsatisfiableClasses.size()}"
 
+  return unsatisfiableClasses
+}
+
+// Get the top unsatisfiable classes
+// So, we have to use the structural subclass axioms here because obviously if
+//  they are unsatisfiable then we lose the proper structure if we start
+//  querying with the reasoner, which is a pain in the arse.
+def getTopUnsatisfiableClasses(unsatisfiableClasses) {
+  println "Getting top unsats..."
+
   def highest = []
   def subCount = 0
   def allOnts = [ontology] + ontology.getImports()
@@ -185,8 +219,8 @@ def getUnsatisfiableClasses() {
     if(dClass.isBottomEntity()) {
       return;
     }
-    println allOnts.size()
 
+    // it fucking works fuck yeah
     allOnts.collect { o ->
       o.getSubClassAxiomsForSuperClass(dClass).size()
     }.each { scCount ->
@@ -223,7 +257,3 @@ def getUnsatisfiableClasses() {
 
   return highest
 }
-/*
-Classifying obofoundry_core_fixed_upheno.owl (103/135
-  Found 88479 unsatisfiable classes
-*/
