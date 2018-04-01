@@ -88,6 +88,8 @@ while(unsats) {
 
   // TODO: i think that the incremental reasoner mode may update the unsat
   //  counts without having to reload. will have to test that
+
+  manager.clearOntologies()
   def unsatsRemaining = getUnsatisfiableClasses(outFile)
   println "Unsatisfiable classes remaining: ${unsatsRemaining.size()}"
 
