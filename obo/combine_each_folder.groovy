@@ -49,7 +49,7 @@ oFolder.eachFile { oFile ->
   def oName = oFile.getName().tokenize('.')[0]
 
   try {
-    def parentOntology = manager.loadOntologyFromOntologyDocument(new FileDocumentSource(pFile), config)
+    def importDeclaration = manager.getOWLDataFactory().getOWLImportsDeclaration(IRI.create(pFile))
     def childOntology = manager.loadOntologyFromOntologyDocument(new FileDocumentSource(oFile), config)
     def newOntologyID = IRI.create(COMBO_PREFIX+"${pName}_${oName}_merged")
     def fileFormatted = new File("${COMBO_FOLDER}${pName}_${oName}_merged.owl")
@@ -61,6 +61,8 @@ oFolder.eachFile { oFile ->
     }
 
     def newOntology = new OWLOntologyMerger(manager).createMergedOntology(manager, newOntologyID)
+
+    manager.applyChange(new AddImport(newOntology, importDeclaration))
 
     manager.saveOntology(newOntology, IRI.create(fileFormatted.toURI()))
 

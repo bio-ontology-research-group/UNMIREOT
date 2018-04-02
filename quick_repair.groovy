@@ -277,5 +277,5 @@ def getTopUnsatisfiableClasses(unsatisfiableClasses) {
 
   // TODO if this set is empty, simply return all of the unsats! (since there may be the case that all the unsats are leaf nodes). thinking about it, we will probably want to look for ontology friend groups in this case too
 
-  return highest
+  return highest.subList(0, 25)
 }
