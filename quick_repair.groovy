@@ -227,7 +227,6 @@ def getTopUnsatisfiableClasses(unsatisfiableClasses) {
       return;
     }
 
-    // it fucking works fuck yeah
     allOnts.collect { o ->
       o.getSubClassAxiomsForSuperClass(dClass).size()
     }.each { scCount ->
