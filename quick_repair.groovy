@@ -42,6 +42,7 @@ eConf.setParameter(ReasonerConfiguration.INCREMENTAL_MODE_ALLOWED, "true")
 @Field def oFile = new File(args[0])
 @Field def outFile = new File(args[1])
 @Field def oReasoner
+@Field def SAMPLE_SIZE = 25
 
 @Field def manager = OWLManager.createOWLOntologyManager()
 @Field def df = OWLManager.getOWLDataFactory()
@@ -280,10 +281,10 @@ def getTopUnsatisfiableClasses(unsatisfiableClasses) {
 
   println "Pared ${unsatisfiableClasses.size()} unsatisfiable classes down to ${highest.size()} to justify for this round"
 
-  if(highest.size() > 25) {
-    println "There are more than 25 classes, so we will take a random sample of 25 from our subset."
+  if(highest.size() > SAMPLE_SIZE) {
+    println "There are more than ${SAMPLE_SIZE} classes, so we will take a random sample of ${SAMPLE_SIZE} from our subset."
     def random = new Random()
-    highest = (1..25).collect {
+    highest = (1..SAMPLE_SIZE).collect {
       highest[random.nextInt(highest.size())]
     }
   }
