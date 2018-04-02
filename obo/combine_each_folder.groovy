@@ -43,18 +43,15 @@ config.setFollowRedirects(true)
 def total = oFolder.list().size()
 def idx = 0
 
-println "Loading master ontology"
-def masterOntology = manager.loadOntologyFromOntologyDocument(new FileDocumentSource(pFile), config)
-
 oFolder.eachFile { oFile ->
   idx++
   println "Processing ${oFile.getName()} (${idx}/${total})"
 
   try {
     def childOntology = manager.loadOntologyFromOntologyDocument(new FileDocumentSource(oFile), config)
-
-    def importDeclaration = manager.getOWLDataFactory().getOWLImportsDeclaration(IRI.create(oFile))
+    def importDeclaration = manager.getOWLDataFactory().getOWLImportsDeclaration(IRI.create(pFile))
     def newOntologyID = new OWLOntologyID(IRI.create(COMBO_PREFIX+"${pName}_${oFile.getName()}"))
+    def fileFormatted = new File("${COMBO_FOLDER}${pName}_${oFile.getName()}")
 
     [
       manager.getOWLDataFactory().getOWLImportsDeclaration(IRI.create(PURL+"bfo.owl")),
@@ -69,15 +66,10 @@ oFolder.eachFile { oFile ->
     ].each { removeDeclaration ->
       manager.applyChange(new RemoveImport(childOntology, removeDeclaration)) 
     }
-    manager.saveOntology(childOntology, IRI.create(oFile.toURI()))
 
-    manager.applyChange(new AddImport(masterOntology, importDeclaration))
-    manager.applyChange(new SetOntologyID(masterOntology, newOntologyID))
-
-    def fileFormatted = new File("${COMBO_FOLDER}${pName}_${oFile.getName()}")
-    manager.saveOntology(masterOntology, IRI.create(fileFormatted.toURI()))
-
-    manager.applyChange(new RemoveImport(masterOntology, importDeclaration)) 
+    manager.applyChange(new AddImport(childOntology, importDeclaration))
+    manager.applyChange(new SetOntologyID(childOntology, newOntologyID))
+    manager.saveOntology(childOntology, IRI.create(fileFormatted.toURI()))
 
     println "Saved ${fileFormatted.getName()}"
   } catch(e) {
@@ -85,6 +77,7 @@ oFolder.eachFile { oFile ->
     unsatCounts[oFile.getName()] = e.getMessage()
   }
 }
+
 /*
 manager.clearOntologies()
 
