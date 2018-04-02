@@ -220,6 +220,7 @@ def getTopUnsatisfiableClasses(unsatisfiableClasses) {
 
   def highest = []
   def subCount = 0
+  def allDepths = [:]
   def allOnts = [ontology] + ontology.getImports()
   unsatisfiableClasses.each { dClass ->
     if(dClass.isBottomEntity()) {
@@ -232,6 +233,12 @@ def getTopUnsatisfiableClasses(unsatisfiableClasses) {
     }.each { scCount ->
       if(scCount > 0) { // collect all non-leaf node unsat classes
         highest << dClass
+
+        if(!allDepths.containsKey(scCount)) {
+          allDepths[scCount] = []
+        }
+        allDepths[scCount] << dClass
+
         if(scCount > subCount) {
           subCount = scCount
         }
@@ -241,7 +248,6 @@ def getTopUnsatisfiableClasses(unsatisfiableClasses) {
 
   println "Found ${highest.size()} non-leaf unsats with the highest @ ${subCount} out of a total ${unsatisfiableClasses.size()} unsats"
 
-  // TODO: NOTE: we could actually store the subclass axioms in a map from the previous step, instead of having run through all of them again.
   def toRemove = []
   highest.each { dClass ->
     allOnts.each { o ->
@@ -252,13 +258,25 @@ def getTopUnsatisfiableClasses(unsatisfiableClasses) {
     }
   }
 
-  println "Removing ${toRemove.size()}"
+  println "Removing a further ${toRemove.size()} classes with superclasses in the group"
 
   highest.removeAll(toRemove)
+  allDepths.each { k, v ->
+    v.removeAll(toRemove)
+  }
 
   println "Now looking at ${highest.size()} unsats out of a total ${unsatisfiableClasses.size()}"
 
-  // TODO if this set is empty, simply return all of the unsats!
+  def friends = allDepths.max { it.value.size() }
+  
+  if(friends.value.size() < highest.size()) {
+    println "Found happy ontology friend group of ${friends.value.size()} classes at depth ${friends.key} (well I suppose strictly they can't be all that happy given their instances cannot possibly exist :(. Now, we will fix that!"
+    highest = friends.value
+  }
+
+  println "Pared ${unsatisfiableClasses.size()} unsatisfiable classes down to ${highest.size()} to justify for this round"
+
+  // TODO if this set is empty, simply return all of the unsats! (since there may be the case that all the unsats are leaf nodes). thinking about it, we will probably want to look for ontology friend groups in this case too
 
   return highest
 }
