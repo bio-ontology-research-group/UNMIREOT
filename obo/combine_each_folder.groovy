@@ -46,39 +46,35 @@ def idx = 0
 oFolder.eachFile { oFile ->
   idx++
   println "Processing ${oFile.getName()} (${idx}/${total})"
+  def oName = oFile.getName().tokenize('.')[0]
 
   try {
+    def parentOntology = manager.loadOntologyFromOntologyDocument(new FileDocumentSource(pFile), config)
     def childOntology = manager.loadOntologyFromOntologyDocument(new FileDocumentSource(oFile), config)
-    def importDeclaration = manager.getOWLDataFactory().getOWLImportsDeclaration(IRI.create(pFile))
-    def newOntologyID = new OWLOntologyID(IRI.create(COMBO_PREFIX+"${pName}_${oFile.getName()}"))
-    def fileFormatted = new File("${COMBO_FOLDER}${pName}_${oFile.getName()}")
+    def newOntologyID = IRI.create(COMBO_PREFIX+"${pName}_${oName}_merged")
+    def fileFormatted = new File("${COMBO_FOLDER}${pName}_${oName}_merged.owl")
 
-    [
-      manager.getOWLDataFactory().getOWLImportsDeclaration(IRI.create(PURL+"bfo.owl")),
-      manager.getOWLDataFactory().getOWLImportsDeclaration(IRI.create(PURL+"chebi.owl")),
-      manager.getOWLDataFactory().getOWLImportsDeclaration(IRI.create(PURL+"doid.owl")),
-      manager.getOWLDataFactory().getOWLImportsDeclaration(IRI.create(PURL+"go.owl")),
-      manager.getOWLDataFactory().getOWLImportsDeclaration(IRI.create(PURL+"obi.owl")),
-      manager.getOWLDataFactory().getOWLImportsDeclaration(IRI.create(PURL+"pato.owl")),
-      manager.getOWLDataFactory().getOWLImportsDeclaration(IRI.create(PURL+"po.owl")),
-      manager.getOWLDataFactory().getOWLImportsDeclaration(IRI.create(PURL+"xao.owl")),
-      manager.getOWLDataFactory().getOWLImportsDeclaration(IRI.create(PURL+"zfa.owl"))
-    ].each { removeDeclaration ->
-      manager.applyChange(new RemoveImport(childOntology, removeDeclaration)) 
+    def iDecs = childOntology.getImportsDeclarations()
+    iDecs.each { imp ->
+      def it = manager.getImportedOntology(imp)
+      manager.applyChange(new RemoveImport(childOntology, imp)) 
     }
 
-    manager.applyChange(new AddImport(childOntology, importDeclaration))
-    manager.applyChange(new SetOntologyID(childOntology, newOntologyID))
-    manager.saveOntology(childOntology, IRI.create(fileFormatted.toURI()))
+    def newOntology = new OWLOntologyMerger(manager).createMergedOntology(manager, newOntologyID)
+
+    manager.saveOntology(newOntology, IRI.create(fileFormatted.toURI()))
 
     println "Saved ${fileFormatted.getName()}"
   } catch(e) {
     println "Error: ${e.getMessage()}"
     unsatCounts[oFile.getName()] = e.getMessage()
   }
+
+  manager.clearOntologies()
 }
 
-/*
+println "now it is time to reason"
+
 manager.clearOntologies()
 
 def eConf = ReasonerConfiguration.getConfiguration()
@@ -137,4 +133,4 @@ new File(COMBO_FOLDER).eachFile { oFile ->
 
   new File('results.json').text = new JsonBuilder(unsatCounts).toPrettyString()
   manager.clearOntologies()
-}*/
+}
