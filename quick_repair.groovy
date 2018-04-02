@@ -13,6 +13,9 @@
   @GrabConfig(systemClassLoader=true)
 ])
 
+// todo remove the things from the import statements in the imports that we
+// already have in the main one. because they're all importing bfo again 
+
 import org.semanticweb.owlapi.io.* 
 import org.semanticweb.owlapi.model.*
 import org.semanticweb.owlapi.util.*
@@ -93,7 +96,7 @@ while(unsats) {
   def unsatsRemaining = getUnsatisfiableClasses(outFile)
   println "Unsatisfiable classes remaining: ${unsatsRemaining.size()}"
 
-  unsats = unsatsRemining.size() > 0
+  unsats = unsatsRemaining.size() > 0
 }
 
 // Find axiom explanations for unsatisfiable classes
@@ -107,8 +110,9 @@ def findNaughties(unsatClasses) {
     println "Processing ${iri} (${idx+1}/${unsatClasses.size()})"
 
     def exp = new BlackBoxExplanation(ontology, reasonerFactory, oReasoner)
+    def fexp = new HSTExplanationGenerator(exp);
 
-    def explanations = exp.getExplanation(dClass)
+    def explanations = fexp.getExplanation(dClass)
     for(OWLAxiom causingAxiom : explanations) {
       allExplanations[iri] << causingAxiom.toString()
     }
@@ -174,7 +178,7 @@ def removeAxiom(toRemove) {
 
 // load the ontology and get an unsat count
 def getUnsatisfiableClasses(toLoad) {
-  println "Loading ontology..." // TODO this should probably be in its own funxion
+  println "Loading ontology... ${toLoad.toURI()}" // TODO this should probably be in its own funxion
 
   try {
     ontology = manager
@@ -255,7 +259,6 @@ def getTopUnsatisfiableClasses(unsatisfiableClasses) {
   println "Now looking at ${highest.size()} unsats out of a total ${unsatisfiableClasses.size()}"
 
   // TODO if this set is empty, simply return all of the unsats!
-
 
   return highest
 }

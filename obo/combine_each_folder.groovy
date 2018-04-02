@@ -29,6 +29,7 @@ import groovy.transform.Field
 
 def COMBO_PREFIX = 'http://reality.rehab/ontology/'
 def COMBO_FOLDER = 'combos/'
+def PURL = "http://purl.obolibrary.org/obo/"
 
 def pFile = new File(args[0])
 def pName = pFile.getName().tokenize('.')[0]
@@ -42,7 +43,7 @@ config.setFollowRedirects(true)
 def total = oFolder.list().size()
 def idx = 0
 
-/*println "Loading master ontology"
+println "Loading master ontology"
 def masterOntology = manager.loadOntologyFromOntologyDocument(new FileDocumentSource(pFile), config)
 
 oFolder.eachFile { oFile ->
@@ -50,9 +51,25 @@ oFolder.eachFile { oFile ->
   println "Processing ${oFile.getName()} (${idx}/${total})"
 
   try {
+    def childOntology = manager.loadOntologyFromOntologyDocument(new FileDocumentSource(oFile), config)
+
     def importDeclaration = manager.getOWLDataFactory().getOWLImportsDeclaration(IRI.create(oFile))
-    def removeDeclaration = manager.getOWLDataFactory().getOWLImportsDeclaration(IRI.create("http://purl.obolibrary.org/obo/bfo.owl"))
     def newOntologyID = new OWLOntologyID(IRI.create(COMBO_PREFIX+"${pName}_${oFile.getName()}"))
+
+    [
+      manager.getOWLDataFactory().getOWLImportsDeclaration(IRI.create(PURL+"bfo.owl")),
+      manager.getOWLDataFactory().getOWLImportsDeclaration(IRI.create(PURL+"chebi.owl")),
+      manager.getOWLDataFactory().getOWLImportsDeclaration(IRI.create(PURL+"doid.owl")),
+      manager.getOWLDataFactory().getOWLImportsDeclaration(IRI.create(PURL+"go.owl")),
+      manager.getOWLDataFactory().getOWLImportsDeclaration(IRI.create(PURL+"obi.owl")),
+      manager.getOWLDataFactory().getOWLImportsDeclaration(IRI.create(PURL+"pato.owl")),
+      manager.getOWLDataFactory().getOWLImportsDeclaration(IRI.create(PURL+"po.owl")),
+      manager.getOWLDataFactory().getOWLImportsDeclaration(IRI.create(PURL+"xao.owl")),
+      manager.getOWLDataFactory().getOWLImportsDeclaration(IRI.create(PURL+"zfa.owl"))
+    ].each { removeDeclaration ->
+      manager.applyChange(new RemoveImport(childOntology, removeDeclaration)) 
+    }
+    manager.saveOntology(childOntology, IRI.create(oFile.toURI()))
 
     manager.applyChange(new AddImport(masterOntology, importDeclaration))
     manager.applyChange(new SetOntologyID(masterOntology, newOntologyID))
@@ -68,8 +85,8 @@ oFolder.eachFile { oFile ->
     unsatCounts[oFile.getName()] = e.getMessage()
   }
 }
-
-manager.clearOntologies()*/
+/*
+manager.clearOntologies()
 
 def eConf = ReasonerConfiguration.getConfiguration()
 eConf.setParameter(ReasonerConfiguration.NUM_OF_WORKING_THREADS, "24")
@@ -127,4 +144,4 @@ new File(COMBO_FOLDER).eachFile { oFile ->
 
   new File('results.json').text = new JsonBuilder(unsatCounts).toPrettyString()
   manager.clearOntologies()
-}
+}*/
