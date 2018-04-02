@@ -53,6 +53,8 @@ def unsats = true
 def removedAxioms = []
 def runCount = 0
 
+  // TODO: i think that the incremental reasoner mode may update the unsat
+  //  counts without having to reload. will have to test that
 /** 
  * 1. Get all unsatisfiable classes
  * 2. Remove all leaf-node unsatisfiable classes
@@ -62,6 +64,7 @@ def runCount = 0
  *      for these
  * 5. If unsatisfiable classes remain, return to 1, otherwise save and exit
  *      because you've just fixed the ontology boiiiiiiiiiiiiiiiiiiiiiii
+ * NOTE: this is out of date comment
  */
 while(unsats) {
   runCount++
@@ -76,6 +79,10 @@ while(unsats) {
 
   def unsatClasses = getUnsatisfiableClasses(toLoad)
   println "Unsatisfiable classes: ${unsatClasses.size()}"
+  if(unsatClasses.size() == 0) {
+    println "Done."
+    break;
+  }
 
   def topUnsats = getTopUnsatisfiableClasses(unsatClasses)
   def naughties = findNaughties(topUnsats)
@@ -89,14 +96,7 @@ while(unsats) {
   removedAxioms << naughtiestAxiom
   naughties.remove(naughtiestAxiom)
 
-  // TODO: i think that the incremental reasoner mode may update the unsat
-  //  counts without having to reload. will have to test that
-
   manager.clearOntologies()
-  def unsatsRemaining = getUnsatisfiableClasses(outFile)
-  println "Unsatisfiable classes remaining: ${unsatsRemaining.size()}"
-
-  unsats = unsatsRemaining.size() > 0
 }
 
 // Find axiom explanations for unsatisfiable classes
@@ -170,7 +170,7 @@ def removeAxiom(toRemove) {
 
   try {
     manager.saveOntology(ontology, IRI.create(outFile.toURI()));
-    println "Saved ${oFile}"
+    println "Saved ${outFile}"
   } catch(e) {
     println "Ontology upset, unable to save???"
   }
@@ -247,6 +247,11 @@ def getTopUnsatisfiableClasses(unsatisfiableClasses) {
 
   println "Found ${highest.size()} non-leaf unsats with the highest @ ${subCount} out of a total ${unsatisfiableClasses.size()} unsats"
 
+  if(highest.size() == 0) {
+    println "In this case, we will simply have to look at all ${unsatisfiableClasses.size()} of the classes!"
+    return unsatisfiableClasses
+  }
+
   def toRemove = []
   highest.each { dClass ->
     allOnts.each { o ->
@@ -275,10 +280,10 @@ def getTopUnsatisfiableClasses(unsatisfiableClasses) {
 
   println "Pared ${unsatisfiableClasses.size()} unsatisfiable classes down to ${highest.size()} to justify for this round"
 
-  if(highest.size() > 50) {
-    println "There are more than 50 classes, so we will take a random sample of 50 from our subset."
+  if(highest.size() > 25) {
+    println "There are more than 25 classes, so we will take a random sample of 25 from our subset."
     def random = new Random()
-    highest = (0..50).collect {
+    highest = (1..25).collect {
       highest[random.nextInt(highest.size())]
     }
   }
