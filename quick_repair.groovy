@@ -57,15 +57,17 @@ def runCount = 0
   // TODO: i think that the incremental reasoner mode may update the unsat
   //  counts without having to reload. will have to test that
 /** 
- * 1. Get all unsatisfiable classes
- * 2. Remove all leaf-node unsatisfiable classes
- * 3. Remove from this set all unsatisfiable classes which have a superclass in
- *      the set
- * 4. Find and then remove most implicated axiom in unsatisfiability justifications
- *      for these
- * 5. If unsatisfiable classes remain, return to 1, otherwise save and exit
- *      because you've just fixed the ontology boiiiiiiiiiiiiiiiiiiiiiii
- * NOTE: this is out of date comment
+ * 1. Load & classify ontology. Retrieve list of unsatisfiable classes. If there are none, exit.
+ * 2. If there are non-leaf-node unsatisfiable classes, remove all leaf-node
+ *      unsatisfiable classes, else goto 5 with the complete set of
+ *      unsatisfiable classes.
+ * 3. Remove from the set of non-leaf-node unsatisfiable classes all classes
+ *      which have a superclass in the set.
+ * 4. Group remaining classes by their number of direct asserted subclasses.
+ * 5. Select the group with the most classes, and if there are more than 25,
+ *      randomly sample 25 of these, else proceed with all of them.
+ * 6. Get explanations, then find the most implicated axiom, and remove it
+ * 7. Return to 1
  */
 while(unsats) {
   runCount++
