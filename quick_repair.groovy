@@ -15,6 +15,9 @@
 
 // so the reason this seems to work better is that the sample is distributed
 // throughout the ontology, multiple parents, rather than a single parent
+// TODO : write the test to find the other problematic axioms and counts etc.
+// TODO : check if you actually have to reload the ontology every time, bc i
+// don't think you do.
 
 import org.semanticweb.owlapi.io.* 
 import org.semanticweb.owlapi.model.*
