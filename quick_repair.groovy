@@ -13,11 +13,7 @@
   @GrabConfig(systemClassLoader=true)
 ])
 
-// so the reason this seems to work better is that the sample is distributed
-// throughout the ontology, multiple parents, rather than a single parent
 // TODO : write the test to find the other problematic axioms and counts etc.
-// TODO : check if you actually have to reload the ontology every time, bc i
-// don't think you do.
 
 import org.semanticweb.owlapi.io.* 
 import org.semanticweb.owlapi.model.*
@@ -36,14 +32,20 @@ import groovy.transform.Field
 import com.clarkparsia.owlapi.explanation.BlackBoxExplanation
 import com.clarkparsia.owlapi.explanation.HSTExplanationGenerator
 
+// Set up all the reasoner and whatnot
+
 @Field def eConf = ReasonerConfiguration.getConfiguration()
 eConf.setParameter(ReasonerConfiguration.NUM_OF_WORKING_THREADS, "24")
 eConf.setParameter(ReasonerConfiguration.INCREMENTAL_MODE_ALLOWED, "true")
-@Field def reasonerFactory = new ElkReasonerFactory();
-@Field def rConf = new ElkReasonerConfiguration(ElkReasonerConfiguration.getDefaultOwlReasonerConfiguration(new NullReasonerProgressMonitor()), eConf);
+@Field def reasonerFactory = new ElkReasonerFactory()
+@Field def rConf = new ElkReasonerConfiguration(ElkReasonerConfiguration.getDefaultOwlReasonerConfiguration(new NullReasonerProgressMonitor()), eConf)
 
 @Field def oFile = new File(args[0])
-@Field def outFile = new File(args[1])
+@Field def outName = args[1]
+new File(args[1]).mkdir()
+@Field outFile = new File(args[1]+'/'+args[1]+'_fixed.owl')
+@Field resFile = new File(args[1]+'/'+args[1]+'.json')
+
 @Field def oReasoner
 @Field def SAMPLE_SIZE = 25
 
@@ -54,8 +56,10 @@ config.setFollowRedirects(true)
 
 // First we will count the naughtiest axioms
 def unsats = true
-def removedAxioms = []
+def removedAxioms = [:]
+def lastRemovedAxiom
 def runCount = 0
+def unsatClasses
 
   // TODO: i think that the incremental reasoner mode may update the unsat
   //  counts without having to reload. will have to test that
@@ -76,14 +80,25 @@ while(unsats) {
   runCount++
   println "ROUND ${runCount}"
 
-  manager.clearOntologies()
-
   def toLoad = oFile
   if(runCount > 1) {
     toLoad = outFile
   }
 
-  def unsatClasses = getUnsatisfiableClasses(toLoad)
+  def newUnsatClasses = getUnsatisfiableClasses(toLoad)
+
+  if(lastRemovedAxiom) { // Count how effective the last removal was
+    removedAxioms[lastRemovedAxiom.toString()] = unsatClasses.findAll {
+      println it
+      !newUnsatClasses.contains(it)
+    }.collect {
+      it.getIRI()
+    }
+
+    resFile.text = new JsonBuilder(removedAxioms).toPrettyString()
+  }
+  unsatClasses = newUnsatClasses
+
   println "Unsatisfiable classes: ${unsatClasses.size()}"
   if(unsatClasses.size() == 0) {
     println "Done."
@@ -99,8 +114,8 @@ while(unsats) {
   println "Removing naughtiest axiom: ${naughtiestAxiom} with ${naughtiestCount} implications"
 
   removeAxiom(naughtiestAxiom)
-  removedAxioms << naughtiestAxiom
   naughties.remove(naughtiestAxiom)
+  lastRemovedAxiom = naughtiestAxiom
 
   manager.clearOntologies()
 }
@@ -116,7 +131,7 @@ def findNaughties(unsatClasses) {
     println "Processing ${iri} (${idx+1}/${unsatClasses.size()})"
 
     def exp = new BlackBoxExplanation(ontology, reasonerFactory, oReasoner)
-    def fexp = new HSTExplanationGenerator(exp);
+    def fexp = new HSTExplanationGenerator(exp)
 
     def explanations = fexp.getExplanation(dClass)
     for(OWLAxiom causingAxiom : explanations) {
@@ -163,7 +178,7 @@ def removeAxiom(toRemove) {
 
     // If we had to remove an axiom from an import, then we have to create a new one
     if(hadToRemove) {
-      def depFile = IRI.create(new File("dependency_${i}.owl").toURI())
+      def depFile = IRI.create(new File("${args[1]}/dependency_${i}.owl").toURI())
       manager.saveOntology(it, depFile)
 
       def removeImport = new RemoveImport(ontology, imp)
@@ -175,7 +190,7 @@ def removeAxiom(toRemove) {
   }
 
   try {
-    manager.saveOntology(ontology, IRI.create(outFile.toURI()));
+    manager.saveOntology(ontology, IRI.create(outFile.toURI()))
     println "Saved ${outFile}"
   } catch(e) {
     println "Ontology upset, unable to save???"
@@ -188,7 +203,7 @@ def getUnsatisfiableClasses(toLoad) {
 
   try {
     ontology = manager
-        .loadOntologyFromOntologyDocument(new IRIDocumentSource(IRI.create(toLoad.toURI())), config);
+        .loadOntologyFromOntologyDocument(new IRIDocumentSource(IRI.create(toLoad.toURI())), config)
   } catch(e) {
     println "Failed to load ontology"
     e.printStackTrace()
@@ -211,8 +226,6 @@ def getUnsatisfiableClasses(toLoad) {
     }
   }
   unsatisfiableClasses.removeAll([null])
-
-  println "Found ${unsatisfiableClasses.size()}"
 
   return unsatisfiableClasses
 }
