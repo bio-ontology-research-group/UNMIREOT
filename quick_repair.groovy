@@ -291,11 +291,15 @@ def getTopUnsatisfiableClasses(unsatisfiableClasses) {
 
   def friends = allDepths.findAll { 
     it.value.size() >= SAMPLE_SIZE
-  }.max {
-    it.key
   }
   
-  if(friends && friends.value.size() < highest.size()) {
+  if(friends.size() == 0) {
+    friends = friends.max { it.value }
+  } else {
+    friends = friends.max { it.key.toInteger() }
+  }
+  
+  if(friends.value.size() < highest.size()) {
     println "Found happy ontology friend group of ${friends.value.size()} classes with sc-count ${friends.key} (well I suppose strictly they can't be all that happy given their instances cannot possibly exist :(. Now, we will fix that!"
     highest = friends.value
   }
