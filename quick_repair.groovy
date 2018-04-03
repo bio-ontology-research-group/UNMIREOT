@@ -43,8 +43,8 @@ eConf.setParameter(ReasonerConfiguration.INCREMENTAL_MODE_ALLOWED, "true")
 @Field def oFile = new File(args[0])
 @Field def outName = args[1]
 new File(args[1]).mkdir()
-@Field outFile = new File(args[1]+'_fixed.owl')
-@Field resFile = new File(args[1]+'.json')
+@Field outFile = new File(args[1]+'/fixed.owl')
+@Field resFile = new File(args[1]+'/results.json')
 
 @Field def oReasoner
 @Field def SAMPLE_SIZE = 25
