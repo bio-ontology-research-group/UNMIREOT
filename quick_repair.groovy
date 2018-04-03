@@ -289,9 +289,13 @@ def getTopUnsatisfiableClasses(unsatisfiableClasses) {
 
   println "Now looking at ${highest.size()} unsats out of a total ${unsatisfiableClasses.size()}"
 
-  def friends = allDepths.max { it.value.size() }
+  def friends = allDepths.findAll { 
+    it.value.size() >= SAMPLE_SIZE
+  }.max {
+    it.key
+  }
   
-  if(friends.value.size() < highest.size()) {
+  if(friends && friends.value.size() < highest.size()) {
     println "Found happy ontology friend group of ${friends.value.size()} classes with sc-count ${friends.key} (well I suppose strictly they can't be all that happy given their instances cannot possibly exist :(. Now, we will fix that!"
     highest = friends.value
   }

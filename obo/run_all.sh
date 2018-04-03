@@ -1,7 +1,3 @@
-mkdir results/agro/ 
- echo "Processing obofoundry_core_fixed_merged_agro_merged.owl" 
- groovy ../quick_repair.groovy combos/obofoundry_core_fixed_merged_agro_merged.owl results/agro > results/agro/out.log
-mkdir results/bcgo/ 
  echo "Processing obofoundry_core_fixed_merged_bcgo_merged.owl" 
  groovy ../quick_repair.groovy combos/obofoundry_core_fixed_merged_bcgo_merged.owl results/bcgo > results/bcgo/out.log
 mkdir results/bco/ 
