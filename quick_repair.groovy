@@ -89,7 +89,6 @@ while(unsats) {
 
   if(lastRemovedAxiom) { // Count how effective the last removal was
     removedAxioms[lastRemovedAxiom.toString()] = unsatClasses.findAll {
-      println it
       !newUnsatClasses.contains(it)
     }.collect {
       it.getIRI()
