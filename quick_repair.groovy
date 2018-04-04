@@ -220,7 +220,7 @@ def getUnsatisfiableClasses(toLoad) {
 
   println "Getting unsats..."
   def unsatisfiableClasses = ontology.getClassesInSignature(true).collect { cl ->
-    if(!oReasoner.isSatisfiable(cl)) {
+    if(!cl.isBottomEntity() && !oReasoner.isSatisfiable(cl)) {
       return cl
     }
   }
@@ -240,11 +240,13 @@ def getTopUnsatisfiableClasses(unsatisfiableClasses) {
   def subCount = 0
   def allDepths = [:]
   def allOnts = [ontology] + ontology.getImports()
-  unsatisfiableClasses.each { dClass ->
-    if(dClass.isBottomEntity()) {
-      return;
-    }
 
+  if(unsatisfiableClasses.size() <= SAMPLE_SIZE) {
+    println "Less than ${SAMPLE_SIZE} unsatisfiable classes, looking at them all!"
+    return unsatisfiableClasses
+  }
+
+  unsatisfiableClasses.each { dClass ->
     allOnts.collect { o ->
       o.getSubClassAxiomsForSuperClass(dClass).size()
     }.each { scCount ->
@@ -289,15 +291,17 @@ def getTopUnsatisfiableClasses(unsatisfiableClasses) {
 
   println "Now looking at ${highest.size()} unsats out of a total ${unsatisfiableClasses.size()}"
 
-  def friends = allDepths.findAll { 
+  /*def friends = allDepths.findAll { 
     it.value.size() >= SAMPLE_SIZE
   }
   
   if(friends.size() == 0) {
-    friends = friends.max { it.value }
+    friends = allDepths.max { it.value.size() }
   } else {
     friends = friends.max { it.key.toInteger() }
-  }
+  }*/
+
+  def friends = allDepths.max { it.value.size() }
   
   if(friends.value.size() < highest.size()) {
     println "Found happy ontology friend group of ${friends.value.size()} classes with sc-count ${friends.key} (well I suppose strictly they can't be all that happy given their instances cannot possibly exist :(. Now, we will fix that!"

@@ -1,3 +1,4 @@
+export JAVA_OPTS="-Xmx230G"
  echo "Processing obofoundry_core_fixed_merged_bcgo_merged.owl" 
  groovy ../quick_repair.groovy combos/obofoundry_core_fixed_merged_bcgo_merged.owl results/bcgo > results/bcgo/out.log
 mkdir results/bco/ 

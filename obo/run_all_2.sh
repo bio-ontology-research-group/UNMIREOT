@@ -1,6 +1,6 @@
-mkdir results/mondo/ 
- echo "Processing obofoundry_core_fixed_merged_mondo_merged.owl" 
- groovy ../quick_repair.groovy combos/obofoundry_core_fixed_merged_mondo_merged.owl results/mondo > results/mondo/out.log
+#mkdir results/mondo/ 
+# echo "Processing obofoundry_core_fixed_merged_mondo_merged.owl" 
+# groovy ../quick_repair.groovy combos/obofoundry_core_fixed_merged_mondo_merged.owl results/mondo > results/mondo/out.log
 mkdir results/mop/ 
  echo "Processing obofoundry_core_fixed_merged_mop_merged.owl" 
  groovy ../quick_repair.groovy combos/obofoundry_core_fixed_merged_mop_merged.owl results/mop > results/mop/out.log
