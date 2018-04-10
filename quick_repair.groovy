@@ -269,7 +269,8 @@ def getTopUnsatisfiableClasses(unsatisfiableClasses) {
 
   if(highest.size() == 0) {
     println "In this case, we will simply have to look at all ${unsatisfiableClasses.size()} of the classes!"
-    return unsatisfiableClasses
+    //return unsatisfiableClasses
+    highest = unsatisfiableClasses
   }
 
   def toRemove = []
@@ -290,16 +291,6 @@ def getTopUnsatisfiableClasses(unsatisfiableClasses) {
   }
 
   println "Now looking at ${highest.size()} unsats out of a total ${unsatisfiableClasses.size()}"
-
-  /*def friends = allDepths.findAll { 
-    it.value.size() >= SAMPLE_SIZE
-  }
-  
-  if(friends.size() == 0) {
-    friends = allDepths.max { it.value.size() }
-  } else {
-    friends = friends.max { it.key.toInteger() }
-  }*/
 
   def friends = allDepths.max { it.value.size() }
   
