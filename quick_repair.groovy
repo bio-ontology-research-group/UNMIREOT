@@ -123,6 +123,7 @@ while(unsats) {
     naughties.remove(naughtiestAxiom)
     lastRemovedAxiom = naughtiestAxiom
   } else {
+    println "No justifications found in current round. Removing ${noExplanationClasses.size()} unjustifiable unsatisfiable classes."
     removeAxiom(noExplanationClasses)
     lastRemovedAxiom = "Unjustifiable Unsatisfiable" 
   }
@@ -140,8 +141,8 @@ def findNaughties(unsatClasses) {
 
     println "Processing ${iri} (${idx+1}/${unsatClasses.size()})"
 
-    def fexp = new BlackBoxExplanation(ontology, reasonerFactory, oReasoner)
-    //def fexp = new HSTExplanationGenerator(exp)
+    def exp = new BlackBoxExplanation(ontology, reasonerFactory, oReasoner)
+    def fexp = new HSTExplanationGenerator(exp)
 
     def explanations = fexp.getExplanation(dClass)
     for(OWLAxiom causingAxiom : explanations) {
@@ -171,7 +172,7 @@ def findNaughties(unsatClasses) {
 def removeAxiom(toRemove) {
   ontology.getAxioms().each {
     if(toRemove instanceof Collection) {
-      if(toRemove.contains(it.toString())) {
+      if(it.getClassesInSignature().any { c -> toRemove.contains(c.getIRI().toString()) }) {
         manager.removeAxiom(ontology, it)
         println "Removing ${it.toString()} from main ontology"
       }
