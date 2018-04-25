@@ -52,6 +52,7 @@ new File(args[1]).mkdir()
 @Field def manager = OWLManager.createOWLOntologyManager()
 @Field def df = OWLManager.getOWLDataFactory()
 @Field def config = new OWLOntologyLoaderConfiguration()
+@Field def noExplanationClasses = []
 config.setFollowRedirects(true)
 
 // First we will count the naughtiest axioms
@@ -88,7 +89,11 @@ while(unsats) {
   def newUnsatClasses = getUnsatisfiableClasses(toLoad)
 
   if(lastRemovedAxiom) { // Count how effective the last removal was
-    removedAxioms[lastRemovedAxiom.toString()] = unsatClasses.findAll {
+    if(!removedAxioms.containsKey(lastRemovedAxioms.toString())) {
+      removedAxioms[lastRemovedAxioms.toString()] = []
+    }
+
+    removedAxioms[lastRemovedAxiom.toString()] += unsatClasses.findAll {
       !newUnsatClasses.contains(it)
     }.collect {
       it.getIRI()
@@ -107,14 +112,20 @@ while(unsats) {
   def topUnsats = getTopUnsatisfiableClasses(unsatClasses)
   def naughties = findNaughties(topUnsats)
   def naughtiest = naughties.max { it.value }
-  def naughtiestAxiom = naughtiest.key
-  def naughtiestCount = naughtiest.value
 
-  println "Removing naughtiest axiom: ${naughtiestAxiom} with ${naughtiestCount} implications"
+  if(naughtiest) {
+    def naughtiestAxiom = naughtiest.key
+    def naughtiestCount = naughtiest.value
 
-  removeAxiom(naughtiestAxiom)
-  naughties.remove(naughtiestAxiom)
-  lastRemovedAxiom = naughtiestAxiom
+    println "Removing naughtiest axiom: ${naughtiestAxiom} with ${naughtiestCount} implications"
+
+    removeAxiom(naughtiestAxiom)
+    naughties.remove(naughtiestAxiom)
+    lastRemovedAxiom = naughtiestAxiom
+  } else {
+    removeAxiom(noExplanationClasses)
+    lastRemovedAxiom = "Unjustifiable Unsatisfiable" 
+  }
 
   manager.clearOntologies()
 }
@@ -129,8 +140,8 @@ def findNaughties(unsatClasses) {
 
     println "Processing ${iri} (${idx+1}/${unsatClasses.size()})"
 
-    def exp = new BlackBoxExplanation(ontology, reasonerFactory, oReasoner)
-    def fexp = new HSTExplanationGenerator(exp)
+    def fexp = new BlackBoxExplanation(ontology, reasonerFactory, oReasoner)
+    //def fexp = new HSTExplanationGenerator(exp)
 
     def explanations = fexp.getExplanation(dClass)
     for(OWLAxiom causingAxiom : explanations) {
@@ -141,11 +152,15 @@ def findNaughties(unsatClasses) {
   def naughtyCounts = [:]
   
   allExplanations.each { cName, axioms ->
-    axioms.each { ax ->
-      if(!naughtyCounts.containsKey(ax)) {
-        naughtyCounts[ax] = 0
+    if(axioms.size() == 0) {
+      noExplanationClasses << cName.getIRI()
+    } else {
+      axioms.each { ax ->
+        if(!naughtyCounts.containsKey(ax)) {
+          naughtyCounts[ax] = 0
+        }
+        naughtyCounts[ax]++
       }
-      naughtyCounts[ax]++
     }
   }
   
@@ -155,9 +170,16 @@ def findNaughties(unsatClasses) {
 // remove given axiom from ontology
 def removeAxiom(toRemove) {
   ontology.getAxioms().each {
-    if(toRemove == it.toString()) {
-      manager.removeAxiom(ontology, it)
-      println "Removing ${it.toString()} from main ontology"
+    if(toRemove instanceof Collection) {
+      if(toRemove.contains(it.toString())) {
+        manager.removeAxiom(ontology, it)
+        println "Removing ${it.toString()} from main ontology"
+      }
+    } else {
+      if(toRemove == it.toString()) {
+        manager.removeAxiom(ontology, it)
+        println "Removing ${it.toString()} from main ontology"
+      }
     }
   }
 
