@@ -89,11 +89,11 @@ while(unsats) {
   def newUnsatClasses = getUnsatisfiableClasses(toLoad)
 
   if(lastRemovedAxiom) { // Count how effective the last removal was
-    if(!removedAxioms.containsKey(lastRemovedAxioms.toString())) {
-      removedAxioms[lastRemovedAxioms.toString()] = []
+    if(!removedAxioms.containsKey(lastRemovedAxiom)) {
+      removedAxioms[lastRemovedAxiom] = []
     }
 
-    removedAxioms[lastRemovedAxiom.toString()] += unsatClasses.findAll {
+    removedAxioms[lastRemovedAxiom] += unsatClasses.findAll {
       !newUnsatClasses.contains(it)
     }.collect {
       it.getIRI()
@@ -121,7 +121,7 @@ while(unsats) {
 
     removeAxiom(naughtiestAxiom)
     naughties.remove(naughtiestAxiom)
-    lastRemovedAxiom = naughtiestAxiom
+    lastRemovedAxiom = naughtiestAxiom.toString()
   } else {
     println "No justifications found in current round. Removing ${noExplanationClasses.size()} unjustifiable unsatisfiable classes."
     removeAxiom(noExplanationClasses)
@@ -170,33 +170,37 @@ def findNaughties(unsatClasses) {
 
 // remove given axiom from ontology
 def removeAxiom(toRemove) {
+  def remover = OWLEntityRemover(manager, Collections.singleton(ont))
+
+  if(!(toRemove instanceof Collection)) {
+    toRemove = [ toRemove ]
+  }
+
   ontology.getAxioms().each {
-    if(toRemove instanceof Collection) {
-      if(it.getClassesInSignature().any { c -> toRemove.contains(c.getIRI().toString()) }) {
-        manager.removeAxiom(ontology, it)
-        println "Removing ${it.toString()} from main ontology"
-      }
-    } else {
-      if(toRemove == it.toString()) {
-        manager.removeAxiom(ontology, it)
-        println "Removing ${it.toString()} from main ontology"
-      }
+    if(it.getClassesInSignature().any { c -> toRemove.contains(c.getIRI().toString()) }) {
+      it.accept(remover)
+      println "Removing ${it.toString()} from main ontology"
     }
   }
+
+  manager.applyChanges(remover.getChanges())
 
   // Now we will remove the same from the imported ontologies
   ontology.getImportsDeclarations().eachWithIndex { imp, i ->
     def it = manager.getImportedOntology(imp)
+    remover = OWLEntityRemover(manager, Collections.singleton(it))
 
     def hadToRemove = false
     it.getAxioms().each { axiom ->
-      if(toRemove == axiom.toString()) {
-        manager.removeAxiom(it, axiom)
+      if(axiom.getClassesInSignature().any { c -> toRemove.contains(c.getIRI().toString()) }) {
+        axiom.accept(remover)
         hadToRemove = true
 
         println "Removing ${axiom.toString()} from import ${it.getOntologyID().getOntologyIRI()}"
       }
     }
+
+    manager.applyChanges(remover.getChanges())
 
     // If we had to remove an axiom from an import, then we have to create a new one
     if(hadToRemove) {
