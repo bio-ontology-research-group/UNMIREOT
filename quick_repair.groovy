@@ -170,7 +170,7 @@ def findNaughties(unsatClasses) {
 
 // remove given axiom from ontology
 def removeAxiom(toRemove) {
-  def remover = OWLEntityRemover(manager, Collections.singleton(ont))
+  def remover = new OWLEntityRemover(manager, Collections.singleton(ontology))
 
   if(!(toRemove instanceof Collection)) {
     toRemove = [ toRemove ]
@@ -188,7 +188,7 @@ def removeAxiom(toRemove) {
   // Now we will remove the same from the imported ontologies
   ontology.getImportsDeclarations().eachWithIndex { imp, i ->
     def it = manager.getImportedOntology(imp)
-    remover = OWLEntityRemover(manager, Collections.singleton(it))
+    remover = new OWLEntityRemover(manager, Collections.singleton(it))
 
     def hadToRemove = false
     it.getAxioms().each { axiom ->
