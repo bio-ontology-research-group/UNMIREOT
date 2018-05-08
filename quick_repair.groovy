@@ -170,14 +170,15 @@ def findNaughties(unsatClasses) {
 
 // remove given axiom from ontology
 def removeAxiom(toRemove) {
-  def remover = new OWLEntityRemover(manager, Collections.singleton(ontology))
+  // todo we can actually do the imports with a single entity remover
+  def remover = new OWLEntityRemover(Collections.singleton(ontology)) 
 
   if(!(toRemove instanceof Collection)) {
     toRemove = [ toRemove ]
   }
 
   ontology.getAxioms().each {
-    if(it.getClassesInSignature().any { c -> toRemove.contains(c.getIRI().toString()) }) {
+    if(toRemove.contains(it.toString()) || it.getClassesInSignature().any { c -> toRemove.contains(c.getIRI().toString()) }) {
       it.accept(remover)
       println "Removing ${it.toString()} from main ontology"
     }
@@ -188,11 +189,11 @@ def removeAxiom(toRemove) {
   // Now we will remove the same from the imported ontologies
   ontology.getImportsDeclarations().eachWithIndex { imp, i ->
     def it = manager.getImportedOntology(imp)
-    remover = new OWLEntityRemover(manager, Collections.singleton(it))
+    remover = new OWLEntityRemover(Collections.singleton(it))
 
     def hadToRemove = false
     it.getAxioms().each { axiom ->
-      if(axiom.getClassesInSignature().any { c -> toRemove.contains(c.getIRI().toString()) }) {
+      if(toRemove.contains(it.toString()) || axiom.getClassesInSignature().any { c -> toRemove.contains(c.getIRI().toString()) }) {
         axiom.accept(remover)
         hadToRemove = true
 
