@@ -170,38 +170,30 @@ def findNaughties(unsatClasses) {
 
 // remove given axiom from ontology
 def removeAxiom(toRemove) {
-  // todo we can actually do the imports with a single entity remover
-  def remover = new OWLEntityRemover(Collections.singleton(ontology)) 
-
   if(!(toRemove instanceof Collection)) {
     toRemove = [ toRemove ]
   }
 
   ontology.getAxioms().each {
     if(toRemove.contains(it.toString()) || it.getClassesInSignature().any { c -> toRemove.contains(c.getIRI().toString()) }) {
-      it.accept(remover)
+      manager.removeAxiom(ontology, it)  
       println "Removing ${it.toString()} from main ontology"
     }
   }
 
-  manager.applyChanges(remover.getChanges())
-
   // Now we will remove the same from the imported ontologies
   ontology.getImportsDeclarations().eachWithIndex { imp, i ->
     def it = manager.getImportedOntology(imp)
-    remover = new OWLEntityRemover(Collections.singleton(it))
 
     def hadToRemove = false
     it.getAxioms().each { axiom ->
       if(toRemove.contains(it.toString()) || axiom.getClassesInSignature().any { c -> toRemove.contains(c.getIRI().toString()) }) {
-        axiom.accept(remover)
+        manager.removeAxiom(ontology, it)
         hadToRemove = true
 
         println "Removing ${axiom.toString()} from import ${it.getOntologyID().getOntologyIRI()}"
       }
     }
-
-    manager.applyChanges(remover.getChanges())
 
     // If we had to remove an axiom from an import, then we have to create a new one
     if(hadToRemove) {
