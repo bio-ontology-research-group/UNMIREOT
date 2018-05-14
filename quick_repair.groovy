@@ -35,7 +35,7 @@ import com.clarkparsia.owlapi.explanation.HSTExplanationGenerator
 // Set up all the reasoner and whatnot
 
 @Field def eConf = ReasonerConfiguration.getConfiguration()
-eConf.setParameter(ReasonerConfiguration.NUM_OF_WORKING_THREADS, "24")
+eConf.setParameter(ReasonerConfiguration.NUM_OF_WORKING_THREADS, "96")
 eConf.setParameter(ReasonerConfiguration.INCREMENTAL_MODE_ALLOWED, "true")
 @Field def reasonerFactory = new ElkReasonerFactory()
 @Field def rConf = new ElkReasonerConfiguration(ElkReasonerConfiguration.getDefaultOwlReasonerConfiguration(new NullReasonerProgressMonitor()), eConf)
@@ -187,8 +187,8 @@ def removeAxiom(toRemove) {
 
     def hadToRemove = false
     it.getAxioms().each { axiom ->
-      if(toRemove.contains(it.toString()) || axiom.getClassesInSignature().any { c -> toRemove.contains(c.getIRI().toString()) }) {
-        manager.removeAxiom(ontology, it)
+      if(toRemove.contains(axiom.toString()) || axiom.getClassesInSignature().any { c -> toRemove.contains(c.getIRI().toString()) }) {
+        manager.removeAxiom(it, axiom)
         hadToRemove = true
 
         println "Removing ${axiom.toString()} from import ${it.getOntologyID().getOntologyIRI()}"
