@@ -154,7 +154,7 @@ def findNaughties(unsatClasses) {
   
   allExplanations.each { cName, axioms ->
     if(axioms.size() == 0) {
-      noExplanationClasses << cName.getIRI()
+      noExplanationClasses << cName
     } else {
       axioms.each { ax ->
         if(!naughtyCounts.containsKey(ax)) {
