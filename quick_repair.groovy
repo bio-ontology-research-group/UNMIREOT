@@ -47,7 +47,7 @@ new File(args[1]).mkdir()
 @Field resFile = new File(args[1]+'/results.json')
 
 @Field def oReasoner
-@Field def SAMPLE_SIZE = 25
+@Field def SAMPLE_SIZE = 5
 
 @Field def manager = OWLManager.createOWLOntologyManager()
 @Field def df = OWLManager.getOWLDataFactory()
@@ -124,6 +124,7 @@ while(unsats) {
     lastRemovedAxiom = naughtiestAxiom.toString()
   } else {
     println "No justifications found in current round. Removing ${noExplanationClasses.size()} unjustifiable unsatisfiable classes."
+    println noExplanationClasses
     removeAxiom(noExplanationClasses)
     lastRemovedAxiom = "Unjustifiable Unsatisfiable" 
   }
@@ -154,7 +155,7 @@ def findNaughties(unsatClasses) {
   
   allExplanations.each { cName, axioms ->
     if(axioms.size() == 0) {
-      noExplanationClasses << cName
+      noExplanationClasses << '<'+cName+'>'
     } else {
       axioms.each { ax ->
         if(!naughtyCounts.containsKey(ax)) {
