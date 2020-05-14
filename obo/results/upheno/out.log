@@ -318,3 +318,13 @@ Removing DisjointClasses(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BF
 Saved obo/results/upheno/fixed.owl
 ROUND 9
 Loading ontology... file:/home/slater/UNMIREOT/obo/results/upheno/fixed.owl
+Reasoning...
+Getting unsats...
+Unsatisfiable classes: 193
+Getting top unsats...
+Found 16 non-leaf unsats with the highest @ 9 out of a total 193 unsats
+Removing a further 1 classes with superclasses in the group
+Now looking at 15 unsats out of a total 193
+Found happy ontology friend group of 11 classes with sc-count 1 (well I suppose strictly they can't be all that happy given their instances cannot possibly exist :(. Now, we will fix that!
+Pared 193 unsatisfiable classes down to 11 to justify for this round
+Processing http://purl.obolibrary.org/obo/CHEBI_17073 (1/11)
