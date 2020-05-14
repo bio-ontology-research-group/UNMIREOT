@@ -1,0 +1,75 @@
+ROUND 1
+Loading ontology... file:/home/slater/UNMIREOT/obo/combos/obofoundry_core_fixed_merged_ceph_merged.owl
+Reasoning...
+Getting unsats...
+Unsatisfiable classes: 49
+Getting top unsats...
+Found 9 non-leaf unsats with the highest @ 17 out of a total 49 unsats
+Removing a further 4 classes with superclasses in the group
+Now looking at 5 unsats out of a total 49
+Found happy ontology friend group of 3 classes with sc-count 3 (well I suppose strictly they can't be all that happy given their instances cannot possibly exist :(. Now, we will fix that!
+Pared 49 unsatisfiable classes down to 3 to justify for this round
+Processing http://purl.obolibrary.org/obo/DOID_4284 (1/3)
+Processing http://purl.obolibrary.org/obo/DOID_4908 (2/3)
+Processing http://purl.obolibrary.org/obo/DOID_5525 (3/3)
+Removing naughtiest axiom: SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0002050> <http://purl.obolibrary.org/obo/UBERON_0005423>) with 3 implications
+removing: [SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0002050> <http://purl.obolibrary.org/obo/UBERON_0005423>)]
+Removing SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0002050> <http://purl.obolibrary.org/obo/UBERON_0005423>) from main ontology
+Removing SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0002050> <http://purl.obolibrary.org/obo/UBERON_0005423>) from import Optional[http://reality.rehab/ontology/obofoundry_core_fixed_merged]
+Saved results/ceph/fixed.owl
+ROUND 2
+Loading ontology... file:/home/slater/UNMIREOT/obo/results/ceph/fixed.owl
+Reasoning...
+Getting unsats...
+Unsatisfiable classes: 49
+Getting top unsats...
+Found 9 non-leaf unsats with the highest @ 17 out of a total 49 unsats
+Removing a further 4 classes with superclasses in the group
+Now looking at 5 unsats out of a total 49
+Found happy ontology friend group of 3 classes with sc-count 3 (well I suppose strictly they can't be all that happy given their instances cannot possibly exist :(. Now, we will fix that!
+Pared 49 unsatisfiable classes down to 3 to justify for this round
+Processing http://purl.obolibrary.org/obo/DOID_4284 (1/3)
+Processing http://purl.obolibrary.org/obo/DOID_4908 (2/3)
+Processing http://purl.obolibrary.org/obo/DOID_5525 (3/3)
+Removing naughtiest axiom: SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000931> <http://purl.obolibrary.org/obo/UBERON_0016566>) with 3 implications
+removing: [SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000931> <http://purl.obolibrary.org/obo/UBERON_0016566>)]
+Removing SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000931> <http://purl.obolibrary.org/obo/UBERON_0016566>) from import Optional[http://reality.rehab/ontology/obofoundry_core_fixed_merged]
+Saved results/ceph/fixed.owl
+ROUND 3
+Loading ontology... file:/home/slater/UNMIREOT/obo/results/ceph/fixed.owl
+Reasoning...
+Getting unsats...
+Unsatisfiable classes: 21
+Getting top unsats...
+Less than 25 unsatisfiable classes, looking at them all!
+Processing http://purl.obolibrary.org/obo/UBERON_0006273 (1/21)
+Processing http://purl.obolibrary.org/obo/UBERON_0009743 (2/21)
+Processing http://purl.obolibrary.org/obo/UBERON_0013526 (3/21)
+Processing http://purl.obolibrary.org/obo/UBERON_0018351 (4/21)
+Processing http://purl.obolibrary.org/obo/UBERON_3000037 (5/21)
+Processing http://purl.obolibrary.org/obo/UBERON_3000051 (6/21)
+Processing http://purl.obolibrary.org/obo/UBERON_3000179 (7/21)
+Processing http://purl.obolibrary.org/obo/UBERON_3000185 (8/21)
+Processing http://purl.obolibrary.org/obo/UBERON_3000192 (9/21)
+Processing http://purl.obolibrary.org/obo/UBERON_3000209 (10/21)
+Processing http://purl.obolibrary.org/obo/UBERON_3000332 (11/21)
+Processing http://purl.obolibrary.org/obo/UBERON_3000341 (12/21)
+Processing http://purl.obolibrary.org/obo/UBERON_3000344 (13/21)
+Processing http://purl.obolibrary.org/obo/UBERON_3000610 (14/21)
+Processing http://purl.obolibrary.org/obo/UBERON_3010525 (15/21)
+Processing http://purl.obolibrary.org/obo/UBERON_3010562 (16/21)
+Processing http://purl.obolibrary.org/obo/UBERON_3010563 (17/21)
+Processing http://purl.obolibrary.org/obo/UBERON_3010564 (18/21)
+Processing http://purl.obolibrary.org/obo/UBERON_3010566 (19/21)
+Processing http://purl.obolibrary.org/obo/UBERON_4300132 (20/21)
+Processing http://purl.obolibrary.org/obo/UBERON_4300142 (21/21)
+Removing naughtiest axiom: DisjointUnion(<http://purl.obolibrary.org/obo/UBERON_0001062> <http://purl.obolibrary.org/obo/UBERON_0000465> <http://purl.obolibrary.org/obo/UBERON_0000466> ) with 21 implications
+removing: [DisjointUnion(<http://purl.obolibrary.org/obo/UBERON_0001062> <http://purl.obolibrary.org/obo/UBERON_0000465> <http://purl.obolibrary.org/obo/UBERON_0000466> )]
+Removing DisjointUnion(<http://purl.obolibrary.org/obo/UBERON_0001062> <http://purl.obolibrary.org/obo/UBERON_0000465> <http://purl.obolibrary.org/obo/UBERON_0000466> ) from main ontology
+Saved results/ceph/fixed.owl
+ROUND 4
+Loading ontology... file:/home/slater/UNMIREOT/obo/results/ceph/fixed.owl
+Reasoning...
+Getting unsats...
+Unsatisfiable classes: 0
+Done.

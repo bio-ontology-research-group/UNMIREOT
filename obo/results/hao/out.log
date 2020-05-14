@@ -1,0 +1,39 @@
+ROUND 1
+Loading ontology... file:/home/slater/UNMIREOT/obo/combos/obofoundry_core_fixed_merged_hao_merged.owl
+Reasoning...
+Getting unsats...
+Unsatisfiable classes: 210
+Getting top unsats...
+Found 70 non-leaf unsats with the highest @ 18 out of a total 210 unsats
+Removing a further 21 classes with superclasses in the group
+Now looking at 49 unsats out of a total 210
+Found happy ontology friend group of 18 classes with sc-count 1 (well I suppose strictly they can't be all that happy given their instances cannot possibly exist :(. Now, we will fix that!
+Pared 210 unsatisfiable classes down to 18 to justify for this round
+Processing http://purl.obolibrary.org/obo/GO_0000221 (1/18)
+Processing http://purl.obolibrary.org/obo/GO_0000421 (2/18)
+Processing http://purl.obolibrary.org/obo/GO_0016471 (3/18)
+Processing http://purl.obolibrary.org/obo/GO_0031231 (4/18)
+Processing http://purl.obolibrary.org/obo/GO_0031306 (5/18)
+Processing http://purl.obolibrary.org/obo/GO_0031308 (6/18)
+Processing http://purl.obolibrary.org/obo/GO_0031311 (7/18)
+Processing http://purl.obolibrary.org/obo/GO_0031355 (8/18)
+Processing http://purl.obolibrary.org/obo/GO_0031902 (9/18)
+Processing http://purl.obolibrary.org/obo/GO_0031903 (10/18)
+Processing http://purl.obolibrary.org/obo/GO_0071628 (11/18)
+Processing http://purl.obolibrary.org/obo/GO_0097633 (12/18)
+Processing http://purl.obolibrary.org/obo/GO_0097636 (13/18)
+Processing http://purl.obolibrary.org/obo/GO_0098538 (14/18)
+Processing http://purl.obolibrary.org/obo/GO_0098539 (15/18)
+Processing http://purl.obolibrary.org/obo/GO_0098922 (16/18)
+Processing http://purl.obolibrary.org/obo/GO_0098956 (17/18)
+Processing http://purl.obolibrary.org/obo/GO_1902500 (18/18)
+Removing naughtiest axiom: ReflexiveObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>) with 18 implications
+removing: [ReflexiveObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>)]
+Removing ReflexiveObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>) from main ontology
+Saved results/hao/fixed.owl
+ROUND 2
+Loading ontology... file:/home/slater/UNMIREOT/obo/results/hao/fixed.owl
+Reasoning...
+Getting unsats...
+Unsatisfiable classes: 0
+Done.

@@ -4,7 +4,7 @@
   @Grab(group='net.sourceforge.owlapi', module='owlapi-impl', version='5.1.4'),
   @Grab(group='net.sourceforge.owlapi', module='owlapi-parsers', version='5.1.4'),
   @Grab(group='org.apache.commons', module='commons-rdf-api', version='0.5.0'),
-  @Grab(group='org.slf4j', module='slf4j-log4j12', version='1.7.10'),
+  @Grab(group='org.slf4j', module='slf4j-simple', version='1.7.30'),
   @Grab('com.xlson.groovycsv:groovycsv:1.1'),
 
   @GrabResolver(name='sonatype-nexus-snapshots', root='https://oss.sonatype.org/content/repositories/snapshots/'),
@@ -35,8 +35,8 @@ import com.clarkparsia.owlapi.explanation.HSTExplanationGenerator
 // Set up all the reasoner and whatnot
 
 @Field def eConf = ReasonerConfiguration.getConfiguration()
-eConf.setParameter(ReasonerConfiguration.NUM_OF_WORKING_THREADS, "96")
-eConf.setParameter(ReasonerConfiguration.INCREMENTAL_MODE_ALLOWED, "true")
+eConf.setParameter(ReasonerConfiguration.NUM_OF_WORKING_THREADS, "36")
+eConf.setParameter(ReasonerConfiguration.INCREMENTAL_MODE_ALLOWED, "false")
 @Field def reasonerFactory = new ElkReasonerFactory()
 @Field def rConf = new ElkReasonerConfiguration(ElkReasonerConfiguration.getDefaultOwlReasonerConfiguration(new NullReasonerProgressMonitor()), eConf)
 
@@ -47,7 +47,7 @@ new File(args[1]).mkdir()
 @Field resFile = new File(args[1]+'/results.json')
 
 @Field def oReasoner
-@Field def SAMPLE_SIZE = 5
+@Field def SAMPLE_SIZE = 25
 
 @Field def manager = OWLManager.createOWLOntologyManager()
 @Field def df = OWLManager.getOWLDataFactory()
@@ -58,6 +58,7 @@ config.setFollowRedirects(true)
 // First we will count the naughtiest axioms
 def unsats = true
 def removedAxioms = [:]
+if(resFile.exists()) { removedAxioms = new JsonSlurper().parseText(resFile.text) }
 def lastRemovedAxiom
 def runCount = 0
 def unsatClasses
@@ -142,10 +143,10 @@ def findNaughties(unsatClasses) {
 
     println "Processing ${iri} (${idx+1}/${unsatClasses.size()})"
 
-    def exp = new BlackBoxExplanation(ontology, reasonerFactory, oReasoner)
+    def exp = new BlackBoxExplanationFix(ontology, reasonerFactory, oReasoner)
     def fexp = new HSTExplanationGenerator(exp)
 
-    def explanations = fexp.getExplanation(dClass)
+    def explanations = exp.getExplanation(dClass)
     for(OWLAxiom causingAxiom : explanations) {
       allExplanations[iri] << causingAxiom.toString()
     }

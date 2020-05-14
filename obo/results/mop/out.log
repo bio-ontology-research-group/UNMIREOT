@@ -1,0 +1,47 @@
+ROUND 1
+Loading ontology... file:/home/slater/UNMIREOT/obo/combos/obofoundry_core_fixed_merged_mop_merged.owl
+Reasoning...
+Getting unsats...
+Unsatisfiable classes: 57355
+Getting top unsats...
+Found 5866 non-leaf unsats with the highest @ 7335 out of a total 57355 unsats
+Removing a further 1699 classes with superclasses in the group
+Now looking at 4167 unsats out of a total 57355
+Found happy ontology friend group of 1364 classes with sc-count 1 (well I suppose strictly they can't be all that happy given their instances cannot possibly exist :(. Now, we will fix that!
+Pared 57355 unsatisfiable classes down to 1364 to justify for this round
+There are more than 25 classes, so we will take a random sample of 25 from our subset.
+Processing http://purl.obolibrary.org/obo/CHEBI_64829 (1/25)
+Processing http://purl.obolibrary.org/obo/CHEBI_136801 (2/25)
+Processing http://purl.obolibrary.org/obo/CHEBI_58279 (3/25)
+Processing http://purl.obolibrary.org/obo/CHEBI_38668 (4/25)
+Processing http://purl.obolibrary.org/obo/CHEBI_25038 (5/25)
+Processing http://purl.obolibrary.org/obo/CHEBI_91273 (6/25)
+Processing http://purl.obolibrary.org/obo/CHEBI_17844 (7/25)
+Processing http://purl.obolibrary.org/obo/CHEBI_15917 (8/25)
+Processing http://purl.obolibrary.org/obo/CHEBI_65301 (9/25)
+Processing http://purl.obolibrary.org/obo/CHEBI_136239 (10/25)
+Processing http://purl.obolibrary.org/obo/CHEBI_73089 (11/25)
+Processing http://purl.obolibrary.org/obo/CHEBI_78879 (12/25)
+Processing http://purl.obolibrary.org/obo/CHEBI_78089 (13/25)
+Processing http://purl.obolibrary.org/obo/CHEBI_16544 (14/25)
+Processing http://purl.obolibrary.org/obo/CHEBI_90376 (15/25)
+Processing http://purl.obolibrary.org/obo/CHEBI_61943 (16/25)
+Processing http://purl.obolibrary.org/obo/CHEBI_48840 (17/25)
+Processing http://purl.obolibrary.org/obo/CHEBI_53046 (18/25)
+Processing http://purl.obolibrary.org/obo/CHEBI_22644 (19/25)
+Processing http://purl.obolibrary.org/obo/CHEBI_58834 (20/25)
+Processing http://purl.obolibrary.org/obo/CHEBI_37097 (21/25)
+Processing http://purl.obolibrary.org/obo/CHEBI_21337 (22/25)
+Processing http://purl.obolibrary.org/obo/CHEBI_78442 (23/25)
+Processing http://purl.obolibrary.org/obo/CHEBI_86397 (24/25)
+Processing http://purl.obolibrary.org/obo/CHEBI_15952 (25/25)
+Removing naughtiest axiom: ObjectPropertyRange(<http://purl.obolibrary.org/obo/RO_0000087> <http://purl.obolibrary.org/obo/BFO_0000023>) with 25 implications
+removing: [ObjectPropertyRange(<http://purl.obolibrary.org/obo/RO_0000087> <http://purl.obolibrary.org/obo/BFO_0000023>)]
+Removing ObjectPropertyRange(<http://purl.obolibrary.org/obo/RO_0000087> <http://purl.obolibrary.org/obo/BFO_0000023>) from import Optional[http://reality.rehab/ontology/obofoundry_core_fixed_merged]
+Saved results/mop/fixed.owl
+ROUND 2
+Loading ontology... file:/home/slater/UNMIREOT/obo/results/mop/fixed.owl
+Reasoning...
+Getting unsats...
+Unsatisfiable classes: 0
+Done.

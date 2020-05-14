@@ -1,0 +1,83 @@
+ROUND 1
+Loading ontology... file:/home/slater/UNMIREOT/obo/combos/obofoundry_core_fixed_merged_chmo_merged.owl
+Reasoning...
+Getting unsats...
+Unsatisfiable classes: 643
+Getting top unsats...
+Found 206 non-leaf unsats with the highest @ 74 out of a total 643 unsats
+Removing a further 66 classes with superclasses in the group
+Now looking at 140 unsats out of a total 643
+Found happy ontology friend group of 44 classes with sc-count 2 (well I suppose strictly they can't be all that happy given their instances cannot possibly exist :(. Now, we will fix that!
+Pared 643 unsatisfiable classes down to 44 to justify for this round
+There are more than 25 classes, so we will take a random sample of 25 from our subset.
+Processing http://purl.obolibrary.org/obo/GO_1902259 (1/25)
+Processing http://purl.obolibrary.org/obo/GO_2000311 (2/25)
+Processing http://purl.obolibrary.org/obo/GO_2000310 (3/25)
+Processing http://purl.obolibrary.org/obo/GO_0003705 (4/25)
+Processing http://purl.obolibrary.org/obo/GO_0031585 (5/25)
+Processing http://purl.obolibrary.org/obo/GO_0001228 (6/25)
+Processing http://purl.obolibrary.org/obo/GO_1902941 (7/25)
+Processing http://purl.obolibrary.org/obo/GO_0099510 (8/25)
+Processing http://purl.obolibrary.org/obo/GO_0098960 (9/25)
+Processing http://purl.obolibrary.org/obo/GO_0001147 (10/25)
+Processing http://purl.obolibrary.org/obo/GO_1902595 (11/25)
+Processing http://purl.obolibrary.org/obo/GO_0001228 (12/25)
+Processing http://purl.obolibrary.org/obo/GO_2000823 (13/25)
+Processing http://purl.obolibrary.org/obo/GO_1903952 (14/25)
+Processing http://purl.obolibrary.org/obo/GO_2000823 (15/25)
+Processing http://purl.obolibrary.org/obo/GO_0001204 (16/25)
+Processing http://purl.obolibrary.org/obo/GO_0060314 (17/25)
+Processing http://purl.obolibrary.org/obo/GO_1990470 (18/25)
+Processing http://purl.obolibrary.org/obo/GO_2000311 (19/25)
+Processing http://purl.obolibrary.org/obo/GO_1904744 (20/25)
+Processing http://purl.obolibrary.org/obo/GO_1902941 (21/25)
+Processing http://purl.obolibrary.org/obo/GO_0060314 (22/25)
+Processing http://purl.obolibrary.org/obo/GO_1903025 (23/25)
+Processing http://purl.obolibrary.org/obo/GO_1902259 (24/25)
+Processing http://purl.obolibrary.org/obo/GO_0097280 (25/25)
+Removing naughtiest axiom: DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000002> <http://purl.obolibrary.org/obo/BFO_0000003>) with 19 implications
+removing: [DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000002> <http://purl.obolibrary.org/obo/BFO_0000003>)]
+Removing DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000002> <http://purl.obolibrary.org/obo/BFO_0000003>) from import Optional[http://reality.rehab/ontology/obofoundry_core_fixed_merged]
+Saved results/chmo/fixed.owl
+ROUND 2
+Loading ontology... file:/home/slater/UNMIREOT/obo/results/chmo/fixed.owl
+Reasoning...
+Getting unsats...
+Unsatisfiable classes: 44
+Getting top unsats...
+Found 5 non-leaf unsats with the highest @ 3 out of a total 44 unsats
+Removing a further 1 classes with superclasses in the group
+Now looking at 4 unsats out of a total 44
+Found happy ontology friend group of 3 classes with sc-count 1 (well I suppose strictly they can't be all that happy given their instances cannot possibly exist :(. Now, we will fix that!
+Pared 44 unsatisfiable classes down to 3 to justify for this round
+Processing http://purl.obolibrary.org/obo/CHEBI_17073 (1/3)
+Processing http://purl.obolibrary.org/obo/CHEBI_17165 (2/3)
+Processing http://purl.obolibrary.org/obo/CHEBI_17269 (3/3)
+Removing naughtiest axiom: SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_23367> <http://purl.obolibrary.org/obo/BFO_0000040>) with 3 implications
+removing: [SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_23367> <http://purl.obolibrary.org/obo/BFO_0000040>)]
+Removing SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_23367> <http://purl.obolibrary.org/obo/BFO_0000040>) from main ontology
+Saved results/chmo/fixed.owl
+ROUND 3
+Loading ontology... file:/home/slater/UNMIREOT/obo/results/chmo/fixed.owl
+Reasoning...
+Getting unsats...
+Unsatisfiable classes: 7
+Getting top unsats...
+Less than 25 unsatisfiable classes, looking at them all!
+Processing http://purl.obolibrary.org/obo/CHMO_0000701 (1/7)
+Processing http://purl.obolibrary.org/obo/CHMO_0000738 (2/7)
+Processing http://purl.obolibrary.org/obo/CHMO_0001834 (3/7)
+Processing http://purl.obolibrary.org/obo/CHMO_0001836 (4/7)
+Processing http://purl.obolibrary.org/obo/CHMO_0002000 (5/7)
+Processing http://purl.obolibrary.org/obo/CHMO_0002009 (6/7)
+Processing http://purl.obolibrary.org/obo/CHMO_0002024 (7/7)
+Removing naughtiest axiom: SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000470> <http://purl.obolibrary.org/obo/CHMO_0000228>) with 7 implications
+removing: [SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000470> <http://purl.obolibrary.org/obo/CHMO_0000228>)]
+Removing SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000470> <http://purl.obolibrary.org/obo/CHMO_0000228>) from main ontology
+Saved results/chmo/fixed.owl
+ROUND 4
+Loading ontology... file:/home/slater/UNMIREOT/obo/results/chmo/fixed.owl
+Reasoning...
+Getting unsats...
+Unsatisfiable classes: 0
+Done.

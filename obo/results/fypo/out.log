@@ -1,0 +1,31 @@
+ROUND 1
+Loading ontology... file:/home/slater/UNMIREOT/obo/combos/obofoundry_core_fixed_merged_fypo_merged.owl
+Reasoning...
+Getting unsats...
+Unsatisfiable classes: 86
+Getting top unsats...
+Found 32 non-leaf unsats with the highest @ 14 out of a total 86 unsats
+Removing a further 14 classes with superclasses in the group
+Now looking at 18 unsats out of a total 86
+Found happy ontology friend group of 10 classes with sc-count 1 (well I suppose strictly they can't be all that happy given their instances cannot possibly exist :(. Now, we will fix that!
+Pared 86 unsatisfiable classes down to 10 to justify for this round
+Processing http://purl.obolibrary.org/obo/FYPO_0000313 (1/10)
+Processing http://purl.obolibrary.org/obo/FYPO_0002450 (2/10)
+Processing http://purl.obolibrary.org/obo/FYPO_0002515 (3/10)
+Processing http://purl.obolibrary.org/obo/FYPO_0002733 (4/10)
+Processing http://purl.obolibrary.org/obo/FYPO_0002912 (5/10)
+Processing http://purl.obolibrary.org/obo/FYPO_0002987 (6/10)
+Processing http://purl.obolibrary.org/obo/FYPO_0004114 (7/10)
+Processing http://purl.obolibrary.org/obo/FYPO_0004521 (8/10)
+Processing http://purl.obolibrary.org/obo/FYPO_0004523 (9/10)
+Processing http://purl.obolibrary.org/obo/FYPO_0006211 (10/10)
+Removing naughtiest axiom: SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000019> <http://purl.obolibrary.org/obo/BFO_0000020>) with 10 implications
+removing: [SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000019> <http://purl.obolibrary.org/obo/BFO_0000020>)]
+Removing SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000019> <http://purl.obolibrary.org/obo/BFO_0000020>) from import Optional[http://reality.rehab/ontology/obofoundry_core_fixed_merged]
+Saved results/fypo/fixed.owl
+ROUND 2
+Loading ontology... file:/home/slater/UNMIREOT/obo/results/fypo/fixed.owl
+Reasoning...
+Getting unsats...
+Unsatisfiable classes: 0
+Done.
