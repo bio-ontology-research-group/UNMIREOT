@@ -119,7 +119,7 @@ while(unsats) {
 
     println "Removing naughtiest axiom: ${naughtiestAxiom} with ${naughtiestCount} implications"
 
-    removeAxiom(naughtiestAxiom)
+    removeAxiom([naughtiestAxiom])
     naughties.remove(naughtiestAxiom)
     lastRemovedAxiom = naughtiestAxiom.toString()
   } else {
@@ -155,7 +155,8 @@ def findNaughties(unsatClasses) {
   
   allExplanations.each { cName, axioms ->
     if(axioms.size() == 0) {
-      noExplanationClasses << '<'+cName+'>'
+      println "adding no explanation " + cName
+      noExplanationClasses << cName
     } else {
       axioms.each { ax ->
         if(!naughtyCounts.containsKey(ax)) {
@@ -171,12 +172,10 @@ def findNaughties(unsatClasses) {
 
 // remove given axiom from ontology
 def removeAxiom(toRemove) {
-  if(!(toRemove instanceof Collection)) {
-    toRemove = [ toRemove ]
-  }
+  println 'removing: ' + toRemove
 
   ontology.getAxioms().each {
-    if(toRemove.contains(it.toString()) || it.getClassesInSignature().any { c -> toRemove.contains(c.getIRI().toString()) }) {
+    if(toRemove.contains(it.toString()) || it.getClassesInSignature().any { c ->  toRemove.contains(c.getIRI().toString()) }) {
       manager.removeAxiom(ontology, it)  
       println "Removing ${it.toString()} from main ontology"
     }

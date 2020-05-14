@@ -34,7 +34,11 @@ def PURL = "http://purl.obolibrary.org/obo/"
 def pFile = new File(args[0])
 def pName = pFile.getName().tokenize('.')[0]
 def oFolder = new File(args[1])
-def unsatCounts = new JsonSlurper().parseText(new File("results.json").text)
+
+def unsatCounts = [:]
+try {
+unsatCounts = new JsonSlurper().parseText(new File("results.json").text)
+} catch(e) {}
 
 def manager = OWLManager.createOWLOntologyManager()
 def config = new OWLOntologyLoaderConfiguration()
@@ -43,7 +47,7 @@ config.setFollowRedirects(true)
 def total = oFolder.list().size()
 def idx = 0
 
-oFolder.eachFile { oFile ->
+/*oFolder.eachFile { oFile ->
   idx++
   println "Processing ${oFile.getName()} (${idx}/${total})"
   def oName = oFile.getName().tokenize('.')[0]
@@ -73,14 +77,14 @@ oFolder.eachFile { oFile ->
   }
 
   manager.clearOntologies()
-}
+}*/
 
 println "now it is time to reason"
 
 manager.clearOntologies()
 
 def eConf = ReasonerConfiguration.getConfiguration()
-eConf.setParameter(ReasonerConfiguration.NUM_OF_WORKING_THREADS, "24")
+eConf.setParameter(ReasonerConfiguration.NUM_OF_WORKING_THREADS, "70")
 eConf.setParameter(ReasonerConfiguration.INCREMENTAL_MODE_ALLOWED, "true")
 def reasonerFactory = new ElkReasonerFactory();
 def rConf = new ElkReasonerConfiguration(ElkReasonerConfiguration.getDefaultOwlReasonerConfiguration(new NullReasonerProgressMonitor()), eConf);
