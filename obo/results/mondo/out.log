@@ -920,3 +920,177 @@ Processing http://linkedlifedata.com/resource/umls/id/C3809753 (2/25)
 Processing http://purl.obolibrary.org/obo/DOID_0111042 (3/25)
 Processing http://purl.obolibrary.org/obo/DOID_12594 (4/25)
 Processing http://purl.obolibrary.org/obo/ICD10_Q60.6 (5/25)
+Processing http://purl.obolibrary.org/obo/MESH_C564421 (6/25)
+Processing http://purl.obolibrary.org/obo/MONDO_0001558 (7/25)
+Processing http://purl.obolibrary.org/obo/MONDO_0010598 (8/25)
+Processing http://purl.obolibrary.org/obo/MONDO_0014224 (9/25)
+Processing http://purl.obolibrary.org/obo/NCIT_C40435 (10/25)
+Processing http://purl.obolibrary.org/obo/OBI_0001898 (11/25)
+Processing http://purl.obolibrary.org/obo/OMIM_306000 (12/25)
+Processing http://purl.obolibrary.org/obo/OMIM_615516 (13/25)
+Processing http://purl.obolibrary.org/obo/SCTID_41962002 (14/25)
+Processing http://purl.obolibrary.org/obo/UBERON_0000207 (15/25)
+Processing http://purl.obolibrary.org/obo/UBERON_0000389 (16/25)
+Processing http://purl.obolibrary.org/obo/UBERON_0000390 (17/25)
+Processing http://purl.obolibrary.org/obo/UBERON_0001247 (18/25)
+Processing http://purl.obolibrary.org/obo/UBERON_0001804 (19/25)
+Processing http://purl.obolibrary.org/obo/UBERON_0005614 (20/25)
+Processing http://purl.obolibrary.org/obo/UBERON_0006649 (21/25)
+Processing http://purl.obolibrary.org/obo/UBERON_0008805 (22/25)
+Processing http://purl.obolibrary.org/obo/UBERON_0013138 (23/25)
+Processing http://purl.obolibrary.org/obo/UBERON_0015142 (24/25)
+Processing http://www.orpha.net/ORDO/Orphanet_329195 (25/25)
+Removing naughtiest axiom: EquivalentClasses(<http://purl.obolibrary.org/obo/MONDO_0002254> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/MONDO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/MONDO_0021127>)) ) with 6 implications
+removing: [EquivalentClasses(<http://purl.obolibrary.org/obo/MONDO_0002254> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/MONDO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/MONDO_0021127>)) )]
+Removing EquivalentClasses(<http://purl.obolibrary.org/obo/MONDO_0002254> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/MONDO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/MONDO_0021127>)) ) from main ontology
+Saved obo/results/mondo/fixed.owl
+ROUND 30
+Loading ontology... file:/home/slater/UNMIREOT/obo/results/mondo/fixed.owl
+Reasoning...
+Getting unsats...
+Unsatisfiable classes: 19
+Getting top unsats...
+Less than 25 unsatisfiable classes, looking at them all!
+Processing http://linkedlifedata.com/resource/umls/id/C3809753 (1/19)
+Processing http://purl.obolibrary.org/obo/DOID_0111042 (2/19)
+Processing http://purl.obolibrary.org/obo/MESH_C564421 (3/19)
+Processing http://purl.obolibrary.org/obo/MONDO_0010598 (4/19)
+Processing http://purl.obolibrary.org/obo/MONDO_0014224 (5/19)
+Processing http://purl.obolibrary.org/obo/OBI_0001898 (6/19)
+Processing http://purl.obolibrary.org/obo/OMIM_306000 (7/19)
+Processing http://purl.obolibrary.org/obo/OMIM_615516 (8/19)
+Processing http://purl.obolibrary.org/obo/UBERON_0000207 (9/19)
+Processing http://purl.obolibrary.org/obo/UBERON_0000389 (10/19)
+Processing http://purl.obolibrary.org/obo/UBERON_0000390 (11/19)
+Processing http://purl.obolibrary.org/obo/UBERON_0001247 (12/19)
+Processing http://purl.obolibrary.org/obo/UBERON_0001804 (13/19)
+Processing http://purl.obolibrary.org/obo/UBERON_0005614 (14/19)
+Processing http://purl.obolibrary.org/obo/UBERON_0006649 (15/19)
+Processing http://purl.obolibrary.org/obo/UBERON_0008805 (16/19)
+Processing http://purl.obolibrary.org/obo/UBERON_0013138 (17/19)
+Processing http://purl.obolibrary.org/obo/UBERON_0015142 (18/19)
+Processing http://www.orpha.net/ORDO/Orphanet_329195 (19/19)
+Removing naughtiest axiom: DisjointClasses(<http://purl.obolibrary.org/obo/UBERON_0000476> <http://purl.obolibrary.org/obo/UBERON_0010000>) with 5 implications
+removing: [DisjointClasses(<http://purl.obolibrary.org/obo/UBERON_0000476> <http://purl.obolibrary.org/obo/UBERON_0010000>)]
+Removing DisjointClasses(<http://purl.obolibrary.org/obo/UBERON_0000476> <http://purl.obolibrary.org/obo/UBERON_0010000>) from main ontology
+Saved obo/results/mondo/fixed.owl
+ROUND 31
+Loading ontology... file:/home/slater/UNMIREOT/obo/results/mondo/fixed.owl
+Reasoning...
+Getting unsats...
+Unsatisfiable classes: 14
+Getting top unsats...
+Less than 25 unsatisfiable classes, looking at them all!
+Processing http://linkedlifedata.com/resource/umls/id/C3809753 (1/14)
+Processing http://purl.obolibrary.org/obo/DOID_0111042 (2/14)
+Processing http://purl.obolibrary.org/obo/MESH_C564421 (3/14)
+Processing http://purl.obolibrary.org/obo/MONDO_0010598 (4/14)
+Processing http://purl.obolibrary.org/obo/MONDO_0014224 (5/14)
+Processing http://purl.obolibrary.org/obo/OBI_0001898 (6/14)
+Processing http://purl.obolibrary.org/obo/OMIM_306000 (7/14)
+Processing http://purl.obolibrary.org/obo/OMIM_615516 (8/14)
+Processing http://purl.obolibrary.org/obo/UBERON_0001247 (9/14)
+Processing http://purl.obolibrary.org/obo/UBERON_0006649 (10/14)
+Processing http://purl.obolibrary.org/obo/UBERON_0008805 (11/14)
+Processing http://purl.obolibrary.org/obo/UBERON_0013138 (12/14)
+Processing http://purl.obolibrary.org/obo/UBERON_0015142 (13/14)
+Processing http://www.orpha.net/ORDO/Orphanet_329195 (14/14)
+Removing naughtiest axiom: SubClassOf(<http://purl.obolibrary.org/obo/DOID_0060308> <http://purl.obolibrary.org/obo/DOID_0050889>) with 4 implications
+removing: [SubClassOf(<http://purl.obolibrary.org/obo/DOID_0060308> <http://purl.obolibrary.org/obo/DOID_0050889>)]
+Removing SubClassOf(<http://purl.obolibrary.org/obo/DOID_0060308> <http://purl.obolibrary.org/obo/DOID_0050889>) from import Optional[http://reality.rehab/ontology/obofoundry_core_fixed_merged]
+Saved obo/results/mondo/fixed.owl
+ROUND 32
+Loading ontology... file:/home/slater/UNMIREOT/obo/results/mondo/fixed.owl
+Reasoning...
+Getting unsats...
+Unsatisfiable classes: 14
+Getting top unsats...
+Less than 25 unsatisfiable classes, looking at them all!
+Processing http://linkedlifedata.com/resource/umls/id/C3809753 (1/14)
+Processing http://purl.obolibrary.org/obo/DOID_0111042 (2/14)
+Processing http://purl.obolibrary.org/obo/MESH_C564421 (3/14)
+Processing http://purl.obolibrary.org/obo/MONDO_0010598 (4/14)
+Processing http://purl.obolibrary.org/obo/MONDO_0014224 (5/14)
+Processing http://purl.obolibrary.org/obo/OBI_0001898 (6/14)
+Processing http://purl.obolibrary.org/obo/OMIM_306000 (7/14)
+Processing http://purl.obolibrary.org/obo/OMIM_615516 (8/14)
+Processing http://purl.obolibrary.org/obo/UBERON_0001247 (9/14)
+Processing http://purl.obolibrary.org/obo/UBERON_0006649 (10/14)
+Processing http://purl.obolibrary.org/obo/UBERON_0008805 (11/14)
+Processing http://purl.obolibrary.org/obo/UBERON_0013138 (12/14)
+Processing http://purl.obolibrary.org/obo/UBERON_0015142 (13/14)
+Processing http://www.orpha.net/ORDO/Orphanet_329195 (14/14)
+Removing naughtiest axiom: SubClassOf(<http://purl.obolibrary.org/obo/DOID_0050889> <http://purl.obolibrary.org/obo/DOID_1059>) with 4 implications
+removing: [SubClassOf(<http://purl.obolibrary.org/obo/DOID_0050889> <http://purl.obolibrary.org/obo/DOID_1059>)]
+Removing SubClassOf(<http://purl.obolibrary.org/obo/DOID_0050889> <http://purl.obolibrary.org/obo/DOID_1059>) from import Optional[http://reality.rehab/ontology/obofoundry_core_fixed_merged]
+Saved obo/results/mondo/fixed.owl
+ROUND 33
+Loading ontology... file:/home/slater/UNMIREOT/obo/results/mondo/fixed.owl
+Reasoning...
+Getting unsats...
+Unsatisfiable classes: 10
+Getting top unsats...
+Less than 25 unsatisfiable classes, looking at them all!
+Processing http://purl.obolibrary.org/obo/DOID_0111042 (1/10)
+Processing http://purl.obolibrary.org/obo/MESH_C564421 (2/10)
+Processing http://purl.obolibrary.org/obo/MONDO_0010598 (3/10)
+Processing http://purl.obolibrary.org/obo/OBI_0001898 (4/10)
+Processing http://purl.obolibrary.org/obo/OMIM_306000 (5/10)
+Processing http://purl.obolibrary.org/obo/UBERON_0001247 (6/10)
+Processing http://purl.obolibrary.org/obo/UBERON_0006649 (7/10)
+Processing http://purl.obolibrary.org/obo/UBERON_0008805 (8/10)
+Processing http://purl.obolibrary.org/obo/UBERON_0013138 (9/10)
+Processing http://purl.obolibrary.org/obo/UBERON_0015142 (10/10)
+Removing naughtiest axiom: EquivalentClasses(<http://purl.obolibrary.org/obo/DOID_0111042> <http://purl.obolibrary.org/obo/MONDO_0010598> ) with 4 implications
+removing: [EquivalentClasses(<http://purl.obolibrary.org/obo/DOID_0111042> <http://purl.obolibrary.org/obo/MONDO_0010598> )]
+Removing EquivalentClasses(<http://purl.obolibrary.org/obo/DOID_0111042> <http://purl.obolibrary.org/obo/MONDO_0010598> ) from main ontology
+Saved obo/results/mondo/fixed.owl
+ROUND 34
+Loading ontology... file:/home/slater/UNMIREOT/obo/results/mondo/fixed.owl
+Reasoning...
+Getting unsats...
+Unsatisfiable classes: 6
+Getting top unsats...
+Less than 25 unsatisfiable classes, looking at them all!
+Processing http://purl.obolibrary.org/obo/OBI_0001898 (1/6)
+Processing http://purl.obolibrary.org/obo/UBERON_0001247 (2/6)
+Processing http://purl.obolibrary.org/obo/UBERON_0006649 (3/6)
+Processing http://purl.obolibrary.org/obo/UBERON_0008805 (4/6)
+Processing http://purl.obolibrary.org/obo/UBERON_0013138 (5/6)
+Processing http://purl.obolibrary.org/obo/UBERON_0015142 (6/6)
+Removing naughtiest axiom: DisjointClasses(<http://purl.obolibrary.org/obo/UBERON_0000062> <http://purl.obolibrary.org/obo/UBERON_0002095>) with 4 implications
+removing: [DisjointClasses(<http://purl.obolibrary.org/obo/UBERON_0000062> <http://purl.obolibrary.org/obo/UBERON_0002095>)]
+Removing DisjointClasses(<http://purl.obolibrary.org/obo/UBERON_0000062> <http://purl.obolibrary.org/obo/UBERON_0002095>) from main ontology
+Saved obo/results/mondo/fixed.owl
+ROUND 35
+Loading ontology... file:/home/slater/UNMIREOT/obo/results/mondo/fixed.owl
+Reasoning...
+Getting unsats...
+Unsatisfiable classes: 2
+Getting top unsats...
+Less than 25 unsatisfiable classes, looking at them all!
+Processing http://purl.obolibrary.org/obo/OBI_0001898 (1/2)
+Processing http://purl.obolibrary.org/obo/UBERON_0008805 (2/2)
+Removing naughtiest axiom: SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000004> <http://purl.obolibrary.org/obo/BFO_0000002>) with 1 implications
+removing: [SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000004> <http://purl.obolibrary.org/obo/BFO_0000002>)]
+Removing SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000004> <http://purl.obolibrary.org/obo/BFO_0000002>) from main ontology
+Removing SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000004> <http://purl.obolibrary.org/obo/BFO_0000002>) from import Optional[http://reality.rehab/ontology/obofoundry_core_fixed_merged]
+Saved obo/results/mondo/fixed.owl
+ROUND 36
+Loading ontology... file:/home/slater/UNMIREOT/obo/results/mondo/fixed.owl
+Reasoning...
+Getting unsats...
+Unsatisfiable classes: 1
+Getting top unsats...
+Less than 25 unsatisfiable classes, looking at them all!
+Processing http://purl.obolibrary.org/obo/UBERON_0008805 (1/1)
+Removing naughtiest axiom: SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0008805> <http://purl.obolibrary.org/obo/UBERON_0006800>) with 1 implications
+removing: [SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0008805> <http://purl.obolibrary.org/obo/UBERON_0006800>)]
+Removing SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0008805> <http://purl.obolibrary.org/obo/UBERON_0006800>) from import Optional[http://reality.rehab/ontology/obofoundry_core_fixed_merged]
+Saved obo/results/mondo/fixed.owl
+ROUND 37
+Loading ontology... file:/home/slater/UNMIREOT/obo/results/mondo/fixed.owl
+Reasoning...
+Getting unsats...
+Unsatisfiable classes: 0
+Done.
