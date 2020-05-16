@@ -32,7 +32,7 @@ The result of the analysis over OBO Foundry can be found in obo/.
 * *obo/rmcounts.json* Each OBO ontology, and the number of axioms that had to be removed from it to made all of its classes unsatisfiable (UPHENO 37!!)
 * *obo/classes.json* Every unsatisfiable class found, and which ontologies it was unsatisfiable in.
 
-### Recreating the experiment
+## Recreating the experiment
 
 #### Obtaining the ontologies
 
