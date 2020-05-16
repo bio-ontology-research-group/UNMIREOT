@@ -22,6 +22,7 @@ $ groovy quick_repair.groovy ontology.owl output_dir/
 
 The result of the analysis over OBO Foundry can be found in obo/.
 
+* *obo/core/results.json* Every unsatisfiable class in the OBO Foundry meta-ontology, and its justification.
 * *obo/results.json* contains a list of OBO ontologies, and the results of an attempt to combine it with the repaired OBO Foundry meta-ontology. Either contains an inconsistency message, a loading error, or the number of unsatisfiable classes upon successful combination.
 * *obo/results/* one subdirectory for each OBO ontology+OBO core combination with unsatisfiable classes, containing:
   * *out.log* The output of the quick_repair script
@@ -33,21 +34,48 @@ The result of the analysis over OBO Foundry can be found in obo/.
 
 ### Recreating the experiment
 
-You can also find the files used to run the experiment there. You will have to obtain your own ontology files, though. The *ontologies.yml* file downloaded from the OBO Foundry at the time of the experiment is provided, but the download links will give you newer versions of those ontologies than the ones analysed in the original experiment, so the results may differ somewhat. To create a simple bash script to download all of the ontology files in the *ontologies.yml* file, you can run:
+#### Obtaining the ontologies
+
+*Please note: these instructions may not be perfect. This has been adapted from a highly experimental setup. If you have any issues, please open an issue*
+
+You can also find the files used to run the experiment there. You will have to obtain your own ontology files, though. The *ontologies.yml* file downloaded from the OBO Foundry at the time of the experiment is provided, but the download links will give you newer versions of those ontologies than the ones analysed in the original experiment, so the results may differ somewhat. All snippets in this section assume you start from the *obo/* subdirectory. To create a simple bash script to download all of the ontology files in the *ontologies.yml* file, you can run:
 
 ```bash
+mkdir ontologies
 groovy tools/format_download.groovy
 cd ontologies
 chmod a+x get_ontologies.sh
 ./get_ontologies.sh
 ```
 
-Because it's relatively small, the repaired OBO Foundry meta-ontology is provided in *obo/core/obofoundry_core_fixed.owl*. 
+#### OBO Foundry
 
-If you want to recreate the experiment, note that it will overwrite the given result files. First, you will have to fill *obo/ontologies/* with the ontologies you're interested in, then run the following:
+Because it's relatively small, the repaired OBO Foundry meta-ontology is provided in *obo/core/obofoundry_core_fixed.owl*. You can recreate this part of the experiment by copying the *ontologies/bfo.owl* file into *core/*, then manually editing that file so that it contains these lines in its *owl:Ontology* closure (sorry, didn't make a script for that):
+
+```xml
+<owl:imports rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+<owl:imports rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+<owl:imports rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+<owl:imports rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+<owl:imports rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
+<owl:imports rdf:resource="http://purl.obolibrary.org/obo/po.owl"/>
+<owl:imports rdf:resource="http://purl.obolibrary.org/obo/xao.owl"/>
+<owl:imports rdf:resource="http://purl.obolibrary.org/obo/zfa.owl"/>
+```
+
+Then, you can run:
 
 ```bash
-cd obo/
+groovy ../quick_repair.groovy core/bfo.owl core/
+```
+
+This will create your *core/results.json* with each axiom that had to be removed, and each unsatisfiable class it repaired, and the coherent OBO foundry meta-ontology in *core/fixed.owl*.
+
+#### OBO Ontologies
+
+If you want to recreate the OBO ontologies experiment, note that it will overwrite the given result files. First, you will have to fill *obo/ontologies/* with the ontologies you're interested in, then run the following (Note, if you generated your own core above, you'll have to change the first argument to *core/fixed.owl*):
+
+```bash
 groovy combine_each_folder.groovy core/obofoundry_core_fixed.owl ontologies/
 ```
 
