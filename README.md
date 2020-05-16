@@ -31,7 +31,7 @@ The result of the analysis over OBO Foundry can be found in obo/.
 * *obo/results.json* contains a list of OBO ontologies, and the results of an attempt to combine it with the repaired OBO Foundry meta-ontology. Either contains an inconsistency message, a loading error, or the number of unsatisfiable classes upon successful combination.
 * *obo/results/* one subdirectory for each OBO ontology+OBO core combination with unsatisfiable classes, containing:
   * *out.log* The output of the quick_repair script
-  * Each axiom removed, and which classes doing so made satisfiable
+  * *results.json* Each axiom removed, and which classes doing so made satisfiable
 * *obo/axioms.json* All of the axioms removed for all OBO ontologies, and which classes they made satisfiable.
 * *obo/axiom_counts.json* Each of the axioms removed from the OBO ontologies, and how many classes it made satisfiable. Interestingly, some of these are zero - that's because every class it affected had another indepdendent cause for its unsatisfiability.
 * *obo/rmcounts.json* Each OBO ontology, and the number of axioms that had to be removed from it to made all of its classes unsatisfiable (UPHENO 37!!)
