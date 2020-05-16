@@ -47,7 +47,7 @@ config.setFollowRedirects(true)
 def total = oFolder.list().size()
 def idx = 0
 
-/*oFolder.eachFile { oFile ->
+oFolder.eachFile { oFile ->
   idx++
   println "Processing ${oFile.getName()} (${idx}/${total})"
   def oName = oFile.getName().tokenize('.')[0]
@@ -77,7 +77,7 @@ def idx = 0
   }
 
   manager.clearOntologies()
-}*/
+}
 
 println "now it is time to reason"
 
