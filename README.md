@@ -4,13 +4,13 @@ Tools to identify, diagnose, and semi-automatically repair hidden contradictions
 
 ## Running the tool
 
-To run the tool to combine an ontology with its imports closure, and check for unsatisfiable classes:
+To run the tool to combine an ontology with its imports closure (so, if you want to combine two or more ontologies, simply add an additional import declaration to each, and then run this script on it):
 
 ```bash
 $ groovy merge_imports.groovy ontology.owl
 ```
 
-To run the algorithm to diagnose and make an ontology consistent:
+To check an ontology for unsatisfiable classes, and to diagnose causes of those unsatisfiable classes:
 
 ```bash
 $ groovy quick_repair.groovy ontology.owl output_dir/
