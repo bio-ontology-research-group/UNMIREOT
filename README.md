@@ -1,6 +1,6 @@
 # UNMIREOT
 
-Tools for combining ontologies with their imports, and removing problematic axioms until they are consistent.
+Tools to identify, diagnose, and semi-automatically repair hidden contradictions in biomedical ontologies.
 
 ## Running the tool
 
