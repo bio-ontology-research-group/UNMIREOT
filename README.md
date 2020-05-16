@@ -16,7 +16,12 @@ To check an ontology for unsatisfiable classes, and to diagnose causes of those 
 $ groovy quick_repair.groovy ontology.owl output_dir/
 ```
 
-*explain.groovy* contains the naive algorithm, but you probably don't want to use that.
+Two other tools are:
+
+* *explain.groovy* creates a justification for every unsatisfiable class in an ontology
+* *repair.groovy* uses the naive black box algorithm to diagnose/repair an ontology (i.e. examines every unsatisfiable class)
+
+In both cases, you'll only want to use these if you have a relatively small ontology.
 
 ## Experimental results
 
