@@ -1,0 +1,23 @@
+ROUND 1
+Loading ontology... file:/home/slater/UNMIREOT/obo/core/obocore_merged.owl
+Reasoning...
+Getting unsats...
+Unsatisfiable classes: 39
+Getting top unsats...
+Found 3 non-leaf unsats with the highest @ 1 out of a total 39 unsats
+Removing a further 0 classes with superclasses in the group
+Now looking at 3 unsats out of a total 39
+Pared 39 unsatisfiable classes down to 3 to justify for this round
+Processing http://purl.obolibrary.org/obo/CHEBI_17073 (1/3)
+Processing http://purl.obolibrary.org/obo/CHEBI_17165 (2/3)
+Processing http://purl.obolibrary.org/obo/CHEBI_17269 (3/3)
+Removing naughtiest axiom: SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_23367> <http://purl.obolibrary.org/obo/BFO_0000040>) with 3 implications
+removing: [SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_23367> <http://purl.obolibrary.org/obo/BFO_0000040>)]
+Removing SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_23367> <http://purl.obolibrary.org/obo/BFO_0000040>) from main ontology
+Saved new_obocore/fixed.owl
+ROUND 2
+Loading ontology... file:/home/slater/UNMIREOT/new_obocore/fixed.owl
+Reasoning...
+Getting unsats...
+Unsatisfiable classes: 0
+Done.
