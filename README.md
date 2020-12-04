@@ -4,7 +4,7 @@ Tools to identify, diagnose, and semi-automatically repair hidden contradictions
 
 ## Running the tool
 
-To run the tool to combine an ontology with its imports closure (so, if you want to combine two or more ontologies, simply add an additional import declaration to each, and then run this script on it):
+To run the tool to combine an ontology with its imports closure (so, if you want to combine two or more ontologies, simply add an additional import declaration for each one you wish to include, and then run this script on it):
 
 ```bash
 $ groovy merge_imports.groovy ontology.owl
